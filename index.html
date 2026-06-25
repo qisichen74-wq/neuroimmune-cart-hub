@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>神经免疫CAR-T情报工作台</title>
+<meta name="description" content="聚合神经免疫领域CAR-T疗法最新研究、临床试验、竞争格局与安全信号，面向科研、医学事务和产业情报。">
+<style>
+  :root {
+    --bg: #ffffff;
+    --bg2: #f8fafc;
+    --bg3: #f1f5f9;
+    --border: #e2e8f0;
+    --border2: #cbd5e1;
+    --accent: #2563eb;
+    --accent2: #0891b2;
+    --accent-light: #eff6ff;
+    --red: #dc2626;
+    --red-light: #fef2f2;
+    --yellow: #d97706;
+    --yellow-light: #fffbeb;
+    --green: #059669;
+    --text: #0f172a;
+    --text2: #475569;
+    --text3: #94a3b8;
+    --font-mono: 'SF Mono', 'Fira Code', 'Cascadia Code', monospace;
+    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-sans);
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  /* NAV */
+  nav {
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+    padding: 0 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 56px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text);
+    text-decoration: none;
+  }
+
+  .nav-logo .live-dot {
+    width: 7px; height: 7px;
+    background: var(--green);
+    border-radius: 50%;
+    position: relative;
+  }
+
+  .nav-logo .live-dot::after {
+    content: '';
+    position: absolute;
+    inset: -3px;
+    border-radius: 50%;
+    background: var(--green);
+    opacity: 0.3;
+    animation: ripple 2s infinite;
+  }
+
+  @keyframes ripple {
+    0% { transform: scale(0.8); opacity: 0.4; }
+    100% { transform: scale(1.8); opacity: 0; }
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 2px;
+    list-style: none;
+  }
+
+  .nav-links a {
+    color: var(--text2);
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    transition: all 0.12s;
+  }
+
+  .nav-links a:hover { background: var(--bg3); color: var(--text); }
+  .nav-links a.active { background: var(--accent-light); color: var(--accent); font-weight: 500; }
+
+  .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .nav-badge {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--text3);
+    border: 1px solid var(--border);
+    padding: 3px 8px;
+    border-radius: 4px;
+    background: var(--bg2);
+  }
+
+  /* HERO */
+  .hero {
+    padding: 56px 32px 48px;
+    max-width: 1160px;
+    margin: 0 auto;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .hero-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--accent2);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    background: #ecfeff;
+    border: 1px solid #a5f3fc;
+    padding: 4px 10px;
+    border-radius: 4px;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 1.15;
+    letter-spacing: -0.03em;
+    color: var(--text);
+    margin-bottom: 14px;
+  }
+
+  .hero h1 em {
+    font-style: normal;
+    color: var(--accent);
+  }
+
+  .hero-sub {
+    color: var(--text2);
+    font-size: 16px;
+    max-width: 560px;
+    line-height: 1.7;
+    margin-bottom: 36px;
+  }
+
+  .hero-stats {
+    display: flex;
+    gap: 0;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+    width: fit-content;
+  }
+
+  .stat {
+    padding: 16px 28px;
+    border-right: 1px solid var(--border);
+    background: var(--bg2);
+  }
+
+  .stat:last-child { border-right: none; }
+
+  .stat-num {
+    font-family: var(--font-mono);
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--text);
+    display: block;
+    line-height: 1;
+  }
+
+  .stat-label {
+    font-size: 11px;
+    color: var(--text3);
+    margin-top: 4px;
+    display: block;
+    letter-spacing: 0.03em;
+  }
+
+  /* LAYOUT */
+  .main {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 36px 32px;
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 32px;
+  }
+
+  /* SECTION */
+  .section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .section-title {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .section-count {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--text3);
+  }
+
+  /* FILTER */
+  .filter-bar {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+  }
+
+  .filter-btn {
+    font-size: 12px;
+    padding: 4px 12px;
+    border-radius: 20px;
+    border: 1px solid var(--border);
+    background: var(--bg);
+    color: var(--text2);
+    cursor: pointer;
+    transition: all 0.12s;
+    font-family: var(--font-sans);
+  }
+
+  .filter-btn:hover { border-color: var(--accent); color: var(--accent); }
+
+  .filter-btn.active {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+    font-weight: 500;
+  }
+
+  /* CARDS */
+  .card {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 18px 20px;
+    margin-bottom: 10px;
+    transition: all 0.12s;
+    cursor: pointer;
+  }
+
+  .card:hover {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px var(--accent-light);
+  }
+
+  .card-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 10px;
+  }
+
+  .card-title {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text);
+    line-height: 1.5;
+  }
+
+  .priority-badge {
+    flex-shrink: 0;
+    font-size: 11px;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-weight: 600;
+  }
+
+  .priority-高 { background: var(--red-light); color: var(--red); }
+  .priority-中 { background: var(--yellow-light); color: var(--yellow); }
+  .priority-低 { background: var(--bg3); color: var(--text3); }
+
+  .card-meta {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+
+  .meta-tag {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--text3);
+    background: var(--bg3);
+    padding: 2px 7px;
+    border-radius: 3px;
+    border: 1px solid var(--border);
+  }
+
+  .meta-tag.disease {
+    color: var(--accent2);
+    background: #ecfeff;
+    border-color: #a5f3fc;
+  }
+
+  .card-liner {
+    font-size: 13px;
+    color: var(--text2);
+    line-height: 1.6;
+  }
+
+  .card-reason {
+    font-size: 11px;
+    color: var(--text3);
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  /* SIDEBAR */
+  .sidebar { display: flex; flex-direction: column; gap: 16px; }
+
+  .sidebar-card {
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 18px;
+  }
+
+  .sidebar-title {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--text3);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 14px;
+  }
+
+  /* MODULE LIST */
+  .module-list { display: flex; flex-direction: column; gap: 2px; }
+
+  .module-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.12s;
+  }
+
+  .module-item:hover { background: var(--bg3); }
+
+  .module-icon {
+    width: 32px; height: 32px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    flex-shrink: 0;
+    border: 1px solid var(--border);
+    background: var(--bg);
+  }
+
+  .module-name { font-size: 13px; font-weight: 500; color: var(--text); display: block; }
+  .module-desc { font-size: 11px; color: var(--text3); display: block; margin-top: 1px; }
+
+  /* LANDSCAPE */
+  .landscape-row {
+    display: flex;
+    align-items: center;
+    padding: 9px 0;
+    border-bottom: 1px solid var(--border);
+    gap: 8px;
+  }
+
+  .landscape-row:last-child { border-bottom: none; }
+  .landscape-company { font-size: 12px; font-weight: 600; color: var(--text); width: 72px; flex-shrink: 0; }
+  .landscape-product { font-family: var(--font-mono); font-size: 11px; color: var(--accent); flex: 1; }
+  .landscape-stage { font-size: 10px; color: var(--text3); text-align: right; line-height: 1.4; }
+
+  /* LOADING / EMPTY */
+  .loading {
+    display: flex; align-items: center; gap: 8px;
+    color: var(--text3); font-size: 12px; padding: 24px 0;
+  }
+
+  .spinner {
+    width: 14px; height: 14px;
+    border: 2px solid var(--border);
+    border-top-color: var(--accent);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+  }
+
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .empty { text-align: center; padding: 40px 20px; color: var(--text3); font-size: 12px; }
+
+  /* FOOTER */
+  footer {
+    border-top: 1px solid var(--border);
+    padding: 20px 32px;
+    max-width: 1160px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .footer-disclaimer { font-size: 11px; color: var(--text3); max-width: 600px; }
+  .footer-update { font-family: var(--font-mono); font-size: 10px; color: var(--text3); }
+
+  /* LINK */
+  .link-more {
+    display: block;
+    margin-top: 12px;
+    font-size: 12px;
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .link-more:hover { text-decoration: underline; }
+
+  @media (max-width: 768px) {
+    .main { grid-template-columns: 1fr; }
+    .hero h1 { font-size: 26px; }
+    .hero-stats { flex-direction: column; border: none; gap: 12px; }
+    .stat { border: 1px solid var(--border); border-radius: 8px; }
+    nav { padding: 0 16px; }
+    .nav-links { display: none; }
+    .hero { padding: 32px 16px; }
+    .main { padding: 20px 16px; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">
+    <span class="live-dot"></span>
+    神经免疫 CAR-T 情报工作台
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">首页</a></li>
+    <li><a href="research.html">研究情报</a></li>
+    <li><a href="landscape.html">竞争格局</a></li>
+    <li><a href="trials.html">里程碑试验</a></li>
+    <li><a href="safety.html">安全信号</a></li>
+  </ul>
+  <div class="nav-right">
+    <span class="nav-badge">Beta · 2026</span>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="hero-eyebrow">🧬 Neuroimmune CAR-T Intelligence</div>
+  <h1>神经免疫 <em>CAR-T</em><br>情报工作台</h1>
+  <p class="hero-sub">面向科研、医学事务和产业情报的专题平台，聚合最新文献、竞争格局、里程碑试验与安全信号。</p>
+  <div class="hero-stats">
+    <div class="stat">
+      <span class="stat-num" id="stat-total">—</span>
+      <span class="stat-label">近7天文献</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num" id="stat-high">—</span>
+      <span class="stat-label">高优先级</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num">6</span>
+      <span class="stat-label">覆盖适应症</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num" id="stat-update">—</span>
+      <span class="stat-label">最近更新</span>
+    </div>
+  </div>
+</div>
+
+<div class="main">
+  <div class="left-col">
+    <div class="section-header">
+      <span class="section-title">📡 近期研究情报</span>
+      <span class="section-count" id="feed-count"></span>
+    </div>
+
+    <div class="filter-bar">
+      <button class="filter-btn active" onclick="filterCards('全部')">全部</button>
+      <button class="filter-btn" onclick="filterCards('高')">🔴 高优先级</button>
+      <button class="filter-btn" onclick="filterCards('中')">🟡 中优先级</button>
+      <button class="filter-btn" onclick="filterCards('MS')">MS</button>
+      <button class="filter-btn" onclick="filterCards('MG')">MG</button>
+      <button class="filter-btn" onclick="filterCards('NMOSD')">NMOSD</button>
+      <button class="filter-btn" onclick="filterCards('AE')">AE</button>
+    </div>
+
+    <div id="feed-container">
+      <div class="loading"><div class="spinner"></div>正在读取最新情报...</div>
+    </div>
+  </div>
+
+  <div class="sidebar">
+    <div class="sidebar-card">
+      <div class="sidebar-title">功能模块</div>
+      <div class="module-list">
+        <a href="research.html" class="module-item">
+          <div class="module-icon">📡</div>
+          <div>
+            <span class="module-name">研究情报</span>
+            <span class="module-desc">PubMed 实时摘要 · 情报分级</span>
+          </div>
+        </a>
+        <a href="landscape.html" class="module-item">
+          <div class="module-icon">🗺</div>
+          <div>
+            <span class="module-name">竞争格局</span>
+            <span class="module-desc">公司 · 产品 · 适应症矩阵</span>
+          </div>
+        </a>
+        <a href="trials.html" class="module-item">
+          <div class="module-icon">🧪</div>
+          <div>
+            <span class="module-name">里程碑试验</span>
+            <span class="module-desc">证据等级 · 基准比较</span>
+          </div>
+        </a>
+        <a href="safety.html" class="module-item">
+          <div class="module-icon">⚠️</div>
+          <div>
+            <span class="module-name">安全信号</span>
+            <span class="module-desc">CRS · ICANS · 跨产品汇总</span>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="sidebar-card">
+      <div class="sidebar-title">核心玩家快览</div>
+      <div class="landscape-row">
+        <span class="landscape-company">Kyverna</span>
+        <span class="landscape-product">KYV-101</span>
+        <span class="landscape-stage">单臂I期·IND</span>
+      </div>
+      <div class="landscape-row">
+        <span class="landscape-company">Cartesian</span>
+        <span class="landscape-product">Descartes-08</span>
+        <span class="landscape-stage">RCT·IND</span>
+      </div>
+      <div class="landscape-row">
+        <span class="landscape-company">科济药业</span>
+        <span class="landscape-product">CT103A</span>
+        <span class="landscape-stage">病例系列·IIT</span>
+      </div>
+      <div class="landscape-row">
+        <span class="landscape-company">Erlangen</span>
+        <span class="landscape-product">CD19 IIT</span>
+        <span class="landscape-stage">病例系列·IIT</span>
+      </div>
+      <div class="landscape-row">
+        <span class="landscape-company">华山医院</span>
+        <span class="landscape-product">研究者自制</span>
+        <span class="landscape-stage">病例报道·IIT</span>
+      </div>
+      <a href="landscape.html" class="link-more">查看完整格局 →</a>
+    </div>
+
+    <div class="sidebar-card">
+      <div class="sidebar-title">免责声明</div>
+      <p style="font-size:11px;color:var(--text3);line-height:1.7;">
+        本平台仅供科研与产业情报参考，不构成临床诊疗建议。所有数据来源于公开文献，请以原始来源为准。
+      </p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p class="footer-disclaimer">仅供科研与产业情报参考，不构成临床诊疗建议。数据来源：PubMed E-utilities API。</p>
+  <span class="footer-update" id="footer-update">—</span>
+</footer>
+
+<script>
+const SAMPLE_DATA = [
+  {
+    pmid: "42251699",
+    title_cn: "CAR-T细胞疗法使合并CNS受累CLL与多发性硬化患者获得完全缓解",
+    priority: "高",
+    priority_reason: "首例CAR-T同时改善CLL/CNS受累与MS的直接临床证据，对神经免疫适应症拓展具有重要参考价值",
+    evidence_level: "病例报道·IIT",
+    disease: "MS",
+    one_liner: "CD19 CAR-T治疗一例合并CNS受累CLL与MS患者，CLL完全缓解且MS疾病负担显著改善。"
+  },
+  {
+    pmid: "42223209",
+    title_cn: "CD19 CAR-T治疗进展性系统性硬化症的临床与蛋白质组学整合分析",
+    priority: "高",
+    priority_reason: "国内IND产品relma-cel在自身免疫适应症的多维度临床与蛋白组学数据",
+    evidence_level: "病例系列·IIT",
+    disease: "其他自免",
+    one_liner: "对CD19 CAR-T治疗进展性SSc患者进行临床、免疫学及蛋白组学多维整合分析，系统表征疗效与机制。"
+  },
+  {
+    pmid: "42167622",
+    title_cn: "CAR-T及NK细胞疗法治疗自身免疫病系统综述与荟萃分析",
+    priority: "中",
+    priority_reason: "首个涵盖CAR细胞疗法治疗自免疾病的系统综述与荟萃分析",
+    evidence_level: "综述",
+    disease: "其他自免",
+    one_liner: "系统评估CAR-T及CAR-NK在多种自身免疫病中的疗效、安全性与持久缓解情况，为临床应用提供循证依据。"
+  },
+  {
+    pmid: "42286319",
+    title_cn: "重编程免疫：CAR-T细胞疗法在多发性硬化中的前景与挑战",
+    priority: "中",
+    priority_reason: "系统梳理CAR-T治疗MS的机制与挑战，有助于领域背景把握",
+    evidence_level: "综述",
+    disease: "MS",
+    one_liner: "综述CAR-T靶向清除致病性B细胞治疗难治性MS的机制、深度缓解潜力及面临的挑战。"
+  }
+];
+
+let allData = [];
+let currentFilter = '全部';
+
+async function loadFeed() {
+  try {
+    const res = await fetch('data/feed.json');
+    if (!res.ok) throw new Error();
+    const data = await res.json();
+    renderFeed(data);
+  } catch(e) {
+    renderFeed(SAMPLE_DATA);
+  }
+}
+
+function renderFeed(data) {
+  allData = data;
+  document.getElementById('stat-total').textContent = data.length;
+  document.getElementById('stat-high').textContent = data.filter(d => d.priority === '高').length;
+  document.getElementById('stat-update').textContent =
+    new Date().toLocaleDateString('zh-CN', {month:'numeric', day:'numeric'});
+  document.getElementById('footer-update').textContent =
+    '更新于 ' + new Date().toLocaleDateString('zh-CN');
+  applyFilter(currentFilter);
+}
+
+function filterCards(f) {
+  currentFilter = f;
+  document.querySelectorAll('.filter-btn').forEach(b => {
+    const match = f === '全部' ? b.textContent.trim() === '全部' : b.textContent.includes(f);
+    b.classList.toggle('active', match);
+  });
+  applyFilter(f);
+}
+
+function applyFilter(f) {
+  let filtered = allData;
+  if (f === '高') filtered = allData.filter(d => d.priority === '高');
+  else if (f === '中') filtered = allData.filter(d => d.priority === '中');
+  else if (f !== '全部') filtered = allData.filter(d => d.disease === f);
+
+  document.getElementById('feed-count').textContent = filtered.length + ' 篇';
+  const container = document.getElementById('feed-container');
+
+  if (filtered.length === 0) {
+    container.innerHTML = '<div class="empty">暂无符合条件的文献</div>';
+    return;
+  }
+
+  container.innerHTML = filtered.map(d => `
+    <div class="card" onclick="window.open('https://pubmed.ncbi.nlm.nih.gov/${d.pmid}/', '_blank')">
+      <div class="card-top">
+        <span class="card-title">${d.title_cn}</span>
+        <span class="priority-badge priority-${d.priority}">${d.priority === '高' ? '🔴 高' : d.priority === '中' ? '🟡 中' : '⚪ 低'}</span>
+      </div>
+      <div class="card-meta">
+        <span class="meta-tag disease">${d.disease}</span>
+        <span class="meta-tag">${d.evidence_level}</span>
+        <span class="meta-tag">PMID ${d.pmid}</span>
+      </div>
+      <p class="card-liner">${d.one_liner}</p>
+      <p class="card-reason">💡 ${d.priority_reason}</p>
+    </div>
+  `).join('');
+}
+
+loadFeed();
+</script>
+</body>
+</html>
