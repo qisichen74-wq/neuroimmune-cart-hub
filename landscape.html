@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>竞争格局 - 神经免疫CAR-T情报工作台</title>
+<style>
+  :root {
+    --bg: #fdf8ee;
+    --bg2: #faf2dc;
+    --bg3: #f5e9c4;
+    --surface: #fefcf3;
+    --surface-strong: #fff8e7;
+    --border: #e8d9a8;
+    --border2: #d4c080;
+    --accent: #8b6914;
+    --accent2: #a07820;
+    --accent-light: #fdf3d0;
+    --red: #b91c1c;
+    --red-light: #fef2f2;
+    --yellow: #92400e;
+    --yellow-light: #fef3c7;
+    --green: #166534;
+    --green-light: #f0fdf4;
+    --text: #1c1508;
+    --text2: #4a3c18;
+    --text3: #8a7540;
+    --shadow: 0 12px 32px rgba(139, 105, 20, 0.08);
+    --font-mono: "SF Mono", "Fira Code", monospace;
+    --font-sans: "Inter", -apple-system, sans-serif;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--text); font-family: var(--font-sans); font-size: 14px; line-height: 1.6; }
+  a { color: inherit; }
+
+  nav {
+    background: rgba(254, 252, 243, 0.92);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+    padding: 0 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .nav-logo { display: flex; align-items: center; gap: 10px; font-size: 14px; font-weight: 700; color: var(--text); text-decoration: none; }
+  .live-dot { width: 8px; height: 8px; background: var(--green); border-radius: 50%; position: relative; }
+  .live-dot::after { content: ""; position: absolute; inset: -4px; border-radius: 50%; background: var(--green); opacity: 0.28; animation: ripple 2s infinite; }
+  @keyframes ripple { 0% { transform: scale(0.75); opacity: 0.35; } 100% { transform: scale(1.8); opacity: 0; } }
+
+  .nav-links { display: flex; gap: 4px; list-style: none; }
+  .nav-links a { color: var(--text2); text-decoration: none; padding: 7px 12px; border-radius: 6px; font-size: 13px; transition: 0.14s ease; }
+  .nav-links a:hover { background: var(--bg2); color: var(--text); }
+  .nav-links a.active { background: var(--accent-light); color: var(--accent); border: 1px solid var(--border); font-weight: 600; }
+  .nav-badge { font-family: var(--font-mono); font-size: 10px; color: var(--text3); border: 1px solid var(--border); padding: 3px 8px; border-radius: 999px; background: var(--bg2); }
+
+  .page-shell { max-width: 1200px; margin: 0 auto; padding: 0 32px 48px; }
+
+  .hero {
+    padding: 36px 0 28px;
+    border-bottom: 1px solid var(--border);
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(280px, 360px);
+    gap: 18px;
+  }
+
+  .breadcrumb { font-size: 12px; color: var(--text3); margin-bottom: 12px; }
+  .breadcrumb a { color: var(--accent); text-decoration: none; }
+  .hero-kicker {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent2);
+    background: var(--accent-light);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 5px 10px;
+    margin-bottom: 16px;
+  }
+  .hero-title { font-size: 34px; line-height: 1.12; margin-bottom: 12px; }
+  .hero-sub { color: var(--text2); font-size: 15px; max-width: 720px; }
+  .hero-notes { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+  .hero-note {
+    padding: 7px 11px;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: var(--surface);
+    font-size: 12px;
+    color: var(--text2);
+  }
+
+  .hero-card {
+    background: linear-gradient(180deg, var(--surface) 0%, var(--surface-strong) 100%);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .hero-card-label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text3); font-weight: 700; }
+  .hero-card-title { font-size: 18px; font-weight: 700; line-height: 1.4; }
+  .hero-card-copy { font-size: 13px; color: var(--text2); }
+  .hero-card-foot { margin-top: auto; padding-top: 12px; border-top: 1px solid var(--border); font-size: 11px; color: var(--text3); }
+
+  .section {
+    padding: 28px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .section-head { display: flex; justify-content: space-between; align-items: end; gap: 12px; margin-bottom: 16px; }
+  .section-kicker { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text3); margin-bottom: 6px; }
+  .section-title { font-size: 24px; line-height: 1.2; }
+  .section-desc { color: var(--text2); font-size: 13px; max-width: 740px; }
+  .section-meta { font-family: var(--font-mono); font-size: 11px; color: var(--text3); }
+
+  .stats-grid,
+  .signal-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 10px;
+  }
+  .stat-card,
+  .signal-card,
+  .panel,
+  .table-card,
+  .company-card,
+  .timeline-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+  }
+  .stat-card { padding: 16px; min-height: 112px; }
+  .stat-num { display: block; font-family: var(--font-mono); font-size: 26px; line-height: 1; color: var(--accent); font-weight: 700; }
+  .stat-label { display: block; margin-top: 10px; font-size: 12px; font-weight: 600; }
+  .stat-note { display: block; margin-top: 6px; font-size: 11px; color: var(--text3); }
+
+  .overview-grid {
+    display: grid;
+    grid-template-columns: 320px minmax(0, 1fr);
+    gap: 18px;
+  }
+  .panel { padding: 16px; }
+  .panel-title { font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text3); font-weight: 700; margin-bottom: 12px; }
+  .filter-list { display: flex; flex-direction: column; gap: 6px; }
+  .filter-option {
+    border: none;
+    background: transparent;
+    border-radius: 8px;
+    padding: 8px 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    cursor: pointer;
+    font-size: 12px;
+    text-align: left;
+    color: var(--text2);
+  }
+  .filter-option:hover { background: var(--bg2); color: var(--text); }
+  .filter-option.active { background: var(--accent-light); color: var(--accent); font-weight: 600; }
+  .filter-count {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 2px 6px;
+    background: var(--bg2);
+    color: var(--text3);
+    margin-left: auto;
+  }
+  .monitor-list { display: flex; flex-direction: column; gap: 10px; }
+  .monitor-row { display: flex; justify-content: space-between; gap: 12px; font-size: 12px; padding-bottom: 10px; border-bottom: 1px solid var(--border); }
+  .monitor-row:last-child { border-bottom: none; padding-bottom: 0; }
+  .monitor-label { color: var(--text2); }
+  .monitor-value { font-weight: 600; text-align: right; }
+
+  .table-card { padding: 16px; }
+  .toolbar { display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 14px; }
+  .result-info { font-size: 12px; color: var(--text3); }
+  .sort-select {
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--surface);
+    color: var(--text2);
+    padding: 8px 10px;
+    font-size: 12px;
+    font-family: var(--font-sans);
+    outline: none;
+    cursor: pointer;
+  }
+
+  .table-wrap { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; min-width: 720px; }
+  th, td { text-align: left; padding: 12px 10px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  th { font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text3); font-weight: 700; }
+  td { font-size: 12px; color: var(--text2); }
+  .company-name { font-size: 13px; font-weight: 700; color: var(--text); }
+  .product-name { font-family: var(--font-mono); font-size: 11px; color: var(--accent); margin-top: 4px; }
+  .meta-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+  .meta-tag {
+    display: inline-flex;
+    align-items: center;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--text3);
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 3px 8px;
+  }
+  .priority-badge {
+    display: inline-flex;
+    align-items: center;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 4px 8px;
+    border-radius: 999px;
+    white-space: nowrap;
+  }
+  .priority-高 { background: var(--red-light); color: var(--red); }
+  .priority-中 { background: var(--yellow-light); color: var(--yellow); }
+  .priority-低 { background: var(--bg3); color: var(--text3); }
+
+  .company-grid,
+  .timeline-grid,
+  .signal-grid { margin-top: 0; }
+  .company-grid,
+  .timeline-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+  .company-card,
+  .timeline-card,
+  .signal-card { padding: 18px; min-height: 210px; }
+  .company-card-top,
+  .timeline-step { display: flex; justify-content: space-between; gap: 10px; align-items: flex-start; margin-bottom: 10px; }
+  .company-title,
+  .signal-title,
+  .timeline-title { font-size: 16px; font-weight: 700; }
+  .company-product,
+  .signal-label,
+  .timeline-label { font-family: var(--font-mono); font-size: 11px; color: var(--accent); }
+  .company-copy,
+  .signal-copy,
+  .timeline-copy { font-size: 12px; color: var(--text2); }
+  .watch-list { margin-top: auto; padding-top: 12px; border-top: 1px solid var(--border); display: flex; flex-direction: column; gap: 6px; font-size: 11px; color: var(--text3); }
+  .watch-item { display: flex; gap: 8px; }
+  .watch-item span:first-child { color: var(--accent); }
+
+  .signal-card { min-height: 176px; }
+  .signal-meta { margin-top: auto; padding-top: 12px; border-top: 1px solid var(--border); font-size: 11px; color: var(--text3); }
+
+  .empty {
+    text-align: center;
+    padding: 50px 20px;
+    background: var(--surface);
+    border: 1px dashed var(--border);
+    border-radius: 8px;
+    color: var(--text3);
+  }
+
+  footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 32px 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    color: var(--text3);
+    font-size: 11px;
+  }
+
+  @media (max-width: 1024px) {
+    .hero,
+    .overview-grid { grid-template-columns: 1fr; }
+    .stats-grid,
+    .signal-grid,
+    .company-grid,
+    .timeline-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+
+  @media (max-width: 768px) {
+    nav { padding: 0 16px; }
+    .nav-links { display: none; }
+    .page-shell { padding: 0 16px 32px; }
+    .hero { padding: 24px 0 20px; }
+    .hero-title { font-size: 28px; }
+    .stats-grid,
+    .signal-grid,
+    .company-grid,
+    .timeline-grid { grid-template-columns: 1fr; }
+    footer { padding: 18px 16px 28px; flex-direction: column; align-items: flex-start; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo"><span class="live-dot"></span>神经免疫 CAR-T 情报工作台</a>
+  <ul class="nav-links">
+    <li><a href="index.html">首页</a></li>
+    <li><a href="timeline.html">动态时间线</a></li>
+    <li><a href="topics.html">专题档案</a></li>
+    <li><a href="research.html">研究情报</a></li>
+    <li><a href="landscape.html" class="active">竞争格局</a></li>
+    <li><a href="trials.html">里程碑试验</a></li>
+    <li><a href="safety.html">安全信号</a></li>
+  </ul>
+  <a class="nav-badge" href="search.html" style="text-decoration:none">全局检索</a>
+</nav>
+
+<main class="page-shell">
+  <section class="hero">
+    <div>
+      <div class="breadcrumb"><a href="index.html">首页</a> / 竞争格局</div>
+      <div class="hero-kicker">Landscape Tracker</div>
+      <h1 class="hero-title">从公司名单升级成能比较路线、阶段和优先级的竞争情报面板</h1>
+      <p class="hero-sub">这个页面不只是记住“谁在做”，而是帮助你判断谁更值得持续盯、不同路线卡在哪个阶段、哪些玩家的信号更可能影响神经免疫 CAR-T 的判断框架。</p>
+      <div class="hero-notes">
+        <span class="hero-note">优先看平台代表性与推进速度</span>
+        <span class="hero-note">学术中心往往先于公司给出早期信号</span>
+        <span class="hero-note" id="update-note">数据状态：同步中</span>
+      </div>
+    </div>
+
+    <aside class="hero-card">
+      <div class="hero-card-label">这页怎么用</div>
+      <div class="hero-card-title">先筛公司，再看路线，最后看观察点</div>
+      <p class="hero-card-copy">竞争格局页最容易沦为“公司名称墙”。这一版把每个玩家都补成了一个可讨论对象：有阶段、有重点适应症、有一句结论，也有后续要盯的观察点。</p>
+      <div class="hero-card-foot" id="hero-card-foot">等待同步</div>
+    </aside>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <div>
+        <div class="section-kicker">Market Readout</div>
+        <h2 class="section-title">格局先看四件事</h2>
+        <p class="section-desc">先把玩家数量、重点公司、区域分布和高优先级比例放到同一眼里，方便快速回答“这个赛道现在热不热、谁最值得追”。</p>
+      </div>
+    </div>
+    <div class="stats-grid" id="stats-grid"></div>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <div>
+        <div class="section-kicker">Company Matrix</div>
+        <h2 class="section-title">公司矩阵与路线比较</h2>
+        <p class="section-desc">左侧筛选帮助你按优先级、区域和适应症缩小范围，右侧表格则保留扫描效率，适合拿来做组会、周报和竞品对照。</p>
+      </div>
+      <div class="section-meta" id="result-info">正在加载...</div>
+    </div>
+
+    <div class="overview-grid">
+      <aside>
+        <div class="panel" style="margin-bottom:12px;">
+          <div class="panel-title">优先级</div>
+          <div class="filter-list">
+            <button class="filter-option active" data-group="priority" data-value="全部"><span>全部</span><span class="filter-count" id="count-all">-</span></button>
+            <button class="filter-option" data-group="priority" data-value="高"><span>高优先级</span><span class="filter-count" id="count-high">-</span></button>
+            <button class="filter-option" data-group="priority" data-value="中"><span>中优先级</span><span class="filter-count" id="count-mid">-</span></button>
+          </div>
+        </div>
+
+        <div class="panel" style="margin-bottom:12px;">
+          <div class="panel-title">区域</div>
+          <div class="filter-list" id="region-filters"></div>
+        </div>
+
+        <div class="panel" style="margin-bottom:12px;">
+          <div class="panel-title">适应症</div>
+          <div class="filter-list" id="focus-filters"></div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-title">观察面板</div>
+          <div class="monitor-list" id="monitor-list"></div>
+        </div>
+      </aside>
+
+      <div class="table-card">
+        <div class="toolbar">
+          <span class="result-info" id="table-info">正在整理公司矩阵...</span>
+          <select class="sort-select" id="sort-select">
+            <option value="priority">按优先级排序</option>
+            <option value="stage">按阶段排序</option>
+            <option value="region">按区域排序</option>
+            <option value="company">按公司名排序</option>
+          </select>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>公司 / 产品</th>
+                <th>路线</th>
+                <th>重点适应症</th>
+                <th>阶段</th>
+                <th>区域</th>
+                <th>判断</th>
+              </tr>
+            </thead>
+            <tbody id="table-body">
+              <tr><td colspan="6"><div class="empty">正在加载竞争格局...</div></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <div>
+        <div class="section-kicker">Priority Companies</div>
+        <h2 class="section-title">最值得持续追踪的重点玩家</h2>
+        <p class="section-desc">这里保留卡片式阅读，让你在扫完矩阵之后，能快速看到每家公司的“为什么重要”和“接下来盯什么”。</p>
+      </div>
+    </div>
+    <div class="company-grid" id="company-grid"></div>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <div>
+        <div class="section-kicker">Interpretation</div>
+        <h2 class="section-title">当前格局最重要的三条判断</h2>
+        <p class="section-desc">竞争格局页不该只停在数据罗列。这里把结构化信息往上抬一层，沉淀成真正可复述的市场判断。</p>
+      </div>
+    </div>
+    <div class="signal-grid" id="signal-grid"></div>
+  </section>
+
+</main>
+
+<footer>
+  <p>仅供科研与产业情报参考，不构成临床诊疗建议。请以原始来源与正式披露信息为准。</p>
+  <span id="footer-update">更新于 -</span>
+</footer>
+
+<script>
+let allCompanies = [];
+let filteredCompanies = [];
+let sortBy = "priority";
+const activeFilters = {
+  priority: "全部",
+  region: "全部",
+  focus: "全部"
+};
+
+async function loadLandscape() {
+  try {
+    const res = await fetch("data/landscape.json");
+    if (!res.ok) throw new Error("landscape load failed");
+    allCompanies = await res.json();
+  } catch (error) {
+    allCompanies = [];
+  }
+
+  normalizeData();
+  renderStats();
+  renderFilterPanels();
+  renderMonitor();
+  bindEvents();
+  applyFilters();
+  renderInterpretation();
+
+  const today = new Date().toLocaleDateString("zh-CN");
+  document.getElementById("footer-update").textContent = "更新于 " + today;
+  document.getElementById("update-note").textContent = "数据状态：最近同步 " + today;
+  document.getElementById("hero-card-foot").textContent = "当前追踪 " + allCompanies.length + " 个重点玩家";
+}
+
+function normalizeData() {
+  allCompanies = allCompanies.map((item) => ({
+    focus: [],
+    watch_points: [],
+    status: "持续跟踪",
+    ...item
+  }));
+}
+
+function bindEvents() {
+  document.querySelectorAll(".filter-option").forEach((button) => {
+    button.addEventListener("click", () => {
+      const group = button.dataset.group;
+      const value = button.dataset.value;
+      if (!group || !value) return;
+      activeFilters[group] = value;
+      document.querySelectorAll(`.filter-option[data-group="${group}"]`).forEach((item) => {
+        item.classList.toggle("active", item === button);
+      });
+      applyFilters();
+    });
+  });
+
+  document.getElementById("sort-select").addEventListener("change", (event) => {
+    sortBy = event.target.value;
+    renderTable(filteredCompanies);
+    renderCompanyCards(filteredCompanies);
+  });
+}
+
+function renderStats() {
+  const regions = [...new Set(allCompanies.map((item) => item.region))];
+  const stats = [
+    {
+      value: allCompanies.length,
+      label: "追踪中的重点玩家",
+      note: "当前已纳入竞争格局页的公司与学术中心"
+    },
+    {
+      value: allCompanies.filter((item) => item.priority === "高").length,
+      label: "高优先级对象",
+      note: "适合进入周报和专题跟踪的核心玩家"
+    },
+    {
+      value: regions.length,
+      label: "区域分布",
+      note: "帮助快速判断竞争热点主要落在哪些市场"
+    },
+    {
+      value: new Set(allCompanies.flatMap((item) => item.focus || [])).size,
+      label: "覆盖适应症",
+      note: "竞争格局已经触达的专题范围"
+    }
+  ];
+
+  document.getElementById("stats-grid").innerHTML = stats.map((stat) => `
+    <div class="stat-card">
+      <span class="stat-num">${stat.value}</span>
+      <span class="stat-label">${stat.label}</span>
+      <span class="stat-note">${stat.note}</span>
+    </div>
+  `).join("");
+
+  document.getElementById("count-all").textContent = allCompanies.length;
+  document.getElementById("count-high").textContent = allCompanies.filter((item) => item.priority === "高").length;
+  document.getElementById("count-mid").textContent = allCompanies.filter((item) => item.priority === "中").length;
+}
+
+function renderFilterPanels() {
+  const regions = [...new Set(allCompanies.map((item) => item.region))].sort((a, b) => a.localeCompare(b, "en"));
+  const focuses = [...new Set(allCompanies.flatMap((item) => item.focus || []))].sort((a, b) => a.localeCompare(b, "en"));
+
+  document.getElementById("region-filters").innerHTML = [
+    `<button class="filter-option active" data-group="region" data-value="全部"><span>全部</span><span class="filter-count">${allCompanies.length}</span></button>`,
+    ...regions.map((region) => {
+      const count = allCompanies.filter((item) => item.region === region).length;
+      return `<button class="filter-option" data-group="region" data-value="${region}"><span>${region}</span><span class="filter-count">${count}</span></button>`;
+    })
+  ].join("");
+
+  document.getElementById("focus-filters").innerHTML = [
+    `<button class="filter-option active" data-group="focus" data-value="全部"><span>全部</span><span class="filter-count">${allCompanies.length}</span></button>`,
+    ...focuses.map((focus) => {
+      const count = allCompanies.filter((item) => (item.focus || []).includes(focus)).length;
+      return `<button class="filter-option" data-group="focus" data-value="${focus}"><span>${focus}</span><span class="filter-count">${count}</span></button>`;
+    })
+  ].join("");
+}
+
+function renderMonitor() {
+  const academicCount = allCompanies.filter((item) => /academic|医院|研究者/i.test(item.company)).length;
+  document.getElementById("monitor-list").innerHTML = [
+    ["学术先行对象", academicCount + " 个"],
+    ["产业化公司", (allCompanies.length - academicCount) + " 个"],
+    ["高优先级占比", percentage(allCompanies.filter((item) => item.priority === "高").length, allCompanies.length)],
+    ["中国相关对象", allCompanies.filter((item) => /china|国内/i.test(item.region)).length + " 个"]
+  ].map(([label, value]) => `
+    <div class="monitor-row">
+      <span class="monitor-label">${label}</span>
+      <span class="monitor-value">${value}</span>
+    </div>
+  `).join("");
+}
+
+function applyFilters() {
+  filteredCompanies = allCompanies.filter((item) => {
+    const matchesPriority = activeFilters.priority === "全部" || item.priority === activeFilters.priority;
+    const matchesRegion = activeFilters.region === "全部" || item.region === activeFilters.region;
+    const matchesFocus = activeFilters.focus === "全部" || (item.focus || []).includes(activeFilters.focus);
+    return matchesPriority && matchesRegion && matchesFocus;
+  });
+
+  renderTable(filteredCompanies);
+  renderCompanyCards(filteredCompanies);
+}
+
+function renderTable(data) {
+  const sorted = [...data].sort(sortComparator);
+  document.getElementById("result-info").textContent = `显示 ${sorted.length} / ${allCompanies.length} 个重点对象`;
+  document.getElementById("table-info").textContent = `当前筛选结果 ${sorted.length} 个`;
+
+  const tbody = document.getElementById("table-body");
+  if (!sorted.length) {
+    tbody.innerHTML = '<tr><td colspan="6"><div class="empty">当前筛选条件下没有对象。</div></td></tr>';
+    return;
+  }
+
+  tbody.innerHTML = sorted.map((item) => `
+    <tr>
+      <td>
+        <div class="company-name"><a href="detail.html?type=company&id=${encodeURIComponent(item.id)}" style="text-decoration:none">${item.company}</a></div>
+        <div class="product-name">${item.product}</div>
+      </td>
+      <td>${item.technology || "-"}</td>
+      <td><div class="meta-tags">${(item.focus || []).map((focus) => `<span class="meta-tag">${focus}</span>`).join("")}</div></td>
+      <td>${item.stage || "-"}</td>
+      <td>${item.region || "-"}</td>
+      <td>
+        <span class="priority-badge priority-${item.priority || "低"}">${priorityLabel(item.priority)}</span>
+        <div style="margin-top:8px;">${item.evidence_anchor || "-"}</div>
+      </td>
+    </tr>
+  `).join("");
+}
+
+function renderCompanyCards(data) {
+  const sorted = [...data].sort(sortComparator).slice(0, 3);
+  const grid = document.getElementById("company-grid");
+  if (!sorted.length) {
+    grid.innerHTML = '<div class="empty">暂无重点公司。</div>';
+    return;
+  }
+
+  grid.innerHTML = sorted.map((item) => `
+    <article class="company-card">
+      <div class="company-card-top">
+        <div>
+          <div class="company-title"><a href="detail.html?type=company&id=${encodeURIComponent(item.id)}" style="text-decoration:none">${item.company}</a></div>
+          <div class="company-product">${item.product}</div>
+        </div>
+        <span class="priority-badge priority-${item.priority || "低"}">${priorityLabel(item.priority)}</span>
+      </div>
+      <p class="company-copy">${item.recent_update || item.evidence_anchor || "-"}</p>
+      <div class="meta-tags" style="margin-top:10px;">
+        <span class="meta-tag">${item.technology || "技术待补"}</span>
+        <span class="meta-tag">${item.stage || "阶段待补"}</span>
+        <span class="meta-tag">${item.region || "区域待补"}</span>
+      </div>
+      <div class="watch-list">
+        ${(item.watch_points || []).map((point) => `<div class="watch-item"><span>•</span><span>${point}</span></div>`).join("")}
+      </div>
+    </article>
+  `).join("");
+}
+
+function renderInterpretation() {
+  const cards = [
+    {
+      title: "学术中心仍然是早期信号的重要来源",
+      label: "Interpretation 01",
+      copy: "很多神经免疫 CAR-T 的可行性信号仍先出现在医院和学术团队，而不是成熟产业化公司，所以竞争格局不能只盯融资最多的玩家。",
+      meta: "含义：研究页与竞争格局页必须互相引用"
+    },
+    {
+      title: "MG 与 MS 是更值得优先盯的比较轴",
+      label: "Interpretation 02",
+      copy: "不同适应症推进速度并不一致。MG 更接近可设计化验证，MS 更适合看机制与长期获益，这会影响你对路线成熟度的判断。",
+      meta: "含义：后续适合拆适应症专题格局"
+    },
+    {
+      title: "路线差异会决定后续产品化叙事",
+      label: "Interpretation 03",
+      copy: "传统CD19 CAR-T、mRNA CAR-T、研究者IIT并不是同一层级的比较对象。页面里需要一直把“路线”这个维度摆在台面上。",
+      meta: "含义：后续可扩展技术路线筛选"
+    }
+  ];
+
+  document.getElementById("signal-grid").innerHTML = cards.map((card) => `
+    <article class="signal-card">
+      <div class="signal-title">${card.title}</div>
+      <div class="signal-label">${card.label}</div>
+      <div class="signal-copy">${card.copy}</div>
+      <div class="signal-meta">${card.meta}</div>
+    </article>
+  `).join("");
+}
+
+function sortComparator(a, b) {
+  if (sortBy === "company") return a.company.localeCompare(b.company, "en");
+  if (sortBy === "region") return a.region.localeCompare(b.region, "en");
+  if (sortBy === "stage") return stageWeight(b.stage) - stageWeight(a.stage);
+  return priorityWeight(b.priority) - priorityWeight(a.priority) || a.company.localeCompare(b.company, "en");
+}
+
+function stageWeight(stage) {
+  if (!stage) return 0;
+  if (/随机对照|rct/i.test(stage)) return 4;
+  if (/i期|ind/i.test(stage)) return 3;
+  if (/病例系列/i.test(stage)) return 2;
+  return 1;
+}
+
+function priorityWeight(priority) {
+  if (priority === "高") return 3;
+  if (priority === "中") return 2;
+  return 1;
+}
+
+function priorityLabel(priority) {
+  if (priority === "高") return "高优先级";
+  if (priority === "中") return "中优先级";
+  return "低优先级";
+}
+
+function percentage(value, total) {
+  if (!total) return "0%";
+  return Math.round((value / total) * 100) + "%";
+}
+
+loadLandscape();
+</script>
+<script src="assets/app-shell.js"></script>
+</body>
+</html>

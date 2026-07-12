@@ -1,0 +1,638 @@
+[
+  {
+    "id": "event-feed-42251699",
+    "date": "2026-06-07",
+    "event_type": "研究发布",
+    "title": "合并CNS受累CLL与MS患者的CAR-T缓解病例进入证据池",
+    "summary": "该病例为神经免疫场景中的疗效与安全观察提供线索，但个案不能替代前瞻性试验结论。",
+    "impact": "为MS相关CAR-T研究补充临床可行性背景，同时提高对神经系统事件鉴别的关注。",
+    "priority": "高",
+    "topic": "MS",
+    "status": "已审核",
+    "source_label": "PubMed",
+    "source_url": "https://pubmed.ncbi.nlm.nih.gov/42251699/",
+    "entities": [
+      {
+        "type": "research",
+        "id": "pmid-42251699"
+      },
+      {
+        "type": "trial",
+        "id": "kyv101-ms-phase1"
+      }
+    ]
+  },
+  {
+    "id": "event-feed-42223209",
+    "date": "2026-06-01",
+    "event_type": "研究发布",
+    "title": "进展性系统性硬化症CAR-T临床与蛋白组学研究更新",
+    "summary": "研究把临床改善与多组学变化放在同一分析框架内，增强了机制解释价值。",
+    "impact": "SSc方向的判断从单纯病例应答，向临床终点与生物学证据整合推进。",
+    "priority": "高",
+    "topic": "SSc",
+    "status": "已审核",
+    "source_label": "PubMed",
+    "source_url": "https://pubmed.ncbi.nlm.nih.gov/42223209/",
+    "entities": [
+      {
+        "type": "research",
+        "id": "pmid-42223209"
+      },
+      {
+        "type": "trial",
+        "id": "relma-autoimmune-ssc"
+      }
+    ]
+  },
+  {
+    "id": "event-feed-42167622",
+    "date": "2026-05-20",
+    "event_type": "研究发布",
+    "title": "自免CAR-T与CAR-NK系统综述进入综合证据层",
+    "summary": "系统综述为跨病种疗效、安全性和持久缓解提供更高层级的汇总视角。",
+    "impact": "后续单项研究可在统一证据框架下比较，减少只看亮眼病例的偏差。",
+    "priority": "高",
+    "topic": "跨病种",
+    "status": "已审核",
+    "source_label": "PubMed",
+    "source_url": "https://pubmed.ncbi.nlm.nih.gov/42167622/",
+    "entities": [
+      {
+        "type": "research",
+        "id": "pmid-42167622"
+      },
+      {
+        "type": "trial",
+        "id": "academic-cd19-autoimmune-series"
+      }
+    ]
+  },
+  {
+    "id": "event-feed-42286319",
+    "date": "2026-06-12",
+    "event_type": "研究发布",
+    "title": "MS中的CAR-T机会与挑战专题综述更新",
+    "summary": "综述集中讨论了机制依据、患者选择、毒性管理和长期随访要求。",
+    "impact": "MS赛道的评价维度从是否可行扩展到终点、持续性和实施复杂度。",
+    "priority": "中",
+    "topic": "MS",
+    "status": "已审核",
+    "source_label": "PubMed",
+    "source_url": "https://pubmed.ncbi.nlm.nih.gov/42286319/",
+    "entities": [
+      {
+        "type": "research",
+        "id": "pmid-42286319"
+      },
+      {
+        "type": "trial",
+        "id": "kyv101-ms-phase1"
+      }
+    ]
+  },
+  {
+    "id": "event-feed-42171443",
+    "date": "2026-05-01",
+    "event_type": "研究发布",
+    "title": "僵人谱系障碍长期预后资料纳入疾病背景池",
+    "summary": "自然病程与长期预后资料可用于界定未来细胞治疗研究的真实临床需求。",
+    "impact": "当前属于疾病背景证据，不应直接作为CAR-T疗效线索解读。",
+    "priority": "低",
+    "topic": "SPS",
+    "status": "已审核",
+    "source_label": "PubMed",
+    "source_url": "https://pubmed.ncbi.nlm.nih.gov/42171443/",
+    "entities": [
+      {
+        "type": "research",
+        "id": "pmid-42171443"
+      }
+    ]
+  },
+  {
+    "id": "event-feed-42295377",
+    "date": "2026-06-15",
+    "event_type": "研究发布",
+    "title": "MS新兴治疗策略综述补充竞品治疗背景",
+    "summary": "将CAR-T放回多种创新和靶向治疗路线中比较，有助于判断其差异化价值。",
+    "impact": "竞争分析需要同时考虑疗效深度、风险、治疗可及性和替代方案成熟度。",
+    "priority": "中",
+    "topic": "MS",
+    "status": "已审核",
+    "source_label": "PubMed",
+    "source_url": "https://pubmed.ncbi.nlm.nih.gov/42295377/",
+    "entities": [
+      {
+        "type": "research",
+        "id": "pmid-42295377"
+      }
+    ]
+  },
+  {
+    "id": "event-monitor-kyv101",
+    "date": "2026-07-10",
+    "event_type": "试验监测",
+    "title": "KYV-101 MS项目设为高优先级持续跟踪",
+    "summary": "工作台将该项目的疾病活动、B细胞重建、感染与神经毒性列为后续更新轴。",
+    "impact": "这是内部监测节点，不代表试验状态在当日发生外部变化。",
+    "priority": "高",
+    "topic": "MS",
+    "status": "持续跟踪",
+    "source_label": "内部监测",
+    "source_url": "",
+    "entities": [
+      {
+        "type": "company",
+        "id": "kyverna-kyv101"
+      },
+      {
+        "type": "trial",
+        "id": "kyv101-ms-phase1"
+      },
+      {
+        "type": "safety",
+        "id": "signal-neurotoxicity"
+      }
+    ]
+  },
+  {
+    "id": "event-monitor-descartes",
+    "date": "2026-07-10",
+    "event_type": "试验监测",
+    "title": "Descartes-08 MG项目进入比较性证据观察位",
+    "summary": "重点等待重复给药、应答持续时间和对照设计可解释性信息。",
+    "impact": "mRNA CAR-T的判断重点将从短期安全性扩展到持久性与实际执行优势。",
+    "priority": "高",
+    "topic": "MG",
+    "status": "重点观察",
+    "source_label": "内部监测",
+    "source_url": "",
+    "entities": [
+      {
+        "type": "company",
+        "id": "cartesian-descartes08"
+      },
+      {
+        "type": "trial",
+        "id": "descartes08-mg-rct"
+      }
+    ]
+  },
+  {
+    "id": "event-qh103-registration",
+    "date": "2026-05-12",
+    "event_type": "试验更新",
+    "title": "QH103神经免疫Phase 1试验更新为Recruiting",
+    "summary": "NCT07526493评估通用型CD19 CAR-γδT治疗MS、NMOSD、AE、CIDP、MG、MOGAD和IIM。",
+    "impact": "中国神经免疫细胞治疗从零散线索进入可追踪的注册试验对象，并引入通用型γδT技术路线。",
+    "priority": "高",
+    "topic": "NMOSD / AE",
+    "status": "Recruiting",
+    "source_label": "ClinicalTrials.gov",
+    "source_url": "https://clinicaltrials.gov/study/NCT07526493",
+    "entities": [
+      {
+        "type": "company",
+        "id": "tongji-qh103"
+      },
+      {
+        "type": "trial",
+        "id": "qh103-neuro-autoimmune"
+      }
+    ]
+  },
+  {
+    "id": "event-safety-infection",
+    "date": "2026-07-10",
+    "event_type": "安全监测",
+    "title": "严重感染与免疫重建设为跨试验共性观察轴",
+    "summary": "既往免疫抑制、清淋、B细胞清除和免疫重建将被放在同一时间轴解释。",
+    "impact": "后续新增试验数据时，需要同步补感染类型、病原学、住院及预防策略。",
+    "priority": "高",
+    "topic": "跨病种",
+    "status": "持续跟踪",
+    "source_label": "内部监测",
+    "source_url": "",
+    "entities": [
+      {
+        "type": "safety",
+        "id": "signal-infection"
+      },
+      {
+        "type": "safety",
+        "id": "signal-hypogammaglobulinemia"
+      }
+    ]
+  },
+  {
+    "id": "event-safety-longterm",
+    "date": "2026-07-10",
+    "event_type": "安全监测",
+    "title": "长期恶性肿瘤风险进入独立监管观察位",
+    "summary": "自免患者预期生存期较长，长期随访完整性和克隆性事件需要单列追踪。",
+    "impact": "短期缓解信号不能覆盖多年风险判断，详情页将保留长期安全关联。",
+    "priority": "高",
+    "topic": "跨病种",
+    "status": "监管关注",
+    "source_label": "内部监测",
+    "source_url": "",
+    "entities": [
+      {
+        "type": "safety",
+        "id": "signal-secondary-malignancy"
+      }
+    ]
+  },
+  {
+    "id": "event-feed-41514039",
+    "date": "2026-01-09",
+    "event_type": "研究发布",
+    "title": "Descartes-08 MG随机IIb期生物标志物分析发表于Nature Medicine",
+    "summary": "安慰剂对照IIb期研究提供BCMA靶向mRNA CAR-T的探索性机制证据，并补强后续Phase 3路线的证据背景。",
+    "impact": "MG细胞治疗评价从单臂可行性进一步进入随机比较和机制验证阶段。",
+    "priority": "高",
+    "topic": "MG",
+    "status": "已审核",
+    "source_label": "PubMed",
+    "source_url": "https://pubmed.ncbi.nlm.nih.gov/41514039/",
+    "entities": [
+      {
+        "type": "research",
+        "id": "pmid-41514039"
+      },
+      {
+        "type": "trial",
+        "id": "descartes08-mg-rct"
+      }
+    ]
+  },
+  {
+    "id": "event-nct06939166-update",
+    "date": "2025-12-15",
+    "event_type": "试验更新",
+    "title": "通用异体CD19/BCMA CAR-T神经免疫试验维持Recruiting",
+    "summary": "NCT06939166计划入组12例NMOSD、MG、MS、CIDP或自身免疫性脑炎患者，采用清淋后单次输注。",
+    "impact": "中国神经免疫CAR-T版图新增双靶点、通用异体路线，可与QH103的通用CAR-γδT路线比较。",
+    "priority": "高",
+    "topic": "NMOSD / MG / MS",
+    "status": "Recruiting",
+    "source_label": "ClinicalTrials.gov",
+    "source_url": "https://clinicaltrials.gov/study/NCT06939166",
+    "entities": [
+      {
+        "type": "company",
+        "id": "tianjin-xiniao-ucar"
+      },
+      {
+        "type": "trial",
+        "id": "tianjin-ucar19bcma-neuro"
+      }
+    ]
+  },
+  {
+    "id": "event-nct06688435-update",
+    "date": "2025-08-06",
+    "event_type": "试验更新",
+    "title": "SYS6020无清淋BCMA mRNA CAR-T MG试验更新",
+    "summary": "NCT06688435计划入组50例难治性全身型MG患者，采用无清淋、三次重复给药的LNP-mRNA瞬时CAR-T策略。",
+    "impact": "该方案为Descartes-08之外的BCMA mRNA CAR-T中国路线，需重点观察注册信息新鲜度和应答持续性。",
+    "priority": "高",
+    "topic": "MG",
+    "status": "Recruiting（注册信息较旧）",
+    "source_label": "ClinicalTrials.gov",
+    "source_url": "https://clinicaltrials.gov/study/NCT06688435",
+    "entities": [
+      {
+        "type": "company",
+        "id": "cspc-sys6020"
+      },
+      {
+        "type": "trial",
+        "id": "sys6020-mg-phase1"
+      }
+    ]
+  },
+  {
+    "id": "event-kite363-update",
+    "date": "2026-07-01",
+    "event_type": "试验更新",
+    "title": "KITE-363双靶点神经免疫篮式试验更新",
+    "summary": "NCT07304154正在招募，覆盖MS、MG和CIDP，计划入组52例。",
+    "impact": "Kite/Gilead正式进入跨病种神经免疫CAR-T竞争。",
+    "priority": "高",
+    "topic": "MS / MG / CIDP",
+    "status": "Recruiting",
+    "source_label": "ClinicalTrials.gov",
+    "source_url": "https://clinicaltrials.gov/study/NCT07304154",
+    "entities": [
+      {
+        "type": "company",
+        "id": "gilead-kite363"
+      },
+      {
+        "type": "trial",
+        "id": "kite363-neuro-phase1"
+      }
+    ]
+  },
+  {
+    "id": "event-cc97540-update",
+    "date": "2026-07-01",
+    "event_type": "试验更新",
+    "title": "Breakfree-2扩大MS与MG的NEX-T CAR-T证据布局",
+    "summary": "NCT06220201维持Recruiting，计划入组120例RMS、PMS或难治MG患者。",
+    "impact": "该研究成为当前规模较大的产业化神经免疫CAR-T早期试验之一。",
+    "priority": "高",
+    "topic": "MS / MG",
+    "status": "Recruiting",
+    "source_label": "ClinicalTrials.gov",
+    "source_url": "https://clinicaltrials.gov/study/NCT06220201",
+    "entities": [
+      {
+        "type": "company",
+        "id": "bms-cc97540"
+      },
+      {
+        "type": "trial",
+        "id": "cc97540-breakfree2"
+      }
+    ]
+  },
+  {
+    "id": "event-ytb323-update",
+    "date": "2026-06-26",
+    "event_type": "试验更新",
+    "title": "Novartis YTB323 MG I/II期试验更新",
+    "summary": "NCT06704269正在招募15例治疗抵抗性全身型MG患者。",
+    "impact": "快速制造CD19 CAR-T路线新增大型药企临床验证样本。",
+    "priority": "高",
+    "topic": "MG",
+    "status": "Recruiting",
+    "source_label": "ClinicalTrials.gov",
+    "source_url": "https://clinicaltrials.gov/study/NCT06704269",
+    "entities": [
+      {
+        "type": "company",
+        "id": "novartis-ytb323"
+      },
+      {
+        "type": "trial",
+        "id": "ytb323-mg-phase12"
+      }
+    ]
+  },
+  {
+    "id": "event-nct07305116-update",
+    "date": "2026-02-03",
+    "event_type": "试验更新",
+    "title": "浙江大学儿童医院通用异体CD19/BCMA CAR-T自免试验维持Recruiting",
+    "summary": "NCT07305116计划入组15例B细胞介导自身免疫病患者，覆盖SLE、SSc、AAV、IgAN和耐多药肾病综合征。",
+    "impact": "新增一个覆盖多病种的中国异体双靶点CAR-T正式注册对象。",
+    "priority": "高",
+    "topic": "跨病种",
+    "status": "Recruiting",
+    "source_label": "ClinicalTrials.gov",
+    "source_url": "https://clinicaltrials.gov/study/NCT07305116",
+    "entities": [
+      {
+        "type": "company",
+        "id": "zjuch-ucar19bcma"
+      },
+      {
+        "type": "trial",
+        "id": "zju-ucar19bcma-autoimmune"
+      }
+    ]
+  },
+  {
+    "id": "event-nct07523282-update",
+    "date": "2026-04-14",
+    "event_type": "试验更新",
+    "title": "HN2302自身免疫病试验登记为尚未招募",
+    "summary": "NCT07523282计划在合肥开展12例Phase 1；官方注册库仅在干预别名中把HN2302标注为in vivo CAR-T。",
+    "impact": "为中国自身免疫in vivo CAR-T路线新增可追踪项目，但产品定义仍需后续官方补充。",
+    "priority": "高",
+    "topic": "跨病种",
+    "status": "Not yet recruiting",
+    "source_label": "ClinicalTrials.gov",
+    "source_url": "https://clinicaltrials.gov/study/NCT07523282",
+    "entities": [
+      {
+        "type": "company",
+        "id": "magicrna-hn2302"
+      },
+      {
+        "type": "trial",
+        "id": "magicrna-hn2302-autoimmune"
+      }
+    ]
+  },
+  {
+    "id": "event-nct06626919-update",
+    "date": "2026-02-25",
+    "event_type": "试验更新",
+    "title": "Arcellx把BCMA CAR-T拓展至重症肌无力",
+    "summary": "NCT06626919正在招募，评估anito-cel用于非肿瘤浆细胞相关疾病，重点包括MG。",
+    "impact": "MG赛道新增另一条BCMA CAR-T产业化路线，可与mRNA CAR-T和中国项目对照。",
+    "priority": "高",
+    "topic": "MG",
+    "status": "Recruiting",
+    "source_label": "ClinicalTrials.gov",
+    "source_url": "https://clinicaltrials.gov/study/NCT06626919",
+    "entities": [
+      {
+        "type": "company",
+        "id": "arcellx-anitocel"
+      },
+      {
+        "type": "trial",
+        "id": "arcellx-anitocel-mg-phase1"
+      }
+    ]
+  },
+  {
+    "id": "event-nct07339540-update",
+    "date": "2026-01-14",
+    "event_type": "试验更新",
+    "title": "同济V001-BCMA体内CAR-T自身免疫试验维持Recruiting",
+    "summary": "NCT07339540计划入组45例，官方描述明确该慢病毒载体在体内定向转导T细胞形成CAR-T。",
+    "impact": "体内CAR-T路线在中国自身免疫病进入正式注册试验。",
+    "priority": "高",
+    "topic": "跨病种",
+    "status": "Recruiting",
+    "source_label": "ClinicalTrials.gov",
+    "source_url": "https://clinicaltrials.gov/study/NCT07339540",
+    "entities": [
+      {
+        "type": "company",
+        "id": "tongji-v001bcma"
+      },
+      {
+        "type": "trial",
+        "id": "tongji-v001bcma-autoimmune"
+      }
+    ]
+  },
+  {
+    "id": "event-nct06941129-update",
+    "date": "2025-09-29",
+    "event_type": "试验更新",
+    "title": "血研所异体CD19/BCMA CAR-T多病种自免试验仍显示Recruiting",
+    "summary": "NCT06941129覆盖SLE、SSc、IIM、AAV及血液学相关自身免疫适应症，但注册库已较久未刷新。",
+    "impact": "为中国异体双靶点自免项目新增一个多病种注册样本，同时带来信息新鲜度风险。",
+    "priority": "高",
+    "topic": "跨病种",
+    "status": "Recruiting（注册信息较旧）",
+    "source_label": "ClinicalTrials.gov",
+    "source_url": "https://clinicaltrials.gov/study/NCT06941129",
+    "entities": [
+      {
+        "type": "company",
+        "id": "ihematology-xiniao-ucar"
+      },
+      {
+        "type": "trial",
+        "id": "ihematology-xiniao-ucar-autoimmune"
+      }
+    ]
+  },
+  {
+    "id": "event-nct07155369-update",
+    "date": "2025-09-04",
+    "event_type": "试验更新",
+    "title": "徐州异体CD19/BCMA CAR-T自免试验转为Active, not recruiting",
+    "summary": "NCT07155369面向SLE和SSc，官方状态为Active, not recruiting，且注册信息较久未刷新。",
+    "impact": "项目可能进入结果沉淀阶段，但当前缺少可公开中期数据。",
+    "priority": "中",
+    "topic": "SSc",
+    "status": "Active, not recruiting（注册信息较旧）",
+    "source_label": "ClinicalTrials.gov",
+    "source_url": "https://clinicaltrials.gov/study/NCT07155369",
+    "entities": [
+      {
+        "type": "company",
+        "id": "xuzhou-xiniao-ucar"
+      },
+      {
+        "type": "trial",
+        "id": "xuzhou-xiniao-ucar-autoimmune"
+      }
+    ]
+  },
+  {
+    "id": "event-nct06828042-update",
+    "date": "2025-08-20",
+    "event_type": "试验更新",
+    "title": "QH103扩展至广义难治自身免疫病Phase 1/2",
+    "summary": "NCT06828042由北医三院发起，覆盖SLE、SSc、Sjogren syndrome、AAV、IIM和APS。",
+    "impact": "QH103不再局限于神经免疫适应症，通用型CAR-γδT路线的外推边界值得持续观察。",
+    "priority": "高",
+    "topic": "跨病种",
+    "status": "Recruiting（注册信息较旧）",
+    "source_label": "ClinicalTrials.gov",
+    "source_url": "https://clinicaltrials.gov/study/NCT06828042",
+    "entities": [
+      {
+        "type": "company",
+        "id": "pku3-qh103"
+      },
+      {
+        "type": "trial",
+        "id": "pku3-qh103-autoimmune"
+      }
+    ]
+  },
+  {
+    "id": "event-nct06980597-update",
+    "date": "2025-05-20",
+    "event_type": "试验更新",
+    "title": "OL-108异体CAR-T自免试验保持Recruiting",
+    "summary": "NCT06980597计划入组44例，并把PK/PD纳入主要观察维度，但公开注册字段已较久未更新。",
+    "impact": "异体CAR-T在中国自免赛道的项目数量继续增加。",
+    "priority": "高",
+    "topic": "跨病种",
+    "status": "Recruiting（注册信息较旧）",
+    "source_label": "ClinicalTrials.gov",
+    "source_url": "https://clinicaltrials.gov/study/NCT06980597",
+    "entities": [
+      {
+        "type": "company",
+        "id": "gobroad-ol108"
+      },
+      {
+        "type": "trial",
+        "id": "gobroad-ol108-autoimmune"
+      }
+    ]
+  },
+  {
+    "id": "event-nct06978738-update",
+    "date": "2025-05-18",
+    "event_type": "试验更新",
+    "title": "常州异体CD19/BCMA CAR-T广谱自免项目仍未招募",
+    "summary": "NCT06978738覆盖SLE、MG、SSc、AAV、IIM和IgG4-RD等病种，但当前仍为Not yet recruiting。",
+    "impact": "提示广谱多病种设计不一定快速进入执行阶段。",
+    "priority": "中",
+    "topic": "跨病种",
+    "status": "Not yet recruiting（注册信息较旧）",
+    "source_label": "ClinicalTrials.gov",
+    "source_url": "https://clinicaltrials.gov/study/NCT06978738",
+    "entities": [
+      {
+        "type": "company",
+        "id": "changzhou-ucar19bcma"
+      },
+      {
+        "type": "trial",
+        "id": "changzhou-ucar19bcma-autoimmune"
+      }
+    ]
+  },
+  {
+    "id": "event-nct06794008-update",
+    "date": "2025-04-02",
+    "event_type": "试验更新",
+    "title": "北大人民医院BCMA-CD19双靶点CAR-T自免项目已进入Phase 2",
+    "summary": "NCT06794008覆盖9类难治自身免疫病，计划入组50例，但注册库更新停留在2025年4月。",
+    "impact": "双靶点CAR-T在中国自身免疫病的开发成熟度高于部分Phase 1项目。",
+    "priority": "高",
+    "topic": "跨病种",
+    "status": "Recruiting（注册信息较旧）",
+    "source_label": "ClinicalTrials.gov",
+    "source_url": "https://clinicaltrials.gov/study/NCT06794008",
+    "entities": [
+      {
+        "type": "company",
+        "id": "pkuph-bcmacd19"
+      },
+      {
+        "type": "trial",
+        "id": "pkuph-bcmacd19-autoimmune-phase2"
+      }
+    ]
+  },
+  {
+    "id": "event-nct06056921-update",
+    "date": "2023-09-28",
+    "event_type": "试验更新",
+    "title": "重庆Precision早期CD19 CAR-T自免项目仍无公开刷新",
+    "summary": "NCT06056921是较早的中国自免CD19 CAR-T注册项目之一，但自2023年9月后未见官方更新。",
+    "impact": "该项目可以作为早期中国自免CAR-T执行与披露完整性的观察对象。",
+    "priority": "中",
+    "topic": "跨病种",
+    "status": "Recruiting（注册信息极旧）",
+    "source_label": "ClinicalTrials.gov",
+    "source_url": "https://clinicaltrials.gov/study/NCT06056921",
+    "entities": [
+      {
+        "type": "company",
+        "id": "precision-cd19"
+      },
+      {
+        "type": "trial",
+        "id": "precision-cd19-autoimmune-phase1"
+      }
+    ]
+  }
+]

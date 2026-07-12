@@ -1,0 +1,4260 @@
+{
+  "generated_at": "2026-07-12T02:32:37.167Z",
+  "policy": "Candidates are discovery leads only. They must be verified against primary records before entering production datasets.",
+  "query_window": "Publications since 2025-01-01; current ClinicalTrials.gov records",
+  "summary": {
+    "candidates": 171,
+    "research": 91,
+    "trials": 80,
+    "immediate_review": 0,
+    "watchlist": 71,
+    "background": 11,
+    "low_relevance": 89,
+    "source_failures": 0
+  },
+  "source_runs": [
+    {
+      "source": "NCBI PubMed",
+      "status": "ok",
+      "results_scanned": 100
+    },
+    {
+      "source": "ClinicalTrials.gov",
+      "status": "ok",
+      "results_scanned": 100,
+      "total_results": 328
+    }
+  ],
+  "candidates": [
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT06154252",
+      "title": "A Phase 1/2, Open-Label Study to Evaluate the Safety and Efficacy of Autologous CD19-specific Chimeric Antigen Receptor T Cells (CABA-201) in Subjects With Active Idiopathic Inflammatory Myopathy or Juvenile Idiopathic Inflammatory Myopathy",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT06154252",
+      "status": "RECRUITING",
+      "last_update_posted": "2026-07-08",
+      "phase": [
+        "PHASE2",
+        "PHASE3"
+      ],
+      "enrollment": 74,
+      "sponsor": "Cabaletta Bio",
+      "conditions": [
+        "Idiopathic Inflammatory Myopathy",
+        "Dermatomyositis",
+        "Anti-Synthetase Syndrome",
+        "Immune-Mediated Necrotizing Myopathy",
+        "Juvenile Dermatomyositis",
+        "Juvenile Polymyositis",
+        "Juvenile Idiopathic Inflammatory Myopathy (JIIM)",
+        "Juvenile Myositis"
+      ],
+      "matched_diseases": [
+        "myositis"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 8,
+      "triage_tier": "持续观察",
+      "triage_reasons": [
+        "正式注册试验",
+        "命中1个重点病种",
+        "当前处于活跃状态"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT07038447",
+      "title": "A Phase 1 Open-label, Multiregional, Multicenter, Basket Study Evaluating the Safety and Efficacy of KITE-363, an Autologous Anti-CD19/CD20 CAR T-cell Therapy in Participants With Refractory Autoimmune Diseases",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT07038447",
+      "status": "ENROLLING_BY_INVITATION",
+      "last_update_posted": "2026-06-16",
+      "phase": [
+        "PHASE1"
+      ],
+      "enrollment": 52,
+      "sponsor": "Kite, A Gilead Company",
+      "conditions": [
+        "Systemic Lupus Erythematosus",
+        "Lupus Nephritis",
+        "Systemic Sclerosis",
+        "Idiopathic Inflammatory Myopathy"
+      ],
+      "matched_diseases": [
+        "systemic lupus",
+        "systemic sclerosis"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 8,
+      "triage_tier": "持续观察",
+      "triage_reasons": [
+        "正式注册试验",
+        "命中2个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT06839976",
+      "title": "CD19-Directed Chimeric Antigen Receptor Autologous T Cells (CART19) for Adolescents and Young Adults With Systemic Lupus Erythematosus (SLE)",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT06839976",
+      "status": "RECRUITING",
+      "last_update_posted": "2026-06-15",
+      "phase": [
+        "PHASE1",
+        "PHASE2"
+      ],
+      "enrollment": 24,
+      "sponsor": "Children's Hospital of Philadelphia",
+      "conditions": [
+        "SLE",
+        "Systemic Lupus Erythematosus (SLE)",
+        "CAR T Cell",
+        "CART19",
+        "Cell Therapy",
+        "Lupus",
+        "Lupus Nephritis (LN)"
+      ],
+      "matched_diseases": [
+        "systemic lupus"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 8,
+      "triage_tier": "持续观察",
+      "triage_reasons": [
+        "正式注册试验",
+        "命中1个重点病种",
+        "当前处于活跃状态"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT07629596",
+      "title": "Evaluation of Safety, Pharmacokinetics and Pharmacodynamics of Arnovie101, an mRNA-LNP-Based In Vivo CAR-T Therapy, for the Treatment of B Cell-Mediated Autoimmune Diseases (Systemic Lupus Erythematosus and Autoimmune Hemolytic Anemia)",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT07629596",
+      "status": "RECRUITING",
+      "last_update_posted": "2026-06-05",
+      "phase": [
+        "EARLY_PHASE1"
+      ],
+      "enrollment": 5,
+      "sponsor": "Circunited BioPharma (Shenzhen) Co., Ltd.",
+      "conditions": [
+        "Systemic Lupus Erythematosus",
+        "Autoimmune Hemolytic Anemia (AIHA)"
+      ],
+      "matched_diseases": [
+        "systemic lupus"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 8,
+      "triage_tier": "持续观察",
+      "triage_reasons": [
+        "正式注册试验",
+        "命中1个重点病种",
+        "当前处于活跃状态"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT07303790",
+      "title": "An Early Exploratory Study to Assess the Tolerability and Safety of GC012F in Patients With Multiple Sclerosis",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT07303790",
+      "status": "RECRUITING",
+      "last_update_posted": "2026-05-22",
+      "phase": [
+        "EARLY_PHASE1"
+      ],
+      "enrollment": 9,
+      "sponsor": "Daishi Tian",
+      "conditions": [
+        "Multiple Sclerosis"
+      ],
+      "matched_diseases": [
+        "multiple sclerosis"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 8,
+      "triage_tier": "持续观察",
+      "triage_reasons": [
+        "正式注册试验",
+        "命中1个重点病种",
+        "当前处于活跃状态"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT07596680",
+      "title": "Clinical Study on the Safety, Efficacy and Pharmacokinetics of Universal CD19/BCMA-Targeted CAR-T Cell Injection in Patients With Autoantibody-Mediated Autoimmune Diseases",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT07596680",
+      "status": "NOT_YET_RECRUITING",
+      "last_update_posted": "2026-05-19",
+      "phase": [
+        "EARLY_PHASE1"
+      ],
+      "enrollment": 30,
+      "sponsor": "Nanjing Bioheng Biotech Co., Ltd.",
+      "conditions": [
+        "SLE - Systemic Lupus Erythematosus",
+        "Systemic Sclerosis",
+        "ANCA Associated Vasculitis",
+        "Idiopathic Inflammatory Myopathies",
+        "Sjögren Syndrome"
+      ],
+      "matched_diseases": [
+        "systemic lupus",
+        "systemic sclerosis"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 8,
+      "triage_tier": "持续观察",
+      "triage_reasons": [
+        "正式注册试验",
+        "命中2个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT06359041",
+      "title": "RESET-MG: A Phase 1/2, Open-Label Study to Evaluate the Safety and Efficacy of Autologous CD19-specific Chimeric Antigen Receptor T Cells (CABA-201) in Participants With Generalized Myasthenia Gravis",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT06359041",
+      "status": "ACTIVE_NOT_RECRUITING",
+      "last_update_posted": "2026-05-18",
+      "phase": [
+        "PHASE1",
+        "PHASE2"
+      ],
+      "enrollment": 12,
+      "sponsor": "Cabaletta Bio",
+      "conditions": [
+        "Generalized Myasthenia Gravis (gMG)"
+      ],
+      "matched_diseases": [
+        "myasthenia gravis"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 8,
+      "triage_tier": "持续观察",
+      "triage_reasons": [
+        "正式注册试验",
+        "命中1个重点病种",
+        "当前处于活跃状态"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT06328777",
+      "title": "A Phase 1/2, Open-Label Study to Evaluate the Safety and Efficacy of Autologous CD19-specific Chimeric Antigen Receptor T Cells (CABA-201) in Subjects With Systemic Sclerosis",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT06328777",
+      "status": "RECRUITING",
+      "last_update_posted": "2026-05-14",
+      "phase": [
+        "PHASE1",
+        "PHASE2"
+      ],
+      "enrollment": 12,
+      "sponsor": "Cabaletta Bio",
+      "conditions": [
+        "Systemic Sclerosis",
+        "Scleroderma"
+      ],
+      "matched_diseases": [
+        "systemic sclerosis"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 8,
+      "triage_tier": "持续观察",
+      "triage_reasons": [
+        "正式注册试验",
+        "命中1个重点病种",
+        "当前处于活跃状态"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT07178431",
+      "title": "An Open Label Phase I/IIa, Multicenter, Interventional Single-arm Trial of MB-CART 2019.1 in Patients With Refractory Multiple Sclerosis (MS)",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT07178431",
+      "status": "RECRUITING",
+      "last_update_posted": "2026-05-11",
+      "phase": [
+        "PHASE1",
+        "PHASE2"
+      ],
+      "enrollment": 26,
+      "sponsor": "Miltenyi Biomedicine GmbH",
+      "conditions": [
+        "Multiple Sclerosis",
+        "CAR T Cell Therapy"
+      ],
+      "matched_diseases": [
+        "multiple sclerosis"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 8,
+      "triage_tier": "持续观察",
+      "triage_reasons": [
+        "正式注册试验",
+        "命中1个重点病种",
+        "当前处于活跃状态"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT06925022",
+      "title": "Educational Programs Based on Healthy Habits to Improve Quality of Life and Psychosocial Profile in Women With Neurodegenerative Diseases: The ADVICE Protocol Study",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT06925022",
+      "status": "ACTIVE_NOT_RECRUITING",
+      "last_update_posted": "2026-03-24",
+      "phase": [
+        "NA"
+      ],
+      "enrollment": 20,
+      "sponsor": "Universidad de Almeria",
+      "conditions": [
+        "Multiple Sclerosis (MS) - Relapsing-remitting"
+      ],
+      "matched_diseases": [
+        "multiple sclerosis"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 8,
+      "triage_tier": "持续观察",
+      "triage_reasons": [
+        "正式注册试验",
+        "命中1个重点病种",
+        "当前处于活跃状态"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT07413835",
+      "title": "A Study to Evaluate the Safety, Tolerability, and Preliminary Efficacy of HN2302 in Patients With Refractory Myasthenia Gravis",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT07413835",
+      "status": "RECRUITING",
+      "last_update_posted": "2026-03-18",
+      "phase": [
+        "NA"
+      ],
+      "enrollment": 6,
+      "sponsor": "The Affiliated Hospital of Xuzhou Medical University",
+      "conditions": [
+        "Refractory Myasthenia Gravis"
+      ],
+      "matched_diseases": [
+        "myasthenia gravis"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 8,
+      "triage_tier": "持续观察",
+      "triage_reasons": [
+        "正式注册试验",
+        "命中1个重点病种",
+        "当前处于活跃状态"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT07470151",
+      "title": "Exploratory Clinical Study of EVM18001 Injection in the Treatment of Active Refractory Systemic Lupus Erythematosus, Myasthenia Gravis and Scleroderma",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT07470151",
+      "status": "RECRUITING",
+      "last_update_posted": "2026-03-13",
+      "phase": [
+        "NA"
+      ],
+      "enrollment": 12,
+      "sponsor": "Union Hospital, Tongji Medical College, Huazhong University of Science and Technology",
+      "conditions": [
+        "System Lupus Erythematosus(SLE)",
+        "Scleroderma",
+        "Myasthenia Gravis (MG)"
+      ],
+      "matched_diseases": [
+        "myasthenia gravis"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 8,
+      "triage_tier": "持续观察",
+      "triage_reasons": [
+        "正式注册试验",
+        "命中1个重点病种",
+        "当前处于活跃状态"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT06913608",
+      "title": "A Phase lb Open-Label Study Evaluating the Safety and Efficacy of the Combination of CLBR00l, an Engineered Autologous T Cell Product, and SWI019, a CD19-directed Antibody-based Biologic With or Without Lymphodepletion in Subjects With Autoimmune Disorders Including Systemic Lupus Erythematosus, Systemic Sclerosis, or Idiopathic Inflammatory Myositis",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT06913608",
+      "status": "WITHDRAWN",
+      "last_update_posted": "2026-03-05",
+      "phase": [
+        "PHASE1"
+      ],
+      "enrollment": 0,
+      "sponsor": "Calibr, a division of Scripps Research",
+      "conditions": [
+        "Systemic Lupus Erythematosus (SLE)",
+        "Systemic Sclerosis (SSc)",
+        "Idiopathic Inflammatory Myopathy (IIM)"
+      ],
+      "matched_diseases": [
+        "systemic lupus",
+        "systemic sclerosis"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 8,
+      "triage_tier": "持续观察",
+      "triage_reasons": [
+        "正式注册试验",
+        "命中2个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT06775912",
+      "title": "Clinical Study on Targeted CD19/BCMA CAR-T Therapy for Autoimmune Diseases",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT06775912",
+      "status": "RECRUITING",
+      "last_update_posted": "2026-02-02",
+      "phase": [
+        "EARLY_PHASE1"
+      ],
+      "enrollment": 18,
+      "sponsor": "Nanjing Bioheng Biotech Co., Ltd.",
+      "conditions": [
+        "SLE",
+        "Systemic Sclerosis",
+        "IIM",
+        "NMOSD",
+        "MS",
+        "MG",
+        "ANCA Associated Vasculitis (AAV)"
+      ],
+      "matched_diseases": [
+        "systemic sclerosis"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 8,
+      "triage_tier": "持续观察",
+      "triage_reasons": [
+        "正式注册试验",
+        "命中1个重点病种",
+        "当前处于活跃状态"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT07322718",
+      "title": "A Clinical Study to Evaluate the Safety, Tolerability and Preliminary Efficacy of the CD19-Targeting Circular RNA Product RXIM002 in Patients With Relapsed or Refractory B Cell-Mediated Autoimmune Diseases",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT07322718",
+      "status": "RECRUITING",
+      "last_update_posted": "2026-01-23",
+      "phase": [
+        "EARLY_PHASE1"
+      ],
+      "enrollment": 27,
+      "sponsor": "Ruijin Hospital",
+      "conditions": [
+        "Relapsed/Refractory B Cell-Mediated Autoimmune Diseases"
+      ],
+      "matched_diseases": [
+        "autoimmune disease"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 8,
+      "triage_tier": "持续观察",
+      "triage_reasons": [
+        "正式注册试验",
+        "命中1个重点病种",
+        "当前处于活跃状态"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT07355972",
+      "title": "A Clinical Study Exploring the Safety, Efficacy and Cellular Metabolic Dynamics of CT1195E Car-t Cell Injection in Refractory / Progressive Systemic Sclerosis (SSC)",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT07355972",
+      "status": "RECRUITING",
+      "last_update_posted": "2026-01-21",
+      "phase": [
+        "EARLY_PHASE1"
+      ],
+      "enrollment": 12,
+      "sponsor": "Union Hospital, Tongji Medical College, Huazhong University of Science and Technology",
+      "conditions": [
+        "SSc-Systemic Sclerosis"
+      ],
+      "matched_diseases": [
+        "systemic sclerosis"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 8,
+      "triage_tier": "持续观察",
+      "triage_reasons": [
+        "正式注册试验",
+        "命中1个重点病种",
+        "当前处于活跃状态"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT06892145",
+      "title": "Phase I Clinical Trial of CD19-targeting Chimeric Antigen Receptor T Lymphocyte (MC-1-50) for the Treatment of Refractory Adult Systemic Lupus Erythematosus(SLE)",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT06892145",
+      "status": "RECRUITING",
+      "last_update_posted": "2025-12-22",
+      "phase": [
+        "PHASE1"
+      ],
+      "enrollment": 12,
+      "sponsor": "Chongqing Precision Biotech Co., Ltd",
+      "conditions": [
+        "Systemic Lupus Erythematosus (SLE)",
+        "Refractory"
+      ],
+      "matched_diseases": [
+        "systemic lupus"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 8,
+      "triage_tier": "持续观察",
+      "triage_reasons": [
+        "正式注册试验",
+        "命中1个重点病种",
+        "当前处于活跃状态"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT06465147",
+      "title": "REACT-01: Reversing Autoimmunity Through Cell Therapy",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT06465147",
+      "status": "RECRUITING",
+      "last_update_posted": "2025-12-12",
+      "phase": [
+        "PHASE1"
+      ],
+      "enrollment": 12,
+      "sponsor": "Seattle Children's Hospital",
+      "conditions": [
+        "Systemic Lupus Erythematosus"
+      ],
+      "matched_diseases": [
+        "systemic lupus"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 8,
+      "triage_tier": "持续观察",
+      "triage_reasons": [
+        "正式注册试验",
+        "命中1个重点病种",
+        "当前处于活跃状态"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT07274059",
+      "title": "Clinical Study on the Safety and Efficacy of Allogeneic, Umbilical Cord Blood Derived CAR T-cell Therapy for Refractory Systemic Lupus Erythematosus",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT07274059",
+      "status": "RECRUITING",
+      "last_update_posted": "2025-12-10",
+      "phase": [
+        "EARLY_PHASE1"
+      ],
+      "enrollment": 48,
+      "sponsor": "Chengdu Ucello Biotechnology Co., Ltd.",
+      "conditions": [
+        "SLE - Systemic Lupus Erythematosus"
+      ],
+      "matched_diseases": [
+        "systemic lupus"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 8,
+      "triage_tier": "持续观察",
+      "triage_reasons": [
+        "正式注册试验",
+        "命中1个重点病种",
+        "当前处于活跃状态"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT06513429",
+      "title": "Clinical Study on Evaluating the Efficacy and Safety of IM19 CAR-T Cell Therapy in Patients With Refractory Systemic Lupus Erythematosus",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT06513429",
+      "status": "RECRUITING",
+      "last_update_posted": "2025-08-17",
+      "phase": [
+        "NA"
+      ],
+      "enrollment": 6,
+      "sponsor": "Peking University Third Hospital",
+      "conditions": [
+        "Refractory Systemic Lupus Erythematosus"
+      ],
+      "matched_diseases": [
+        "systemic lupus"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 8,
+      "triage_tier": "持续观察",
+      "triage_reasons": [
+        "正式注册试验",
+        "命中1个重点病种",
+        "当前处于活跃状态"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT07052565",
+      "title": "An Exploratory Clinical Study of Enhanced Autologous CAR-T Cell Injection (ECAR01) Targeting BCMA and CD19 in the Treatment of Refractory Autoimmune Diseases",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT07052565",
+      "status": "RECRUITING",
+      "last_update_posted": "2025-07-08",
+      "phase": [
+        "NA"
+      ],
+      "enrollment": 18,
+      "sponsor": "Anhui Provincial Hospital",
+      "conditions": [
+        "Autoimmune Diseases"
+      ],
+      "matched_diseases": [
+        "autoimmune disease"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 8,
+      "triage_tier": "持续观察",
+      "triage_reasons": [
+        "正式注册试验",
+        "命中1个重点病种",
+        "当前处于活跃状态"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT06298019",
+      "title": "Phase 1B, Open-Label Study of KYV-101, an Autologous Fully-Human Anti-CD19 Chimeric Antigen Receptor T-Cell (CD19 CAR T) Therapy, in Adult Patients With Treatment Refractory Dermatomyositis",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT06298019",
+      "status": "RECRUITING",
+      "last_update_posted": "2025-05-21",
+      "phase": [
+        "PHASE1"
+      ],
+      "enrollment": 21,
+      "sponsor": "Stanford University",
+      "conditions": [
+        "Dermatomyositis"
+      ],
+      "matched_diseases": [
+        "myositis"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 8,
+      "triage_tier": "持续观察",
+      "triage_reasons": [
+        "正式注册试验",
+        "命中1个重点病种",
+        "当前处于活跃状态"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT06010472",
+      "title": "An Exploratory Clinical Study of the Safety and Efficacy of Anti-CD19 Chimeric Antigen Receptor (CAR) Nature Killer Cells (KN5501) in the Treatment of Moderate to Severe Refractory Systemic Lupus Erythematosus (SLE)",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT06010472",
+      "status": "RECRUITING",
+      "last_update_posted": "2025-04-29",
+      "phase": [
+        "EARLY_PHASE1"
+      ],
+      "enrollment": 36,
+      "sponsor": "Changhai Hospital",
+      "conditions": [
+        "Systemic Lupus Erythematosus (SLE)"
+      ],
+      "matched_diseases": [
+        "systemic lupus"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 8,
+      "triage_tier": "持续观察",
+      "triage_reasons": [
+        "正式注册试验",
+        "命中1个重点病种",
+        "当前处于活跃状态"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT06934447",
+      "title": "Study of BCMA/CD70 Targeted Chimeric Antigen Receptor T (CAR- T) Therapy for Refractory Childhood-oneset Systemic Lupus Erythematosus",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT06934447",
+      "status": "RECRUITING",
+      "last_update_posted": "2025-04-25",
+      "phase": [
+        "PHASE1"
+      ],
+      "enrollment": 18,
+      "sponsor": "The Children's Hospital of Zhejiang University School of Medicine",
+      "conditions": [
+        "CAR T Cell Therapy",
+        "Systemic Lupus Erythematosus",
+        "BCMA"
+      ],
+      "matched_diseases": [
+        "systemic lupus"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 8,
+      "triage_tier": "持续观察",
+      "triage_reasons": [
+        "正式注册试验",
+        "命中1个重点病种",
+        "当前处于活跃状态"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT06503224",
+      "title": "An Exploratory Clinical Study of a Fourth-generation Autologous CAR-T Cell Injection (SCAR02) Targeting BCMA and CD19 for the Treatment of Refractory Autoimmune Diseases",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT06503224",
+      "status": "RECRUITING",
+      "last_update_posted": "2025-04-24",
+      "phase": [
+        "NA"
+      ],
+      "enrollment": 18,
+      "sponsor": "The First Affiliated Hospital of University of Science and Technology of China",
+      "conditions": [
+        "Autoimmune Diseases"
+      ],
+      "matched_diseases": [
+        "autoimmune disease"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 8,
+      "triage_tier": "持续观察",
+      "triage_reasons": [
+        "正式注册试验",
+        "命中1个重点病种",
+        "当前处于活跃状态"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT06691152",
+      "title": "Efficacy and Safety Study of CD19 Universal CAR T Cells in Refractory Systemic Lupus Erythematosus",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT06691152",
+      "status": "RECRUITING",
+      "last_update_posted": "2024-11-15",
+      "phase": [
+        "PHASE1"
+      ],
+      "enrollment": 18,
+      "sponsor": "The Children's Hospital of Zhejiang University School of Medicine",
+      "conditions": [
+        "Systemic Lupus Erythematosus"
+      ],
+      "matched_diseases": [
+        "systemic lupus"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 8,
+      "triage_tier": "持续观察",
+      "triage_reasons": [
+        "正式注册试验",
+        "命中1个重点病种",
+        "当前处于活跃状态"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT06569472",
+      "title": "Clinical Study of CD19 Targeting Chimeric Antigen Receptor T Lymphocytes (CAR-T) in the Treatment of Refractory Juvenile Dermatomyositis (RJDM)",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT06569472",
+      "status": "RECRUITING",
+      "last_update_posted": "2024-08-26",
+      "phase": [
+        "PHASE1"
+      ],
+      "enrollment": 10,
+      "sponsor": "Chongqing Precision Biotech Co., Ltd",
+      "conditions": [
+        "Juvenile Dermatomyositis"
+      ],
+      "matched_diseases": [
+        "myositis"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 8,
+      "triage_tier": "持续观察",
+      "triage_reasons": [
+        "正式注册试验",
+        "命中1个重点病种",
+        "当前处于活跃状态"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT06420154",
+      "title": "An Exploratory Clinical Study to Evaluating the Safety and Efficacy of Infusiing Anti-CD19-CAR-T Cells Injection (Anti-CD19-CAR-T Cells) in Patients With Relapsed/Refractory Autoimmune Diseases",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT06420154",
+      "status": "NOT_YET_RECRUITING",
+      "last_update_posted": "2024-05-17",
+      "phase": [
+        "EARLY_PHASE1"
+      ],
+      "enrollment": 9,
+      "sponsor": "First Affiliated Hospital of Wenzhou Medical University",
+      "conditions": [
+        "Systemic Lupus Erythematosus (SLE)",
+        "Sjogren's Syndrome",
+        "Systemic Sclerosis",
+        "Inflammatory Myopathy",
+        "ANCA Associated Vasculitis",
+        "Antiphospholipid Syndrome"
+      ],
+      "matched_diseases": [
+        "systemic lupus",
+        "systemic sclerosis"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 8,
+      "triage_tier": "持续观察",
+      "triage_reasons": [
+        "正式注册试验",
+        "命中2个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT06373081",
+      "title": "A Clinical Study on the Safety and Efficacy of Anti-CD19-CD3E-CAR-T Cells in the Treatment of Relapsed or Refractory Autoimmune Disease",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT06373081",
+      "status": "UNKNOWN",
+      "last_update_posted": "2024-04-18",
+      "phase": [
+        "NA"
+      ],
+      "enrollment": 6,
+      "sponsor": "Shanghai Changzheng Hospital",
+      "conditions": [
+        "Systemic Lupus Erythematosus (SLE)",
+        "Sjogren's Syndrome",
+        "Systemic Sclerosis",
+        "Inflammatory Myopathy",
+        "ANCA Associated Vasculitis",
+        "Antiphospholipid Syndrome"
+      ],
+      "matched_diseases": [
+        "systemic lupus",
+        "systemic sclerosis"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 8,
+      "triage_tier": "持续观察",
+      "triage_reasons": [
+        "正式注册试验",
+        "命中2个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT06361745",
+      "title": "Early Clinical Study of UTAA09 Injection in the Treatment of Relapsed/Refractory",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT06361745",
+      "status": "UNKNOWN",
+      "last_update_posted": "2024-04-15",
+      "phase": [
+        "NA"
+      ],
+      "enrollment": 10,
+      "sponsor": "PersonGen BioTherapeutics (Suzhou) Co., Ltd.",
+      "conditions": [
+        "Systemic Lupus Erythematosus",
+        "Idiopathic Inflammatory Myopathies",
+        "Systemic Sclerosis",
+        "IgG4 Related Disease",
+        "Primary Sjögren Syndrome"
+      ],
+      "matched_diseases": [
+        "systemic lupus",
+        "systemic sclerosis"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 8,
+      "triage_tier": "持续观察",
+      "triage_reasons": [
+        "正式注册试验",
+        "命中2个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT06279923",
+      "title": "Clinical Study of Targeting CD19-BAFF CAR-T Cells in the Treatment of Autoimmune Diseases",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT06279923",
+      "status": "RECRUITING",
+      "last_update_posted": "2024-04-09",
+      "phase": [
+        "EARLY_PHASE1"
+      ],
+      "enrollment": 45,
+      "sponsor": "Zhejiang University",
+      "conditions": [
+        "Autoimmune Diseases"
+      ],
+      "matched_diseases": [
+        "autoimmune disease"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 8,
+      "triage_tier": "持续观察",
+      "triage_reasons": [
+        "正式注册试验",
+        "命中1个重点病种",
+        "当前处于活跃状态"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT05239702",
+      "title": "A Clinical Study on the Safety and Effectiveness of Targeting CD7 Chimeric Antigen Receptor T Cells in the Treatment of Autoimmune Diseases",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT05239702",
+      "status": "UNKNOWN",
+      "last_update_posted": "2022-02-15",
+      "phase": [
+        "EARLY_PHASE1"
+      ],
+      "enrollment": 75,
+      "sponsor": "Zhejiang University",
+      "conditions": [
+        "Crohn Disease",
+        "Ulcerative Colitis",
+        "Dermatomyositis",
+        "Still Disease",
+        "Autoimmune Diseases"
+      ],
+      "matched_diseases": [
+        "myositis",
+        "autoimmune disease"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 8,
+      "triage_tier": "持续观察",
+      "triage_reasons": [
+        "正式注册试验",
+        "命中2个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT07493395",
+      "title": "SCLEROCAR: A Phase IIa Trial Evaluating the Efficacy of Anti-CD19 Chimeric Antigen Receptor Engineered T-Cells in Patients With Systemic Sclerosis (SSc) Resistant to Immunosuppressive Drugs",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT07493395",
+      "status": "RECRUITING",
+      "last_update_posted": "2026-06-22",
+      "phase": [
+        "PHASE2"
+      ],
+      "enrollment": 6,
+      "sponsor": "University Hospital, Montpellier",
+      "conditions": [
+        "Scleroderma, Systemic"
+      ],
+      "matched_diseases": [],
+      "review_status": "待人工核验",
+      "relevance_score": 6,
+      "triage_tier": "持续观察",
+      "triage_reasons": [
+        "正式注册试验",
+        "当前处于活跃状态"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT06518668",
+      "title": "A Phase 1 Study of NKX019, a CD19 Chimeric Antigen Receptor Natural Killer (CAR NK) Cell Therapy, in Subjects With Systemic Lupus Erythematosus",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT06518668",
+      "status": "ENROLLING_BY_INVITATION",
+      "last_update_posted": "2026-06-22",
+      "phase": [
+        "PHASE1"
+      ],
+      "enrollment": 6,
+      "sponsor": "Hospital for Special Surgery, New York",
+      "conditions": [
+        "Systemic Lupus Erythematosus"
+      ],
+      "matched_diseases": [
+        "systemic lupus"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 6,
+      "triage_tier": "持续观察",
+      "triage_reasons": [
+        "正式注册试验",
+        "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT07517536",
+      "title": "A Clinical Study to Evaluate the Safety and Efficacy of CHT105, an Allogeneic CAR-T Cell Injection Targeting CD19 and CD70, in Patients With Refractory Lupus Nephritis",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT07517536",
+      "status": "ENROLLING_BY_INVITATION",
+      "last_update_posted": "2026-06-18",
+      "phase": [
+        "NA"
+      ],
+      "enrollment": 14,
+      "sponsor": "The Affiliated Nanjing Drum Tower Hospital of Nanjing University Medical School",
+      "conditions": [
+        "Systemic Lupus Erythematosus",
+        "Lupus Nephritis"
+      ],
+      "matched_diseases": [
+        "systemic lupus"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 6,
+      "triage_tier": "持续观察",
+      "triage_reasons": [
+        "正式注册试验",
+        "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT07049081",
+      "title": "An Open-label Clinical Study to Evaluate the Safety, Tolerability, Pharmacokinetics and Pharmacodynamics of LUCAR-G79 in Subjects With Relapsed/Refractory Autoimmune Diseases (r/r AID)",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT07049081",
+      "status": "TERMINATED",
+      "last_update_posted": "2026-06-16",
+      "phase": [
+        "PHASE1"
+      ],
+      "enrollment": 3,
+      "sponsor": "Nanjing Legend Biotech Co.",
+      "conditions": [
+        "Relapsed/Refractory Autoimmune Diseases"
+      ],
+      "matched_diseases": [
+        "autoimmune disease"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 6,
+      "triage_tier": "持续观察",
+      "triage_reasons": [
+        "正式注册试验",
+        "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT07072247",
+      "title": "An Exploratory Clinical Study on the Safety and Efficacy of RN1201 Injection in the Treatment of Antibody-Mediated Diseases",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT07072247",
+      "status": "RECRUITING",
+      "last_update_posted": "2026-06-12",
+      "phase": [
+        "PHASE1"
+      ],
+      "enrollment": 9,
+      "sponsor": "The First Affiliated Hospital of Soochow University",
+      "conditions": [
+        "Refractory Immune-mediated Platelet Transfusion Refractoriness",
+        "Relapsed or Refractory Immune Thrombocytopenia"
+      ],
+      "matched_diseases": [],
+      "review_status": "待人工核验",
+      "relevance_score": 6,
+      "triage_tier": "持续观察",
+      "triage_reasons": [
+        "正式注册试验",
+        "当前处于活跃状态"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT05858684",
+      "title": "Dual Target CAR-T Cell Treatment for Refractory Systemic Lupus Erythematosus (SLE) Patients",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT05858684",
+      "status": "RECRUITING",
+      "last_update_posted": "2026-06-01",
+      "phase": [
+        "EARLY_PHASE1"
+      ],
+      "enrollment": 18,
+      "sponsor": "RenJi Hospital",
+      "conditions": [
+        "CAR-T Cell Therapy"
+      ],
+      "matched_diseases": [],
+      "review_status": "待人工核验",
+      "relevance_score": 6,
+      "triage_tier": "持续观察",
+      "triage_reasons": [
+        "正式注册试验",
+        "当前处于活跃状态"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT07048197",
+      "title": "An Open-label, Multi-center, Phase 1/2 Study to Assess Safety, Cellular Kinetics and Exploratory Efficacy of Rapcabtagene Autoleucel in Participants With Difficult-to-treat Rheumatoid Arthritis and Severe, Refractory Sjogren's Disease With Organ Involvement",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT07048197",
+      "status": "RECRUITING",
+      "last_update_posted": "2026-05-27",
+      "phase": [
+        "PHASE1",
+        "PHASE2"
+      ],
+      "enrollment": 27,
+      "sponsor": "Novartis Pharmaceuticals",
+      "conditions": [
+        "Rheumatoid Arthritis (RA) and Sjögren's Disease (SjD)"
+      ],
+      "matched_diseases": [],
+      "review_status": "待人工核验",
+      "relevance_score": 6,
+      "triage_tier": "持续观察",
+      "triage_reasons": [
+        "正式注册试验",
+        "当前处于活跃状态"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT06868290",
+      "title": "A Phase 2, Randomized, Open-label, Controlled Study to Evaluate the Efficacy and Safety of Rapcabtagene Autoleucel Versus Comparator in Participants With Severe Active Granulomatosis With Polyangiitis (GPA) or Microscopic Polyangiitis (MPA)",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT06868290",
+      "status": "RECRUITING",
+      "last_update_posted": "2026-05-20",
+      "phase": [
+        "PHASE2"
+      ],
+      "enrollment": 126,
+      "sponsor": "Novartis Pharmaceuticals",
+      "conditions": [
+        "ANCA Associated Vasculitis (AAV)"
+      ],
+      "matched_diseases": [],
+      "review_status": "待人工核验",
+      "relevance_score": 6,
+      "triage_tier": "持续观察",
+      "triage_reasons": [
+        "正式注册试验",
+        "当前处于活跃状态"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT07592754",
+      "title": "An Early Exploratory Clinical Study on the Safety and Efficacy of KSVCBD Injection in the Treatment of Relapsed/Refractory AQP4 Antibody-Positive Neuromyelitis Optica Spectrum Disorder.",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT07592754",
+      "status": "NOT_YET_RECRUITING",
+      "last_update_posted": "2026-05-18",
+      "phase": [
+        "EARLY_PHASE1"
+      ],
+      "enrollment": 18,
+      "sponsor": "Chinese PLA General Hospital",
+      "conditions": [
+        "Neuromyelitis Optica Spectrum Disease (NMOSD)"
+      ],
+      "matched_diseases": [
+        "neuromyelitis optica"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 6,
+      "triage_tier": "持续观察",
+      "triage_reasons": [
+        "正式注册试验",
+        "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT07391605",
+      "title": "A Randomized Double-Blind Placebo-Controlled Study to Evaluate Efficacy, Safety, and Tolerability of Descartes-08 in Patients With Dermatomyositis and Antisynthetase Syndrome",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT07391605",
+      "status": "RECRUITING",
+      "last_update_posted": "2026-04-23",
+      "phase": [
+        "PHASE2"
+      ],
+      "enrollment": 60,
+      "sponsor": "Cartesian Therapeutics",
+      "conditions": [
+        "Antisynthetase Syndrome"
+      ],
+      "matched_diseases": [],
+      "review_status": "待人工核验",
+      "relevance_score": 6,
+      "triage_tier": "持续观察",
+      "triage_reasons": [
+        "正式注册试验",
+        "当前处于活跃状态"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT07528105",
+      "title": "A Study on the Safety, Preliminary Efficacy, and Cellular Kinetics of Allogeneic CD7-Targeted CAR-T Cell Injection for the Treatment of Type 1 Diabetes Mellitus",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT07528105",
+      "status": "RECRUITING",
+      "last_update_posted": "2026-04-14",
+      "phase": [
+        "EARLY_PHASE1"
+      ],
+      "enrollment": 9,
+      "sponsor": "Shanghai Zhongshan Hospital",
+      "conditions": [
+        "T1DM - Type 1 Diabetes Mellitus"
+      ],
+      "matched_diseases": [],
+      "review_status": "待人工核验",
+      "relevance_score": 6,
+      "triage_tier": "持续观察",
+      "triage_reasons": [
+        "正式注册试验",
+        "当前处于活跃状态"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT07490951",
+      "title": "A Clinical Study on the Safety, Tolerability and Preliminary Efficacy of Targeted CD19/BCMA CAR-T Therapy in the Treatment of Refractory Autoimmune Diseases (ADs)",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT07490951",
+      "status": "NOT_YET_RECRUITING",
+      "last_update_posted": "2026-03-24",
+      "phase": [
+        "NA"
+      ],
+      "enrollment": 20,
+      "sponsor": "Shenzhen Genocury Biotech Co., Ltd.",
+      "conditions": [
+        "Autoimmune Diseases"
+      ],
+      "matched_diseases": [
+        "autoimmune disease"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 6,
+      "triage_tier": "持续观察",
+      "triage_reasons": [
+        "正式注册试验",
+        "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT06150651",
+      "title": "Safety/Phase I Study of PiggyBac Transposon Mediated Chimeric Antigen Receptor T Cells Targeting CD-19 in Thai Patients With Refractory Systemic Lupus Erythematosus",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT06150651",
+      "status": "COMPLETED",
+      "last_update_posted": "2026-03-23",
+      "phase": [
+        "PHASE1"
+      ],
+      "enrollment": 3,
+      "sponsor": "Chulalongkorn University",
+      "conditions": [
+        "SLE (Systemic Lupus)"
+      ],
+      "matched_diseases": [
+        "systemic lupus"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 6,
+      "triage_tier": "持续观察",
+      "triage_reasons": [
+        "正式注册试验",
+        "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT07441525",
+      "title": "Clinical Study on Safety, Efficacy, and Pharmacokinetics of Universal CAR-T Cell Injection Targeting CD19/BCMA in Subjects With Autoantibody-Mediated Autoimmune Benign Hematological Diseases",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT07441525",
+      "status": "RECRUITING",
+      "last_update_posted": "2026-03-02",
+      "phase": [
+        "EARLY_PHASE1"
+      ],
+      "enrollment": 27,
+      "sponsor": "Union Hospital, Tongji Medical College, Huazhong University of Science and Technology",
+      "conditions": [
+        "Autoimmune Hemolytic Anemia",
+        "Primary Immune Thrombocytopenic Purpura",
+        "Evans Syndrome"
+      ],
+      "matched_diseases": [],
+      "review_status": "待人工核验",
+      "relevance_score": 6,
+      "triage_tier": "持续观察",
+      "triage_reasons": [
+        "正式注册试验",
+        "当前处于活跃状态"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT05662228",
+      "title": "Mechanistic Investigation of Therapies for Down Syndrome Regression Disorder",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT05662228",
+      "status": "ACTIVE_NOT_RECRUITING",
+      "last_update_posted": "2026-02-27",
+      "phase": [
+        "PHASE2"
+      ],
+      "enrollment": 66,
+      "sponsor": "University of Colorado, Denver",
+      "conditions": [
+        "Down Syndrome",
+        "Regression"
+      ],
+      "matched_diseases": [],
+      "review_status": "待人工核验",
+      "relevance_score": 6,
+      "triage_tier": "持续观察",
+      "triage_reasons": [
+        "正式注册试验",
+        "当前处于活跃状态"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT06965309",
+      "title": "Dose-escalation Study to Assess the Safety, Tolerability, and Preliminary Efficacy of HN2301 in Patients With Refractory Myasthenia Gravis (MG)",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT06965309",
+      "status": "TERMINATED",
+      "last_update_posted": "2026-02-12",
+      "phase": [
+        "NA"
+      ],
+      "enrollment": 9,
+      "sponsor": "Shenzhen MagicRNA Biotechnology Co., Ltd",
+      "conditions": [
+        "Refractory Myasthenia Gravis"
+      ],
+      "matched_diseases": [
+        "myasthenia gravis"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 6,
+      "triage_tier": "持续观察",
+      "triage_reasons": [
+        "正式注册试验",
+        "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT07261345",
+      "title": "The Safety and Efficacy of Allogenic Anti-CD19/BCMA CAR-T Cell Therapy for Refractory Graves' Disease",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT07261345",
+      "status": "RECRUITING",
+      "last_update_posted": "2026-01-05",
+      "phase": [
+        "EARLY_PHASE1"
+      ],
+      "enrollment": 4,
+      "sponsor": "Shanghai Zhongshan Hospital",
+      "conditions": [
+        "Graves' Disease"
+      ],
+      "matched_diseases": [],
+      "review_status": "待人工核验",
+      "relevance_score": 6,
+      "triage_tier": "持续观察",
+      "triage_reasons": [
+        "正式注册试验",
+        "当前处于活跃状态"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT07266181",
+      "title": "Safety and Efficacy of CD19 Chimeric Antigen Receptor T-Cell Immunotherapy (CAR-T) in the Treatment of Refractory Membranous Nephropathy",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT07266181",
+      "status": "RECRUITING",
+      "last_update_posted": "2025-12-24",
+      "phase": [
+        "PHASE1"
+      ],
+      "enrollment": 5,
+      "sponsor": "The First Affiliated Hospital of Air Force Medicial University",
+      "conditions": [
+        "Refractory Membranous Nephropathy"
+      ],
+      "matched_diseases": [],
+      "review_status": "待人工核验",
+      "relevance_score": 6,
+      "triage_tier": "持续观察",
+      "triage_reasons": [
+        "正式注册试验",
+        "当前处于活跃状态"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT06588491",
+      "title": "KYSA-8: A Phase 2 Open-Label, Single-Arm, Multicenter Study of KYV-101, an Autologous Fully Human Anti-CD19 Chimeric Antigen Receptor T-Cell (CD19 CAR T) Therapy, in Subjects With Treatment Refractory Stiff Person Syndrome",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT06588491",
+      "status": "ACTIVE_NOT_RECRUITING",
+      "last_update_posted": "2025-12-22",
+      "phase": [
+        "PHASE2"
+      ],
+      "enrollment": 25,
+      "sponsor": "Kyverna Therapeutics",
+      "conditions": [
+        "Stiff-Person Syndrome",
+        "SPS"
+      ],
+      "matched_diseases": [],
+      "review_status": "待人工核验",
+      "relevance_score": 6,
+      "triage_tier": "持续观察",
+      "triage_reasons": [
+        "正式注册试验",
+        "当前处于活跃状态"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT07100873",
+      "title": "A Phase 1 Study of ADI-001 Anti-CD20 CAR-engineered Allogeneic Gamma-Delta (γδ) T Cells in Adults With Treatment-refractory Rheumatoid Arthritis",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT07100873",
+      "status": "RECRUITING",
+      "last_update_posted": "2025-12-08",
+      "phase": [
+        "PHASE1"
+      ],
+      "enrollment": 25,
+      "sponsor": "Adicet Therapeutics",
+      "conditions": [
+        "Rheumatoid Arthritis (RA)"
+      ],
+      "matched_diseases": [],
+      "review_status": "待人工核验",
+      "relevance_score": 6,
+      "triage_tier": "持续观察",
+      "triage_reasons": [
+        "正式注册试验",
+        "当前处于活跃状态"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT07265206",
+      "title": "An Exploratory Clinical Study on the Safety and Efficacy of HY001N Cell Injection in the Treatment of Relapsed or Refractory Autoimmune Neurological Diseases",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT07265206",
+      "status": "NOT_YET_RECRUITING",
+      "last_update_posted": "2025-12-04",
+      "phase": [
+        "EARLY_PHASE1"
+      ],
+      "enrollment": 15,
+      "sponsor": "Juventas Cell Therapy Ltd.",
+      "conditions": [
+        "Neurological Autoimmune Diseases"
+      ],
+      "matched_diseases": [
+        "autoimmune disease"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 6,
+      "triage_tier": "持续观察",
+      "triage_reasons": [
+        "正式注册试验",
+        "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT06342960",
+      "title": "KYSA-3: A Phase 1/2, Open-Label, Multicenter Study of KYV-101, an Autologous Fully-Human Anti-CD19 Chimeric Antigen Receptor T-Cell (CD19 CAR T) Therapy, in Subjects With Refractory Lupus Nephritis",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT06342960",
+      "status": "ACTIVE_NOT_RECRUITING",
+      "last_update_posted": "2025-10-29",
+      "phase": [
+        "PHASE1",
+        "PHASE2"
+      ],
+      "enrollment": 2,
+      "sponsor": "Kyverna Therapeutics",
+      "conditions": [
+        "Lupus Nephritis",
+        "Lupus Nephritis - WHO Class III",
+        "Lupus Nephritis - WHO Class IV"
+      ],
+      "matched_diseases": [],
+      "review_status": "待人工核验",
+      "relevance_score": 6,
+      "triage_tier": "持续观察",
+      "triage_reasons": [
+        "正式注册试验",
+        "当前处于活跃状态"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT05938725",
+      "title": "KYSA-1: A Phase 1/2, Open-Label, Multicenter Study of KYV-101, an Autologous Fully-Human Anti-CD19 Chimeric Antigen Receptor T-Cell (CD19 CAR T) Therapy, in Subjects With Refractory Lupus Nephritis",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT05938725",
+      "status": "ACTIVE_NOT_RECRUITING",
+      "last_update_posted": "2025-10-29",
+      "phase": [
+        "PHASE1",
+        "PHASE2"
+      ],
+      "enrollment": 6,
+      "sponsor": "Kyverna Therapeutics",
+      "conditions": [
+        "Lupus Nephritis",
+        "Lupus Nephritis - World Health Organization (WHO) Class III",
+        "Lupus Nephritis - WHO Class IV"
+      ],
+      "matched_diseases": [],
+      "review_status": "待人工核验",
+      "relevance_score": 6,
+      "triage_tier": "持续观察",
+      "triage_reasons": [
+        "正式注册试验",
+        "当前处于活跃状态"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT07203404",
+      "title": "A Clinical Study of the Safety, Efficacy, and Cell Pharmacokinetics of Anti-CD19/BCMA Universal CAR-T Cell Therapy RD06-05 in Patients With Autoimmune Diseases.",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT07203404",
+      "status": "RECRUITING",
+      "last_update_posted": "2025-10-02",
+      "phase": [
+        "EARLY_PHASE1"
+      ],
+      "enrollment": 84,
+      "sponsor": "Nanjing Bioheng Biotech Co., Ltd.",
+      "conditions": [
+        "SLE",
+        "LN",
+        "ANCA Associated Vasculitis",
+        "ANCA-Associated Glomerulonephritis",
+        "Anti-GBM Disease",
+        "MN",
+        "SSc",
+        "IIM"
+      ],
+      "matched_diseases": [],
+      "review_status": "待人工核验",
+      "relevance_score": 6,
+      "triage_tier": "持续观察",
+      "triage_reasons": [
+        "正式注册试验",
+        "当前处于活跃状态"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT07161193",
+      "title": "Anti-CD19 Chimeric Antigen Receptor T Cells for Refractory Autoimmune Diseases",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT07161193",
+      "status": "NOT_YET_RECRUITING",
+      "last_update_posted": "2025-09-08",
+      "phase": [
+        "PHASE1",
+        "PHASE2"
+      ],
+      "enrollment": 30,
+      "sponsor": "Hebei Senlang Biotechnology Inc., Ltd.",
+      "conditions": [
+        "Autoimmune Diseases"
+      ],
+      "matched_diseases": [
+        "autoimmune disease"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 6,
+      "triage_tier": "持续观察",
+      "triage_reasons": [
+        "正式注册试验",
+        "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT07142161",
+      "title": "A Study on the Safety, Preliminary Efficacy, and Cellular Kinetics of Allogeneic CD7-targeted CAR-T Cell Injection in the Treatment of Type 1 Diabetes",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT07142161",
+      "status": "ACTIVE_NOT_RECRUITING",
+      "last_update_posted": "2025-08-26",
+      "phase": [
+        "EARLY_PHASE1"
+      ],
+      "enrollment": 3,
+      "sponsor": "Nanjing Bioheng Biotech Co., Ltd.",
+      "conditions": [
+        "Type 1 Diabetes"
+      ],
+      "matched_diseases": [],
+      "review_status": "待人工核验",
+      "relevance_score": 6,
+      "triage_tier": "持续观察",
+      "triage_reasons": [
+        "正式注册试验",
+        "当前处于活跃状态"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT06900764",
+      "title": "A Study to Evaluate the Safety and Efficacy of CAR-T Cells in Subjects With Systemic Lupus Erythematosus (SLE)",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT06900764",
+      "status": "NOT_YET_RECRUITING",
+      "last_update_posted": "2025-07-17",
+      "phase": [
+        "NA"
+      ],
+      "enrollment": 24,
+      "sponsor": "Union Hospital, Tongji Medical College, Huazhong University of Science and Technology",
+      "conditions": [
+        "Systemic Lupus Erythematosus (SLE)"
+      ],
+      "matched_diseases": [
+        "systemic lupus"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 6,
+      "triage_tier": "持续观察",
+      "triage_reasons": [
+        "正式注册试验",
+        "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT06613490",
+      "title": "An Exploratory Clinical Study of the Safety and Efficacy of CD19 Chimeric Antigen Receptor NK Cells for the Treatment of Refractory Antisynthetase Antibody Syndrome and Rheumatoid Arthritis",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT06613490",
+      "status": "RECRUITING",
+      "last_update_posted": "2025-04-30",
+      "phase": [
+        "EARLY_PHASE1"
+      ],
+      "enrollment": 24,
+      "sponsor": "The First Affiliated Hospital with Nanjing Medical University",
+      "conditions": [
+        "Antisynthetase Syndrome",
+        "Rheumatoid Arthritis"
+      ],
+      "matched_diseases": [],
+      "review_status": "待人工核验",
+      "relevance_score": 6,
+      "triage_tier": "持续观察",
+      "triage_reasons": [
+        "正式注册试验",
+        "当前处于活跃状态"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT06377228",
+      "title": "A Phase 1b, Open-Label, Multicenter Study to Evaluate the Safety and Efficacy of TAK-007, an Allogeneic Anti-CD19 Chimeric Antigen Receptor Natural Killer Cell (CD19 CAR-NK) Therapy, in Adult Subjects With Refractory Lupus Nephritis or Refractory Systemic Sclerosis",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT06377228",
+      "status": "WITHDRAWN",
+      "last_update_posted": "2025-04-06",
+      "phase": [
+        "PHASE1"
+      ],
+      "enrollment": 0,
+      "sponsor": "Takeda",
+      "conditions": [
+        "Refractory Lupus Nephritis",
+        "Refractory Systemic Sclerosis"
+      ],
+      "matched_diseases": [
+        "systemic sclerosis"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 6,
+      "triage_tier": "持续观察",
+      "triage_reasons": [
+        "正式注册试验",
+        "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT06886919",
+      "title": "Clinical Study Evaluating the Safety and Efficacy of IC19 CAR-T Cell Therapy for Refractory Systemic Lupus Erythematosus",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT06886919",
+      "status": "NOT_YET_RECRUITING",
+      "last_update_posted": "2025-03-24",
+      "phase": [
+        "EARLY_PHASE1"
+      ],
+      "enrollment": 6,
+      "sponsor": "Beijing Immunochina Medical Science & Technology Co., Ltd.",
+      "conditions": [
+        "Difficult to Treat Systemic Lupus Erythematosus"
+      ],
+      "matched_diseases": [
+        "systemic lupus"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 6,
+      "triage_tier": "持续观察",
+      "triage_reasons": [
+        "正式注册试验",
+        "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT06852573",
+      "title": "A Phase I Clinical Study to Evaluate the Safety and Efficacy of ZM001 Injection in the Treatment of Refractory Systemic Lupus Erythematosus",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT06852573",
+      "status": "NOT_YET_RECRUITING",
+      "last_update_posted": "2025-02-28",
+      "phase": [
+        "PHASE1"
+      ],
+      "enrollment": 18,
+      "sponsor": "Beijing Immunochina Medical Science & Technology Co., Ltd.",
+      "conditions": [
+        "Systemic Lupus Erythematosus"
+      ],
+      "matched_diseases": [
+        "systemic lupus"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 6,
+      "triage_tier": "持续观察",
+      "triage_reasons": [
+        "正式注册试验",
+        "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT06153095",
+      "title": "A Phase 1/2 Open-label Study to Evaluate the Safety, Tolerability, Pharmacokinetics, Pharmacodynamics, and Efficacy of IMPT-514 in Participants With Active, Refractory Lupus Nephritis and Systemic Lupus Erythematosus",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT06153095",
+      "status": "WITHDRAWN",
+      "last_update_posted": "2025-02-10",
+      "phase": [
+        "PHASE1",
+        "PHASE2"
+      ],
+      "enrollment": 0,
+      "sponsor": "Lyell Immunopharma, Inc.",
+      "conditions": [
+        "Systemic Lupus Erythematosus",
+        "Lupus Nephritis"
+      ],
+      "matched_diseases": [
+        "systemic lupus"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 6,
+      "triage_tier": "持续观察",
+      "triage_reasons": [
+        "正式注册试验",
+        "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT06759948",
+      "title": "An Early Exploratory Clinical Study of GC012F Injection in the Treatment of Refractory Generalized Myasthenia Gravis",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT06759948",
+      "status": "NOT_YET_RECRUITING",
+      "last_update_posted": "2025-01-06",
+      "phase": [
+        "PHASE1"
+      ],
+      "enrollment": 18,
+      "sponsor": "Chongbo Zhao",
+      "conditions": [
+        "Generalized Myasthenia Gravis (gMG)"
+      ],
+      "matched_diseases": [
+        "myasthenia gravis"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 6,
+      "triage_tier": "持续观察",
+      "triage_reasons": [
+        "正式注册试验",
+        "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT06733610",
+      "title": "A Clinical Study Evaluating the Safety and Preliminary Efficacy of Universal Allogeneic CAR T-cell Therapy Targeting CD19 and BCMA in Patients with Autoimmune Hemolytic Anemia Have Failed ≥ 3 Lines of Therapy",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT06733610",
+      "status": "RECRUITING",
+      "last_update_posted": "2024-12-13",
+      "phase": [
+        "PHASE1"
+      ],
+      "enrollment": 15,
+      "sponsor": "Institute of Hematology & Blood Diseases Hospital, China",
+      "conditions": [
+        "Autoimmune Hemolytic Anemia",
+        "CD19/BCMA CAR T-cells",
+        "Universal Allogeneic CAR T-cells"
+      ],
+      "matched_diseases": [],
+      "review_status": "待人工核验",
+      "relevance_score": 6,
+      "triage_tier": "持续观察",
+      "triage_reasons": [
+        "正式注册试验",
+        "当前处于活跃状态"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT06567080",
+      "title": "An Open Label, Single Arm Study to Evaluate JWCAR201 Treating B Cell Driven Hematology Malignancy and Autoimmune Diseases",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT06567080",
+      "status": "NOT_YET_RECRUITING",
+      "last_update_posted": "2024-08-22",
+      "phase": [
+        "PHASE1"
+      ],
+      "enrollment": 15,
+      "sponsor": "RenJi Hospital",
+      "conditions": [
+        "B-cell Tumors",
+        "Autoimmune Diseases",
+        "Lupus Erythematosus, Systemic",
+        "Large B-cell Lymphoma"
+      ],
+      "matched_diseases": [
+        "autoimmune disease"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 6,
+      "triage_tier": "持续观察",
+      "triage_reasons": [
+        "正式注册试验",
+        "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT06297408",
+      "title": "Relma-cel for Moderate to Severe Active Systemic Lupus Erythematosus Single Arm Phase I and Phase II Randomized Controlled Open, Multicenter Study",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT06297408",
+      "status": "UNKNOWN",
+      "last_update_posted": "2024-03-07",
+      "phase": [
+        "PHASE1"
+      ],
+      "enrollment": 24,
+      "sponsor": "Shanghai Ming Ju Biotechnology Co., Ltd.",
+      "conditions": [
+        "Systemic Lupus Erythematosus"
+      ],
+      "matched_diseases": [
+        "systemic lupus"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 6,
+      "triage_tier": "持续观察",
+      "triage_reasons": [
+        "正式注册试验",
+        "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT05930314",
+      "title": "CNCT19 Cell Injection for Refractory Systemic Lupus Erythematosus",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT05930314",
+      "status": "UNKNOWN",
+      "last_update_posted": "2023-07-05",
+      "phase": [
+        "EARLY_PHASE1"
+      ],
+      "enrollment": 12,
+      "sponsor": "Peking Union Medical College Hospital",
+      "conditions": [
+        "Refractory Systemic Lupus Erythematosus",
+        "Lupus Nephritis",
+        "Immune Thrombocytopenia"
+      ],
+      "matched_diseases": [
+        "systemic lupus"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 6,
+      "triage_tier": "持续观察",
+      "triage_reasons": [
+        "正式注册试验",
+        "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT05085444",
+      "title": "A Study of CD19/BCMA Chimeric Antigen Receptor T Cells Therapy for Patients With Refractory Scleroderma",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT05085444",
+      "status": "UNKNOWN",
+      "last_update_posted": "2021-10-20",
+      "phase": [
+        "EARLY_PHASE1"
+      ],
+      "enrollment": 9,
+      "sponsor": "Zhejiang University",
+      "conditions": [
+        "Scleroderma",
+        "Autoimmune Diseases"
+      ],
+      "matched_diseases": [
+        "autoimmune disease"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 6,
+      "triage_tier": "持续观察",
+      "triage_reasons": [
+        "正式注册试验",
+        "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT05085418",
+      "title": "A Study of CD19/BCMA Chimeric Antigen Receptor T Cells Therapy for Patients With Refractory Immune Nephritis",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT05085418",
+      "status": "UNKNOWN",
+      "last_update_posted": "2021-10-20",
+      "phase": [
+        "EARLY_PHASE1"
+      ],
+      "enrollment": 9,
+      "sponsor": "Zhejiang University",
+      "conditions": [
+        "Immune Nephritis",
+        "Autoimmune Diseases",
+        "Lupus Nephritis"
+      ],
+      "matched_diseases": [
+        "autoimmune disease"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 6,
+      "triage_tier": "持续观察",
+      "triage_reasons": [
+        "正式注册试验",
+        "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT06508346",
+      "title": "Study of Therapeutic Efficacy of Anti-CD19 CAR-T Cells in Children With Refractory ANCA-Associated Vasculitis",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT06508346",
+      "status": "WITHDRAWN",
+      "last_update_posted": "2026-06-16",
+      "phase": [],
+      "enrollment": 0,
+      "sponsor": "The Children's Hospital of Zhejiang University School of Medicine",
+      "conditions": [
+        "ANCA Associated Vasculitis",
+        "CAR-T Cell Therapy"
+      ],
+      "matched_diseases": [],
+      "review_status": "待人工核验",
+      "relevance_score": 4,
+      "triage_tier": "背景材料",
+      "triage_reasons": [
+        "正式注册试验"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT07585071",
+      "title": "Phase I Clinical Study on the Safety and Tolerability of IASO206 Injection in Patients With Relapsed/Refractory Autoimmune Hemolytic Anemia",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT07585071",
+      "status": "NOT_YET_RECRUITING",
+      "last_update_posted": "2026-05-13",
+      "phase": [
+        "PHASE1"
+      ],
+      "enrollment": 18,
+      "sponsor": "Institute of Hematology & Blood Diseases Hospital, China",
+      "conditions": [
+        "Autoimmune Hemolytic Anemia",
+        "Relapsed/Refractory"
+      ],
+      "matched_diseases": [],
+      "review_status": "待人工核验",
+      "relevance_score": 4,
+      "triage_tier": "背景材料",
+      "triage_reasons": [
+        "正式注册试验"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT07502859",
+      "title": "A Phase I Exploratory Study on the Safety and Efficacy of BEN301 Injection in the Treatment of Autoimmune Diseases",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT07502859",
+      "status": "NOT_YET_RECRUITING",
+      "last_update_posted": "2026-04-13",
+      "phase": [
+        "EARLY_PHASE1"
+      ],
+      "enrollment": 24,
+      "sponsor": "Beijing Boren Hospital",
+      "conditions": [
+        "SSC RA SS IIM"
+      ],
+      "matched_diseases": [],
+      "review_status": "待人工核验",
+      "relevance_score": 4,
+      "triage_tier": "背景材料",
+      "triage_reasons": [
+        "正式注册试验"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT07474051",
+      "title": "Persistence Evaluation and Response Study for Immunotherapy Safety Tracking of Participants Who Receive an AvenCell CAR-T Cell Therapy",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT07474051",
+      "status": "ENROLLING_BY_INVITATION",
+      "last_update_posted": "2026-03-16",
+      "phase": [],
+      "enrollment": 178,
+      "sponsor": "AvenCell Therapeutics, Inc.",
+      "conditions": [
+        "B-cell Lymphoma",
+        "Chronic Lymphocytic Leukemia",
+        "Hematologic Malignancy",
+        "AML (Acute Myelogenous Leukemia)",
+        "Prostate Cancer"
+      ],
+      "matched_diseases": [],
+      "review_status": "待人工核验",
+      "relevance_score": 4,
+      "triage_tier": "背景材料",
+      "triage_reasons": [
+        "正式注册试验"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT06548620",
+      "title": "Clinical Study on the Safety, Efficacy, and Pharmacokinetics of CD19-targeted CAR-T Cell Injection for the Treatment of Autoimmune Diseases Mediated by Autoantibodies.",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT06548620",
+      "status": "WITHDRAWN",
+      "last_update_posted": "2026-02-03",
+      "phase": [
+        "EARLY_PHASE1"
+      ],
+      "enrollment": 0,
+      "sponsor": "Nanjing Bioheng Biotech Co., Ltd.",
+      "conditions": [
+        "SLE",
+        "Sclerosis",
+        "ANCA Associated Vasculitis",
+        "IIM",
+        "SS",
+        "MS",
+        "NMO Spectrum Disorder",
+        "MG"
+      ],
+      "matched_diseases": [],
+      "review_status": "待人工核验",
+      "relevance_score": 4,
+      "triage_tier": "背景材料",
+      "triage_reasons": [
+        "正式注册试验"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42098533",
+      "title": "B cell Maturation Antigen Targeted Chimeric Antigen Receptor T Cell Therapy for Refractory Systemic Lupus Erythematosus and Systemic Sclerosis.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42098533/",
+      "publication_date": "2026 May 7",
+      "journal": "Arthritis & rheumatology (Hoboken, N.J.)",
+      "doi": "10.1002/art.70211",
+      "publication_type": [
+        "Journal Article"
+      ],
+      "matched_diseases": [
+        "systemic lupus",
+        "systemic sclerosis"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 4,
+      "triage_tier": "背景材料",
+      "triage_reasons": [
+        "命中2个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42293313",
+      "title": "A symposium update on the key perspectives in systemic sclerosis and systemic lupus erythematosus.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42293313/",
+      "publication_date": "2026 Jun 5",
+      "journal": "Journal of translational autoimmunity",
+      "doi": "10.1016/j.jtauto.2026.100379",
+      "publication_type": [
+        "Journal Article",
+        "Review"
+      ],
+      "matched_diseases": [
+        "systemic lupus",
+        "systemic sclerosis"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 4,
+      "triage_tier": "背景材料",
+      "triage_reasons": [
+        "命中2个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT05993611",
+      "title": "A First-in-Human Study to Evaluate the Safety, Feasibility and Tolerability of Allogeneic CD6 Chimeric Antigen Receptor T Regulatory Cells (CD6-CAR Tregs) in Patients With Chronic Graft-Versus-Host Disease (cGVHD) After Allogeneic Hematopoietic Cell Transplantation (alloHCT)",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT05993611",
+      "status": "SUSPENDED",
+      "last_update_posted": "2025-11-13",
+      "phase": [
+        "PHASE1"
+      ],
+      "enrollment": 27,
+      "sponsor": "City of Hope Medical Center",
+      "conditions": [
+        "Chronic Graft Versus Host Disease",
+        "Hematologic and Lymphocytic Disorder",
+        "Steroid Refractory Graft Versus Host Disease"
+      ],
+      "matched_diseases": [],
+      "review_status": "待人工核验",
+      "relevance_score": 4,
+      "triage_tier": "背景材料",
+      "triage_reasons": [
+        "正式注册试验"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT06524310",
+      "title": "Effects of Repetitive Transcranial Magnetic Stimulation (rTMS) on Cognitive Functions and Behavior in Individuals With Autism Spectrum Disorder ( ASD)",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT06524310",
+      "status": "COMPLETED",
+      "last_update_posted": "2025-10-21",
+      "phase": [
+        "NA"
+      ],
+      "enrollment": 35,
+      "sponsor": "King Saud University",
+      "conditions": [
+        "Autism Spectrum Disorder"
+      ],
+      "matched_diseases": [],
+      "review_status": "待人工核验",
+      "relevance_score": 4,
+      "triage_tier": "背景材料",
+      "triage_reasons": [
+        "正式注册试验"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT04848493",
+      "title": "A National, Multicentric, Observational, Prospective Study to Assess Immune Response to COVID-19 Vaccine in Frail Patients (VAX4FRAIL).",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT04848493",
+      "status": "COMPLETED",
+      "last_update_posted": "2025-06-13",
+      "phase": [],
+      "enrollment": 747,
+      "sponsor": "Azienda USL Reggio Emilia - IRCCS",
+      "conditions": [
+        "COVID-19",
+        "Solid Tumor",
+        "Hematologic Diseases",
+        "Neurologic Disorder",
+        "Rheumatic Diseases"
+      ],
+      "matched_diseases": [],
+      "review_status": "待人工核验",
+      "relevance_score": 4,
+      "triage_tier": "背景材料",
+      "triage_reasons": [
+        "正式注册试验"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT06690359",
+      "title": "Evaluation of IM19 CAR-T Cell Therapy for IgA Nephropathy With Urinary Protein and Renal Dysfunction Safety and Efficacy of Patients With Primary Membranous Nephropathy and Those at Medium to High Risk Clinical Research",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT06690359",
+      "status": "NOT_YET_RECRUITING",
+      "last_update_posted": "2024-11-26",
+      "phase": [
+        "EARLY_PHASE1"
+      ],
+      "enrollment": 12,
+      "sponsor": "Beijing Immunochina Medical Science & Technology Co., Ltd.",
+      "conditions": [
+        "IgA Nephropathy",
+        "Membranous Nephropathy"
+      ],
+      "matched_diseases": [],
+      "review_status": "待人工核验",
+      "relevance_score": 4,
+      "triage_tier": "背景材料",
+      "triage_reasons": [
+        "正式注册试验"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42105262",
+      "title": "Exosome-based strategies to enhance CAR-T cell therapy for systemic lupus erythematosus: A promising new frontier.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42105262/",
+      "publication_date": "2026 May 9",
+      "journal": "International reviews of immunology",
+      "doi": "10.1080/08830185.2026.2669734",
+      "publication_type": [
+        "Journal Article",
+        "Review"
+      ],
+      "matched_diseases": [
+        "systemic lupus"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 2,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42261517",
+      "title": "Epstein-Barr Virus (EBV)-Positive Diffuse Large B-cell Lymphoma Masquerading As Lupus Pneumonitis in a Young Woman With Systemic Lupus Erythematosus: A Diagnostic Odyssey.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42261517/",
+      "publication_date": "2026 May 7",
+      "journal": "Cureus",
+      "doi": "10.7759/cureus.108460",
+      "publication_type": [
+        "Case Reports",
+        "Journal Article"
+      ],
+      "matched_diseases": [
+        "systemic lupus"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 2,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42091691",
+      "title": "Dual CAR-T cell therapy targeting CD19 and BCMA as a novel opportunity for immune reset in systemic lupus erythematosus.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42091691/",
+      "publication_date": "2026 May 6",
+      "journal": "Cellular & molecular immunology",
+      "doi": "10.1038/s41423-026-01403-0",
+      "publication_type": [
+        "Journal Article"
+      ],
+      "matched_diseases": [
+        "systemic lupus"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 2,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42221047",
+      "title": "Beyond malignancies: Clinical advancements of CAR T-cell in the treatment of autoimmune diseases.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42221047/",
+      "publication_date": "2026 May 31",
+      "journal": "Intractable & rare diseases research",
+      "doi": "10.5582/irdr.2025.01057",
+      "publication_type": [
+        "Journal Article",
+        "Review"
+      ],
+      "matched_diseases": [
+        "autoimmune disease"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 2,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42292395",
+      "title": "CAR-T cell therapy for autoimmune diseases: current clinical trial landscape and the next wave of development.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42292395/",
+      "publication_date": "2026 May 29",
+      "journal": "Frontiers in immunology",
+      "doi": "10.3389/fimmu.2026.1853170",
+      "publication_type": [
+        "Journal Article",
+        "Review"
+      ],
+      "matched_diseases": [
+        "autoimmune disease"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 2,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42235055",
+      "title": "Systematic Review of Chimeric Antigen Receptor T-cell Therapy in Autoimmune Diseases.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42235055/",
+      "publication_date": "2026 May 27",
+      "journal": "Journal of clinical rheumatology : practical reports on rheumatic & musculoskeletal diseases",
+      "doi": "10.1097/RHU.0000000000002354",
+      "publication_type": [
+        "Journal Article"
+      ],
+      "matched_diseases": [
+        "autoimmune disease"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 2,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42198842",
+      "title": "Engineering human T cells with antigen receptors for immune regulation in autoimmune disease and transplantation.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42198842/",
+      "publication_date": "2026 May 26",
+      "journal": "Molecular therapy : the journal of the American Society of Gene Therapy",
+      "doi": "10.1016/j.ymthe.2026.05.017",
+      "publication_type": [
+        "Journal Article",
+        "Review"
+      ],
+      "matched_diseases": [
+        "autoimmune disease"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 2,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42177178",
+      "title": "Deep phenotyping of skin tissue remodeling in patients with systemic sclerosis treated with CD19-CAR T cells.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42177178/",
+      "publication_date": "2026 May 23",
+      "journal": "Nature communications",
+      "doi": "10.1038/s41467-026-72817-7",
+      "publication_type": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "matched_diseases": [
+        "systemic sclerosis"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 2,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42168367",
+      "title": "Resetting autoimmune disease with CAR cell therapies.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42168367/",
+      "publication_date": "2026 May 21",
+      "journal": "Nature medicine",
+      "doi": "10.1038/s41591-026-04430-6",
+      "publication_type": [
+        "Journal Article",
+        "Review"
+      ],
+      "matched_diseases": [
+        "autoimmune disease"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 2,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42233031",
+      "title": "Editorial: Advances in antigen-specific immunotherapies for autoimmune disease management.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42233031/",
+      "publication_date": "2026 May 18",
+      "journal": "Frontiers in immunology",
+      "doi": "10.3389/fimmu.2026.1875877",
+      "publication_type": [
+        "Editorial"
+      ],
+      "matched_diseases": [
+        "autoimmune disease"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 2,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42158317",
+      "title": "Chimeric Antigen Receptor T-Cell Revolution Remodeling Immunity to Conquer Autoimmune Disease.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42158317/",
+      "publication_date": "2026 May 18",
+      "journal": "Research (Washington, D.C.)",
+      "doi": "10.34133/research.1239",
+      "publication_type": [
+        "Journal Article",
+        "Review"
+      ],
+      "matched_diseases": [
+        "autoimmune disease"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 2,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42130371",
+      "title": "Therapeutic Advances in Systemic Lupus Erythematosus: Targeting T Follicular Helper Cells.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42130371/",
+      "publication_date": "2026 May 14",
+      "journal": "Immunological investigations",
+      "doi": "10.1080/08820139.2026.2647056",
+      "publication_type": [
+        "Journal Article",
+        "Review"
+      ],
+      "matched_diseases": [
+        "systemic lupus"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 2,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "41812738",
+      "title": "Precision immunotherapies for systemic lupus erythematosus: From pathogenic targets to translational horizons.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41812738/",
+      "publication_date": "2026 Mar 9",
+      "journal": "Autoimmunity reviews",
+      "doi": "10.1016/j.autrev.2026.104029",
+      "publication_type": [
+        "Journal Article",
+        "Review"
+      ],
+      "matched_diseases": [
+        "systemic lupus"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 2,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "41841658",
+      "title": "Clinical and immunologic status of a child conceived following maternal administration of CD19 CAR T-cells for systemic lupus erythematosus.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41841658/",
+      "publication_date": "2026 Mar 12",
+      "journal": "Clinical and experimental rheumatology",
+      "doi": "10.55563/clinexprheumatol/g0ehvq",
+      "publication_type": [
+        "Case Reports",
+        "Journal Article"
+      ],
+      "matched_diseases": [
+        "systemic lupus"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 2,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42260211",
+      "title": "Cellular therapies in systemic lupus erythematosus: recent progress and future directions.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42260211/",
+      "publication_date": "2026 Jun 8",
+      "journal": "Clinical rheumatology",
+      "doi": "10.1007/s10067-026-08211-x",
+      "publication_type": [
+        "Journal Article",
+        "Review"
+      ],
+      "matched_diseases": [
+        "systemic lupus"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 2,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42376953",
+      "title": "Cure in Myasthenia Gravis: An Unmet Need.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42376953/",
+      "publication_date": "2026 Jun 30",
+      "journal": "Muscle & nerve",
+      "doi": "10.1002/mus.70255",
+      "publication_type": [
+        "Journal Article"
+      ],
+      "matched_diseases": [
+        "myasthenia gravis"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 2,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42297600",
+      "title": "[Efficacy and safety of fourth-generation CAR-T cells targeting CD19 and BCMA with anti-IL-6 antibody secretion in refractory systemic lupus erythematosus].",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42297600/",
+      "publication_date": "2026 Jun 23",
+      "journal": "Zhonghua yi xue za zhi",
+      "doi": "10.3760/cma.j.cn112137-20251226-03435",
+      "publication_type": [
+        "English Abstract",
+        "Journal Article"
+      ],
+      "matched_diseases": [
+        "systemic lupus"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 2,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42321474",
+      "title": "TLR7 in systemic lupus erythematosus: genetics and emerging therapies.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42321474/",
+      "publication_date": "2026 Jun 19",
+      "journal": "Nature reviews. Rheumatology",
+      "doi": "10.1038/s41584-026-01388-0",
+      "publication_type": [
+        "Journal Article",
+        "Review"
+      ],
+      "matched_diseases": [
+        "systemic lupus"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 2,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42320500",
+      "title": "Epstein-Barr virus and multiple sclerosis: from associations to mechanisms to potential therapies.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42320500/",
+      "publication_date": "2026 Jun 19",
+      "journal": "The Lancet. Neurology",
+      "doi": "10.1016/S1474-4422(26)00177-8",
+      "publication_type": [
+        "Journal Article",
+        "Review"
+      ],
+      "matched_diseases": [
+        "multiple sclerosis"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 2,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42225220",
+      "title": "CAR T cells for systemic autoimmune diseases.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42225220/",
+      "publication_date": "2026 Jun 1",
+      "journal": "Autoimmunity reviews",
+      "doi": "10.1016/j.autrev.2026.104111",
+      "publication_type": [
+        "Journal Article",
+        "Review"
+      ],
+      "matched_diseases": [
+        "autoimmune disease"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 2,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42092057",
+      "title": "CAR T cell therapy shows promise for treatment of stiff person syndrome.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42092057/",
+      "publication_date": "2026 Jun",
+      "journal": "Nature reviews. Neurology",
+      "doi": "10.1038/s41582-026-01220-z",
+      "publication_type": [
+        "Journal Article"
+      ],
+      "matched_diseases": [
+        "stiff person"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 2,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42421752",
+      "title": "Expansion and safety profile of CD28-costimulated anti-CD19 CAR T cells in B-cell lymphoma versus autoimmune disease.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42421752/",
+      "publication_date": "2026 Jul 8",
+      "journal": "HemaSphere",
+      "doi": "10.1002/hem3.70426",
+      "publication_type": [
+        "Letter"
+      ],
+      "matched_diseases": [
+        "autoimmune disease"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 2,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42414128",
+      "title": "Anti-CD19/CD22 CAR T cells in refractory immune thrombocytopenia of paediatric systemic lupus erythematosus.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42414128/",
+      "publication_date": "2026 Jul 7",
+      "journal": "Annals of the rheumatic diseases",
+      "doi": "10.1016/j.ard.2026.06.011",
+      "publication_type": [
+        "Letter"
+      ],
+      "matched_diseases": [
+        "systemic lupus"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 2,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "41661130",
+      "title": "Genetically-determined systemic lupus erythematosus requires persistent CAR-T therapy: challenging the transient depletion paradigm.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41661130/",
+      "publication_date": "2026 Jul 3",
+      "journal": "Journal of molecular cell biology",
+      "doi": "10.1093/jmcb/mjag002",
+      "publication_type": [
+        "Journal Article"
+      ],
+      "matched_diseases": [
+        "systemic lupus"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 2,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42259968",
+      "title": "Anti-CD19 CAR T cell therapy promotes skin remodelling in systemic sclerosis.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42259968/",
+      "publication_date": "2026 Jul",
+      "journal": "Nature reviews. Rheumatology",
+      "doi": "10.1038/s41584-026-01396-0",
+      "publication_type": [
+        "Journal Article"
+      ],
+      "matched_diseases": [
+        "systemic sclerosis"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 2,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "41588112",
+      "title": "Roads and detours for CAR T cell therapy in autoimmune diseases.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41588112/",
+      "publication_date": "2026 Jan 26",
+      "journal": "Nature reviews. Drug discovery",
+      "doi": "10.1038/s41573-025-01349-4",
+      "publication_type": [
+        "Journal Article",
+        "Review"
+      ],
+      "matched_diseases": [
+        "autoimmune disease"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 2,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "41775117",
+      "title": "Systemic lupus erythematosus patients eligible for chimeric antigen receptor T-cell therapy according to the 2024 EBMT and International Society for Cell and Gene Therapy expert-based recommendations: a 1-year clinical practice study in France.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41775117/",
+      "publication_date": "2026 Jan 20",
+      "journal": "Cytotherapy",
+      "doi": "10.1016/j.jcyt.2026.102057",
+      "publication_type": [
+        "Journal Article",
+        "Multicenter Study"
+      ],
+      "matched_diseases": [
+        "systemic lupus"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 2,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "41942625",
+      "title": "Potential of chimeric antigen receptor (CAR) T cell immunotherapy in systemic lupus erythematosus (SLE).",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41942625/",
+      "publication_date": "2026 Apr 7",
+      "journal": "Clinical rheumatology",
+      "doi": "10.1007/s10067-026-08100-3",
+      "publication_type": [
+        "Journal Article",
+        "Review"
+      ],
+      "matched_diseases": [
+        "systemic lupus"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 2,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42023226",
+      "title": "Reprogramming CAR T cells across genetic, epigenetic, metabolic and microenvironmental axes to improve efficacy and safety in cancer and autoimmune disease.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42023226/",
+      "publication_date": "2026 Apr 7",
+      "journal": "Frontiers in immunology",
+      "doi": "10.3389/fimmu.2026.1806459",
+      "publication_type": [
+        "Journal Article",
+        "Review"
+      ],
+      "matched_diseases": [
+        "autoimmune disease"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 2,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "41936079",
+      "title": "Anti-CD19 CAR-T cell therapy as rescue treatment in systemic sclerosis relapsing after autologous haematopoietic stem cell transplantation: a case series.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41936079/",
+      "publication_date": "2026 Apr 6",
+      "journal": "Rheumatology (Oxford, England)",
+      "doi": "10.1093/rheumatology/keag173",
+      "publication_type": [
+        "Journal Article"
+      ],
+      "matched_diseases": [
+        "systemic sclerosis"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 2,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42123602",
+      "title": "Redefining Difficult-to-Treat Systemic Lupus Erythematosus: Biomarkers of Molecular Refractoriness Beyond Clinical Failure.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42123602/",
+      "publication_date": "2026 Apr 30",
+      "journal": "International journal of molecular sciences",
+      "doi": "10.3390/ijms27094026",
+      "publication_type": [
+        "Journal Article",
+        "Review"
+      ],
+      "matched_diseases": [
+        "systemic lupus"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 2,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42051236",
+      "title": "Investigational approaches to multiple sclerosis therapy.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42051236/",
+      "publication_date": "2026 Apr 29",
+      "journal": "Current opinion in neurology",
+      "doi": "10.1097/WCO.0000000000001494",
+      "publication_type": [
+        "Journal Article",
+        "Review"
+      ],
+      "matched_diseases": [
+        "multiple sclerosis"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 2,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42046195",
+      "title": "CAR T-Cell Therapy in Neurology: A Scoping Review of Neuro-Oncology, Autoimmune Diseases & Neurotoxicity.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42046195/",
+      "publication_date": "2026 Apr 27",
+      "journal": "Annals of clinical and translational neurology",
+      "doi": "10.1002/acn3.70415",
+      "publication_type": [
+        "Journal Article",
+        "Review"
+      ],
+      "matched_diseases": [
+        "autoimmune disease"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 2,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42182589",
+      "title": "Challenges and opportunities: CAR-T cell therapy in autoimmune diseases.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42182589/",
+      "publication_date": "2026 Apr 24",
+      "journal": "Cell insight",
+      "doi": "10.1016/j.cellin.2026.100327",
+      "publication_type": [
+        "Journal Article",
+        "Review"
+      ],
+      "matched_diseases": [
+        "autoimmune disease"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 2,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42112348",
+      "title": "The microbiota-systemic lupus erythematosus axis: mechanisms, diagnostics, and therapeutic frontiers.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42112348/",
+      "publication_date": "2026 Apr 24",
+      "journal": "Frontiers in immunology",
+      "doi": "10.3389/fimmu.2026.1782828",
+      "publication_type": [
+        "Journal Article",
+        "Review"
+      ],
+      "matched_diseases": [
+        "systemic lupus"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 2,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42028700",
+      "title": "Anti-CD19 CAR T Cells in Autoimmune Encephalitis: Inflammation Controlled, Neurodegeneration Unchecked?",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42028700/",
+      "publication_date": "2026 Apr 24",
+      "journal": "Annals of clinical and translational neurology",
+      "doi": "10.1002/acn3.70414",
+      "publication_type": [
+        "Journal Article"
+      ],
+      "matched_diseases": [
+        "autoimmune encephalitis"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 2,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42026369",
+      "title": "Stiff person syndrome: an overview.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42026369/",
+      "publication_date": "2026 Apr 24",
+      "journal": "Neurological sciences : official journal of the Italian Neurological Society and of the Italian Society of Clinical Neurophysiology",
+      "doi": "10.1007/s10072-026-09054-9",
+      "publication_type": [
+        "Journal Article",
+        "Review"
+      ],
+      "matched_diseases": [
+        "stiff person"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 2,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42019495",
+      "title": "Descartes-08: Unlocking the potential of mRNA CAR T-cell therapy in myasthenia gravis.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42019495/",
+      "publication_date": "2026 Apr 21",
+      "journal": "Molecular therapy : the journal of the American Society of Gene Therapy",
+      "doi": "10.1016/j.ymthe.2026.04.008",
+      "publication_type": [
+        "Journal Article"
+      ],
+      "matched_diseases": [
+        "myasthenia gravis"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 2,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42010209",
+      "title": "Application of BCMA CAR-T in systemic lupus erythematosus.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42010209/",
+      "publication_date": "2026 Apr 20",
+      "journal": "Clinical rheumatology",
+      "doi": "10.1007/s10067-026-08121-y",
+      "publication_type": [
+        "Journal Article",
+        "Case Reports"
+      ],
+      "matched_diseases": [
+        "systemic lupus"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 2,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "41989015",
+      "title": "Chimeric antigen receptor T cells for autoimmune diseases, in particular immune thrombocytopenia.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41989015/",
+      "publication_date": "2026 Apr 16",
+      "journal": "British journal of haematology",
+      "doi": "10.1111/bjh.70482",
+      "publication_type": [
+        "Journal Article",
+        "Review"
+      ],
+      "matched_diseases": [
+        "autoimmune disease"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 2,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "41997827",
+      "title": "Cell therapy in multiple sclerosis: An overview.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41997827/",
+      "publication_date": "2026 Apr 16",
+      "journal": "Revue neurologique",
+      "doi": "10.1016/j.neurol.2026.03.012",
+      "publication_type": [
+        "Journal Article",
+        "Review"
+      ],
+      "matched_diseases": [
+        "multiple sclerosis"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 2,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42079652",
+      "title": "Advances in understanding the Th17/Treg balance in systemic lupus erythematosus: implications for treatment and management.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42079652/",
+      "publication_date": "2026 Apr 16",
+      "journal": "Frontiers in immunology",
+      "doi": "10.3389/fimmu.2026.1795760",
+      "publication_type": [
+        "Journal Article",
+        "Review"
+      ],
+      "matched_diseases": [
+        "systemic lupus"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 2,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42095089",
+      "title": "From pathogenesis to precision medicine in systemic lupus erythematosus: Emerging biomarkers and targeted interventions.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42095089/",
+      "publication_date": "2026 Apr 15",
+      "journal": "iScience",
+      "doi": "10.1016/j.isci.2026.115738",
+      "publication_type": [
+        "Journal Article",
+        "Review"
+      ],
+      "matched_diseases": [
+        "systemic lupus"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 2,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42079836",
+      "title": "Assessing the value of oligoclonal band count in multiple sclerosis: insights from a large cohort analysis.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42079836/",
+      "publication_date": "2026 Apr 15",
+      "journal": "Frontiers in neurology",
+      "doi": "10.3389/fneur.2026.1719470",
+      "publication_type": [
+        "Journal Article"
+      ],
+      "matched_diseases": [
+        "multiple sclerosis"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 2,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "41958278",
+      "title": "Chimeric Antigen Receptor T-Cells in Myasthenia Gravis: Advances, Safety Challenges, and Future Directions.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41958278/",
+      "publication_date": "2026 Apr 10",
+      "journal": "Muscle & nerve",
+      "doi": "10.1002/mus.70222",
+      "publication_type": [
+        "Journal Article",
+        "Review"
+      ],
+      "matched_diseases": [
+        "myasthenia gravis"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 2,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "41966710",
+      "title": "Autologous CD19/BCMA CAR-T cell therapy for myasthenia gravis: Advancing care for those with severe disease.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41966710/",
+      "publication_date": "2026 Apr 10",
+      "journal": "Med (New York, N.Y.)",
+      "doi": "10.1016/j.medj.2026.101036",
+      "publication_type": [
+        "Journal Article"
+      ],
+      "matched_diseases": [
+        "myasthenia gravis"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 2,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "41920311",
+      "title": "Anti-CD19 chimeric antigen receptor T cells in Evans syndrome of systemic lupus erythematosus.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41920311/",
+      "publication_date": "2026 Apr 1",
+      "journal": "Annals of hematology",
+      "doi": "10.1007/s00277-026-06980-8",
+      "publication_type": [
+        "Journal Article",
+        "Case Reports"
+      ],
+      "matched_diseases": [
+        "systemic lupus"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 2,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42227466",
+      "title": "[Research Progress of CAR-T Cell Therapy in Autoimmune Diseases --Review].",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42227466/",
+      "publication_date": "2026 Apr",
+      "journal": "Zhongguo shi yan xue ye xue za zhi",
+      "doi": "10.19746/j.cnki.issn1009-2137.2026.02.047",
+      "publication_type": [
+        "Journal Article",
+        "Review",
+        "English Abstract"
+      ],
+      "matched_diseases": [
+        "autoimmune disease"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 2,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "41958194",
+      "title": "Chimeric Antigen Receptor T Cells in Autoimmune Disease: Mechanistic Insights, Safety Challenges, and Trial Design Imperatives.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41958194/",
+      "publication_date": "2026 Apr",
+      "journal": "International journal of rheumatic diseases",
+      "doi": "10.1111/1756-185x.70644",
+      "publication_type": [
+        "Editorial"
+      ],
+      "matched_diseases": [
+        "autoimmune disease"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 2,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "41807826",
+      "title": "B cell depletion in autoimmune disease: in vivo CAR-T or T cell engagers?",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41807826/",
+      "publication_date": "2026 Apr",
+      "journal": "Nature biotechnology",
+      "doi": "10.1038/s41587-026-03069-5",
+      "publication_type": [
+        "News"
+      ],
+      "matched_diseases": [
+        "autoimmune disease"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 2,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "41482159",
+      "title": "Autologous Stem Cell Transplantation for Multiple Sclerosis.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41482159/",
+      "publication_date": "2025 Dec 31",
+      "journal": "Transplantation and cellular therapy",
+      "doi": "10.1016/j.jtct.2025.12.1001",
+      "publication_type": [
+        "Journal Article",
+        "Review"
+      ],
+      "matched_diseases": [
+        "multiple sclerosis"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 2,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42134213",
+      "title": "Chimeric antigen receptor T-cell therapy in neurological disorders: Emerging applications, evidence, and challenges.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42134213/",
+      "publication_date": "2026 May 7",
+      "journal": "Journal of the neurological sciences",
+      "doi": "10.1016/j.jns.2026.125982",
+      "publication_type": [
+        "Journal Article",
+        "Review"
+      ],
+      "matched_diseases": [],
+      "review_status": "待人工核验",
+      "relevance_score": 0,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "仅命中宽泛检索词"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42194531",
+      "title": "Advancing Care in Lupus Nephritis: Expert Perspectives on Current Practices and Future Directions in Italy.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42194531/",
+      "publication_date": "2026 May 7",
+      "journal": "Journal of clinical medicine",
+      "doi": "10.3390/jcm15103570",
+      "publication_type": [
+        "Journal Article",
+        "Review"
+      ],
+      "matched_diseases": [],
+      "review_status": "待人工核验",
+      "relevance_score": 0,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "仅命中宽泛检索词"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42162633",
+      "title": "The rituximab paradox in rheumatoid arthritis: Re-evaluating B-cell depletion depth and the synovial microenvironment.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42162633/",
+      "publication_date": "2026 May 19",
+      "journal": "Autoimmunity reviews",
+      "doi": "10.1016/j.autrev.2026.104089",
+      "publication_type": [
+        "Journal Article",
+        "Review"
+      ],
+      "matched_diseases": [],
+      "review_status": "待人工核验",
+      "relevance_score": 0,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "仅命中宽泛检索词"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42155646",
+      "title": "Next-Generation CAR-T Therapies: From Personalized Anticancer Drugs to Broadly Applicable Disease-Modifying Treatments.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42155646/",
+      "publication_date": "2026 May 19",
+      "journal": "Transplantation and cellular therapy",
+      "doi": "10.1016/j.jtct.2026.05.019",
+      "publication_type": [
+        "Journal Article",
+        "Review"
+      ],
+      "matched_diseases": [],
+      "review_status": "待人工核验",
+      "relevance_score": 0,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "仅命中宽泛检索词"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42233033",
+      "title": "Global perspectives on lupus nephritis: a review of clinical trials and therapeutic innovations.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42233033/",
+      "publication_date": "2026 May 18",
+      "journal": "Frontiers in immunology",
+      "doi": "10.3389/fimmu.2026.1762892",
+      "publication_type": [
+        "Journal Article",
+        "Review"
+      ],
+      "matched_diseases": [],
+      "review_status": "待人工核验",
+      "relevance_score": 0,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "仅命中宽泛检索词"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42152066",
+      "title": "A new hope with CAR T-cell therapy for refractory idiopathic inflammatory myopathies: a systematic review.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42152066/",
+      "publication_date": "2026 May 18",
+      "journal": "Journal of translational medicine",
+      "doi": "10.1186/s12967-026-08262-3",
+      "publication_type": [
+        "Journal Article",
+        "Review"
+      ],
+      "matched_diseases": [],
+      "review_status": "待人工核验",
+      "relevance_score": 0,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "仅命中宽泛检索词"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42143506",
+      "title": "The evolution of CAR therapies across oncology and autoimmunity: mechanistic insights and therapeutic innovations.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42143506/",
+      "publication_date": "2026 May 16",
+      "journal": "International immunopharmacology",
+      "doi": "10.1016/j.intimp.2026.116867",
+      "publication_type": [
+        "Journal Article",
+        "Review"
+      ],
+      "matched_diseases": [],
+      "review_status": "待人工核验",
+      "relevance_score": 0,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "仅命中宽泛检索词"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42144053",
+      "title": "The intersection of immunity and mental health: Immunotherapy's role in modulating depression and neuropsychiatric disorders.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42144053/",
+      "publication_date": "2026 May 16",
+      "journal": "Progress in neuro-psychopharmacology & biological psychiatry",
+      "doi": "10.1016/j.pnpbp.2026.111746",
+      "publication_type": [
+        "Journal Article",
+        "Review"
+      ],
+      "matched_diseases": [],
+      "review_status": "待人工核验",
+      "relevance_score": 0,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "仅命中宽泛检索词"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42179345",
+      "title": "Preconditioning determines engraftment and therapeutic efficacy of anti-CD19 CAR-T cells in murine lupus.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42179345/",
+      "publication_date": "2026 May 14",
+      "journal": "Journal of immunology (Baltimore, Md. : 1950)",
+      "doi": "10.1093/jimmun/vkag112",
+      "publication_type": [
+        "Journal Article"
+      ],
+      "matched_diseases": [],
+      "review_status": "待人工核验",
+      "relevance_score": 0,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "仅命中宽泛检索词"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42193884",
+      "title": "Beyond Hematology-Current Insights into Chimeric Antigen Receptor (CAR) T-Cell Therapy for Skin and Connective Tissue Disorders.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42193884/",
+      "publication_date": "2026 May 12",
+      "journal": "Cells",
+      "doi": "10.3390/cells15100874",
+      "publication_type": [
+        "Journal Article",
+        "Review"
+      ],
+      "matched_diseases": [],
+      "review_status": "待人工核验",
+      "relevance_score": 0,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "仅命中宽泛检索词"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "41903743",
+      "title": "The BAFF/APRIL system at the crossroads of B cell memory and autoimmune relapse: Implication into the therapeutic strategies.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41903743/",
+      "publication_date": "2026 Mar 26",
+      "journal": "Autoimmunity reviews",
+      "doi": "10.1016/j.autrev.2026.104042",
+      "publication_type": [
+        "Journal Article",
+        "Review"
+      ],
+      "matched_diseases": [],
+      "review_status": "待人工核验",
+      "relevance_score": 0,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "仅命中宽泛检索词"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "41852187",
+      "title": "Cellular therapies for rheumatic disease.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41852187/",
+      "publication_date": "2026 Mar 18",
+      "journal": "Current opinion in rheumatology",
+      "doi": "10.1097/BOR.0000000000001159",
+      "publication_type": [
+        "Journal Article",
+        "Review"
+      ],
+      "matched_diseases": [],
+      "review_status": "待人工核验",
+      "relevance_score": 0,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "仅命中宽泛检索词"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "41856114",
+      "title": "Anti-CD19 CAR T cell therapy for refractory SLE-ITP.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41856114/",
+      "publication_date": "2026 Mar 18",
+      "journal": "Med (New York, N.Y.)",
+      "doi": "10.1016/j.medj.2026.101039",
+      "publication_type": [
+        "Journal Article"
+      ],
+      "matched_diseases": [],
+      "review_status": "待人工核验",
+      "relevance_score": 0,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "仅命中宽泛检索词"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42025103",
+      "title": "Cellular therapies in autoimmune neuromuscular disorders: the new frontier.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42025103/",
+      "publication_date": "2026 Mar 11",
+      "journal": "Neuromuscular disorders : NMD",
+      "doi": "10.1016/j.nmd.2026.106408",
+      "publication_type": [
+        "Journal Article",
+        "Review"
+      ],
+      "matched_diseases": [],
+      "review_status": "待人工核验",
+      "relevance_score": 0,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "仅命中宽泛检索词"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42244451",
+      "title": "Translating B-Cell and Plasma-Cell Targeting from Oncology to Autoimmunity: Modalities, Quantitative Bridging, and a Development Roadmap.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42244451/",
+      "publication_date": "2026 Jun 5",
+      "journal": "Clinical pharmacology and therapeutics",
+      "doi": "10.1002/cpt.70352",
+      "publication_type": [
+        "Journal Article",
+        "Review"
+      ],
+      "matched_diseases": [],
+      "review_status": "待人工核验",
+      "relevance_score": 0,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "仅命中宽泛检索词"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42381185",
+      "title": "Toxoplasmosis Beyond Transplantation: Diagnostic and Prevention Challenges in a Patient Receiving Targeted Immunomodulators.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42381185/",
+      "publication_date": "2026 Jun 30",
+      "journal": "Transplant infectious disease : an official journal of the Transplantation Society",
+      "doi": "10.1111/tid.70263",
+      "publication_type": [
+        "Case Reports",
+        "Journal Article"
+      ],
+      "matched_diseases": [],
+      "review_status": "待人工核验",
+      "relevance_score": 0,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "仅命中宽泛检索词"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42322645",
+      "title": "Chimeric antigen receptor-based cell therapies for neuroimmune disorders: Therapeutic advances and structured standard treatment models.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42322645/",
+      "publication_date": "2026 Jun 20",
+      "journal": "Neural regeneration research",
+      "doi": "10.4103/NRR.NRR-D-26-00089",
+      "publication_type": [
+        "Journal Article"
+      ],
+      "matched_diseases": [],
+      "review_status": "待人工核验",
+      "relevance_score": 0,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "仅命中宽泛检索词"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42286724",
+      "title": "Dual-target CAR-T cell therapy: latest updates from the 2025 ASH annual meeting.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42286724/",
+      "publication_date": "2026 Jun 12",
+      "journal": "Experimental hematology & oncology",
+      "doi": "10.1186/s40164-026-00790-4",
+      "publication_type": [
+        "Letter"
+      ],
+      "matched_diseases": [],
+      "review_status": "待人工核验",
+      "relevance_score": 0,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "仅命中宽泛检索词"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42276316",
+      "title": "Antigen-specific tolerance therapies in type 1 diabetes: Disease-specific promises meet stage-specific challenges.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42276316/",
+      "publication_date": "2026 Jun 11",
+      "journal": "Autoimmunity reviews",
+      "doi": "10.1016/j.autrev.2026.104120",
+      "publication_type": [
+        "Journal Article",
+        "Review"
+      ],
+      "matched_diseases": [],
+      "review_status": "待人工核验",
+      "relevance_score": 0,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "仅命中宽泛检索词"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42393377",
+      "title": "A guide to CAR T cell therapies: development, current status and future prospects.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42393377/",
+      "publication_date": "2026 Jul 2",
+      "journal": "Nature reviews. Immunology",
+      "doi": "10.1038/s41577-026-01322-1",
+      "publication_type": [
+        "Journal Article",
+        "Review"
+      ],
+      "matched_diseases": [],
+      "review_status": "待人工核验",
+      "relevance_score": 0,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "仅命中宽泛检索词"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42431595",
+      "title": "The future of TCR-Treg therapies is renewables.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42431595/",
+      "publication_date": "2026 Jul 10",
+      "journal": "Autoimmunity reviews",
+      "doi": "10.1016/j.autrev.2026.104139",
+      "publication_type": [
+        "Journal Article",
+        "Review"
+      ],
+      "matched_diseases": [],
+      "review_status": "待人工核验",
+      "relevance_score": 0,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "仅命中宽泛检索词"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "41765179",
+      "title": "Tiny warriors, big impact: targeted immunotherapy in kidney diseases.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41765179/",
+      "publication_date": "2026 Feb 27",
+      "journal": "Kidney international",
+      "doi": "10.1016/j.kint.2026.01.032",
+      "publication_type": [
+        "Journal Article",
+        "Review"
+      ],
+      "matched_diseases": [],
+      "review_status": "待人工核验",
+      "relevance_score": 0,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "仅命中宽泛检索词"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "41763635",
+      "title": "Synergizing artificial intelligence with in vivo CAR-T cell generation: A new paradigm for democratized immunotherapy.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41763635/",
+      "publication_date": "2026 Feb 26",
+      "journal": "Bio Systems",
+      "doi": "10.1016/j.biosystems.2026.105750",
+      "publication_type": [
+        "Journal Article",
+        "Review"
+      ],
+      "matched_diseases": [],
+      "review_status": "待人工核验",
+      "relevance_score": 0,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "仅命中宽泛检索词"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "41949712",
+      "title": "Chimeric antigen receptor macrophage (CAR-M) immunotherapy in autoimmune inflammatory rheumatic diseases.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41949712/",
+      "publication_date": "2026 Apr 8",
+      "journal": "Clinical rheumatology",
+      "doi": "10.1007/s10067-026-08101-2",
+      "publication_type": [
+        "Journal Article",
+        "Review"
+      ],
+      "matched_diseases": [],
+      "review_status": "待人工核验",
+      "relevance_score": 0,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "仅命中宽泛检索词"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "41952029",
+      "title": "Potential of CAR-T cell immunotherapy in rheumatoid arthritis.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41952029/",
+      "publication_date": "2026 Apr 8",
+      "journal": "Clinical rheumatology",
+      "doi": "10.1007/s10067-026-08095-x",
+      "publication_type": [
+        "Journal Article",
+        "Review"
+      ],
+      "matched_diseases": [],
+      "review_status": "待人工核验",
+      "relevance_score": 0,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "仅命中宽泛检索词"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42110055",
+      "title": "The Price of Remission: Modeling the Total Financial Burden, Quality-of-Life Impairment, and Healthcare Dependence in Lupus Compared With Chimeric Antigen Receptor (CAR) T-cell Therapy.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42110055/",
+      "publication_date": "2026 Apr 8",
+      "journal": "Cureus",
+      "doi": "10.7759/cureus.106661",
+      "publication_type": [
+        "Journal Article"
+      ],
+      "matched_diseases": [],
+      "review_status": "待人工核验",
+      "relevance_score": 0,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "仅命中宽泛检索词"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42072222",
+      "title": "The Evolution of Lupus Nephritis Therapy from the 1960s to the Present.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42072222/",
+      "publication_date": "2026 Apr 6",
+      "journal": "Bioengineering (Basel, Switzerland)",
+      "doi": "10.3390/bioengineering13040428",
+      "publication_type": [
+        "Journal Article",
+        "Review"
+      ],
+      "matched_diseases": [],
+      "review_status": "待人工核验",
+      "relevance_score": 0,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "仅命中宽泛检索词"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "41934146",
+      "title": "Pathogenesis-directed lupus therapeutics.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41934146/",
+      "publication_date": "2026 Apr 4",
+      "journal": "Current opinion in rheumatology",
+      "doi": "10.1097/BOR.0000000000001160",
+      "publication_type": [
+        "Journal Article",
+        "Review"
+      ],
+      "matched_diseases": [],
+      "review_status": "待人工核验",
+      "relevance_score": 0,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "仅命中宽泛检索词"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42148104",
+      "title": "Adapting CAR-T and CAR-Treg cancer therapies for autoimmunity: innovations and challenges.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42148104/",
+      "publication_date": "2026 Apr 30",
+      "journal": "Frontiers in immunology",
+      "doi": "10.3389/fimmu.2026.1737202",
+      "publication_type": [
+        "Journal Article",
+        "Review"
+      ],
+      "matched_diseases": [],
+      "review_status": "待人工核验",
+      "relevance_score": 0,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "仅命中宽泛检索词"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42095134",
+      "title": "Lipid nanoparticle mRNA delivery preserves CAR T cell cytotoxicity and limits exhaustion compared to electroporation.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42095134/",
+      "publication_date": "2026 Apr 28",
+      "journal": "Molecular therapy. Nucleic acids",
+      "doi": "10.1016/j.omtn.2026.102929",
+      "publication_type": [
+        "Journal Article"
+      ],
+      "matched_diseases": [],
+      "review_status": "待人工核验",
+      "relevance_score": 0,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "仅命中宽泛检索词"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42050914",
+      "title": "Emerging therapies for type 1 diabetes: Immunotherapy and gene editing advances.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42050914/",
+      "publication_date": "2026 Apr 28",
+      "journal": "The Journal of international medical research",
+      "doi": "10.1177/03000605261440833",
+      "publication_type": [
+        "Journal Article"
+      ],
+      "matched_diseases": [],
+      "review_status": "待人工核验",
+      "relevance_score": 0,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "仅命中宽泛检索词"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42003566",
+      "title": "CAR-NK cell-based therapies: translational and regulatory breakthroughs.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42003566/",
+      "publication_date": "2026 Apr 20",
+      "journal": "Immunology and cell biology",
+      "doi": "10.1111/imcb.70120",
+      "publication_type": [
+        "Journal Article",
+        "Review"
+      ],
+      "matched_diseases": [],
+      "review_status": "待人工核验",
+      "relevance_score": 0,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "仅命中宽泛检索词"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42000955",
+      "title": "Cell immunotherapy in autoimmune rheumatic diseases: a paradigm shift in the therapy of autoimmune inflammatory rheumatic diseases.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42000955/",
+      "publication_date": "2026 Apr 18",
+      "journal": "Clinical rheumatology",
+      "doi": "10.1007/s10067-026-08103-0",
+      "publication_type": [
+        "Journal Article",
+        "Review",
+        "Editorial"
+      ],
+      "matched_diseases": [],
+      "review_status": "待人工核验",
+      "relevance_score": 0,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "仅命中宽泛检索词"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "41965340",
+      "title": "Allogeneic CD19 CAR T cells armed with an anti-rejection CD70 CAR overcome antigen escape and evade alloimmune responses.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41965340/",
+      "publication_date": "2026 Apr 12",
+      "journal": "Nature communications",
+      "doi": "10.1038/s41467-026-71904-z",
+      "publication_type": [
+        "Journal Article"
+      ],
+      "matched_diseases": [],
+      "review_status": "待人工核验",
+      "relevance_score": 0,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "仅命中宽泛检索词"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "41956272",
+      "title": "Anti-CD52 therapy of rheumatic diseases: Revisited in the era of immune reset.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41956272/",
+      "publication_date": "2026 Apr 11",
+      "journal": "Autoimmunity reviews",
+      "doi": "10.1016/j.autrev.2026.104056",
+      "publication_type": [
+        "Journal Article",
+        "Review"
+      ],
+      "matched_diseases": [],
+      "review_status": "待人工核验",
+      "relevance_score": 0,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "仅命中宽泛检索词"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "41959015",
+      "title": "Efficient Generation of Functional TCRαβ(+) Cytotoxic T Cells from hiPSCs via Small-Molecule Modulation.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41959015/",
+      "publication_date": "2026 Apr 1",
+      "journal": "bioRxiv : the preprint server for biology",
+      "doi": "10.64898/2026.03.31.715684",
+      "publication_type": [
+        "Journal Article",
+        "Preprint"
+      ],
+      "matched_diseases": [],
+      "review_status": "待人工核验",
+      "relevance_score": 0,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "仅命中宽泛检索词"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "41129709",
+      "title": "Emerging therapies in idiopathic inflammatory myopathies.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41129709/",
+      "publication_date": "2025 Oct 23",
+      "journal": "Journal of neuromuscular diseases",
+      "doi": "10.1177/22143602251384098",
+      "publication_type": [
+        "Journal Article",
+        "Review"
+      ],
+      "matched_diseases": [],
+      "review_status": "待人工核验",
+      "relevance_score": 0,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "仅命中宽泛检索词"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "41376156",
+      "title": "FcεRγI promotes canine CD8 chimeric antigen receptor T cell cytotoxicity through a Syk-NF-κB axis.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41376156/",
+      "publication_date": "2025 Dec 10",
+      "journal": "Molecular therapy : the journal of the American Society of Gene Therapy",
+      "doi": "10.1016/j.ymthe.2025.12.010",
+      "publication_type": [
+        "Journal Article"
+      ],
+      "matched_diseases": [],
+      "review_status": "待人工核验",
+      "relevance_score": 0,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "仅命中宽泛检索词"
+      ]
+    }
+  ]
+}

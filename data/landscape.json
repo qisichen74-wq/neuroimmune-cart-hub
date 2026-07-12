@@ -1,0 +1,698 @@
+[
+  {
+    "id": "kyverna-kyv101",
+    "record_kind": "company_program",
+    "source_url": "https://ir.kyvernatx.com/news-releases/news-release-details/kyverna-presents-registrational-trial-primary-analysis-miv-cel",
+    "source_last_update": "2026-04-21",
+    "company": "Kyverna",
+    "product": "KYV-101",
+    "technology": "CD19 CAR-T",
+    "focus": [
+      "SPS",
+      "MG",
+      "MS",
+      "LN"
+    ],
+    "stage": "SPS注册性分析 / MG Phase 2 / MS Phase 1 IIT",
+    "region": "US / EU",
+    "priority": "高",
+    "status": "临床后期 / 多适应症推进",
+    "evidence_anchor": "自免CAR-T代表性平台公司，适合作为海外竞争格局核心锚点。",
+    "recent_update": "2026年4月披露SPS注册性试验主要分析；MS Phase 1 IIT当前Active, not recruiting。",
+    "watch_points": [
+      "MS临床推进速度",
+      "不同适应症间的扩展顺序",
+      "长期B细胞重建与安全管理"
+    ]
+  },
+  {
+    "id": "cartesian-descartes08",
+    "record_kind": "company_program",
+    "source_url": "https://ir.cartesiantherapeutics.com/news-releases/news-release-details/cartesian-therapeutics-secures-150-million-non-dilutive",
+    "source_last_update": "2026-05-26",
+    "company": "Cartesian",
+    "product": "Descartes-08",
+    "technology": "mRNA CAR-T",
+    "focus": [
+      "MG"
+    ],
+    "stage": "MG Phase 3 AURORA",
+    "region": "US / Canada / Europe",
+    "priority": "高",
+    "status": "Phase 3 recruiting",
+    "evidence_anchor": "给药方式与制造模式差异化明显，是路线对比中的关键样本。",
+    "recent_update": "AURORA Phase 3正在招募，官方预计2027年第一季度披露顶线数据。",
+    "watch_points": [
+      "mRNA CAR-T持久性",
+      "重复给药策略",
+      "与传统自免CAR-T的疗效比较"
+    ]
+  },
+  {
+    "id": "cabaletta-resecel",
+    "record_kind": "company_program",
+    "company": "Cabaletta Bio",
+    "product": "rese-cel（CABA-201）",
+    "technology": "Autologous CD19 CAR-T",
+    "focus": [
+      "SLE / LN",
+      "IIM",
+      "SSc",
+      "MG",
+      "PV"
+    ],
+    "stage": "多项Phase 1/2 / myositis注册导向",
+    "region": "US / Europe",
+    "priority": "高",
+    "status": "多项目Recruiting",
+    "source_url": "https://www.cabalettabio.com/investors/news-events/press-releases/detail/148/cabaletta-bio-reports-first-quarter-2026-financial-results",
+    "source_last_update": "2026-05-14",
+    "evidence_anchor": "rese-cel已形成覆盖SLE、肌炎、SSc、MG和PV的RESET临床项目群。",
+    "recent_update": "2026年一季度更新显示myositis注册性开发推进，并继续扩展无预处理策略。",
+    "watch_points": [
+      "myositis注册性队列执行",
+      "无预处理方案的疗效与安全性",
+      "SLE、SSc与MG注册路径"
+    ]
+  },
+  {
+    "id": "erlangen-cd19",
+    "record_kind": "academic_center",
+    "company": "Erlangen / Academic IIT",
+    "product": "CD19 CAR-T",
+    "technology": "Academic CD19 CAR-T",
+    "focus": [
+      "SLE",
+      "IIM",
+      "SSc"
+    ],
+    "stage": "15例NEJM随访病例系列 / CASTLE研究",
+    "region": "Germany / Europe",
+    "priority": "高",
+    "status": "学术先行",
+    "source_url": "https://pubmed.ncbi.nlm.nih.gov/38381673/",
+    "source_last_update": "2024-02-22",
+    "evidence_anchor": "NEJM 15例系列覆盖SLE、IIM和SSc，最长随访接近两年。",
+    "recent_update": "病例系列支持跨病种可行性，但仍需CASTLE等前瞻性研究升级证据。",
+    "watch_points": [
+      "病例到系列的外推边界",
+      "长期随访",
+      "是否转入更正式试验体系"
+    ]
+  },
+  {
+    "id": "tongji-qh103",
+    "record_kind": "academic_trial_program",
+    "company": "同济医院 / QH103 IIT",
+    "product": "QH103",
+    "technology": "Universal CD19 CAR-γδT",
+    "focus": [
+      "MS",
+      "NMOSD",
+      "AE",
+      "CIDP",
+      "MG",
+      "MOGAD",
+      "IIM"
+    ],
+    "stage": "Phase 1",
+    "region": "China",
+    "priority": "高",
+    "status": "Recruiting",
+    "source_url": "https://clinicaltrials.gov/study/NCT07526493",
+    "source_last_update": "2026-05-12",
+    "evidence_anchor": "注册试验覆盖多类抗体介导神经免疫疾病，并采用通用型CD19 CAR-γδT路线。",
+    "recent_update": "NCT07526493于2026年5月更新为Recruiting，计划入组6例。",
+    "watch_points": [
+      "首个剂量队列安全性",
+      "GVHD、CRS和ICANS管理",
+      "跨病种入组分布与可解释性"
+    ]
+  },
+  {
+    "id": "tianjin-xiniao-ucar",
+    "record_kind": "academic_trial_program",
+    "company": "天津市环湖医院 / 上海细鸟生物",
+    "product": "Universal CD19/BCMA CAR-T",
+    "technology": "Universal allogeneic dual-target CAR-T",
+    "focus": [
+      "NMOSD",
+      "MG",
+      "MS",
+      "CIDP",
+      "AE"
+    ],
+    "stage": "Early Phase 1",
+    "region": "China",
+    "priority": "高",
+    "status": "Recruiting",
+    "source_url": "https://clinicaltrials.gov/study/NCT06939166",
+    "source_last_update": "2025-12-15",
+    "evidence_anchor": "中国在研的通用异体CD19/BCMA双靶点神经免疫CAR-T注册试验，计划入组12例。",
+    "recent_update": "ClinicalTrials.gov记录显示试验正在天津招募，采用氟达拉滨/环磷酰胺清淋后单次输注。",
+    "watch_points": [
+      "首批患者DLT与CRS/ICANS",
+      "异体路线的持续性与GVHD",
+      "多病种入组构成"
+    ]
+  },
+  {
+    "id": "cspc-sys6020",
+    "record_kind": "company_program",
+    "company": "石药集团中奇制药",
+    "product": "SYS6020",
+    "technology": "LNP-mRNA transient BCMA CAR-T",
+    "focus": [
+      "MG"
+    ],
+    "stage": "Phase 1",
+    "region": "China",
+    "priority": "高",
+    "status": "Recruiting（注册信息需复核）",
+    "source_url": "https://clinicaltrials.gov/study/NCT06688435",
+    "source_last_update": "2025-08-06",
+    "evidence_anchor": "国内少见的无清淋、重复给药BCMA mRNA CAR-T路线，计划入组50例难治性全身型MG。",
+    "recent_update": "ClinicalTrials.gov显示山东大学齐鲁医院处于Recruiting；未将该注册状态等同于NMPA产品批准。",
+    "watch_points": [
+      "注册信息是否更新",
+      "剂量扩展启动",
+      "无清淋安全性和应答持续时间"
+    ]
+  },
+  {
+    "id": "gilead-kite363",
+    "record_kind": "company_program",
+    "company": "Kite / Gilead",
+    "product": "KITE-363",
+    "technology": "Autologous dual-target CD19/CD20 CAR-T",
+    "focus": [
+      "MS",
+      "MG",
+      "CIDP"
+    ],
+    "stage": "Phase 1",
+    "region": "US / Australia",
+    "priority": "高",
+    "status": "Recruiting",
+    "source_url": "https://clinicaltrials.gov/study/NCT07304154",
+    "source_last_update": "2026-07-01",
+    "evidence_anchor": "大型细胞治疗公司进入神经免疫的双靶点篮式研究。",
+    "recent_update": "NCT07304154于2026-07-01更新，计划入组52例。",
+    "watch_points": [
+      "双靶点安全性",
+      "跨病种队列执行",
+      "Phase 1b推荐剂量"
+    ]
+  },
+  {
+    "id": "bms-cc97540",
+    "record_kind": "company_program",
+    "company": "Bristol Myers Squibb / Juno",
+    "product": "CC-97540（BMS-986353）",
+    "technology": "CD19 NEX-T CAR-T",
+    "focus": [
+      "RMS",
+      "PMS",
+      "MG"
+    ],
+    "stage": "Phase 1 Breakfree-2",
+    "region": "US / Europe",
+    "priority": "高",
+    "status": "Recruiting",
+    "source_url": "https://clinicaltrials.gov/study/NCT06220201",
+    "source_last_update": "2026-07-01",
+    "evidence_anchor": "计划120例的多地区神经免疫CAR-T研究，规模在早期项目中突出。",
+    "recent_update": "Breakfree-2于2026-07-01更新并维持Recruiting。",
+    "watch_points": [
+      "120例入组执行",
+      "MS与MG队列差异",
+      "RP2D"
+    ]
+  },
+  {
+    "id": "novartis-ytb323",
+    "record_kind": "company_program",
+    "company": "Novartis",
+    "product": "YTB323",
+    "technology": "Rapid-manufacturing CD19 CAR-T",
+    "focus": [
+      "MG"
+    ],
+    "stage": "Phase 1/2",
+    "region": "Global",
+    "priority": "高",
+    "status": "Recruiting",
+    "source_url": "https://clinicaltrials.gov/study/NCT06704269",
+    "source_last_update": "2026-06-26",
+    "evidence_anchor": "Novartis快速制造CD19 CAR-T进入治疗抵抗性全身型MG。",
+    "recent_update": "NCT06704269于2026-06-26更新，计划入组15例。",
+    "watch_points": [
+      "细胞动力学",
+      "MG临床应答",
+      "制造周期"
+    ]
+  },
+  {
+    "id": "crispr-ctx112",
+    "record_kind": "company_program",
+    "company": "CRISPR Therapeutics",
+    "product": "CTX112",
+    "technology": "CRISPR-Cas9 allogeneic CD19 CAR-T",
+    "focus": [
+      "SLE",
+      "LN",
+      "SSc",
+      "IIM"
+    ],
+    "stage": "Phase 1",
+    "region": "Global",
+    "priority": "高",
+    "status": "Recruiting",
+    "source_url": "https://clinicaltrials.gov/study/NCT06925542",
+    "source_last_update": "2026-06-15",
+    "evidence_anchor": "80例基因编辑异体CAR-T自免研究。",
+    "recent_update": "维持Recruiting。",
+    "watch_points": [
+      "异体风险",
+      "制造扩展性"
+    ]
+  },
+  {
+    "id": "fate-ft819",
+    "record_kind": "company_program",
+    "company": "Fate Therapeutics",
+    "product": "FT819",
+    "technology": "iPSC-derived off-the-shelf CD19 CAR-T",
+    "focus": [
+      "AAV",
+      "IIM",
+      "SSc",
+      "SLE",
+      "LN"
+    ],
+    "stage": "Phase 1",
+    "region": "Global",
+    "priority": "高",
+    "status": "Recruiting",
+    "source_url": "https://clinicaltrials.gov/study/NCT06308978",
+    "source_last_update": "2026-05-22",
+    "evidence_anchor": "计划244例的iPSC现货型CAR-T研究。",
+    "recent_update": "维持Recruiting。",
+    "watch_points": [
+      "规模制造",
+      "长期安全"
+    ]
+  },
+  {
+    "id": "tianjin-qt019c",
+    "record_kind": "academic_trial_program",
+    "company": "天津市环湖医院",
+    "product": "QT-019C",
+    "technology": "Universal allogeneic CD19/BCMA CAR-T",
+    "focus": [
+      "NMOSD",
+      "MS",
+      "MG"
+    ],
+    "stage": "Early Phase 1",
+    "region": "China",
+    "priority": "高",
+    "status": "Not yet recruiting",
+    "source_url": "https://clinicaltrials.gov/study/NCT07392528",
+    "source_last_update": "2026-02-11",
+    "evidence_anchor": "神经免疫双靶点通用异体项目。",
+    "recent_update": "尚未招募。",
+    "watch_points": [
+      "招募启动",
+      "项目差异化"
+    ]
+  },
+  {
+    "id": "allogene-allo329",
+    "record_kind": "company_program",
+    "company": "Allogene Therapeutics",
+    "product": "ALLO-329",
+    "technology": "Allogeneic dual CD19/CD70 CAR-T",
+    "focus": [
+      "SLE",
+      "LN",
+      "IIM",
+      "SSc"
+    ],
+    "stage": "Phase 1",
+    "region": "US",
+    "priority": "高",
+    "status": "Recruiting",
+    "source_url": "https://clinicaltrials.gov/study/NCT07085104",
+    "source_last_update": "2026-06-18",
+    "evidence_anchor": "CD19/CD70异体双靶点自免项目。",
+    "recent_update": "计划66例。",
+    "watch_points": [
+      "持久性",
+      "异体安全"
+    ]
+  },
+  {
+    "id": "miltenyi-zamtocel",
+    "record_kind": "company_program",
+    "company": "Miltenyi Biomedicine",
+    "product": "zamto-cel",
+    "technology": "Autologous CD19 CAR-T",
+    "focus": [
+      "LN",
+      "SLE",
+      "SSc"
+    ],
+    "stage": "Phase 1",
+    "region": "Europe",
+    "priority": "高",
+    "status": "Recruiting",
+    "source_url": "https://clinicaltrials.gov/study/NCT06708845",
+    "source_last_update": "2026-06-11",
+    "evidence_anchor": "48例严重难治自免多队列研究。",
+    "recent_update": "2026年7月计划启动。",
+    "watch_points": [
+      "启动确认",
+      "深度缓解"
+    ]
+  },
+  {
+    "id": "therorna-ti0032",
+    "record_kind": "company_program",
+    "company": "Therorna",
+    "product": "TI-0032-III",
+    "technology": "In vivo CAR-T",
+    "focus": [
+      "SLE",
+      "SS",
+      "SSc",
+      "IIM",
+      "AAV"
+    ],
+    "stage": "Phase 1",
+    "region": "China",
+    "priority": "高",
+    "status": "Recruiting",
+    "source_url": "https://clinicaltrials.gov/study/NCT07413341",
+    "source_last_update": "2026-02-17",
+    "evidence_anchor": "国内体内CAR-T自免早期临床项目。",
+    "recent_update": "计划12例。",
+    "watch_points": [
+      "体内转导",
+      "脱靶风险"
+    ]
+  },
+  {
+    "id": "zjuch-ucar19bcma",
+    "record_kind": "academic_trial_program",
+    "company": "浙江大学医学院附属儿童医院",
+    "product": "Universal CD19/BCMA CAR-T",
+    "technology": "Universal allogeneic dual-target CAR-T",
+    "focus": [
+      "SLE",
+      "SSc",
+      "AAV",
+      "IgAN",
+      "耐多药肾病综合征"
+    ],
+    "stage": "Phase 1",
+    "region": "China",
+    "priority": "高",
+    "status": "Recruiting",
+    "source_url": "https://clinicaltrials.gov/study/NCT07305116",
+    "source_last_update": "2026-02-03",
+    "evidence_anchor": "官方注册试验覆盖多类B细胞介导自身免疫病，采用通用异体CD19/BCMA双靶点路线。",
+    "recent_update": "NCT07305116于2026-02-03维持Recruiting，计划入组15例。",
+    "watch_points": [
+      "多病种入组节奏",
+      "异体双靶点安全性",
+      "长期免疫重建"
+    ]
+  },
+  {
+    "id": "magicrna-hn2302",
+    "record_kind": "company_program",
+    "company": "Shenzhen MagicRNA Biotechnology",
+    "product": "HN2302",
+    "technology": "In vivo CAR-T（官方注册库仅在干预别名中明确）",
+    "focus": [
+      "SLE",
+      "SSc"
+    ],
+    "stage": "Phase 1",
+    "region": "China",
+    "priority": "高",
+    "status": "Not yet recruiting",
+    "source_url": "https://clinicaltrials.gov/study/NCT07523282",
+    "source_last_update": "2026-04-14",
+    "evidence_anchor": "ClinicalTrials.gov显示HN2302用于自身免疫病，且干预别名注明为in vivo CAR-T。",
+    "recent_update": "NCT07523282于2026-04-14登记，计划在合肥开展12例Phase 1。",
+    "watch_points": [
+      "官方后续是否补充产品机制描述",
+      "首例入组时间",
+      "SLE与SSc队列构成"
+    ]
+  },
+  {
+    "id": "arcellx-anitocel",
+    "record_kind": "company_program",
+    "company": "Arcellx",
+    "product": "anitocabtagene autoleucel (anito-cel)",
+    "technology": "BCMA CAR-T",
+    "focus": [
+      "MG"
+    ],
+    "stage": "Phase 1",
+    "region": "US",
+    "priority": "高",
+    "status": "Recruiting",
+    "source_url": "https://clinicaltrials.gov/study/NCT06626919",
+    "source_last_update": "2026-02-25",
+    "evidence_anchor": "Arcellx把BCMA CAR-T扩展到非肿瘤浆细胞相关疾病，官方注册库明确包含MG。",
+    "recent_update": "NCT06626919于2026-02-25维持Recruiting，计划入组30例。",
+    "watch_points": [
+      "BCMA路线与Descartes/SYS6020差异",
+      "清淋相关安全性",
+      "MG队列公开节奏"
+    ]
+  },
+  {
+    "id": "tongji-v001bcma",
+    "record_kind": "academic_trial_program",
+    "company": "同济医院 / V001-BCMA",
+    "product": "V001-BCMA",
+    "technology": "In vivo BCMA CAR-T lentiviral vector",
+    "focus": [
+      "SLE",
+      "IgG4-RD",
+      "SSc",
+      "IIM",
+      "AAV"
+    ],
+    "stage": "Early Phase 1",
+    "region": "China",
+    "priority": "高",
+    "status": "Recruiting",
+    "source_url": "https://clinicaltrials.gov/study/NCT07339540",
+    "source_last_update": "2026-01-14",
+    "evidence_anchor": "官方注册描述明确V001-BCMA通过体内定向转导T细胞形成CAR-T。",
+    "recent_update": "NCT07339540于2026-01-14维持Recruiting，计划入组45例。",
+    "watch_points": [
+      "体内转导安全性",
+      "载体长期风险",
+      "病种分层解释"
+    ]
+  },
+  {
+    "id": "ihematology-xiniao-ucar",
+    "record_kind": "academic_trial_program",
+    "company": "中国医学科学院血液病医院 / 上海细鸟生物",
+    "product": "Universal CD19/BCMA CAR-T",
+    "technology": "Universal allogeneic dual-target CAR-T",
+    "focus": [
+      "SLE",
+      "SSc",
+      "IIM",
+      "AAV",
+      "CTD-associated thrombocytopenia"
+    ],
+    "stage": "Phase 1",
+    "region": "China",
+    "priority": "高",
+    "status": "Recruiting（注册信息需复核）",
+    "source_url": "https://clinicaltrials.gov/study/NCT06941129",
+    "source_last_update": "2025-09-29",
+    "evidence_anchor": "官方注册试验覆盖多病种自身免疫适应症，并引入上海细鸟合作的异体双靶点路线。",
+    "recent_update": "NCT06941129最后公开更新为2025-09-29，当前仍显示Recruiting。",
+    "watch_points": [
+      "注册信息新鲜度",
+      "与其他细鸟合作项目区分",
+      "血小板减少等特殊人群解释"
+    ]
+  },
+  {
+    "id": "xuzhou-xiniao-ucar",
+    "record_kind": "academic_trial_program",
+    "company": "徐州医科大学附属医院 / 上海细鸟生物",
+    "product": "UCAR-T cells",
+    "technology": "Universal allogeneic CD19/BCMA CAR-T",
+    "focus": [
+      "SLE",
+      "SSc"
+    ],
+    "stage": "探索性临床",
+    "region": "China",
+    "priority": "中",
+    "status": "Active, not recruiting（注册信息需复核）",
+    "source_url": "https://clinicaltrials.gov/study/NCT07155369",
+    "source_last_update": "2025-09-04",
+    "evidence_anchor": "官方注册记录显示该院启动了异体CD19/BCMA CAR-T自身免疫项目并已不再开放招募。",
+    "recent_update": "NCT07155369最后更新于2025-09-04，状态为Active, not recruiting。",
+    "watch_points": [
+      "停止招募原因",
+      "是否进入结果披露窗口",
+      "与天津/血研所项目异同"
+    ]
+  },
+  {
+    "id": "pku3-qh103",
+    "record_kind": "academic_trial_program",
+    "company": "北京大学第三医院 / QH103",
+    "product": "QH103",
+    "technology": "Universal CD19 CAR-γδT",
+    "focus": [
+      "SLE",
+      "SSc",
+      "Sjogren syndrome",
+      "AAV",
+      "IIM",
+      "APS"
+    ],
+    "stage": "Phase 1/2",
+    "region": "China",
+    "priority": "高",
+    "status": "Recruiting（注册信息需复核）",
+    "source_url": "https://clinicaltrials.gov/study/NCT06828042",
+    "source_last_update": "2025-08-20",
+    "evidence_anchor": "QH103除神经免疫适应症外，还在官方注册库中扩展至更广泛难治自身免疫病。",
+    "recent_update": "NCT06828042最后更新于2025-08-20，计划入组9例。",
+    "watch_points": [
+      "神经免疫与广义自免两条QH103路径如何分化",
+      "Phase 1/2执行",
+      "跨病种应答差异"
+    ]
+  },
+  {
+    "id": "gobroad-ol108",
+    "record_kind": "academic_trial_program",
+    "company": "北京高博医院 / OL-108",
+    "product": "OL-108",
+    "technology": "Allogeneic CAR-T",
+    "focus": [
+      "SLE",
+      "IIM",
+      "SSc",
+      "AAV"
+    ],
+    "stage": "Phase 1",
+    "region": "China",
+    "priority": "高",
+    "status": "Recruiting（注册信息需复核）",
+    "source_url": "https://clinicaltrials.gov/study/NCT06980597",
+    "source_last_update": "2025-05-20",
+    "evidence_anchor": "官方注册描述明确OL-108为异体CAR-T，并包含PK/PD观察。",
+    "recent_update": "NCT06980597最后更新于2025-05-20，计划入组44例。",
+    "watch_points": [
+      "PK/PD输出",
+      "异体免疫风险",
+      "注册信息更新"
+    ]
+  },
+  {
+    "id": "changzhou-ucar19bcma",
+    "record_kind": "academic_trial_program",
+    "company": "常州市第二人民医院",
+    "product": "Universal CD19/BCMA CAR-T",
+    "technology": "Universal allogeneic dual-target CAR-T",
+    "focus": [
+      "SLE",
+      "MG",
+      "SSc",
+      "AAV",
+      "IIM",
+      "IgG4-RD",
+      "AIHA"
+    ],
+    "stage": "Phase 1",
+    "region": "China",
+    "priority": "中",
+    "status": "Not yet recruiting（注册信息需复核）",
+    "source_url": "https://clinicaltrials.gov/study/NCT06978738",
+    "source_last_update": "2025-05-18",
+    "evidence_anchor": "官方注册库显示该中心布局了广谱复发难治自身免疫病的异体CD19/BCMA CAR-T。",
+    "recent_update": "NCT06978738最后更新于2025-05-18，当前仍为Not yet recruiting。",
+    "watch_points": [
+      "是否真正启动招募",
+      "病种覆盖是否过宽",
+      "与其他异体双靶点项目差异"
+    ]
+  },
+  {
+    "id": "pkuph-bcmacd19",
+    "record_kind": "academic_trial_program",
+    "company": "北京大学人民医院",
+    "product": "BCMA-CD19 CAR-T therapy",
+    "technology": "Dual-target BCMA/CD19 CAR-T",
+    "focus": [
+      "SLE",
+      "IIM",
+      "SSc",
+      "AAV",
+      "IgG4-RD",
+      "APS",
+      "aTTP",
+      "Behcet",
+      "Sjogren syndrome"
+    ],
+    "stage": "Phase 2",
+    "region": "China",
+    "priority": "高",
+    "status": "Recruiting（注册信息需复核）",
+    "source_url": "https://clinicaltrials.gov/study/NCT06794008",
+    "source_last_update": "2025-04-02",
+    "evidence_anchor": "官方注册记录显示该中心已把BCMA/CD19双靶点CAR-T推进到多病种Phase 2。",
+    "recent_update": "NCT06794008最后更新于2025-04-02，计划入组50例。",
+    "watch_points": [
+      "Phase 2进展",
+      "病种异质性管理",
+      "后续论文或结果披露"
+    ]
+  },
+  {
+    "id": "precision-cd19",
+    "record_kind": "company_program",
+    "company": "Chongqing Precision Biotech",
+    "product": "CD19 targeted CAR-T cells",
+    "technology": "Autologous CD19 CAR-T",
+    "focus": [
+      "SLE",
+      "Sjogren syndrome",
+      "SSc",
+      "dermatomyositis",
+      "AAV"
+    ],
+    "stage": "Phase 1",
+    "region": "China",
+    "priority": "中",
+    "status": "Recruiting（注册信息极旧）",
+    "source_url": "https://clinicaltrials.gov/study/NCT06056921",
+    "source_last_update": "2023-09-28",
+    "evidence_anchor": "这是官方注册库中较早的中国自免CD19 CAR-T项目之一，但公开更新时间显著滞后。",
+    "recent_update": "NCT06056921自2023-09-28后未见公开刷新，当前状态仍显示Recruiting。",
+    "watch_points": [
+      "是否仍在执行",
+      "是否转入结果披露",
+      "需要额外一手来源交叉确认"
+    ]
+  }
+]

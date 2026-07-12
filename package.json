@@ -1,0 +1,15 @@
+{
+  "name": "neuroimmune-cart-hub",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "discover:sources": "node scripts/discover-intelligence.mjs",
+    "check:regulatory": "node scripts/check-regulatory.mjs",
+    "check:sources": "node scripts/check-sources.mjs",
+    "audit:data": "node scripts/audit-data.mjs",
+    "briefing:daily": "node scripts/generate-briefing.mjs",
+    "update:daily": "npm run discover:sources && npm run check:sources && npm run check:regulatory && npm run audit:data && npm run briefing:daily",
+    "prestart": "npm run audit:data",
+    "start": "node scripts/serve.mjs"
+  }
+}

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>安全信号 - 神经免疫CAR-T情报工作台</title>
+<style>
+  :root {
+    --bg: #f7f8f5; --bg2: #eef1eb; --surface: #ffffff; --border: #d8ddd3;
+    --text: #18201b; --text2: #465148; --text3: #788179; --accent: #18614b;
+    --accent2: #0f766e; --accent-light: #e7f5ef; --red: #b42318; --red-light: #fff0ee;
+    --amber: #9a6700; --amber-light: #fff7dc; --blue: #245ca6; --blue-light: #edf5ff;
+    --shadow: 0 12px 30px rgba(24, 32, 27, .06); --mono: "SF Mono", "Fira Code", monospace;
+    --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--text); font: 14px/1.6 var(--sans); }
+  a { color: inherit; }
+  nav { height: 60px; padding: 0 32px; display: flex; align-items: center; justify-content: space-between; gap: 18px; position: sticky; top: 0; z-index: 10; background: rgba(255,255,255,.92); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
+  .nav-logo { display: flex; align-items: center; gap: 10px; font-weight: 700; text-decoration: none; white-space: nowrap; }
+  .live-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 4px rgba(24,97,75,.13); }
+  .nav-links { display: flex; gap: 4px; list-style: none; }
+  .nav-links a { display: block; padding: 7px 12px; border-radius: 6px; color: var(--text2); font-size: 13px; text-decoration: none; }
+  .nav-links a:hover { background: var(--bg2); color: var(--text); }
+  .nav-links a.active { color: var(--accent); background: var(--accent-light); border: 1px solid #c9e4d9; font-weight: 700; }
+  .nav-badge { padding: 3px 8px; border: 1px solid var(--border); border-radius: 999px; color: var(--text3); background: var(--bg2); font: 10px var(--mono); white-space: nowrap; }
+  .page-shell { max-width: 1200px; margin: 0 auto; padding: 0 32px 48px; }
+  .hero { padding: 36px 0 28px; display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(280px, 360px); gap: 18px; border-bottom: 1px solid var(--border); }
+  .breadcrumb { margin-bottom: 12px; color: var(--text3); font-size: 12px; }
+  .breadcrumb a { color: var(--accent); text-decoration: none; }
+  .kicker { display: inline-flex; padding: 5px 10px; margin-bottom: 16px; border: 1px solid #c9e4d9; border-radius: 999px; color: var(--accent2); background: var(--accent-light); font: 11px var(--mono); text-transform: uppercase; }
+  .hero h1 { max-width: 760px; margin-bottom: 12px; font-size: 34px; line-height: 1.14; }
+  .hero-sub { max-width: 760px; color: var(--text2); font-size: 15px; }
+  .hero-notes { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
+  .hero-note, .tag { padding: 5px 9px; border: 1px solid var(--border); border-radius: 999px; background: var(--surface); color: var(--text2); font-size: 11px; }
+  .hero-card, .panel, .table-card, .signal-card, .framework-card, .stat-card { border: 1px solid var(--border); border-radius: 8px; background: var(--surface); }
+  .hero-card { padding: 20px; display: flex; flex-direction: column; gap: 12px; box-shadow: var(--shadow); }
+  .eyebrow { color: var(--text3); font: 700 11px var(--mono); text-transform: uppercase; }
+  .hero-card strong { font-size: 18px; line-height: 1.4; }
+  .hero-card p { color: var(--text2); font-size: 13px; }
+  .hero-card footer { margin-top: auto; padding-top: 12px; border-top: 1px solid var(--border); color: var(--text3); font-size: 11px; }
+  .section { padding: 28px 0; border-bottom: 1px solid var(--border); }
+  .section-head { display: flex; justify-content: space-between; align-items: end; gap: 16px; margin-bottom: 16px; }
+  .section-kicker { margin-bottom: 5px; color: var(--text3); font: 11px var(--mono); text-transform: uppercase; }
+  .section-title { margin-bottom: 5px; font-size: 24px; line-height: 1.25; }
+  .section-desc { max-width: 760px; color: var(--text2); font-size: 13px; }
+  .section-meta { color: var(--text3); font: 11px var(--mono); }
+  .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+  .stat-card { min-height: 112px; padding: 16px; }
+  .stat-number { display: block; color: var(--accent); font: 700 26px/1 var(--mono); }
+  .stat-label { display: block; margin-top: 10px; font-size: 12px; font-weight: 700; }
+  .stat-note { display: block; margin-top: 5px; color: var(--text3); font-size: 11px; }
+  .priority-grid, .framework-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+  .signal-card { min-height: 260px; padding: 18px; display: flex; flex-direction: column; }
+  .card-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 10px; }
+  .card-title { font-size: 16px; line-height: 1.4; }
+  .card-sub { margin-top: 4px; color: var(--accent); font: 11px var(--mono); }
+  .severity { flex: 0 0 auto; padding: 4px 8px; border-radius: 999px; font-size: 10px; font-weight: 700; }
+  .severity-高 { color: var(--red); background: var(--red-light); }
+  .severity-中 { color: var(--amber); background: var(--amber-light); }
+  .severity-低 { color: var(--blue); background: var(--blue-light); }
+  .card-copy { margin-top: 12px; color: var(--text2); font-size: 12px; }
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+  .tag { padding: 3px 8px; background: var(--bg2); color: var(--text3); font-family: var(--mono); font-size: 10px; }
+  .watch-list { margin-top: auto; padding-top: 12px; border-top: 1px solid var(--border); color: var(--text3); font-size: 11px; }
+  .watch-list div { display: flex; gap: 7px; margin-top: 5px; }
+  .watch-list b { color: var(--accent); }
+  .workspace { display: grid; grid-template-columns: 310px minmax(0, 1fr); gap: 18px; }
+  .panel { padding: 16px; margin-bottom: 12px; }
+  .panel-title { margin-bottom: 10px; color: var(--text3); font: 700 11px var(--mono); text-transform: uppercase; }
+  .filter-list { display: flex; flex-direction: column; gap: 5px; }
+  .filter-option { width: 100%; padding: 8px 10px; display: flex; align-items: center; justify-content: space-between; gap: 8px; border: 0; border-radius: 7px; background: transparent; color: var(--text2); font: 12px var(--sans); cursor: pointer; text-align: left; }
+  .filter-option:hover { background: var(--bg2); color: var(--text); }
+  .filter-option.active { color: var(--accent); background: var(--accent-light); font-weight: 700; }
+  .count { padding: 2px 6px; border: 1px solid var(--border); border-radius: 999px; color: var(--text3); background: var(--surface); font: 10px var(--mono); }
+  .monitor-row { padding: 9px 0; display: flex; justify-content: space-between; gap: 10px; border-bottom: 1px solid var(--border); font-size: 12px; }
+  .monitor-row:last-child { border-bottom: 0; }
+  .monitor-row span:first-child { color: var(--text2); }
+  .monitor-row strong { text-align: right; }
+  .table-card { padding: 16px; overflow: hidden; }
+  .toolbar { margin-bottom: 14px; display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+  .toolbar select { padding: 8px 10px; border: 1px solid var(--border); border-radius: 7px; background: var(--surface); color: var(--text2); }
+  .table-wrap { overflow-x: auto; }
+  table { width: 100%; min-width: 820px; border-collapse: collapse; }
+  th, td { padding: 12px 10px; border-bottom: 1px solid var(--border); text-align: left; vertical-align: top; }
+  th { color: var(--text3); font: 700 11px var(--mono); text-transform: uppercase; }
+  td { color: var(--text2); font-size: 12px; }
+  .signal-name { color: var(--text); font-size: 13px; font-weight: 700; }
+  .signal-time { margin-top: 4px; color: var(--accent); font: 10px var(--mono); }
+  .framework-card { min-height: 190px; padding: 18px; }
+  .step { margin-bottom: 10px; color: var(--accent); font: 11px var(--mono); }
+  .framework-card h3 { margin-bottom: 8px; font-size: 16px; }
+  .framework-card p { color: var(--text2); font-size: 12px; }
+  .empty { padding: 42px 20px; text-align: center; color: var(--text3); }
+  body > footer { max-width: 1200px; margin: 0 auto; padding: 20px 32px 36px; display: flex; justify-content: space-between; gap: 12px; color: var(--text3); font-size: 11px; }
+  @media (max-width: 980px) { .hero, .workspace { grid-template-columns: 1fr; } .stats-grid { grid-template-columns: repeat(2, 1fr); } .priority-grid, .framework-grid { grid-template-columns: 1fr; } }
+  @media (max-width: 760px) { nav { padding: 0 16px; } .nav-links { display: none; } .page-shell { padding: 0 16px 32px; } .hero { padding-top: 24px; } .hero h1 { font-size: 28px; } .stats-grid { grid-template-columns: 1fr; } body > footer { padding: 18px 16px 28px; flex-direction: column; } }
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="nav-logo"><span class="live-dot"></span>神经免疫 CAR-T 情报工作台</a>
+  <ul class="nav-links">
+    <li><a href="index.html">首页</a></li><li><a href="timeline.html">动态时间线</a></li><li><a href="topics.html">专题档案</a></li><li><a href="research.html">研究情报</a></li>
+    <li><a href="landscape.html">竞争格局</a></li><li><a href="trials.html">里程碑试验</a></li>
+    <li><a href="safety.html" class="active">安全信号</a></li>
+  </ul>
+  <a class="nav-badge" href="search.html" style="text-decoration:none">全局检索</a>
+</nav>
+
+<main class="page-shell">
+  <section class="hero">
+    <div>
+      <div class="breadcrumb"><a href="index.html">首页</a> / 安全信号</div>
+      <span class="kicker">Safety Intelligence</span>
+      <h1>把不良事件放回机制、时间和试验上下文中判断</h1>
+      <p class="hero-sub">安全页不只统计事件名称，而是持续回答三个问题：风险何时出现、哪些患者更值得警惕、它是否改变产品或试验的总体判断。</p>
+      <div class="hero-notes"><span class="hero-note">区分原病波动与治疗毒性</span><span class="hero-note">同时追踪急性和长期风险</span><span class="hero-note" id="update-note">数据状态：同步中</span></div>
+    </div>
+    <aside class="hero-card">
+      <span class="eyebrow">风险判断原则</span>
+      <strong>发生过，不等于风险已经被解释清楚</strong>
+      <p>每个信号至少需要严重度、时间窗、机制、易感人群、管理动作和证据等级六个维度。缺少其中任何一项，都应保留不确定性。</p>
+      <footer id="hero-foot">等待安全主表同步</footer>
+    </aside>
+  </section>
+
+  <section class="section">
+    <div class="section-head"><div><div class="section-kicker">Safety Readout</div><h2 class="section-title">风险版图总览</h2><p class="section-desc">先看高严重度信号、长期风险和证据仍不足的领域，再决定本周的安全情报优先级。</p></div></div>
+    <div class="stats-grid" id="stats-grid"></div>
+  </section>
+
+  <section class="section">
+    <div class="section-head"><div><div class="section-kicker">Priority Signals</div><h2 class="section-title">当前优先监测信号</h2><p class="section-desc">卡片按严重度和证据不确定性综合排序，突出下一次数据更新真正需要核查的内容。</p></div></div>
+    <div class="priority-grid" id="priority-grid"></div>
+  </section>
+
+  <section class="section">
+    <div class="section-head"><div><div class="section-kicker">Signal Matrix</div><h2 class="section-title">安全信号矩阵</h2><p class="section-desc">按风险类别、严重度和状态过滤，比较不同信号的时间窗、证据基础与管理重点。</p></div><span class="section-meta" id="result-meta">正在加载...</span></div>
+    <div class="workspace">
+      <aside>
+        <div class="panel"><div class="panel-title">严重度</div><div class="filter-list" id="severity-filters"></div></div>
+        <div class="panel"><div class="panel-title">风险类别</div><div class="filter-list" id="category-filters"></div></div>
+        <div class="panel"><div class="panel-title">信号状态</div><div class="filter-list" id="status-filters"></div></div>
+        <div class="panel"><div class="panel-title">观察面板</div><div id="monitor-list"></div></div>
+      </aside>
+      <div class="table-card">
+        <div class="toolbar"><span class="section-meta" id="table-info">正在整理信号...</span><select id="sort-select" aria-label="安全信号排序"><option value="severity">按严重度排序</option><option value="category">按风险类别排序</option><option value="status">按状态排序</option><option value="window">按时间窗排序</option></select></div>
+        <div class="table-wrap"><table><thead><tr><th>安全信号 / 时间窗</th><th>类别</th><th>严重度</th><th>状态</th><th>证据等级</th><th>管理重点</th></tr></thead><tbody id="table-body"><tr><td colspan="6"><div class="empty">正在加载安全信号...</div></td></tr></tbody></table></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-head"><div><div class="section-kicker">Operating Framework</div><h2 class="section-title">安全情报的四层处置框架</h2><p class="section-desc">后续接入更多病例、试验和监管信息时，都按同一条链路进入判断。</p></div></div>
+    <div class="framework-grid">
+      <article class="framework-card"><div class="step">01 · Detect</div><h3>识别新信号</h3><p>记录首次出现、重复出现和严重度升级，区分单例噪声与可能跨产品复现的模式。</p></article>
+      <article class="framework-card"><div class="step">02 · Contextualize</div><h3>放回临床上下文</h3><p>关联产品、适应症、预处理、既往治疗和时间窗，避免脱离分母与基线解读。</p></article>
+      <article class="framework-card"><div class="step">03 · Assess</div><h3>评估因果与影响</h3><p>综合机制合理性、去激发或再激发、替代解释及对获益风险判断的影响。</p></article>
+      <article class="framework-card"><div class="step">04 · Act</div><h3>形成监测动作</h3><p>明确下一次需要找的数据、应更新的试验节点，以及是否提高内部情报优先级。</p></article>
+    </div>
+  </section>
+</main>
+
+<footer><span>仅供科研与产业情报参考，不构成临床诊疗建议。安全判断应回到原始病例、试验方案与正式监管信息。</span><span id="footer-update">更新于 -</span></footer>
+
+<script>
+let allSignals = [];
+let visibleSignals = [];
+let sortBy = "severity";
+const filters = { severity: "全部", category: "全部", status: "全部" };
+
+async function loadSafety() {
+  try {
+    const response = await fetch("data/safety.json");
+    if (!response.ok) throw new Error("safety data load failed");
+    allSignals = await response.json();
+  } catch (error) {
+    allSignals = [];
+  }
+  allSignals = allSignals.map((item) => ({ watch_points: [], related_trials: [], status: "持续跟踪", severity: "中", ...item }));
+  renderStats(); renderFilters(); renderMonitor(); bindEvents(); applyFilters();
+  const today = new Date().toLocaleDateString("zh-CN");
+  document.getElementById("update-note").textContent = "数据状态：最近同步 " + today;
+  document.getElementById("hero-foot").textContent = "当前追踪 " + allSignals.length + " 个结构化安全信号";
+  document.getElementById("footer-update").textContent = "更新于 " + today;
+}
+
+function renderStats() {
+  const stats = [
+    [allSignals.length, "结构化安全信号", "已纳入统一字段体系"],
+    [allSignals.filter(x => x.severity === "高").length, "高严重度信号", "优先核查风险边界"],
+    [allSignals.filter(x => /长期/.test(x.category + x.time_window)).length, "长期随访议题", "需要跨年度持续追踪"],
+    [allSignals.filter(x => /不足|推断|线索|待验证/.test(x.evidence_level + x.status)).length, "证据不确定项", "下一轮情报补全重点"]
+  ];
+  document.getElementById("stats-grid").innerHTML = stats.map(x => `<div class="stat-card"><span class="stat-number">${x[0]}</span><span class="stat-label">${x[1]}</span><span class="stat-note">${x[2]}</span></div>`).join("");
+}
+
+function unique(field) { return [...new Set(allSignals.map(x => x[field]))].sort((a,b) => a.localeCompare(b, "zh-CN")); }
+function filterButtons(group, values) {
+  return ["全部", ...values].map(value => {
+    const count = value === "全部" ? allSignals.length : allSignals.filter(x => x[group] === value).length;
+    return `<button class="filter-option${value === "全部" ? " active" : ""}" data-group="${group}" data-value="${value}"><span>${value}</span><span class="count">${count}</span></button>`;
+  }).join("");
+}
+function renderFilters() {
+  document.getElementById("severity-filters").innerHTML = filterButtons("severity", ["高", "中", "低"].filter(v => allSignals.some(x => x.severity === v)));
+  document.getElementById("category-filters").innerHTML = filterButtons("category", unique("category"));
+  document.getElementById("status-filters").innerHTML = filterButtons("status", unique("status"));
+}
+function renderMonitor() {
+  const linked = allSignals.filter(x => x.related_trials.length).length;
+  const rows = [["已关联试验", linked + " / " + allSignals.length], ["感染与免疫重建", allSignals.filter(x => /感染|免疫重建/.test(x.category)).length + " 项"], ["神经系统信号", allSignals.filter(x => /神经/.test(x.category + x.signal)).length + " 项"], ["监管关注", allSignals.filter(x => x.status === "监管关注").length + " 项"]];
+  document.getElementById("monitor-list").innerHTML = rows.map(x => `<div class="monitor-row"><span>${x[0]}</span><strong>${x[1]}</strong></div>`).join("");
+}
+function bindEvents() {
+  document.querySelectorAll(".filter-option").forEach(button => button.addEventListener("click", () => {
+    const group = button.dataset.group; filters[group] = button.dataset.value;
+    document.querySelectorAll(`.filter-option[data-group="${group}"]`).forEach(x => x.classList.toggle("active", x === button));
+    applyFilters();
+  }));
+  document.getElementById("sort-select").addEventListener("change", event => { sortBy = event.target.value; renderTable(); renderPriority(); });
+}
+function applyFilters() {
+  visibleSignals = allSignals.filter(x => Object.entries(filters).every(([key,value]) => value === "全部" || x[key] === value));
+  renderTable(); renderPriority();
+  document.getElementById("result-meta").textContent = `显示 ${visibleSignals.length} / ${allSignals.length} 项`;
+  document.getElementById("table-info").textContent = `当前矩阵包含 ${visibleSignals.length} 个安全信号`;
+}
+function compare(a, b) {
+  const rank = { "高": 0, "中": 1, "低": 2 };
+  if (sortBy === "severity") return (rank[a.severity] ?? 9) - (rank[b.severity] ?? 9);
+  if (sortBy === "category") return a.category.localeCompare(b.category, "zh-CN");
+  if (sortBy === "status") return a.status.localeCompare(b.status, "zh-CN");
+  return a.time_window.localeCompare(b.time_window, "zh-CN");
+}
+function renderPriority() {
+  const data = [...visibleSignals].sort(compare).slice(0, 3);
+  document.getElementById("priority-grid").innerHTML = data.length ? data.map(x => `<article class="signal-card"><div class="card-top"><div><h3 class="card-title"><a href="detail.html?type=safety&id=${encodeURIComponent(x.id)}" style="text-decoration:none">${x.signal}</a></h3><div class="card-sub">${x.mechanism}</div></div><span class="severity severity-${x.severity}">${x.severity}严重度</span></div><p class="card-copy">${x.signal_summary}</p><div class="tags"><span class="tag">${x.category}</span><span class="tag">${x.status}</span><span class="tag">关联 ${x.related_trials.length} 个试验</span></div><div class="watch-list">${x.watch_points.map(p => `<div><b>•</b><span>${p}</span></div>`).join("")}</div></article>`).join("") : '<div class="empty">当前筛选条件下没有安全信号。</div>';
+}
+function renderTable() {
+  const data = [...visibleSignals].sort(compare);
+  document.getElementById("table-body").innerHTML = data.length ? data.map(x => `<tr><td><div class="signal-name"><a href="detail.html?type=safety&id=${encodeURIComponent(x.id)}" style="text-decoration:none">${x.signal}</a></div><div class="signal-time">${x.time_window}</div></td><td>${x.category}<div class="signal-time">${x.mechanism}</div></td><td><span class="severity severity-${x.severity}">${x.severity}</span></td><td>${x.status}</td><td>${x.evidence_level}</td><td>${x.management_focus}</td></tr>`).join("") : '<tr><td colspan="6"><div class="empty">没有符合条件的安全信号。</div></td></tr>';
+}
+loadSafety();
+</script>
+<script src="assets/app-shell.js"></script>
+</body>
+</html>

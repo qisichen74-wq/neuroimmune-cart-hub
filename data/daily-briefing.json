@@ -1,0 +1,229 @@
+{
+  "generated_at": "2026-07-12T02:14:19.499Z",
+  "as_of": "2026-07-11",
+  "headline": {
+    "id": "pmid-42251699",
+    "title": "CAR-T细胞疗法使合并CNS受累CLL与多发性硬化患者获得完全缓解",
+    "summary": "提示深度B细胞重置有机会同时影响血液肿瘤与神经免疫活动。",
+    "source_url": "https://pubmed.ncbi.nlm.nih.gov/42251699/",
+    "date": "2026-06-07",
+    "evidence_level": "病例报道·IIT"
+  },
+  "snapshot": {
+    "formal_records": 74,
+    "externally_verified": 64,
+    "active_priority_trials": 13,
+    "candidate_items": 182,
+    "quality_score": 96
+  },
+  "verified_updates": [
+    {
+      "id": "event-kite363-update",
+      "title": "KITE-363双靶点神经免疫篮式试验更新",
+      "summary": "NCT07304154正在招募，覆盖MS、MG和CIDP，计划入组52例。",
+      "date": "2026-07-01",
+      "source_url": "https://clinicaltrials.gov/study/NCT07304154",
+      "topic": "MS / MG / CIDP"
+    },
+    {
+      "id": "event-cc97540-update",
+      "title": "Breakfree-2扩大MS与MG的NEX-T CAR-T证据布局",
+      "summary": "NCT06220201维持Recruiting，计划入组120例RMS、PMS或难治MG患者。",
+      "date": "2026-07-01",
+      "source_url": "https://clinicaltrials.gov/study/NCT06220201",
+      "topic": "MS / MG"
+    },
+    {
+      "id": "event-ytb323-update",
+      "title": "Novartis YTB323 MG I/II期试验更新",
+      "summary": "NCT06704269正在招募15例治疗抵抗性全身型MG患者。",
+      "date": "2026-06-26",
+      "source_url": "https://clinicaltrials.gov/study/NCT06704269",
+      "topic": "MG"
+    },
+    {
+      "id": "event-feed-42295377",
+      "title": "MS新兴治疗策略综述补充竞品治疗背景",
+      "summary": "将CAR-T放回多种创新和靶向治疗路线中比较，有助于判断其差异化价值。",
+      "date": "2026-06-15",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42295377/",
+      "topic": "MS"
+    },
+    {
+      "id": "event-feed-42286319",
+      "title": "MS中的CAR-T机会与挑战专题综述更新",
+      "summary": "综述集中讨论了机制依据、患者选择、毒性管理和长期随访要求。",
+      "date": "2026-06-12",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42286319/",
+      "topic": "MS"
+    }
+  ],
+  "trial_watch": [
+    {
+      "id": "cc97540-breakfree2",
+      "name": "Breakfree-2: CC-97540 in MS and Refractory MG",
+      "product": "CC-97540 / BMS-986353",
+      "indication": "RMS / PMS / MG",
+      "status": "Recruiting",
+      "enrollment": 120,
+      "last_update": "2026-07-01",
+      "registry_url": "https://clinicaltrials.gov/study/NCT06220201"
+    },
+    {
+      "id": "kite363-neuro-phase1",
+      "name": "KITE-363 in Autoimmune Neurologic Diseases",
+      "product": "KITE-363",
+      "indication": "MS / MG / CIDP",
+      "status": "Recruiting",
+      "enrollment": 52,
+      "last_update": "2026-07-01",
+      "registry_url": "https://clinicaltrials.gov/study/NCT07304154"
+    },
+    {
+      "id": "ytb323-mg-phase12",
+      "name": "YTB323 in Treatment-resistant Generalized Myasthenia Gravis",
+      "product": "YTB323",
+      "indication": "MG",
+      "status": "Recruiting",
+      "enrollment": 15,
+      "last_update": "2026-06-26",
+      "registry_url": "https://clinicaltrials.gov/study/NCT06704269"
+    },
+    {
+      "id": "allo329-autoimmune-phase1",
+      "name": "ALLO-329 in Autoimmune Disease",
+      "product": "ALLO-329",
+      "indication": "SLE / LN / IIM / SSc",
+      "status": "Recruiting",
+      "enrollment": 66,
+      "last_update": "2026-06-18",
+      "registry_url": "https://clinicaltrials.gov/study/NCT07085104"
+    },
+    {
+      "id": "ctx112-autoimmune-phase1",
+      "name": "CTX112 in Refractory Autoimmune Disease",
+      "product": "CTX112",
+      "indication": "SLE / LN / SSc / IIM",
+      "status": "Recruiting",
+      "enrollment": 80,
+      "last_update": "2026-06-15",
+      "registry_url": "https://clinicaltrials.gov/study/NCT06925542"
+    },
+    {
+      "id": "zamtocel-autoimmune-phase1",
+      "name": "Zamto-cel in Severe Refractory Autoimmune Diseases",
+      "product": "zamtocabtagene autoleucel",
+      "indication": "LN / SLE / SSc",
+      "status": "Recruiting",
+      "enrollment": 48,
+      "last_update": "2026-06-11",
+      "registry_url": "https://clinicaltrials.gov/study/NCT06708845"
+    }
+  ],
+  "risks": [
+    {
+      "code": "registry_record_stale",
+      "record_type": "trial",
+      "record_id": "relma-autoimmune-ssc",
+      "message": "注册库记录超过180天未更新，当前状态需谨慎解释"
+    },
+    {
+      "code": "registry_record_stale",
+      "record_type": "trial",
+      "record_id": "tianjin-ucar19bcma-neuro",
+      "message": "注册库记录超过180天未更新，当前状态需谨慎解释"
+    },
+    {
+      "code": "registry_record_stale",
+      "record_type": "trial",
+      "record_id": "sys6020-mg-phase1",
+      "message": "注册库记录超过180天未更新，当前状态需谨慎解释"
+    },
+    {
+      "code": "regulatory_source_failed",
+      "record_type": "system",
+      "record_id": "-",
+      "message": "监管来源访问失败：国家药品监督管理局"
+    }
+  ],
+  "candidate_queue": [
+    {
+      "type": "trial",
+      "external_id": "NCT07305116",
+      "title": "A Clinical Study Evaluating the Safety and Preliminary Efficacy of Universal Allogeneic CAR T-cell Therapy Targeting CD19 and BCMA in Patients With B Cell Mediated Autoimmune Disease",
+      "score": 12,
+      "tier": "立即核验",
+      "reasons": [
+        "正式注册试验",
+        "命中3个重点病种",
+        "当前处于活跃状态"
+      ],
+      "source_url": "https://clinicaltrials.gov/study/NCT07305116"
+    },
+    {
+      "type": "trial",
+      "external_id": "NCT07523282",
+      "title": "A Study to Assess the Safety and Preliminary Efficacy of HN2302 in Patients With Autoimmune Diseases",
+      "score": 10,
+      "tier": "立即核验",
+      "reasons": [
+        "正式注册试验",
+        "命中3个重点病种"
+      ],
+      "source_url": "https://clinicaltrials.gov/study/NCT07523282"
+    },
+    {
+      "type": "trial",
+      "external_id": "NCT06626919",
+      "title": "A Phase 1 Study of Anitocabtagene Autoleucel for the Treatment of Subjects With Non-oncology Plasma Cell-related Diseases",
+      "score": 10,
+      "tier": "立即核验",
+      "reasons": [
+        "正式注册试验",
+        "命中2个重点病种",
+        "当前处于活跃状态"
+      ],
+      "source_url": "https://clinicaltrials.gov/study/NCT06626919"
+    },
+    {
+      "type": "trial",
+      "external_id": "NCT07339540",
+      "title": "Clinical Study on the Safety and Efficacy of Targeted BCMA In Vivo LV Injection in the Treatment of Recurrent or Refractory Autoimmune Diseases",
+      "score": 10,
+      "tier": "立即核验",
+      "reasons": [
+        "正式注册试验",
+        "命中2个重点病种",
+        "当前处于活跃状态"
+      ],
+      "source_url": "https://clinicaltrials.gov/study/NCT07339540"
+    },
+    {
+      "type": "trial",
+      "external_id": "NCT06941129",
+      "title": "A Clinical Study Evaluating the Safety and Preliminary Efficacy of Universal Allogeneic CAR T-cell Therapy Targeting CD19 and BCMA in Patients With Relapse/Refractory Autoimmune Diseases",
+      "score": 10,
+      "tier": "立即核验",
+      "reasons": [
+        "正式注册试验",
+        "命中2个重点病种",
+        "当前处于活跃状态"
+      ],
+      "source_url": "https://clinicaltrials.gov/study/NCT06941129"
+    },
+    {
+      "type": "trial",
+      "external_id": "NCT07155369",
+      "title": "A Clinical Study Evaluating the Safety and Efficacy of Universal Allogeneic CAR T-cell Therapy Targeting CD19 and BCMA in Patients With Relapse/Refractory Autoimmune Diseases",
+      "score": 10,
+      "tier": "立即核验",
+      "reasons": [
+        "正式注册试验",
+        "命中2个重点病种",
+        "当前处于活跃状态"
+      ],
+      "source_url": "https://clinicaltrials.gov/study/NCT07155369"
+    }
+  ],
+  "editorial_note": "头条、动态和试验均来自正式核验数据；候选队列仅表示下一步核验优先级。"
+}

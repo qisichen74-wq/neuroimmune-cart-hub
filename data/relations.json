@@ -1,0 +1,312 @@
+[
+  {
+    "id": "rel-kyverna-kyv101-trial",
+    "source_type": "company",
+    "source_id": "kyverna-kyv101",
+    "target_type": "trial",
+    "target_id": "kyv101-ms-phase1",
+    "relation": "推进",
+    "rationale": "KYV-101是Kyverna神经免疫适应症布局的核心临床项目。",
+    "confidence": "高"
+  },
+  {
+    "id": "rel-cartesian-descartes-trial",
+    "source_type": "company",
+    "source_id": "cartesian-descartes08",
+    "target_type": "trial",
+    "target_id": "descartes08-mg-rct",
+    "relation": "推进",
+    "rationale": "Descartes-08试验承载Cartesian在MG中验证mRNA CAR-T路线的关键问题。",
+    "confidence": "高"
+  },
+  {
+    "id": "rel-erlangen-academic-series",
+    "source_type": "company",
+    "source_id": "erlangen-cd19",
+    "target_type": "trial",
+    "target_id": "academic-cd19-autoimmune-series",
+    "relation": "发起",
+    "rationale": "学术病例系列构成Erlangen CD19 CAR-T自免证据体系的临床基础。",
+    "confidence": "高"
+  },
+  {
+    "id": "rel-tongji-qh103-trial",
+    "source_type": "company",
+    "source_id": "tongji-qh103",
+    "target_type": "trial",
+    "target_id": "qh103-neuro-autoimmune",
+    "relation": "发起",
+    "rationale": "同济医院负责NCT07526493，评估QH103通用型CD19 CAR-γδT治疗多类抗体介导神经免疫疾病。",
+    "confidence": "高"
+  },
+  {
+    "id": "rel-ms-case-kyv101-context",
+    "source_type": "research",
+    "source_id": "pmid-42251699",
+    "target_type": "trial",
+    "target_id": "kyv101-ms-phase1",
+    "relation": "提供病种背景",
+    "rationale": "个案证据为MS场景中的疗效和安全性判断提供背景，但不代表该试验结果。",
+    "confidence": "中"
+  },
+  {
+    "id": "rel-ssc-proteomics-relma",
+    "source_type": "research",
+    "source_id": "pmid-42223209",
+    "target_type": "trial",
+    "target_id": "relma-autoimmune-ssc",
+    "relation": "构成证据锚点",
+    "rationale": "临床和蛋白组学整合研究直接支撑relma-cel在SSc中的机制解释。",
+    "confidence": "高"
+  },
+  {
+    "id": "rel-review-academic-series",
+    "source_type": "research",
+    "source_id": "pmid-42167622",
+    "target_type": "trial",
+    "target_id": "academic-cd19-autoimmune-series",
+    "relation": "综合评价",
+    "rationale": "系统综述为跨病种早期病例系列提供总体疗效、安全性和证据等级背景。",
+    "confidence": "中"
+  },
+  {
+    "id": "rel-ms-review-kyv101",
+    "source_type": "research",
+    "source_id": "pmid-42286319",
+    "target_type": "trial",
+    "target_id": "kyv101-ms-phase1",
+    "relation": "解释赛道",
+    "rationale": "MS专题综述用于解释该试验的机制依据、机会和关键挑战。",
+    "confidence": "中"
+  },
+  {
+    "id": "rel-tianjin-ucar-trial",
+    "source_type": "company",
+    "source_id": "tianjin-xiniao-ucar",
+    "target_type": "trial",
+    "target_id": "tianjin-ucar19bcma-neuro",
+    "relation": "联合推进",
+    "rationale": "天津市环湖医院为主办方，上海细鸟生物为NCT06939166合作方。",
+    "confidence": "高"
+  },
+  {
+    "id": "rel-cspc-sys6020-trial",
+    "source_type": "company",
+    "source_id": "cspc-sys6020",
+    "target_type": "trial",
+    "target_id": "sys6020-mg-phase1",
+    "relation": "推进",
+    "rationale": "石药集团中奇制药是NCT06688435的主办方。",
+    "confidence": "高"
+  },
+  {
+    "id": "rel-descartes-biomarker-trial",
+    "source_type": "research",
+    "source_id": "pmid-41514039",
+    "target_type": "trial",
+    "target_id": "descartes08-mg-rct",
+    "relation": "提供前期随机证据",
+    "rationale": "IIb期随机安慰剂对照研究的探索性生物标志物分析为后续AURORA Phase 3提供机制与比较性背景。",
+    "confidence": "高"
+  },
+  {
+    "id": "rel-gilead-kite363-trial",
+    "source_type": "company",
+    "source_id": "gilead-kite363",
+    "target_type": "trial",
+    "target_id": "kite363-neuro-phase1",
+    "relation": "推进",
+    "rationale": "Kite是NCT07304154主办方。",
+    "confidence": "高"
+  },
+  {
+    "id": "rel-bms-cc97540-trial",
+    "source_type": "company",
+    "source_id": "bms-cc97540",
+    "target_type": "trial",
+    "target_id": "cc97540-breakfree2",
+    "relation": "推进",
+    "rationale": "Juno/BMS是Breakfree-2主办方。",
+    "confidence": "高"
+  },
+  {
+    "id": "rel-novartis-ytb323-trial",
+    "source_type": "company",
+    "source_id": "novartis-ytb323",
+    "target_type": "trial",
+    "target_id": "ytb323-mg-phase12",
+    "relation": "推进",
+    "rationale": "Novartis Pharmaceuticals是NCT06704269主办方。",
+    "confidence": "高"
+  },
+  {
+    "id": "rel-crispr-ctx112-trial",
+    "source_type": "company",
+    "source_id": "crispr-ctx112",
+    "target_type": "trial",
+    "target_id": "ctx112-autoimmune-phase1",
+    "relation": "推进",
+    "rationale": "CRISPR Therapeutics是主办方。",
+    "confidence": "高"
+  },
+  {
+    "id": "rel-fate-ft819-trial",
+    "source_type": "company",
+    "source_id": "fate-ft819",
+    "target_type": "trial",
+    "target_id": "ft819-autoimmune-phase1",
+    "relation": "推进",
+    "rationale": "Fate Therapeutics是主办方。",
+    "confidence": "高"
+  },
+  {
+    "id": "rel-tianjin-qt019c-trial",
+    "source_type": "company",
+    "source_id": "tianjin-qt019c",
+    "target_type": "trial",
+    "target_id": "qt019c-neuro-phase1",
+    "relation": "发起",
+    "rationale": "天津市环湖医院是主办方。",
+    "confidence": "高"
+  },
+  {
+    "id": "rel-allogene-allo329",
+    "source_type": "company",
+    "source_id": "allogene-allo329",
+    "target_type": "trial",
+    "target_id": "allo329-autoimmune-phase1",
+    "relation": "推进",
+    "rationale": "Allogene是主办方。",
+    "confidence": "高"
+  },
+  {
+    "id": "rel-miltenyi-zamtocel",
+    "source_type": "company",
+    "source_id": "miltenyi-zamtocel",
+    "target_type": "trial",
+    "target_id": "zamtocel-autoimmune-phase1",
+    "relation": "推进",
+    "rationale": "Miltenyi是主办方。",
+    "confidence": "高"
+  },
+  {
+    "id": "rel-therorna-ti0032",
+    "source_type": "company",
+    "source_id": "therorna-ti0032",
+    "target_type": "trial",
+    "target_id": "ti0032-invivo-autoimmune",
+    "relation": "推进",
+    "rationale": "Therorna是主办方。",
+    "confidence": "高"
+  },
+  {
+    "id": "rel-zjuch-ucar-trial",
+    "source_type": "company",
+    "source_id": "zjuch-ucar19bcma",
+    "target_type": "trial",
+    "target_id": "zju-ucar19bcma-autoimmune",
+    "relation": "发起",
+    "rationale": "浙江大学医学院附属儿童医院是NCT07305116主办方。",
+    "confidence": "高"
+  },
+  {
+    "id": "rel-magicrna-hn2302-trial",
+    "source_type": "company",
+    "source_id": "magicrna-hn2302",
+    "target_type": "trial",
+    "target_id": "magicrna-hn2302-autoimmune",
+    "relation": "推进",
+    "rationale": "Shenzhen MagicRNA Biotechnology是NCT07523282主办方。",
+    "confidence": "高"
+  },
+  {
+    "id": "rel-arcellx-anitocel-trial",
+    "source_type": "company",
+    "source_id": "arcellx-anitocel",
+    "target_type": "trial",
+    "target_id": "arcellx-anitocel-mg-phase1",
+    "relation": "推进",
+    "rationale": "Arcellx是NCT06626919主办方。",
+    "confidence": "高"
+  },
+  {
+    "id": "rel-tongji-v001bcma-trial",
+    "source_type": "company",
+    "source_id": "tongji-v001bcma",
+    "target_type": "trial",
+    "target_id": "tongji-v001bcma-autoimmune",
+    "relation": "发起",
+    "rationale": "同济医院是NCT07339540主办方。",
+    "confidence": "高"
+  },
+  {
+    "id": "rel-ihematology-xiniao-trial",
+    "source_type": "company",
+    "source_id": "ihematology-xiniao-ucar",
+    "target_type": "trial",
+    "target_id": "ihematology-xiniao-ucar-autoimmune",
+    "relation": "联合推进",
+    "rationale": "血液病医院为主办方，上海细鸟生物为NCT06941129合作方。",
+    "confidence": "高"
+  },
+  {
+    "id": "rel-xuzhou-xiniao-trial",
+    "source_type": "company",
+    "source_id": "xuzhou-xiniao-ucar",
+    "target_type": "trial",
+    "target_id": "xuzhou-xiniao-ucar-autoimmune",
+    "relation": "联合推进",
+    "rationale": "徐州医科大学附属医院为主办方，上海细鸟生物为NCT07155369合作方。",
+    "confidence": "高"
+  },
+  {
+    "id": "rel-pku3-qh103-trial",
+    "source_type": "company",
+    "source_id": "pku3-qh103",
+    "target_type": "trial",
+    "target_id": "pku3-qh103-autoimmune",
+    "relation": "发起",
+    "rationale": "北京大学第三医院是NCT06828042主办方。",
+    "confidence": "高"
+  },
+  {
+    "id": "rel-gobroad-ol108-trial",
+    "source_type": "company",
+    "source_id": "gobroad-ol108",
+    "target_type": "trial",
+    "target_id": "gobroad-ol108-autoimmune",
+    "relation": "发起",
+    "rationale": "Beijing GoBroad Hospital是NCT06980597主办方。",
+    "confidence": "高"
+  },
+  {
+    "id": "rel-changzhou-ucar-trial",
+    "source_type": "company",
+    "source_id": "changzhou-ucar19bcma",
+    "target_type": "trial",
+    "target_id": "changzhou-ucar19bcma-autoimmune",
+    "relation": "发起",
+    "rationale": "常州市第二人民医院是NCT06978738主办方。",
+    "confidence": "高"
+  },
+  {
+    "id": "rel-pkuph-bcmacd19-trial",
+    "source_type": "company",
+    "source_id": "pkuph-bcmacd19",
+    "target_type": "trial",
+    "target_id": "pkuph-bcmacd19-autoimmune-phase2",
+    "relation": "发起",
+    "rationale": "北京大学人民医院是NCT06794008主办方。",
+    "confidence": "高"
+  },
+  {
+    "id": "rel-precision-cd19-trial",
+    "source_type": "company",
+    "source_id": "precision-cd19",
+    "target_type": "trial",
+    "target_id": "precision-cd19-autoimmune-phase1",
+    "relation": "推进",
+    "rationale": "Chongqing Precision Biotech是NCT06056921主办方。",
+    "confidence": "高"
+  }
+]

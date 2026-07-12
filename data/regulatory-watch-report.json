@@ -1,0 +1,71 @@
+{
+  "generated_at": "2026-07-12T02:33:30.564Z",
+  "policy": {
+    "trial_registration": "登记平台存在试验记录，只能证明试验已登记公示。",
+    "clinical_trial_authorization": "临床试验获准或默示许可，不等同于产品获准上市。",
+    "marketing_authorization": "只有NMPA正式上市批准信息才能记为获批上市。",
+    "company_disclosure": "企业新闻仅作发现线索，不能替代NMPA/CDE监管记录。"
+  },
+  "summary": {
+    "endpoints": 5,
+    "available": 4,
+    "failed": 1
+  },
+  "checks": [
+    {
+      "id": "nmpa-home",
+      "name": "国家药品监督管理局",
+      "url": "https://www.nmpa.gov.cn/",
+      "scope": "上市批准、监管公告与安全信息",
+      "status": "error",
+      "http_status": 412,
+      "resolved_url": "https://www.nmpa.gov.cn/",
+      "content_bytes": 2500,
+      "checked_at": "2026-07-12T02:33:25.777Z"
+    },
+    {
+      "id": "nmpa-trial-approval",
+      "name": "NMPA药物临床试验审批",
+      "url": "https://zwfw.nmpa.gov.cn/web/taskview/11100000MB0341032Y100017210200001",
+      "scope": "临床试验行政许可与60工作日默示许可制度",
+      "status": "available",
+      "http_status": 200,
+      "resolved_url": "https://zwfw.nmpa.gov.cn/web/taskview/11100000MB0341032Y100017210200001",
+      "content_bytes": 386425,
+      "checked_at": "2026-07-12T02:33:29.590Z"
+    },
+    {
+      "id": "nmpa-trial-registration",
+      "name": "NMPA药物临床试验登记",
+      "url": "https://zwfw.nmpa.gov.cn/web/taskview/11100000MB0341032Y100207202900001",
+      "scope": "境内药物临床试验登记义务与平台入口",
+      "status": "available",
+      "http_status": 200,
+      "resolved_url": "https://zwfw.nmpa.gov.cn/web/taskview/11100000MB0341032Y100207202900001",
+      "content_bytes": 92655,
+      "checked_at": "2026-07-12T02:33:30.051Z"
+    },
+    {
+      "id": "cde-home",
+      "name": "国家药监局药品审评中心",
+      "url": "https://www.cde.org.cn/",
+      "scope": "受理品种、审评任务、指导原则与年度报告",
+      "status": "available",
+      "http_status": 200,
+      "resolved_url": "https://www.cde.org.cn/",
+      "content_bytes": 90532,
+      "checked_at": "2026-07-12T02:33:30.305Z"
+    },
+    {
+      "id": "china-drug-trials",
+      "name": "药物临床试验登记与信息公示平台",
+      "url": "http://www.chinadrugtrials.org.cn/",
+      "scope": "境内药物临床试验方案与结果公示",
+      "status": "available",
+      "http_status": 200,
+      "resolved_url": "https://www.chinadrugtrials.org.cn/",
+      "content_bytes": 43039,
+      "checked_at": "2026-07-12T02:33:30.564Z"
+    }
+  ]
+}

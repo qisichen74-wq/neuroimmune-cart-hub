@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>情报详情 - 神经免疫CAR-T情报工作台</title>
+<style>
+  :root { --bg:#f6f7f5; --surface:#fff; --soft:#eef2ed; --border:#d8ddd6; --text:#172019; --text2:#465048; --text3:#7a837c; --accent:#17634c; --accent-light:#e6f4ee; --red:#b42318; --red-light:#fff0ee; --amber:#946200; --amber-light:#fff5d7; --mono:"SF Mono","Fira Code",monospace; --sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { background:var(--bg); color:var(--text); font:14px/1.65 var(--sans); }
+  a { color:inherit; }
+  nav { height:60px; padding:0 32px; display:flex; align-items:center; justify-content:space-between; gap:18px; position:sticky; top:0; z-index:10; background:rgba(255,255,255,.94); backdrop-filter:blur(12px); border-bottom:1px solid var(--border); }
+  .nav-logo { display:flex; align-items:center; gap:10px; font-weight:700; text-decoration:none; }
+  .dot { width:8px; height:8px; border-radius:50%; background:var(--accent); box-shadow:0 0 0 4px rgba(23,99,76,.13); }
+  .nav-links { display:flex; gap:4px; list-style:none; }
+  .nav-links a { padding:7px 10px; border-radius:6px; color:var(--text2); font-size:13px; text-decoration:none; }
+  .nav-links a:hover { background:var(--soft); color:var(--text); }
+  .badge { padding:4px 8px; border-radius:999px; background:var(--accent-light); color:var(--accent); font:700 10px var(--mono); }
+  .shell { max-width:1120px; margin:0 auto; padding:0 32px 48px; }
+  .hero { padding:34px 0 26px; border-bottom:1px solid var(--border); }
+  .breadcrumb { margin-bottom:14px; color:var(--text3); font-size:12px; }
+  .breadcrumb a { color:var(--accent); text-decoration:none; }
+  .type-label { display:inline-flex; margin-bottom:14px; padding:5px 9px; border:1px solid #cae2d7; border-radius:999px; background:var(--accent-light); color:var(--accent); font:11px var(--mono); text-transform:uppercase; }
+  h1 { max-width:850px; font-size:34px; line-height:1.2; }
+  .hero-sub { max-width:820px; margin-top:12px; color:var(--text2); font-size:15px; }
+  .meta-row { margin-top:18px; display:flex; flex-wrap:wrap; gap:7px; }
+  .meta { padding:5px 9px; border:1px solid var(--border); border-radius:999px; background:var(--surface); color:var(--text2); font-size:11px; }
+  .layout { padding-top:24px; display:grid; grid-template-columns:minmax(0,1fr) 330px; gap:18px; }
+  .stack { display:flex; flex-direction:column; gap:14px; }
+  .panel { padding:20px; border:1px solid var(--border); border-radius:8px; background:var(--surface); }
+  .panel-kicker { margin-bottom:6px; color:var(--text3); font:11px var(--mono); text-transform:uppercase; }
+  .panel h2 { margin-bottom:10px; font-size:19px; }
+  .lead { color:var(--text2); font-size:14px; }
+  .key-box { padding:14px; border-left:3px solid var(--accent); background:var(--accent-light); color:#214d3e; }
+  .field-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1px; overflow:hidden; border:1px solid var(--border); border-radius:7px; background:var(--border); }
+  .field { min-height:92px; padding:13px; background:var(--surface); }
+  .field-label { margin-bottom:5px; color:var(--text3); font:10px var(--mono); text-transform:uppercase; }
+  .field-value { color:var(--text2); font-size:12px; white-space:pre-line; }
+  .watch-list { display:flex; flex-direction:column; gap:8px; }
+  .watch-item { padding:10px 12px; display:flex; gap:9px; border:1px solid var(--border); border-radius:7px; color:var(--text2); font-size:12px; }
+  .watch-item b { color:var(--accent); }
+  .relation-list { display:flex; flex-direction:column; gap:9px; }
+  .relation { display:block; padding:12px; border:1px solid var(--border); border-radius:7px; text-decoration:none; transition:.14s ease; }
+  .relation:hover { border-color:#9fc8b6; background:var(--accent-light); }
+  .relation-type { color:var(--accent); font:10px var(--mono); text-transform:uppercase; }
+  .relation-title { margin-top:4px; font-weight:700; line-height:1.4; }
+  .relation-note { margin-top:5px; color:var(--text3); font-size:11px; }
+  .event-mini { display:block; padding:12px; border-left:3px solid var(--accent); background:var(--soft); text-decoration:none; }
+  .event-mini + .event-mini { margin-top:8px; }
+  .event-mini time { color:var(--text3); font:10px var(--mono); }
+  .event-mini strong { display:block; margin-top:4px; font-size:12px; line-height:1.45; }
+  .event-mini span { display:block; margin-top:4px; color:var(--text3); font-size:10px; }
+  .verify-status { display:inline-flex; padding:4px 8px; border-radius:999px; background:var(--accent-light); color:var(--accent); font-size:10px; font-weight:700; }
+  .verify-status.pending { background:#fff5d7; color:#946200; }
+  .verify-row { padding:8px 0; display:flex; justify-content:space-between; gap:10px; border-bottom:1px solid var(--border); font-size:11px; }
+  .verify-row:last-child { border-bottom:0; }
+  .verify-row span { color:var(--text3); }
+  .verify-note { margin-top:10px; color:var(--text3); font-size:10px; }
+  .source-link { display:inline-flex; margin-top:12px; padding:8px 11px; border-radius:6px; background:var(--accent); color:#fff; text-decoration:none; font-size:12px; font-weight:700; }
+  .empty { padding:32px 18px; color:var(--text3); text-align:center; }
+  .error { max-width:720px; margin:70px auto; padding:28px; border:1px solid var(--border); border-radius:8px; background:var(--surface); text-align:center; }
+  .error h1 { font-size:25px; }
+  .error p { margin:10px 0 16px; color:var(--text2); }
+  footer { max-width:1120px; margin:0 auto; padding:20px 32px 36px; border-top:1px solid var(--border); color:var(--text3); font-size:11px; }
+  @media(max-width:900px){ .layout{grid-template-columns:1fr;} }
+  @media(max-width:700px){ nav{padding:0 16px}.nav-links{display:none}.shell{padding:0 16px 32px}h1{font-size:28px}.field-grid{grid-template-columns:1fr}footer{padding:18px 16px 28px} }
+</style>
+</head>
+<body>
+<nav>
+  <a class="nav-logo" href="index.html"><span class="dot"></span>神经免疫 CAR-T 情报工作台</a>
+  <ul class="nav-links"><li><a href="timeline.html">动态时间线</a></li><li><a href="topics.html">专题档案</a></li><li><a href="research.html">研究情报</a></li><li><a href="landscape.html">竞争格局</a></li><li><a href="trials.html">里程碑试验</a></li><li><a href="safety.html">安全信号</a></li></ul>
+  <a class="badge" href="search.html" style="text-decoration:none">全局检索</a>
+</nav>
+<main class="shell" id="app"><div class="empty">正在构建对象档案...</div></main>
+<footer>对象详情由结构化数据与显式关系表生成。关联代表情报上的上下文关系，不自动等同于临床因果关系。</footer>
+<script>
+const TYPE_CONFIG = {
+  research: { label:"研究证据", file:"data/feed.json", back:"research.html", title:"title_cn", subtitle:"one_liner", tags:["disease","evidence_level","entity","region"], summary:"takeaway", watch:"tags", fields:[["PMID","pmid"],["发布日期","publish_date"],["来源","source_name"],["审核状态","status"],["优先级原因","priority_reason"],["收录日期","date_added"]] },
+  company: { label:"竞争对象", file:"data/landscape.json", back:"landscape.html", title:"company", subtitle:"recent_update", tags:["product","technology","stage","region"], summary:"evidence_anchor", watch:"watch_points", fields:[["产品 / 项目","product"],["技术路线","technology"],["重点适应症","focus"],["临床阶段","stage"],["区域","region"],["跟踪状态","status"]] },
+  trial: { label:"临床试验", file:"data/trials.json", back:"trials.html", title:"trial_name", subtitle:"evidence_goal", tags:["product","indication","phase","region"], summary:"key_question", watch:"watch_points", fields:[["注册号","registry_id"],["申办方","sponsor"],["产品","product"],["适应症","indication"],["阶段","phase"],["设计","design"],["状态","status"],["注册库更新","registry_last_update"]] },
+  safety: { label:"安全信号", file:"data/safety.json", back:"safety.html", title:"signal", subtitle:"signal_summary", tags:["category","severity","status","mechanism"], summary:"management_focus", watch:"watch_points", fields:[["风险类别","category"],["机制","mechanism"],["严重度","severity"],["时间窗","time_window"],["易感人群","population"],["证据等级","evidence_level"],["证据来源","source_refs"],["核验边界","verification_scope"]] }
+};
+const DATA_FILES = { research:"data/feed.json", company:"data/landscape.json", trial:"data/trials.json", safety:"data/safety.json" };
+let datasets = {}; let relations = []; let events = []; let verificationData = {}; let sources = [];
+const params = new URLSearchParams(location.search); const activeType = params.get("type"); const activeId = params.get("id");
+
+async function loadDetail(){
+  try {
+    const entries = await Promise.all(Object.entries(DATA_FILES).map(async ([type,file]) => [type, await fetch(file).then(r => { if(!r.ok) throw new Error(file); return r.json(); })]));
+    datasets = Object.fromEntries(entries);
+    relations = await fetch("data/relations.json").then(r => { if(!r.ok) throw new Error("relations"); return r.json(); });
+    events = await fetch("data/events.json").then(r => { if(!r.ok) throw new Error("events"); return r.json(); });
+    verificationData = await fetch("data/verification.json").then(r => { if(!r.ok) throw new Error("verification"); return r.json(); });
+    sources = await fetch("data/sources.json").then(r => { if(!r.ok) throw new Error("sources"); return r.json(); });
+  } catch(error) { renderError("数据文件没有成功加载。请稍后通过本地网站地址访问，直接以文件方式打开时浏览器可能会限制数据读取。"); return; }
+  const config = TYPE_CONFIG[activeType]; const item = config && (datasets[activeType] || []).find(x => x.id === activeId);
+  if(!config || !item){ renderError("没有找到这个情报对象，可能是链接参数缺失或数据已更新。"); return; }
+  document.title = item[config.title] + " - 神经免疫CAR-T情报工作台";
+  renderItem(item, config);
+}
+function esc(value){ return String(value ?? "-").replace(/[&<>"']/g, char => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[char])); }
+function valueOf(item,key){ const value=item[key]; return Array.isArray(value) ? value.join(" / ") : (value || "-"); }
+function nodeTitle(type,id){ const config=TYPE_CONFIG[type]; const item=(datasets[type]||[]).find(x=>x.id===id); return item ? item[config.title] : id; }
+function detailUrl(type,id){ return `detail.html?type=${encodeURIComponent(type)}&id=${encodeURIComponent(id)}`; }
+function relatedNodes(){
+  const list=[];
+  relations.forEach(rel => {
+    if(rel.source_type===activeType && rel.source_id===activeId) list.push({type:rel.target_type,id:rel.target_id,label:rel.relation,note:rel.rationale,confidence:rel.confidence});
+    if(rel.target_type===activeType && rel.target_id===activeId) list.push({type:rel.source_type,id:rel.source_id,label:rel.relation,note:rel.rationale,confidence:rel.confidence});
+  });
+  if(activeType==="trial") (datasets.safety||[]).filter(x=>(x.related_trials||[]).includes(activeId)).forEach(x=>list.push({type:"safety",id:x.id,label:"相关安全信号",note:x.signal_summary,confidence:x.evidence_level}));
+  if(activeType==="safety") { const current=(datasets.safety||[]).find(x=>x.id===activeId); (current?.related_trials||[]).forEach(id=>list.push({type:"trial",id,label:"关联试验",note:"该试验被纳入此安全信号的持续观察范围。",confidence:"结构化关联"})); }
+  return list.filter((x,index,array)=>array.findIndex(y=>y.type===x.type&&y.id===x.id)===index);
+}
+function verificationFor(){
+  const fallback=verificationData.defaults?.[activeType]||{status:"待外部核验",confidence:"低",source_ids:[]};
+  const override=(verificationData.records||[]).find(record=>record.record_type===activeType&&record.record_id===activeId);
+  return {...fallback,...(override||{})};
+}
+function renderItem(item,config){
+  const tags=config.tags.map(key=>valueOf(item,key)).filter(x=>x!=="-"); const watch=Array.isArray(item[config.watch]) ? item[config.watch] : [];
+  const related=relatedNodes(); const itemEvents=events.filter(event=>(event.entities||[]).some(entity=>entity.type===activeType&&entity.id===activeId)).sort((a,b)=>b.date.localeCompare(a.date)); const verification=verificationFor(); const sourceNames=(verification.source_ids||[]).map(id=>sources.find(source=>source.id===id)?.name||id); const primaryUrl=item.source_url||item.registry_url; const source=primaryUrl ? `<a class="source-link" href="${esc(primaryUrl)}" target="_blank" rel="noopener">查看原始来源</a>` : "";
+  document.getElementById("app").innerHTML=`
+    <section class="hero"><div class="breadcrumb"><a href="index.html">首页</a> / <a href="${config.back}">${config.label}</a> / 对象详情</div><span class="type-label">${config.label}</span><h1>${esc(item[config.title])}</h1><p class="hero-sub">${esc(item[config.subtitle]||item[config.summary]||"")}</p><div class="meta-row">${tags.map(tag=>`<span class="meta">${esc(tag)}</span>`).join("")}<span class="meta">优先级：${esc(item.priority||item.severity||"待判断")}</span><span class="verify-status ${verification.status==="待外部核验"?"pending":""}">核验：${esc(verification.status)}</span></div></section>
+    <div class="layout"><div class="stack">
+      <section class="panel"><div class="panel-kicker">Intelligence Judgment</div><h2>核心判断</h2><div class="key-box">${esc(item[config.summary]||item[config.subtitle]||"待补充核心判断。")}</div>${source}</section>
+      <section class="panel"><div class="panel-kicker">Structured Profile</div><h2>结构化档案</h2><div class="field-grid">${config.fields.map(([label,key])=>`<div class="field"><div class="field-label">${label}</div><div class="field-value">${esc(valueOf(item,key))}</div></div>`).join("")}</div></section>
+      <section class="panel"><div class="panel-kicker">Watch List</div><h2>持续观察点</h2><div class="watch-list">${watch.length?watch.map(x=>`<div class="watch-item"><b>•</b><span>${esc(x)}</span></div>`).join(""):'<div class="empty">当前尚未补充观察点。</div>'}</div></section>
+    </div><aside class="stack"><section class="panel"><div class="panel-kicker">Verification</div><h2>核验状态</h2><span class="verify-status ${verification.status==="待外部核验"?"pending":""}">${esc(verification.status)}</span><div style="margin-top:10px"><div class="verify-row"><span>置信度</span><strong>${esc(verification.confidence||"待判断")}</strong></div><div class="verify-row"><span>最近核验</span><strong>${esc(verification.last_verified_at||"尚未核验")}</strong></div><div class="verify-row"><span>下次复核</span><strong>${esc(verification.next_review_at||"待安排")}</strong></div><div class="verify-row"><span>核验来源</span><strong>${esc(sourceNames.join(" / ")||"尚未登记")}</strong></div></div><p class="verify-note">${esc(verification.note||verificationData.status_definitions?.[verification.status]||"")}</p><a class="source-link" href="quality.html">查看质量报告</a></section><section class="panel"><div class="panel-kicker">Recent Events</div><h2>相关动态</h2>${itemEvents.length?itemEvents.map(event=>`<a class="event-mini" href="timeline.html"><time>${esc(event.date)} · ${esc(event.event_type)}</time><strong>${esc(event.title)}</strong><span>${esc(event.priority)}优先级 · ${esc(event.status)}</span></a>`).join(""):'<div class="empty">当前尚无关联动态。</div>'}</section><section class="panel"><div class="panel-kicker">Relationship Graph</div><h2>关联情报</h2><div class="relation-list">${related.length?related.map(x=>`<a class="relation" href="${detailUrl(x.type,x.id)}"><div class="relation-type">${esc(TYPE_CONFIG[x.type]?.label||x.type)} · ${esc(x.label)}</div><div class="relation-title">${esc(nodeTitle(x.type,x.id))}</div><div class="relation-note">${esc(x.note)} · 置信度 ${esc(x.confidence)}</div></a>`).join(""):'<div class="empty">当前尚未建立跨模块关联。</div>'}</div></section></aside></div>`;
+}
+function renderError(message){ document.getElementById("app").innerHTML=`<div class="error"><h1>详情暂时无法打开</h1><p>${esc(message)}</p><a class="source-link" href="index.html">返回首页</a></div>`; }
+loadDetail();
+</script>
+<script src="assets/app-shell.js"></script>
+</body>
+</html>

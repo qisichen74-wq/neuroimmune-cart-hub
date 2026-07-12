@@ -3,12 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>研究情报 — 神经免疫CAR-T情报工作台</title>
+<title>研究情报 - 神经免疫CAR-T情报工作台</title>
 <style>
   :root {
     --bg: #fdf8ee;
     --bg2: #faf2dc;
     --bg3: #f5e9c4;
+    --surface: #fefcf3;
+    --surface-strong: #fff8e7;
     --border: #e8d9a8;
     --border2: #d4c080;
     --accent: #8b6914;
@@ -19,289 +21,692 @@
     --yellow: #92400e;
     --yellow-light: #fef3c7;
     --green: #166534;
+    --green-light: #f0fdf4;
     --text: #1c1508;
     --text2: #4a3c18;
     --text3: #8a7540;
-    --font-mono: 'SF Mono', 'Fira Code', monospace;
-    --font-sans: 'Inter', -apple-system, sans-serif;
+    --shadow: 0 12px 32px rgba(139, 105, 20, 0.08);
+    --font-mono: "SF Mono", "Fira Code", monospace;
+    --font-sans: "Inter", -apple-system, sans-serif;
   }
 
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { background: var(--bg); color: var(--text); font-family: var(--font-sans); font-size: 14px; line-height: 1.6; }
+  a { color: inherit; }
 
   nav {
-    background: #fefcf3;
+    background: rgba(254, 252, 243, 0.92);
+    backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--border);
     padding: 0 32px;
-    display: flex; align-items: center; justify-content: space-between;
-    height: 56px; position: sticky; top: 0; z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
   }
 
-  .nav-logo { display: flex; align-items: center; gap: 10px; font-size: 14px; font-weight: 600; color: var(--text); text-decoration: none; }
+  .nav-logo { display: flex; align-items: center; gap: 10px; font-size: 14px; font-weight: 700; color: var(--text); text-decoration: none; }
+  .live-dot { width: 8px; height: 8px; background: var(--green); border-radius: 50%; position: relative; }
+  .live-dot::after { content: ""; position: absolute; inset: -4px; border-radius: 50%; background: var(--green); opacity: 0.28; animation: ripple 2s infinite; }
+  @keyframes ripple { 0% { transform: scale(0.75); opacity: 0.35; } 100% { transform: scale(1.8); opacity: 0; } }
 
-  .live-dot { width: 7px; height: 7px; background: var(--green); border-radius: 50%; position: relative; }
-  .live-dot::after { content:''; position: absolute; inset: -3px; border-radius: 50%; background: var(--green); opacity: 0.3; animation: ripple 2s infinite; }
-  @keyframes ripple { 0%{transform:scale(0.8);opacity:0.4} 100%{transform:scale(1.8);opacity:0} }
-
-  .nav-links { display: flex; gap: 2px; list-style: none; }
-  .nav-links a { color: var(--text2); text-decoration: none; padding: 6px 12px; border-radius: 6px; font-size: 13px; transition: all 0.12s; }
+  .nav-links { display: flex; gap: 4px; list-style: none; }
+  .nav-links a { color: var(--text2); text-decoration: none; padding: 7px 12px; border-radius: 6px; font-size: 13px; transition: 0.14s ease; }
   .nav-links a:hover { background: var(--bg2); color: var(--text); }
-  .nav-links a.active { background: var(--accent-light); color: var(--accent); font-weight: 500; border: 1px solid var(--border); }
+  .nav-links a.active { background: var(--accent-light); color: var(--accent); border: 1px solid var(--border); font-weight: 600; }
+  .nav-badge { font-family: var(--font-mono); font-size: 10px; color: var(--text3); border: 1px solid var(--border); padding: 3px 8px; border-radius: 999px; background: var(--bg2); }
 
-  .nav-badge { font-family: var(--font-mono); font-size: 10px; color: var(--text3); border: 1px solid var(--border); padding: 3px 8px; border-radius: 4px; background: var(--bg2); }
+  .page-shell { max-width: 1200px; margin: 0 auto; padding: 0 32px 48px; }
 
-  .page-header { background: #fefcf3; border-bottom: 1px solid var(--border); padding: 32px 32px 24px; }
-  .page-header-inner { max-width: 1160px; margin: 0 auto; }
+  .hero {
+    padding: 36px 0 26px;
+    border-bottom: 1px solid var(--border);
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(280px, 360px);
+    gap: 18px;
+    align-items: stretch;
+  }
 
   .breadcrumb { font-size: 12px; color: var(--text3); margin-bottom: 12px; }
   .breadcrumb a { color: var(--accent); text-decoration: none; }
-  .breadcrumb a:hover { text-decoration: underline; }
+  .hero-kicker {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent2);
+    background: var(--accent-light);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 5px 10px;
+    margin-bottom: 16px;
+  }
+  .hero-title { font-size: 34px; line-height: 1.12; margin-bottom: 12px; }
+  .hero-sub { max-width: 700px; color: var(--text2); font-size: 15px; }
+  .hero-notes { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+  .hero-note {
+    padding: 7px 11px;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: var(--surface);
+    font-size: 12px;
+    color: var(--text2);
+  }
 
-  .page-title { font-size: 24px; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 6px; }
-  .page-sub { font-size: 13px; color: var(--text2); }
+  .hero-card {
+    background: linear-gradient(180deg, var(--surface) 0%, var(--surface-strong) 100%);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .hero-card-label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text3); font-weight: 700; }
+  .hero-card-title { font-size: 18px; line-height: 1.4; font-weight: 700; }
+  .hero-card-copy { font-size: 13px; color: var(--text2); }
+  .hero-card-foot { margin-top: auto; padding-top: 12px; border-top: 1px solid var(--border); font-size: 11px; color: var(--text3); }
 
-  .main { max-width: 1160px; margin: 0 auto; padding: 28px 32px; display: grid; grid-template-columns: 220px 1fr; gap: 28px; }
+  .layout {
+    padding: 28px 0 0;
+    display: grid;
+    grid-template-columns: 280px minmax(0, 1fr);
+    gap: 18px;
+  }
 
-  .filter-panel { position: sticky; top: 72px; align-self: start; }
+  .sidebar {
+    position: sticky;
+    top: 76px;
+    align-self: start;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
 
-  .filter-section { background: #fefcf3; border: 1px solid var(--border); border-radius: 8px; padding: 16px; margin-bottom: 12px; }
+  .panel {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 16px;
+  }
+  .panel-title { font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text3); font-weight: 700; margin-bottom: 12px; }
 
-  .filter-section-title { font-size: 11px; font-weight: 600; color: var(--text3); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 10px; }
-
-  .filter-option { display: flex; align-items: center; justify-content: space-between; padding: 6px 8px; border-radius: 5px; cursor: pointer; transition: background 0.12s; font-size: 13px; color: var(--text2); border: none; background: none; width: 100%; text-align: left; gap: 6px; }
-  .filter-option:hover { background: var(--bg2); color: var(--text); }
-  .filter-option.active { background: var(--accent-light); color: var(--accent); font-weight: 500; }
-
-  .filter-count { font-family: var(--font-mono); font-size: 10px; color: var(--text3); background: var(--bg2); padding: 1px 6px; border-radius: 10px; margin-left: auto; }
-  .filter-option.active .filter-count { background: var(--accent-light); color: var(--accent); }
-
-  .search-box { width: 100%; padding: 8px 12px; border: 1px solid var(--border); border-radius: 6px; font-size: 13px; font-family: var(--font-sans); background: #fefcf3; color: var(--text); outline: none; transition: border-color 0.12s; }
+  .search-box {
+    width: 100%;
+    padding: 9px 12px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: #fffdf7;
+    color: var(--text);
+    outline: none;
+    font-size: 13px;
+    font-family: var(--font-sans);
+  }
   .search-box:focus { border-color: var(--accent); }
-  .search-box::placeholder { color: var(--text3); }
 
-  .stats-bar { display: grid; grid-template-columns: repeat(4,1fr); gap: 10px; margin-bottom: 20px; }
+  .filter-list { display: flex; flex-direction: column; gap: 6px; }
+  .filter-option {
+    width: 100%;
+    border: none;
+    background: transparent;
+    border-radius: 8px;
+    padding: 8px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    color: var(--text2);
+    cursor: pointer;
+    text-align: left;
+  }
+  .filter-option:hover { background: var(--bg2); color: var(--text); }
+  .filter-option.active { background: var(--accent-light); color: var(--accent); font-weight: 600; }
+  .filter-count {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--text3);
+    border: 1px solid var(--border);
+    background: var(--bg2);
+    border-radius: 999px;
+    padding: 2px 6px;
+    margin-left: auto;
+  }
 
-  .stat-card { background: #fefcf3; border: 1px solid var(--border); border-radius: 8px; padding: 14px 16px; }
-  .stat-num { font-family: var(--font-mono); font-size: 22px; font-weight: 700; color: var(--accent); display: block; }
-  .stat-label { font-size: 11px; color: var(--text3); margin-top: 3px; display: block; }
+  .monitor-list { display: flex; flex-direction: column; gap: 10px; }
+  .monitor-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    font-size: 12px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border);
+  }
+  .monitor-row:last-child { border-bottom: none; padding-bottom: 0; }
+  .monitor-label { color: var(--text2); }
+  .monitor-value { font-weight: 600; text-align: right; }
 
-  .toolbar { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; flex-wrap: wrap; gap: 8px; }
+  .content { min-width: 0; }
+
+  .stats-bar {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 10px;
+    margin-bottom: 18px;
+  }
+  .stat-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 16px;
+    min-height: 112px;
+  }
+  .stat-num { display: block; font-family: var(--font-mono); font-size: 26px; line-height: 1; color: var(--accent); font-weight: 700; }
+  .stat-label { display: block; margin-top: 10px; font-size: 12px; font-weight: 600; }
+  .stat-note { display: block; margin-top: 6px; font-size: 11px; color: var(--text3); }
+
+  .toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 14px;
+  }
   .result-info { font-size: 12px; color: var(--text3); }
-  .sort-select { font-size: 12px; padding: 5px 10px; border: 1px solid var(--border); border-radius: 6px; background: #fefcf3; color: var(--text2); cursor: pointer; outline: none; font-family: var(--font-sans); }
+  .toolbar-actions { display: flex; gap: 8px; align-items: center; }
+  .sort-select {
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--surface);
+    color: var(--text2);
+    padding: 8px 10px;
+    font-size: 12px;
+    font-family: var(--font-sans);
+    outline: none;
+    cursor: pointer;
+  }
 
-  .card { background: #fefcf3; border: 1px solid var(--border); border-radius: 8px; padding: 20px; margin-bottom: 10px; transition: all 0.12s; cursor: pointer; }
+  .feed-list { display: flex; flex-direction: column; gap: 10px; }
+  .card {
+    background: #fffdf7;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 18px;
+    transition: 0.14s ease;
+    cursor: pointer;
+  }
   .card:hover { border-color: var(--accent2); box-shadow: 0 0 0 3px var(--accent-light); }
-
-  .card-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 10px; }
-  .card-title { font-size: 14px; font-weight: 600; color: var(--text); line-height: 1.5; }
-
-  .priority-badge { flex-shrink: 0; font-size: 11px; padding: 3px 9px; border-radius: 4px; font-weight: 600; }
+  .card-top { display: flex; justify-content: space-between; gap: 12px; margin-bottom: 10px; }
+  .card-title { font-size: 15px; line-height: 1.5; font-weight: 700; }
+  .card-badges { display: flex; flex-direction: column; align-items: flex-end; gap: 6px; }
+  .priority-badge, .review-badge {
+    font-size: 10px;
+    font-weight: 700;
+    padding: 4px 8px;
+    border-radius: 999px;
+    white-space: nowrap;
+  }
   .priority-高 { background: var(--red-light); color: var(--red); }
   .priority-中 { background: var(--yellow-light); color: var(--yellow); }
   .priority-低 { background: var(--bg3); color: var(--text3); }
+  .review-done { background: var(--green-light); color: var(--green); border: 1px solid #bbf7d0; }
+  .review-pending { background: #fff7ed; color: #c2410c; border: 1px solid #fed7aa; }
+  .review-ignored { background: var(--bg3); color: var(--text3); border: 1px solid var(--border); }
 
-  .card-meta { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 12px; }
-  .meta-tag { font-family: var(--font-mono); font-size: 10px; color: var(--text3); background: var(--bg2); padding: 2px 7px; border-radius: 3px; border: 1px solid var(--border); }
+  .card-meta { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
+  .meta-tag {
+    display: inline-flex;
+    align-items: center;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--text3);
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 3px 8px;
+  }
   .meta-tag.disease { color: var(--accent); background: var(--accent-light); border-color: var(--border2); }
+  .card-summary { color: var(--text2); font-size: 13px; margin-bottom: 12px; }
+  .key-box {
+    background: var(--bg2);
+    border-left: 3px solid var(--accent);
+    border-radius: 8px;
+    padding: 12px 14px;
+    font-size: 12px;
+    color: var(--text2);
+  }
+  .tag-row { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+  .tag-pill {
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: var(--surface);
+    font-size: 11px;
+    color: var(--text2);
+    padding: 4px 8px;
+  }
+  .card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-top: 14px;
+    padding-top: 12px;
+    border-top: 1px solid var(--border);
+    font-size: 11px;
+    color: var(--text3);
+  }
+  .card-link { color: var(--accent); text-decoration: none; font-weight: 600; }
 
-  .card-liner { font-size: 13px; color: var(--text2); line-height: 1.7; margin-bottom: 12px; }
-  .card-reason { font-size: 12px; color: var(--text3); padding: 10px 12px; background: var(--bg2); border-radius: 5px; border-left: 3px solid var(--accent); }
-
-  .card-footer { display: flex; align-items: center; justify-content: space-between; margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--border); }
-  .card-pmid { font-family: var(--font-mono); font-size: 11px; color: var(--text3); }
-  .card-link { font-size: 11px; color: var(--accent); text-decoration: none; font-weight: 500; }
-  .card-link:hover { text-decoration: underline; }
-
-  .loading { display: flex; align-items: center; gap: 8px; color: var(--text3); font-size: 12px; padding: 40px 0; justify-content: center; }
+  .empty {
+    text-align: center;
+    padding: 56px 20px;
+    border: 1px dashed var(--border);
+    border-radius: 8px;
+    color: var(--text3);
+    background: var(--surface);
+  }
+  .loading { display: flex; align-items: center; gap: 8px; color: var(--text3); font-size: 12px; padding: 30px 0; justify-content: center; }
   .spinner { width: 16px; height: 16px; border: 2px solid var(--border); border-top-color: var(--accent); border-radius: 50%; animation: spin 0.8s linear infinite; }
   @keyframes spin { to { transform: rotate(360deg); } }
-  .empty { text-align: center; padding: 60px 20px; color: var(--text3); font-size: 13px; }
-  .empty-icon { font-size: 32px; margin-bottom: 12px; }
 
-  footer { border-top: 1px solid var(--border); padding: 20px 32px; max-width: 1160px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; }
-  .footer-disclaimer { font-size: 11px; color: var(--text3); }
-  .footer-update { font-family: var(--font-mono); font-size: 10px; color: var(--text3); }
+  footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 32px 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    color: var(--text3);
+    font-size: 11px;
+  }
+
+  @media (max-width: 1024px) {
+    .hero,
+    .layout { grid-template-columns: 1fr; }
+    .sidebar { position: static; }
+  }
 
   @media (max-width: 768px) {
-    .main { grid-template-columns: 1fr; }
-    .filter-panel { position: static; }
     nav { padding: 0 16px; }
     .nav-links { display: none; }
-    .page-header { padding: 20px 16px; }
-    .main { padding: 16px; }
-    .stats-bar { grid-template-columns: repeat(2,1fr); }
+    .page-shell { padding: 0 16px 32px; }
+    .hero { padding: 24px 0 20px; }
+    .hero-title { font-size: 28px; }
+    .stats-bar { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    footer { padding: 18px 16px 28px; flex-direction: column; align-items: flex-start; }
   }
 </style>
 </head>
 <body>
 
 <nav>
-  <a href="index.html" class="nav-logo">
-    <span class="live-dot"></span>
-    神经免疫 CAR-T 情报工作台
-  </a>
+  <a href="index.html" class="nav-logo"><span class="live-dot"></span>神经免疫 CAR-T 情报工作台</a>
   <ul class="nav-links">
     <li><a href="index.html">首页</a></li>
+    <li><a href="timeline.html">动态时间线</a></li>
+    <li><a href="topics.html">专题档案</a></li>
     <li><a href="research.html" class="active">研究情报</a></li>
     <li><a href="landscape.html">竞争格局</a></li>
     <li><a href="trials.html">里程碑试验</a></li>
     <li><a href="safety.html">安全信号</a></li>
   </ul>
-  <span class="nav-badge">Beta · 2026</span>
+  <a class="nav-badge" href="search.html" style="text-decoration:none">全局检索</a>
 </nav>
 
-<div class="page-header">
-  <div class="page-header-inner">
-    <div class="breadcrumb"><a href="index.html">首页</a> › 研究情报</div>
-    <h1 class="page-title">📡 研究情报</h1>
-    <p class="page-sub">每日自动抓取 PubMed 最新文献，经 AI 分级筛选，聚焦神经免疫 CAR-T 临床与转化数据。</p>
-  </div>
-</div>
+<main class="page-shell">
+  <section class="hero">
+    <div>
+      <div class="breadcrumb"><a href="index.html">首页</a> / 研究情报</div>
+      <div class="hero-kicker">Research Feed</div>
+      <h1 class="hero-title">神经免疫 CAR-T 研究证据库</h1>
+      <p class="hero-sub">按证据等级、适应症、优先级与核验状态整理临床研究、病例系列、队列和系统综述。</p>
+      <div class="hero-notes">
+        <span class="hero-note">优先看：高优先级 + 已审核</span>
+        <span class="hero-note">适合沉淀：原始研究、病例系列、队列、试验更新</span>
+        <span class="hero-note" id="update-note">数据状态：同步中</span>
+      </div>
+    </div>
 
-<div class="main">
-  <div class="filter-panel">
-    <div class="filter-section">
-      <div class="filter-section-title">搜索</div>
-      <input class="search-box" type="text" placeholder="搜索标题或摘要..." oninput="handleSearch(this.value)">
-    </div>
-    <div class="filter-section">
-      <div class="filter-section-title">优先级</div>
-      <button class="filter-option active" onclick="setFilter('priority','全部',this)">全部 <span class="filter-count" id="count-all">—</span></button>
-      <button class="filter-option" onclick="setFilter('priority','高',this)">🔴 高优先级 <span class="filter-count" id="count-high">—</span></button>
-      <button class="filter-option" onclick="setFilter('priority','中',this)">🟡 中优先级 <span class="filter-count" id="count-mid">—</span></button>
-      <button class="filter-option" onclick="setFilter('priority','低',this)">⚪ 低优先级 <span class="filter-count" id="count-low">—</span></button>
-    </div>
-    <div class="filter-section">
-      <div class="filter-section-title">适应症</div>
-      <button class="filter-option" onclick="setFilter('disease','MS',this)">MS <span class="filter-count" id="count-ms">—</span></button>
-      <button class="filter-option" onclick="setFilter('disease','MG',this)">MG <span class="filter-count" id="count-mg">—</span></button>
-      <button class="filter-option" onclick="setFilter('disease','NMOSD',this)">NMOSD <span class="filter-count" id="count-nmosd">—</span></button>
-      <button class="filter-option" onclick="setFilter('disease','AE',this)">AE <span class="filter-count" id="count-ae">—</span></button>
-      <button class="filter-option" onclick="setFilter('disease','SPS',this)">SPS <span class="filter-count" id="count-sps">—</span></button>
-      <button class="filter-option" onclick="setFilter('disease','其他自免',this)">其他自免 <span class="filter-count" id="count-other">—</span></button>
-    </div>
-    <div class="filter-section">
-      <div class="filter-section-title">证据类型</div>
-      <button class="filter-option" onclick="setFilter('evidence','临床',this)">临床研究</button>
-      <button class="filter-option" onclick="setFilter('evidence','综述',this)">综述</button>
-    </div>
-  </div>
+    <aside class="hero-card">
+      <div class="hero-card-label">证据阅读</div>
+      <div class="hero-card-title">优先区分研究设计与结论边界</div>
+      <p class="hero-card-copy">病例信号用于发现方向，对照研究用于比较疗效，长期随访用于判断缓解持续性与风险。</p>
+      <div class="hero-card-foot" id="hero-card-foot">等待同步</div>
+    </aside>
+  </section>
 
-  <div class="content-area">
-    <div class="stats-bar">
-      <div class="stat-card"><span class="stat-num" id="stat-total">—</span><span class="stat-label">文献总数</span></div>
-      <div class="stat-card"><span class="stat-num" style="color:var(--red)" id="stat-high">—</span><span class="stat-label">🔴 高优先级</span></div>
-      <div class="stat-card"><span class="stat-num" style="color:var(--yellow)" id="stat-mid">—</span><span class="stat-label">🟡 中优先级</span></div>
-      <div class="stat-card"><span class="stat-num" id="stat-clinical">—</span><span class="stat-label">临床研究</span></div>
+  <section class="layout">
+    <aside class="sidebar">
+      <div class="panel">
+        <div class="panel-title">搜索</div>
+        <input id="search-input" class="search-box" type="text" placeholder="搜索标题、摘要、标签或实体">
+      </div>
+
+      <div class="panel">
+        <div class="panel-title">优先级</div>
+        <div class="filter-list">
+          <button class="filter-option active" data-group="priority" data-value="全部"><span>全部</span><span class="filter-count" id="count-all">-</span></button>
+          <button class="filter-option" data-group="priority" data-value="高"><span>高优先级</span><span class="filter-count" id="count-high">-</span></button>
+          <button class="filter-option" data-group="priority" data-value="中"><span>中优先级</span><span class="filter-count" id="count-mid">-</span></button>
+          <button class="filter-option" data-group="priority" data-value="低"><span>低优先级</span><span class="filter-count" id="count-low">-</span></button>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-title">适应症</div>
+        <div class="filter-list" id="disease-filters"></div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-title">证据类型</div>
+        <div class="filter-list">
+          <button class="filter-option" data-group="evidence" data-value="全部"><span>全部</span></button>
+          <button class="filter-option" data-group="evidence" data-value="临床"><span>原始研究 / 临床</span></button>
+          <button class="filter-option" data-group="evidence" data-value="综述"><span>综述</span></button>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-title">审核状态</div>
+        <div class="filter-list">
+          <button class="filter-option" data-group="status" data-value="全部"><span>全部</span></button>
+          <button class="filter-option" data-group="status" data-value="已审核"><span>已审核</span></button>
+          <button class="filter-option" data-group="status" data-value="待审核"><span>待审核</span></button>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-title">监测面板</div>
+        <div class="monitor-list" id="monitor-list"></div>
+      </div>
+    </aside>
+
+    <div class="content">
+      <div class="stats-bar" id="stats-bar"></div>
+
+      <div class="toolbar">
+        <span class="result-info" id="result-info">正在加载研究情报...</span>
+        <div class="toolbar-actions">
+          <select class="sort-select" id="sort-select">
+            <option value="priority">按优先级排序</option>
+            <option value="date">按发布时间排序</option>
+            <option value="pmid">按PMID排序</option>
+            <option value="review">按审核状态排序</option>
+          </select>
+        </div>
+      </div>
+
+      <div id="feed-container" class="feed-list">
+        <div class="loading"><div class="spinner"></div>正在读取最新情报...</div>
+      </div>
     </div>
-    <div class="toolbar">
-      <span class="result-info" id="result-info">正在加载...</span>
-      <select class="sort-select" onchange="handleSort(this.value)">
-        <option value="priority">按优先级排序</option>
-        <option value="pmid">按PMID排序</option>
-      </select>
-    </div>
-    <div id="feed-container">
-      <div class="loading"><div class="spinner"></div>正在读取最新情报...</div>
-    </div>
-  </div>
-</div>
+  </section>
+</main>
 
 <footer>
-  <p class="footer-disclaimer">仅供科研与产业情报参考，不构成临床诊疗建议。数据来源：PubMed E-utilities API。</p>
-  <span class="footer-update" id="footer-update">—</span>
+  <p>仅供科研与产业情报参考，不构成临床诊疗建议。请以原始来源与正式披露信息为准。</p>
+  <span id="footer-update">更新于 -</span>
 </footer>
 
 <script>
-const SAMPLE_DATA = [
-  { pmid:"42251699", title_cn:"CAR-T细胞疗法使合并CNS受累CLL与多发性硬化患者获得完全缓解", priority:"高", priority_reason:"首例CAR-T同时改善CLL/CNS受累与MS的直接临床证据，对神经免疫适应症拓展具有重要参考价值", evidence_level:"病例报道·IIT", disease:"MS", one_liner:"CD19 CAR-T治疗一例合并CNS受累CLL与MS患者，CLL完全缓解且MS疾病负担显著改善。" },
-  { pmid:"42223209", title_cn:"CD19 CAR-T治疗进展性系统性硬化症的临床与蛋白质组学整合分析", priority:"高", priority_reason:"国内IND产品relma-cel在自身免疫适应症的多维度临床与蛋白组学数据", evidence_level:"病例系列·IIT", disease:"其他自免", one_liner:"对CD19 CAR-T治疗进展性SSc患者进行临床、免疫学及蛋白组学多维整合分析。" },
-  { pmid:"42167622", title_cn:"CAR-T及NK细胞疗法治疗自身免疫病系统综述与荟萃分析", priority:"中", priority_reason:"首个涵盖CAR细胞疗法治疗自免疾病的系统综述与荟萃分析", evidence_level:"综述", disease:"其他自免", one_liner:"系统评估CAR-T及CAR-NK在多种自身免疫病中的疗效、安全性与持久缓解情况。" },
-  { pmid:"42286319", title_cn:"重编程免疫：CAR-T细胞疗法在多发性硬化中的前景与挑战", priority:"中", priority_reason:"系统梳理CAR-T治疗MS的机制与挑战", evidence_level:"综述", disease:"MS", one_liner:"综述CAR-T靶向清除致病性B细胞治疗难治性MS的机制、深度缓解潜力及挑战。" },
-  { pmid:"42295377", title_cn:"多发性硬化症新兴治疗策略：聚焦创新与靶向方法", priority:"低", priority_reason:"综述性文章，无原始CAR-T临床数据，信息密度低", evidence_level:"综述", disease:"MS", one_liner:"综述MS新兴疗法，涵盖BTK抑制剂、CAR-T、EBV疫苗、髓鞘再生及纳米递药等。" },
-  { pmid:"42171443", title_cn:"僵人谱系障碍的长期预后", priority:"中", priority_reason:"SPS长期预后数据稀缺，对CAR-T治疗目标疾病的自然史认知有参考价值", evidence_level:"队列研究", disease:"SPS", one_liner:"报道僵人谱系障碍长期预后数据，治疗持续应答存在差异，为该病自然史提供参考。" }
-];
-
-let allData = [], filtered = [], activeFilter = {type:'priority',value:'全部'}, searchQuery = '', sortBy = 'priority';
+let allData = [];
+let filteredData = [];
+let searchQuery = "";
+let sortBy = "priority";
+const activeFilters = {
+  priority: "全部",
+  disease: "全部",
+  evidence: "全部",
+  status: "全部"
+};
 
 async function loadFeed() {
   try {
-    const res = await fetch('data/feed.json');
-    if (!res.ok) throw new Error();
+    const res = await fetch("data/feed.json");
+    if (!res.ok) throw new Error("feed load failed");
     allData = await res.json();
-  } catch(e) { allData = SAMPLE_DATA; }
-  updateCounts();
+  } catch (error) {
+    allData = [];
+  }
+
+  normalizeData();
+  renderSidebar();
+  renderStats();
+  bindEvents();
   applyFilters();
-  document.getElementById('footer-update').textContent = '更新于 ' + new Date().toLocaleDateString('zh-CN');
+
+  const today = new Date().toLocaleDateString("zh-CN");
+  document.getElementById("footer-update").textContent = "更新于 " + today;
+  document.getElementById("update-note").textContent = "数据状态：最近同步 " + today;
+  document.getElementById("hero-card-foot").textContent = "当前已接入 " + allData.length + " 条研究情报";
 }
 
-function updateCounts() {
-  document.getElementById('stat-total').textContent = allData.length;
-  document.getElementById('stat-high').textContent = allData.filter(d=>d.priority==='高').length;
-  document.getElementById('stat-mid').textContent = allData.filter(d=>d.priority==='中').length;
-  document.getElementById('stat-clinical').textContent = allData.filter(d=>!d.evidence_level.includes('综述')).length;
-  document.getElementById('count-all').textContent = allData.length;
-  document.getElementById('count-high').textContent = allData.filter(d=>d.priority==='高').length;
-  document.getElementById('count-mid').textContent = allData.filter(d=>d.priority==='中').length;
-  document.getElementById('count-low').textContent = allData.filter(d=>d.priority==='低').length;
-  document.getElementById('count-ms').textContent = allData.filter(d=>d.disease==='MS').length;
-  document.getElementById('count-mg').textContent = allData.filter(d=>d.disease==='MG').length;
-  document.getElementById('count-nmosd').textContent = allData.filter(d=>d.disease==='NMOSD').length;
-  document.getElementById('count-ae').textContent = allData.filter(d=>d.disease==='AE').length;
-  document.getElementById('count-sps').textContent = allData.filter(d=>d.disease==='SPS').length;
-  document.getElementById('count-other').textContent = allData.filter(d=>d.disease==='其他自免').length;
+function normalizeData() {
+  allData = allData.map((item) => ({
+    id: item.id || ("pmid-" + item.pmid),
+    source_name: "PubMed",
+    publish_date: "",
+    date_added: "",
+    entity: "",
+    region: "",
+    tags: [],
+    takeaway: item.priority_reason || "",
+    ...item
+  }));
 }
 
-function setFilter(type, value, el) {
-  activeFilter = {type, value};
-  document.querySelectorAll('.filter-option').forEach(b=>b.classList.remove('active'));
-  el.classList.add('active');
-  applyFilters();
+function bindEvents() {
+  document.getElementById("search-input").addEventListener("input", (event) => {
+    searchQuery = event.target.value.trim().toLowerCase();
+    applyFilters();
+  });
+
+  document.getElementById("sort-select").addEventListener("change", (event) => {
+    sortBy = event.target.value;
+    renderCards(filteredData);
+  });
+
+  document.querySelectorAll(".filter-option").forEach((button) => {
+    button.addEventListener("click", () => {
+      const group = button.dataset.group;
+      const value = button.dataset.value;
+      if (!group || !value) return;
+      activeFilters[group] = value;
+
+      document.querySelectorAll(`.filter-option[data-group="${group}"]`).forEach((item) => {
+        item.classList.toggle("active", item === button);
+      });
+
+      applyFilters();
+    });
+  });
 }
 
-function handleSearch(q) { searchQuery = q.toLowerCase(); applyFilters(); }
-function handleSort(v) { sortBy = v; renderCards(filtered); }
+function renderSidebar() {
+  const diseases = [...new Set(allData.map((item) => item.disease))].sort((a, b) => a.localeCompare(b, "zh-CN"));
+  document.getElementById("disease-filters").innerHTML = [
+    `<button class="filter-option active" data-group="disease" data-value="全部"><span>全部</span><span class="filter-count">${allData.length}</span></button>`,
+    ...diseases.map((disease) => {
+      const count = allData.filter((item) => item.disease === disease).length;
+      return `<button class="filter-option" data-group="disease" data-value="${disease}"><span>${disease}</span><span class="filter-count">${count}</span></button>`;
+    })
+  ].join("");
+
+  document.getElementById("monitor-list").innerHTML = [
+    ["覆盖适应症", diseases.join(" / ") || "-"],
+    ["高优先级占比", percentage(allData.filter((item) => item.priority === "高").length, allData.length)],
+    ["已审核占比", percentage(allData.filter((item) => item.status === "已审核").length, allData.length)],
+    ["原始研究占比", percentage(allData.filter((item) => !isReview(item)).length, allData.length)]
+  ].map(([label, value]) => `
+    <div class="monitor-row">
+      <span class="monitor-label">${label}</span>
+      <span class="monitor-value">${value}</span>
+    </div>
+  `).join("");
+}
+
+function renderStats() {
+  const stats = [
+    {
+      value: allData.length,
+      label: "研究情报总数",
+      note: "当前接入 feed.json 的全部条目"
+    },
+    {
+      value: allData.filter((item) => item.priority === "高").length,
+      label: "高优先级",
+      note: "适合先读完并进入专题追踪"
+    },
+    {
+      value: allData.filter((item) => item.status === "已审核").length,
+      label: "已审核",
+      note: "已经形成初步判断的条目"
+    },
+    {
+      value: allData.filter((item) => !isReview(item)).length,
+      label: "原始研究 / 临床",
+      note: "比综述更适合直接支撑判断"
+    }
+  ];
+
+  document.getElementById("stats-bar").innerHTML = stats.map((stat) => `
+    <div class="stat-card">
+      <span class="stat-num">${stat.value}</span>
+      <span class="stat-label">${stat.label}</span>
+      <span class="stat-note">${stat.note}</span>
+    </div>
+  `).join("");
+
+  document.getElementById("count-all").textContent = allData.length;
+  document.getElementById("count-high").textContent = allData.filter((item) => item.priority === "高").length;
+  document.getElementById("count-mid").textContent = allData.filter((item) => item.priority === "中").length;
+  document.getElementById("count-low").textContent = allData.filter((item) => item.priority === "低").length;
+}
 
 function applyFilters() {
-  filtered = allData.filter(d => {
-    const mf = activeFilter.value==='全部' ? true :
-      activeFilter.type==='priority' ? d.priority===activeFilter.value :
-      activeFilter.type==='disease' ? d.disease===activeFilter.value :
-      activeFilter.type==='evidence' ? (activeFilter.value==='综述' ? d.evidence_level.includes('综述') : !d.evidence_level.includes('综述')) : true;
-    const ms = !searchQuery || d.title_cn.toLowerCase().includes(searchQuery) || d.one_liner.toLowerCase().includes(searchQuery);
-    return mf && ms;
+  filteredData = allData.filter((item) => {
+    const matchesPriority = activeFilters.priority === "全部" || item.priority === activeFilters.priority;
+    const matchesDisease = activeFilters.disease === "全部" || item.disease === activeFilters.disease;
+    const matchesStatus = activeFilters.status === "全部" || item.status === activeFilters.status;
+    const matchesEvidence =
+      activeFilters.evidence === "全部" ||
+      (activeFilters.evidence === "综述" ? isReview(item) : !isReview(item));
+
+    const haystack = [
+      item.title_cn,
+      item.one_liner,
+      item.priority_reason,
+      item.takeaway,
+      item.entity,
+      item.region,
+      ...(item.tags || [])
+    ].join(" ").toLowerCase();
+    const matchesSearch = !searchQuery || haystack.includes(searchQuery);
+
+    return matchesPriority && matchesDisease && matchesStatus && matchesEvidence && matchesSearch;
   });
-  renderCards(filtered);
+
+  renderCards(filteredData);
 }
 
-const po = {'高':0,'中':1,'低':2};
-
 function renderCards(data) {
-  const sorted = [...data].sort((a,b) => sortBy==='priority' ? (po[a.priority]??3)-(po[b.priority]??3) : parseInt(b.pmid)-parseInt(a.pmid));
-  document.getElementById('result-info').textContent = `显示 ${sorted.length} / ${allData.length} 篇文献`;
-  const c = document.getElementById('feed-container');
-  if (!sorted.length) { c.innerHTML=`<div class="empty"><div class="empty-icon">🔍</div>暂无符合条件的文献</div>`; return; }
-  c.innerHTML = sorted.map(d=>`
-    <div class="card" onclick="window.open('https://pubmed.ncbi.nlm.nih.gov/${d.pmid}/','_blank')">
-      <div class="card-top">
-        <span class="card-title">${d.title_cn}</span>
-        <span class="priority-badge priority-${d.priority}">${d.priority==='高'?'🔴 高':d.priority==='中'?'🟡 中':'⚪ 低'}</span>
-      </div>
-      <div class="card-meta">
-        <span class="meta-tag disease">${d.disease}</span>
-        <span class="meta-tag">${d.evidence_level}</span>
-        <span class="meta-tag">PMID ${d.pmid}</span>
-      </div>
-      <p class="card-liner">${d.one_liner}</p>
-      <div class="card-reason">💡 ${d.priority_reason}</div>
-      <div class="card-footer">
-        <span class="card-pmid">PubMed ID: ${d.pmid}</span>
-        <a class="card-link" href="https://pubmed.ncbi.nlm.nih.gov/${d.pmid}/" target="_blank" onclick="event.stopPropagation()">查看原文 →</a>
-      </div>
-    </div>`).join('');
+  const sorted = [...data].sort(sortComparator);
+  document.getElementById("result-info").textContent = `显示 ${sorted.length} / ${allData.length} 条研究情报`;
+  const container = document.getElementById("feed-container");
+
+  if (!sorted.length) {
+    container.innerHTML = '<div class="empty">当前筛选条件下暂无结果。可以先放宽优先级或搜索词。</div>';
+    return;
+  }
+
+  container.innerHTML = sorted.map((item) => {
+    const reviewBadge = item.status === "已审核"
+      ? '<span class="review-badge review-done">已审核</span>'
+      : item.status === "已忽略"
+      ? '<span class="review-badge review-ignored">已忽略</span>'
+      : '<span class="review-badge review-pending">待审核</span>';
+
+    const sourceUrl = item.source_url || ("https://pubmed.ncbi.nlm.nih.gov/" + item.pmid + "/");
+    const metaDate = item.publish_date ? `发布 ${item.publish_date}` : `PMID ${item.pmid}`;
+
+    return `
+      <article class="card" onclick="window.open('${sourceUrl}', '_blank')">
+        <div class="card-top">
+          <div class="card-title">${item.title_cn}</div>
+          <div class="card-badges">
+            <span class="priority-badge priority-${item.priority || "低"}">${priorityLabel(item.priority)}</span>
+            ${reviewBadge}
+          </div>
+        </div>
+        <div class="card-meta">
+          <span class="meta-tag disease">${item.disease || "未分类"}</span>
+          <span class="meta-tag">${item.evidence_level || "证据待补"}</span>
+          <span class="meta-tag">${item.entity || "实体待补"}</span>
+          <span class="meta-tag">${metaDate}</span>
+        </div>
+        <p class="card-summary">${item.one_liner || "暂无摘要"}</p>
+        <div class="key-box">关键判断：${item.takeaway || item.priority_reason || "待补充关键结论。"}</div>
+        ${(item.tags || []).length ? `<div class="tag-row">${item.tags.map((tag) => `<span class="tag-pill">${tag}</span>`).join("")}</div>` : ""}
+        <div class="card-footer">
+          <span>${item.source_name || "PubMed"} · ${item.region || "Global"}</span>
+          <span><a class="card-link" href="detail.html?type=research&id=${encodeURIComponent(item.id)}" onclick="event.stopPropagation()">情报详情</a> · <a class="card-link" href="${sourceUrl}" target="_blank" onclick="event.stopPropagation()">查看原文</a></span>
+        </div>
+      </article>
+    `;
+  }).join("");
+}
+
+function sortComparator(a, b) {
+  if (sortBy === "date") return compareDateDesc(a.publish_date, b.publish_date);
+  if (sortBy === "pmid") return Number(b.pmid) - Number(a.pmid);
+  if (sortBy === "review") return reviewWeight(b.status) - reviewWeight(a.status) || priorityWeight(b.priority) - priorityWeight(a.priority);
+  return priorityWeight(b.priority) - priorityWeight(a.priority) || compareDateDesc(a.publish_date, b.publish_date);
+}
+
+function compareDateDesc(a, b) {
+  const timeA = a ? new Date(a).getTime() : 0;
+  const timeB = b ? new Date(b).getTime() : 0;
+  return timeB - timeA;
+}
+
+function priorityWeight(priority) {
+  if (priority === "高") return 3;
+  if (priority === "中") return 2;
+  return 1;
+}
+
+function reviewWeight(status) {
+  if (status === "已审核") return 3;
+  if (status === "待审核") return 2;
+  return 1;
+}
+
+function priorityLabel(priority) {
+  if (priority === "高") return "高优先级";
+  if (priority === "中") return "中优先级";
+  return "低优先级";
+}
+
+function isReview(item) {
+  return (item.evidence_level || "").includes("综述");
+}
+
+function percentage(value, total) {
+  if (!total) return "0%";
+  return Math.round((value / total) * 100) + "%";
 }
 
 loadFeed();
 </script>
+<script src="assets/app-shell.js"></script>
 </body>
 </html>
