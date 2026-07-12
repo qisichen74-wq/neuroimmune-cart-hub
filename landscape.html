@@ -306,11 +306,11 @@
   <a href="index.html" class="nav-logo"><span class="live-dot"></span>神经免疫 CAR-T 情报工作台</a>
   <ul class="nav-links">
     <li><a href="index.html">首页</a></li>
-    <li><a href="timeline.html">动态时间线</a></li>
+
     <li><a href="topics.html">专题档案</a></li>
     <li><a href="research.html">研究情报</a></li>
     <li><a href="landscape.html" class="active">竞争格局</a></li>
-    <li><a href="trials.html">里程碑试验</a></li>
+
     <li><a href="safety.html">安全信号</a></li>
   </ul>
   <a class="nav-badge" href="search.html" style="text-decoration:none">全局检索</a>
@@ -322,7 +322,7 @@
       <div class="breadcrumb"><a href="index.html">首页</a> / 竞争格局</div>
       <div class="hero-kicker">Landscape Tracker</div>
       <h1 class="hero-title">从公司名单升级成能比较路线、阶段和优先级的竞争情报面板</h1>
-      <p class="hero-sub">这个页面不只是记住“谁在做”，而是帮助你判断谁更值得持续盯、不同路线卡在哪个阶段、哪些玩家的信号更可能影响神经免疫 CAR-T 的判断框架。</p>
+      <p class="hero-sub">比较重点玩家、技术路线、开发阶段与适应症布局，识别可能改变竞争态势的项目进展。</p>
       <div class="hero-notes">
         <span class="hero-note">优先看平台代表性与推进速度</span>
         <span class="hero-note">学术中心往往先于公司给出早期信号</span>
@@ -333,7 +333,7 @@
     <aside class="hero-card">
       <div class="hero-card-label">这页怎么用</div>
       <div class="hero-card-title">先筛公司，再看路线，最后看观察点</div>
-      <p class="hero-card-copy">竞争格局页最容易沦为“公司名称墙”。这一版把每个玩家都补成了一个可讨论对象：有阶段、有重点适应症、有一句结论，也有后续要盯的观察点。</p>
+      <p class="hero-card-copy">综合阶段、适应症覆盖、证据锚点与关键观察项评估项目位置。</p>
       <div class="hero-card-foot" id="hero-card-foot">等待同步</div>
     </aside>
   </section>
@@ -343,7 +343,7 @@
       <div>
         <div class="section-kicker">Market Readout</div>
         <h2 class="section-title">格局先看四件事</h2>
-        <p class="section-desc">先把玩家数量、重点公司、区域分布和高优先级比例放到同一眼里，方便快速回答“这个赛道现在热不热、谁最值得追”。</p>
+        <p class="section-desc">汇总玩家数量、区域分布、高优先级项目与适应症覆盖。</p>
       </div>
     </div>
     <div class="stats-grid" id="stats-grid"></div>
@@ -422,7 +422,7 @@
       <div>
         <div class="section-kicker">Priority Companies</div>
         <h2 class="section-title">最值得持续追踪的重点玩家</h2>
-        <p class="section-desc">这里保留卡片式阅读，让你在扫完矩阵之后，能快速看到每家公司的“为什么重要”和“接下来盯什么”。</p>
+        <p class="section-desc">集中呈现重点项目的竞争意义与关键观察项。</p>
       </div>
     </div>
     <div class="company-grid" id="company-grid"></div>
@@ -433,7 +433,7 @@
       <div>
         <div class="section-kicker">Interpretation</div>
         <h2 class="section-title">当前格局最重要的三条判断</h2>
-        <p class="section-desc">竞争格局页不该只停在数据罗列。这里把结构化信息往上抬一层，沉淀成真正可复述的市场判断。</p>
+        <p class="section-desc">基于阶段、技术路线与适应症布局形成市场判断。</p>
       </div>
     </div>
     <div class="signal-grid" id="signal-grid"></div>
@@ -660,19 +660,19 @@ function renderInterpretation() {
       title: "学术中心仍然是早期信号的重要来源",
       label: "Interpretation 01",
       copy: "很多神经免疫 CAR-T 的可行性信号仍先出现在医院和学术团队，而不是成熟产业化公司，所以竞争格局不能只盯融资最多的玩家。",
-      meta: "含义：研究页与竞争格局页必须互相引用"
+      meta: "判断：学术证据仍是早期项目的重要领先指标"
     },
     {
       title: "MG 与 MS 是更值得优先盯的比较轴",
       label: "Interpretation 02",
       copy: "不同适应症推进速度并不一致。MG 更接近可设计化验证，MS 更适合看机制与长期获益，这会影响你对路线成熟度的判断。",
-      meta: "含义：后续适合拆适应症专题格局"
+      meta: "判断：不同适应症需要使用不同成熟度标准"
     },
     {
-      title: "路线差异会决定后续产品化叙事",
+      title: "路线差异决定产品化路径",
       label: "Interpretation 03",
-      copy: "传统CD19 CAR-T、mRNA CAR-T、研究者IIT并不是同一层级的比较对象。页面里需要一直把“路线”这个维度摆在台面上。",
-      meta: "含义：后续可扩展技术路线筛选"
+      copy: "自体、异体、mRNA与体内CAR-T在制造、给药、持续性和安全管理上存在显著差异。",
+      meta: "判断：技术路线决定规模化与风险管理边界"
     }
   ];
 

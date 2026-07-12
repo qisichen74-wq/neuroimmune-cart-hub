@@ -349,11 +349,11 @@
   <a href="index.html" class="nav-logo"><span class="live-dot"></span>神经免疫 CAR-T 情报工作台</a>
   <ul class="nav-links">
     <li><a href="index.html" class="active">首页</a></li>
-    <li><a href="timeline.html">动态时间线</a></li>
+
     <li><a href="topics.html">专题档案</a></li>
     <li><a href="research.html">研究情报</a></li>
     <li><a href="landscape.html">竞争格局</a></li>
-    <li><a href="trials.html">里程碑试验</a></li>
+
     <li><a href="safety.html">安全信号</a></li>
   </ul>
   <a class="nav-badge" href="search.html" style="text-decoration:none">全局检索</a>
@@ -613,7 +613,7 @@ const SIGNAL_DATA = [
 
 const SOURCE_DATA = [
   { name: "PubMed 文献", type: "Primary Literature", copy: "用于跟踪最新论文、病例报道、综述与转化研究，是当前首页的主数据源。 ", meta: "适合研究情报流" },
-  { name: "临床试验公开信息", type: "Registry", copy: "用于校验试验阶段、入排标准和执行状态，后续建议单独做试验时间线。", meta: "适合里程碑模块" },
+  { name: "临床试验公开信息", type: "Registry", copy: "用于核验试验阶段、入排标准、执行状态与关键日期。", meta: "项目状态依据" },
   { name: "公司与学术会议披露", type: "Company / Congress", copy: "用于补充产品路线、研发节点与竞争格局，但需要额外注明披露口径。", meta: "适合竞争情报" }
 ];
 
@@ -677,7 +677,7 @@ function renderOverview() {
     {
       value: new Set(allData.flatMap((d) => d.tags || [])).size || 0,
       title: "已出现的主题标签",
-      note: "标签越完整，后续做筛选和专题聚合越轻松。"
+      note: "按适应症、证据等级和技术路线聚合。"
     }
   ];
 
@@ -701,7 +701,7 @@ function renderOverview() {
         <div class="topic-name">${topic.disease}</div>
         <div class="topic-count">${topic.count} 条</div>
       </div>
-      <div class="topic-copy">当前首页已纳入 ${topic.disease} 相关研究情报，可继续往时间线、试验和安全模块展开。</div>
+      <div class="topic-copy">已纳入 ${topic.disease} 相关研究，可查看证据、项目与安全关联。</div>
       <div class="topic-bar"><span style="width:${Math.max((topic.count / maxCount) * 100, 14)}%"></span></div>
     </div>
   `).join("");
@@ -730,7 +730,7 @@ function renderFeatured() {
       </div>
       <h3 class="featured-title">${item.title_cn}</h3>
       <p class="featured-summary">${item.one_liner || "暂无摘要"}</p>
-      <div class="key-box">关键判断：${item.takeaway || item.priority_reason || "待补充关键结论。"}</div>
+      <div class="key-box">关键判断：${item.takeaway || item.priority_reason || "暂无明确结论。"}</div>
       <div class="card-footer">
         <span>${item.publish_date ? "发布时间 " + item.publish_date : "PMID " + item.pmid}</span>
         <a class="card-link" href="${item.source_url || ("https://pubmed.ncbi.nlm.nih.gov/" + item.pmid + "/")}" target="_blank">查看原文</a>
@@ -846,7 +846,7 @@ function applyFilter(filter) {
           <span class="meta-tag">${item.publish_date || ("PMID " + item.pmid)}</span>
         </div>
         <p class="intel-summary">${item.one_liner || "暂无摘要"}</p>
-        <p class="intel-reason">判断依据：${item.priority_reason || "待补充优先级说明。"}</p>
+        <p class="intel-reason">判断依据：${item.priority_reason || "尚无补充说明。"}</p>
         <div class="intel-footer">
           <span>${item.source_name || "PubMed"}</span>
           <a class="card-link" href="${sourceLink}" target="_blank" onclick="event.stopPropagation()">查看原文</a>

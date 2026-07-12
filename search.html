@@ -16,7 +16,7 @@
 </style>
 </head>
 <body>
-<nav><a class="nav-logo" href="index.html"><span class="dot"></span>神经免疫 CAR-T 情报工作台</a><ul class="nav-links"><li><a href="index.html">首页</a></li><li><a href="timeline.html">动态时间线</a></li><li><a href="topics.html">专题档案</a></li><li><a href="research.html">研究情报</a></li><li><a href="landscape.html">竞争格局</a></li><li><a href="trials.html">里程碑试验</a></li><li><a href="safety.html">安全信号</a></li></ul><a class="nav-action" href="search.html">全局检索</a></nav>
+<nav><a class="nav-logo" href="index.html"><span class="dot"></span>神经免疫 CAR-T 情报工作台</a><ul class="nav-links"><li><a href="index.html">首页</a></li><li><a href="topics.html">专题档案</a></li><li><a href="research.html">研究情报</a></li><li><a href="landscape.html">竞争格局</a></li><li><a href="safety.html">安全信号</a></li></ul><a class="nav-action" href="search.html">全局检索</a></nav>
 <main class="shell">
   <section class="search-hero"><div class="breadcrumb"><a href="index.html">首页</a> / 全局检索</div><span class="kicker">Global Intelligence Search</span><h1>跨研究、公司、试验、安全与动态统一检索</h1><p>搜索疾病、产品、机构、机制、风险或结论。结果直接来自当前结构化数据，不需要逐页查找。</p><form class="search-box" id="search-form"><input class="search-input" id="search-input" type="search" placeholder="例如：MS、KYV-101、感染、B细胞重建" autocomplete="off" aria-label="全局检索关键词"><button class="search-button" type="submit">检索</button></form><div class="quick"><button data-query="MS">MS</button><button data-query="CD19 CAR-T">CD19 CAR-T</button><button data-query="感染">感染</button><button data-query="B细胞重建">B细胞重建</button><button data-query="长期随访">长期随访</button></div></section>
   <section class="stats" id="stats"></section>
@@ -30,7 +30,7 @@ const CONFIG={
   company:{label:"竞争对象",file:"data/landscape.json",title:"company",copy:"recent_update",priority:"priority",tags:["product","technology","stage","region","focus"],fields:["company","product","technology","focus","stage","region","status","evidence_anchor","recent_update","watch_points"],url:item=>`detail.html?type=company&id=${encodeURIComponent(item.id)}`},
   trial:{label:"临床试验",file:"data/trials.json",title:"trial_name",copy:"evidence_goal",priority:"priority",tags:["product","indication","phase","region"],fields:["trial_name","sponsor","product","indication","phase","design","region","status","evidence_goal","key_question","watch_points"],url:item=>`detail.html?type=trial&id=${encodeURIComponent(item.id)}`},
   safety:{label:"安全信号",file:"data/safety.json",title:"signal",copy:"signal_summary",priority:"severity",tags:["category","mechanism","status","time_window"],fields:["signal","category","mechanism","severity","time_window","status","evidence_level","population","signal_summary","management_focus","watch_points"],url:item=>`detail.html?type=safety&id=${encodeURIComponent(item.id)}`},
-  event:{label:"动态事件",file:"data/events.json",title:"title",copy:"summary",priority:"priority",tags:["event_type","topic","status","date"],fields:["title","summary","impact","event_type","topic","status","source_label","date"],url:()=>"timeline.html"}
+  event:{label:"动态事件",file:"data/events.json",title:"title",copy:"summary",priority:"priority",tags:["event_type","topic","status","date"],fields:["title","summary","impact","event_type","topic","status","source_label","date"],url:()=>"search.html"}
 };
 let index=[];let results=[];let query="";const active={type:"全部",priority:"全部"};const rank={高:0,中:1,低:2};
 function flat(value){return Array.isArray(value)?value.map(flat).join(" "):String(value??"")}

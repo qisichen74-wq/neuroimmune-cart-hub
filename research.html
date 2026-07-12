@@ -352,11 +352,11 @@
   <a href="index.html" class="nav-logo"><span class="live-dot"></span>神经免疫 CAR-T 情报工作台</a>
   <ul class="nav-links">
     <li><a href="index.html">首页</a></li>
-    <li><a href="timeline.html">动态时间线</a></li>
+
     <li><a href="topics.html">专题档案</a></li>
     <li><a href="research.html" class="active">研究情报</a></li>
     <li><a href="landscape.html">竞争格局</a></li>
-    <li><a href="trials.html">里程碑试验</a></li>
+
     <li><a href="safety.html">安全信号</a></li>
   </ul>
   <a class="nav-badge" href="search.html" style="text-decoration:none">全局检索</a>
@@ -654,7 +654,7 @@ function renderCards(data) {
           <span class="meta-tag">${metaDate}</span>
         </div>
         <p class="card-summary">${item.one_liner || "暂无摘要"}</p>
-        <div class="key-box">关键判断：${item.takeaway || item.priority_reason || "待补充关键结论。"}</div>
+        <div class="key-box">关键判断：${item.takeaway || item.priority_reason || "暂无明确结论。"}</div>
         ${(item.tags || []).length ? `<div class="tag-row">${item.tags.map((tag) => `<span class="tag-pill">${tag}</span>`).join("")}</div>` : ""}
         <div class="card-footer">
           <span>${item.source_name || "PubMed"} · ${item.region || "Global"}</span>
