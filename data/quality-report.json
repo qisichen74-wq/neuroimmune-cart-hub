@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-12T02:54:00.676Z",
+  "generated_at": "2026-07-13T23:27:14.740Z",
   "as_of": "2026-07-12",
   "policy_version": "1.0.0",
   "status": "需关注",
@@ -20,13 +20,13 @@
       "differences": 0
     },
     "discovery": {
-      "candidates": 171,
+      "candidates": 181,
       "research": 91,
-      "trials": 80,
-      "immediate_review": 0,
-      "watchlist": 71,
-      "background": 11,
-      "low_relevance": 89,
+      "trials": 90,
+      "immediate_review": 11,
+      "watchlist": 68,
+      "background": 14,
+      "low_relevance": 88,
       "source_failures": 0
     },
     "regulatory": {
