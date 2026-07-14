@@ -34,10 +34,18 @@
         "pmid-42295377"
       ],
       "company": [
-        "kyverna-kyv101"
+        "kyverna-kyv101",
+        "hadassah-hbi0101",
+        "renji-c-car168",
+        "huashan-c-car168-cns",
+        "iaso-equecel-autoimmune"
       ],
       "trial": [
-        "kyv101-ms-phase1"
+        "kyv101-ms-phase1",
+        "hadassah-hbi0101-autoimmune",
+        "renji-c-car168-autoimmune",
+        "huashan-c-car168-cns-autoimmune",
+        "ct103a-neuro-autoimmune-phase1"
       ],
       "safety": [
         "signal-neurotoxicity",
@@ -47,7 +55,11 @@
       "event": [
         "event-feed-42251699",
         "event-feed-42286319",
-        "event-monitor-kyv101"
+        "event-monitor-kyv101",
+        "event-nct07085676-update",
+        "event-nct06249438-update",
+        "event-nct07341828-update",
+        "event-nct04561557-update"
       ]
     }
   },
@@ -83,11 +95,19 @@
       "research": [],
       "company": [
         "cartesian-descartes08",
-        "arcellx-anitocel"
+        "arcellx-anitocel",
+        "cabaletta-resecel",
+        "hadassah-hbi0101",
+        "renji-c-car168",
+        "iaso-equecel-autoimmune"
       ],
       "trial": [
         "descartes08-mg-rct",
-        "arcellx-anitocel-mg-phase1"
+        "arcellx-anitocel-mg-phase1",
+        "cabaletta-resecel-mg-phase12",
+        "hadassah-hbi0101-autoimmune",
+        "renji-c-car168-autoimmune",
+        "ct103a-neuro-autoimmune-phase1"
       ],
       "safety": [
         "signal-autoimmune-flare",
@@ -95,7 +115,11 @@
       ],
       "event": [
         "event-monitor-descartes",
-        "event-nct06626919-update"
+        "event-nct06626919-update",
+        "event-cabaletta-resetmg-phase12",
+        "event-nct07085676-update",
+        "event-nct06249438-update",
+        "event-nct04561557-update"
       ]
     }
   },
@@ -137,7 +161,12 @@
         "magicrna-hn2302",
         "tongji-v001bcma",
         "pku3-qh103",
-        "pkuph-bcmacd19"
+        "pkuph-bcmacd19",
+        "hadassah-hbi0101",
+        "renji-c-car168",
+        "adicet-prulacel",
+        "changhai-kn3601",
+        "gustaveroussy-cellattack1"
       ],
       "trial": [
         "relma-autoimmune-ssc",
@@ -145,7 +174,12 @@
         "magicrna-hn2302-autoimmune",
         "tongji-v001bcma-autoimmune",
         "pku3-qh103-autoimmune",
-        "pkuph-bcmacd19-autoimmune-phase2"
+        "pkuph-bcmacd19-autoimmune-phase2",
+        "hadassah-hbi0101-autoimmune",
+        "renji-c-car168-autoimmune",
+        "adicet-prulacel-autoimmune-phase1",
+        "changhai-kn3601-autoimmune",
+        "gustaveroussy-cellattack1-autoimmune"
       ],
       "safety": [
         "signal-infection",
@@ -157,7 +191,12 @@
         "event-nct07523282-update",
         "event-nct07339540-update",
         "event-nct06828042-update",
-        "event-nct06794008-update"
+        "event-nct06794008-update",
+        "event-nct07085676-update",
+        "event-nct06249438-update",
+        "event-nct06375993-update",
+        "event-nct07246096-update",
+        "event-nct07544225-update"
       ]
     }
   },
@@ -192,17 +231,29 @@
     "related": {
       "research": [],
       "company": [
-        "tongji-qh103"
+        "tongji-qh103",
+        "hadassah-hbi0101",
+        "renji-c-car168",
+        "huashan-c-car168-cns",
+        "iaso-equecel-autoimmune"
       ],
       "trial": [
-        "qh103-neuro-autoimmune"
+        "qh103-neuro-autoimmune",
+        "hadassah-hbi0101-autoimmune",
+        "renji-c-car168-autoimmune",
+        "huashan-c-car168-cns-autoimmune",
+        "ct103a-neuro-autoimmune-phase1"
       ],
       "safety": [
         "signal-neurotoxicity",
         "signal-autoimmune-flare"
       ],
       "event": [
-        "event-qh103-registration"
+        "event-qh103-registration",
+        "event-nct07085676-update",
+        "event-nct06249438-update",
+        "event-nct07341828-update",
+        "event-nct04561557-update"
       ]
     }
   },
@@ -236,7 +287,8 @@
     ],
     "related": {
       "research": [
-        "pmid-42167622"
+        "pmid-42167622",
+        "pmid-41612420"
       ],
       "company": [
         "erlangen-cd19",
@@ -250,7 +302,15 @@
         "gobroad-ol108",
         "changzhou-ucar19bcma",
         "pkuph-bcmacd19",
-        "precision-cd19"
+        "precision-cd19",
+        "hadassah-hbi0101",
+        "renji-c-car168",
+        "adicet-prulacel",
+        "changhai-kn3601",
+        "huashan-c-car168-cns",
+        "gustaveroussy-cellattack1",
+        "iaso-equecel-autoimmune",
+        "icell-icg318-autoimmune"
       ],
       "trial": [
         "academic-cd19-autoimmune-series",
@@ -263,7 +323,16 @@
         "gobroad-ol108-autoimmune",
         "changzhou-ucar19bcma-autoimmune",
         "pkuph-bcmacd19-autoimmune-phase2",
-        "precision-cd19-autoimmune-phase1"
+        "precision-cd19-autoimmune-phase1",
+        "hadassah-hbi0101-autoimmune",
+        "renji-c-car168-autoimmune",
+        "adicet-prulacel-autoimmune-phase1",
+        "changhai-kn3601-autoimmune",
+        "huashan-c-car168-cns-autoimmune",
+        "gustaveroussy-cellattack1-autoimmune",
+        "ct103a-neuro-autoimmune-phase1",
+        "icell-bcmacd19-itp-phase1",
+        "icell-icg318-sle-phase12"
       ],
       "safety": [
         "signal-infection",
@@ -283,7 +352,18 @@
         "event-nct06980597-update",
         "event-nct06978738-update",
         "event-nct06794008-update",
-        "event-nct06056921-update"
+        "event-nct06056921-update",
+        "event-nct07085676-update",
+        "event-nct06249438-update",
+        "event-nct06375993-update",
+        "event-nct07246096-update",
+        "event-nct07341828-update",
+        "event-nct07544225-update",
+        "event-iaso-equecel-fda-autoimmune-ind",
+        "event-nct04561557-update",
+        "event-feed-41612420",
+        "event-nct06787989-update",
+        "event-nct07328581-update"
       ]
     }
   },
@@ -317,14 +397,16 @@
     ],
     "related": {
       "research": [
-        "pmid-42167622"
+        "pmid-42167622",
+        "pmid-41612420"
       ],
       "company": [
         "kyverna-kyv101",
         "cartesian-descartes08",
         "arcellx-anitocel",
         "zjuch-ucar19bcma",
-        "tongji-v001bcma"
+        "tongji-v001bcma",
+        "icell-icg318-autoimmune"
       ],
       "trial": [
         "kyv101-ms-phase1",
@@ -345,7 +427,8 @@
         "event-safety-longterm",
         "event-nct06626919-update",
         "event-nct07305116-update",
-        "event-nct07339540-update"
+        "event-nct07339540-update",
+        "event-feed-41612420"
       ]
     }
   }

@@ -694,5 +694,224 @@
       "是否转入结果披露",
       "需要额外一手来源交叉确认"
     ]
+  },
+  {
+    "id": "hadassah-hbi0101",
+    "record_kind": "academic_trial_program",
+    "company": "Hadassah Medical Organization / HBI0101",
+    "product": "HBI0101 CART",
+    "technology": "Autologous BCMA CAR-T",
+    "focus": [
+      "MS",
+      "NMOSD",
+      "MG",
+      "SLE",
+      "SSc",
+      "IIM",
+      "RA",
+      "APS"
+    ],
+    "stage": "Phase 1",
+    "region": "Israel",
+    "priority": "高",
+    "status": "Recruiting",
+    "source_url": "https://clinicaltrials.gov/study/NCT07085676",
+    "source_last_update": "2026-05-06",
+    "evidence_anchor": "官方注册试验显示HBI0101把自体BCMA CAR-T扩展到MS、NMOSD和MG等多病种自身免疫适应症。",
+    "recent_update": "NCT07085676于2026-05-06维持Recruiting，计划入组120例。",
+    "watch_points": [
+      "各病种队列实际入组分布",
+      "21天DLT与长期安全性",
+      "BCMA路线在神经免疫病中的可解释性"
+    ]
+  },
+  {
+    "id": "renji-c-car168",
+    "record_kind": "academic_trial_program",
+    "company": "RenJi Hospital / C-CAR168",
+    "product": "C-CAR168",
+    "technology": "Autologous dual-target CD20/BCMA CAR-T",
+    "focus": [
+      "MS",
+      "NMOSD",
+      "MG",
+      "SLE",
+      "SSc",
+      "IMNM"
+    ],
+    "stage": "Phase 1",
+    "region": "China",
+    "priority": "高",
+    "status": "Recruiting（注册信息需复核）",
+    "source_url": "https://clinicaltrials.gov/study/NCT06249438",
+    "source_last_update": "2025-07-25",
+    "evidence_anchor": "官方注册试验显示C-CAR168覆盖MS、NMOSD、MG等神经免疫病和SLE、SSc。",
+    "recent_update": "NCT06249438最后公开更新于2025-07-25，当前仍显示Recruiting，计划入组30例。",
+    "watch_points": [
+      "注册信息刷新情况",
+      "6个月缓解与24个月复发",
+      "CD20/BCMA双靶点在神经免疫病中的差异化"
+    ]
+  },
+  {
+    "id": "adicet-prulacel",
+    "record_kind": "company_program",
+    "company": "Adicet Therapeutics",
+    "product": "prula-cel（ADI-001）",
+    "technology": "Allogeneic anti-CD20 gamma-delta CAR-T",
+    "focus": [
+      "LN",
+      "SLE",
+      "SSc",
+      "AAV",
+      "IIM",
+      "SPS"
+    ],
+    "stage": "Phase 1",
+    "region": "US",
+    "priority": "高",
+    "status": "Enrolling by invitation",
+    "source_url": "https://clinicaltrials.gov/study/NCT06375993",
+    "source_last_update": "2026-03-19",
+    "evidence_anchor": "官方注册试验显示prula-cel把异体抗CD20 gamma-delta CAR-T扩展到SPS在内的多病种自身免疫适应症。",
+    "recent_update": "NCT06375993于2026-03-19更新为Enrolling by invitation，计划入组180例。",
+    "watch_points": [
+      "异体gamma-delta T的持续性与安全性",
+      "SPS等小病种实际入组",
+      "与CD19/BCMA路线的靶点差异"
+    ]
+  },
+  {
+    "id": "changhai-kn3601",
+    "record_kind": "academic_trial_program",
+    "company": "Changhai Hospital / KN3601",
+    "product": "KN3601",
+    "technology": "Universal allogeneic CD19/BCMA CAR-T",
+    "focus": [
+      "SLE",
+      "SSc",
+      "Sjogren syndrome",
+      "RA",
+      "AAV"
+    ],
+    "stage": "Early Phase 1",
+    "region": "China",
+    "priority": "高",
+    "status": "Recruiting",
+    "source_url": "https://clinicaltrials.gov/study/NCT07246096",
+    "source_last_update": "2026-02-25",
+    "evidence_anchor": "官方注册试验显示KN3601以异体CD19/BCMA双靶点路线覆盖多类复发难治自身免疫病。",
+    "recent_update": "NCT07246096于2026-02-25维持Recruiting，计划入组60例。",
+    "watch_points": [
+      "52周安全性",
+      "B细胞清除与重建",
+      "合作方后续正式披露"
+    ]
+  },
+  {
+    "id": "huashan-c-car168-cns",
+    "record_kind": "academic_trial_program",
+    "company": "Huashan Hospital / C-CAR168",
+    "product": "C-CAR168",
+    "technology": "Autologous dual-target CD20/BCMA CAR-T",
+    "focus": [
+      "MS",
+      "NMOSD",
+      "AE",
+      "SPS"
+    ],
+    "stage": "Phase 1",
+    "region": "China",
+    "priority": "高",
+    "status": "Not yet recruiting",
+    "source_url": "https://clinicaltrials.gov/study/NCT07341828",
+    "source_last_update": "2026-01-15",
+    "evidence_anchor": "官方注册试验把C-CAR168明确扩展到MS、NMOSD、自身免疫性脑炎和SPS等中枢神经自身免疫病。",
+    "recent_update": "NCT07341828于2026-01-15登记，当前仍为Not yet recruiting，计划入组15例。",
+    "watch_points": [
+      "首批入组时间",
+      "NEDA-3与MRI终点",
+      "神经系统毒性与原病波动鉴别"
+    ]
+  },
+  {
+    "id": "gustaveroussy-cellattack1",
+    "record_kind": "academic_trial_program",
+    "company": "Gustave Roussy",
+    "product": "anti-CD19 CAR-T cells",
+    "technology": "Autologous CD19 CAR-T",
+    "focus": [
+      "SLE",
+      "SSc",
+      "IIM",
+      "Sjogren disease",
+      "RA"
+    ],
+    "stage": "Phase 1",
+    "region": "France",
+    "priority": "高",
+    "status": "Not yet recruiting",
+    "source_url": "https://clinicaltrials.gov/study/NCT07544225",
+    "source_last_update": "2026-04-22",
+    "evidence_anchor": "官方注册试验显示Gustave Roussy启动了面向系统性风湿自身免疫病的院内CD19 CAR-T安全性研究。",
+    "recent_update": "NCT07544225于2026-04-22登记，计划入组6例。",
+    "watch_points": [
+      "30天不可接受毒性阈值",
+      "单中心制造与放行",
+      "后续是否扩展到更大队列"
+    ]
+  },
+  {
+    "id": "iaso-equecel-autoimmune",
+    "record_kind": "company_program",
+    "company": "IASO Bio",
+    "product": "equecabtagene autoleucel（Eque-cel / CT103A）",
+    "technology": "Autologous BCMA CAR-T",
+    "focus": [
+      "NMOSD",
+      "MG",
+      "MS",
+      "SLE",
+      "LN"
+    ],
+    "stage": "美国4项自身免疫IND / 中国IND与Early Phase 1",
+    "region": "China / US",
+    "priority": "高",
+    "status": "FDA已放行MG、MS、SLE、LN四个自身免疫适应症IND；中国MG IND及神经免疫试验在推进",
+    "source_url": "https://www.iasobio.com/info.php?id=259",
+    "source_last_update": "2024-08-12",
+    "evidence_anchor": "IASO官网新闻及当前pipeline确认Eque-cel在美国已获MG、MS、SLE、LN四个自身免疫适应症IND；pipeline将SLE/LN合并在同一行展示。官网pipeline另列中国MG IND以及覆盖MS、SLE、IIM等的IIT，二者未混记为美国IND。",
+    "recent_update": "2024-08-12官网消息确认美国FDA放行非肾型SLE和LN IND；本次复核官网pipeline后，将美国自身免疫IND口径明确为MG、MS、SLE、LN四个适应症。ClinicalTrials.gov的中国神经免疫试验NCT04561557仍显示Recruiting。",
+    "watch_points": [
+      "美国SLE/LN试验是否进入公开注册与首例入组",
+      "NCT04561557的实际病种分布与药效学输出",
+      "BCMA路线在神经免疫与系统性自免之间的外推边界"
+    ]
+  },
+  {
+    "id": "icell-icg318-autoimmune",
+    "record_kind": "company_program",
+    "company": "iCell Gene Therapeutics",
+    "product": "ICG318 / BCMA-CD19 cCAR T",
+    "technology": "Dual-target BCMA/CD19 armored compound CAR-T",
+    "focus": [
+      "SLE",
+      "LN",
+      "refractory immune thrombocytopenia",
+      "IBD"
+    ],
+    "stage": "Phase 1 / Phase 1/2",
+    "region": "China / US",
+    "priority": "高",
+    "status": "SLE扩展随访已发表；ITP试验Recruiting；SLE/LN和IBD试验Not yet recruiting",
+    "source_url": "https://pubmed.ncbi.nlm.nih.gov/41612420/",
+    "source_last_update": "2026-01-29",
+    "evidence_anchor": "PubMed正式论文显示ICG318在12例难治性SLE中形成长期停药缓解信号，ClinicalTrials.gov还显示iCell继续推进ITP与SLE/LN注册试验。",
+    "recent_update": "PMID 41612420于2026-01-29发表；NCT06787989维持Recruiting，NCT07328581显示Not yet recruiting。",
+    "watch_points": [
+      "SLE/LN新试验何时真正启动入组",
+      "长期感染、生育和重复缓解可复制性",
+      "ITP与SLE不同病种之间的风险收益是否一致"
+    ]
   }
 ]

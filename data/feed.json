@@ -170,5 +170,39 @@
   {"id":"pmid-41644365","pmid":"41644365","official_title":"Heterogeneous responses of IM19 anti-CD19 CAR T-cell therapy in refractory systemic lupus erythematosus: an open-label pilot study and a mini-review.","doi":"10.1016/j.ard.2025.12.014","journal":"Annals of the Rheumatic Diseases","publication_type":["Journal Article","Review","Clinical Trial"],"title_cn":"IM19抗CD19 CAR-T治疗难治性系统性红斑狼疮的异质性应答","priority":"高","priority_reason":"开放标签患者研究揭示应答异质性，能校正只关注完全缓解的偏差","evidence_level":"开放标签探索性临床研究","disease":"SLE","one_liner":"IM19治疗难治性SLE显示患者间异质性应答。","status":"已审核","source_name":"PubMed","source_url":"https://pubmed.ncbi.nlm.nih.gov/41644365/","publish_date":"2026-02-05","date_added":"2026-07-11","category":"研究情报","entity":"IM19","region":"China","tags":["SLE","CD19","开放标签","异质性"],"takeaway":"自免CAR-T并非所有患者均形成一致深度缓解，患者选择和失败机制需要独立分析。"},
   {"id":"pmid-41747738","pmid":"41747738","official_title":"Single-cell profiling of immune reset in patients with refractory generalized myasthenia gravis receiving autologous CD19/BCMA CAR-T cell therapy.","doi":"10.1016/j.medj.2026.101026","journal":"Med","publication_type":["Journal Article","Clinical Trial, Phase I"],"title_cn":"自体CD19/BCMA CAR-T治疗难治性全身型重症肌无力的单细胞免疫重置图谱","priority":"高","priority_reason":"将MG临床治疗与单细胞免疫重建机制连接","evidence_level":"I期临床研究·单细胞分析","disease":"MG","one_liner":"研究以单细胞方法刻画CD19/BCMA CAR-T治疗难治MG后的免疫重置。","status":"已审核","source_name":"PubMed","source_url":"https://pubmed.ncbi.nlm.nih.gov/41747738/","publish_date":"2026-02-25","date_added":"2026-07-11","category":"研究情报","entity":"CD19/BCMA CAR-T","region":"China","tags":["MG","CD19/BCMA","单细胞","免疫重置"],"takeaway":"为临床应答背后的B细胞与浆细胞重建提供机制锚点。"},
   {"id":"pmid-41935952","pmid":"41935952","official_title":"Autologous CD19 CAR-T cell therapy for pediatric and adult systemic lupus erythematosus: A phase 1/2 trial.","doi":"10.1016/j.ymthe.2026.03.037","journal":"Molecular Therapy","publication_type":["Journal Article","Clinical Trial, Phase I","Clinical Trial, Phase II"],"title_cn":"自体CD19 CAR-T治疗儿童与成人系统性红斑狼疮：I/II期试验","priority":"高","priority_reason":"同时覆盖儿童和成人SLE的前瞻性I/II期临床证据","evidence_level":"I/II期临床试验","disease":"SLE","one_liner":"前瞻性I/II期研究评估自体CD19 CAR-T在儿童和成人SLE中的应用。","status":"已审核","source_name":"PubMed","source_url":"https://pubmed.ncbi.nlm.nih.gov/41935952/","publish_date":"2026-04-03","date_added":"2026-07-11","category":"研究情报","entity":"Autologous CD19 CAR-T","region":"China","tags":["SLE","儿童","成人","I/II期"],"takeaway":"把自免CAR-T证据扩展至儿童人群，但年龄分层风险收益仍需长期随访。"},
-  {"id":"pmid-41240964","pmid":"41240964","official_title":"Efficacy and safety of allogeneic CD19 CAR NK-cell therapy in systemic lupus erythematosus: a case series in China.","doi":"10.1016/S0140-6736(25)01671-X","journal":"The Lancet","publication_type":["Clinical Trial, Phase I","Journal Article"],"title_cn":"异体CD19 CAR-NK治疗系统性红斑狼疮的疗效与安全性：中国病例系列","priority":"高","priority_reason":"Lancet发表的异体CAR-NK自免临床患者数据，补齐非T细胞路线","evidence_level":"I期病例系列","disease":"SLE","one_liner":"中国病例系列评估异体CD19 CAR-NK治疗SLE的疗效与安全性。","status":"已审核","source_name":"PubMed","source_url":"https://pubmed.ncbi.nlm.nih.gov/41240964/","publish_date":"2025-11-12","date_added":"2026-07-11","category":"研究情报","entity":"Allogeneic CD19 CAR-NK","region":"China","tags":["SLE","CAR-NK","异体","Lancet"],"takeaway":"提供现货型CAR-NK路线的临床可行性信号，但病例系列仍不能替代对照研究。"}
+  {"id":"pmid-41240964","pmid":"41240964","official_title":"Efficacy and safety of allogeneic CD19 CAR NK-cell therapy in systemic lupus erythematosus: a case series in China.","doi":"10.1016/S0140-6736(25)01671-X","journal":"The Lancet","publication_type":["Clinical Trial, Phase I","Journal Article"],"title_cn":"异体CD19 CAR-NK治疗系统性红斑狼疮的疗效与安全性：中国病例系列","priority":"高","priority_reason":"Lancet发表的异体CAR-NK自免临床患者数据，补齐非T细胞路线","evidence_level":"I期病例系列","disease":"SLE","one_liner":"中国病例系列评估异体CD19 CAR-NK治疗SLE的疗效与安全性。","status":"已审核","source_name":"PubMed","source_url":"https://pubmed.ncbi.nlm.nih.gov/41240964/","publish_date":"2025-11-12","date_added":"2026-07-11","category":"研究情报","entity":"Allogeneic CD19 CAR-NK","region":"China","tags":["SLE","CAR-NK","异体","Lancet"],"takeaway":"提供现货型CAR-NK路线的临床可行性信号，但病例系列仍不能替代对照研究。"},
+  {
+    "id": "pmid-41612420",
+    "pmid": "41612420",
+    "official_title": "BCMA-CD19 armored compound CAR T cells in systemic lupus erythematosus: extended follow-up of a phase 1 clinical trial.",
+    "doi": "10.1186/s13045-026-01779-6",
+    "journal": "Journal of Hematology & Oncology",
+    "publication_type": [
+      "Clinical Trial, Phase I",
+      "Letter",
+      "Research Support, Non-U.S. Gov't"
+    ],
+    "title_cn": "ICG318双靶点装甲CAR-T治疗系统性红斑狼疮：I期临床扩展随访",
+    "priority": "高",
+    "priority_reason": "正式发表的扩展随访同时给出长期停药缓解、生殖结局和肾脏病理改善信号",
+    "evidence_level": "I期临床扩展随访",
+    "disease": "SLE",
+    "one_liner": "ICG318在12例难治性SLE患者中报告长期药物停用缓解与肾脏病理改善。",
+    "status": "已审核",
+    "source_name": "PubMed",
+    "source_url": "https://pubmed.ncbi.nlm.nih.gov/41612420/",
+    "publish_date": "2026-01-29",
+    "date_added": "2026-07-14",
+    "category": "研究情报",
+    "entity": "ICG318 / BCMA-CD19 armored compound CAR-T",
+    "region": "China",
+    "tags": [
+      "SLE",
+      "LN",
+      "BCMA-CD19",
+      "长期随访",
+      "生育结局"
+    ],
+    "takeaway": "这条路线把深度缓解讨论推进到多年持续性、肾脏组织学改善和生育安全性，但样本量仍小且需外部重复。"
+  }
 ]

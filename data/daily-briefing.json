@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-14T23:26:29.231Z",
-  "as_of": "2026-07-12",
+  "generated_at": "2026-07-14T15:13:16.013Z",
+  "as_of": "2026-07-14",
   "headline": {
     "id": "pmid-42251699",
     "title": "CAR-T细胞疗法使合并CNS受累CLL与多发性硬化患者获得完全缓解",
@@ -10,11 +10,11 @@
     "evidence_level": "病例报道·IIT"
   },
   "snapshot": {
-    "formal_records": 107,
-    "externally_verified": 97,
-    "active_priority_trials": 20,
-    "candidate_items": 182,
-    "quality_score": 86
+    "formal_records": 138,
+    "externally_verified": 128,
+    "active_priority_trials": 25,
+    "candidate_items": 862,
+    "quality_score": 84
   },
   "verified_updates": [
     {
@@ -188,6 +188,30 @@
       "message": "注册库记录超过180天未更新，当前状态需谨慎解释"
     },
     {
+      "code": "registry_record_stale",
+      "record_type": "trial",
+      "record_id": "renji-c-car168-autoimmune",
+      "message": "注册库记录超过180天未更新，当前状态需谨慎解释"
+    },
+    {
+      "code": "registry_record_stale",
+      "record_type": "trial",
+      "record_id": "ct103a-neuro-autoimmune-phase1",
+      "message": "注册库记录超过180天未更新，当前状态需谨慎解释"
+    },
+    {
+      "code": "registry_record_stale",
+      "record_type": "trial",
+      "record_id": "icell-bcmacd19-itp-phase1",
+      "message": "注册库记录超过180天未更新，当前状态需谨慎解释"
+    },
+    {
+      "code": "registry_record_stale",
+      "record_type": "trial",
+      "record_id": "icell-icg318-sle-phase12",
+      "message": "注册库记录超过180天未更新，当前状态需谨慎解释"
+    },
+    {
       "code": "regulatory_source_failed",
       "record_type": "system",
       "record_id": "-",
@@ -209,79 +233,81 @@
   "candidate_queue": [
     {
       "type": "trial",
-      "external_id": "NCT07676266",
-      "title": "An Exploratory Clinical Study of Anti-CD20/B-cell Maturation Antigen (BCMA) Chimeric Antigen Receptor Autologous T Cell Product (C-CAR168) in the Treatment of Autoimmune Diseases Refractory to Standard Therapy",
-      "score": 14,
+      "external_id": "NCT06502015",
+      "title": "Biomarkers of Neurological Autoimmune Diseases",
+      "score": 22,
       "tier": "立即核验",
       "reasons": [
         "正式注册试验",
-        "命中5个重点病种"
+        "命中重点实体：IASO Bio / Eque-cel / CT103A",
+        "命中5个重点病种",
+        "当前处于活跃状态"
+      ],
+      "source_url": "https://clinicaltrials.gov/study/NCT06502015"
+    },
+    {
+      "type": "trial",
+      "external_id": "NCT06775912",
+      "title": "Clinical Study on Targeted CD19/BCMA CAR-T Therapy for Autoimmune Diseases",
+      "score": 20,
+      "tier": "立即核验",
+      "reasons": [
+        "正式注册试验",
+        "命中7个重点病种",
+        "当前处于活跃状态"
+      ],
+      "source_url": "https://clinicaltrials.gov/study/NCT06775912"
+    },
+    {
+      "type": "trial",
+      "external_id": "NCT07676266",
+      "title": "An Exploratory Clinical Study of Anti-CD20/B-cell Maturation Antigen (BCMA) Chimeric Antigen Receptor Autologous T Cell Product (C-CAR168) in the Treatment of Autoimmune Diseases Refractory to Standard Therapy",
+      "score": 16,
+      "tier": "立即核验",
+      "reasons": [
+        "正式注册试验",
+        "命中6个重点病种"
       ],
       "source_url": "https://clinicaltrials.gov/study/NCT07676266"
     },
     {
       "type": "trial",
-      "external_id": "NCT07507201",
-      "title": "An Exploratory Clinical Study Evaluate the Safety and Efficacy of Universal Universal Allogeneic CAR-T Cells Targeting CD19 and BCMA in the Treatment of B Cell-Related Autoimmune Disease",
-      "score": 12,
+      "external_id": "NCT07337785",
+      "title": "Clinical Study on the Safety, Efficacy, and Pharmacokinetics of Universal CAR-T Cell Injection Targeting CD19/BCMA in Patients With Neurological Autoimmune Diseases",
+      "score": 16,
       "tier": "立即核验",
       "reasons": [
         "正式注册试验",
-        "命中3个重点病种",
+        "命中5个重点病种",
         "当前处于活跃状态"
       ],
-      "source_url": "https://clinicaltrials.gov/study/NCT07507201"
+      "source_url": "https://clinicaltrials.gov/study/NCT07337785"
     },
     {
       "type": "trial",
-      "external_id": "NCT06548607",
-      "title": "Clinical Study on Targeted CD19 or CD19-BCMA CAR-T Therapy for Autoimmune Diseases",
-      "score": 12,
+      "external_id": "NCT07403188",
+      "title": "A Long-Term Follow-Up Study for Participants Previously Treated With KYV-101",
+      "score": 16,
       "tier": "立即核验",
       "reasons": [
         "正式注册试验",
-        "命中3个重点病种",
+        "命中5个重点病种",
         "当前处于活跃状态"
       ],
-      "source_url": "https://clinicaltrials.gov/study/NCT06548607"
+      "source_url": "https://clinicaltrials.gov/study/NCT07403188"
     },
     {
       "type": "trial",
-      "external_id": "NCT07674147",
-      "title": "A Clinical Study of the Safety, Efficacy, and Pharmacokinetics of Universal CD19/BCMA-Targeted CAR-T Cell Injection for the Treatment of Autoimmune Diseases in Children and Adolescents",
-      "score": 10,
+      "external_id": "NCT07315087",
+      "title": "A Clinical Study Evaluating the Safety and Preliminary Efficacy of Universal Allogeneic CAR T-cell Therapy Targeting CD19 and BCMA(QT-019C) in Patients With Relapse/Refractory Autoimmune Diseases",
+      "score": 16,
       "tier": "立即核验",
       "reasons": [
         "正式注册试验",
-        "命中3个重点病种"
-      ],
-      "source_url": "https://clinicaltrials.gov/study/NCT07674147"
-    },
-    {
-      "type": "trial",
-      "external_id": "NCT06822881",
-      "title": "A Clinical Study to Investigate the Safety, Efficacy, and Cellular Metabolism of CT1190B CAR-T Cell Therapy, in Patients With Moderate to Severe Refractory Systemic Lupus Erythematosus (SLE) or Refractory/Progressive Systemic Sclerosis (SSc)",
-      "score": 10,
-      "tier": "立即核验",
-      "reasons": [
-        "正式注册试验",
-        "命中2个重点病种",
+        "命中5个重点病种",
         "当前处于活跃状态"
       ],
-      "source_url": "https://clinicaltrials.gov/study/NCT06822881"
-    },
-    {
-      "type": "trial",
-      "external_id": "NCT06792799",
-      "title": "An Exploratory Clinical Study on the Safety and Efficacy of CD19/BCMA Chimeric Antigen Receptor NK Cells in the Treatment of B Cell-related Autoimmune Diseases in Children",
-      "score": 10,
-      "tier": "立即核验",
-      "reasons": [
-        "正式注册试验",
-        "命中2个重点病种",
-        "当前处于活跃状态"
-      ],
-      "source_url": "https://clinicaltrials.gov/study/NCT06792799"
+      "source_url": "https://clinicaltrials.gov/study/NCT07315087"
     }
   ],
   "editorial_note": "头条、动态和试验均来自正式核验数据；候选队列仅表示下一步核验优先级。"

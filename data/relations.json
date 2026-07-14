@@ -300,6 +300,16 @@
     "confidence": "高"
   },
   {
+    "id": "rel-cabaletta-resecel-mg-trial",
+    "source_type": "company",
+    "source_id": "cabaletta-resecel",
+    "target_type": "trial",
+    "target_id": "cabaletta-resecel-mg-phase12",
+    "relation": "推进",
+    "rationale": "Cabaletta Bio是NCT06359041主办方，RESET-MG构成rese-cel在神经肌接头自身免疫疾病中的正式临床项目。",
+    "confidence": "高"
+  },
+  {
     "id": "rel-precision-cd19-trial",
     "source_type": "company",
     "source_id": "precision-cd19",
@@ -307,6 +317,106 @@
     "target_id": "precision-cd19-autoimmune-phase1",
     "relation": "推进",
     "rationale": "Chongqing Precision Biotech是NCT06056921主办方。",
+    "confidence": "高"
+  },
+  {
+    "id": "rel-hadassah-hbi0101-trial",
+    "source_type": "company",
+    "source_id": "hadassah-hbi0101",
+    "target_type": "trial",
+    "target_id": "hadassah-hbi0101-autoimmune",
+    "relation": "发起",
+    "rationale": "官方注册库显示Polina Stepensky主导HBI0101自免试验，并在Hadassah MO招募。",
+    "confidence": "高"
+  },
+  {
+    "id": "rel-renji-ccar168-trial",
+    "source_type": "company",
+    "source_id": "renji-c-car168",
+    "target_type": "trial",
+    "target_id": "renji-c-car168-autoimmune",
+    "relation": "发起",
+    "rationale": "RenJi Hospital是NCT06249438主办方，AbelZeta为合作方。",
+    "confidence": "高"
+  },
+  {
+    "id": "rel-adicet-prulacel-trial",
+    "source_type": "company",
+    "source_id": "adicet-prulacel",
+    "target_type": "trial",
+    "target_id": "adicet-prulacel-autoimmune-phase1",
+    "relation": "推进",
+    "rationale": "Adicet Therapeutics是NCT06375993主办方。",
+    "confidence": "高"
+  },
+  {
+    "id": "rel-changhai-kn3601-trial",
+    "source_type": "company",
+    "source_id": "changhai-kn3601",
+    "target_type": "trial",
+    "target_id": "changhai-kn3601-autoimmune",
+    "relation": "发起",
+    "rationale": "Changhai Hospital是NCT07246096主办方，Rui Therapeutics为合作方。",
+    "confidence": "高"
+  },
+  {
+    "id": "rel-huashan-ccar168-trial",
+    "source_type": "company",
+    "source_id": "huashan-c-car168-cns",
+    "target_type": "trial",
+    "target_id": "huashan-c-car168-cns-autoimmune",
+    "relation": "发起",
+    "rationale": "Huashan Hospital是NCT07341828主办方，AbelZeta关联的上海主体为合作方。",
+    "confidence": "高"
+  },
+  {
+    "id": "rel-gustaveroussy-cellattack1-trial",
+    "source_type": "company",
+    "source_id": "gustaveroussy-cellattack1",
+    "target_type": "trial",
+    "target_id": "gustaveroussy-cellattack1-autoimmune",
+    "relation": "发起",
+    "rationale": "Gustave Roussy是NCT07544225主办方。",
+    "confidence": "高"
+  },
+  {
+    "id": "rel-iaso-equecel-ct103a-trial",
+    "source_type": "company",
+    "source_id": "iaso-equecel-autoimmune",
+    "target_type": "trial",
+    "target_id": "ct103a-neuro-autoimmune-phase1",
+    "relation": "推进",
+    "rationale": "IASO官网确认Eque-cel/CT103A的自身免疫开发布局，NCT04561557由同济医院发起并与Nanjing IASO Biotechnology合作。",
+    "confidence": "高"
+  },
+  {
+    "id": "rel-icell-itp-trial",
+    "source_type": "company",
+    "source_id": "icell-icg318-autoimmune",
+    "target_type": "trial",
+    "target_id": "icell-bcmacd19-itp-phase1",
+    "relation": "推进",
+    "rationale": "iCell Gene Therapeutics是NCT06787989主办方。",
+    "confidence": "高"
+  },
+  {
+    "id": "rel-icell-icg318-sle-trial",
+    "source_type": "company",
+    "source_id": "icell-icg318-autoimmune",
+    "target_type": "trial",
+    "target_id": "icell-icg318-sle-phase12",
+    "relation": "推进",
+    "rationale": "iCell Gene Therapeutics是NCT07328581主办方，试验名称直接使用ICG318。",
+    "confidence": "高"
+  },
+  {
+    "id": "rel-icell-paper-company",
+    "source_type": "research",
+    "source_id": "pmid-41612420",
+    "target_type": "company",
+    "target_id": "icell-icg318-autoimmune",
+    "relation": "构成证据锚点",
+    "rationale": "PMID 41612420正式报道ICG318在难治性SLE中的扩展随访，是iCell自身免疫路线的核心临床证据之一。",
     "confidence": "高"
   }
 ]

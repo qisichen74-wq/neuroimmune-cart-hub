@@ -171,6 +171,9 @@ if (!candidateReport) {
   if (ageDays > 2) addIssue("warning", "candidate_report_stale", "候选情报报告已超过2天未刷新");
   for (const run of candidateReport.source_runs || []) {
     if (run.status === "error") addIssue("warning", "discovery_source_failed", `候选情报来源访问失败：${run.source} / ${run.error || "未知错误"}`);
+    if (run.status === "partial") addIssue("warning", "discovery_source_partial", `候选情报来源仅部分访问成功：${run.source}`);
+    if (run.truncated) addIssue("warning", "discovery_source_truncated", `候选情报来源结果被上限截断：${run.source}`);
+    for (const sentinel of run.sentinel_check?.missing || []) addIssue("warning", "discovery_sentinel_missing", `漏检哨兵未命中：${run.source} / ${sentinel.external_id}`);
   }
 }
 

@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-07-12",
+  "as_of": "2026-07-14",
   "policy_version": "1.0.0",
   "status_definitions": {
     "已核验": "已与指定一手或权威来源逐字段比对",
@@ -547,8 +547,8 @@
       "record_id": "cabaletta-resecel",
       "status": "已核验",
       "confidence": "高",
-      "last_verified_at": "2026-07-11",
-      "next_review_at": "2026-07-25",
+      "last_verified_at": "2026-07-13",
+      "next_review_at": "2026-07-27",
       "source_ids": [
         "cabaletta-primary",
         "clinicaltrials-gov"
@@ -563,7 +563,7 @@
         "source_url",
         "source_last_update"
       ],
-      "note": "公司管线页、2026年一季度更新及RESET-SLE注册记录交叉核验。"
+      "note": "公司一季度更新与ClinicalTrials.gov交叉核验，确认RESET项目群覆盖MG并保留公司披露证据边界。"
     },
     {
       "record_type": "company",
@@ -1635,6 +1635,32 @@
     },
     {
       "record_type": "trial",
+      "record_id": "cabaletta-resecel-mg-phase12",
+      "status": "已核验",
+      "confidence": "高",
+      "last_verified_at": "2026-07-13",
+      "next_review_at": "2026-07-20",
+      "source_ids": [
+        "clinicaltrials-gov",
+        "cabaletta-primary"
+      ],
+      "verified_fields": [
+        "registry_id",
+        "official_title",
+        "sponsor",
+        "phase",
+        "design",
+        "region",
+        "status",
+        "enrollment",
+        "study_start",
+        "estimated_completion",
+        "registry_last_update"
+      ],
+      "note": "依据NCT06359041逐字段核对，并用Cabaletta 2026-05-14正式披露确认RESET-MG项目归属。"
+    },
+    {
+      "record_type": "trial",
       "record_id": "precision-cd19-autoimmune-phase1",
       "status": "已核验",
       "confidence": "低",
@@ -2081,6 +2107,24 @@
     },
     {
       "record_type": "event",
+      "record_id": "event-cabaletta-resetmg-phase12",
+      "status": "已核验",
+      "confidence": "中",
+      "last_verified_at": "2026-07-13",
+      "next_review_at": "2026-07-20",
+      "source_ids": [
+        "cabaletta-primary"
+      ],
+      "verified_fields": [
+        "date",
+        "title",
+        "source_url",
+        "entities"
+      ],
+      "note": "事件采用Cabaletta 2026-05-14正式披露日期；疗效信息保留为公司口径。"
+    },
+    {
+      "record_type": "event",
       "record_id": "event-nct06056921-update",
       "status": "已核验",
       "confidence": "低",
@@ -2096,6 +2140,618 @@
         "entities"
       ],
       "note": "事件日期采用ClinicalTrials.gov最近更新发布日期；注册库自2023-09后未刷新。"
+    },
+    {
+      "record_type": "company",
+      "record_id": "hadassah-hbi0101",
+      "status": "已核验",
+      "confidence": "高",
+      "last_verified_at": "2026-07-14",
+      "next_review_at": "2026-07-28",
+      "source_ids": [
+        "clinicaltrials-gov"
+      ],
+      "verified_fields": [
+        "company",
+        "product",
+        "technology",
+        "focus",
+        "stage",
+        "status",
+        "source_url",
+        "source_last_update"
+      ],
+      "note": "依据NCT07085676核验。"
+    },
+    {
+      "record_type": "trial",
+      "record_id": "hadassah-hbi0101-autoimmune",
+      "status": "已核验",
+      "confidence": "高",
+      "last_verified_at": "2026-07-14",
+      "next_review_at": "2026-07-21",
+      "source_ids": [
+        "clinicaltrials-gov"
+      ],
+      "verified_fields": [
+        "registry_id",
+        "official_title",
+        "sponsor",
+        "product",
+        "phase",
+        "status",
+        "enrollment",
+        "study_start",
+        "estimated_completion",
+        "registry_last_update"
+      ],
+      "note": "依据ClinicalTrials.gov API核验NCT07085676。"
+    },
+    {
+      "record_type": "event",
+      "record_id": "event-nct07085676-update",
+      "status": "已核验",
+      "confidence": "高",
+      "last_verified_at": "2026-07-14",
+      "next_review_at": "2026-07-21",
+      "source_ids": [
+        "clinicaltrials-gov"
+      ],
+      "verified_fields": [
+        "date",
+        "status",
+        "source_url",
+        "entities"
+      ],
+      "note": "事件日期采用ClinicalTrials.gov最近更新发布日期。"
+    },
+    {
+      "record_type": "company",
+      "record_id": "renji-c-car168",
+      "status": "已核验",
+      "confidence": "中",
+      "last_verified_at": "2026-07-14",
+      "next_review_at": "2026-07-28",
+      "source_ids": [
+        "clinicaltrials-gov"
+      ],
+      "verified_fields": [
+        "company",
+        "product",
+        "technology",
+        "focus",
+        "stage",
+        "status",
+        "source_url",
+        "source_last_update"
+      ],
+      "note": "依据NCT06249438核验；注册库最后更新时间较旧。"
+    },
+    {
+      "record_type": "trial",
+      "record_id": "renji-c-car168-autoimmune",
+      "status": "已核验",
+      "confidence": "中",
+      "last_verified_at": "2026-07-14",
+      "next_review_at": "2026-07-21",
+      "source_ids": [
+        "clinicaltrials-gov"
+      ],
+      "verified_fields": [
+        "registry_id",
+        "official_title",
+        "sponsor",
+        "product",
+        "phase",
+        "status",
+        "enrollment",
+        "study_start",
+        "estimated_completion",
+        "registry_last_update"
+      ],
+      "note": "依据ClinicalTrials.gov API核验NCT06249438；注册库最后更新时间较旧。"
+    },
+    {
+      "record_type": "event",
+      "record_id": "event-nct06249438-update",
+      "status": "已核验",
+      "confidence": "中",
+      "last_verified_at": "2026-07-14",
+      "next_review_at": "2026-07-21",
+      "source_ids": [
+        "clinicaltrials-gov"
+      ],
+      "verified_fields": [
+        "date",
+        "status",
+        "source_url",
+        "entities"
+      ],
+      "note": "事件日期采用ClinicalTrials.gov最近更新发布日期；注册库最后更新时间较旧。"
+    },
+    {
+      "record_type": "company",
+      "record_id": "adicet-prulacel",
+      "status": "已核验",
+      "confidence": "高",
+      "last_verified_at": "2026-07-14",
+      "next_review_at": "2026-07-28",
+      "source_ids": [
+        "clinicaltrials-gov"
+      ],
+      "verified_fields": [
+        "company",
+        "product",
+        "technology",
+        "focus",
+        "stage",
+        "status",
+        "source_url",
+        "source_last_update"
+      ],
+      "note": "依据NCT06375993核验。"
+    },
+    {
+      "record_type": "trial",
+      "record_id": "adicet-prulacel-autoimmune-phase1",
+      "status": "已核验",
+      "confidence": "高",
+      "last_verified_at": "2026-07-14",
+      "next_review_at": "2026-07-21",
+      "source_ids": [
+        "clinicaltrials-gov"
+      ],
+      "verified_fields": [
+        "registry_id",
+        "official_title",
+        "sponsor",
+        "product",
+        "phase",
+        "status",
+        "enrollment",
+        "study_start",
+        "estimated_completion",
+        "registry_last_update"
+      ],
+      "note": "依据ClinicalTrials.gov API核验NCT06375993。"
+    },
+    {
+      "record_type": "event",
+      "record_id": "event-nct06375993-update",
+      "status": "已核验",
+      "confidence": "高",
+      "last_verified_at": "2026-07-14",
+      "next_review_at": "2026-07-21",
+      "source_ids": [
+        "clinicaltrials-gov"
+      ],
+      "verified_fields": [
+        "date",
+        "status",
+        "source_url",
+        "entities"
+      ],
+      "note": "事件日期采用ClinicalTrials.gov最近更新发布日期。"
+    },
+    {
+      "record_type": "company",
+      "record_id": "changhai-kn3601",
+      "status": "已核验",
+      "confidence": "高",
+      "last_verified_at": "2026-07-14",
+      "next_review_at": "2026-07-28",
+      "source_ids": [
+        "clinicaltrials-gov"
+      ],
+      "verified_fields": [
+        "company",
+        "product",
+        "technology",
+        "focus",
+        "stage",
+        "status",
+        "source_url",
+        "source_last_update"
+      ],
+      "note": "依据NCT07246096核验。"
+    },
+    {
+      "record_type": "trial",
+      "record_id": "changhai-kn3601-autoimmune",
+      "status": "已核验",
+      "confidence": "高",
+      "last_verified_at": "2026-07-14",
+      "next_review_at": "2026-07-21",
+      "source_ids": [
+        "clinicaltrials-gov"
+      ],
+      "verified_fields": [
+        "registry_id",
+        "official_title",
+        "sponsor",
+        "product",
+        "phase",
+        "status",
+        "enrollment",
+        "study_start",
+        "estimated_completion",
+        "registry_last_update"
+      ],
+      "note": "依据ClinicalTrials.gov API核验NCT07246096。"
+    },
+    {
+      "record_type": "event",
+      "record_id": "event-nct07246096-update",
+      "status": "已核验",
+      "confidence": "高",
+      "last_verified_at": "2026-07-14",
+      "next_review_at": "2026-07-21",
+      "source_ids": [
+        "clinicaltrials-gov"
+      ],
+      "verified_fields": [
+        "date",
+        "status",
+        "source_url",
+        "entities"
+      ],
+      "note": "事件日期采用ClinicalTrials.gov最近更新发布日期。"
+    },
+    {
+      "record_type": "company",
+      "record_id": "huashan-c-car168-cns",
+      "status": "已核验",
+      "confidence": "高",
+      "last_verified_at": "2026-07-14",
+      "next_review_at": "2026-07-28",
+      "source_ids": [
+        "clinicaltrials-gov"
+      ],
+      "verified_fields": [
+        "company",
+        "product",
+        "technology",
+        "focus",
+        "stage",
+        "status",
+        "source_url",
+        "source_last_update"
+      ],
+      "note": "依据NCT07341828核验。"
+    },
+    {
+      "record_type": "trial",
+      "record_id": "huashan-c-car168-cns-autoimmune",
+      "status": "已核验",
+      "confidence": "高",
+      "last_verified_at": "2026-07-14",
+      "next_review_at": "2026-07-21",
+      "source_ids": [
+        "clinicaltrials-gov"
+      ],
+      "verified_fields": [
+        "registry_id",
+        "official_title",
+        "sponsor",
+        "product",
+        "phase",
+        "status",
+        "enrollment",
+        "study_start",
+        "estimated_completion",
+        "registry_last_update"
+      ],
+      "note": "依据ClinicalTrials.gov API核验NCT07341828。"
+    },
+    {
+      "record_type": "event",
+      "record_id": "event-nct07341828-update",
+      "status": "已核验",
+      "confidence": "高",
+      "last_verified_at": "2026-07-14",
+      "next_review_at": "2026-07-21",
+      "source_ids": [
+        "clinicaltrials-gov"
+      ],
+      "verified_fields": [
+        "date",
+        "status",
+        "source_url",
+        "entities"
+      ],
+      "note": "事件日期采用ClinicalTrials.gov最近更新发布日期。"
+    },
+    {
+      "record_type": "company",
+      "record_id": "gustaveroussy-cellattack1",
+      "status": "已核验",
+      "confidence": "高",
+      "last_verified_at": "2026-07-14",
+      "next_review_at": "2026-07-28",
+      "source_ids": [
+        "clinicaltrials-gov"
+      ],
+      "verified_fields": [
+        "company",
+        "product",
+        "technology",
+        "focus",
+        "stage",
+        "status",
+        "source_url",
+        "source_last_update"
+      ],
+      "note": "依据NCT07544225核验。"
+    },
+    {
+      "record_type": "trial",
+      "record_id": "gustaveroussy-cellattack1-autoimmune",
+      "status": "已核验",
+      "confidence": "高",
+      "last_verified_at": "2026-07-14",
+      "next_review_at": "2026-07-21",
+      "source_ids": [
+        "clinicaltrials-gov"
+      ],
+      "verified_fields": [
+        "registry_id",
+        "official_title",
+        "sponsor",
+        "product",
+        "phase",
+        "status",
+        "enrollment",
+        "study_start",
+        "estimated_completion",
+        "registry_last_update"
+      ],
+      "note": "依据ClinicalTrials.gov API核验NCT07544225。"
+    },
+    {
+      "record_type": "event",
+      "record_id": "event-nct07544225-update",
+      "status": "已核验",
+      "confidence": "高",
+      "last_verified_at": "2026-07-14",
+      "next_review_at": "2026-07-21",
+      "source_ids": [
+        "clinicaltrials-gov"
+      ],
+      "verified_fields": [
+        "date",
+        "status",
+        "source_url",
+        "entities"
+      ],
+      "note": "事件日期采用ClinicalTrials.gov最近更新发布日期。"
+    },
+    {
+      "record_type": "research",
+      "record_id": "pmid-41612420",
+      "status": "已核验",
+      "confidence": "高",
+      "last_verified_at": "2026-07-14",
+      "next_review_at": "2026-08-13",
+      "source_ids": [
+        "ncbi-pubmed"
+      ],
+      "verified_fields": [
+        "official_title",
+        "doi",
+        "journal",
+        "publication_type",
+        "publish_date",
+        "source_url"
+      ],
+      "note": "PubMed元数据显示论文报道ICG318在12例难治性SLE中的扩展随访，作者单位包含iCell Gene Therapeutics、iCAR Bio和中山市人民医院。"
+    },
+    {
+      "record_type": "company",
+      "record_id": "iaso-equecel-autoimmune",
+      "status": "已核验",
+      "confidence": "高",
+      "last_verified_at": "2026-07-14",
+      "next_review_at": "2026-07-28",
+      "source_ids": [
+        "iaso-primary",
+        "clinicaltrials-gov"
+      ],
+      "verified_fields": [
+        "company",
+        "product",
+        "technology",
+        "focus",
+        "stage",
+        "status",
+        "source_url",
+        "source_last_update"
+      ],
+      "note": "依据IASO官网2024-08-12消息、官网pipeline及ClinicalTrials.gov NCT04561557核验。美国自身免疫IND按适应症计为MG、MS、SLE、LN四项；pipeline将SLE/LN合并一行。中国MG IND及MS、SLE、IIM等IIT与美国IND分开记录。"
+    },
+    {
+      "record_type": "trial",
+      "record_id": "ct103a-neuro-autoimmune-phase1",
+      "status": "已核验",
+      "confidence": "高",
+      "last_verified_at": "2026-07-14",
+      "next_review_at": "2026-07-21",
+      "source_ids": [
+        "clinicaltrials-gov"
+      ],
+      "verified_fields": [
+        "registry_id",
+        "official_title",
+        "sponsor",
+        "product",
+        "phase",
+        "status",
+        "enrollment",
+        "study_start",
+        "estimated_completion",
+        "registry_last_update"
+      ],
+      "note": "依据ClinicalTrials.gov API核验NCT04561557；官方覆盖NMOSD、MG、CIDP、IIM、MS、AE、MOGAD和POEMS。"
+    },
+    {
+      "record_type": "event",
+      "record_id": "event-iaso-equecel-fda-autoimmune-ind",
+      "status": "已核验",
+      "confidence": "高",
+      "last_verified_at": "2026-07-14",
+      "next_review_at": "2026-07-21",
+      "source_ids": [
+        "iaso-primary"
+      ],
+      "verified_fields": [
+        "date",
+        "status",
+        "source_url",
+        "entities"
+      ],
+      "note": "事件日期采用IASO官网原文发布日期；官方原文明确为美国FDA批准SLE和LN的IND，并回顾MG、MS既有自身免疫IND。"
+    },
+    {
+      "record_type": "event",
+      "record_id": "event-nct04561557-update",
+      "status": "已核验",
+      "confidence": "高",
+      "last_verified_at": "2026-07-14",
+      "next_review_at": "2026-07-21",
+      "source_ids": [
+        "clinicaltrials-gov"
+      ],
+      "verified_fields": [
+        "date",
+        "status",
+        "source_url",
+        "entities"
+      ],
+      "note": "事件日期采用ClinicalTrials.gov最近更新发布日期；注册库最后更新时间较旧。"
+    },
+    {
+      "record_type": "company",
+      "record_id": "icell-icg318-autoimmune",
+      "status": "已核验",
+      "confidence": "高",
+      "last_verified_at": "2026-07-14",
+      "next_review_at": "2026-07-28",
+      "source_ids": [
+        "icell-primary",
+        "ncbi-pubmed",
+        "clinicaltrials-gov"
+      ],
+      "verified_fields": [
+        "company",
+        "product",
+        "technology",
+        "focus",
+        "stage",
+        "status",
+        "source_url",
+        "source_last_update"
+      ],
+      "note": "依据iCell官网、PMID 41612420及ClinicalTrials.gov NCT06787989、NCT07328581核验；论文中的ICG318与注册库SLE/LN项目名称一致，但未把论文强行绑定到单一NCT。"
+    },
+    {
+      "record_type": "trial",
+      "record_id": "icell-bcmacd19-itp-phase1",
+      "status": "已核验",
+      "confidence": "中",
+      "last_verified_at": "2026-07-14",
+      "next_review_at": "2026-07-21",
+      "source_ids": [
+        "clinicaltrials-gov"
+      ],
+      "verified_fields": [
+        "registry_id",
+        "official_title",
+        "sponsor",
+        "product",
+        "phase",
+        "status",
+        "enrollment",
+        "study_start",
+        "estimated_completion",
+        "registry_last_update"
+      ],
+      "note": "依据ClinicalTrials.gov API核验NCT06787989；注册库最后更新时间较旧。"
+    },
+    {
+      "record_type": "event",
+      "record_id": "event-nct06787989-update",
+      "status": "已核验",
+      "confidence": "中",
+      "last_verified_at": "2026-07-14",
+      "next_review_at": "2026-07-21",
+      "source_ids": [
+        "clinicaltrials-gov"
+      ],
+      "verified_fields": [
+        "date",
+        "status",
+        "source_url",
+        "entities"
+      ],
+      "note": "事件日期采用ClinicalTrials.gov最近更新发布日期；注册库最后更新时间较旧。"
+    },
+    {
+      "record_type": "trial",
+      "record_id": "icell-icg318-sle-phase12",
+      "status": "已核验",
+      "confidence": "高",
+      "last_verified_at": "2026-07-14",
+      "next_review_at": "2026-07-21",
+      "source_ids": [
+        "clinicaltrials-gov"
+      ],
+      "verified_fields": [
+        "registry_id",
+        "official_title",
+        "sponsor",
+        "product",
+        "phase",
+        "status",
+        "enrollment",
+        "study_start",
+        "estimated_completion",
+        "registry_last_update"
+      ],
+      "note": "依据ClinicalTrials.gov API核验NCT07328581；官方试验名称直接使用ICG318。"
+    },
+    {
+      "record_type": "event",
+      "record_id": "event-nct07328581-update",
+      "status": "已核验",
+      "confidence": "高",
+      "last_verified_at": "2026-07-14",
+      "next_review_at": "2026-07-21",
+      "source_ids": [
+        "clinicaltrials-gov"
+      ],
+      "verified_fields": [
+        "date",
+        "status",
+        "source_url",
+        "entities"
+      ],
+      "note": "事件日期采用ClinicalTrials.gov最近更新发布日期。"
+    },
+    {
+      "record_type": "event",
+      "record_id": "event-feed-41612420",
+      "status": "已核验",
+      "confidence": "高",
+      "last_verified_at": "2026-07-14",
+      "next_review_at": "2026-08-13",
+      "source_ids": [
+        "ncbi-pubmed"
+      ],
+      "verified_fields": [
+        "date",
+        "source_url",
+        "entities"
+      ],
+      "note": "事件日期采用PubMed发布日期。"
     }
   ]
 }

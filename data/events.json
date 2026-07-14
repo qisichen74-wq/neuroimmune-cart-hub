@@ -613,6 +613,29 @@
     ]
   },
   {
+    "id": "event-cabaletta-resetmg-phase12",
+    "date": "2026-05-14",
+    "event_type": "公司披露",
+    "title": "Cabaletta披露RESET-MG完整Phase 1/2队列数据",
+    "summary": "公司在2026年一季度更新中表示，AAN披露的13例可评估患者里有10例在停用免疫调节剂后出现具有临床意义的MG-ADL改善。",
+    "impact": "MG赛道新增来自公司正式披露的自体CD19 CAR-T早期队列信号，但仍属单臂公司口径，不能替代对照研究或同行评议证据。",
+    "priority": "高",
+    "topic": "MG",
+    "status": "公司更新",
+    "source_label": "Cabaletta Bio",
+    "source_url": "https://www.cabalettabio.com/investors/news-events/press-releases/detail/148/cabaletta-bio-reports-first-quarter-2026-financial-results",
+    "entities": [
+      {
+        "type": "company",
+        "id": "cabaletta-resecel"
+      },
+      {
+        "type": "trial",
+        "id": "cabaletta-resecel-mg-phase12"
+      }
+    ]
+  },
+  {
     "id": "event-nct06056921-update",
     "date": "2023-09-28",
     "event_type": "试验更新",
@@ -632,6 +655,255 @@
       {
         "type": "trial",
         "id": "precision-cd19-autoimmune-phase1"
+      }
+    ]
+  },
+  {
+    "id": "event-nct07085676-update",
+    "date": "2026-05-06",
+    "event_type": "试验更新",
+    "title": "Hadassah启动HBI0101跨病种自免CAR-T招募",
+    "summary": "NCT07085676计划入组120例，覆盖MS、NMOSD、MG、SLE、SSc、IIM、RA和APS等B细胞介导自身免疫病。",
+    "impact": "为神经免疫和系统性自身免疫病新增一项覆盖面较广的BCMA自体CAR-T正式注册试验。",
+    "priority": "高",
+    "topic": "NMOSD / MG / MS",
+    "status": "Recruiting",
+    "source_label": "ClinicalTrials.gov",
+    "source_url": "https://clinicaltrials.gov/study/NCT07085676",
+    "entities": [
+      {
+        "type": "company",
+        "id": "hadassah-hbi0101"
+      },
+      {
+        "type": "trial",
+        "id": "hadassah-hbi0101-autoimmune"
+      }
+    ]
+  },
+  {
+    "id": "event-nct06249438-update",
+    "date": "2025-07-25",
+    "event_type": "试验更新",
+    "title": "仁济医院C-CAR168自免试验维持Recruiting",
+    "summary": "NCT06249438计划入组30例，覆盖SLE、IMNM、NMOSD、MS、MG和SSc，但注册页已较久未刷新。",
+    "impact": "双靶点CD20/BCMA自体CAR-T进入多个神经免疫病种，但当前公开注册信息明显陈旧。",
+    "priority": "高",
+    "topic": "NMOSD / MG / MS",
+    "status": "Recruiting（注册信息较旧）",
+    "source_label": "ClinicalTrials.gov",
+    "source_url": "https://clinicaltrials.gov/study/NCT06249438",
+    "entities": [
+      {
+        "type": "company",
+        "id": "renji-c-car168"
+      },
+      {
+        "type": "trial",
+        "id": "renji-c-car168-autoimmune"
+      }
+    ]
+  },
+  {
+    "id": "event-nct06375993-update",
+    "date": "2026-03-19",
+    "event_type": "试验更新",
+    "title": "Adicet把prula-cel扩展至自身免疫病",
+    "summary": "NCT06375993更新为Enrolling by invitation，计划入组180例，覆盖LN、SLE、SSc、AAV、IIM和SPS。",
+    "impact": "提供一条与主流CD19/BCMA不同的异体抗CD20 gamma-delta CAR-T路线。",
+    "priority": "高",
+    "topic": "跨病种",
+    "status": "Enrolling by invitation",
+    "source_label": "ClinicalTrials.gov",
+    "source_url": "https://clinicaltrials.gov/study/NCT06375993",
+    "entities": [
+      {
+        "type": "company",
+        "id": "adicet-prulacel"
+      },
+      {
+        "type": "trial",
+        "id": "adicet-prulacel-autoimmune-phase1"
+      }
+    ]
+  },
+  {
+    "id": "event-nct07246096-update",
+    "date": "2026-02-25",
+    "event_type": "试验更新",
+    "title": "长海医院KN3601异体双靶点CAR-T试验进入Recruiting",
+    "summary": "NCT07246096计划入组60例，覆盖SLE、SSc、Sjogren syndrome、RA和AAV，并观察52周安全性与B细胞动力学。",
+    "impact": "中国广谱异体CD19/BCMA自免项目再增一例，并明确52周安全和总体应答观察。",
+    "priority": "高",
+    "topic": "跨病种",
+    "status": "Recruiting",
+    "source_label": "ClinicalTrials.gov",
+    "source_url": "https://clinicaltrials.gov/study/NCT07246096",
+    "entities": [
+      {
+        "type": "company",
+        "id": "changhai-kn3601"
+      },
+      {
+        "type": "trial",
+        "id": "changhai-kn3601-autoimmune"
+      }
+    ]
+  },
+  {
+    "id": "event-nct07341828-update",
+    "date": "2026-01-15",
+    "event_type": "试验更新",
+    "title": "华山医院C-CAR168中枢神经自身免疫试验仍未招募",
+    "summary": "NCT07341828计划入组15例，覆盖MS、NMOSD、自身免疫性脑炎和SPS，当前仍为Not yet recruiting。",
+    "impact": "为中枢神经自身免疫病新增一项双靶点CD20/BCMA自体CAR-T正式注册框架。",
+    "priority": "高",
+    "topic": "NMOSD / AE",
+    "status": "Not yet recruiting",
+    "source_label": "ClinicalTrials.gov",
+    "source_url": "https://clinicaltrials.gov/study/NCT07341828",
+    "entities": [
+      {
+        "type": "company",
+        "id": "huashan-c-car168-cns"
+      },
+      {
+        "type": "trial",
+        "id": "huashan-c-car168-cns-autoimmune"
+      }
+    ]
+  },
+  {
+    "id": "event-nct07544225-update",
+    "date": "2026-04-22",
+    "event_type": "试验更新",
+    "title": "Gustave Roussy登记系统性风湿自免CD19 CAR-T研究",
+    "summary": "NCT07544225计划入组6例成人严重难治系统性风湿自身免疫病患者，当前仍为Not yet recruiting。",
+    "impact": "欧洲学术中心开始用院内制备CD19 CAR-T进入系统性自身免疫病正式安全性试验。",
+    "priority": "高",
+    "topic": "跨病种",
+    "status": "Not yet recruiting",
+    "source_label": "ClinicalTrials.gov",
+    "source_url": "https://clinicaltrials.gov/study/NCT07544225",
+    "entities": [
+      {
+        "type": "company",
+        "id": "gustaveroussy-cellattack1"
+      },
+      {
+        "type": "trial",
+        "id": "gustaveroussy-cellattack1-autoimmune"
+      }
+    ]
+  },
+  {
+    "id": "event-iaso-equecel-fda-autoimmune-ind",
+    "date": "2024-08-12",
+    "event_type": "公司披露",
+    "title": "IASO披露Eque-cel获FDA放行SLE/LN自身免疫IND",
+    "summary": "IASO官网称Eque-cel已在美国获得非肾型SLE和LN的IND批准；结合官网pipeline，其美国自身免疫IND覆盖MG、MS、SLE、LN四个适应症，其中SLE/LN合并一行展示。",
+    "impact": "提示CT103A/Eque-cel已从中国神经免疫探索延伸到美国系统性自身免疫开发，但SLE/LN具体试验尚未见公开注册记录。",
+    "priority": "高",
+    "topic": "跨病种",
+    "status": "FDA IND获批（公司口径）",
+    "source_label": "IASO Bio",
+    "source_url": "https://www.iasobio.com/info.php?id=259",
+    "entities": [
+      {
+        "type": "company",
+        "id": "iaso-equecel-autoimmune"
+      }
+    ]
+  },
+  {
+    "id": "event-nct04561557-update",
+    "date": "2024-10-30",
+    "event_type": "试验更新",
+    "title": "CT103A神经免疫试验仍显示Recruiting",
+    "summary": "NCT04561557计划入组36例，覆盖NMOSD、MG、CIDP、IIM、MS、AE、MOGAD和POEMS。",
+    "impact": "CT103A成为少见同时覆盖中枢、周围神经和神经肌接头自身免疫病的BCMA CAR-T正式注册试验。",
+    "priority": "高",
+    "topic": "NMOSD / MG / MS",
+    "status": "Recruiting（注册信息较旧）",
+    "source_label": "ClinicalTrials.gov",
+    "source_url": "https://clinicaltrials.gov/study/NCT04561557",
+    "entities": [
+      {
+        "type": "company",
+        "id": "iaso-equecel-autoimmune"
+      },
+      {
+        "type": "trial",
+        "id": "ct103a-neuro-autoimmune-phase1"
+      }
+    ]
+  },
+  {
+    "id": "event-feed-41612420",
+    "date": "2026-01-29",
+    "event_type": "研究发布",
+    "title": "iCell ICG318的SLE扩展随访进入证据池",
+    "summary": "正式论文报告12例难治性SLE患者的扩展随访，并把长期停药缓解、肾脏病理改善和生育结局纳入讨论。",
+    "impact": "把自免CAR-T的评价重心从短期应答推进到多年持续性和生活质量维度，但目前仍缺少更大样本外部重复。",
+    "priority": "高",
+    "topic": "跨病种",
+    "status": "已审核",
+    "source_label": "PubMed",
+    "source_url": "https://pubmed.ncbi.nlm.nih.gov/41612420/",
+    "entities": [
+      {
+        "type": "research",
+        "id": "pmid-41612420"
+      },
+      {
+        "type": "company",
+        "id": "icell-icg318-autoimmune"
+      }
+    ]
+  },
+  {
+    "id": "event-nct06787989-update",
+    "date": "2025-01-22",
+    "event_type": "试验更新",
+    "title": "iCell难治性ITP双靶点cCAR-T试验维持Recruiting",
+    "summary": "NCT06787989计划入组20例合并自身免疫背景的难治性免疫性血小板减少患者，但注册页更新停留在2025年1月。",
+    "impact": "说明iCell把BCMA/CD19双靶点路线从SLE延伸到血液学自身免疫表型，但公开注册信息仍偏旧。",
+    "priority": "中",
+    "topic": "跨病种",
+    "status": "Recruiting（注册信息较旧）",
+    "source_label": "ClinicalTrials.gov",
+    "source_url": "https://clinicaltrials.gov/study/NCT06787989",
+    "entities": [
+      {
+        "type": "company",
+        "id": "icell-icg318-autoimmune"
+      },
+      {
+        "type": "trial",
+        "id": "icell-bcmacd19-itp-phase1"
+      }
+    ]
+  },
+  {
+    "id": "event-nct07328581-update",
+    "date": "2026-01-09",
+    "event_type": "试验更新",
+    "title": "iCell登记ICG318治疗SLE/LN的Phase 1/2研究",
+    "summary": "NCT07328581把ICG318推进到难治性SLE/LN的Phase 1/2正式注册框架，当前仍为Not yet recruiting。",
+    "impact": "把已发表的扩展随访信号推进到前瞻性注册路径，但中心信息和实际启动节奏仍待公开。",
+    "priority": "高",
+    "topic": "跨病种",
+    "status": "Not yet recruiting",
+    "source_label": "ClinicalTrials.gov",
+    "source_url": "https://clinicaltrials.gov/study/NCT07328581",
+    "entities": [
+      {
+        "type": "company",
+        "id": "icell-icg318-autoimmune"
+      },
+      {
+        "type": "trial",
+        "id": "icell-icg318-sle-phase12"
       }
     ]
   }

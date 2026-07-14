@@ -1,0 +1,106 @@
+{
+  "publication_start_date": "2025/01/01",
+  "max_records_per_query": 5000,
+  "sentinels": [
+    {
+      "source": "pubmed",
+      "external_id": "41612420",
+      "reason": "iCell ICG318 SLE扩展随访"
+    },
+    {
+      "source": "clinicaltrials",
+      "external_id": "NCT04561557",
+      "reason": "CT103A神经免疫Early Phase 1"
+    },
+    {
+      "source": "clinicaltrials",
+      "external_id": "NCT06787989",
+      "reason": "iCell BCMA-CD19 cCAR T ITP Phase 1"
+    },
+    {
+      "source": "clinicaltrials",
+      "external_id": "NCT07328581",
+      "reason": "iCell ICG318 SLE/LN Phase 1/2"
+    },
+    {
+      "source": "official:iaso-official",
+      "external_id": "https://www.iasobio.com/info.php?id=251",
+      "reason": "Eque-cel美国新增自身免疫IND官网公告"
+    },
+    {
+      "source": "official:iaso-official",
+      "external_id": "https://www.iasobio.com/proline.php",
+      "reason": "IASO当前pipeline"
+    }
+  ],
+  "entities": [
+    {
+      "id": "iaso-ct103a",
+      "label": "IASO Bio / Eque-cel / CT103A",
+      "aliases": [
+        "CT103A",
+        "Eque-cel",
+        "equecabtagene autoleucel",
+        "IASO Bio",
+        "Nanjing IASO Biotechnology"
+      ],
+      "priority_aliases": [
+        "CT103A",
+        "Eque-cel",
+        "equecabtagene autoleucel"
+      ]
+    },
+    {
+      "id": "icell-icg318",
+      "label": "iCell Gene Therapeutics / ICG318",
+      "aliases": [
+        "ICG318",
+        "iCell Gene Therapeutics",
+        "iCell ImmunityX",
+        "iCAR Bio"
+      ],
+      "priority_aliases": [
+        "ICG318",
+        "BCMA-CD19-IL-15",
+        "BCMA-CD19 cCAR"
+      ]
+    }
+  ],
+  "official_sources": [
+    {
+      "id": "iaso-official",
+      "name": "IASO Bio Official News & Pipeline",
+      "source_id": "iaso-primary",
+      "entity_ids": [
+        "iaso-ct103a"
+      ],
+      "urls": [
+        "https://www.iasobio.com/news.php?colid=302",
+        "https://www.iasobio.com/news.php?colid=303",
+        "https://www.iasobio.com/proline.php"
+      ],
+      "follow_link_patterns": [
+        "PB_page="
+      ],
+      "max_pages": 10,
+      "monitor_assets": true
+    },
+    {
+      "id": "icell-official",
+      "name": "iCell Gene Therapeutics Official Website",
+      "source_id": "icell-primary",
+      "entity_ids": [
+        "icell-icg318"
+      ],
+      "urls": [
+        "https://www.icellgene.com/",
+        "https://www.icellgene.com/our-pipeline-1",
+        "https://www.icellgene.com/icellinthenews-1",
+        "https://www.icellgene.com/publications-1"
+      ],
+      "follow_link_patterns": [],
+      "max_pages": 4,
+      "monitor_assets": true
+    }
+  ]
+}
