@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-13T23:27:14.887Z",
+  "generated_at": "2026-07-14T23:26:29.231Z",
   "as_of": "2026-07-12",
   "headline": {
     "id": "pmid-42251699",
@@ -13,8 +13,8 @@
     "formal_records": 107,
     "externally_verified": 97,
     "active_priority_trials": 20,
-    "candidate_items": 181,
-    "quality_score": 89
+    "candidate_items": 182,
+    "quality_score": 86
   },
   "verified_updates": [
     {
@@ -142,6 +142,12 @@
     {
       "code": "registry_record_stale",
       "record_type": "trial",
+      "record_id": "tongji-v001bcma-autoimmune",
+      "message": "注册库记录超过180天未更新，当前状态需谨慎解释"
+    },
+    {
+      "code": "registry_record_stale",
+      "record_type": "trial",
       "record_id": "ihematology-xiniao-ucar-autoimmune",
       "message": "注册库记录超过180天未更新，当前状态需谨慎解释"
     },
@@ -186,47 +192,32 @@
       "record_type": "system",
       "record_id": "-",
       "message": "监管来源访问失败：国家药品监督管理局"
+    },
+    {
+      "code": "regulatory_source_failed",
+      "record_type": "system",
+      "record_id": "-",
+      "message": "监管来源访问失败：NMPA药物临床试验审批"
+    },
+    {
+      "code": "regulatory_source_failed",
+      "record_type": "system",
+      "record_id": "-",
+      "message": "监管来源访问失败：NMPA药物临床试验登记"
     }
   ],
   "candidate_queue": [
     {
       "type": "trial",
-      "external_id": "NCT07085676",
-      "title": "A Phase 1 Dose Escalation and Safety Study of HBI0101 CART in B-cell Mediated Refractory Autoimmune Diseases",
-      "score": 16,
+      "external_id": "NCT07676266",
+      "title": "An Exploratory Clinical Study of Anti-CD20/B-cell Maturation Antigen (BCMA) Chimeric Antigen Receptor Autologous T Cell Product (C-CAR168) in the Treatment of Autoimmune Diseases Refractory to Standard Therapy",
+      "score": 14,
       "tier": "立即核验",
       "reasons": [
         "正式注册试验",
-        "命中5个重点病种",
-        "当前处于活跃状态"
+        "命中5个重点病种"
       ],
-      "source_url": "https://clinicaltrials.gov/study/NCT07085676"
-    },
-    {
-      "type": "trial",
-      "external_id": "NCT06249438",
-      "title": "An Exploratory Clinical Study of Cluster of Differentiation Antigen 20(CD20)/Anti-B-cell Maturation Antigen(BCMA) Chimeric Antigen Receptor Autologous T Cell Product (C-CAR168) in the Treatment of Autoimmune Diseases Refractory to Standard Therapy",
-      "score": 16,
-      "tier": "立即核验",
-      "reasons": [
-        "正式注册试验",
-        "命中5个重点病种",
-        "当前处于活跃状态"
-      ],
-      "source_url": "https://clinicaltrials.gov/study/NCT06249438"
-    },
-    {
-      "type": "trial",
-      "external_id": "NCT07586267",
-      "title": "An Exploratory Clinical Study Evaluate the Safety and Efficacy of Universal Universal Allogeneic CAR-T Cells Targeting CD19 and BCMA in the Treatment of B Cell-Related Autoimmune Disease",
-      "score": 12,
-      "tier": "立即核验",
-      "reasons": [
-        "正式注册试验",
-        "命中3个重点病种",
-        "当前处于活跃状态"
-      ],
-      "source_url": "https://clinicaltrials.gov/study/NCT07586267"
+      "source_url": "https://clinicaltrials.gov/study/NCT07676266"
     },
     {
       "type": "trial",
@@ -243,20 +234,8 @@
     },
     {
       "type": "trial",
-      "external_id": "NCT06375993",
-      "title": "A Phase 1 Study of Prulacabtagene Leucel (Prula-cel, Formerly ADI-001) Anti-CD20 CAR-engineered Allogeneic Gamma-Delta (γδ) T Cells in Adults With Autoimmune Disease",
-      "score": 12,
-      "tier": "立即核验",
-      "reasons": [
-        "正式注册试验",
-        "命中4个重点病种"
-      ],
-      "source_url": "https://clinicaltrials.gov/study/NCT06375993"
-    },
-    {
-      "type": "trial",
-      "external_id": "NCT07246096",
-      "title": "Exploratory Clinical Study on the Safety and Efficacy of Anti-CD19/BCMA Universal CAR-T Cell Injection for the Treatment of Relapsed/Refractory Autoimmune Diseases",
+      "external_id": "NCT06548607",
+      "title": "Clinical Study on Targeted CD19 or CD19-BCMA CAR-T Therapy for Autoimmune Diseases",
       "score": 12,
       "tier": "立即核验",
       "reasons": [
@@ -264,7 +243,45 @@
         "命中3个重点病种",
         "当前处于活跃状态"
       ],
-      "source_url": "https://clinicaltrials.gov/study/NCT07246096"
+      "source_url": "https://clinicaltrials.gov/study/NCT06548607"
+    },
+    {
+      "type": "trial",
+      "external_id": "NCT07674147",
+      "title": "A Clinical Study of the Safety, Efficacy, and Pharmacokinetics of Universal CD19/BCMA-Targeted CAR-T Cell Injection for the Treatment of Autoimmune Diseases in Children and Adolescents",
+      "score": 10,
+      "tier": "立即核验",
+      "reasons": [
+        "正式注册试验",
+        "命中3个重点病种"
+      ],
+      "source_url": "https://clinicaltrials.gov/study/NCT07674147"
+    },
+    {
+      "type": "trial",
+      "external_id": "NCT06822881",
+      "title": "A Clinical Study to Investigate the Safety, Efficacy, and Cellular Metabolism of CT1190B CAR-T Cell Therapy, in Patients With Moderate to Severe Refractory Systemic Lupus Erythematosus (SLE) or Refractory/Progressive Systemic Sclerosis (SSc)",
+      "score": 10,
+      "tier": "立即核验",
+      "reasons": [
+        "正式注册试验",
+        "命中2个重点病种",
+        "当前处于活跃状态"
+      ],
+      "source_url": "https://clinicaltrials.gov/study/NCT06822881"
+    },
+    {
+      "type": "trial",
+      "external_id": "NCT06792799",
+      "title": "An Exploratory Clinical Study on the Safety and Efficacy of CD19/BCMA Chimeric Antigen Receptor NK Cells in the Treatment of B Cell-related Autoimmune Diseases in Children",
+      "score": 10,
+      "tier": "立即核验",
+      "reasons": [
+        "正式注册试验",
+        "命中2个重点病种",
+        "当前处于活跃状态"
+      ],
+      "source_url": "https://clinicaltrials.gov/study/NCT06792799"
     }
   ],
   "editorial_note": "头条、动态和试验均来自正式核验数据；候选队列仅表示下一步核验优先级。"

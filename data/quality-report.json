@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-07-13T23:27:14.740Z",
+  "generated_at": "2026-07-14T23:26:29.084Z",
   "as_of": "2026-07-12",
   "policy_version": "1.0.0",
   "status": "需关注",
-  "score": 89,
+  "score": 86,
   "summary": {
     "total_records": 107,
     "datasets": 6,
     "errors": 0,
-    "warnings": 11,
+    "warnings": 14,
     "verified": 97,
     "internally_reviewed": 10,
     "pending_external_verification": 0,
-    "stale": 10,
+    "stale": 11,
     "source_checks": {
       "records_checked": 37,
       "successful": 37,
@@ -20,19 +20,19 @@
       "differences": 0
     },
     "discovery": {
-      "candidates": 181,
+      "candidates": 182,
       "research": 91,
-      "trials": 90,
-      "immediate_review": 11,
-      "watchlist": 68,
-      "background": 14,
+      "trials": 91,
+      "immediate_review": 8,
+      "watchlist": 67,
+      "background": 19,
       "low_relevance": 88,
       "source_failures": 0
     },
     "regulatory": {
       "endpoints": 5,
-      "available": 4,
-      "failed": 1
+      "available": 2,
+      "failed": 3
     }
   },
   "datasets": [
@@ -58,7 +58,7 @@
       "records": 27,
       "verified": 27,
       "pending": 0,
-      "stale": 10
+      "stale": 11
     },
     {
       "type": "safety",
@@ -131,6 +131,13 @@
       "severity": "warning",
       "code": "registry_record_stale",
       "record_type": "trial",
+      "record_id": "tongji-v001bcma-autoimmune",
+      "message": "注册库记录超过180天未更新，当前状态需谨慎解释"
+    },
+    {
+      "severity": "warning",
+      "code": "registry_record_stale",
+      "record_type": "trial",
       "record_id": "ihematology-xiniao-ucar-autoimmune",
       "message": "注册库记录超过180天未更新，当前状态需谨慎解释"
     },
@@ -182,6 +189,20 @@
       "record_type": "system",
       "record_id": "-",
       "message": "监管来源访问失败：国家药品监督管理局"
+    },
+    {
+      "severity": "warning",
+      "code": "regulatory_source_failed",
+      "record_type": "system",
+      "record_id": "-",
+      "message": "监管来源访问失败：NMPA药物临床试验审批"
+    },
+    {
+      "severity": "warning",
+      "code": "regulatory_source_failed",
+      "record_type": "system",
+      "record_id": "-",
+      "message": "监管来源访问失败：NMPA药物临床试验登记"
     }
   ],
   "verification": [

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-13T23:27:14.589Z",
+  "generated_at": "2026-07-14T23:26:28.934Z",
   "policy": {
     "trial_registration": "登记平台存在试验记录，只能证明试验已登记公示。",
     "clinical_trial_authorization": "临床试验获准或默示许可，不等同于产品获准上市。",
@@ -8,8 +8,8 @@
   },
   "summary": {
     "endpoints": 5,
-    "available": 4,
-    "failed": 1
+    "available": 2,
+    "failed": 3
   },
   "checks": [
     {
@@ -18,32 +18,26 @@
       "url": "https://www.nmpa.gov.cn/",
       "scope": "上市批准、监管公告与安全信息",
       "status": "error",
-      "http_status": 412,
-      "resolved_url": "https://www.nmpa.gov.cn/",
-      "content_bytes": 2539,
-      "checked_at": "2026-07-13T23:27:01.176Z"
+      "error": "fetch failed",
+      "checked_at": "2026-07-14T23:26:11.846Z"
     },
     {
       "id": "nmpa-trial-approval",
       "name": "NMPA药物临床试验审批",
       "url": "https://zwfw.nmpa.gov.cn/web/taskview/11100000MB0341032Y100017210200001",
       "scope": "临床试验行政许可与60工作日默示许可制度",
-      "status": "available",
-      "http_status": 200,
-      "resolved_url": "https://zwfw.nmpa.gov.cn/web/taskview/11100000MB0341032Y100017210200001",
-      "content_bytes": 386425,
-      "checked_at": "2026-07-13T23:27:05.001Z"
+      "status": "error",
+      "error": "fetch failed",
+      "checked_at": "2026-07-14T23:26:12.329Z"
     },
     {
       "id": "nmpa-trial-registration",
       "name": "NMPA药物临床试验登记",
       "url": "https://zwfw.nmpa.gov.cn/web/taskview/11100000MB0341032Y100207202900001",
       "scope": "境内药物临床试验登记义务与平台入口",
-      "status": "available",
-      "http_status": 200,
-      "resolved_url": "https://zwfw.nmpa.gov.cn/web/taskview/11100000MB0341032Y100207202900001",
-      "content_bytes": 92655,
-      "checked_at": "2026-07-13T23:27:06.750Z"
+      "status": "error",
+      "error": "fetch failed",
+      "checked_at": "2026-07-14T23:26:12.582Z"
     },
     {
       "id": "cde-home",
@@ -53,8 +47,8 @@
       "status": "available",
       "http_status": 200,
       "resolved_url": "https://www.cde.org.cn/",
-      "content_bytes": 90103,
-      "checked_at": "2026-07-13T23:27:08.948Z"
+      "content_bytes": 90255,
+      "checked_at": "2026-07-14T23:26:17.291Z"
     },
     {
       "id": "china-drug-trials",
@@ -64,8 +58,8 @@
       "status": "available",
       "http_status": 200,
       "resolved_url": "https://www.chinadrugtrials.org.cn/",
-      "content_bytes": 43034,
-      "checked_at": "2026-07-13T23:27:14.589Z"
+      "content_bytes": 43302,
+      "checked_at": "2026-07-14T23:26:28.934Z"
     }
   ]
 }
