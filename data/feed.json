@@ -652,5 +652,106 @@
       "Phase 1b/2a"
     ],
     "takeaway": "证明短暂表达的BCMA mRNA CAR-T可以在不清淋条件下门诊给药，但该阶段为单臂早期研究。"
+  },
+  {
+    "id": "pmid-36596762",
+    "pmid": "36596762",
+    "official_title": "Anti-BCMA CAR T-cell therapy CT103A in relapsed or refractory AQP4-IgG seropositive neuromyelitis optica spectrum disorders: phase 1 trial interim results.",
+    "doi": "10.1038/s41392-022-01278-3",
+    "journal": "Signal Transduction and Targeted Therapy",
+    "publication_type": [
+      "Clinical Trial, Phase I",
+      "Journal Article",
+      "Research Support, Non-U.S. Gov't"
+    ],
+    "title_cn": "CT103A抗BCMA CAR-T治疗复发/难治AQP4-IgG阳性NMOSD：I期中期结果",
+    "priority": "高",
+    "priority_reason": "12例NMOSD人体研究，是该适应症CAR-T最直接的临床证据",
+    "evidence_level": "IIT Phase 1中期结果·12例",
+    "disease": "NMOSD",
+    "one_liner": "12例接受CT103A；中位随访5.5个月时11例未复发，AQP4-IgG整体下降，CRS均为1至2级且未报告ICANS。",
+    "status": "已审核",
+    "source_name": "PubMed",
+    "source_url": "https://pubmed.ncbi.nlm.nih.gov/36596762/",
+    "publish_date": "2023-01-04",
+    "date_added": "2026-07-16",
+    "category": "研究情报",
+    "entity": "Tongji Hospital / CT103A",
+    "region": "China",
+    "tags": [
+      "NMOSD",
+      "CT103A",
+      "BCMA",
+      "AQP4-IgG",
+      "Phase 1"
+    ],
+    "takeaway": "研究提供12例早期人体证据，但为单臂中期分析，随访时间较短且清淋对疾病活动的影响不能排除。"
+  },
+  {
+    "id": "pmid-38728414",
+    "pmid": "38728414",
+    "official_title": "Single-cell analysis of anti-BCMA CAR T cell therapy in patients with central nervous system autoimmunity.",
+    "doi": "10.1126/sciimmunol.adj9730",
+    "journal": "Science Immunology",
+    "publication_type": [
+      "Journal Article",
+      "Research Support, Non-U.S. Gov't"
+    ],
+    "title_cn": "抗BCMA CAR-T治疗中枢神经自身免疫病的单细胞分析",
+    "priority": "高",
+    "priority_reason": "对CT103A NMOSD队列进行血液与脑脊液配对单细胞多组学分析",
+    "evidence_level": "配对CSF/血液单细胞多组学·机制研究",
+    "disease": "NMOSD",
+    "one_liner": "研究显示CAR-T可跨越血液-脑脊液屏障，清除脑脊液浆母细胞和浆细胞并抑制神经炎症。",
+    "status": "已审核",
+    "source_name": "PubMed",
+    "source_url": "https://pubmed.ncbi.nlm.nih.gov/38728414/",
+    "publish_date": "2024-05-10",
+    "date_added": "2026-07-16",
+    "category": "研究情报",
+    "entity": "Tongji Hospital / CT103A",
+    "region": "China",
+    "tags": [
+      "NMOSD",
+      "CT103A",
+      "BCMA",
+      "脑脊液",
+      "单细胞多组学"
+    ],
+    "takeaway": "该文补充同一CT103A队列的中枢迁移和免疫机制证据，不应当作独立临床队列重复计算。"
+  },
+  {
+    "id": "pmid-40425008",
+    "pmid": "40425008",
+    "official_title": "Anti-BCMA CAR-T cell therapy in relapsed/refractory chronic inflammatory demyelinating polyneuropathy.",
+    "doi": "10.1016/j.medj.2025.100704",
+    "journal": "Med",
+    "publication_type": [
+      "Case Reports",
+      "Journal Article",
+      "Research Support, Non-U.S. Gov't"
+    ],
+    "title_cn": "抗BCMA CAR-T治疗复发/难治性CIDP：2例病例研究",
+    "priority": "高",
+    "priority_reason": "两例CIDP人体证据并包含最长超过24个月随访和多组学复发机制分析",
+    "evidence_level": "2例病例研究·12至24个月以上随访·多组学",
+    "disease": "CIDP",
+    "one_liner": "两例患者均在6个月内实现无药缓解；一例在严重COVID-19感染后于12个月复发，另一例维持缓解超过24个月。",
+    "status": "已审核",
+    "source_name": "PubMed",
+    "source_url": "https://pubmed.ncbi.nlm.nih.gov/40425008/",
+    "publish_date": "2025-05-26",
+    "date_added": "2026-07-16",
+    "category": "研究情报",
+    "entity": "Tongji Hospital / CT103A",
+    "region": "China",
+    "tags": [
+      "CIDP",
+      "CT103A",
+      "BCMA",
+      "病例研究",
+      "多组学"
+    ],
+    "takeaway": "两例均出现早期无药缓解，但复发病例提示感染后致病B细胞再激活可能影响持续性，证据仍需扩大样本。"
   }
 ]

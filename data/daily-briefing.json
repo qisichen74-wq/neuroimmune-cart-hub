@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-15T16:29:42.849Z",
+  "generated_at": "2026-07-15T16:44:14.512Z",
   "as_of": "2026-07-15",
   "headline": {
     "id": "pmid-42251699",
@@ -10,7 +10,7 @@
     "evidence_level": "病例报道·IIT"
   },
   "snapshot": {
-    "formal_records": 153,
+    "formal_records": 154,
     "externally_verified": 145,
     "active_priority_trials": 28,
     "candidate_items": 860,

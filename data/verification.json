@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-07-15",
+  "as_of": "2026-07-16",
   "policy_version": "1.0.0",
   "status_definitions": {
     "已核验": "已与指定一手或权威来源逐字段比对",
@@ -3093,6 +3093,66 @@
         "status"
       ],
       "note": "PMID 41245531与ChiCTR2200061267论文标识已核验。"
+    },
+    {
+      "record_type": "research",
+      "record_id": "pmid-36596762",
+      "status": "已核验",
+      "confidence": "高",
+      "last_verified_at": "2026-07-16",
+      "next_review_at": "2026-08-15",
+      "source_ids": [
+        "ncbi-pubmed"
+      ],
+      "verified_fields": [
+        "pmid",
+        "official_title",
+        "doi",
+        "journal",
+        "publish_date",
+        "publication_type"
+      ],
+      "note": "已通过NCBI ESummary、PubMed记录与期刊摘要逐字段核对。"
+    },
+    {
+      "record_type": "research",
+      "record_id": "pmid-38728414",
+      "status": "已核验",
+      "confidence": "高",
+      "last_verified_at": "2026-07-16",
+      "next_review_at": "2026-08-15",
+      "source_ids": [
+        "ncbi-pubmed"
+      ],
+      "verified_fields": [
+        "pmid",
+        "official_title",
+        "doi",
+        "journal",
+        "publish_date",
+        "publication_type"
+      ],
+      "note": "已通过NCBI ESummary、PubMed记录与期刊摘要逐字段核对。"
+    },
+    {
+      "record_type": "research",
+      "record_id": "pmid-40425008",
+      "status": "已核验",
+      "confidence": "高",
+      "last_verified_at": "2026-07-16",
+      "next_review_at": "2026-08-15",
+      "source_ids": [
+        "ncbi-pubmed"
+      ],
+      "verified_fields": [
+        "pmid",
+        "official_title",
+        "doi",
+        "journal",
+        "publish_date",
+        "publication_type"
+      ],
+      "note": "已通过NCBI ESummary、PubMed记录与期刊摘要逐字段核对。"
     }
   ]
 }

@@ -119,7 +119,8 @@ const topicIndicationPatterns = {
   MG: /(^|\W)(g?MG|myasthenia gravis|重症肌无力)(\W|$)/i,
   SSc: /(^|\W)(SSc|systemic sclerosis|系统性硬化)(\W|$)/i,
   NMOSD: /(^|\W)(NMOSD|neuromyelitis optica|视神经脊髓炎)(\W|$)/i,
-  AE: /(^|\W)(AE|AiE|autoimmune encephalitis|自身免疫性脑炎)(\W|$)/i
+  AE: /(^|\W)(AE|AiE|autoimmune encephalitis|自身免疫性脑炎)(\W|$)/i,
+  CIDP: /(^|\W)(CIDP|chronic inflammatory demyelinating polyneuropathy|慢性炎性脱髓鞘)(\W|$)/i
 };
 const topicShortNames = new Set();
 for (const topic of datasets.topic.filter((record) => record.kind === "疾病专题")) {

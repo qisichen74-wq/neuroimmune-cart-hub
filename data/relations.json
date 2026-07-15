@@ -538,5 +538,55 @@
     "relation": "推进",
     "rationale": "徐州医科大学双靶点项目对应ChiCTR2200061267。",
     "confidence": "高"
+  },
+  {
+    "id": "rel-nmosd-ct103a-phase1",
+    "source_type": "research",
+    "source_id": "pmid-36596762",
+    "target_type": "trial",
+    "target_id": "ct103a-neuro-autoimmune-phase1",
+    "relation": "构成临床证据",
+    "rationale": "12例Phase 1中期结果来自NCT04561557对应CT103A研究。",
+    "confidence": "高"
+  },
+  {
+    "id": "rel-nmosd-ct103a-singlecell",
+    "source_type": "research",
+    "source_id": "pmid-38728414",
+    "target_type": "trial",
+    "target_id": "ct103a-neuro-autoimmune-phase1",
+    "relation": "构成机制证据",
+    "rationale": "单细胞研究分析CT103A NMOSD队列的配对脑脊液和血液样本。",
+    "confidence": "高"
+  },
+  {
+    "id": "rel-cidp-ct103a-cases",
+    "source_type": "research",
+    "source_id": "pmid-40425008",
+    "target_type": "trial",
+    "target_id": "ct103a-neuro-autoimmune-phase1",
+    "relation": "构成病例证据",
+    "rationale": "两例CIDP病例来自NCT04561557对应CT103A研究。",
+    "confidence": "高"
+  },
+  {
+    "id": "rel-nmosd-ct103a-program",
+    "source_type": "research",
+    "source_id": "pmid-36596762",
+    "target_type": "company",
+    "target_id": "tongji-ct103a-neuro",
+    "relation": "构成临床证据",
+    "rationale": "正式发表结果直接支撑同济医院CT103A神经免疫项目。",
+    "confidence": "高"
+  },
+  {
+    "id": "rel-cidp-ct103a-program",
+    "source_type": "research",
+    "source_id": "pmid-40425008",
+    "target_type": "company",
+    "target_id": "tongji-ct103a-neuro",
+    "relation": "构成病例证据",
+    "rationale": "正式发表结果直接支撑同济医院CT103A CIDP项目。",
+    "confidence": "高"
   }
 ]

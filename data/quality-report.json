@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-07-15T16:32:38.304Z",
-  "as_of": "2026-07-15",
+  "generated_at": "2026-07-15T16:44:14.647Z",
+  "as_of": "2026-07-16",
   "policy_version": "1.0.0",
   "status": "需关注",
   "score": 82,
   "summary": {
-    "total_records": 154,
+    "total_records": 158,
     "datasets": 6,
     "errors": 0,
     "warnings": 18,
-    "verified": 145,
-    "internally_reviewed": 9,
+    "verified": 148,
+    "internally_reviewed": 10,
     "pending_external_verification": 0,
     "stale": 17,
     "source_checks": {
@@ -43,8 +43,8 @@
     {
       "type": "research",
       "label": "研究证据",
-      "records": 20,
-      "verified": 20,
+      "records": 23,
+      "verified": 23,
       "pending": 0,
       "stale": 0
     },
@@ -83,7 +83,7 @@
     {
       "type": "topic",
       "label": "专题档案",
-      "records": 5,
+      "records": 6,
       "verified": 0,
       "pending": 0,
       "stale": 0
@@ -658,6 +658,69 @@
         "publication_type"
       ],
       "note": "已通过NCBI ESummary与PubMed记录逐字段核对。",
+      "stale": false
+    },
+    {
+      "record_type": "research",
+      "record_id": "pmid-36596762",
+      "status": "已核验",
+      "confidence": "高",
+      "source_ids": [
+        "ncbi-pubmed"
+      ],
+      "last_verified_at": "2026-07-16",
+      "next_review_at": "2026-08-15",
+      "verified_fields": [
+        "pmid",
+        "official_title",
+        "doi",
+        "journal",
+        "publish_date",
+        "publication_type"
+      ],
+      "note": "已通过NCBI ESummary、PubMed记录与期刊摘要逐字段核对。",
+      "stale": false
+    },
+    {
+      "record_type": "research",
+      "record_id": "pmid-38728414",
+      "status": "已核验",
+      "confidence": "高",
+      "source_ids": [
+        "ncbi-pubmed"
+      ],
+      "last_verified_at": "2026-07-16",
+      "next_review_at": "2026-08-15",
+      "verified_fields": [
+        "pmid",
+        "official_title",
+        "doi",
+        "journal",
+        "publish_date",
+        "publication_type"
+      ],
+      "note": "已通过NCBI ESummary、PubMed记录与期刊摘要逐字段核对。",
+      "stale": false
+    },
+    {
+      "record_type": "research",
+      "record_id": "pmid-40425008",
+      "status": "已核验",
+      "confidence": "高",
+      "source_ids": [
+        "ncbi-pubmed"
+      ],
+      "last_verified_at": "2026-07-16",
+      "next_review_at": "2026-08-15",
+      "verified_fields": [
+        "pmid",
+        "official_title",
+        "doi",
+        "journal",
+        "publish_date",
+        "publication_type"
+      ],
+      "note": "已通过NCBI ESummary、PubMed记录与期刊摘要逐字段核对。",
       "stale": false
     },
     {
@@ -3509,6 +3572,17 @@
     {
       "record_type": "topic",
       "record_id": "autoimmune-encephalitis",
+      "status": "内部审核",
+      "confidence": "中",
+      "source_ids": [
+        "internal-curation"
+      ],
+      "last_verified_at": "2026-07-10",
+      "stale": false
+    },
+    {
+      "record_type": "topic",
+      "record_id": "chronic-inflammatory-demyelinating-polyneuropathy",
       "status": "内部审核",
       "confidence": "中",
       "source_ids": [

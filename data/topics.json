@@ -181,11 +181,11 @@
     "short_name": "NMOSD",
     "kind": "疾病专题",
     "priority": "高",
-    "maturity": "Phase 1与IIT早期验证",
-    "summary": "NMOSD目前以多病种篮式早期试验为主，HBI0101进入Phase 1，其余项目主要处于中国IIT阶段。",
-    "thesis": "NMOSD项目判断应以AQP4-IgG阳性患者的实际入组、年复发率、EDSS、MRI和长期免疫重建为核心，不能用同一产品在其他适应症的阶段替代。",
+    "maturity": "Phase 1人体证据",
+    "summary": "NMOSD已有CT103A抗BCMA CAR-T的12例Phase 1人体结果及配对脑脊液/血液单细胞机制研究，其他项目仍以早期篮式试验为主。",
+    "thesis": "现有证据支持CT103A可清除中枢与外周浆细胞谱系并产生短期无复发信号，但应以AQP4-IgG、年复发率、EDSS、MRI和长期免疫重建验证持续获益。",
     "unmet_need": "复发可快速累积视力和脊髓功能损伤，难治患者仍需要更深、更持久且可预测的疾病控制。",
-    "next_catalyst": "HBI0101 Phase 1及QH103、C-CAR168、CT103A等IIT披露NMOSD独立队列的入组与早期结果。",
+    "next_catalyst": "CT103A队列更长期复发与功能结局，以及HBI0101、QH103、C-CAR168等项目的NMOSD独立队列结果。",
     "keywords": [
       "NMOSD",
       "AQP4-IgG",
@@ -204,7 +204,10 @@
       "长期复发和视力结局尚未披露"
     ],
     "related": {
-      "research": [],
+      "research": [
+        "pmid-36596762",
+        "pmid-38728414"
+      ],
       "company": [
         "tongji-qh103",
         "hadassah-hbi0101",
@@ -266,6 +269,53 @@
         "tianjin-ucar19bcma-neuro",
         "huashan-c-car168-cns-autoimmune",
         "ct103a-neuro-autoimmune-phase1",
+        "tongji-rd0605-neuro-iit"
+      ]
+    }
+  },
+  {
+    "id": "chronic-inflammatory-demyelinating-polyneuropathy",
+    "name": "慢性炎性脱髓鞘性多发性神经病（CIDP）",
+    "short_name": "CIDP",
+    "kind": "疾病专题",
+    "priority": "中",
+    "maturity": "病例证据与IIT",
+    "summary": "CIDP已有2例抗BCMA CAR-T病例研究，两例均实现早期无药缓解，但持续性出现分化。",
+    "thesis": "CIDP的核心判断是深度浆细胞清除能否带来持久神经功能恢复，以及感染、B细胞再激活和自身抗体复现是否预测复发。",
+    "unmet_need": "部分患者对IVIG、激素、血浆置换和B细胞治疗反应不足或需要长期维持，仍持续累积运动与感觉功能损伤。",
+    "next_catalyst": "CT103A病例扩大与长期随访，以及KITE-363、QH103和RD06-05等试验披露CIDP独立入组及INCAT结果。",
+    "keywords": [
+      "CIDP",
+      "慢性炎性脱髓鞘性多发性神经病",
+      "BCMA",
+      "INCAT",
+      "无药缓解"
+    ],
+    "key_questions": [
+      "无药缓解能否在更大样本中持续",
+      "感染后B细胞再激活是否可预测复发",
+      "INCAT、MRC、神经传导和患者功能能否同步改善"
+    ],
+    "evidence_gaps": [
+      "当前正式临床证据仅2例",
+      "缺少对照组和标准化长期随访",
+      "CIDP亚型、自身抗体与疗效关系尚不清楚"
+    ],
+    "related": {
+      "research": [
+        "pmid-40425008"
+      ],
+      "company": [
+        "tongji-ct103a-neuro",
+        "gilead-kite363",
+        "tongji-qh103",
+        "tianjin-xiniao-ucar"
+      ],
+      "trial": [
+        "ct103a-neuro-autoimmune-phase1",
+        "kite363-neuro-phase1",
+        "qh103-neuro-autoimmune",
+        "tianjin-ucar19bcma-neuro",
         "tongji-rd0605-neuro-iit"
       ]
     }
