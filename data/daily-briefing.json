@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-14T15:13:16.013Z",
+  "generated_at": "2026-07-15T05:30:05.813Z",
   "as_of": "2026-07-14",
   "headline": {
     "id": "pmid-42251699",
@@ -13,8 +13,8 @@
     "formal_records": 138,
     "externally_verified": 128,
     "active_priority_trials": 25,
-    "candidate_items": 862,
-    "quality_score": 84
+    "candidate_items": 864,
+    "quality_score": 83
   },
   "verified_updates": [
     {
@@ -196,6 +196,12 @@
     {
       "code": "registry_record_stale",
       "record_type": "trial",
+      "record_id": "huashan-c-car168-cns-autoimmune",
+      "message": "注册库记录超过180天未更新，当前状态需谨慎解释"
+    },
+    {
+      "code": "registry_record_stale",
+      "record_type": "trial",
       "record_id": "ct103a-neuro-autoimmune-phase1",
       "message": "注册库记录超过180天未更新，当前状态需谨慎解释"
     },
@@ -216,18 +222,6 @@
       "record_type": "system",
       "record_id": "-",
       "message": "监管来源访问失败：国家药品监督管理局"
-    },
-    {
-      "code": "regulatory_source_failed",
-      "record_type": "system",
-      "record_id": "-",
-      "message": "监管来源访问失败：NMPA药物临床试验审批"
-    },
-    {
-      "code": "regulatory_source_failed",
-      "record_type": "system",
-      "record_id": "-",
-      "message": "监管来源访问失败：NMPA药物临床试验登记"
     }
   ],
   "candidate_queue": [

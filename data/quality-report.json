@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-07-14T15:13:16.017Z",
+  "generated_at": "2026-07-15T05:30:05.631Z",
   "as_of": "2026-07-14",
   "policy_version": "1.0.0",
   "status": "需关注",
-  "score": 84,
+  "score": 83,
   "summary": {
     "total_records": 138,
     "datasets": 6,
     "errors": 0,
-    "warnings": 16,
+    "warnings": 17,
     "verified": 128,
     "internally_reviewed": 10,
     "pending_external_verification": 0,
-    "stale": 15,
+    "stale": 16,
     "source_checks": {
       "records_checked": 48,
       "successful": 48,
@@ -20,11 +20,11 @@
       "differences": 0
     },
     "discovery": {
-      "candidates": 862,
+      "candidates": 864,
       "research": 537,
       "trials": 310,
-      "official_updates": 15,
-      "immediate_review": 106,
+      "official_updates": 17,
+      "immediate_review": 108,
       "watchlist": 208,
       "background": 44,
       "low_relevance": 504,
@@ -62,7 +62,7 @@
       "records": 37,
       "verified": 37,
       "pending": 0,
-      "stale": 15
+      "stale": 16
     },
     {
       "type": "safety",
@@ -198,6 +198,13 @@
       "severity": "warning",
       "code": "registry_record_stale",
       "record_type": "trial",
+      "record_id": "huashan-c-car168-cns-autoimmune",
+      "message": "注册库记录超过180天未更新，当前状态需谨慎解释"
+    },
+    {
+      "severity": "warning",
+      "code": "registry_record_stale",
+      "record_type": "trial",
       "record_id": "ct103a-neuro-autoimmune-phase1",
       "message": "注册库记录超过180天未更新，当前状态需谨慎解释"
     },
@@ -221,20 +228,6 @@
       "record_type": "system",
       "record_id": "-",
       "message": "监管来源访问失败：国家药品监督管理局"
-    },
-    {
-      "severity": "warning",
-      "code": "regulatory_source_failed",
-      "record_type": "system",
-      "record_id": "-",
-      "message": "监管来源访问失败：NMPA药物临床试验审批"
-    },
-    {
-      "severity": "warning",
-      "code": "regulatory_source_failed",
-      "record_type": "system",
-      "record_id": "-",
-      "message": "监管来源访问失败：NMPA药物临床试验登记"
     }
   ],
   "verification": [

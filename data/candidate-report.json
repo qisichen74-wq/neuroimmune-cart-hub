@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-14T15:07:50.265Z",
+  "generated_at": "2026-07-15T05:26:40.609Z",
   "policy": "Candidates are discovery leads only. They must be verified against primary records before entering production datasets.",
   "query_window": "Publications since 2025/01/01; complete paginated ClinicalTrials.gov results; tracked official websites",
   "summary": {
-    "candidates": 862,
+    "candidates": 864,
     "research": 537,
     "trials": 310,
-    "official_updates": 15,
-    "immediate_review": 106,
+    "official_updates": 17,
+    "immediate_review": 108,
     "watchlist": 208,
     "background": 44,
     "low_relevance": 504,
@@ -153,7 +153,7 @@
       "assets_monitored": 21,
       "fingerprint": "ca05d6dacb65a4d439503b8664f54aa2878bd54b8a2cd038a1d4c1f9bd53d0f6",
       "fingerprint_version": 2,
-      "changed": false,
+      "changed": true,
       "sentinel_check": {
         "expected": [
           "https://www.iasobio.com/info.php?id=251",
@@ -177,7 +177,7 @@
       "assets_monitored": 11,
       "fingerprint": "f2c47d8362e5354c97164ea6b19fa1e2a0fbd226fca7da7a8ee23bb7bd8e3dfe",
       "fingerprint_version": 2,
-      "changed": false,
+      "changed": true,
       "sentinel_check": {
         "expected": [],
         "found": [],
@@ -1985,6 +1985,50 @@
         "正式注册试验",
         "命中重点实体：iCell Gene Therapeutics / ICG318",
         "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "official_update",
+      "external_id": "official-change:iaso-official:ca05d6dacb65",
+      "title": "IASO Bio Official News & Pipeline 页面或管线资产发生变化",
+      "source": "IASO Bio Official News & Pipeline",
+      "source_url": "https://www.iasobio.com/news.php?colid=302",
+      "publication_date": "2026-07-15",
+      "matched_diseases": [],
+      "matched_entities": [
+        "iaso-ct103a"
+      ],
+      "query_matches": [
+        "official:iaso-official:change"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 10,
+      "triage_tier": "立即核验",
+      "triage_reasons": [
+        "企业官网一手披露",
+        "命中重点实体：IASO Bio / Eque-cel / CT103A"
+      ]
+    },
+    {
+      "candidate_type": "official_update",
+      "external_id": "official-change:icell-official:f2c47d8362e5",
+      "title": "iCell Gene Therapeutics Official Website 页面或管线资产发生变化",
+      "source": "iCell Gene Therapeutics Official Website",
+      "source_url": "https://www.icellgene.com/",
+      "publication_date": "2026-07-15",
+      "matched_diseases": [],
+      "matched_entities": [
+        "icell-icg318"
+      ],
+      "query_matches": [
+        "official:icell-official:change"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 10,
+      "triage_tier": "立即核验",
+      "triage_reasons": [
+        "企业官网一手披露",
+        "命中重点实体：iCell Gene Therapeutics / ICG318"
       ]
     },
     {
@@ -19183,9 +19227,7 @@
       "journal": "Rheumatology (Oxford, England)",
       "doi": "10.1093/rheumatology/keag195",
       "publication_type": [
-        "Journal Article",
-        "Case Reports",
-        "Review"
+        "Journal Article"
       ],
       "matched_diseases": [],
       "matched_entities": [],
@@ -21385,7 +21427,8 @@
       "journal": "Current opinion in rheumatology",
       "doi": "10.1097/BOR.0000000000001160",
       "publication_type": [
-        "Journal Article"
+        "Journal Article",
+        "Review"
       ],
       "matched_diseases": [],
       "matched_entities": [],
