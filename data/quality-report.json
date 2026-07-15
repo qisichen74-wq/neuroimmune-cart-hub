@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-07-15T16:12:34.237Z",
+  "generated_at": "2026-07-15T16:32:38.304Z",
   "as_of": "2026-07-15",
   "policy_version": "1.0.0",
   "status": "需关注",
   "score": 82,
   "summary": {
-    "total_records": 153,
+    "total_records": 154,
     "datasets": 6,
     "errors": 0,
     "warnings": 18,
     "verified": 145,
-    "internally_reviewed": 8,
+    "internally_reviewed": 9,
     "pending_external_verification": 0,
     "stale": 17,
     "source_checks": {
@@ -83,7 +83,7 @@
     {
       "type": "topic",
       "label": "专题档案",
-      "records": 4,
+      "records": 5,
       "verified": 0,
       "pending": 0,
       "stale": 0
@@ -96,6 +96,8 @@
     "来源链接与PMID一致性",
     "试验注册号与注册页一致性",
     "注册记录更新时间",
+    "专题适应症与试验匹配",
+    "专题关联去重",
     "官方API逐字段差异",
     "官方来源检查时效",
     "候选情报发现时效",
@@ -3495,7 +3497,18 @@
     },
     {
       "record_type": "topic",
-      "record_id": "nmosd-autoimmune-encephalitis",
+      "record_id": "neuromyelitis-optica-spectrum-disorder",
+      "status": "内部审核",
+      "confidence": "中",
+      "source_ids": [
+        "internal-curation"
+      ],
+      "last_verified_at": "2026-07-10",
+      "stale": false
+    },
+    {
+      "record_type": "topic",
+      "record_id": "autoimmune-encephalitis",
       "status": "内部审核",
       "confidence": "中",
       "source_ids": [

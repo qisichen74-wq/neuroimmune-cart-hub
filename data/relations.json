@@ -498,5 +498,45 @@
     "relation": "构成早期人体证据",
     "rationale": "正式论文与对应项目或试验建立直接证据关联。",
     "confidence": "高"
+  },
+  {
+    "id": "rel-tangdu-mg-trial",
+    "source_type": "company",
+    "source_id": "tangdu-cd19bcma-mg",
+    "target_type": "trial",
+    "target_id": "tangdu-cd19bcma-mg-iit",
+    "relation": "推进",
+    "rationale": "唐都医院Ting Chang团队项目对应NCT06371040。",
+    "confidence": "高"
+  },
+  {
+    "id": "rel-tongji-ct103a-trial",
+    "source_type": "company",
+    "source_id": "tongji-ct103a-neuro",
+    "target_type": "trial",
+    "target_id": "ct103a-neuro-autoimmune-phase1",
+    "relation": "推进",
+    "rationale": "同济医院CT103A项目对应NCT04561557。",
+    "confidence": "高"
+  },
+  {
+    "id": "rel-tongji-rd0605-trial",
+    "source_type": "company",
+    "source_id": "tongji-ct103a-neuro",
+    "target_type": "trial",
+    "target_id": "tongji-rd0605-neuro-iit",
+    "relation": "推进",
+    "rationale": "同济医院RD06-05项目对应NCT07337785。",
+    "confidence": "高"
+  },
+  {
+    "id": "rel-xuzhou-mg-trial",
+    "source_type": "company",
+    "source_id": "xuzhou-bcmacd19-mg",
+    "target_type": "trial",
+    "target_id": "xuzhou-bcmacd19-mg-phase1",
+    "relation": "推进",
+    "rationale": "徐州医科大学双靶点项目对应ChiCTR2200061267。",
+    "confidence": "高"
   }
 ]

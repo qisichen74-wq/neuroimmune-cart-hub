@@ -47,7 +47,6 @@
         "kyv101-ms-phase1",
         "tongji-rd0605-neuro-iit",
         "ct103a-neuro-autoimmune-phase1",
-        "kyv101-autoimmune-ltfu",
         "hadassah-hbi0101-autoimmune",
         "renji-c-car168-autoimmune",
         "huashan-c-car168-cns-autoimmune"
@@ -108,7 +107,6 @@
         "tangdu-cd19bcma-mg-iit",
         "tongji-rd0605-neuro-iit",
         "xuzhou-bcmacd19-mg-phase1",
-        "kyv101-autoimmune-ltfu",
         "arcellx-anitocel-mg-phase1",
         "cabaletta-resecel-mg-phase12",
         "hadassah-hbi0101-autoimmune",
@@ -164,7 +162,6 @@
       ],
       "trial": [
         "relma-autoimmune-ssc",
-        "kyv101-autoimmune-ltfu",
         "zju-ucar19bcma-autoimmune",
         "magicrna-hn2302-autoimmune",
         "tongji-v001bcma-autoimmune",
@@ -179,32 +176,32 @@
     }
   },
   {
-    "id": "nmosd-autoimmune-encephalitis",
-    "name": "NMOSD与自身免疫性脑炎",
-    "short_name": "NMOSD / AE",
+    "id": "neuromyelitis-optica-spectrum-disorder",
+    "name": "视神经脊髓炎谱系病（NMOSD）",
+    "short_name": "NMOSD",
     "kind": "疾病专题",
-    "priority": "中",
-    "maturity": "Phase 1注册试验起步",
-    "summary": "QH103已进入覆盖NMOSD、AE及其他抗体介导神经免疫疾病的Phase 1注册试验。",
-    "thesis": "当前最重要的是观察通用型CD19 CAR-γδT的早期安全性、跨病种入组结构和药效学，而不是依据极小样本过早形成疗效结论。",
-    "unmet_need": "复发或难治患者可能快速积累神经功能损伤，需要更深度和持久的疾病控制。",
-    "next_catalyst": "NCT07526493首个剂量队列的DLT、CRS、ICANS、GVHD和药效学数据。",
+    "priority": "高",
+    "maturity": "Phase 1与IIT早期验证",
+    "summary": "NMOSD目前以多病种篮式早期试验为主，HBI0101进入Phase 1，其余项目主要处于中国IIT阶段。",
+    "thesis": "NMOSD项目判断应以AQP4-IgG阳性患者的实际入组、年复发率、EDSS、MRI和长期免疫重建为核心，不能用同一产品在其他适应症的阶段替代。",
+    "unmet_need": "复发可快速累积视力和脊髓功能损伤，难治患者仍需要更深、更持久且可预测的疾病控制。",
+    "next_catalyst": "HBI0101 Phase 1及QH103、C-CAR168、CT103A等IIT披露NMOSD独立队列的入组与早期结果。",
     "keywords": [
       "NMOSD",
-      "AE",
-      "自身免疫性脑炎",
-      "研究者发起",
-      "中国IIT"
+      "AQP4-IgG",
+      "视神经脊髓炎",
+      "年复发率",
+      "EDSS"
     ],
     "key_questions": [
-      "病例信号能否转化为规范化连续入组",
-      "制造与毒性管理是否能够跨中心复制",
-      "神经功能终点如何标准化"
+      "NMOSD实际入组人数和AQP4-IgG分层是否充分",
+      "年复发率、EDSS与MRI改善能否形成一致证据",
+      "深度B细胞或浆细胞清除能否降低长期复发"
     ],
     "evidence_gaps": [
-      "公开病例缺少统一分母",
-      "方案和产品信息不完整",
-      "长期复发与功能结局缺失"
+      "多数项目采用多病种篮式设计",
+      "尚缺NMOSD专属对照研究",
+      "长期复发和视力结局尚未披露"
     ],
     "related": {
       "research": [],
@@ -213,14 +210,63 @@
         "hadassah-hbi0101",
         "renji-c-car168",
         "huashan-c-car168-cns",
-        "iaso-equecel-autoimmune"
+        "iaso-equecel-autoimmune",
+        "tianjin-qt019c",
+        "tianjin-xiniao-ucar"
       ],
       "trial": [
-        "qh103-neuro-autoimmune",
         "hadassah-hbi0101-autoimmune",
+        "qh103-neuro-autoimmune",
+        "tianjin-ucar19bcma-neuro",
+        "qt019c-neuro-phase1",
         "renji-c-car168-autoimmune",
         "huashan-c-car168-cns-autoimmune",
         "ct103a-neuro-autoimmune-phase1"
+      ]
+    }
+  },
+  {
+    "id": "autoimmune-encephalitis",
+    "name": "自身免疫性脑炎（AE）",
+    "short_name": "AE",
+    "kind": "疾病专题",
+    "priority": "中",
+    "maturity": "IIT早期探索",
+    "summary": "自身免疫性脑炎的CAR-T开发仍处IIT早期阶段，现有项目均为覆盖多个神经免疫病的篮式试验。",
+    "thesis": "AE必须按致病抗体、既往治疗和神经功能状态独立分析，并使用CASE、mRS、复发率和认知结局评价，不能沿用NMOSD或MS的阶段与终点。",
+    "unmet_need": "部分抗体阳性患者经激素、IVIG、血浆置换及B细胞治疗后仍复发或遗留严重认知、精神和癫痫负担。",
+    "next_catalyst": "QH103、C-CAR168、CT103A及RD06-05 IIT披露AE实际入组、CASE/mRS变化和复发随访。",
+    "keywords": [
+      "AE",
+      "自身免疫性脑炎",
+      "CASE",
+      "mRS",
+      "致病抗体"
+    ],
+    "key_questions": [
+      "不同抗体亚型能否共享CAR-T治疗逻辑",
+      "CASE、mRS与认知结局能否持续改善",
+      "如何区分ICANS、原病波动和既存神经损伤"
+    ],
+    "evidence_gaps": [
+      "尚无AE专属Sponsor-initiated试验",
+      "公开资料未披露AE独立队列结果",
+      "抗体亚型、认知和长期功能结局不足"
+    ],
+    "related": {
+      "research": [],
+      "company": [
+        "tongji-qh103",
+        "tianjin-xiniao-ucar",
+        "huashan-c-car168-cns",
+        "tongji-ct103a-neuro"
+      ],
+      "trial": [
+        "qh103-neuro-autoimmune",
+        "tianjin-ucar19bcma-neuro",
+        "huashan-c-car168-cns-autoimmune",
+        "ct103a-neuro-autoimmune-phase1",
+        "tongji-rd0605-neuro-iit"
       ]
     }
   }

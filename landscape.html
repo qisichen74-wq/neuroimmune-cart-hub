@@ -64,9 +64,6 @@
   .hero {
     padding: 36px 0 28px;
     border-bottom: 1px solid var(--border);
-    display: grid;
-    grid-template-columns: minmax(0, 1.2fr) minmax(280px, 360px);
-    gap: 18px;
   }
 
   .breadcrumb { font-size: 12px; color: var(--text3); margin-bottom: 12px; }
@@ -320,29 +317,18 @@
     <div>
       <div class="breadcrumb"><a href="index.html">首页</a> / 竞争格局</div>
       <div class="hero-kicker">Landscape Tracker</div>
-      <h1 class="hero-title">按真实开发成熟度比较神经免疫 CAR-T 项目</h1>
-      <p class="hero-sub">明确区分研究者发起试验与申办方发起试验，并从 pivotal study、Ph2、Ph1 到 IIT 依次展示。</p>
+      <h1 class="hero-title">竞争格局</h1>
       <div class="hero-notes">
-        <span class="hero-note">优先看平台代表性与推进速度</span>
-        <span class="hero-note">学术中心往往先于公司给出早期信号</span>
         <span class="hero-note" id="update-note">数据状态：同步中</span>
       </div>
     </div>
-
-    <aside class="hero-card">
-      <div class="hero-card-label">这页怎么用</div>
-      <div class="hero-card-title">先筛公司，再看路线，最后看观察点</div>
-      <p class="hero-card-copy">综合阶段、适应症覆盖、证据锚点与关键观察项评估项目位置。</p>
-      <div class="hero-card-foot" id="hero-card-foot">等待同步</div>
-    </aside>
   </section>
 
   <section class="section">
     <div class="section-head">
       <div>
         <div class="section-kicker">Market Readout</div>
-        <h2 class="section-title">格局先看四件事</h2>
-        <p class="section-desc">汇总玩家数量、区域分布、高优先级项目与适应症覆盖。</p>
+        <h2 class="section-title">格局概览</h2>
       </div>
     </div>
     <div class="stats-grid" id="stats-grid"></div>
@@ -352,8 +338,7 @@
     <div class="section-head">
       <div>
         <div class="section-kicker">Company Matrix</div>
-        <h2 class="section-title">公司矩阵与路线比较</h2>
-        <p class="section-desc">左侧筛选帮助你按优先级、区域和适应症缩小范围，右侧表格则保留扫描效率，适合拿来做组会、周报和竞品对照。</p>
+        <h2 class="section-title">公司与项目矩阵</h2>
       </div>
       <div class="section-meta" id="result-info">正在加载...</div>
     </div>
@@ -425,8 +410,7 @@
     <div class="section-head">
       <div>
         <div class="section-kicker">Priority Companies</div>
-        <h2 class="section-title">最值得持续追踪的重点玩家</h2>
-        <p class="section-desc">集中呈现重点项目的竞争意义与关键观察项。</p>
+        <h2 class="section-title">重点项目</h2>
       </div>
     </div>
     <div class="company-grid" id="company-grid"></div>
@@ -436,8 +420,7 @@
     <div class="section-head">
       <div>
         <div class="section-kicker">Interpretation</div>
-        <h2 class="section-title">当前格局最重要的三条判断</h2>
-        <p class="section-desc">基于阶段、技术路线与适应症布局形成市场判断。</p>
+        <h2 class="section-title">格局判断</h2>
       </div>
     </div>
     <div class="signal-grid" id="signal-grid"></div>
@@ -481,7 +464,6 @@ async function loadLandscape() {
   const today = new Date().toLocaleDateString("zh-CN");
   document.getElementById("footer-update").textContent = "更新于 " + today;
   document.getElementById("update-note").textContent = "数据状态：最近同步 " + today;
-  document.getElementById("hero-card-foot").textContent = "当前追踪 " + allCompanies.length + " 个重点玩家";
 }
 
 function normalizeData() {

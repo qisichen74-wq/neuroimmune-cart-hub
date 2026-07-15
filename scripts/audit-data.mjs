@@ -109,7 +109,27 @@ for (const relation of relations) {
 
 for (const topic of datasets.topic) {
   for (const [type, ids] of Object.entries(topic.related || {})) {
+    if (new Set(ids).size !== ids.length) addIssue("error", "duplicate_topic_reference", `专题内存在重复关联：${type}`, "topic", topic.id);
     for (const id of ids) if (!idSets[type]?.has(id)) addIssue("error", "broken_topic_reference", `专题关联对象不存在：${type}/${id}`, "topic", topic.id);
+  }
+}
+
+const topicIndicationPatterns = {
+  MS: /(^|\W)(MS|multiple sclerosis|多发性硬化)(\W|$)/i,
+  MG: /(^|\W)(g?MG|myasthenia gravis|重症肌无力)(\W|$)/i,
+  SSc: /(^|\W)(SSc|systemic sclerosis|系统性硬化)(\W|$)/i,
+  NMOSD: /(^|\W)(NMOSD|neuromyelitis optica|视神经脊髓炎)(\W|$)/i,
+  AE: /(^|\W)(AE|AiE|autoimmune encephalitis|自身免疫性脑炎)(\W|$)/i
+};
+const topicShortNames = new Set();
+for (const topic of datasets.topic.filter((record) => record.kind === "疾病专题")) {
+  if (topicShortNames.has(topic.short_name)) addIssue("error", "duplicate_indication_topic", `适应症专题缩写重复：${topic.short_name}`, "topic", topic.id);
+  topicShortNames.add(topic.short_name);
+  const indicationPattern = topicIndicationPatterns[topic.short_name];
+  if (!indicationPattern) continue;
+  for (const trialId of topic.related?.trial || []) {
+    const trial = datasets.trial.find((record) => record.id === trialId);
+    if (trial && !indicationPattern.test(trial.indication || "")) addIssue("error", "topic_trial_indication_mismatch", `试验适应症不包含 ${topic.short_name}：${trialId}`, "topic", topic.id);
   }
 }
 
@@ -217,7 +237,7 @@ const report = {
   score,
   summary: { total_records: totalRecords, datasets: Object.keys(datasets).length, errors, warnings, verified, internally_reviewed: internallyReviewed, pending_external_verification: pending, stale: staleCount + registryStaleCount, source_checks: sourceSyncReport?.summary || null, discovery: candidateReport?.summary || null, regulatory: regulatoryReport?.summary || null },
   datasets: Object.entries(datasets).map(([type, records]) => ({ type, label: definitions[type].label, records: records.length, verified: verificationRows.filter((row) => row.record_type === type && row.status === "已核验" && !row.stale).length, pending: verificationRows.filter((row) => row.record_type === type && row.status === "待外部核验").length, stale: verificationRows.filter((row) => row.record_type === type && row.stale).length + issues.filter((issue) => issue.record_type === type && issue.code === "registry_record_stale").length })),
-  checks: ["必填字段", "重复ID", "日期格式与未来日期", "来源链接与PMID一致性", "试验注册号与注册页一致性", "注册记录更新时间", "官方API逐字段差异", "官方来源检查时效", "候选情报发现时效", "候选来源可用性", "NMPA/CDE监管入口可用性", "监管状态分级", "文献与事件日期一致性", "跨表引用完整性", "来源登记完整性", "核验覆盖与过期策略", "页面内部链接", "共享导航与本地资源"],
+  checks: ["必填字段", "重复ID", "日期格式与未来日期", "来源链接与PMID一致性", "试验注册号与注册页一致性", "注册记录更新时间", "专题适应症与试验匹配", "专题关联去重", "官方API逐字段差异", "官方来源检查时效", "候选情报发现时效", "候选来源可用性", "NMPA/CDE监管入口可用性", "监管状态分级", "文献与事件日期一致性", "跨表引用完整性", "来源登记完整性", "核验覆盖与过期策略", "页面内部链接", "共享导航与本地资源"],
   issues,
   verification: verificationRows
 };
