@@ -149,6 +149,7 @@
     grid-template-columns: 320px minmax(0, 1fr);
     gap: 18px;
   }
+  .overview-grid > * { min-width: 0; }
   .panel { padding: 16px; }
   .panel-title { font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text3); font-weight: 700; margin-bottom: 12px; }
   .filter-list { display: flex; flex-direction: column; gap: 6px; }
@@ -310,8 +311,6 @@
     <li><a href="topics.html">专题档案</a></li>
     <li><a href="research.html">研究情报</a></li>
     <li><a href="landscape.html" class="active">竞争格局</a></li>
-
-    <li><a href="safety.html">安全信号</a></li>
   </ul>
   <a class="nav-badge" href="search.html" style="text-decoration:none">全局检索</a>
 </nav>
@@ -321,8 +320,8 @@
     <div>
       <div class="breadcrumb"><a href="index.html">首页</a> / 竞争格局</div>
       <div class="hero-kicker">Landscape Tracker</div>
-      <h1 class="hero-title">从公司名单升级成能比较路线、阶段和优先级的竞争情报面板</h1>
-      <p class="hero-sub">比较重点玩家、技术路线、开发阶段与适应症布局，识别可能改变竞争态势的项目进展。</p>
+      <h1 class="hero-title">按真实开发成熟度比较神经免疫 CAR-T 项目</h1>
+      <p class="hero-sub">明确区分研究者发起试验与申办方发起试验，并从 pivotal study、Ph2、Ph1 到 IIT 依次展示。</p>
       <div class="hero-notes">
         <span class="hero-note">优先看平台代表性与推进速度</span>
         <span class="hero-note">学术中心往往先于公司给出早期信号</span>
@@ -371,6 +370,11 @@
         </div>
 
         <div class="panel" style="margin-bottom:12px;">
+          <div class="panel-title">开发阶段</div>
+          <div class="filter-list" id="stage-filters"></div>
+        </div>
+
+        <div class="panel" style="margin-bottom:12px;">
           <div class="panel-title">区域</div>
           <div class="filter-list" id="region-filters"></div>
         </div>
@@ -390,8 +394,8 @@
         <div class="toolbar">
           <span class="result-info" id="table-info">正在整理公司矩阵...</span>
           <select class="sort-select" id="sort-select">
+            <option value="stage">按开发成熟度排序</option>
             <option value="priority">按优先级排序</option>
-            <option value="stage">按阶段排序</option>
             <option value="region">按区域排序</option>
             <option value="company">按公司名排序</option>
           </select>
@@ -449,9 +453,10 @@
 <script>
 let allCompanies = [];
 let filteredCompanies = [];
-let sortBy = "priority";
+let sortBy = "stage";
 const activeFilters = {
   priority: "全部",
+  stage: "全部",
   region: "全部",
   focus: "全部"
 };
@@ -550,6 +555,15 @@ function renderStats() {
 function renderFilterPanels() {
   const regions = [...new Set(allCompanies.map((item) => item.region))].sort((a, b) => a.localeCompare(b, "en"));
   const focuses = [...new Set(allCompanies.flatMap((item) => item.focus || []))].sort((a, b) => a.localeCompare(b, "en"));
+  const stageOrder = ["Pivotal study", "Ph2", "Ph1", "IIT"];
+
+  document.getElementById("stage-filters").innerHTML = [
+    `<button class="filter-option active" data-group="stage" data-value="全部"><span>全部</span><span class="filter-count">${allCompanies.length}</span></button>`,
+    ...stageOrder.map((stage) => {
+      const count = allCompanies.filter((item) => item.development_band === stage).length;
+      return `<button class="filter-option" data-group="stage" data-value="${stage}"><span>${stage}</span><span class="filter-count">${count}</span></button>`;
+    })
+  ].join("");
 
   document.getElementById("region-filters").innerHTML = [
     `<button class="filter-option active" data-group="region" data-value="全部"><span>全部</span><span class="filter-count">${allCompanies.length}</span></button>`,
@@ -569,10 +583,10 @@ function renderFilterPanels() {
 }
 
 function renderMonitor() {
-  const academicCount = allCompanies.filter((item) => /academic|医院|研究者/i.test(item.company)).length;
+  const academicCount = allCompanies.filter((item) => item.study_sponsorship === "IIT").length;
   document.getElementById("monitor-list").innerHTML = [
-    ["学术先行对象", academicCount + " 个"],
-    ["产业化公司", (allCompanies.length - academicCount) + " 个"],
+    ["IIT项目", academicCount + " 个"],
+    ["Sponsor-initiated", (allCompanies.length - academicCount) + " 个"],
     ["高优先级占比", percentage(allCompanies.filter((item) => item.priority === "高").length, allCompanies.length)],
     ["中国相关对象", allCompanies.filter((item) => /china|国内/i.test(item.region)).length + " 个"]
   ].map(([label, value]) => `
@@ -586,9 +600,10 @@ function renderMonitor() {
 function applyFilters() {
   filteredCompanies = allCompanies.filter((item) => {
     const matchesPriority = activeFilters.priority === "全部" || item.priority === activeFilters.priority;
+    const matchesStage = activeFilters.stage === "全部" || item.development_band === activeFilters.stage;
     const matchesRegion = activeFilters.region === "全部" || item.region === activeFilters.region;
     const matchesFocus = activeFilters.focus === "全部" || (item.focus || []).includes(activeFilters.focus);
-    return matchesPriority && matchesRegion && matchesFocus;
+    return matchesPriority && matchesStage && matchesRegion && matchesFocus;
   });
 
   renderTable(filteredCompanies);
@@ -614,7 +629,7 @@ function renderTable(data) {
       </td>
       <td>${item.technology || "-"}</td>
       <td><div class="meta-tags">${(item.focus || []).map((focus) => `<span class="meta-tag">${focus}</span>`).join("")}</div></td>
-      <td>${item.stage || "-"}</td>
+      <td><strong>${item.development_band || "-"}</strong><div class="product-name">${item.study_sponsorship || "-"}</div><div style="margin-top:4px">${item.stage || "-"}</div></td>
       <td>${item.region || "-"}</td>
       <td>
         <span class="priority-badge priority-${item.priority || "低"}">${priorityLabel(item.priority)}</span>
@@ -644,7 +659,8 @@ function renderCompanyCards(data) {
       <p class="company-copy">${item.recent_update || item.evidence_anchor || "-"}</p>
       <div class="meta-tags" style="margin-top:10px;">
         <span class="meta-tag">${item.technology || "技术待补"}</span>
-        <span class="meta-tag">${item.stage || "阶段待补"}</span>
+        <span class="meta-tag">${item.development_band || "阶段待补"}</span>
+        <span class="meta-tag">${item.study_sponsorship || "发起类型待补"}</span>
         <span class="meta-tag">${item.region || "区域待补"}</span>
       </div>
       <div class="watch-list">
@@ -689,16 +705,8 @@ function renderInterpretation() {
 function sortComparator(a, b) {
   if (sortBy === "company") return a.company.localeCompare(b.company, "en");
   if (sortBy === "region") return a.region.localeCompare(b.region, "en");
-  if (sortBy === "stage") return stageWeight(b.stage) - stageWeight(a.stage);
-  return priorityWeight(b.priority) - priorityWeight(a.priority) || a.company.localeCompare(b.company, "en");
-}
-
-function stageWeight(stage) {
-  if (!stage) return 0;
-  if (/随机对照|rct/i.test(stage)) return 4;
-  if (/i期|ind/i.test(stage)) return 3;
-  if (/病例系列/i.test(stage)) return 2;
-  return 1;
+  if (sortBy === "stage") return (b.development_rank || 0) - (a.development_rank || 0) || priorityWeight(b.priority) - priorityWeight(a.priority) || a.company.localeCompare(b.company, "en");
+  return priorityWeight(b.priority) - priorityWeight(a.priority) || (b.development_rank || 0) - (a.development_rank || 0) || a.company.localeCompare(b.company, "en");
 }
 
 function priorityWeight(priority) {

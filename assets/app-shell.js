@@ -4,8 +4,7 @@
     ["专题档案", "topics.html"],
     ["研究情报", "research.html"],
     ["竞争格局", "landscape.html"],
-    ["安全信号", "safety.html"]
-    ,["项目对比", "comparison.html"],
+    ["项目对比", "comparison.html"],
     ["变化历史", "history.html"],
     ["候选池", "candidates.html"]
   ];
@@ -84,7 +83,7 @@
   const activeFile = (() => {
     if (currentFile === "detail.html") {
       const type = new URLSearchParams(location.search).get("type");
-      return { research: "research.html", company: "landscape.html", trial: "comparison.html", safety: "safety.html" }[type] || "";
+      return { research: "research.html", company: "landscape.html", trial: "comparison.html" }[type] || "";
     }
     if (currentFile === "topic.html") return "topics.html";
     return currentFile;

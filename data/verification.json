@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-07-14",
+  "as_of": "2026-07-15",
   "policy_version": "1.0.0",
   "status_definitions": {
     "已核验": "已与指定一手或权威来源逐字段比对",
@@ -2737,6 +2737,85 @@
       "note": "事件日期采用ClinicalTrials.gov最近更新发布日期。"
     },
     {
+      "record_type": "research",
+      "record_id": "pmid-42414128",
+      "status": "已核验",
+      "confidence": "高",
+      "last_verified_at": "2026-07-15",
+      "next_review_at": "2026-08-14",
+      "source_ids": [
+        "ncbi-pubmed"
+      ],
+      "verified_fields": [
+        "pmid",
+        "official_title",
+        "doi",
+        "journal",
+        "publish_date",
+        "publication_type"
+      ],
+      "note": "依据NCBI ESummary与PubMed XML核验；作者单位为上海儿童医学中心，文献类型为ahead-of-print来信。"
+    },
+    {
+      "record_type": "trial",
+      "record_id": "kyv101-autoimmune-ltfu",
+      "status": "已核验",
+      "confidence": "高",
+      "last_verified_at": "2026-07-15",
+      "next_review_at": "2026-07-22",
+      "source_ids": [
+        "clinicaltrials-gov"
+      ],
+      "verified_fields": [
+        "registry_id",
+        "official_title",
+        "sponsor",
+        "product",
+        "phase",
+        "status",
+        "enrollment",
+        "study_start",
+        "estimated_completion",
+        "registry_last_update"
+      ],
+      "note": "依据ClinicalTrials.gov API核验NCT07403188；该研究为观察性长期随访，重点跟踪延迟不良事件、RCL、CAR持续性和ADA。"
+    },
+    {
+      "record_type": "event",
+      "record_id": "event-nct07403188-update",
+      "status": "已核验",
+      "confidence": "高",
+      "last_verified_at": "2026-07-15",
+      "next_review_at": "2026-07-22",
+      "source_ids": [
+        "clinicaltrials-gov"
+      ],
+      "verified_fields": [
+        "date",
+        "status",
+        "source_url",
+        "entities"
+      ],
+      "note": "事件日期采用ClinicalTrials.gov最近更新发布日期。"
+    },
+    {
+      "record_type": "event",
+      "record_id": "event-feed-42414128",
+      "status": "已核验",
+      "confidence": "高",
+      "last_verified_at": "2026-07-15",
+      "next_review_at": "2026-08-14",
+      "source_ids": [
+        "ncbi-pubmed"
+      ],
+      "verified_fields": [
+        "date",
+        "source_url",
+        "entities"
+      ],
+      "note": "事件日期采用PubMed发布日期。"
+    },
+    {
       "record_type": "event",
       "record_id": "event-feed-41612420",
       "status": "已核验",
@@ -2752,6 +2831,268 @@
         "entities"
       ],
       "note": "事件日期采用PubMed发布日期。"
+    },
+    {
+      "record_type": "research",
+      "record_id": "pmid-37353278",
+      "status": "已核验",
+      "confidence": "高",
+      "last_verified_at": "2026-07-15",
+      "next_review_at": "2026-08-14",
+      "source_ids": [
+        "ncbi-pubmed"
+      ],
+      "verified_fields": [
+        "pmid",
+        "official_title",
+        "doi",
+        "journal",
+        "publish_date",
+        "publication_type"
+      ],
+      "note": "已通过NCBI ESummary与PubMed记录逐字段核对。"
+    },
+    {
+      "record_type": "research",
+      "record_id": "pmid-40856088",
+      "status": "已核验",
+      "confidence": "高",
+      "last_verified_at": "2026-07-15",
+      "next_review_at": "2026-08-14",
+      "source_ids": [
+        "ncbi-pubmed"
+      ],
+      "verified_fields": [
+        "pmid",
+        "official_title",
+        "doi",
+        "journal",
+        "publish_date",
+        "publication_type"
+      ],
+      "note": "已通过NCBI ESummary与PubMed记录逐字段核对。"
+    },
+    {
+      "record_type": "research",
+      "record_id": "pmid-41514038",
+      "status": "已核验",
+      "confidence": "高",
+      "last_verified_at": "2026-07-15",
+      "next_review_at": "2026-08-14",
+      "source_ids": [
+        "ncbi-pubmed"
+      ],
+      "verified_fields": [
+        "pmid",
+        "official_title",
+        "doi",
+        "journal",
+        "publish_date",
+        "publication_type"
+      ],
+      "note": "已通过NCBI ESummary与PubMed记录逐字段核对。"
+    },
+    {
+      "record_type": "research",
+      "record_id": "pmid-38409527",
+      "status": "已核验",
+      "confidence": "高",
+      "last_verified_at": "2026-07-15",
+      "next_review_at": "2026-08-14",
+      "source_ids": [
+        "ncbi-pubmed"
+      ],
+      "verified_fields": [
+        "pmid",
+        "official_title",
+        "doi",
+        "journal",
+        "publish_date",
+        "publication_type"
+      ],
+      "note": "已通过NCBI ESummary与PubMed记录逐字段核对。"
+    },
+    {
+      "record_type": "research",
+      "record_id": "pmid-41245531",
+      "status": "已核验",
+      "confidence": "高",
+      "last_verified_at": "2026-07-15",
+      "next_review_at": "2026-08-14",
+      "source_ids": [
+        "ncbi-pubmed"
+      ],
+      "verified_fields": [
+        "pmid",
+        "official_title",
+        "doi",
+        "journal",
+        "publish_date",
+        "publication_type"
+      ],
+      "note": "已通过NCBI ESummary与PubMed记录逐字段核对。"
+    },
+    {
+      "record_type": "research",
+      "record_id": "pmid-38554710",
+      "status": "已核验",
+      "confidence": "高",
+      "last_verified_at": "2026-07-15",
+      "next_review_at": "2026-08-14",
+      "source_ids": [
+        "ncbi-pubmed"
+      ],
+      "verified_fields": [
+        "pmid",
+        "official_title",
+        "doi",
+        "journal",
+        "publish_date",
+        "publication_type"
+      ],
+      "note": "已通过NCBI ESummary与PubMed记录逐字段核对。"
+    },
+    {
+      "record_type": "research",
+      "record_id": "pmid-41101309",
+      "status": "已核验",
+      "confidence": "高",
+      "last_verified_at": "2026-07-15",
+      "next_review_at": "2026-08-14",
+      "source_ids": [
+        "ncbi-pubmed"
+      ],
+      "verified_fields": [
+        "pmid",
+        "official_title",
+        "doi",
+        "journal",
+        "publish_date",
+        "publication_type"
+      ],
+      "note": "已通过NCBI ESummary与PubMed记录逐字段核对。"
+    },
+    {
+      "record_type": "trial",
+      "record_id": "tangdu-cd19bcma-mg-iit",
+      "status": "已核验",
+      "confidence": "高",
+      "last_verified_at": "2026-07-15",
+      "next_review_at": "2026-07-22",
+      "source_ids": [
+        "clinicaltrials-gov"
+      ],
+      "verified_fields": [
+        "registry_id",
+        "official_title",
+        "status",
+        "phase",
+        "enrollment",
+        "sponsor",
+        "registry_last_update"
+      ],
+      "note": "已通过ClinicalTrials.gov API v2逐字段核对。"
+    },
+    {
+      "record_type": "trial",
+      "record_id": "tongji-rd0605-neuro-iit",
+      "status": "已核验",
+      "confidence": "高",
+      "last_verified_at": "2026-07-15",
+      "next_review_at": "2026-07-22",
+      "source_ids": [
+        "clinicaltrials-gov"
+      ],
+      "verified_fields": [
+        "registry_id",
+        "official_title",
+        "status",
+        "phase",
+        "enrollment",
+        "sponsor",
+        "registry_last_update"
+      ],
+      "note": "已通过ClinicalTrials.gov API v2逐字段核对。"
+    },
+    {
+      "record_type": "company",
+      "record_id": "tangdu-cd19bcma-mg",
+      "status": "已核验",
+      "confidence": "高",
+      "last_verified_at": "2026-07-15",
+      "next_review_at": "2026-07-29",
+      "source_ids": [
+        "clinicaltrials-gov"
+      ],
+      "verified_fields": [
+        "company",
+        "product",
+        "technology",
+        "stage",
+        "status",
+        "source_url"
+      ],
+      "note": "NCT06371040与关联论文已核验。"
+    },
+    {
+      "record_type": "company",
+      "record_id": "tongji-ct103a-neuro",
+      "status": "已核验",
+      "confidence": "高",
+      "last_verified_at": "2026-07-15",
+      "next_review_at": "2026-07-29",
+      "source_ids": [
+        "clinicaltrials-gov",
+        "ncbi-pubmed"
+      ],
+      "verified_fields": [
+        "company",
+        "product",
+        "technology",
+        "stage",
+        "status",
+        "source_url"
+      ],
+      "note": "NCT07337785及PMID 38409527、41101309已核验。"
+    },
+    {
+      "record_type": "company",
+      "record_id": "xuzhou-bcmacd19-mg",
+      "status": "已核验",
+      "confidence": "高",
+      "last_verified_at": "2026-07-15",
+      "next_review_at": "2026-07-29",
+      "source_ids": [
+        "ncbi-pubmed"
+      ],
+      "verified_fields": [
+        "company",
+        "product",
+        "technology",
+        "stage",
+        "status",
+        "source_url"
+      ],
+      "note": "PMID 41245531已核验。"
+    },
+    {
+      "record_type": "trial",
+      "record_id": "xuzhou-bcmacd19-mg-phase1",
+      "status": "已核验",
+      "confidence": "高",
+      "last_verified_at": "2026-07-15",
+      "next_review_at": "2026-07-22",
+      "source_ids": [
+        "ncbi-pubmed"
+      ],
+      "verified_fields": [
+        "official_title",
+        "phase",
+        "enrollment",
+        "sponsor",
+        "status"
+      ],
+      "note": "PMID 41245531与ChiCTR2200061267论文标识已核验。"
     }
   ]
 }

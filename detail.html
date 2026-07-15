@@ -69,7 +69,7 @@
 <body>
 <nav>
   <a class="nav-logo" href="index.html"><span class="dot"></span>神经免疫 CAR-T 情报工作台</a>
-  <ul class="nav-links"><li><a href="topics.html">专题档案</a></li><li><a href="research.html">研究情报</a></li><li><a href="landscape.html">竞争格局</a></li><li><a href="safety.html">安全信号</a></li></ul>
+  <ul class="nav-links"><li><a href="topics.html">专题档案</a></li><li><a href="research.html">研究情报</a></li><li><a href="landscape.html">竞争格局</a></li></ul>
   <a class="badge" href="search.html" style="text-decoration:none">全局检索</a>
 </nav>
 <main class="shell" id="app"><div class="empty">正在构建对象档案...</div></main>
@@ -78,10 +78,9 @@
 const TYPE_CONFIG = {
   research: { label:"研究证据", file:"data/feed.json", back:"research.html", title:"title_cn", subtitle:"one_liner", tags:["disease","evidence_level","entity","region"], summary:"takeaway", watch:"tags", fields:[["PMID","pmid"],["发布日期","publish_date"],["来源","source_name"],["审核状态","status"],["优先级原因","priority_reason"],["收录日期","date_added"]] },
   company: { label:"竞争对象", file:"data/landscape.json", back:"landscape.html", title:"company", subtitle:"recent_update", tags:["product","technology","stage","region"], summary:"evidence_anchor", watch:"watch_points", fields:[["产品 / 项目","product"],["技术路线","technology"],["重点适应症","focus"],["临床阶段","stage"],["区域","region"],["跟踪状态","status"]] },
-  trial: { label:"临床试验", file:"data/trials.json", back:"comparison.html", title:"trial_name", subtitle:"evidence_goal", tags:["product","indication","phase","region"], summary:"key_question", watch:"watch_points", fields:[["注册号","registry_id"],["申办方","sponsor"],["产品","product"],["适应症","indication"],["阶段","phase"],["设计","design"],["状态","status"],["注册库更新","registry_last_update"]] },
-  safety: { label:"安全信号", file:"data/safety.json", back:"safety.html", title:"signal", subtitle:"signal_summary", tags:["category","severity","status","mechanism"], summary:"management_focus", watch:"watch_points", fields:[["风险类别","category"],["机制","mechanism"],["严重度","severity"],["时间窗","time_window"],["易感人群","population"],["证据等级","evidence_level"],["证据来源","source_refs"],["核验边界","verification_scope"]] }
+  trial: { label:"临床试验", file:"data/trials.json", back:"comparison.html", title:"trial_name", subtitle:"evidence_goal", tags:["product","indication","phase","region"], summary:"key_question", watch:"watch_points", fields:[["注册号","registry_id"],["申办方","sponsor"],["产品","product"],["适应症","indication"],["阶段","phase"],["设计","design"],["状态","status"],["注册库更新","registry_last_update"]] }
 };
-const DATA_FILES = { research:"data/feed.json", company:"data/landscape.json", trial:"data/trials.json", safety:"data/safety.json" };
+const DATA_FILES = { research:"data/feed.json", company:"data/landscape.json", trial:"data/trials.json" };
 let datasets = {}; let relations = []; let events = []; let verificationData = {}; let sources = [];
 const params = new URLSearchParams(location.search); const activeType = params.get("type"); const activeId = params.get("id");
 
@@ -109,8 +108,6 @@ function relatedNodes(){
     if(rel.source_type===activeType && rel.source_id===activeId) list.push({type:rel.target_type,id:rel.target_id,label:rel.relation,note:rel.rationale,confidence:rel.confidence});
     if(rel.target_type===activeType && rel.target_id===activeId) list.push({type:rel.source_type,id:rel.source_id,label:rel.relation,note:rel.rationale,confidence:rel.confidence});
   });
-  if(activeType==="trial") (datasets.safety||[]).filter(x=>(x.related_trials||[]).includes(activeId)).forEach(x=>list.push({type:"safety",id:x.id,label:"相关安全信号",note:x.signal_summary,confidence:x.evidence_level}));
-  if(activeType==="safety") { const current=(datasets.safety||[]).find(x=>x.id===activeId); (current?.related_trials||[]).forEach(id=>list.push({type:"trial",id,label:"关联试验",note:"该试验被纳入此安全信号的持续观察范围。",confidence:"结构化关联"})); }
   return list.filter((x,index,array)=>array.findIndex(y=>y.type===x.type&&y.id===x.id)===index);
 }
 function verificationFor(){

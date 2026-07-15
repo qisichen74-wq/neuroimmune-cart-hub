@@ -27,7 +27,10 @@
       "长期随访时B细胞重建情况",
       "神经毒性与感染管理",
       "终点设置是否能支撑后续扩展"
-    ]
+    ],
+    "study_sponsorship": "Sponsor-initiated",
+    "development_band": "Ph1",
+    "development_rank": 2
   },
   {
     "id": "descartes08-mg-rct",
@@ -54,7 +57,10 @@
       "重复给药策略",
       "应答持续时间",
       "与标准治疗对照的可解释性"
-    ]
+    ],
+    "study_sponsorship": "Sponsor-initiated",
+    "development_band": "Pivotal study",
+    "development_rank": 4
   },
   {
     "id": "academic-cd19-autoimmune-series",
@@ -79,7 +85,10 @@
       "样本数扩展速度",
       "长期复发率",
       "跨病种外推边界"
-    ]
+    ],
+    "study_sponsorship": "IIT",
+    "development_band": "IIT",
+    "development_rank": 1
   },
   {
     "id": "qh103-neuro-autoimmune",
@@ -106,7 +115,10 @@
       "28天DLT和12个月不良事件",
       "CAR-γδT扩增与持续时间",
       "不同神经免疫病种的入组分布"
-    ]
+    ],
+    "study_sponsorship": "IIT",
+    "development_band": "IIT",
+    "development_rank": 1
   },
   {
     "id": "relma-autoimmune-ssc",
@@ -136,7 +148,10 @@
       "临床终点一致性",
       "组学信号是否稳定",
       "后续病种扩展顺序"
-    ]
+    ],
+    "study_sponsorship": "IIT",
+    "development_band": "IIT",
+    "development_rank": 1
   },
   {
     "id": "tianjin-ucar19bcma-neuro",
@@ -167,7 +182,10 @@
       "90天不良事件与24个月病种量表",
       "异体细胞持续性及GVHD",
       "不同病种实际入组分布"
-    ]
+    ],
+    "study_sponsorship": "IIT",
+    "development_band": "IIT",
+    "development_rank": 1
   },
   {
     "id": "sys6020-mg-phase1",
@@ -196,7 +214,10 @@
       "AChR-Ab或MuSK-Ab变化",
       "无清淋重复给药的可操作性",
       "注册信息更新时间较旧"
-    ]
+    ],
+    "study_sponsorship": "Sponsor-initiated",
+    "development_band": "Ph1",
+    "development_rank": 2
   },
   {
     "id": "kite363-neuro-phase1",
@@ -224,7 +245,10 @@
       "MS影像与确认残疾进展",
       "MG-ADL应答",
       "CIDP INCAT改善"
-    ]
+    ],
+    "study_sponsorship": "Sponsor-initiated",
+    "development_band": "Ph1",
+    "development_rank": 2
   },
   {
     "id": "cc97540-breakfree2",
@@ -255,7 +279,10 @@
       "MS NEDA和EDSS",
       "MG-ADL、MG-C和QMG",
       "地区与队列入组进度"
-    ]
+    ],
+    "study_sponsorship": "Sponsor-initiated",
+    "development_band": "Ph1",
+    "development_rank": 2
   },
   {
     "id": "ytb323-mg-phase12",
@@ -283,7 +310,10 @@
       "MG疾病量表变化",
       "感染与免疫球蛋白",
       "入组速度"
-    ]
+    ],
+    "study_sponsorship": "Sponsor-initiated",
+    "development_band": "Ph2",
+    "development_rank": 3
   },
   {
     "id": "ctx112-autoimmune-phase1",
@@ -310,7 +340,10 @@
       "DLT与异体免疫风险",
       "病种入组分布",
       "细胞持续性"
-    ]
+    ],
+    "study_sponsorship": "Sponsor-initiated",
+    "development_band": "Ph1",
+    "development_rank": 2
   },
   {
     "id": "ft819-autoimmune-phase1",
@@ -338,7 +371,10 @@
       "清淋方案",
       "长期安全",
       "跨病种一致性"
-    ]
+    ],
+    "study_sponsorship": "Sponsor-initiated",
+    "development_band": "Ph1",
+    "development_rank": 2
   },
   {
     "id": "qt019c-neuro-phase1",
@@ -365,7 +401,10 @@
       "首例入组",
       "项目差异化",
       "DLT与GVHD"
-    ]
+    ],
+    "study_sponsorship": "IIT",
+    "development_band": "IIT",
+    "development_rank": 1
   },
   {
     "id": "allo329-autoimmune-phase1",
@@ -392,7 +431,10 @@
       "DLT与异体免疫风险",
       "细胞持续性",
       "跨病种队列"
-    ]
+    ],
+    "study_sponsorship": "Sponsor-initiated",
+    "development_band": "Ph1",
+    "development_rank": 2
   },
   {
     "id": "zamtocel-autoimmune-phase1",
@@ -419,7 +461,10 @@
       "实际启动时间",
       "病种队列分布",
       "长期缓解"
-    ]
+    ],
+    "study_sponsorship": "Sponsor-initiated",
+    "development_band": "Ph1",
+    "development_rank": 2
   },
   {
     "id": "ti0032-invivo-autoimmune",
@@ -446,7 +491,10 @@
       "体内转导可控性",
       "CRS与脱靶风险",
       "细胞动力学"
-    ]
+    ],
+    "study_sponsorship": "Sponsor-initiated",
+    "development_band": "Ph1",
+    "development_rank": 2
   },
   {
     "id": "zju-ucar19bcma-autoimmune",
@@ -473,7 +521,10 @@
       "28天DLT与CRS/ICANS",
       "不同病种实际入组分布",
       "长期免疫重建与感染负担"
-    ]
+    ],
+    "study_sponsorship": "IIT",
+    "development_band": "IIT",
+    "development_rank": 1
   },
   {
     "id": "magicrna-hn2302-autoimmune",
@@ -503,7 +554,10 @@
       "首例入组启动时间",
       "剂量递增安全性",
       "官方后续是否补充更完整产品描述"
-    ]
+    ],
+    "study_sponsorship": "Sponsor-initiated",
+    "development_band": "Ph1",
+    "development_rank": 2
   },
   {
     "id": "arcellx-anitocel-mg-phase1",
@@ -530,7 +584,10 @@
       "MG队列入组速度",
       "标准清淋后的感染与细胞减少",
       "主要完成时间与长期随访"
-    ]
+    ],
+    "study_sponsorship": "Sponsor-initiated",
+    "development_band": "Ph1",
+    "development_rank": 2
   },
   {
     "id": "tongji-v001bcma-autoimmune",
@@ -557,7 +614,10 @@
       "体内转导相关脱靶风险",
       "BCMA靶向对浆细胞驱动病种的解释力",
       "长期随访的载体安全性"
-    ]
+    ],
+    "study_sponsorship": "IIT",
+    "development_band": "IIT",
+    "development_rank": 1
   },
   {
     "id": "ihematology-xiniao-ucar-autoimmune",
@@ -587,7 +647,10 @@
       "注册信息长时间未刷新",
       "血液学与感染安全性",
       "不同病种实际入组与应答分层"
-    ]
+    ],
+    "study_sponsorship": "IIT",
+    "development_band": "IIT",
+    "development_rank": 1
   },
   {
     "id": "xuzhou-xiniao-ucar-autoimmune",
@@ -617,7 +680,10 @@
       "为何转为Active, not recruiting",
       "后续结果披露节奏",
       "清淋方案与安全事件"
-    ]
+    ],
+    "study_sponsorship": "IIT",
+    "development_band": "IIT",
+    "development_rank": 1
   },
   {
     "id": "pku3-qh103-autoimmune",
@@ -644,7 +710,10 @@
       "注册信息未刷新原因",
       "Phase 1/2分段执行情况",
       "跨病种可解释性"
-    ]
+    ],
+    "study_sponsorship": "IIT",
+    "development_band": "IIT",
+    "development_rank": 1
   },
   {
     "id": "gobroad-ol108-autoimmune",
@@ -671,7 +740,10 @@
       "PK/PD公开节奏",
       "注册信息长期未更新",
       "异体相关免疫风险"
-    ]
+    ],
+    "study_sponsorship": "IIT",
+    "development_band": "IIT",
+    "development_rank": 1
   },
   {
     "id": "changzhou-ucar19bcma-autoimmune",
@@ -698,7 +770,10 @@
       "招募是否启动",
       "MG与血液/风湿病种构成",
       "与其他细鸟合作项目的差异"
-    ]
+    ],
+    "study_sponsorship": "IIT",
+    "development_band": "IIT",
+    "development_rank": 1
   },
   {
     "id": "pkuph-bcmacd19-autoimmune-phase2",
@@ -725,7 +800,10 @@
       "Phase 2执行进度",
       "不同病种应答分布",
       "注册信息更新缺口"
-    ]
+    ],
+    "study_sponsorship": "IIT",
+    "development_band": "IIT",
+    "development_rank": 1
   },
   {
     "id": "cabaletta-resecel-mg-phase12",
@@ -753,7 +831,10 @@
       "MG-ADL、QMG和MGC变化",
       "B细胞清除与CABA-201细胞动力学",
       "公司披露的早期队列信号能否转化为后续注册导向设计"
-    ]
+    ],
+    "study_sponsorship": "Sponsor-initiated",
+    "development_band": "Ph2",
+    "development_rank": 3
   },
   {
     "id": "precision-cd19-autoimmune-phase1",
@@ -780,7 +861,10 @@
       "注册信息极旧",
       "是否有结果或状态更新",
       "真实执行进度"
-    ]
+    ],
+    "study_sponsorship": "Sponsor-initiated",
+    "development_band": "Ph1",
+    "development_rank": 2
   },
   {
     "id": "hadassah-hbi0101-autoimmune",
@@ -807,7 +891,10 @@
       "Part A剂量限制性毒性",
       "神经免疫病种实际入组占比",
       "4年复发/进展控制与总生存"
-    ]
+    ],
+    "study_sponsorship": "Sponsor-initiated",
+    "development_band": "Ph1",
+    "development_rank": 2
   },
   {
     "id": "renji-c-car168-autoimmune",
@@ -837,7 +924,10 @@
       "28天DLT与24个月安全性",
       "6个月缓解与复发比例",
       "注册信息长期未刷新后的真实执行进度"
-    ]
+    ],
+    "study_sponsorship": "IIT",
+    "development_band": "IIT",
+    "development_rank": 1
   },
   {
     "id": "adicet-prulacel-autoimmune-phase1",
@@ -864,7 +954,10 @@
       "28天DLT",
       "邀请制入组后的队列构成",
       "与自体CD19/BCMA路线的安全性对照"
-    ]
+    ],
+    "study_sponsorship": "Sponsor-initiated",
+    "development_band": "Ph1",
+    "development_rank": 2
   },
   {
     "id": "changhai-kn3601-autoimmune",
@@ -894,7 +987,10 @@
       "52周TEAE与DLT",
       "ORR/DCR与B细胞重建",
       "多病种实际入组结构"
-    ]
+    ],
+    "study_sponsorship": "IIT",
+    "development_band": "IIT",
+    "development_rank": 1
   },
   {
     "id": "huashan-c-car168-cns-autoimmune",
@@ -924,7 +1020,41 @@
       "首例入组时间",
       "NEDA-3、EDSS与MRI变化",
       "神经毒性和原病波动的鉴别"
-    ]
+    ],
+    "study_sponsorship": "IIT",
+    "development_band": "IIT",
+    "development_rank": 1
+  },
+  {
+    "id": "kyv101-autoimmune-ltfu",
+    "record_kind": "registered_trial",
+    "registry_id": "NCT07403188",
+    "registry_url": "https://clinicaltrials.gov/study/NCT07403188",
+    "registry_last_update": "2026-02-11",
+    "official_title": "A Long-Term Follow-Up Study for Participants Previously Treated With KYV-101",
+    "trial_name": "KYSA-4: Long-term Follow-up After KYV-101",
+    "sponsor": "Kyverna Therapeutics",
+    "product": "KYV-101",
+    "indication": "LN / MG / SPS / RA / MS / DM / SSc",
+    "phase": "长期随访研究",
+    "design": "前瞻性、观察性、单组长期随访",
+    "region": "US",
+    "status": "Recruiting",
+    "enrollment": 70,
+    "study_start": "2025-11-24",
+    "estimated_completion": "2041-01",
+    "priority": "高",
+    "evidence_goal": "系统追踪既往接受KYV-101受试者的延迟不良事件、载体相关安全性和跨病种长期结局。",
+    "key_question": "KYV-101在多病种自身免疫场景中的长期获益风险曲线，能否支持更广泛的临床和监管可接受性。",
+    "watch_points": [
+      "15年延迟不良事件与继发恶性肿瘤",
+      "5年RCL、CAR持续性和ADA检测",
+      "MS、MG和SPS等神经免疫病种的长期功能结局",
+      "免疫抑制药物停用和感染负担"
+    ],
+    "study_sponsorship": "Sponsor-initiated",
+    "development_band": "Ph1",
+    "development_rank": 2
   },
   {
     "id": "gustaveroussy-cellattack1-autoimmune",
@@ -951,7 +1081,10 @@
       "30天CRS/ICANS与器官毒性阈值",
       "单中心生产与放行可复制性",
       "后续是否扩展到更大人群"
-    ]
+    ],
+    "study_sponsorship": "Sponsor-initiated",
+    "development_band": "Ph1",
+    "development_rank": 2
   },
   {
     "id": "ct103a-neuro-autoimmune-phase1",
@@ -982,7 +1115,10 @@
       "致病抗体滴度和可溶性BCMA变化",
       "MS患者NfL变化与神经系统安全性",
       "VCN与CAR-T持续时间的长期随访"
-    ]
+    ],
+    "study_sponsorship": "IIT",
+    "development_band": "IIT",
+    "development_rank": 1
   },
   {
     "id": "icell-bcmacd19-itp-phase1",
@@ -1012,7 +1148,10 @@
       "3个月内CRS和神经毒性",
       "12周总体缓解率",
       "2年疾病控制与复发轨迹"
-    ]
+    ],
+    "study_sponsorship": "Sponsor-initiated",
+    "development_band": "Ph1",
+    "development_rank": 2
   },
   {
     "id": "icell-icg318-sle-phase12",
@@ -1040,6 +1179,104 @@
       "6个月和1年DORIS缓解率",
       "B细胞清除与naive B细胞恢复",
       "ICG318暴露与剂量递增"
-    ]
+    ],
+    "study_sponsorship": "Sponsor-initiated",
+    "development_band": "Ph2",
+    "development_rank": 3
+  },
+  {
+    "id": "tangdu-cd19bcma-mg-iit",
+    "record_kind": "registered_trial",
+    "registry_id": "NCT06371040",
+    "registry_url": "https://clinicaltrials.gov/study/NCT06371040",
+    "registry_last_update": "2025-09-15",
+    "official_title": "Evaluate the Safety and Efficacy of CD19-BCMA Targeted CAR-T Therapy for Refractory, Generalized Myasthenia Gravis: A Single-center, Open-label, Single-arm, Dose-finding Study",
+    "trial_name": "Tangdu CD19/BCMA CAR-T in Refractory gMG",
+    "sponsor": "Ting Chang / Tangdu Hospital",
+    "collaborators": [],
+    "product": "Autologous CD19/BCMA CAR-T",
+    "indication": "MG",
+    "phase": "Phase 1",
+    "status": "Recruiting",
+    "enrollment": 9,
+    "region": "China",
+    "priority": "高",
+    "design": "IIT；单中心、开放标签、单臂、剂量探索",
+    "study_start": "2024-07-12",
+    "estimated_completion": "2026-12-01",
+    "evidence_goal": "验证CD19/BCMA双靶点CAR-T在难治gMG中的剂量、安全性与初步疗效。",
+    "key_question": "单细胞免疫重置信号能否在完整队列中转化为稳定的MG-ADL和QMG改善？",
+    "watch_points": [
+      "实际入组与剂量队列",
+      "MG-ADL/QMG 24周变化",
+      "CRS、ICANS与感染"
+    ],
+    "study_sponsorship": "IIT",
+    "development_band": "IIT",
+    "development_rank": 1
+  },
+  {
+    "id": "tongji-rd0605-neuro-iit",
+    "record_kind": "registered_trial",
+    "registry_id": "NCT07337785",
+    "registry_url": "https://clinicaltrials.gov/study/NCT07337785",
+    "registry_last_update": "2026-05-12",
+    "official_title": "Clinical Study on the Safety, Efficacy, and Pharmacokinetics of Universal CAR-T Cell Injection Targeting CD19/BCMA in Patients With Neurological Autoimmune Diseases",
+    "trial_name": "RD06-05 UCAR-T in Neurological Autoimmune Diseases",
+    "sponsor": "Daishi Tian / Tongji Hospital",
+    "collaborators": [
+      "Nanjing Bioheng Biotech Co., Ltd."
+    ],
+    "product": "RD06-05 universal CD19/BCMA CAR-T",
+    "indication": "MS / MG / CIDP / AE",
+    "phase": "Early Phase 1",
+    "status": "Recruiting",
+    "enrollment": 36,
+    "region": "China",
+    "priority": "高",
+    "design": "IIT；单中心、开放标签、多病种篮式、单臂",
+    "study_start": "2025-12-12",
+    "estimated_completion": "2028-11-01",
+    "evidence_goal": "评估通用CD19/BCMA CAR-T在四类神经自身免疫病中的安全性、PK/PD与初步疗效。",
+    "key_question": "通用双靶点产品能否在不同神经免疫病种中保持可控安全性和一致免疫重置？",
+    "watch_points": [
+      "各病种实际入组",
+      "MS MRI/EDSS与MG量表",
+      "异体细胞持续性与免疫原性"
+    ],
+    "study_sponsorship": "IIT",
+    "development_band": "IIT",
+    "development_rank": 1
+  },
+  {
+    "id": "xuzhou-bcmacd19-mg-phase1",
+    "record_kind": "evidence_program",
+    "registry_id": "ChiCTR2200061267",
+    "registry_url": "https://www.chictr.org.cn/showproj.html?proj=169842",
+    "registry_last_update": "2025-10-31",
+    "official_title": "Anti-BCMA/CD19 CAR T cell therapy in patients with refractory generalized myasthenia gravis: a single-arm, phase 1 trial",
+    "trial_name": "Xuzhou BCMA/CD19 CAR-T Phase 1 in Refractory gMG",
+    "sponsor": "Yong Zhang / Xuzhou Medical University",
+    "collaborators": [],
+    "product": "Autologous BCMA/CD19 bispecific CAR-T",
+    "indication": "MG",
+    "phase": "Phase 1",
+    "status": "已发表 / IIT",
+    "enrollment": 18,
+    "region": "China",
+    "priority": "高",
+    "design": "IIT；单中心、单臂、剂量递增I期",
+    "study_start": "2023-05-03",
+    "estimated_completion": "2025-10-31",
+    "evidence_goal": "评估双靶点CAR-T的安全性、剂量与难治gMG临床改善。",
+    "key_question": "18例单臂结果能否在更大、对照性研究中复现？",
+    "watch_points": [
+      "后续对照研究",
+      "停激素与停免疫抑制持续性",
+      "长期感染和低丙球风险"
+    ],
+    "study_sponsorship": "IIT",
+    "development_band": "IIT",
+    "development_rank": 1
   }
 ]

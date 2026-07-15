@@ -6,10 +6,10 @@
     "kind": "疾病专题",
     "priority": "高",
     "maturity": "早期临床验证",
-    "summary": "当前神经免疫CAR-T中证据与产业动作最密集的病种之一。",
+    "summary": "MS已有CD19 CAR-T两例人体证据、CT103A抗BCMA五例研究及多项Sponsor-initiated与IIT试验，但疾病进展获益仍待验证。",
     "thesis": "MS方向的价值不只取决于短期疾病活动下降，还取决于长期缓解、神经功能结局、B细胞重建和毒性鉴别能否形成一致证据链。",
     "unmet_need": "难治或进展性患者仍缺少能够深度重置异常免疫记忆并带来持久缓解的治疗。",
-    "next_catalyst": "前瞻性试验的疾病活动、长期神经功能和免疫重建数据。",
+    "next_catalyst": "KYV-101等Sponsor-initiated研究与CT103A/RD06-05 IIT的长期EDSS、MRI、脑脊液和免疫重建数据。",
     "keywords": [
       "MS",
       "多发性硬化",
@@ -29,12 +29,15 @@
     ],
     "related": {
       "research": [
+        "pmid-38554710",
+        "pmid-41101309",
         "pmid-42251699",
         "pmid-42286319",
         "pmid-42295377"
       ],
       "company": [
         "kyverna-kyv101",
+        "tongji-ct103a-neuro",
         "hadassah-hbi0101",
         "renji-c-car168",
         "huashan-c-car168-cns",
@@ -42,24 +45,12 @@
       ],
       "trial": [
         "kyv101-ms-phase1",
+        "tongji-rd0605-neuro-iit",
+        "ct103a-neuro-autoimmune-phase1",
+        "kyv101-autoimmune-ltfu",
         "hadassah-hbi0101-autoimmune",
         "renji-c-car168-autoimmune",
-        "huashan-c-car168-cns-autoimmune",
-        "ct103a-neuro-autoimmune-phase1"
-      ],
-      "safety": [
-        "signal-neurotoxicity",
-        "signal-infection",
-        "signal-hypogammaglobulinemia"
-      ],
-      "event": [
-        "event-feed-42251699",
-        "event-feed-42286319",
-        "event-monitor-kyv101",
-        "event-nct07085676-update",
-        "event-nct06249438-update",
-        "event-nct07341828-update",
-        "event-nct04561557-update"
+        "huashan-c-car168-cns-autoimmune"
       ]
     }
   },
@@ -69,11 +60,11 @@
     "short_name": "MG",
     "kind": "疾病专题",
     "priority": "高",
-    "maturity": "比较性验证",
-    "summary": "mRNA CAR-T路线提供了与传统活体CAR-T不同的安全性和重复给药命题。",
+    "maturity": "Pivotal验证",
+    "summary": "MG已形成从病例、IIT、随机Phase 2b到pivotal Phase 3的多层级证据，是神经免疫CAR-T中临床成熟度最高的适应症之一。",
     "thesis": "MG方向的关键不是证明短期可应答，而是比较mRNA CAR-T在重复给药、持续性、执行复杂度和标准治疗对照下是否形成真实优势。",
     "unmet_need": "难治患者需要更稳定的疾病控制，同时降低长期免疫抑制和反复住院负担。",
-    "next_catalyst": "对照研究的持续应答、重复给药和安全性结果。",
+    "next_catalyst": "Cartesian AURORA Phase 3读出，以及中国双靶点IIT的扩大样本和长期随访。",
     "keywords": [
       "MG",
       "重症肌无力",
@@ -92,9 +83,20 @@
       "患者分层和停药策略尚未稳定"
     ],
     "related": {
-      "research": [],
+      "research": [
+        "pmid-37353278",
+        "pmid-38409527",
+        "pmid-40856088",
+        "pmid-41245531",
+        "pmid-41514038",
+        "pmid-41514039",
+        "pmid-41747738"
+      ],
       "company": [
         "cartesian-descartes08",
+        "tangdu-cd19bcma-mg",
+        "tongji-ct103a-neuro",
+        "xuzhou-bcmacd19-mg",
         "arcellx-anitocel",
         "cabaletta-resecel",
         "hadassah-hbi0101",
@@ -103,23 +105,15 @@
       ],
       "trial": [
         "descartes08-mg-rct",
+        "tangdu-cd19bcma-mg-iit",
+        "tongji-rd0605-neuro-iit",
+        "xuzhou-bcmacd19-mg-phase1",
+        "kyv101-autoimmune-ltfu",
         "arcellx-anitocel-mg-phase1",
         "cabaletta-resecel-mg-phase12",
         "hadassah-hbi0101-autoimmune",
         "renji-c-car168-autoimmune",
         "ct103a-neuro-autoimmune-phase1"
-      ],
-      "safety": [
-        "signal-autoimmune-flare",
-        "signal-fertility"
-      ],
-      "event": [
-        "event-monitor-descartes",
-        "event-nct06626919-update",
-        "event-cabaletta-resetmg-phase12",
-        "event-nct07085676-update",
-        "event-nct06249438-update",
-        "event-nct04561557-update"
       ]
     }
   },
@@ -170,6 +164,7 @@
       ],
       "trial": [
         "relma-autoimmune-ssc",
+        "kyv101-autoimmune-ltfu",
         "zju-ucar19bcma-autoimmune",
         "magicrna-hn2302-autoimmune",
         "tongji-v001bcma-autoimmune",
@@ -180,23 +175,6 @@
         "adicet-prulacel-autoimmune-phase1",
         "changhai-kn3601-autoimmune",
         "gustaveroussy-cellattack1-autoimmune"
-      ],
-      "safety": [
-        "signal-infection",
-        "signal-cytopenia"
-      ],
-      "event": [
-        "event-feed-42223209",
-        "event-nct07305116-update",
-        "event-nct07523282-update",
-        "event-nct07339540-update",
-        "event-nct06828042-update",
-        "event-nct06794008-update",
-        "event-nct07085676-update",
-        "event-nct06249438-update",
-        "event-nct06375993-update",
-        "event-nct07246096-update",
-        "event-nct07544225-update"
       ]
     }
   },
@@ -243,192 +221,6 @@
         "renji-c-car168-autoimmune",
         "huashan-c-car168-cns-autoimmune",
         "ct103a-neuro-autoimmune-phase1"
-      ],
-      "safety": [
-        "signal-neurotoxicity",
-        "signal-autoimmune-flare"
-      ],
-      "event": [
-        "event-qh103-registration",
-        "event-nct07085676-update",
-        "event-nct06249438-update",
-        "event-nct07341828-update",
-        "event-nct04561557-update"
-      ]
-    }
-  },
-  {
-    "id": "cross-disease-immune-reset",
-    "name": "跨病种免疫重置",
-    "short_name": "Immune Reset",
-    "kind": "横向专题",
-    "priority": "高",
-    "maturity": "机制平台验证",
-    "summary": "观察深度B细胞清除能否跨病种形成一致、持久且可管理的免疫重置效应。",
-    "thesis": "平台价值成立需要跨病种出现一致的免疫重塑逻辑，同时明确哪些疾病、患者和产品参数不适合外推。",
-    "unmet_need": "单病种病例难以回答CAR-T是否具备可复制的平台能力。",
-    "next_catalyst": "跨病种随访、B细胞谱系重建和复发模式的标准化比较。",
-    "keywords": [
-      "免疫重置",
-      "跨病种",
-      "B细胞清除",
-      "CAR-NK",
-      "持久缓解"
-    ],
-    "key_questions": [
-      "哪些疾病共享可被CAR-T重置的致病机制",
-      "免疫重建模式能否预测长期缓解",
-      "不同细胞平台的持续性和安全性如何取舍"
-    ],
-    "evidence_gaps": [
-      "病种异质性高",
-      "病例系列存在选择偏倚",
-      "缺少统一免疫监测与复发定义"
-    ],
-    "related": {
-      "research": [
-        "pmid-42167622",
-        "pmid-41612420"
-      ],
-      "company": [
-        "erlangen-cd19",
-        "cabaletta-resecel",
-        "zjuch-ucar19bcma",
-        "magicrna-hn2302",
-        "tongji-v001bcma",
-        "ihematology-xiniao-ucar",
-        "xuzhou-xiniao-ucar",
-        "pku3-qh103",
-        "gobroad-ol108",
-        "changzhou-ucar19bcma",
-        "pkuph-bcmacd19",
-        "precision-cd19",
-        "hadassah-hbi0101",
-        "renji-c-car168",
-        "adicet-prulacel",
-        "changhai-kn3601",
-        "huashan-c-car168-cns",
-        "gustaveroussy-cellattack1",
-        "iaso-equecel-autoimmune",
-        "icell-icg318-autoimmune"
-      ],
-      "trial": [
-        "academic-cd19-autoimmune-series",
-        "zju-ucar19bcma-autoimmune",
-        "magicrna-hn2302-autoimmune",
-        "tongji-v001bcma-autoimmune",
-        "ihematology-xiniao-ucar-autoimmune",
-        "xuzhou-xiniao-ucar-autoimmune",
-        "pku3-qh103-autoimmune",
-        "gobroad-ol108-autoimmune",
-        "changzhou-ucar19bcma-autoimmune",
-        "pkuph-bcmacd19-autoimmune-phase2",
-        "precision-cd19-autoimmune-phase1",
-        "hadassah-hbi0101-autoimmune",
-        "renji-c-car168-autoimmune",
-        "adicet-prulacel-autoimmune-phase1",
-        "changhai-kn3601-autoimmune",
-        "huashan-c-car168-cns-autoimmune",
-        "gustaveroussy-cellattack1-autoimmune",
-        "ct103a-neuro-autoimmune-phase1",
-        "icell-bcmacd19-itp-phase1",
-        "icell-icg318-sle-phase12"
-      ],
-      "safety": [
-        "signal-infection",
-        "signal-hypogammaglobulinemia",
-        "signal-secondary-malignancy"
-      ],
-      "event": [
-        "event-feed-42167622",
-        "event-safety-infection",
-        "event-safety-longterm",
-        "event-nct07305116-update",
-        "event-nct07523282-update",
-        "event-nct07339540-update",
-        "event-nct06941129-update",
-        "event-nct07155369-update",
-        "event-nct06828042-update",
-        "event-nct06980597-update",
-        "event-nct06978738-update",
-        "event-nct06794008-update",
-        "event-nct06056921-update",
-        "event-nct07085676-update",
-        "event-nct06249438-update",
-        "event-nct06375993-update",
-        "event-nct07246096-update",
-        "event-nct07341828-update",
-        "event-nct07544225-update",
-        "event-iaso-equecel-fda-autoimmune-ind",
-        "event-nct04561557-update",
-        "event-feed-41612420",
-        "event-nct06787989-update",
-        "event-nct07328581-update"
-      ]
-    }
-  },
-  {
-    "id": "long-term-benefit-risk",
-    "name": "长期获益风险平衡",
-    "short_name": "Long-term B/R",
-    "kind": "横向专题",
-    "priority": "高",
-    "maturity": "持续监测",
-    "summary": "自免患者预期生存期更长，短期缓解必须与多年感染、免疫重建和继发风险共同判断。",
-    "thesis": "真正决定自免CAR-T可接受性的，不只是急性CRS和ICANS，而是长期免疫功能、感染负担、生育生活质量和继发恶性事件的完整轨迹。",
-    "unmet_need": "当前公开证据更偏向早期疗效和急性安全，长期分母与系统随访不足。",
-    "next_catalyst": "多年随访、患者报告结局和监管要求下的长期安全数据。",
-    "keywords": [
-      "长期随访",
-      "感染",
-      "免疫重建",
-      "继发恶性肿瘤",
-      "生活质量"
-    ],
-    "key_questions": [
-      "感染和低丙球蛋白风险持续多久",
-      "生育与生活质量如何进入获益风险评估",
-      "长期肿瘤和克隆性事件如何归因"
-    ],
-    "evidence_gaps": [
-      "长期随访完整率未知",
-      "跨项目安全定义不统一",
-      "患者报告结局和特殊人群数据不足"
-    ],
-    "related": {
-      "research": [
-        "pmid-42167622",
-        "pmid-41612420"
-      ],
-      "company": [
-        "kyverna-kyv101",
-        "cartesian-descartes08",
-        "arcellx-anitocel",
-        "zjuch-ucar19bcma",
-        "tongji-v001bcma",
-        "icell-icg318-autoimmune"
-      ],
-      "trial": [
-        "kyv101-ms-phase1",
-        "descartes08-mg-rct",
-        "academic-cd19-autoimmune-series",
-        "arcellx-anitocel-mg-phase1",
-        "zju-ucar19bcma-autoimmune",
-        "tongji-v001bcma-autoimmune"
-      ],
-      "safety": [
-        "signal-infection",
-        "signal-hypogammaglobulinemia",
-        "signal-secondary-malignancy",
-        "signal-fertility"
-      ],
-      "event": [
-        "event-safety-infection",
-        "event-safety-longterm",
-        "event-nct06626919-update",
-        "event-nct07305116-update",
-        "event-nct07339540-update",
-        "event-feed-41612420"
       ]
     }
   }

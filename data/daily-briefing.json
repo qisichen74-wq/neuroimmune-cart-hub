@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-15T05:30:05.813Z",
-  "as_of": "2026-07-14",
+  "generated_at": "2026-07-15T16:12:34.090Z",
+  "as_of": "2026-07-15",
   "headline": {
     "id": "pmid-42251699",
     "title": "CAR-T细胞疗法使合并CNS受累CLL与多发性硬化患者获得完全缓解",
@@ -10,13 +10,21 @@
     "evidence_level": "病例报道·IIT"
   },
   "snapshot": {
-    "formal_records": 138,
-    "externally_verified": 128,
-    "active_priority_trials": 25,
-    "candidate_items": 864,
-    "quality_score": 83
+    "formal_records": 153,
+    "externally_verified": 145,
+    "active_priority_trials": 28,
+    "candidate_items": 860,
+    "quality_score": 82
   },
   "verified_updates": [
+    {
+      "id": "event-feed-42414128",
+      "title": "儿童SLE相关难治性ITP的双靶点CAR-T病例进入证据池",
+      "summary": "PubMed来信报告上海儿童医学中心使用抗CD19/CD22 CAR-T治疗儿科SLE相关难治性ITP的个案经历。",
+      "date": "2026-07-07",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42414128/",
+      "topic": "跨病种"
+    },
     {
       "id": "event-kite363-update",
       "title": "KITE-363双靶点神经免疫篮式试验更新",
@@ -47,14 +55,6 @@
       "summary": "将CAR-T放回多种创新和靶向治疗路线中比较，有助于判断其差异化价值。",
       "date": "2026-06-15",
       "source_url": "https://pubmed.ncbi.nlm.nih.gov/42295377/",
-      "topic": "MS"
-    },
-    {
-      "id": "event-feed-42286319",
-      "title": "MS中的CAR-T机会与挑战专题综述更新",
-      "summary": "综述集中讨论了机制依据、患者选择、毒性管理和长期随访要求。",
-      "date": "2026-06-12",
-      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42286319/",
       "topic": "MS"
     }
   ],
@@ -218,6 +218,12 @@
       "message": "注册库记录超过180天未更新，当前状态需谨慎解释"
     },
     {
+      "code": "registry_record_stale",
+      "record_type": "trial",
+      "record_id": "tangdu-cd19bcma-mg-iit",
+      "message": "注册库记录超过180天未更新，当前状态需谨慎解释"
+    },
+    {
       "code": "regulatory_source_failed",
       "record_type": "system",
       "record_id": "-",
@@ -279,19 +285,6 @@
     },
     {
       "type": "trial",
-      "external_id": "NCT07403188",
-      "title": "A Long-Term Follow-Up Study for Participants Previously Treated With KYV-101",
-      "score": 16,
-      "tier": "立即核验",
-      "reasons": [
-        "正式注册试验",
-        "命中5个重点病种",
-        "当前处于活跃状态"
-      ],
-      "source_url": "https://clinicaltrials.gov/study/NCT07403188"
-    },
-    {
-      "type": "trial",
       "external_id": "NCT07315087",
       "title": "A Clinical Study Evaluating the Safety and Preliminary Efficacy of Universal Allogeneic CAR T-cell Therapy Targeting CD19 and BCMA(QT-019C) in Patients With Relapse/Refractory Autoimmune Diseases",
       "score": 16,
@@ -302,6 +295,19 @@
         "当前处于活跃状态"
       ],
       "source_url": "https://clinicaltrials.gov/study/NCT07315087"
+    },
+    {
+      "type": "trial",
+      "external_id": "NCT06888960",
+      "title": "An Exploratory Clinical Study on the Safety of CC312 in Treating Patients With Refractory Autoimmune Diseases",
+      "score": 16,
+      "tier": "立即核验",
+      "reasons": [
+        "正式注册试验",
+        "命中5个重点病种",
+        "当前处于活跃状态"
+      ],
+      "source_url": "https://clinicaltrials.gov/study/NCT06888960"
     }
   ],
   "editorial_note": "头条、动态和试验均来自正式核验数据；候选队列仅表示下一步核验优先级。"

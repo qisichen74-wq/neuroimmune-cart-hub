@@ -380,6 +380,16 @@
     "confidence": "高"
   },
   {
+    "id": "rel-kyverna-kyv101-ltfu-trial",
+    "source_type": "company",
+    "source_id": "kyverna-kyv101",
+    "target_type": "trial",
+    "target_id": "kyv101-autoimmune-ltfu",
+    "relation": "推进",
+    "rationale": "Kyverna Therapeutics是NCT07403188主办方，该研究专门追踪既往KYV-101受试者的长期安全与结局。",
+    "confidence": "高"
+  },
+  {
     "id": "rel-iaso-equecel-ct103a-trial",
     "source_type": "company",
     "source_id": "iaso-equecel-autoimmune",
@@ -417,6 +427,76 @@
     "target_id": "icell-icg318-autoimmune",
     "relation": "构成证据锚点",
     "rationale": "PMID 41612420正式报道ICG318在难治性SLE中的扩展随访，是iCell自身免疫路线的核心临床证据之一。",
+    "confidence": "高"
+  },
+  {
+    "id": "rel-cartesian-descartes-phase1b2a",
+    "source_type": "research",
+    "source_id": "pmid-37353278",
+    "target_type": "trial",
+    "target_id": "descartes08-mg-rct",
+    "relation": "构成前序证据",
+    "rationale": "正式论文与对应项目或试验建立直接证据关联。",
+    "confidence": "高"
+  },
+  {
+    "id": "rel-cartesian-descartes-phase2b",
+    "source_type": "research",
+    "source_id": "pmid-41514038",
+    "target_type": "company",
+    "target_id": "cartesian-descartes08",
+    "relation": "构成关键证据",
+    "rationale": "正式论文与对应项目或试验建立直接证据关联。",
+    "confidence": "高"
+  },
+  {
+    "id": "rel-tongji-mg-reconstitution",
+    "source_type": "research",
+    "source_id": "pmid-38409527",
+    "target_type": "company",
+    "target_id": "tongji-ct103a-neuro",
+    "relation": "构成机制证据",
+    "rationale": "正式论文与对应项目或试验建立直接证据关联。",
+    "confidence": "高"
+  },
+  {
+    "id": "rel-tongji-ms-ct103a",
+    "source_type": "research",
+    "source_id": "pmid-41101309",
+    "target_type": "company",
+    "target_id": "tongji-ct103a-neuro",
+    "relation": "构成临床证据",
+    "rationale": "正式论文与对应项目或试验建立直接证据关联。",
+    "confidence": "高"
+  },
+  {
+    "id": "rel-xuzhou-mg-phase1",
+    "source_type": "research",
+    "source_id": "pmid-41245531",
+    "target_type": "trial",
+    "target_id": "xuzhou-bcmacd19-mg-phase1",
+    "relation": "报告试验结果",
+    "rationale": "正式论文与对应项目或试验建立直接证据关联。",
+    "confidence": "高"
+  },
+  {
+    "id": "rel-tangdu-mg-med",
+    "source_type": "research",
+    "source_id": "pmid-41747738",
+    "target_type": "trial",
+    "target_id": "tangdu-cd19bcma-mg-iit",
+    "relation": "报告机制结果",
+    "rationale": "正式论文与对应项目或试验建立直接证据关联。",
+    "confidence": "高"
+  },
+  {
+    "id": "rel-ms-med-kyverna",
+    "source_type": "research",
+    "source_id": "pmid-38554710",
+    "target_type": "company",
+    "target_id": "kyverna-kyv101",
+    "relation": "构成早期人体证据",
+    "rationale": "正式论文与对应项目或试验建立直接证据关联。",
     "confidence": "高"
   }
 ]

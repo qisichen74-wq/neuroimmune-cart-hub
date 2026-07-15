@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-07-15T05:30:05.631Z",
-  "as_of": "2026-07-14",
+  "generated_at": "2026-07-15T16:12:34.237Z",
+  "as_of": "2026-07-15",
   "policy_version": "1.0.0",
   "status": "需关注",
-  "score": 83,
+  "score": 82,
   "summary": {
-    "total_records": 138,
+    "total_records": 153,
     "datasets": 6,
     "errors": 0,
-    "warnings": 17,
-    "verified": 128,
-    "internally_reviewed": 10,
+    "warnings": 18,
+    "verified": 145,
+    "internally_reviewed": 8,
     "pending_external_verification": 0,
-    "stale": 16,
+    "stale": 17,
     "source_checks": {
-      "records_checked": 48,
-      "successful": 48,
+      "records_checked": 50,
+      "successful": 50,
       "failed": 0,
       "differences": 0
     },
     "discovery": {
-      "candidates": 864,
-      "research": 537,
-      "trials": 310,
-      "official_updates": 17,
-      "immediate_review": 108,
+      "candidates": 860,
+      "research": 536,
+      "trials": 309,
+      "official_updates": 15,
+      "immediate_review": 105,
       "watchlist": 208,
-      "background": 44,
+      "background": 43,
       "low_relevance": 504,
       "source_failures": 0,
       "partial_sources": 0,
@@ -35,34 +35,34 @@
     },
     "regulatory": {
       "endpoints": 5,
-      "available": 2,
-      "failed": 3
+      "available": 4,
+      "failed": 1
     }
   },
   "datasets": [
     {
       "type": "research",
       "label": "研究证据",
-      "records": 12,
-      "verified": 12,
+      "records": 20,
+      "verified": 20,
       "pending": 0,
       "stale": 0
     },
     {
       "type": "company",
       "label": "竞争对象",
-      "records": 35,
-      "verified": 35,
+      "records": 38,
+      "verified": 38,
       "pending": 0,
       "stale": 0
     },
     {
       "type": "trial",
       "label": "临床试验",
-      "records": 37,
-      "verified": 37,
+      "records": 41,
+      "verified": 41,
       "pending": 0,
-      "stale": 16
+      "stale": 17
     },
     {
       "type": "safety",
@@ -75,15 +75,15 @@
     {
       "type": "event",
       "label": "动态事件",
-      "records": 40,
-      "verified": 36,
+      "records": 42,
+      "verified": 38,
       "pending": 0,
       "stale": 0
     },
     {
       "type": "topic",
       "label": "专题档案",
-      "records": 6,
+      "records": 4,
       "verified": 0,
       "pending": 0,
       "stale": 0
@@ -224,6 +224,13 @@
     },
     {
       "severity": "warning",
+      "code": "registry_record_stale",
+      "record_type": "trial",
+      "record_id": "tangdu-cd19bcma-mg-iit",
+      "message": "注册库记录超过180天未更新，当前状态需谨慎解释"
+    },
+    {
+      "severity": "warning",
       "code": "regulatory_source_failed",
       "record_type": "system",
       "record_id": "-",
@@ -231,6 +238,69 @@
     }
   ],
   "verification": [
+    {
+      "record_type": "research",
+      "record_id": "pmid-42414128",
+      "status": "已核验",
+      "confidence": "高",
+      "source_ids": [
+        "ncbi-pubmed"
+      ],
+      "last_verified_at": "2026-07-15",
+      "next_review_at": "2026-08-14",
+      "verified_fields": [
+        "pmid",
+        "official_title",
+        "doi",
+        "journal",
+        "publish_date",
+        "publication_type"
+      ],
+      "note": "依据NCBI ESummary与PubMed XML核验；作者单位为上海儿童医学中心，文献类型为ahead-of-print来信。",
+      "stale": false
+    },
+    {
+      "record_type": "research",
+      "record_id": "pmid-42295377",
+      "status": "已核验",
+      "confidence": "高",
+      "source_ids": [
+        "ncbi-pubmed"
+      ],
+      "last_verified_at": "2026-07-10",
+      "next_review_at": "2026-08-09",
+      "verified_fields": [
+        "pmid",
+        "official_title",
+        "doi",
+        "journal",
+        "publish_date",
+        "publication_type"
+      ],
+      "note": "已通过NCBI ESummary逐字段核对。",
+      "stale": false
+    },
+    {
+      "record_type": "research",
+      "record_id": "pmid-42286319",
+      "status": "已核验",
+      "confidence": "高",
+      "source_ids": [
+        "ncbi-pubmed"
+      ],
+      "last_verified_at": "2026-07-10",
+      "next_review_at": "2026-08-09",
+      "verified_fields": [
+        "pmid",
+        "official_title",
+        "doi",
+        "journal",
+        "publish_date",
+        "publication_type"
+      ],
+      "note": "已通过NCBI ESummary逐字段核对。",
+      "stale": false
+    },
     {
       "record_type": "research",
       "record_id": "pmid-42251699",
@@ -296,27 +366,6 @@
     },
     {
       "record_type": "research",
-      "record_id": "pmid-42286319",
-      "status": "已核验",
-      "confidence": "高",
-      "source_ids": [
-        "ncbi-pubmed"
-      ],
-      "last_verified_at": "2026-07-10",
-      "next_review_at": "2026-08-09",
-      "verified_fields": [
-        "pmid",
-        "official_title",
-        "doi",
-        "journal",
-        "publish_date",
-        "publication_type"
-      ],
-      "note": "已通过NCBI ESummary逐字段核对。",
-      "stale": false
-    },
-    {
-      "record_type": "research",
       "record_id": "pmid-42171443",
       "status": "已核验",
       "confidence": "高",
@@ -334,90 +383,6 @@
         "publication_type"
       ],
       "note": "发布日期采用期刊月份标准化为2026-05-01。",
-      "stale": false
-    },
-    {
-      "record_type": "research",
-      "record_id": "pmid-42295377",
-      "status": "已核验",
-      "confidence": "高",
-      "source_ids": [
-        "ncbi-pubmed"
-      ],
-      "last_verified_at": "2026-07-10",
-      "next_review_at": "2026-08-09",
-      "verified_fields": [
-        "pmid",
-        "official_title",
-        "doi",
-        "journal",
-        "publish_date",
-        "publication_type"
-      ],
-      "note": "已通过NCBI ESummary逐字段核对。",
-      "stale": false
-    },
-    {
-      "record_type": "research",
-      "record_id": "pmid-41514039",
-      "status": "已核验",
-      "confidence": "高",
-      "source_ids": [
-        "ncbi-pubmed"
-      ],
-      "last_verified_at": "2026-07-11",
-      "next_review_at": "2026-08-10",
-      "verified_fields": [
-        "pmid",
-        "official_title",
-        "doi",
-        "journal",
-        "publish_date",
-        "publication_type"
-      ],
-      "note": "依据NCBI ESummary逐字段核验；发布日期采用电子出版日期2026-01-09。",
-      "stale": false
-    },
-    {
-      "record_type": "research",
-      "record_id": "pmid-41644365",
-      "status": "已核验",
-      "confidence": "高",
-      "source_ids": [
-        "ncbi-pubmed"
-      ],
-      "last_verified_at": "2026-07-11",
-      "next_review_at": "2026-08-10",
-      "verified_fields": [
-        "pmid",
-        "official_title",
-        "doi",
-        "journal",
-        "publish_date",
-        "publication_type"
-      ],
-      "note": "采用电子出版日期2026-02-05。",
-      "stale": false
-    },
-    {
-      "record_type": "research",
-      "record_id": "pmid-41747738",
-      "status": "已核验",
-      "confidence": "高",
-      "source_ids": [
-        "ncbi-pubmed"
-      ],
-      "last_verified_at": "2026-07-11",
-      "next_review_at": "2026-08-10",
-      "verified_fields": [
-        "pmid",
-        "official_title",
-        "doi",
-        "journal",
-        "publish_date",
-        "publication_type"
-      ],
-      "note": "采用电子出版日期2026-02-25。",
       "stale": false
     },
     {
@@ -443,7 +408,7 @@
     },
     {
       "record_type": "research",
-      "record_id": "pmid-41240964",
+      "record_id": "pmid-41747738",
       "status": "已核验",
       "confidence": "高",
       "source_ids": [
@@ -459,7 +424,28 @@
         "publish_date",
         "publication_type"
       ],
-      "note": "采用电子出版日期2025-11-12；未使用未来卷期日期。",
+      "note": "采用电子出版日期2026-02-25。",
+      "stale": false
+    },
+    {
+      "record_type": "research",
+      "record_id": "pmid-41644365",
+      "status": "已核验",
+      "confidence": "高",
+      "source_ids": [
+        "ncbi-pubmed"
+      ],
+      "last_verified_at": "2026-07-11",
+      "next_review_at": "2026-08-10",
+      "verified_fields": [
+        "pmid",
+        "official_title",
+        "doi",
+        "journal",
+        "publish_date",
+        "publication_type"
+      ],
+      "note": "采用电子出版日期2026-02-05。",
       "stale": false
     },
     {
@@ -484,49 +470,192 @@
       "stale": false
     },
     {
-      "record_type": "company",
-      "record_id": "kyverna-kyv101",
+      "record_type": "research",
+      "record_id": "pmid-41514038",
       "status": "已核验",
       "confidence": "高",
       "source_ids": [
-        "kyverna-ir",
-        "clinicaltrials-gov"
+        "ncbi-pubmed"
       ],
-      "last_verified_at": "2026-07-11",
-      "next_review_at": "2026-07-25",
+      "last_verified_at": "2026-07-15",
+      "next_review_at": "2026-08-14",
       "verified_fields": [
-        "product",
-        "focus",
-        "stage",
-        "status",
-        "recent_update",
-        "source_url",
-        "source_last_update"
+        "pmid",
+        "official_title",
+        "doi",
+        "journal",
+        "publish_date",
+        "publication_type"
       ],
-      "note": "公司披露与NCT06451159交叉核验。",
+      "note": "已通过NCBI ESummary与PubMed记录逐字段核对。",
       "stale": false
     },
     {
-      "record_type": "company",
-      "record_id": "cartesian-descartes08",
+      "record_type": "research",
+      "record_id": "pmid-41514039",
       "status": "已核验",
       "confidence": "高",
       "source_ids": [
-        "cartesian-ir",
-        "clinicaltrials-gov"
+        "ncbi-pubmed"
       ],
       "last_verified_at": "2026-07-11",
-      "next_review_at": "2026-07-25",
+      "next_review_at": "2026-08-10",
       "verified_fields": [
-        "product",
-        "focus",
-        "stage",
-        "status",
-        "recent_update",
-        "source_url",
-        "source_last_update"
+        "pmid",
+        "official_title",
+        "doi",
+        "journal",
+        "publish_date",
+        "publication_type"
       ],
-      "note": "AURORA招募状态与公司2026-05-26正式披露交叉核验。",
+      "note": "依据NCBI ESummary逐字段核验；发布日期采用电子出版日期2026-01-09。",
+      "stale": false
+    },
+    {
+      "record_type": "research",
+      "record_id": "pmid-41240964",
+      "status": "已核验",
+      "confidence": "高",
+      "source_ids": [
+        "ncbi-pubmed"
+      ],
+      "last_verified_at": "2026-07-11",
+      "next_review_at": "2026-08-10",
+      "verified_fields": [
+        "pmid",
+        "official_title",
+        "doi",
+        "journal",
+        "publish_date",
+        "publication_type"
+      ],
+      "note": "采用电子出版日期2025-11-12；未使用未来卷期日期。",
+      "stale": false
+    },
+    {
+      "record_type": "research",
+      "record_id": "pmid-41245531",
+      "status": "已核验",
+      "confidence": "高",
+      "source_ids": [
+        "ncbi-pubmed"
+      ],
+      "last_verified_at": "2026-07-15",
+      "next_review_at": "2026-08-14",
+      "verified_fields": [
+        "pmid",
+        "official_title",
+        "doi",
+        "journal",
+        "publish_date",
+        "publication_type"
+      ],
+      "note": "已通过NCBI ESummary与PubMed记录逐字段核对。",
+      "stale": false
+    },
+    {
+      "record_type": "research",
+      "record_id": "pmid-41101309",
+      "status": "已核验",
+      "confidence": "高",
+      "source_ids": [
+        "ncbi-pubmed"
+      ],
+      "last_verified_at": "2026-07-15",
+      "next_review_at": "2026-08-14",
+      "verified_fields": [
+        "pmid",
+        "official_title",
+        "doi",
+        "journal",
+        "publish_date",
+        "publication_type"
+      ],
+      "note": "已通过NCBI ESummary与PubMed记录逐字段核对。",
+      "stale": false
+    },
+    {
+      "record_type": "research",
+      "record_id": "pmid-40856088",
+      "status": "已核验",
+      "confidence": "高",
+      "source_ids": [
+        "ncbi-pubmed"
+      ],
+      "last_verified_at": "2026-07-15",
+      "next_review_at": "2026-08-14",
+      "verified_fields": [
+        "pmid",
+        "official_title",
+        "doi",
+        "journal",
+        "publish_date",
+        "publication_type"
+      ],
+      "note": "已通过NCBI ESummary与PubMed记录逐字段核对。",
+      "stale": false
+    },
+    {
+      "record_type": "research",
+      "record_id": "pmid-38554710",
+      "status": "已核验",
+      "confidence": "高",
+      "source_ids": [
+        "ncbi-pubmed"
+      ],
+      "last_verified_at": "2026-07-15",
+      "next_review_at": "2026-08-14",
+      "verified_fields": [
+        "pmid",
+        "official_title",
+        "doi",
+        "journal",
+        "publish_date",
+        "publication_type"
+      ],
+      "note": "已通过NCBI ESummary与PubMed记录逐字段核对。",
+      "stale": false
+    },
+    {
+      "record_type": "research",
+      "record_id": "pmid-38409527",
+      "status": "已核验",
+      "confidence": "高",
+      "source_ids": [
+        "ncbi-pubmed"
+      ],
+      "last_verified_at": "2026-07-15",
+      "next_review_at": "2026-08-14",
+      "verified_fields": [
+        "pmid",
+        "official_title",
+        "doi",
+        "journal",
+        "publish_date",
+        "publication_type"
+      ],
+      "note": "已通过NCBI ESummary与PubMed记录逐字段核对。",
+      "stale": false
+    },
+    {
+      "record_type": "research",
+      "record_id": "pmid-37353278",
+      "status": "已核验",
+      "confidence": "高",
+      "source_ids": [
+        "ncbi-pubmed"
+      ],
+      "last_verified_at": "2026-07-15",
+      "next_review_at": "2026-08-14",
+      "verified_fields": [
+        "pmid",
+        "official_title",
+        "doi",
+        "journal",
+        "publish_date",
+        "publication_type"
+      ],
+      "note": "已通过NCBI ESummary与PubMed记录逐字段核对。",
       "stale": false
     },
     {
@@ -555,36 +684,62 @@
     },
     {
       "record_type": "company",
-      "record_id": "erlangen-cd19",
+      "record_id": "cartesian-descartes08",
       "status": "已核验",
       "confidence": "高",
       "source_ids": [
+        "cartesian-ir",
+        "clinicaltrials-gov"
+      ],
+      "last_verified_at": "2026-07-11",
+      "next_review_at": "2026-07-25",
+      "verified_fields": [
+        "product",
+        "focus",
+        "stage",
+        "status",
+        "recent_update",
+        "source_url",
+        "source_last_update"
+      ],
+      "note": "AURORA招募状态与公司2026-05-26正式披露交叉核验。",
+      "stale": false
+    },
+    {
+      "record_type": "company",
+      "record_id": "kyverna-kyv101",
+      "status": "已核验",
+      "confidence": "高",
+      "source_ids": [
+        "kyverna-ir",
+        "clinicaltrials-gov"
+      ],
+      "last_verified_at": "2026-07-11",
+      "next_review_at": "2026-07-25",
+      "verified_fields": [
+        "product",
+        "focus",
+        "stage",
+        "status",
+        "recent_update",
+        "source_url",
+        "source_last_update"
+      ],
+      "note": "公司披露与NCT06451159交叉核验。",
+      "stale": false
+    },
+    {
+      "record_type": "company",
+      "record_id": "icell-icg318-autoimmune",
+      "status": "已核验",
+      "confidence": "高",
+      "source_ids": [
+        "icell-primary",
         "ncbi-pubmed",
-        "erlangen-primary"
-      ],
-      "last_verified_at": "2026-07-11",
-      "next_review_at": "2026-08-10",
-      "verified_fields": [
-        "company",
-        "product",
-        "focus",
-        "stage",
-        "evidence_anchor",
-        "source_url"
-      ],
-      "note": "PMID 38381673确认15例SLE、IIM和SSc病例系列，Erlangen官方信息确认CASTLE研究。",
-      "stale": false
-    },
-    {
-      "record_type": "company",
-      "record_id": "tongji-qh103",
-      "status": "已核验",
-      "confidence": "高",
-      "source_ids": [
         "clinicaltrials-gov"
       ],
-      "last_verified_at": "2026-07-11",
-      "next_review_at": "2026-07-25",
+      "last_verified_at": "2026-07-14",
+      "next_review_at": "2026-07-28",
       "verified_fields": [
         "company",
         "product",
@@ -595,100 +750,7 @@
         "source_url",
         "source_last_update"
       ],
-      "note": "依据NCT07526493，责任主体为同济医院，当前Recruiting。",
-      "stale": false
-    },
-    {
-      "record_type": "company",
-      "record_id": "tianjin-xiniao-ucar",
-      "status": "已核验",
-      "confidence": "高",
-      "source_ids": [
-        "clinicaltrials-gov"
-      ],
-      "last_verified_at": "2026-07-11",
-      "next_review_at": "2026-07-25",
-      "verified_fields": [
-        "company",
-        "product",
-        "technology",
-        "focus",
-        "stage",
-        "status",
-        "source_url",
-        "source_last_update"
-      ],
-      "note": "主办方与合作方依据NCT06939166核验。",
-      "stale": false
-    },
-    {
-      "record_type": "company",
-      "record_id": "cspc-sys6020",
-      "status": "已核验",
-      "confidence": "中",
-      "source_ids": [
-        "clinicaltrials-gov",
-        "nmpa-primary"
-      ],
-      "last_verified_at": "2026-07-11",
-      "next_review_at": "2026-07-25",
-      "verified_fields": [
-        "company",
-        "product",
-        "technology",
-        "focus",
-        "stage",
-        "status",
-        "source_url",
-        "source_last_update"
-      ],
-      "note": "主体、技术和试验状态依据NCT06688435；未确认NMPA具体品种批准里程碑。",
-      "stale": false
-    },
-    {
-      "record_type": "company",
-      "record_id": "gilead-kite363",
-      "status": "已核验",
-      "confidence": "高",
-      "source_ids": [
-        "clinicaltrials-gov"
-      ],
-      "last_verified_at": "2026-07-11",
-      "next_review_at": "2026-07-25",
-      "verified_fields": [
-        "company",
-        "product",
-        "technology",
-        "focus",
-        "stage",
-        "status",
-        "source_url",
-        "source_last_update"
-      ],
-      "note": "依据NCT07304154核验。",
-      "stale": false
-    },
-    {
-      "record_type": "company",
-      "record_id": "bms-cc97540",
-      "status": "已核验",
-      "confidence": "高",
-      "source_ids": [
-        "clinicaltrials-gov"
-      ],
-      "last_verified_at": "2026-07-11",
-      "next_review_at": "2026-07-25",
-      "verified_fields": [
-        "company",
-        "product",
-        "technology",
-        "focus",
-        "stage",
-        "status",
-        "source_url",
-        "source_last_update"
-      ],
-      "note": "依据NCT06220201核验。",
+      "note": "依据iCell官网、PMID 41612420及ClinicalTrials.gov NCT06787989、NCT07328581核验；论文中的ICG318与注册库SLE/LN项目名称一致，但未把论文强行绑定到单一NCT。",
       "stale": false
     },
     {
@@ -712,6 +774,98 @@
         "source_last_update"
       ],
       "note": "依据NCT06704269核验。",
+      "stale": false
+    },
+    {
+      "record_type": "company",
+      "record_id": "adicet-prulacel",
+      "status": "已核验",
+      "confidence": "高",
+      "source_ids": [
+        "clinicaltrials-gov"
+      ],
+      "last_verified_at": "2026-07-14",
+      "next_review_at": "2026-07-28",
+      "verified_fields": [
+        "company",
+        "product",
+        "technology",
+        "focus",
+        "stage",
+        "status",
+        "source_url",
+        "source_last_update"
+      ],
+      "note": "依据NCT06375993核验。",
+      "stale": false
+    },
+    {
+      "record_type": "company",
+      "record_id": "allogene-allo329",
+      "status": "已核验",
+      "confidence": "高",
+      "source_ids": [
+        "clinicaltrials-gov"
+      ],
+      "last_verified_at": "2026-07-11",
+      "next_review_at": "2026-07-25",
+      "verified_fields": [
+        "company",
+        "product",
+        "technology",
+        "focus",
+        "stage",
+        "status",
+        "source_url",
+        "source_last_update"
+      ],
+      "note": "依据NCT07085104。",
+      "stale": false
+    },
+    {
+      "record_type": "company",
+      "record_id": "arcellx-anitocel",
+      "status": "已核验",
+      "confidence": "高",
+      "source_ids": [
+        "clinicaltrials-gov"
+      ],
+      "last_verified_at": "2026-07-12",
+      "next_review_at": "2026-07-26",
+      "verified_fields": [
+        "company",
+        "product",
+        "technology",
+        "focus",
+        "stage",
+        "status",
+        "source_url",
+        "source_last_update"
+      ],
+      "note": "依据NCT06626919核验。",
+      "stale": false
+    },
+    {
+      "record_type": "company",
+      "record_id": "bms-cc97540",
+      "status": "已核验",
+      "confidence": "高",
+      "source_ids": [
+        "clinicaltrials-gov"
+      ],
+      "last_verified_at": "2026-07-11",
+      "next_review_at": "2026-07-25",
+      "verified_fields": [
+        "company",
+        "product",
+        "technology",
+        "focus",
+        "stage",
+        "status",
+        "source_url",
+        "source_last_update"
+      ],
+      "note": "依据NCT06220201核验。",
       "stale": false
     },
     {
@@ -762,14 +916,15 @@
     },
     {
       "record_type": "company",
-      "record_id": "tianjin-qt019c",
+      "record_id": "iaso-equecel-autoimmune",
       "status": "已核验",
       "confidence": "高",
       "source_ids": [
+        "iaso-primary",
         "clinicaltrials-gov"
       ],
-      "last_verified_at": "2026-07-11",
-      "next_review_at": "2026-07-25",
+      "last_verified_at": "2026-07-14",
+      "next_review_at": "2026-07-28",
       "verified_fields": [
         "company",
         "product",
@@ -780,12 +935,12 @@
         "source_url",
         "source_last_update"
       ],
-      "note": "依据NCT07392528。",
+      "note": "依据IASO官网2024-08-12消息、官网pipeline及ClinicalTrials.gov NCT04561557核验。美国自身免疫IND按适应症计为MG、MS、SLE、LN四项；pipeline将SLE/LN合并一行。中国MG IND及MS、SLE、IIM等IIT与美国IND分开记录。",
       "stale": false
     },
     {
       "record_type": "company",
-      "record_id": "allogene-allo329",
+      "record_id": "gilead-kite363",
       "status": "已核验",
       "confidence": "高",
       "source_ids": [
@@ -803,7 +958,7 @@
         "source_url",
         "source_last_update"
       ],
-      "note": "依据NCT07085104。",
+      "note": "依据NCT07304154核验。",
       "stale": false
     },
     {
@@ -831,52 +986,6 @@
     },
     {
       "record_type": "company",
-      "record_id": "therorna-ti0032",
-      "status": "已核验",
-      "confidence": "高",
-      "source_ids": [
-        "clinicaltrials-gov"
-      ],
-      "last_verified_at": "2026-07-11",
-      "next_review_at": "2026-07-25",
-      "verified_fields": [
-        "company",
-        "product",
-        "technology",
-        "focus",
-        "stage",
-        "status",
-        "source_url",
-        "source_last_update"
-      ],
-      "note": "依据NCT07413341。",
-      "stale": false
-    },
-    {
-      "record_type": "company",
-      "record_id": "zjuch-ucar19bcma",
-      "status": "已核验",
-      "confidence": "高",
-      "source_ids": [
-        "clinicaltrials-gov"
-      ],
-      "last_verified_at": "2026-07-12",
-      "next_review_at": "2026-07-26",
-      "verified_fields": [
-        "company",
-        "product",
-        "technology",
-        "focus",
-        "stage",
-        "status",
-        "source_url",
-        "source_last_update"
-      ],
-      "note": "依据NCT07305116核验。",
-      "stale": false
-    },
-    {
-      "record_type": "company",
       "record_id": "magicrna-hn2302",
       "status": "已核验",
       "confidence": "中",
@@ -900,14 +1009,14 @@
     },
     {
       "record_type": "company",
-      "record_id": "arcellx-anitocel",
+      "record_id": "therorna-ti0032",
       "status": "已核验",
       "confidence": "高",
       "source_ids": [
         "clinicaltrials-gov"
       ],
-      "last_verified_at": "2026-07-12",
-      "next_review_at": "2026-07-26",
+      "last_verified_at": "2026-07-11",
+      "next_review_at": "2026-07-25",
       "verified_fields": [
         "company",
         "product",
@@ -918,14 +1027,38 @@
         "source_url",
         "source_last_update"
       ],
-      "note": "依据NCT06626919核验。",
+      "note": "依据NCT07413341。",
       "stale": false
     },
     {
       "record_type": "company",
-      "record_id": "tongji-v001bcma",
+      "record_id": "cspc-sys6020",
       "status": "已核验",
-      "confidence": "高",
+      "confidence": "中",
+      "source_ids": [
+        "clinicaltrials-gov",
+        "nmpa-primary"
+      ],
+      "last_verified_at": "2026-07-11",
+      "next_review_at": "2026-07-25",
+      "verified_fields": [
+        "company",
+        "product",
+        "technology",
+        "focus",
+        "stage",
+        "status",
+        "source_url",
+        "source_last_update"
+      ],
+      "note": "主体、技术和试验状态依据NCT06688435；未确认NMPA具体品种批准里程碑。",
+      "stale": false
+    },
+    {
+      "record_type": "company",
+      "record_id": "precision-cd19",
+      "status": "已核验",
+      "confidence": "低",
       "source_ids": [
         "clinicaltrials-gov"
       ],
@@ -941,7 +1074,144 @@
         "source_url",
         "source_last_update"
       ],
-      "note": "依据NCT07339540核验。",
+      "note": "依据NCT06056921核验；注册库自2023-09后未刷新。",
+      "stale": false
+    },
+    {
+      "record_type": "company",
+      "record_id": "changhai-kn3601",
+      "status": "已核验",
+      "confidence": "高",
+      "source_ids": [
+        "clinicaltrials-gov"
+      ],
+      "last_verified_at": "2026-07-14",
+      "next_review_at": "2026-07-28",
+      "verified_fields": [
+        "company",
+        "product",
+        "technology",
+        "focus",
+        "stage",
+        "status",
+        "source_url",
+        "source_last_update"
+      ],
+      "note": "依据NCT07246096核验。",
+      "stale": false
+    },
+    {
+      "record_type": "company",
+      "record_id": "erlangen-cd19",
+      "status": "已核验",
+      "confidence": "高",
+      "source_ids": [
+        "ncbi-pubmed",
+        "erlangen-primary"
+      ],
+      "last_verified_at": "2026-07-11",
+      "next_review_at": "2026-08-10",
+      "verified_fields": [
+        "company",
+        "product",
+        "focus",
+        "stage",
+        "evidence_anchor",
+        "source_url"
+      ],
+      "note": "PMID 38381673确认15例SLE、IIM和SSc病例系列，Erlangen官方信息确认CASTLE研究。",
+      "stale": false
+    },
+    {
+      "record_type": "company",
+      "record_id": "gustaveroussy-cellattack1",
+      "status": "已核验",
+      "confidence": "高",
+      "source_ids": [
+        "clinicaltrials-gov"
+      ],
+      "last_verified_at": "2026-07-14",
+      "next_review_at": "2026-07-28",
+      "verified_fields": [
+        "company",
+        "product",
+        "technology",
+        "focus",
+        "stage",
+        "status",
+        "source_url",
+        "source_last_update"
+      ],
+      "note": "依据NCT07544225核验。",
+      "stale": false
+    },
+    {
+      "record_type": "company",
+      "record_id": "hadassah-hbi0101",
+      "status": "已核验",
+      "confidence": "高",
+      "source_ids": [
+        "clinicaltrials-gov"
+      ],
+      "last_verified_at": "2026-07-14",
+      "next_review_at": "2026-07-28",
+      "verified_fields": [
+        "company",
+        "product",
+        "technology",
+        "focus",
+        "stage",
+        "status",
+        "source_url",
+        "source_last_update"
+      ],
+      "note": "依据NCT07085676核验。",
+      "stale": false
+    },
+    {
+      "record_type": "company",
+      "record_id": "huashan-c-car168-cns",
+      "status": "已核验",
+      "confidence": "高",
+      "source_ids": [
+        "clinicaltrials-gov"
+      ],
+      "last_verified_at": "2026-07-14",
+      "next_review_at": "2026-07-28",
+      "verified_fields": [
+        "company",
+        "product",
+        "technology",
+        "focus",
+        "stage",
+        "status",
+        "source_url",
+        "source_last_update"
+      ],
+      "note": "依据NCT07341828核验。",
+      "stale": false
+    },
+    {
+      "record_type": "company",
+      "record_id": "renji-c-car168",
+      "status": "已核验",
+      "confidence": "中",
+      "source_ids": [
+        "clinicaltrials-gov"
+      ],
+      "last_verified_at": "2026-07-14",
+      "next_review_at": "2026-07-28",
+      "verified_fields": [
+        "company",
+        "product",
+        "technology",
+        "focus",
+        "stage",
+        "status",
+        "source_url",
+        "source_last_update"
+      ],
+      "note": "依据NCT06249438核验；注册库最后更新时间较旧。",
       "stale": false
     },
     {
@@ -969,7 +1239,7 @@
     },
     {
       "record_type": "company",
-      "record_id": "xuzhou-xiniao-ucar",
+      "record_id": "pkuph-bcmacd19",
       "status": "已核验",
       "confidence": "中",
       "source_ids": [
@@ -987,7 +1257,7 @@
         "source_url",
         "source_last_update"
       ],
-      "note": "依据NCT07155369核验；注册库最后更新时间较旧。",
+      "note": "依据NCT06794008核验；注册库最后更新时间较旧。",
       "stale": false
     },
     {
@@ -1038,6 +1308,185 @@
     },
     {
       "record_type": "company",
+      "record_id": "tongji-ct103a-neuro",
+      "status": "已核验",
+      "confidence": "高",
+      "source_ids": [
+        "clinicaltrials-gov",
+        "ncbi-pubmed"
+      ],
+      "last_verified_at": "2026-07-15",
+      "next_review_at": "2026-07-29",
+      "verified_fields": [
+        "company",
+        "product",
+        "technology",
+        "stage",
+        "status",
+        "source_url"
+      ],
+      "note": "NCT07337785及PMID 38409527、41101309已核验。",
+      "stale": false
+    },
+    {
+      "record_type": "company",
+      "record_id": "tongji-qh103",
+      "status": "已核验",
+      "confidence": "高",
+      "source_ids": [
+        "clinicaltrials-gov"
+      ],
+      "last_verified_at": "2026-07-11",
+      "next_review_at": "2026-07-25",
+      "verified_fields": [
+        "company",
+        "product",
+        "technology",
+        "focus",
+        "stage",
+        "status",
+        "source_url",
+        "source_last_update"
+      ],
+      "note": "依据NCT07526493，责任主体为同济医院，当前Recruiting。",
+      "stale": false
+    },
+    {
+      "record_type": "company",
+      "record_id": "tongji-v001bcma",
+      "status": "已核验",
+      "confidence": "高",
+      "source_ids": [
+        "clinicaltrials-gov"
+      ],
+      "last_verified_at": "2026-07-12",
+      "next_review_at": "2026-07-26",
+      "verified_fields": [
+        "company",
+        "product",
+        "technology",
+        "focus",
+        "stage",
+        "status",
+        "source_url",
+        "source_last_update"
+      ],
+      "note": "依据NCT07339540核验。",
+      "stale": false
+    },
+    {
+      "record_type": "company",
+      "record_id": "tangdu-cd19bcma-mg",
+      "status": "已核验",
+      "confidence": "高",
+      "source_ids": [
+        "clinicaltrials-gov"
+      ],
+      "last_verified_at": "2026-07-15",
+      "next_review_at": "2026-07-29",
+      "verified_fields": [
+        "company",
+        "product",
+        "technology",
+        "stage",
+        "status",
+        "source_url"
+      ],
+      "note": "NCT06371040与关联论文已核验。",
+      "stale": false
+    },
+    {
+      "record_type": "company",
+      "record_id": "tianjin-qt019c",
+      "status": "已核验",
+      "confidence": "高",
+      "source_ids": [
+        "clinicaltrials-gov"
+      ],
+      "last_verified_at": "2026-07-11",
+      "next_review_at": "2026-07-25",
+      "verified_fields": [
+        "company",
+        "product",
+        "technology",
+        "focus",
+        "stage",
+        "status",
+        "source_url",
+        "source_last_update"
+      ],
+      "note": "依据NCT07392528。",
+      "stale": false
+    },
+    {
+      "record_type": "company",
+      "record_id": "tianjin-xiniao-ucar",
+      "status": "已核验",
+      "confidence": "高",
+      "source_ids": [
+        "clinicaltrials-gov"
+      ],
+      "last_verified_at": "2026-07-11",
+      "next_review_at": "2026-07-25",
+      "verified_fields": [
+        "company",
+        "product",
+        "technology",
+        "focus",
+        "stage",
+        "status",
+        "source_url",
+        "source_last_update"
+      ],
+      "note": "主办方与合作方依据NCT06939166核验。",
+      "stale": false
+    },
+    {
+      "record_type": "company",
+      "record_id": "xuzhou-bcmacd19-mg",
+      "status": "已核验",
+      "confidence": "高",
+      "source_ids": [
+        "ncbi-pubmed"
+      ],
+      "last_verified_at": "2026-07-15",
+      "next_review_at": "2026-07-29",
+      "verified_fields": [
+        "company",
+        "product",
+        "technology",
+        "stage",
+        "status",
+        "source_url"
+      ],
+      "note": "PMID 41245531已核验。",
+      "stale": false
+    },
+    {
+      "record_type": "company",
+      "record_id": "zjuch-ucar19bcma",
+      "status": "已核验",
+      "confidence": "高",
+      "source_ids": [
+        "clinicaltrials-gov"
+      ],
+      "last_verified_at": "2026-07-12",
+      "next_review_at": "2026-07-26",
+      "verified_fields": [
+        "company",
+        "product",
+        "technology",
+        "focus",
+        "stage",
+        "status",
+        "source_url",
+        "source_last_update"
+      ],
+      "note": "依据NCT07305116核验。",
+      "stale": false
+    },
+    {
+      "record_type": "company",
       "record_id": "changzhou-ucar19bcma",
       "status": "已核验",
       "confidence": "中",
@@ -1061,7 +1510,7 @@
     },
     {
       "record_type": "company",
-      "record_id": "pkuph-bcmacd19",
+      "record_id": "xuzhou-xiniao-ucar",
       "status": "已核验",
       "confidence": "中",
       "source_ids": [
@@ -1079,217 +1528,7 @@
         "source_url",
         "source_last_update"
       ],
-      "note": "依据NCT06794008核验；注册库最后更新时间较旧。",
-      "stale": false
-    },
-    {
-      "record_type": "company",
-      "record_id": "precision-cd19",
-      "status": "已核验",
-      "confidence": "低",
-      "source_ids": [
-        "clinicaltrials-gov"
-      ],
-      "last_verified_at": "2026-07-12",
-      "next_review_at": "2026-07-26",
-      "verified_fields": [
-        "company",
-        "product",
-        "technology",
-        "focus",
-        "stage",
-        "status",
-        "source_url",
-        "source_last_update"
-      ],
-      "note": "依据NCT06056921核验；注册库自2023-09后未刷新。",
-      "stale": false
-    },
-    {
-      "record_type": "company",
-      "record_id": "hadassah-hbi0101",
-      "status": "已核验",
-      "confidence": "高",
-      "source_ids": [
-        "clinicaltrials-gov"
-      ],
-      "last_verified_at": "2026-07-14",
-      "next_review_at": "2026-07-28",
-      "verified_fields": [
-        "company",
-        "product",
-        "technology",
-        "focus",
-        "stage",
-        "status",
-        "source_url",
-        "source_last_update"
-      ],
-      "note": "依据NCT07085676核验。",
-      "stale": false
-    },
-    {
-      "record_type": "company",
-      "record_id": "renji-c-car168",
-      "status": "已核验",
-      "confidence": "中",
-      "source_ids": [
-        "clinicaltrials-gov"
-      ],
-      "last_verified_at": "2026-07-14",
-      "next_review_at": "2026-07-28",
-      "verified_fields": [
-        "company",
-        "product",
-        "technology",
-        "focus",
-        "stage",
-        "status",
-        "source_url",
-        "source_last_update"
-      ],
-      "note": "依据NCT06249438核验；注册库最后更新时间较旧。",
-      "stale": false
-    },
-    {
-      "record_type": "company",
-      "record_id": "adicet-prulacel",
-      "status": "已核验",
-      "confidence": "高",
-      "source_ids": [
-        "clinicaltrials-gov"
-      ],
-      "last_verified_at": "2026-07-14",
-      "next_review_at": "2026-07-28",
-      "verified_fields": [
-        "company",
-        "product",
-        "technology",
-        "focus",
-        "stage",
-        "status",
-        "source_url",
-        "source_last_update"
-      ],
-      "note": "依据NCT06375993核验。",
-      "stale": false
-    },
-    {
-      "record_type": "company",
-      "record_id": "changhai-kn3601",
-      "status": "已核验",
-      "confidence": "高",
-      "source_ids": [
-        "clinicaltrials-gov"
-      ],
-      "last_verified_at": "2026-07-14",
-      "next_review_at": "2026-07-28",
-      "verified_fields": [
-        "company",
-        "product",
-        "technology",
-        "focus",
-        "stage",
-        "status",
-        "source_url",
-        "source_last_update"
-      ],
-      "note": "依据NCT07246096核验。",
-      "stale": false
-    },
-    {
-      "record_type": "company",
-      "record_id": "huashan-c-car168-cns",
-      "status": "已核验",
-      "confidence": "高",
-      "source_ids": [
-        "clinicaltrials-gov"
-      ],
-      "last_verified_at": "2026-07-14",
-      "next_review_at": "2026-07-28",
-      "verified_fields": [
-        "company",
-        "product",
-        "technology",
-        "focus",
-        "stage",
-        "status",
-        "source_url",
-        "source_last_update"
-      ],
-      "note": "依据NCT07341828核验。",
-      "stale": false
-    },
-    {
-      "record_type": "company",
-      "record_id": "gustaveroussy-cellattack1",
-      "status": "已核验",
-      "confidence": "高",
-      "source_ids": [
-        "clinicaltrials-gov"
-      ],
-      "last_verified_at": "2026-07-14",
-      "next_review_at": "2026-07-28",
-      "verified_fields": [
-        "company",
-        "product",
-        "technology",
-        "focus",
-        "stage",
-        "status",
-        "source_url",
-        "source_last_update"
-      ],
-      "note": "依据NCT07544225核验。",
-      "stale": false
-    },
-    {
-      "record_type": "company",
-      "record_id": "iaso-equecel-autoimmune",
-      "status": "已核验",
-      "confidence": "高",
-      "source_ids": [
-        "iaso-primary",
-        "clinicaltrials-gov"
-      ],
-      "last_verified_at": "2026-07-14",
-      "next_review_at": "2026-07-28",
-      "verified_fields": [
-        "company",
-        "product",
-        "technology",
-        "focus",
-        "stage",
-        "status",
-        "source_url",
-        "source_last_update"
-      ],
-      "note": "依据IASO官网2024-08-12消息、官网pipeline及ClinicalTrials.gov NCT04561557核验。美国自身免疫IND按适应症计为MG、MS、SLE、LN四项；pipeline将SLE/LN合并一行。中国MG IND及MS、SLE、IIM等IIT与美国IND分开记录。",
-      "stale": false
-    },
-    {
-      "record_type": "company",
-      "record_id": "icell-icg318-autoimmune",
-      "status": "已核验",
-      "confidence": "高",
-      "source_ids": [
-        "icell-primary",
-        "ncbi-pubmed",
-        "clinicaltrials-gov"
-      ],
-      "last_verified_at": "2026-07-14",
-      "next_review_at": "2026-07-28",
-      "verified_fields": [
-        "company",
-        "product",
-        "technology",
-        "focus",
-        "stage",
-        "status",
-        "source_url",
-        "source_last_update"
-      ],
-      "note": "依据iCell官网、PMID 41612420及ClinicalTrials.gov NCT06787989、NCT07328581核验；论文中的ICG318与注册库SLE/LN项目名称一致，但未把论文强行绑定到单一NCT。",
+      "note": "依据NCT07155369核验；注册库最后更新时间较旧。",
       "stale": false
     },
     {
@@ -2128,6 +2367,31 @@
     },
     {
       "record_type": "trial",
+      "record_id": "kyv101-autoimmune-ltfu",
+      "status": "已核验",
+      "confidence": "高",
+      "source_ids": [
+        "clinicaltrials-gov"
+      ],
+      "last_verified_at": "2026-07-15",
+      "next_review_at": "2026-07-22",
+      "verified_fields": [
+        "registry_id",
+        "official_title",
+        "sponsor",
+        "product",
+        "phase",
+        "status",
+        "enrollment",
+        "study_start",
+        "estimated_completion",
+        "registry_last_update"
+      ],
+      "note": "依据ClinicalTrials.gov API核验NCT07403188；该研究为观察性长期随访，重点跟踪延迟不良事件、RCL、CAR持续性和ADA。",
+      "stale": false
+    },
+    {
+      "record_type": "trial",
       "record_id": "gustaveroussy-cellattack1-autoimmune",
       "status": "已核验",
       "confidence": "高",
@@ -2224,6 +2488,70 @@
         "registry_last_update"
       ],
       "note": "依据ClinicalTrials.gov API核验NCT07328581；官方试验名称直接使用ICG318。",
+      "stale": false
+    },
+    {
+      "record_type": "trial",
+      "record_id": "tangdu-cd19bcma-mg-iit",
+      "status": "已核验",
+      "confidence": "高",
+      "source_ids": [
+        "clinicaltrials-gov"
+      ],
+      "last_verified_at": "2026-07-15",
+      "next_review_at": "2026-07-22",
+      "verified_fields": [
+        "registry_id",
+        "official_title",
+        "status",
+        "phase",
+        "enrollment",
+        "sponsor",
+        "registry_last_update"
+      ],
+      "note": "已通过ClinicalTrials.gov API v2逐字段核对。",
+      "stale": false
+    },
+    {
+      "record_type": "trial",
+      "record_id": "tongji-rd0605-neuro-iit",
+      "status": "已核验",
+      "confidence": "高",
+      "source_ids": [
+        "clinicaltrials-gov"
+      ],
+      "last_verified_at": "2026-07-15",
+      "next_review_at": "2026-07-22",
+      "verified_fields": [
+        "registry_id",
+        "official_title",
+        "status",
+        "phase",
+        "enrollment",
+        "sponsor",
+        "registry_last_update"
+      ],
+      "note": "已通过ClinicalTrials.gov API v2逐字段核对。",
+      "stale": false
+    },
+    {
+      "record_type": "trial",
+      "record_id": "xuzhou-bcmacd19-mg-phase1",
+      "status": "已核验",
+      "confidence": "高",
+      "source_ids": [
+        "ncbi-pubmed"
+      ],
+      "last_verified_at": "2026-07-15",
+      "next_review_at": "2026-07-22",
+      "verified_fields": [
+        "official_title",
+        "phase",
+        "enrollment",
+        "sponsor",
+        "status"
+      ],
+      "note": "PMID 41245531与ChiCTR2200061267论文标识已核验。",
       "stale": false
     },
     {
@@ -3003,6 +3331,25 @@
     },
     {
       "record_type": "event",
+      "record_id": "event-nct07403188-update",
+      "status": "已核验",
+      "confidence": "高",
+      "source_ids": [
+        "clinicaltrials-gov"
+      ],
+      "last_verified_at": "2026-07-15",
+      "next_review_at": "2026-07-22",
+      "verified_fields": [
+        "date",
+        "status",
+        "source_url",
+        "entities"
+      ],
+      "note": "事件日期采用ClinicalTrials.gov最近更新发布日期。",
+      "stale": false
+    },
+    {
+      "record_type": "event",
       "record_id": "event-iaso-equecel-fda-autoimmune-ind",
       "status": "已核验",
       "confidence": "高",
@@ -3037,6 +3384,24 @@
         "entities"
       ],
       "note": "事件日期采用ClinicalTrials.gov最近更新发布日期；注册库最后更新时间较旧。",
+      "stale": false
+    },
+    {
+      "record_type": "event",
+      "record_id": "event-feed-42414128",
+      "status": "已核验",
+      "confidence": "高",
+      "source_ids": [
+        "ncbi-pubmed"
+      ],
+      "last_verified_at": "2026-07-15",
+      "next_review_at": "2026-08-14",
+      "verified_fields": [
+        "date",
+        "source_url",
+        "entities"
+      ],
+      "note": "事件日期采用PubMed发布日期。",
       "stale": false
     },
     {
@@ -3131,28 +3496,6 @@
     {
       "record_type": "topic",
       "record_id": "nmosd-autoimmune-encephalitis",
-      "status": "内部审核",
-      "confidence": "中",
-      "source_ids": [
-        "internal-curation"
-      ],
-      "last_verified_at": "2026-07-10",
-      "stale": false
-    },
-    {
-      "record_type": "topic",
-      "record_id": "cross-disease-immune-reset",
-      "status": "内部审核",
-      "confidence": "中",
-      "source_ids": [
-        "internal-curation"
-      ],
-      "last_verified_at": "2026-07-10",
-      "stale": false
-    },
-    {
-      "record_type": "topic",
-      "record_id": "long-term-benefit-risk",
       "status": "内部审核",
       "confidence": "中",
       "source_ids": [
