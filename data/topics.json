@@ -51,6 +51,33 @@
         "renji-c-car168-autoimmune",
         "huashan-c-car168-cns-autoimmune"
       ]
+    },
+    "i18n": {
+      "en": {
+        "name": "Multiple Sclerosis (MS)",
+        "maturity": "Early clinical validation",
+        "summary": "MS now has two-patient CD19 CAR-T evidence, a five-patient CT103A anti-BCMA series, and several sponsor-initiated and IIT studies, while benefit on disability progression remains unproven.",
+        "thesis": "Value in MS depends not only on short-term disease-activity suppression, but on a coherent chain of durable remission, neurological outcomes, B-cell reconstitution, and toxicity attribution.",
+        "unmet_need": "Patients with refractory or progressive disease still lack a therapy that deeply resets pathological immune memory and delivers durable remission.",
+        "next_catalyst": "Long-term EDSS, MRI, CSF, and immune-reconstitution data from sponsor studies such as KYV-101 and IIT programs including CT103A and RD06-05.",
+        "keywords": [
+          "MS",
+          "Multiple sclerosis",
+          "CD19 CAR-T",
+          "Neurotoxicity",
+          "B-cell reconstitution"
+        ],
+        "key_questions": [
+          "Can deep B-cell depletion translate into durable clinical remission?",
+          "How should ICANS, disease fluctuation, and pre-existing neurological injury be separated?",
+          "Which endpoints can support cross-center and registration-oriented comparison?"
+        ],
+        "evidence_gaps": [
+          "Small samples and limited controlled evidence",
+          "Insufficient long-term functional outcomes",
+          "Limited comparability across products and conditioning regimens"
+        ]
+      }
     }
   },
   {
@@ -113,6 +140,33 @@
         "renji-c-car168-autoimmune",
         "ct103a-neuro-autoimmune-phase1"
       ]
+    },
+    "i18n": {
+      "en": {
+        "name": "Myasthenia Gravis (MG)",
+        "maturity": "Pivotal validation",
+        "summary": "MG has evidence spanning cases, IITs, a randomized Phase 2b study, and a pivotal Phase 3 trial, making it one of the most clinically mature neuroimmune CAR-T indications.",
+        "thesis": "The central question is whether repeat-dosed mRNA CAR-T creates a meaningful advantage in durability, execution, and comparative efficacy against standard therapy, not merely whether short-term responses occur.",
+        "unmet_need": "Refractory patients need more stable disease control with less chronic immunosuppression and fewer hospitalizations.",
+        "next_catalyst": "Readout from Cartesian's AURORA Phase 3 program and larger, longer follow-up from Chinese dual-target IITs.",
+        "keywords": [
+          "MG",
+          "Myasthenia gravis",
+          "Descartes-08",
+          "mRNA CAR-T",
+          "Repeat dosing"
+        ],
+        "key_questions": [
+          "Can transient CAR expression sufficiently reshape pathogenic immunity?",
+          "Is the operational burden of repeat dosing acceptable?",
+          "How deep and durable is response versus standard treatment?"
+        ],
+        "evidence_gaps": [
+          "Limited long-term follow-up",
+          "No direct comparison with persistent CAR-T",
+          "Patient stratification and withdrawal strategies remain unsettled"
+        ]
+      }
     }
   },
   {
@@ -173,6 +227,33 @@
         "changhai-kn3601-autoimmune",
         "gustaveroussy-cellattack1-autoimmune"
       ]
+    },
+    "i18n": {
+      "en": {
+        "name": "Systemic Sclerosis (SSc)",
+        "maturity": "Strengthening mechanistic signal",
+        "summary": "Integrated clinical and proteomic improvement makes SSc one of the more mechanistically interpretable autoimmune CAR-T indications.",
+        "thesis": "Organ outcomes, functional improvement, and immune remodeling must be linked to determine whether benefit exceeds natural fluctuation and prior-treatment effects.",
+        "unmet_need": "Progressive disease causes irreversible organ damage, while current therapies have limited disease-resetting capacity.",
+        "next_catalyst": "Standardized endpoints, long-term organ outcomes, and replication of multi-omic findings across cohorts.",
+        "keywords": [
+          "SSc",
+          "Systemic sclerosis",
+          "relma-cel",
+          "Proteomics",
+          "Organ outcomes"
+        ],
+        "key_questions": [
+          "Are clinical and immune-remodeling improvements synchronized and reproducible?",
+          "Can organ-function benefit persist?",
+          "Can single-disease evidence support platform expansion?"
+        ],
+        "evidence_gaps": [
+          "Limited cohort size",
+          "Multi-omic signals need external validation",
+          "Inconsistent organ endpoints and follow-up duration"
+        ]
+      }
     }
   },
   {
@@ -226,6 +307,33 @@
         "huashan-c-car168-cns-autoimmune",
         "ct103a-neuro-autoimmune-phase1"
       ]
+    },
+    "i18n": {
+      "en": {
+        "name": "Neuromyelitis Optica Spectrum Disorder (NMOSD)",
+        "maturity": "Phase 1 human evidence",
+        "summary": "NMOSD has a 12-patient CT103A anti-BCMA Phase 1 report and paired CSF/blood single-cell analysis; other programs remain early basket studies.",
+        "thesis": "CT103A supports short-term relapse control and central/peripheral plasma-cell lineage depletion, but durability must be tested through AQP4-IgG, annualized relapse rate, EDSS, MRI, vision, and immune reconstitution.",
+        "unmet_need": "Relapses can rapidly accumulate visual and spinal disability, leaving a need for deeper, durable, and predictable control in refractory disease.",
+        "next_catalyst": "Longer CT103A relapse and functional follow-up plus NMOSD-specific results from HBI0101, QH103, C-CAR168, and other programs.",
+        "keywords": [
+          "NMOSD",
+          "AQP4-IgG",
+          "Neuromyelitis optica",
+          "Annualized relapse rate",
+          "EDSS"
+        ],
+        "key_questions": [
+          "Are NMOSD enrollment and AQP4-IgG stratification adequate?",
+          "Do relapse, EDSS, MRI, and visual outcomes align?",
+          "Can deep B-cell or plasma-cell depletion reduce long-term relapse?"
+        ],
+        "evidence_gaps": [
+          "Most programs use multi-disease basket designs",
+          "No NMOSD-specific controlled CAR-T study",
+          "Long-term relapse and visual outcomes remain limited"
+        ]
+      }
     }
   },
   {
@@ -233,32 +341,38 @@
     "name": "自身免疫性脑炎（AE）",
     "short_name": "AE",
     "kind": "疾病专题",
-    "priority": "中",
-    "maturity": "IIT早期探索",
-    "summary": "自身免疫性脑炎的CAR-T开发仍处IIT早期阶段，现有项目均为覆盖多个神经免疫病的篮式试验。",
-    "thesis": "AE必须按致病抗体、既往治疗和神经功能状态独立分析，并使用CASE、mRS、复发率和认知结局评价，不能沿用NMOSD或MS的阶段与终点。",
-    "unmet_need": "部分抗体阳性患者经激素、IVIG、血浆置换及B细胞治疗后仍复发或遗留严重认知、精神和癫痫负担。",
-    "next_catalyst": "QH103、C-CAR168、CT103A及RD06-05 IIT披露AE实际入组、CASE/mRS变化和复发随访。",
+    "priority": "高",
+    "maturity": "人体病例、临床前验证与IIT",
+    "summary": "自身免疫性脑炎已有首例DAGLA抗体相关病例接受KYV-101的直接人体证据及约两年半延长随访；抗NMDAR方向另有抗原特异性CAAR-T临床前验证。",
+    "thesis": "AE不能作为单一病种合并判断：神经元表面抗体、细胞内/副肿瘤抗体及胶质重叠谱系的致病机制、可逆性和CAR-T适用逻辑不同，必须按抗体、肿瘤背景与既存神经损伤分层。",
+    "unmet_need": "部分患者经激素、IVIG、血浆置换、利妥昔单抗或浆细胞治疗后仍复发，并遗留严重认知、精神、癫痫和运动功能负担。",
+    "next_catalyst": "DAGLA病例更长期结构与功能随访、NMDAR-CAAR T进入人体研究，以及现有篮式IIT按NMDAR、LGI1、CASPR2等抗体披露独立结果。",
     "keywords": [
       "AE",
       "自身免疫性脑炎",
-      "CASE",
-      "mRS",
-      "致病抗体"
+      "NMDAR",
+      "LGI1 / CASPR2",
+      "DAGLA",
+      "CASE / mRS"
     ],
     "key_questions": [
-      "不同抗体亚型能否共享CAR-T治疗逻辑",
-      "CASE、mRS与认知结局能否持续改善",
-      "如何区分ICANS、原病波动和既存神经损伤"
+      "不同抗体亚型的B细胞依赖性和神经损伤可逆性有何差异",
+      "免疫学缓解能否同步转化为CASE、mRS、认知和MRI获益",
+      "如何区分ICANS、原病活动、肿瘤相关过程与持续神经退行"
     ],
     "evidence_gaps": [
-      "尚无AE专属Sponsor-initiated试验",
-      "公开资料未披露AE独立队列结果",
-      "抗体亚型、认知和长期功能结局不足"
+      "当前直接人体CAR-T证据仅1例DAGLA抗体相关脑炎",
+      "篮式IIT尚未按抗体亚型披露AE独立结果",
+      "NMDAR-CAAR T仍处临床前，LGI1/CASPR2等亚型缺直接证据"
     ],
     "related": {
-      "research": [],
+      "research": [
+        "pmid-40706586",
+        "pmid-42028700",
+        "pmid-37918394"
+      ],
       "company": [
+        "kyverna-kyv101",
         "tongji-qh103",
         "tianjin-xiniao-ucar",
         "huashan-c-car168-cns",
@@ -271,6 +385,154 @@
         "ct103a-neuro-autoimmune-phase1",
         "tongji-rd0605-neuro-iit"
       ]
+    },
+    "antibody_groups": [
+      {
+        "group": "神经元表面/突触抗体",
+        "logic": "抗体致病性通常更直接，广谱CD19/BCMA清除与抗原特异性CAAR-T均有明确机制基础。",
+        "items": [
+          {
+            "antibody": "NMDAR（GluN1）",
+            "phenotype": "精神行为异常、癫痫、运动障碍、自主神经不稳",
+            "evidence": "NMDAR-CAAR T已完成体外与小鼠验证；尚无人体验证。"
+          },
+          {
+            "antibody": "LGI1 / CASPR2",
+            "phenotype": "边缘性脑炎、面臂肌张力障碍发作、记忆障碍或周围神经高兴奋",
+            "evidence": "尚无抗体亚型专属CAR-T病例；篮式IIT未披露分层结果。"
+          },
+          {
+            "antibody": "GABA-BR / AMPAR / GABA-AR",
+            "phenotype": "边缘性脑炎、难治性癫痫；部分亚型伴肿瘤",
+            "evidence": "缺乏直接CAR-T临床证据，必须同时评估肿瘤相关性。"
+          },
+          {
+            "antibody": "DPPX / mGluR5 / GlyR",
+            "phenotype": "脑病、惊跳/僵硬、腹泻体重下降或边缘性脑炎等异质表型",
+            "evidence": "未见专属CAR-T人体证据，适合单独登记而非合并判断。"
+          }
+        ]
+      },
+      {
+        "group": "细胞内或细胞内相关抗原",
+        "logic": "抗体可能是疾病标志物而非唯一效应因子，T细胞介导损伤和既存神经退行性改变会限制单纯B细胞清除的可逆性。",
+        "items": [
+          {
+            "antibody": "DAGLA",
+            "phenotype": "小脑、认知和运动综合征",
+            "evidence": "已有1例KYV-101人体治疗及延长随访：炎症和抗体受控，但结构性神经退行仍进展。"
+          },
+          {
+            "antibody": "GAD65",
+            "phenotype": "边缘性脑炎、癫痫、僵人谱系或小脑共济失调",
+            "evidence": "其他GAD65神经综合征已有CAR-T个案，AE亚型仍缺直接证据。"
+          },
+          {
+            "antibody": "Hu / Ma2 / CRMP5等副肿瘤抗体",
+            "phenotype": "边缘性或脑干脑炎，常伴肿瘤",
+            "evidence": "通常T细胞驱动更强；CAR-T收益不能由表面抗体型AE外推。"
+          }
+        ]
+      },
+      {
+        "group": "胶质抗体与重叠谱系",
+        "logic": "MOG-IgG、GFAP-IgG及多抗体重叠可表现为脑炎，但生物学与终点不同，应从经典神经元抗体AE中拆分。",
+        "items": [
+          {
+            "antibody": "MOG-IgG / GFAP-IgG",
+            "phenotype": "脑膜脑炎、ADEM样表现、视神经脊髓或放射状血管周围病变",
+            "evidence": "部分CAR-T篮式研究纳入MOGAD；暂无可与经典AE合并计算的独立结果。"
+          }
+        ]
+      }
+    ],
+    "i18n": {
+      "en": {
+        "name": "Autoimmune Encephalitis (AE)",
+        "maturity": "Human case, preclinical validation, and IITs",
+        "summary": "AE now has direct human evidence from the first anti-DAGLA case treated with KYV-101 and approximately 2.5 years of extended follow-up; NMDAR-specific CAAR-T also has preclinical validation.",
+        "thesis": "AE cannot be assessed as one disease. Neuronal-surface antibodies, intracellular/paraneoplastic antibodies, and glial overlap syndromes differ in pathogenesis, reversibility, and CAR-T rationale and must be stratified by antibody, tumor context, and established injury.",
+        "unmet_need": "Some patients relapse or retain severe cognitive, psychiatric, seizure, and motor disability despite steroids, IVIG, plasma exchange, rituximab, or plasma-cell therapy.",
+        "next_catalyst": "Longer structural and functional follow-up of the DAGLA case, first-in-human NMDAR-CAAR T studies, and antibody-stratified results from current basket IITs.",
+        "keywords": [
+          "AE",
+          "Autoimmune encephalitis",
+          "NMDAR",
+          "LGI1 / CASPR2",
+          "DAGLA",
+          "CASE / mRS"
+        ],
+        "key_questions": [
+          "How do B-cell dependence and reversibility differ by antibody subtype?",
+          "Does immunological remission translate into CASE, mRS, cognitive, and MRI benefit?",
+          "How should ICANS, disease activity, tumor biology, and ongoing neurodegeneration be separated?"
+        ],
+        "evidence_gaps": [
+          "Direct human CAR-T evidence is limited to one anti-DAGLA case",
+          "Basket IITs have not reported antibody-stratified AE outcomes",
+          "NMDAR-CAAR T remains preclinical and LGI1/CASPR2 lack direct evidence"
+        ],
+        "antibody_groups": [
+          {
+            "group": "Neuronal surface and synaptic antibodies",
+            "logic": "Antibody pathogenicity is generally more direct, supporting both broad CD19/BCMA depletion and antigen-specific CAAR-T strategies.",
+            "items": [
+              {
+                "antibody": "NMDAR (GluN1)",
+                "phenotype": "Psychiatric symptoms, seizures, movement disorder, and autonomic instability",
+                "evidence": "NMDAR-CAAR T is validated in vitro and in mice; no human evidence yet."
+              },
+              {
+                "antibody": "LGI1 / CASPR2",
+                "phenotype": "Limbic encephalitis, faciobrachial dystonic seizures, memory loss, or peripheral nerve hyperexcitability",
+                "evidence": "No antibody-specific CAR-T case; basket IITs have not reported subtype results."
+              },
+              {
+                "antibody": "GABA-BR / AMPAR / GABA-AR",
+                "phenotype": "Limbic encephalitis and refractory seizures; some subtypes are tumor-associated",
+                "evidence": "No direct CAR-T evidence; tumor association must be assessed in parallel."
+              },
+              {
+                "antibody": "DPPX / mGluR5 / GlyR",
+                "phenotype": "Heterogeneous encephalopathy, startle/rigidity, diarrhea-weight loss, or limbic syndromes",
+                "evidence": "No subtype-specific human CAR-T evidence; these should be recorded separately."
+              }
+            ]
+          },
+          {
+            "group": "Intracellular or intracellular-associated antigens",
+            "logic": "Antibodies may be biomarkers rather than the sole effectors; T-cell injury and established neurodegeneration can limit reversibility after B-cell depletion.",
+            "items": [
+              {
+                "antibody": "DAGLA",
+                "phenotype": "Cerebellar, cognitive, and motor syndrome",
+                "evidence": "One KYV-101 case plus extended follow-up: inflammation and antibodies remained controlled while structural neurodegeneration progressed."
+              },
+              {
+                "antibody": "GAD65",
+                "phenotype": "Limbic encephalitis, epilepsy, stiff-person spectrum, or cerebellar ataxia",
+                "evidence": "CAR-T cases exist in other GAD65 neurological syndromes, but direct AE evidence is absent."
+              },
+              {
+                "antibody": "Hu / Ma2 / CRMP5 and other paraneoplastic antibodies",
+                "phenotype": "Limbic or brainstem encephalitis, often tumor-associated",
+                "evidence": "T-cell biology is often dominant; benefit cannot be extrapolated from surface-antibody AE."
+              }
+            ]
+          },
+          {
+            "group": "Glial antibodies and overlap syndromes",
+            "logic": "MOG-IgG, GFAP-IgG, and multi-antibody overlap can present as encephalitis, but biology and endpoints differ from classic neuronal-antibody AE.",
+            "items": [
+              {
+                "antibody": "MOG-IgG / GFAP-IgG",
+                "phenotype": "Meningoencephalitis, ADEM-like disease, opticospinal disease, or radial perivascular lesions",
+                "evidence": "Some basket CAR-T studies include MOGAD; no independent result should be pooled with classic AE."
+              }
+            ]
+          }
+        ]
+      }
     }
   },
   {
@@ -318,6 +580,125 @@
         "tianjin-ucar19bcma-neuro",
         "tongji-rd0605-neuro-iit"
       ]
+    },
+    "i18n": {
+      "en": {
+        "name": "Chronic Inflammatory Demyelinating Polyneuropathy (CIDP)",
+        "maturity": "Case evidence and IITs",
+        "summary": "CIDP has a two-patient anti-BCMA CAR-T report: both achieved early drug-free remission, but durability diverged.",
+        "thesis": "The key question is whether deep plasma-cell depletion creates durable neurological recovery and whether infection, B-cell reactivation, and autoantibody return predict relapse.",
+        "unmet_need": "Some patients remain refractory or maintenance-dependent despite IVIG, steroids, plasma exchange, and B-cell therapy, with continuing motor and sensory disability.",
+        "next_catalyst": "Expanded CT103A follow-up and CIDP-specific enrollment and INCAT outcomes from KITE-363, QH103, RD06-05, and related studies.",
+        "keywords": [
+          "CIDP",
+          "Chronic inflammatory demyelinating polyneuropathy",
+          "BCMA",
+          "INCAT",
+          "Drug-free remission"
+        ],
+        "key_questions": [
+          "Can drug-free remission persist in larger cohorts?",
+          "Does infection-driven B-cell reactivation predict relapse?",
+          "Do INCAT, MRC, nerve conduction, and patient function improve together?"
+        ],
+        "evidence_gaps": [
+          "Formal clinical evidence currently covers only two patients",
+          "No comparator and limited standardized long-term follow-up",
+          "Relationships among CIDP subtype, autoantibody, and response remain unclear"
+        ]
+      }
+    }
+  },
+  {
+    "id": "idiopathic-inflammatory-myopathy",
+    "name": "特发性炎性肌病（IIM）",
+    "short_name": "IIM",
+    "kind": "疾病专题",
+    "priority": "高",
+    "maturity": "注册导向Phase 2/3与人体证据",
+    "summary": "IIM已形成抗合成酶综合征、免疫介导坏死性肌病和皮肌炎等人体证据，并出现Cabaletta注册导向Phase 2/3及Novartis、Cartesian随机Phase 2竞争格局。",
+    "thesis": "IIM必须按DM、ASyS、IMNM及青少年IIM分层；应同时评价肌力、TIS、CK、皮肤、间质性肺病和激素停用，不能以单一酶学改善替代多器官获益。",
+    "unmet_need": "难治患者可持续出现肌无力、吞咽障碍、皮肤病变和进展性间质性肺病，且部分患者在B细胞重建后复发。",
+    "next_catalyst": "RESET-Myositis Phase 2b/注册队列执行、YTB323随机对照结果及Descartes-08无清淋重复给药研究启动和早期读出。",
+    "keywords": [
+      "IIM",
+      "特发性肌炎",
+      "皮肌炎",
+      "抗合成酶综合征",
+      "IMNM",
+      "TIS / MMT-8"
+    ],
+    "key_questions": [
+      "不同肌炎亚型能否获得一致且持久的多器官缓解",
+      "CD19后复发是否需要转向BCMA或双靶点清除",
+      "清淋型与无清淋重复给药路线的风险收益如何比较"
+    ],
+    "evidence_gaps": [
+      "已发表证据仍以病例和小系列为主",
+      "多个历史报告来自重叠患者，不能重复计算独立样本",
+      "长期肺功能、复发、感染和免疫重建数据不足"
+    ],
+    "related": {
+      "research": [
+        "pmid-38381673",
+        "pmid-39245937",
+        "pmid-40245922",
+        "pmid-40268741",
+        "pmid-36930673"
+      ],
+      "company": [
+        "cabaletta-resecel",
+        "novartis-ytb323",
+        "cartesian-descartes08",
+        "crispr-ctx112",
+        "fate-ft819",
+        "allogene-allo329",
+        "adicet-prulacel",
+        "precision-cd19",
+        "erlangen-cd19",
+        "tongji-ct103a-neuro"
+      ],
+      "trial": [
+        "cabaletta-resecel-myositis",
+        "novartis-rapcabtagene-iim-phase2",
+        "cartesian-descartes08-myositis-phase2",
+        "ctx112-autoimmune-phase1",
+        "ft819-autoimmune-phase1",
+        "allo329-autoimmune-phase1",
+        "precision-cd19-autoimmune-phase1",
+        "adicet-prulacel-autoimmune-phase1",
+        "academic-cd19-autoimmune-series",
+        "pkuph-bcmacd19-autoimmune-phase2",
+        "ct103a-neuro-autoimmune-phase1"
+      ]
+    },
+    "i18n": {
+      "en": {
+        "name": "Idiopathic Inflammatory Myopathy (IIM)",
+        "maturity": "Registration-oriented Phase 2/3 and human evidence",
+        "summary": "IIM now has human evidence across antisynthetase syndrome, immune-mediated necrotizing myopathy, and dermatomyositis, alongside Cabaletta's registration-oriented Phase 2/3 and randomized Phase 2 programs from Novartis and Cartesian.",
+        "thesis": "DM, ASyS, IMNM, and juvenile IIM must be stratified. Muscle strength, TIS, CK, skin disease, interstitial lung disease, and steroid withdrawal should be assessed together rather than substituting enzyme improvement for multi-organ benefit.",
+        "unmet_need": "Refractory disease can cause persistent weakness, dysphagia, skin disease, and progressive interstitial lung disease, with some patients relapsing after B-cell reconstitution.",
+        "next_catalyst": "Execution of RESET-Myositis Phase 2b/registrational cohorts, randomized YTB323 results, and launch and early readout of the lymphodepletion-free repeat-dose Descartes-08 study.",
+        "keywords": [
+          "IIM",
+          "Inflammatory myopathy",
+          "Dermatomyositis",
+          "Antisynthetase syndrome",
+          "IMNM",
+          "TIS / MMT-8"
+        ],
+        "key_questions": [
+          "Can different IIM subtypes achieve consistent, durable multi-organ remission?",
+          "Does relapse after CD19 depletion require BCMA or dual-target treatment?",
+          "How do conditioning-based and lymphodepletion-free repeat-dose approaches compare?"
+        ],
+        "evidence_gaps": [
+          "Published evidence remains dominated by cases and small series",
+          "Several historical reports contain overlapping patients and must not be double counted",
+          "Long-term lung, relapse, infection, and immune-reconstitution data remain limited"
+        ]
+      }
     }
   }
 ]

@@ -77,11 +77,11 @@ const diseases = [
   { label: "neuromyelitis optica", aliases: ["neuromyelitis optica", "NMOSD"] },
   { label: "MOGAD", aliases: ["MOGAD", "myelin oligodendrocyte glycoprotein antibody-associated disease"] },
   { label: "stiff person", aliases: ["stiff person", "SPS"] },
-  { label: "autoimmune encephalitis", aliases: ["autoimmune encephalitis"] },
+  { label: "autoimmune encephalitis", aliases: ["autoimmune encephalitis", "NMDAR encephalitis", "NMDA receptor encephalitis", "LGI1 encephalitis", "CASPR2 encephalitis", "GABA-B receptor encephalitis", "AMPAR encephalitis", "DPPX encephalitis", "DAGLA antibody-associated encephalitis", "GAD65 encephalitis"] },
   { label: "CIDP", aliases: ["CIDP", "chronic inflammatory demyelinating polyneuropathy"] },
   { label: "systemic lupus", aliases: ["systemic lupus", "SLE", "lupus nephritis"] },
   { label: "systemic sclerosis", aliases: ["systemic sclerosis", "scleroderma"] },
-  { label: "myositis", aliases: ["myositis", "inflammatory myopathy", "IIM"] },
+  { label: "myositis", aliases: ["myositis", "inflammatory myopathy", "idiopathic inflammatory myopathy", "dermatomyositis", "antisynthetase syndrome", "immune-mediated necrotizing myopathy", "IMNM", "IIM"] },
   { label: "immune thrombocytopenia", aliases: ["immune thrombocytopenia", "ITP"] },
   { label: "autoimmune disease", aliases: ["autoimmune disease", "autoimmune diseases"] }
 ];

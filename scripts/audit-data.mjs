@@ -120,7 +120,8 @@ const topicIndicationPatterns = {
   SSc: /(^|\W)(SSc|systemic sclerosis|系统性硬化)(\W|$)/i,
   NMOSD: /(^|\W)(NMOSD|neuromyelitis optica|视神经脊髓炎)(\W|$)/i,
   AE: /(^|\W)(AE|AiE|autoimmune encephalitis|自身免疫性脑炎)(\W|$)/i,
-  CIDP: /(^|\W)(CIDP|chronic inflammatory demyelinating polyneuropathy|慢性炎性脱髓鞘)(\W|$)/i
+  CIDP: /(^|\W)(CIDP|chronic inflammatory demyelinating polyneuropathy|慢性炎性脱髓鞘)(\W|$)/i,
+  IIM: /(^|\W)(IIM|idiopathic inflammatory myopath(?:y|ies)|inflammatory myositis|dermatomyositis|antisynthetase|IMNM|特发性炎性肌病|特发性肌炎|皮肌炎|抗合成酶|坏死性肌病)(\W|$)/i
 };
 const topicShortNames = new Set();
 for (const topic of datasets.topic.filter((record) => record.kind === "疾病专题")) {

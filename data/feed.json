@@ -753,5 +753,341 @@
       "多组学"
     ],
     "takeaway": "两例均出现早期无药缓解，但复发病例提示感染后致病B细胞再激活可能影响持续性，证据仍需扩大样本。"
+  },
+  {
+    "id": "pmid-40706586",
+    "pmid": "40706586",
+    "official_title": "Chimeric antigen receptor T cells in treatment-refractory DAGLA antibody-associated encephalitis.",
+    "doi": "10.1016/j.medj.2025.100776",
+    "journal": "Med",
+    "publication_type": [
+      "Journal Article",
+      "Case Reports"
+    ],
+    "title_cn": "KYV-101治疗难治性DAGLA抗体相关自身免疫性脑炎",
+    "priority": "高",
+    "priority_reason": "首例自身免疫性脑炎接受CAR-T的正式人体证据",
+    "evidence_level": "首例人体病例·12个月随访",
+    "disease": "AE",
+    "one_liner": "36岁男性接受单次KYV-101后CASE和ICARS改善，血清及脑脊液DAGLA抗体下降，脑脊液寡克隆带由阳转阴。",
+    "status": "已审核",
+    "source_name": "PubMed",
+    "source_url": "https://pubmed.ncbi.nlm.nih.gov/40706586/",
+    "publish_date": "2025-07-23",
+    "date_added": "2026-07-17",
+    "category": "研究情报",
+    "entity": "Kyverna / KYV-101",
+    "region": "Germany",
+    "tags": [
+      "AE",
+      "DAGLA",
+      "KYV-101",
+      "CD19",
+      "CASE"
+    ],
+    "takeaway": "建立了AE直接人体可行性，但仅为单例；抗体和炎症受控不能保证既存神经损伤逆转。",
+    "i18n": {
+      "en": {
+        "title_cn": "KYV-101 in treatment-refractory anti-DAGLA autoimmune encephalitis",
+        "priority_reason": "First formal human CAR-T evidence in autoimmune encephalitis",
+        "evidence_level": "First human case · 12-month follow-up",
+        "one_liner": "A 36-year-old man improved on CASE and ICARS after one KYV-101 infusion; serum and CSF anti-DAGLA antibodies fell and CSF oligoclonal bands became negative.",
+        "takeaway": "The report establishes human feasibility in AE but remains a single case; control of antibodies and inflammation does not guarantee reversal of established injury."
+      }
+    }
+  },
+  {
+    "id": "pmid-42028700",
+    "pmid": "42028700",
+    "official_title": "Anti-CD19 CAR T Cells in Autoimmune Encephalitis: Inflammation Controlled, Neurodegeneration Unchecked?",
+    "doi": "10.1002/acn3.70414",
+    "journal": "Annals of Clinical and Translational Neurology",
+    "publication_type": [
+      "Journal Article"
+    ],
+    "title_cn": "DAGLA抗体脑炎CAR-T延长随访：炎症受控但神经退行持续",
+    "priority": "高",
+    "priority_reason": "同一首例患者约两年半随访揭示免疫缓解与结构性结局分离",
+    "evidence_level": "延长随访·同一患者约2.5年",
+    "disease": "AE",
+    "one_liner": "患者持续无复发、无药且DAGLA抗体受抑，但MRI显示小脑体积下降19%、海马体积下降2%，提示神经退行可在炎症静息后继续。",
+    "status": "已审核",
+    "source_name": "PubMed",
+    "source_url": "https://pubmed.ncbi.nlm.nih.gov/42028700/",
+    "publish_date": "2026-04-24",
+    "date_added": "2026-07-17",
+    "category": "研究情报",
+    "entity": "Kyverna / KYV-101",
+    "region": "Germany",
+    "tags": [
+      "AE",
+      "DAGLA",
+      "KYV-101",
+      "长期随访",
+      "神经退行"
+    ],
+    "takeaway": "这是PMID 40706586同一患者的延长随访，不能重复计为新病例；其价值在于明确免疫控制与神经结构结局可能脱钩。",
+    "i18n": {
+      "en": {
+        "title_cn": "Extended anti-DAGLA AE follow-up: inflammation controlled while neurodegeneration continued",
+        "priority_reason": "Approximately 2.5-year follow-up separates immune remission from structural outcome",
+        "evidence_level": "Extended follow-up · same patient · ~2.5 years",
+        "one_liner": "The patient remained relapse-free and drug-free with suppressed anti-DAGLA antibodies, while MRI showed 19% cerebellar and 2% hippocampal volume loss.",
+        "takeaway": "This is extended follow-up of the patient in PMID 40706586 and must not be counted as a new case; its value is the dissociation between immune control and structural outcome."
+      }
+    }
+  },
+  {
+    "id": "pmid-37918394",
+    "pmid": "37918394",
+    "official_title": "Chimeric autoantibody receptor T cells deplete NMDA receptor-specific B cells.",
+    "doi": "10.1016/j.cell.2023.10.001",
+    "journal": "Cell",
+    "publication_type": [
+      "Journal Article",
+      "Research Support, Non-U.S. Gov't"
+    ],
+    "title_cn": "NMDAR特异性CAAR-T选择性清除抗NMDAR B细胞",
+    "priority": "高",
+    "priority_reason": "为最常见AE亚型建立抗原特异性而非广谱B细胞清除路线",
+    "evidence_level": "体外与小鼠临床前研究",
+    "disease": "AE",
+    "one_liner": "NMDAR-CAAR T可识别多种患者来源抗体并选择性杀伤抗NMDAR B细胞，在被动转移小鼠模型中持续降低自身抗体且未见显著脱靶毒性。",
+    "status": "已审核",
+    "source_name": "PubMed",
+    "source_url": "https://pubmed.ncbi.nlm.nih.gov/37918394/",
+    "publish_date": "2023-11-01",
+    "date_added": "2026-07-17",
+    "category": "研究情报",
+    "entity": "NMDAR-CAAR T",
+    "region": "Germany",
+    "tags": [
+      "AE",
+      "NMDAR",
+      "CAAR-T",
+      "临床前",
+      "精准清除"
+    ],
+    "takeaway": "证明抗NMDAR B细胞可被抗原特异性清除，但尚无人体安全性、持久性或临床获益证据。",
+    "i18n": {
+      "en": {
+        "title_cn": "NMDAR-specific CAAR-T selectively depletes anti-NMDAR B cells",
+        "priority_reason": "Establishes an antigen-specific alternative to broad B-cell depletion for the most common AE subtype",
+        "evidence_level": "In vitro and mouse preclinical study",
+        "one_liner": "NMDAR-CAAR T recognized diverse patient-derived antibodies, selectively killed anti-NMDAR B cells, and durably reduced autoantibodies in a passive-transfer mouse model without notable off-target toxicity.",
+        "takeaway": "The study validates antigen-specific depletion of anti-NMDAR B cells but provides no human safety, durability, or clinical-benefit evidence."
+      }
+    }
+  },
+  {
+    "id": "pmid-38381673",
+    "pmid": "38381673",
+    "official_title": "CD19 CAR T-Cell Therapy in Autoimmune Disease - A Case Series with Follow-up.",
+    "doi": "10.1056/NEJMoa2308917",
+    "journal": "The New England Journal of Medicine",
+    "publication_type": [
+      "Journal Article",
+      "Research Support, Non-U.S. Gov't"
+    ],
+    "title_cn": "CD19 CAR-T治疗自身免疫病病例系列：含3例IIM",
+    "priority": "高",
+    "priority_reason": "15例系列中包含3例IIM并提供标准化临床应答与安全随访",
+    "evidence_level": "15例病例系列·其中IIM 3例",
+    "disease": "IIM",
+    "one_liner": "15例难治自身免疫病中3例为IIM，均获得主要临床应答；CRS最高2级，未出现中高级别ICANS。",
+    "status": "已审核",
+    "source_name": "PubMed",
+    "source_url": "https://pubmed.ncbi.nlm.nih.gov/38381673/",
+    "publish_date": "2024-02-22",
+    "date_added": "2026-07-17",
+    "category": "研究情报",
+    "entity": "Erlangen / MB-CART19.1",
+    "region": "Germany",
+    "tags": [
+      "IIM",
+      "CD19",
+      "病例系列",
+      "免疫重置",
+      "长期随访"
+    ],
+    "takeaway": "这是IIM最重要的多病种病例系列锚点；其中部分患者已在更早个案论文中报告，样本数不能与历史个案简单相加。",
+    "i18n": {
+      "en": {
+        "title_cn": "CD19 CAR-T autoimmune-disease case series including three IIM patients",
+        "priority_reason": "A 15-patient series with three IIM patients and standardized response and safety follow-up",
+        "evidence_level": "15-patient case series · 3 with IIM",
+        "one_liner": "Three of 15 refractory autoimmune-disease patients had IIM and all achieved major clinical responses; CRS was at most grade 2 with no moderate or high-grade ICANS.",
+        "takeaway": "This is a key multi-disease evidence anchor for IIM; some patients were reported previously and must not be added to historical cases as independent samples."
+      }
+    }
+  },
+  {
+    "id": "pmid-36930673",
+    "pmid": "36930673",
+    "official_title": "CD19-targeted CAR T cells in refractory antisynthetase syndrome.",
+    "doi": "10.1016/S0140-6736(23)00023-5",
+    "journal": "The Lancet",
+    "publication_type": [
+      "Letter"
+    ],
+    "title_cn": "CD19 CAR-T治疗难治性抗合成酶综合征",
+    "priority": "高",
+    "priority_reason": "IIM早期代表性人体病例，覆盖肌炎与间质性肺病",
+    "evidence_level": "病例报道·后纳入NEJM系列",
+    "disease": "IIM",
+    "one_liner": "难治性抗Jo-1抗合成酶综合征患者接受CD19 CAR-T后，肌力、肌炎和肺部表现改善并实现深度B细胞重置。",
+    "status": "已审核",
+    "source_name": "PubMed",
+    "source_url": "https://pubmed.ncbi.nlm.nih.gov/36930673/",
+    "publish_date": "2023-02-15",
+    "date_added": "2026-07-17",
+    "category": "研究情报",
+    "entity": "Erlangen / CD19 CAR-T",
+    "region": "Germany",
+    "tags": [
+      "IIM",
+      "ASyS",
+      "Jo-1",
+      "CD19",
+      "ILD"
+    ],
+    "takeaway": "该病例后来进入更大的NEJM系列，属于历史演进证据而非额外独立样本。",
+    "i18n": {
+      "en": {
+        "title_cn": "CD19 CAR-T in refractory antisynthetase syndrome",
+        "priority_reason": "An early representative IIM case spanning myositis and interstitial lung disease",
+        "evidence_level": "Case report · later included in NEJM series",
+        "one_liner": "A refractory anti-Jo-1 antisynthetase patient improved in strength, myositis, and lung disease after CD19 CAR-T with deep B-cell resetting.",
+        "takeaway": "This patient was later included in the larger NEJM series and is historical progression evidence, not an additional independent sample."
+      }
+    }
+  },
+  {
+    "id": "pmid-39245937",
+    "pmid": "39245937",
+    "official_title": "Case study of CD19 CAR T therapy in a subject with immune-mediate necrotizing myopathy treated in the RESET-Myositis phase I/II trial.",
+    "doi": "10.1016/j.ymthe.2024.09.009",
+    "journal": "Molecular Therapy",
+    "publication_type": [
+      "Clinical Trial, Phase I",
+      "Clinical Trial, Phase II",
+      "Journal Article"
+    ],
+    "title_cn": "RESET-Myositis中CABA-201治疗IMNM首例",
+    "priority": "高",
+    "priority_reason": "首例来自申办方IIM试验的IMNM人体与药效学证据",
+    "evidence_level": "Phase 1/2试验病例·IMNM",
+    "disease": "IIM",
+    "one_liner": "CABA-201治疗后未见CRS或ICANS，CK下降、肌力改善，B细胞第15天清除并于2个月以过渡型B细胞为主重建。",
+    "status": "已审核",
+    "source_name": "PubMed",
+    "source_url": "https://pubmed.ncbi.nlm.nih.gov/39245937/",
+    "publish_date": "2024-09-07",
+    "date_added": "2026-07-17",
+    "category": "研究情报",
+    "entity": "Cabaletta Bio / rese-cel",
+    "region": "US",
+    "tags": [
+      "IIM",
+      "IMNM",
+      "CABA-201",
+      "rese-cel",
+      "RESET-Myositis"
+    ],
+    "takeaway": "直接连接注册试验和人体药效学，但仍为单例，不能替代完整队列读出。",
+    "i18n": {
+      "en": {
+        "title_cn": "First RESET-Myositis IMNM case treated with CABA-201",
+        "priority_reason": "First IMNM human and pharmacodynamic evidence from a sponsor IIM trial",
+        "evidence_level": "Phase 1/2 trial case · IMNM",
+        "one_liner": "After CABA-201 there was no CRS or ICANS; CK fell, strength improved, B cells were absent by day 15 and returned at two months as predominantly transitional cells.",
+        "takeaway": "The paper directly links a registration-oriented trial to human pharmacodynamics, but remains a single case rather than a full cohort readout."
+      }
+    }
+  },
+  {
+    "id": "pmid-40245922",
+    "pmid": "40245922",
+    "official_title": "BCMA CAR T cells in a patient with relapsing idiopathic inflammatory myositis after initial and repeat therapy with CD19 CAR T cells.",
+    "doi": "10.1038/s41591-025-03718-3",
+    "journal": "Nature Medicine",
+    "publication_type": [
+      "Journal Article",
+      "Case Reports"
+    ],
+    "title_cn": "Jo-1阳性IIM在CD19 CAR-T后复发并经BCMA CAR-T再缓解",
+    "priority": "高",
+    "priority_reason": "揭示CD19后复发、抗CAR免疫与转向浆细胞靶向的机制",
+    "evidence_level": "纵向病例·同一患者多次细胞治疗",
+    "disease": "IIM",
+    "one_liner": "患者CD19 CAR-T后9个月复发，原产品再输注未扩增；经达雷妥尤单抗桥接和BCMA CAR-T后清除浆细胞、降低Jo-1抗体并再次无药缓解。",
+    "status": "已审核",
+    "source_name": "PubMed",
+    "source_url": "https://pubmed.ncbi.nlm.nih.gov/40245922/",
+    "publish_date": "2025-04-17",
+    "date_added": "2026-07-17",
+    "category": "研究情报",
+    "entity": "Erlangen / CD19 and BCMA CAR-T",
+    "region": "Germany",
+    "tags": [
+      "IIM",
+      "Jo-1",
+      "CD19",
+      "BCMA",
+      "复发"
+    ],
+    "takeaway": "同一患者的纵向机制研究，不应重复计为新增病例；提示复发后换靶点可能优于重复相同CD19产品。",
+    "i18n": {
+      "en": {
+        "title_cn": "Jo-1-positive IIM relapsed after CD19 CAR-T and remitted again after BCMA CAR-T",
+        "priority_reason": "Mechanistic evidence on post-CD19 relapse, anti-CAR immunity, and plasma-cell targeting",
+        "evidence_level": "Longitudinal case · multiple cellular treatments in one patient",
+        "one_liner": "The patient relapsed nine months after CD19 CAR-T and failed same-product reinfusion; daratumumab bridging followed by BCMA CAR-T cleared plasma cells, reduced anti-Jo-1, and restored drug-free remission.",
+        "takeaway": "This is longitudinal evidence from the same patient, not a new case; switching target may be more effective than repeating the same CD19 product after relapse."
+      }
+    }
+  },
+  {
+    "id": "pmid-40268741",
+    "pmid": "40268741",
+    "official_title": "A novel approach to refractory idiopathic inflammatory myopathy: CD19 CAR T-cell therapy-case report and literature review.",
+    "doi": "10.1093/rheumatology/keaf190",
+    "journal": "Rheumatology",
+    "publication_type": [
+      "Journal Article",
+      "Case Reports",
+      "Review"
+    ],
+    "title_cn": "CD19 CAR-T治疗难治性Jo-1抗合成酶综合征：新病例与文献回顾",
+    "priority": "高",
+    "priority_reason": "新增独立病例并系统汇总当时9例IIM CAR-T经验",
+    "evidence_level": "病例报道+8例文献回顾",
+    "disease": "IIM",
+    "one_liner": "患者6个月时肌力、关节和肺功能改善，肌酶及炎症指标正常化；仅低级别CRS，无ICANS，B细胞重建后未复发。",
+    "status": "已审核",
+    "source_name": "PubMed",
+    "source_url": "https://pubmed.ncbi.nlm.nih.gov/40268741/",
+    "publish_date": "2025-09-01",
+    "date_added": "2026-07-17",
+    "category": "研究情报",
+    "entity": "Hamburg / CD19 CAR-T",
+    "region": "Germany",
+    "tags": [
+      "IIM",
+      "ASyS",
+      "Jo-1",
+      "CD19",
+      "文献回顾"
+    ],
+    "takeaway": "提供新增病例和证据全景，但综述纳入的历史病例与其他论文重叠，不能把9例再与各单篇相加。",
+    "i18n": {
+      "en": {
+        "title_cn": "CD19 CAR-T in refractory anti-Jo-1 antisynthetase syndrome: new case and literature review",
+        "priority_reason": "Adds an independent case and synthesizes nine IIM CAR-T cases available at the time",
+        "evidence_level": "Case report + review of 8 prior cases",
+        "one_liner": "At six months, muscle strength, arthritis, and lung function improved and enzymes normalized; only low-grade CRS occurred, with no ICANS or relapse after B-cell return.",
+        "takeaway": "The report adds a case and an evidence overview, but reviewed historical patients overlap other papers and cannot be added again to each publication's sample count."
+      }
+    }
   }
 ]

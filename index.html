@@ -365,7 +365,7 @@
       <h1>神经免疫 CAR-T <em>研发情报工作台</em></h1>
       <p class="hero-sub">汇总经核验的研究、临床试验、竞争项目与安全信号，持续识别关键变化、证据缺口和下一步催化剂。</p>
       <div class="hero-notes">
-        <span class="hero-note">覆盖适应症：MS / MG / NMOSD / CIDP / AE / SSc / 其他自免</span>
+        <span class="hero-note">覆盖适应症：MS / MG / NMOSD / CIDP / AE / IIM / SSc / 其他自免</span>
         <span class="hero-note">核心来源：PubMed、ClinicalTrials.gov、NMPA / CDE、公司正式披露</span>
         <span class="hero-note" id="hero-update-note">状态：正在同步最新情报</span>
       </div>
@@ -463,17 +463,6 @@
   <section class="section">
     <div class="section-head">
       <div>
-        <div class="section-kicker">Risk Signals</div>
-        <h2 class="section-title">安全与执行风险摘要</h2>
-        <p class="section-desc">汇总跨产品安全信号、试验执行风险与长期随访重点。</p>
-      </div>
-    </div>
-    <div class="signals-grid" id="signals-grid"></div>
-  </section>
-
-  <section class="section">
-    <div class="section-head">
-      <div>
         <div class="section-kicker">Sources</div>
         <h2 class="section-title">权威来源与核验方法</h2>
       </div>
@@ -493,7 +482,7 @@
       <div class="method-step">
         <div class="method-index">03</div>
         <div class="method-title">沉淀专题判断</div>
-        <p class="method-copy">将重复信号汇总为专题、时间线、项目关系与风险观察轴。</p>
+        <p class="method-copy">将重复信号汇总为专题、项目关系与证据观察轴。</p>
       </div>
     </div>
   </section>
@@ -602,12 +591,6 @@ const LANDSCAPE_DATA = [
   { company: "Kyverna", product: "KYV-101", stage: "单臂I期 / IND", focus: "MS、SSc 等B细胞驱动自免", note: "海外自免CAR-T代表性公司，平台与融资信号值得长期跟踪。" },
   { company: "Cartesian", product: "Descartes-08", stage: "随机对照 / IND", focus: "MG", note: "mRNA CAR-T路线差异化明显，试验设计与给药模式是关键观察点。" },
   { company: "科济药业", product: "CT103A", stage: "病例系列 / IIT", focus: "自免拓展", note: "国内产品外延到自免领域的潜在路径需要持续看真实世界与机制数据。" }
-];
-
-const SIGNAL_DATA = [
-  { name: "安全信号外推仍然谨慎", level: "Safety", copy: "CRS、神经毒性与深度B细胞耗竭的长期管理方案仍需更多自免场景数据支持。", meta: "跨产品共性风险" },
-  { name: "试验执行样本量偏小", level: "Execution", copy: "目前多数研究仍停留在单例或小样本，结论容易被个案成功放大。", meta: "证据强度限制" },
-  { name: "适应症优先级还在形成", level: "Strategy", copy: "MS、MG、自身免疫性脑炎和SSc的推进速度并不一致，首页需要持续体现主题热度变化。", meta: "组合判断重点" }
 ];
 
 const SOURCE_DATA = [
@@ -768,15 +751,6 @@ function renderStaticModules() {
       <div class="entity-product">${entity.product}</div>
       <div class="entity-copy">${entity.note}</div>
       <div class="entity-meta">聚焦：${entity.focus}<br>阶段：${entity.stage}</div>
-    </article>
-  `).join("");
-
-  document.getElementById("signals-grid").innerHTML = SIGNAL_DATA.map((signal) => `
-    <article class="signal-card">
-      <div class="signal-name">${signal.name}</div>
-      <div class="signal-level">${signal.level}</div>
-      <div class="signal-copy">${signal.copy}</div>
-      <div class="signal-meta">${signal.meta}</div>
     </article>
   `).join("");
 

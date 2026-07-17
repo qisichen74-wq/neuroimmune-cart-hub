@@ -3153,6 +3153,232 @@
         "publication_type"
       ],
       "note": "已通过NCBI ESummary、PubMed记录与期刊摘要逐字段核对。"
+    },
+    {
+      "record_type": "research",
+      "record_id": "pmid-40706586",
+      "status": "已核验",
+      "confidence": "高",
+      "last_verified_at": "2026-07-17",
+      "next_review_at": "2026-08-16",
+      "source_ids": [
+        "ncbi-pubmed"
+      ],
+      "verified_fields": [
+        "pmid",
+        "official_title",
+        "doi",
+        "journal",
+        "publish_date",
+        "publication_type"
+      ],
+      "note": "已通过NCBI ESummary、EFetch摘要及期刊原文逐字段核对；重叠患者已在证据解释中标注。"
+    },
+    {
+      "record_type": "research",
+      "record_id": "pmid-42028700",
+      "status": "已核验",
+      "confidence": "高",
+      "last_verified_at": "2026-07-17",
+      "next_review_at": "2026-08-16",
+      "source_ids": [
+        "ncbi-pubmed"
+      ],
+      "verified_fields": [
+        "pmid",
+        "official_title",
+        "doi",
+        "journal",
+        "publish_date",
+        "publication_type"
+      ],
+      "note": "已通过NCBI ESummary、EFetch摘要及期刊原文逐字段核对；重叠患者已在证据解释中标注。"
+    },
+    {
+      "record_type": "research",
+      "record_id": "pmid-37918394",
+      "status": "已核验",
+      "confidence": "高",
+      "last_verified_at": "2026-07-17",
+      "next_review_at": "2026-08-16",
+      "source_ids": [
+        "ncbi-pubmed"
+      ],
+      "verified_fields": [
+        "pmid",
+        "official_title",
+        "doi",
+        "journal",
+        "publish_date",
+        "publication_type"
+      ],
+      "note": "已通过NCBI ESummary、EFetch摘要及期刊原文逐字段核对；重叠患者已在证据解释中标注。"
+    },
+    {
+      "record_type": "research",
+      "record_id": "pmid-38381673",
+      "status": "已核验",
+      "confidence": "高",
+      "last_verified_at": "2026-07-17",
+      "next_review_at": "2026-08-16",
+      "source_ids": [
+        "ncbi-pubmed"
+      ],
+      "verified_fields": [
+        "pmid",
+        "official_title",
+        "doi",
+        "journal",
+        "publish_date",
+        "publication_type"
+      ],
+      "note": "已通过NCBI ESummary、EFetch摘要及期刊原文逐字段核对；重叠患者已在证据解释中标注。"
+    },
+    {
+      "record_type": "research",
+      "record_id": "pmid-36930673",
+      "status": "已核验",
+      "confidence": "高",
+      "last_verified_at": "2026-07-17",
+      "next_review_at": "2026-08-16",
+      "source_ids": [
+        "ncbi-pubmed"
+      ],
+      "verified_fields": [
+        "pmid",
+        "official_title",
+        "doi",
+        "journal",
+        "publish_date",
+        "publication_type"
+      ],
+      "note": "已通过NCBI ESummary、EFetch摘要及期刊原文逐字段核对；重叠患者已在证据解释中标注。"
+    },
+    {
+      "record_type": "research",
+      "record_id": "pmid-39245937",
+      "status": "已核验",
+      "confidence": "高",
+      "last_verified_at": "2026-07-17",
+      "next_review_at": "2026-08-16",
+      "source_ids": [
+        "ncbi-pubmed"
+      ],
+      "verified_fields": [
+        "pmid",
+        "official_title",
+        "doi",
+        "journal",
+        "publish_date",
+        "publication_type"
+      ],
+      "note": "已通过NCBI ESummary、EFetch摘要及期刊原文逐字段核对；重叠患者已在证据解释中标注。"
+    },
+    {
+      "record_type": "research",
+      "record_id": "pmid-40245922",
+      "status": "已核验",
+      "confidence": "高",
+      "last_verified_at": "2026-07-17",
+      "next_review_at": "2026-08-16",
+      "source_ids": [
+        "ncbi-pubmed"
+      ],
+      "verified_fields": [
+        "pmid",
+        "official_title",
+        "doi",
+        "journal",
+        "publish_date",
+        "publication_type"
+      ],
+      "note": "已通过NCBI ESummary、EFetch摘要及期刊原文逐字段核对；重叠患者已在证据解释中标注。"
+    },
+    {
+      "record_type": "research",
+      "record_id": "pmid-40268741",
+      "status": "已核验",
+      "confidence": "高",
+      "last_verified_at": "2026-07-17",
+      "next_review_at": "2026-08-16",
+      "source_ids": [
+        "ncbi-pubmed"
+      ],
+      "verified_fields": [
+        "pmid",
+        "official_title",
+        "doi",
+        "journal",
+        "publish_date",
+        "publication_type"
+      ],
+      "note": "已通过NCBI ESummary、EFetch摘要及期刊原文逐字段核对；重叠患者已在证据解释中标注。"
+    },
+    {
+      "record_type": "trial",
+      "record_id": "cabaletta-resecel-myositis",
+      "status": "已核验",
+      "confidence": "高",
+      "last_verified_at": "2026-07-17",
+      "next_review_at": "2026-08-16",
+      "source_ids": [
+        "clinicaltrials-gov"
+      ],
+      "verified_fields": [
+        "registry_id",
+        "official_title",
+        "sponsor",
+        "phase",
+        "status",
+        "enrollment",
+        "study_start",
+        "estimated_completion"
+      ],
+      "note": "已通过ClinicalTrials.gov API于2026-07-17逐字段核验NCT06154252。"
+    },
+    {
+      "record_type": "trial",
+      "record_id": "novartis-rapcabtagene-iim-phase2",
+      "status": "已核验",
+      "confidence": "高",
+      "last_verified_at": "2026-07-17",
+      "next_review_at": "2026-08-16",
+      "source_ids": [
+        "clinicaltrials-gov"
+      ],
+      "verified_fields": [
+        "registry_id",
+        "official_title",
+        "sponsor",
+        "phase",
+        "status",
+        "enrollment",
+        "study_start",
+        "estimated_completion"
+      ],
+      "note": "已通过ClinicalTrials.gov API于2026-07-17逐字段核验NCT06665256。"
+    },
+    {
+      "record_type": "trial",
+      "record_id": "cartesian-descartes08-myositis-phase2",
+      "status": "已核验",
+      "confidence": "高",
+      "last_verified_at": "2026-07-17",
+      "next_review_at": "2026-08-16",
+      "source_ids": [
+        "clinicaltrials-gov"
+      ],
+      "verified_fields": [
+        "registry_id",
+        "official_title",
+        "sponsor",
+        "phase",
+        "status",
+        "enrollment",
+        "study_start",
+        "estimated_completion"
+      ],
+      "note": "已通过ClinicalTrials.gov API于2026-07-17逐字段核验NCT07391605。"
     }
   ]
 }

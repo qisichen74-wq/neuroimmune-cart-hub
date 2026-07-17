@@ -1,4 +1,538 @@
 {
-  "generated_at": "2026-07-17T03:52:46.673Z",
-  "records": {}
+  "generated_at": "2026-07-17T08:57:13.868Z",
+  "records": {
+    "trial:kyv101-ms-phase1": {
+      "official_title": "Phase 1, Open-Label, Single Center Study of KYV-101, an Autologous Fully-Human Anti-CD19 Chimeric Antigen Receptor T Cell (CD19 CAR T) Therapy, in Participants With Treatment Refractory Progressive Multiple Sclerosis",
+      "sponsor": "Bruce Cree",
+      "status": "ACTIVE_NOT_RECRUITING",
+      "enrollment": 10,
+      "study_start": "2024-06-20",
+      "estimated_completion": "2027-02",
+      "registry_last_update": "2026-01-23"
+    },
+    "trial:descartes08-mg-rct": {
+      "official_title": "A Randomized, Double-Blind, Placebo-Controlled Phase 3 Trial of Descartes-08 in Patients With Generalized Myasthenia Gravis (MG)",
+      "sponsor": "Cartesian Therapeutics",
+      "status": "RECRUITING",
+      "enrollment": 100,
+      "study_start": "2025-05-06",
+      "estimated_completion": "2027-09-30",
+      "registry_last_update": "2026-03-24"
+    },
+    "trial:qh103-neuro-autoimmune": {
+      "official_title": "An Open-Label Clinical Study to Evaluate the Safety and Pharmacodynamics of QH103 Cell Injection in the Treatment of Patients With Relapsed/Refractory Antibody-Mediated Neurological Autoimmune Diseases.",
+      "sponsor": "Tongji Hospital",
+      "status": "RECRUITING",
+      "enrollment": 6,
+      "study_start": "2026-04-01",
+      "estimated_completion": "2028-12-31",
+      "registry_last_update": "2026-05-12"
+    },
+    "trial:relma-autoimmune-ssc": {
+      "official_title": "A Dose Ranging Study to Evaluate the Safety, Tolerance, Pharmacokinetics and Pharmacodynamics of Relmacabtagene Autoleucel (Relma-cel) in Patients With Refractory/Progressive Systemic Sclerosis",
+      "sponsor": "Liangjing Lu",
+      "status": "RECRUITING",
+      "enrollment": 6,
+      "study_start": "2024-06-12",
+      "estimated_completion": "2027-04",
+      "registry_last_update": "2024-08-15"
+    },
+    "trial:tianjin-ucar19bcma-neuro": {
+      "official_title": "A Clinical Study Evaluating the Safety and Preliminary Efficacy of Universal Allogeneic CAR T-cell Therapy Targeting CD19 and BCMA in Patients With Relapsed / Refractory Neurological Autoimmune Diseases",
+      "sponsor": "Tianjin Huanhu Hospital",
+      "status": "RECRUITING",
+      "enrollment": 12,
+      "study_start": "2025-06-17",
+      "estimated_completion": "2027-10",
+      "registry_last_update": "2025-12-15"
+    },
+    "trial:sys6020-mg-phase1": {
+      "official_title": "A Phase I Study to Evaluate BCMA-targeted Chimeric Antigen Receptor T Cell (SYS6020 Injection) in Patients With Refractory Generalized Myasthenia Gravis",
+      "sponsor": "CSPC ZhongQi Pharmaceutical Technology Co., Ltd.",
+      "status": "RECRUITING",
+      "enrollment": 50,
+      "study_start": "2025-01-08",
+      "estimated_completion": "2033-05-01",
+      "registry_last_update": "2025-08-06"
+    },
+    "trial:kite363-neuro-phase1": {
+      "official_title": "A Phase 1 Open-label, Multiregional, Multicenter, Basket Study Evaluating the Safety and Efficacy of KITE-363, an Autologous Anti-CD19/CD20 CAR T-cell Therapy in Participants With Relapsed/Refractory Autoimmune Neurologic Diseases",
+      "sponsor": "Kite, A Gilead Company",
+      "status": "RECRUITING",
+      "enrollment": 52,
+      "study_start": "2026-04-10",
+      "estimated_completion": "2029-06",
+      "registry_last_update": "2026-07-01"
+    },
+    "trial:cc97540-breakfree2": {
+      "official_title": "A Phase 1, Multicenter, Single-arm, Dose-escalation Study of CC-97540 (BMS-986353), CD19-Targeted NEX-T Chimeric Antigen Receptor (CAR) T Cells, Evaluating Safety and Tolerability in Participants With Autoimmune Neurological Diseases: Relapsing Forms of Multiple Sclerosis (RMS), Progressive Forms of Multiple Sclerosis (PMS), or Refractory Myasthenia Gravis (MG).",
+      "sponsor": "Juno Therapeutics, Inc., a Bristol-Myers Squibb Company",
+      "status": "RECRUITING",
+      "enrollment": 120,
+      "study_start": "2024-03-28",
+      "estimated_completion": "2027-07-15",
+      "registry_last_update": "2026-07-01"
+    },
+    "trial:ytb323-mg-phase12": {
+      "official_title": "An Open-label, Multi-center, Phase I/II Study to Assess Safety, Efficacy, and Cellular Kinetics of YTB323 in Participants With Treatment-resistant Generalized Myasthenia Gravis",
+      "sponsor": "Novartis Pharmaceuticals",
+      "status": "RECRUITING",
+      "enrollment": 15,
+      "study_start": "2025-04-22",
+      "estimated_completion": "2029-10-26",
+      "registry_last_update": "2026-06-26"
+    },
+    "trial:ctx112-autoimmune-phase1": {
+      "official_title": "A Phase 1 Dose Evaluation Study of the Safety and Preliminary Efficacy of Anti-CD19 Allogeneic CRISPR-Cas9-Engineered T Cells (CTX112) in Adult Subjects With Refractory Autoimmune Disease",
+      "sponsor": "CRISPR Therapeutics",
+      "status": "RECRUITING",
+      "enrollment": 80,
+      "study_start": "2025-03-10",
+      "estimated_completion": "2031-12-31",
+      "registry_last_update": "2026-06-15"
+    },
+    "trial:ft819-autoimmune-phase1": {
+      "official_title": "A Phase 1 Study of FT819 in B-cell Mediated Autoimmune Disease",
+      "sponsor": "Fate Therapeutics",
+      "status": "RECRUITING",
+      "enrollment": 244,
+      "study_start": "2024-03-28",
+      "estimated_completion": "2042-09-30",
+      "registry_last_update": "2026-05-22"
+    },
+    "trial:qt019c-neuro-phase1": {
+      "official_title": "A Clinical Study Evaluating the Safety and Preliminary Efficacy of Universal Allogeneic CAR T-cell Therapy Targeting CD19 and BCMA（QT-019C） in Patients With Relapsed / Refractory Neurological Autoimmune Diseases",
+      "sponsor": "Tianjin Huanhu Hospital",
+      "status": "NOT_YET_RECRUITING",
+      "enrollment": 15,
+      "study_start": "2026-03",
+      "estimated_completion": "2028-12",
+      "registry_last_update": "2026-02-11"
+    },
+    "trial:allo329-autoimmune-phase1": {
+      "official_title": "A Phase 1 Study Evaluating the Safety and Preliminary Efficacy of ALLO-329, a Dual Anti-CD19/Anti-CD70 Allogeneic CAR T Cell Product in Autoimmune Disease",
+      "sponsor": "Allogene Therapeutics",
+      "status": "RECRUITING",
+      "enrollment": 66,
+      "study_start": "2025-11-13",
+      "estimated_completion": "2032-10",
+      "registry_last_update": "2026-06-18"
+    },
+    "trial:zamtocel-autoimmune-phase1": {
+      "official_title": "A Phase I Multicohort Trial of Zamtocabtagene Autoleucel (Zamto-Cel) in Subjects With Severe Refractory Autoimmune Diseases",
+      "sponsor": "Miltenyi Biomedicine GmbH",
+      "status": "RECRUITING",
+      "enrollment": 48,
+      "study_start": "2026-07",
+      "estimated_completion": "2028-07",
+      "registry_last_update": "2026-06-11"
+    },
+    "trial:ti0032-invivo-autoimmune": {
+      "official_title": "A Clinical Study on the Safety and Efficacy of in Vivo CAR-T Cell Therapy (TI-0032-III Injection) for the Treatment of Relapsed and Refractory Autoimmune Diseases",
+      "sponsor": "Therorna",
+      "status": "RECRUITING",
+      "enrollment": 12,
+      "study_start": "2026-01-22",
+      "estimated_completion": "2027-01-30",
+      "registry_last_update": "2026-02-17"
+    },
+    "trial:zju-ucar19bcma-autoimmune": {
+      "official_title": "A Clinical Study Evaluating the Safety and Preliminary Efficacy of Universal Allogeneic CAR T-cell Therapy Targeting CD19 and BCMA in Patients With B Cell Mediated Autoimmune Disease",
+      "sponsor": "The Children's Hospital of Zhejiang University School of Medicine",
+      "status": "RECRUITING",
+      "enrollment": 15,
+      "study_start": "2025-12-01",
+      "estimated_completion": "2029-12",
+      "registry_last_update": "2026-02-03"
+    },
+    "trial:magicrna-hn2302-autoimmune": {
+      "official_title": "A Study to Assess the Safety and Preliminary Efficacy of HN2302 in Patients With Autoimmune Diseases",
+      "sponsor": "Shenzhen MagicRNA Biotechnology Co., Ltd",
+      "status": "NOT_YET_RECRUITING",
+      "enrollment": 12,
+      "study_start": "2026-04-28",
+      "estimated_completion": "2028-06-30",
+      "registry_last_update": "2026-04-14"
+    },
+    "trial:arcellx-anitocel-mg-phase1": {
+      "official_title": "A Phase 1 Study of Anitocabtagene Autoleucel for the Treatment of Subjects With Non-oncology Plasma Cell-related Diseases",
+      "sponsor": "Arcellx, Inc.",
+      "status": "RECRUITING",
+      "enrollment": 30,
+      "study_start": "2025-04-30",
+      "estimated_completion": "2028-04",
+      "registry_last_update": "2026-02-25"
+    },
+    "trial:tongji-v001bcma-autoimmune": {
+      "official_title": "Clinical Study on the Safety and Efficacy of Targeted BCMA In Vivo LV Injection in the Treatment of Recurrent or Refractory Autoimmune Diseases",
+      "sponsor": "Tongji Hospital",
+      "status": "RECRUITING",
+      "enrollment": 45,
+      "study_start": "2025-11-04",
+      "estimated_completion": "2028-10-30",
+      "registry_last_update": "2026-01-14"
+    },
+    "trial:ihematology-xiniao-ucar-autoimmune": {
+      "official_title": "A Clinical Study Evaluating the Safety and Preliminary Efficacy of Universal Allogeneic CAR T-cell Therapy Targeting CD19 and BCMA in Patients With Relapse/Refractory Autoimmune Diseases",
+      "sponsor": "Institute of Hematology & Blood Diseases Hospital, China",
+      "status": "RECRUITING",
+      "enrollment": 12,
+      "study_start": "2025-02-11",
+      "estimated_completion": "2028-03-18",
+      "registry_last_update": "2025-09-29"
+    },
+    "trial:xuzhou-xiniao-ucar-autoimmune": {
+      "official_title": "A Clinical Study Evaluating the Safety and Efficacy of Universal Allogeneic CAR T-cell Therapy Targeting CD19 and BCMA in Patients With Relapse/Refractory Autoimmune Diseases",
+      "sponsor": "The Affiliated Hospital of Xuzhou Medical University",
+      "status": "ACTIVE_NOT_RECRUITING",
+      "enrollment": 18,
+      "study_start": "2025-03-18",
+      "estimated_completion": "2028-09",
+      "registry_last_update": "2025-09-04"
+    },
+    "trial:pku3-qh103-autoimmune": {
+      "official_title": "A Single-center Clinical Study Evaluating the Safety and Efficacy of Universal CD19-targeting CAR-γδT Cells（QH103） in Refractory Autoimmune Diseases",
+      "sponsor": "Peking University Third Hospital",
+      "status": "RECRUITING",
+      "enrollment": 9,
+      "study_start": "2025-07-01",
+      "estimated_completion": "2027-12-31",
+      "registry_last_update": "2025-08-20"
+    },
+    "trial:gobroad-ol108-autoimmune": {
+      "official_title": "An Open-Label, Phase I Study to Evaluate the Safety, Tolerability, Pharmacokinetics, and Pharmacodynamics of Allogeneic CAR-T Cell Therapy (OL-108) in the Treatment of Relapsed/Refractory Autoimmune Diseases",
+      "sponsor": "Beijing GoBroad Hospital",
+      "status": "RECRUITING",
+      "enrollment": 44,
+      "study_start": "2025-06",
+      "estimated_completion": "2028-12",
+      "registry_last_update": "2025-05-20"
+    },
+    "trial:changzhou-ucar19bcma-autoimmune": {
+      "official_title": "A Clinical Study Evaluating the Safety and Preliminary Efficacy of Universal Allogeneic CAR T-cell Therapy Targeting CD19 and BCMA in Patients With Relapse/Refractory Autoimmune Diseases",
+      "sponsor": "Changzhou No.2 People's Hospital",
+      "status": "NOT_YET_RECRUITING",
+      "enrollment": 18,
+      "study_start": "2025-05",
+      "estimated_completion": "2028-11",
+      "registry_last_update": "2025-05-18"
+    },
+    "trial:pkuph-bcmacd19-autoimmune-phase2": {
+      "official_title": "An Open, Single-Arm, Single-Center Clinical Study Assessing the Safety and Efficacy of BCMA-CD19 Targeted Chimeric Antigen Receptor T-Cell Therapy in Multiple Refractory Autoimmune Diseases",
+      "sponsor": "Peking University People's Hospital",
+      "status": "RECRUITING",
+      "enrollment": 50,
+      "study_start": "2024-12-26",
+      "estimated_completion": "2027-12-31",
+      "registry_last_update": "2025-04-02"
+    },
+    "trial:cabaletta-resecel-mg-phase12": {
+      "official_title": "RESET-MG: A Phase 1/2, Open-Label Study to Evaluate the Safety and Efficacy of Autologous CD19-specific Chimeric Antigen Receptor T Cells (CABA-201) in Participants With Generalized Myasthenia Gravis",
+      "sponsor": "Cabaletta Bio",
+      "status": "ACTIVE_NOT_RECRUITING",
+      "enrollment": 12,
+      "study_start": "2024-12-17",
+      "estimated_completion": "2029-09",
+      "registry_last_update": "2026-05-18"
+    },
+    "trial:precision-cd19-autoimmune-phase1": {
+      "official_title": "Clinical Study of CD19 Targeting Chimeric Antigen Receptor T Lymphocytes (CAR-T) in the Treatment of Refractory Autoimmune Diseases",
+      "sponsor": "Chongqing Precision Biotech Co., Ltd",
+      "status": "RECRUITING",
+      "enrollment": 24,
+      "study_start": "2023-08-31",
+      "estimated_completion": "2026-08-31",
+      "registry_last_update": "2023-09-28"
+    },
+    "trial:hadassah-hbi0101-autoimmune": {
+      "official_title": "A Phase 1 Dose Escalation and Safety Study of HBI0101 CART in B-cell Mediated Refractory Autoimmune Diseases",
+      "sponsor": "Polina Stepensky",
+      "status": "RECRUITING",
+      "enrollment": 120,
+      "study_start": "2024-09-01",
+      "estimated_completion": "2030-11-01",
+      "registry_last_update": "2026-05-06"
+    },
+    "trial:renji-c-car168-autoimmune": {
+      "official_title": "An Exploratory Clinical Study of Cluster of Differentiation Antigen 20(CD20)/Anti-B-cell Maturation Antigen(BCMA) Chimeric Antigen Receptor Autologous T Cell Product (C-CAR168) in the Treatment of Autoimmune Diseases Refractory to Standard Therapy",
+      "sponsor": "RenJi Hospital",
+      "status": "RECRUITING",
+      "enrollment": 30,
+      "study_start": "2024-03-20",
+      "estimated_completion": "2040-03",
+      "registry_last_update": "2025-07-25"
+    },
+    "trial:adicet-prulacel-autoimmune-phase1": {
+      "official_title": "A Phase 1 Study of Prulacabtagene Leucel (Prula-cel, Formerly ADI-001) Anti-CD20 CAR-engineered Allogeneic Gamma-Delta (γδ) T Cells in Adults With Autoimmune Disease",
+      "sponsor": "Adicet Therapeutics",
+      "status": "ENROLLING_BY_INVITATION",
+      "enrollment": 180,
+      "study_start": "2024-11-10",
+      "estimated_completion": "2027-12",
+      "registry_last_update": "2026-03-19"
+    },
+    "trial:changhai-kn3601-autoimmune": {
+      "official_title": "Exploratory Clinical Study on the Safety and Efficacy of Anti-CD19/BCMA Universal CAR-T Cell Injection for the Treatment of Relapsed/Refractory Autoimmune Diseases",
+      "sponsor": "Changhai Hospital",
+      "status": "RECRUITING",
+      "enrollment": 60,
+      "study_start": "2026-02-20",
+      "estimated_completion": "2028-07-20",
+      "registry_last_update": "2026-02-25"
+    },
+    "trial:huashan-c-car168-cns-autoimmune": {
+      "official_title": "An Exploratory Clinical Study of Anti-CD20/B-cell Maturation Antigen(BCMA) Chimeric Antigen Receptor Autologous T Cell Product (C-CAR168) in the Treatment of Central Nervous System Autoimmune Diseases Refractory to Standard Therapy",
+      "sponsor": "Huashan Hospital",
+      "status": "NOT_YET_RECRUITING",
+      "enrollment": 15,
+      "study_start": "2026-02",
+      "estimated_completion": "2029-02",
+      "registry_last_update": "2026-01-15"
+    },
+    "trial:kyv101-autoimmune-ltfu": {
+      "official_title": "A Long-Term Follow-Up Study for Participants Previously Treated With KYV-101",
+      "sponsor": "Kyverna Therapeutics",
+      "status": "RECRUITING",
+      "enrollment": 70,
+      "study_start": "2025-11-24",
+      "estimated_completion": "2041-01",
+      "registry_last_update": "2026-02-11"
+    },
+    "trial:gustaveroussy-cellattack1-autoimmune": {
+      "official_title": "Study Investigating the Safety of Anti-CD19 CAR-T Cells Therapy Produced at Gustave Roussy for Adults With Severe and Refractory Systemic Autoimmune Rheumatic Diseases",
+      "sponsor": "Gustave Roussy, Cancer Campus, Grand Paris",
+      "status": "NOT_YET_RECRUITING",
+      "enrollment": 6,
+      "study_start": "2026-09-01",
+      "estimated_completion": "2043-02-01",
+      "registry_last_update": "2026-04-22"
+    },
+    "trial:ct103a-neuro-autoimmune-phase1": {
+      "official_title": "An Open Label Clinical Trial to Evaluate the Safety and Efficacy of CT103A Cells for the Treatment of Relapsed/Refractory Antibody-associated Inflammatory Diseases of the Nervous System",
+      "sponsor": "Tongji Hospital",
+      "status": "RECRUITING",
+      "enrollment": 36,
+      "study_start": "2020-09-22",
+      "estimated_completion": "2027-05-31",
+      "registry_last_update": "2024-10-30"
+    },
+    "trial:icell-bcmacd19-itp-phase1": {
+      "official_title": "Treatment of Refractory Immune Thrombocytopenia",
+      "sponsor": "iCell Gene Therapeutics",
+      "status": "RECRUITING",
+      "enrollment": 20,
+      "study_start": "2024-08-31",
+      "estimated_completion": "2027-04",
+      "registry_last_update": "2025-01-22"
+    },
+    "trial:icell-icg318-sle-phase12": {
+      "official_title": "Phase I, IIa, Single-Arm, Study of BCMA-CD19-IL-15/IL15sushi cCAR T for the Treatment of Refractory Systemic Lupus Erythematosus, With or Without Lupus Nephritis",
+      "sponsor": "iCell Gene Therapeutics",
+      "status": "NOT_YET_RECRUITING",
+      "enrollment": 20,
+      "study_start": "2026-01",
+      "estimated_completion": "2028-12",
+      "registry_last_update": "2026-01-09"
+    },
+    "trial:tangdu-cd19bcma-mg-iit": {
+      "official_title": "Evaluate the Safety and Efficacy of CD19-BCMA Targeted CAR-T Therapy for Refractory, Generalized Myasthenia Gravis: A Single-center, Open-label, Single-arm, Dose-finding Study",
+      "sponsor": "Ting Chang, MD",
+      "status": "RECRUITING",
+      "enrollment": 9,
+      "study_start": "2024-07-12",
+      "estimated_completion": "2026-12-01",
+      "registry_last_update": "2025-09-15"
+    },
+    "trial:tongji-rd0605-neuro-iit": {
+      "official_title": "Clinical Study on the Safety, Efficacy, and Pharmacokinetics of Universal CAR-T Cell Injection Targeting CD19/BCMA in Patients With Neurological Autoimmune Diseases",
+      "sponsor": "Tongji Hospital",
+      "status": "RECRUITING",
+      "enrollment": 36,
+      "study_start": "2025-12-12",
+      "estimated_completion": "2028-11-01",
+      "registry_last_update": "2026-05-12"
+    },
+    "trial:cabaletta-resecel-myositis": {
+      "official_title": "A Phase 1/2, Open-Label Study to Evaluate the Safety and Efficacy of Autologous CD19-specific Chimeric Antigen Receptor T Cells (CABA-201) in Subjects With Active Idiopathic Inflammatory Myopathy or Juvenile Idiopathic Inflammatory Myopathy",
+      "sponsor": "Cabaletta Bio",
+      "status": "RECRUITING",
+      "enrollment": 74,
+      "study_start": "2023-12-20",
+      "estimated_completion": "2028-07",
+      "registry_last_update": "2026-07-14"
+    },
+    "trial:novartis-rapcabtagene-iim-phase2": {
+      "official_title": "A Phase 2, Randomized, Open-label, Controlled Study to Evaluate the Efficacy and Safety of Rapcabtagene Autoleucel Versus Comparator in Participants With Severe Refractory Idiopathic Inflammatory Myopathies (IIM)",
+      "sponsor": "Novartis Pharmaceuticals",
+      "status": "ACTIVE_NOT_RECRUITING",
+      "enrollment": 21,
+      "study_start": "2024-12-17",
+      "estimated_completion": "2032-11-29",
+      "registry_last_update": "2026-06-23"
+    },
+    "trial:cartesian-descartes08-myositis-phase2": {
+      "official_title": "A Randomized Double-Blind Placebo-Controlled Study to Evaluate Efficacy, Safety, and Tolerability of Descartes-08 in Patients With Dermatomyositis and Antisynthetase Syndrome",
+      "sponsor": "Cartesian Therapeutics",
+      "status": "RECRUITING",
+      "enrollment": 60,
+      "study_start": "2026-04-28",
+      "estimated_completion": "2028-05",
+      "registry_last_update": "2026-04-23"
+    },
+    "research:pmid-42414128": {
+      "official_title": "Anti-CD19/CD22 CAR T cells in refractory immune thrombocytopenia of paediatric systemic lupus erythematosus.",
+      "doi": "10.1016/j.ard.2026.06.011",
+      "publication_date": "2026 Jul 7"
+    },
+    "research:pmid-42295377": {
+      "official_title": "Emerging therapeutic strategies in multiple sclerosis: a focus on innovative and targeted approaches.",
+      "doi": "10.1007/s00210-026-05579-0",
+      "publication_date": "2026 Jun 15"
+    },
+    "research:pmid-42286319": {
+      "official_title": "Reprogramming immunity: the promise and challenges of CAR T cell therapy in multiple sclerosis.",
+      "doi": "10.1007/s10787-026-02295-2",
+      "publication_date": "2026 Jun 12"
+    },
+    "research:pmid-42251699": {
+      "official_title": "Chimeric antigen receptor T-cell therapy induces complete remission in a patient with concurrent CLL with CNS involvement and multiple sclerosis.",
+      "doi": "10.1080/10428194.2026.2682293",
+      "publication_date": "2026 Jun 7"
+    },
+    "research:pmid-42223209": {
+      "official_title": "Integrated Clinical and Proteomic Profiling of CD19 Chimeric Antigen Receptor T Cell Therapy in Progressive Systemic Sclerosis.",
+      "doi": "10.1002/art.70236",
+      "publication_date": "2026 Jun 1"
+    },
+    "research:pmid-42167622": {
+      "official_title": "Chimeric antigen receptor-based cellular therapy in autoimmune diseases: A systematic review and meta-analysis of clinical, serological and safety outcomes.",
+      "doi": "10.1016/j.autrev.2026.104090",
+      "publication_date": "2026 May 20"
+    },
+    "research:pmid-42171443": {
+      "official_title": "Long-Term Outcomes in Stiff Person Spectrum Disorder.",
+      "doi": "10.1111/ene.70609",
+      "publication_date": "2026 May"
+    },
+    "research:pmid-41935952": {
+      "official_title": "Autologous CD19 CAR-T cell therapy for pediatric and adult systemic lupus erythematosus: A phase 1/2 trial.",
+      "doi": "10.1016/j.ymthe.2026.03.037",
+      "publication_date": "2026 Apr 3"
+    },
+    "research:pmid-41747738": {
+      "official_title": "Single-cell profiling of immune reset in patients with refractory generalized myasthenia gravis receiving autologous CD19/BCMA CAR-T cell therapy.",
+      "doi": "10.1016/j.medj.2026.101026",
+      "publication_date": "2026 Feb 25"
+    },
+    "research:pmid-41644365": {
+      "official_title": "Heterogeneous responses of IM19 anti-CD19 CAR T-cell therapy in refractory systemic lupus erythematosus: an open-label pilot study and a mini-review.",
+      "doi": "10.1016/j.ard.2025.12.014",
+      "publication_date": "2026 Feb 5"
+    },
+    "research:pmid-41612420": {
+      "official_title": "BCMA-CD19 armored compound CAR T cells in systemic lupus erythematosus: extended follow-up of a phase 1 clinical trial.",
+      "doi": "10.1186/s13045-026-01779-6",
+      "publication_date": "2026 Jan 29"
+    },
+    "research:pmid-41514038": {
+      "official_title": "BCMA-directed mRNA CAR T cell therapy for myasthenia gravis: a randomized, double-blind, placebo-controlled phase 2b trial.",
+      "doi": "10.1038/s41591-025-04171-y",
+      "publication_date": "2026 Jan 9"
+    },
+    "research:pmid-41514039": {
+      "official_title": "BCMA-directed mRNA CAR-T cell therapy for myasthenia gravis: exploratory biomarker analysis of a placebo-controlled phase 2b trial.",
+      "doi": "10.1038/s41591-025-04170-z",
+      "publication_date": "2026 Jan 9"
+    },
+    "research:pmid-41240964": {
+      "official_title": "Efficacy and safety of allogeneic CD19 CAR NK-cell therapy in systemic lupus erythematosus: a case series in China.",
+      "doi": "10.1016/S0140-6736(25)01671-X",
+      "publication_date": "2025 Nov 12"
+    },
+    "research:pmid-41245531": {
+      "official_title": "Anti-BCMA/CD19 CAR T cell therapy in patients with refractory generalized myasthenia gravis: a single-arm, phase 1 trial.",
+      "doi": "10.1016/j.eclinm.2025.103621",
+      "publication_date": "2025 Oct 31"
+    },
+    "research:pmid-41101309": {
+      "official_title": "Anti-BCMA CAR-T therapy in patients with progressive multiple sclerosis.",
+      "doi": "10.1016/j.cell.2025.09.020",
+      "publication_date": "2025 Oct 15"
+    },
+    "research:pmid-40856088": {
+      "official_title": "Durability of Response to B-Cell Maturation Antigen-Directed mRNA Cell Therapy in Myasthenia Gravis.",
+      "doi": "10.1002/acn3.70167",
+      "publication_date": "2025 Aug 26"
+    },
+    "research:pmid-38554710": {
+      "official_title": "CD19-targeted chimeric antigen receptor T cell therapy in two patients with multiple sclerosis.",
+      "doi": "10.1016/j.medj.2024.03.002",
+      "publication_date": "2024 Mar 29"
+    },
+    "research:pmid-38409527": {
+      "official_title": "B cell lineage reconstitution underlies CAR-T cell therapeutic efficacy in patients with refractory myasthenia gravis.",
+      "doi": "10.1038/s44321-024-00043-z",
+      "publication_date": "2024 Feb 26"
+    },
+    "research:pmid-37353278": {
+      "official_title": "Safety and clinical activity of autologous RNA chimeric antigen receptor T-cell therapy in myasthenia gravis (MG-001): a prospective, multicentre, open-label, non-randomised phase 1b/2a study.",
+      "doi": "10.1016/S1474-4422(23)00194-1",
+      "publication_date": "2023 Jul"
+    },
+    "research:pmid-36596762": {
+      "official_title": "Anti-BCMA CAR T-cell therapy CT103A in relapsed or refractory AQP4-IgG seropositive neuromyelitis optica spectrum disorders: phase 1 trial interim results.",
+      "doi": "10.1038/s41392-022-01278-3",
+      "publication_date": "2023 Jan 4"
+    },
+    "research:pmid-38728414": {
+      "official_title": "Single-cell analysis of anti-BCMA CAR T cell therapy in patients with central nervous system autoimmunity.",
+      "doi": "10.1126/sciimmunol.adj9730",
+      "publication_date": "2024 May 10"
+    },
+    "research:pmid-40425008": {
+      "official_title": "Anti-BCMA CAR-T cell therapy in relapsed/refractory chronic inflammatory demyelinating polyneuropathy.",
+      "doi": "10.1016/j.medj.2025.100704",
+      "publication_date": "2025 May 26"
+    },
+    "research:pmid-40706586": {
+      "official_title": "Chimeric antigen receptor T cells in treatment-refractory DAGLA antibody-associated encephalitis.",
+      "doi": "10.1016/j.medj.2025.100776",
+      "publication_date": "2025 Jul 23"
+    },
+    "research:pmid-42028700": {
+      "official_title": "Anti-CD19 CAR T Cells in Autoimmune Encephalitis: Inflammation Controlled, Neurodegeneration Unchecked?",
+      "doi": "10.1002/acn3.70414",
+      "publication_date": "2026 Apr 24"
+    },
+    "research:pmid-37918394": {
+      "official_title": "Chimeric autoantibody receptor T cells deplete NMDA receptor-specific B cells.",
+      "doi": "10.1016/j.cell.2023.10.001",
+      "publication_date": "2023 Nov 1"
+    },
+    "research:pmid-38381673": {
+      "official_title": "CD19 CAR T-Cell Therapy in Autoimmune Disease - A Case Series with Follow-up.",
+      "doi": "10.1056/NEJMoa2308917",
+      "publication_date": "2024 Feb 22"
+    },
+    "research:pmid-36930673": {
+      "official_title": "CD19-targeted CAR T cells in refractory antisynthetase syndrome.",
+      "doi": "10.1016/S0140-6736(23)00023-5",
+      "publication_date": "2023 Feb 15"
+    },
+    "research:pmid-39245937": {
+      "official_title": "Case study of CD19 CAR T therapy in a subject with immune-mediate necrotizing myopathy treated in the RESET-Myositis phase I/II trial.",
+      "doi": "10.1016/j.ymthe.2024.09.009",
+      "publication_date": "2024 Sep 7"
+    },
+    "research:pmid-40245922": {
+      "official_title": "BCMA CAR T cells in a patient with relapsing idiopathic inflammatory myositis after initial and repeat therapy with CD19 CAR T cells.",
+      "doi": "10.1038/s41591-025-03718-3",
+      "publication_date": "2025 Apr 17"
+    },
+    "research:pmid-40268741": {
+      "official_title": "A novel approach to refractory idiopathic inflammatory myopathy: CD19 CAR T-cell therapy-case report and literature review.",
+      "doi": "10.1093/rheumatology/keaf190",
+      "publication_date": "2025 Sep 1"
+    }
+  }
 }

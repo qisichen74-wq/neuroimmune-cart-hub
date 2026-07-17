@@ -1278,5 +1278,143 @@
     "study_sponsorship": "IIT",
     "development_band": "IIT",
     "development_rank": 1
+  },
+  {
+    "id": "cabaletta-resecel-myositis",
+    "record_kind": "registered_trial",
+    "registry_id": "NCT06154252",
+    "registry_url": "https://clinicaltrials.gov/study/NCT06154252",
+    "registry_last_update": "2026-07-14",
+    "official_title": "A Phase 1/2, Open-Label Study to Evaluate the Safety and Efficacy of Autologous CD19-specific Chimeric Antigen Receptor T Cells (CABA-201) in Subjects With Active Idiopathic Inflammatory Myopathy or Juvenile Idiopathic Inflammatory Myopathy",
+    "trial_name": "RESET-Myositis：rese-cel治疗成人及青少年IIM",
+    "sponsor": "Cabaletta Bio",
+    "collaborators": [],
+    "product": "rese-cel (CABA-201)",
+    "indication": "Dermatomyositis / Antisynthetase syndrome / IMNM / Juvenile IIM",
+    "phase": "Phase 2/3",
+    "design": "开放标签、非随机、多队列；含成人DM/ASyS/IMNM、青少年IIM及Phase 2b子研究",
+    "region": "US",
+    "status": "Recruiting",
+    "enrollment": 74,
+    "study_start": "2023-12-20",
+    "estimated_completion": "2028-07",
+    "priority": "高",
+    "evidence_goal": "验证rese-cel在不同IIM亚型中的TIS、肌力、多器官获益和持续性，并支持注册导向开发。",
+    "key_question": "单臂注册路径能否以标准化TIS和激素停用形成足够稳健的效应量。",
+    "watch_points": [
+      "Phase 2b与注册队列入组",
+      "DM/ASyS/IMNM亚型一致性",
+      "青少年队列安全性",
+      "肺功能与激素停用"
+    ],
+    "study_sponsorship": "Sponsor-initiated",
+    "development_band": "Pivotal study",
+    "development_rank": 4,
+    "i18n": {
+      "en": {
+        "trial_name": "RESET-Myositis: rese-cel in adult and juvenile IIM",
+        "design": "Open-label, non-randomized, multi-cohort design covering adult DM/ASyS/IMNM, juvenile IIM, and Phase 2b substudies",
+        "evidence_goal": "Evaluate TIS, strength, multi-organ benefit, and durability across IIM subtypes to support registration-oriented development.",
+        "key_question": "Can a single-arm registration path generate a robust effect size using standardized TIS and steroid withdrawal?",
+        "watch_points": [
+          "Phase 2b and registrational enrollment",
+          "Consistency across DM, ASyS, and IMNM",
+          "Juvenile-cohort safety",
+          "Lung function and steroid withdrawal"
+        ]
+      }
+    }
+  },
+  {
+    "id": "novartis-rapcabtagene-iim-phase2",
+    "record_kind": "registered_trial",
+    "registry_id": "NCT06665256",
+    "registry_url": "https://clinicaltrials.gov/study/NCT06665256",
+    "registry_last_update": "2026-06-23",
+    "official_title": "A Phase 2, Randomized, Open-label, Controlled Study to Evaluate the Efficacy and Safety of Rapcabtagene Autoleucel Versus Comparator in Participants With Severe Refractory Idiopathic Inflammatory Myopathies (IIM)",
+    "trial_name": "YTB323对比标准治疗的随机Phase 2 IIM研究",
+    "sponsor": "Novartis Pharmaceuticals",
+    "collaborators": [],
+    "product": "rapcabtagene autoleucel (YTB323)",
+    "indication": "Idiopathic inflammatory myopathies",
+    "phase": "Phase 2",
+    "design": "随机、开放标签、平行对照；对照为研究者选择的他克莫司、MMF、环磷酰胺或利妥昔单抗",
+    "region": "Global",
+    "status": "Active, not recruiting",
+    "enrollment": 21,
+    "study_start": "2024-12-17",
+    "estimated_completion": "2032-11-29",
+    "priority": "高",
+    "evidence_goal": "以主动对照评估YTB323在重症难治IIM中的相对疗效和安全性。",
+    "key_question": "小规模随机主动对照能否显示超越现有免疫抑制策略的临床效应。",
+    "watch_points": [
+      "21例随机队列基线平衡",
+      "主动对照选择差异",
+      "长期随访至2032年",
+      "TIS和器官结局"
+    ],
+    "study_sponsorship": "Sponsor-initiated",
+    "development_band": "Ph2",
+    "development_rank": 3,
+    "i18n": {
+      "en": {
+        "trial_name": "Randomized Phase 2 YTB323 versus standard therapy in IIM",
+        "design": "Randomized, open-label, parallel active control using investigator choice of tacrolimus, MMF, cyclophosphamide, or rituximab",
+        "evidence_goal": "Assess comparative efficacy and safety of YTB323 in severe refractory IIM against active standard therapy.",
+        "key_question": "Can a small randomized active-control study show clinical benefit beyond existing immunosuppression?",
+        "watch_points": [
+          "Baseline balance in the 21-patient randomized cohort",
+          "Heterogeneity of active comparator choice",
+          "Long-term follow-up through 2032",
+          "TIS and organ outcomes"
+        ]
+      }
+    }
+  },
+  {
+    "id": "cartesian-descartes08-myositis-phase2",
+    "record_kind": "registered_trial",
+    "registry_id": "NCT07391605",
+    "registry_url": "https://clinicaltrials.gov/study/NCT07391605",
+    "registry_last_update": "2026-04-23",
+    "official_title": "A Randomized Double-Blind Placebo-Controlled Study to Evaluate Efficacy, Safety, and Tolerability of Descartes-08 in Patients With Dermatomyositis and Antisynthetase Syndrome",
+    "trial_name": "Descartes-08治疗自身抗体介导肌炎的随机Phase 2研究",
+    "sponsor": "Cartesian Therapeutics",
+    "collaborators": [],
+    "product": "Descartes-08",
+    "indication": "Dermatomyositis / Antisynthetase syndrome",
+    "phase": "Phase 2",
+    "design": "随机、双盲、安慰剂对照；BCMA mRNA CAR-T，无清淋重复给药路线",
+    "region": "US",
+    "status": "Recruiting",
+    "enrollment": 60,
+    "study_start": "2026-04-28",
+    "estimated_completion": "2028-05",
+    "priority": "高",
+    "evidence_goal": "验证无清淋、非持久表达BCMA CAR-T在DM和ASyS中的疗效、安全性与执行优势。",
+    "key_question": "MG中建立的重复给药平台能否在肌炎和肺部受累中形成可重复的临床优势。",
+    "watch_points": [
+      "实际首例入组与给药",
+      "DM与ASyS分层",
+      "重复给药依从性",
+      "肺功能、TIS与抗体变化"
+    ],
+    "study_sponsorship": "Sponsor-initiated",
+    "development_band": "Ph2",
+    "development_rank": 3,
+    "i18n": {
+      "en": {
+        "trial_name": "Randomized Phase 2 Descartes-08 in autoantibody-mediated myositis",
+        "design": "Randomized, double-blind, placebo-controlled, lymphodepletion-free repeat-dose BCMA mRNA CAR-T",
+        "evidence_goal": "Test efficacy, safety, and operational advantages of transient BCMA CAR-T in DM and ASyS without lymphodepletion.",
+        "key_question": "Can the repeat-dose platform established in MG create reproducible benefit in myositis and lung involvement?",
+        "watch_points": [
+          "First patient enrolled and dosed",
+          "DM and ASyS stratification",
+          "Repeat-dose adherence",
+          "Lung function, TIS, and antibody change"
+        ]
+      }
+    }
   }
 ]

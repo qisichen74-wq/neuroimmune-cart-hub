@@ -588,5 +588,95 @@
     "relation": "构成病例证据",
     "rationale": "正式发表结果直接支撑同济医院CT103A CIDP项目。",
     "confidence": "高"
+  },
+  {
+    "id": "rel-cabaletta-resecel-myositis",
+    "source_type": "company",
+    "source_id": "cabaletta-resecel",
+    "target_type": "trial",
+    "target_id": "cabaletta-resecel-myositis",
+    "relation": "推进",
+    "rationale": "Cabaletta Bio申办RESET-Myositis并将rese-cel推进至注册导向Phase 2/3。",
+    "confidence": "高"
+  },
+  {
+    "id": "rel-novartis-ytb323-iim",
+    "source_type": "company",
+    "source_id": "novartis-ytb323",
+    "target_type": "trial",
+    "target_id": "novartis-rapcabtagene-iim-phase2",
+    "relation": "推进",
+    "rationale": "Novartis申办YTB323在重症难治IIM中的随机主动对照Phase 2。",
+    "confidence": "高"
+  },
+  {
+    "id": "rel-cartesian-descartes08-iim",
+    "source_type": "company",
+    "source_id": "cartesian-descartes08",
+    "target_type": "trial",
+    "target_id": "cartesian-descartes08-myositis-phase2",
+    "relation": "推进",
+    "rationale": "Cartesian申办Descartes-08在DM和ASyS中的随机安慰剂对照Phase 2。",
+    "confidence": "高"
+  },
+  {
+    "id": "rel-reset-myositis-case",
+    "source_type": "research",
+    "source_id": "pmid-39245937",
+    "target_type": "trial",
+    "target_id": "cabaletta-resecel-myositis",
+    "relation": "构成临床证据",
+    "rationale": "论文明确报告NCT06154252 RESET-Myositis首例IMNM受试者。",
+    "confidence": "高"
+  },
+  {
+    "id": "rel-iim-nejm-academic",
+    "source_type": "research",
+    "source_id": "pmid-38381673",
+    "target_type": "trial",
+    "target_id": "academic-cd19-autoimmune-series",
+    "relation": "构成临床证据",
+    "rationale": "NEJM系列对应Erlangen学术项目并包含3例IIM。",
+    "confidence": "高"
+  },
+  {
+    "id": "rel-iim-lancet-academic",
+    "source_type": "research",
+    "source_id": "pmid-36930673",
+    "target_type": "trial",
+    "target_id": "academic-cd19-autoimmune-series",
+    "relation": "构成早期病例证据",
+    "rationale": "抗合成酶综合征个案后来纳入Erlangen多病种系列。",
+    "confidence": "高"
+  },
+  {
+    "id": "rel-iim-bcma-academic",
+    "source_type": "research",
+    "source_id": "pmid-40245922",
+    "target_type": "trial",
+    "target_id": "academic-cd19-autoimmune-series",
+    "relation": "构成纵向机制证据",
+    "rationale": "同一IIM患者的CD19后复发和BCMA挽救研究补充项目纵向证据。",
+    "confidence": "高"
+  },
+  {
+    "id": "rel-ae-dagla-kyverna",
+    "source_type": "research",
+    "source_id": "pmid-40706586",
+    "target_type": "company",
+    "target_id": "kyverna-kyv101",
+    "relation": "构成病例证据",
+    "rationale": "论文明确使用Kyverna的KYV-101治疗DAGLA抗体相关脑炎。",
+    "confidence": "高"
+  },
+  {
+    "id": "rel-ae-dagla-followup-kyverna",
+    "source_type": "research",
+    "source_id": "pmid-42028700",
+    "target_type": "company",
+    "target_id": "kyverna-kyv101",
+    "relation": "构成长随访证据",
+    "rationale": "延长随访来自同一KYV-101病例并评价约两年半结构与临床结局。",
+    "confidence": "高"
   }
 ]
