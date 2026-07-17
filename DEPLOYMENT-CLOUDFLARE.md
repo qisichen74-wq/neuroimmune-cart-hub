@@ -23,7 +23,7 @@ No Cloudflare API token or account ID is stored in GitHub. Do not create a secon
 
 - Every push to `main` is built and deployed by Cloudflare Pages.
 - Pull requests and non-production branches can use Cloudflare preview deployments.
-- At 06:30 China Standard Time each day, `.github/workflows/refresh-data.yml` discovers new records, checks primary sources and regulatory endpoints, audits the public data, generates the briefing, and verifies the complete static build.
+- At 06:30 China Standard Time every Tuesday and Friday, `.github/workflows/refresh-data.yml` discovers new records, checks primary sources and regulatory endpoints, audits the public data, generates the briefing, and verifies the complete static build.
 - The scheduled workflow commits verified changes under `data/` back to `main`. That commit becomes the auditable source for the next Cloudflare deployment and preserves source snapshots and change history across days.
 - A discovery or primary-source verification failure stops the update before commit, leaving the previous production version online. A temporarily unavailable regulatory endpoint is recorded in the report but does not discard the rest of a verified update.
 

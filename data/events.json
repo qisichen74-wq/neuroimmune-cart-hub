@@ -797,6 +797,29 @@
     ]
   },
   {
+    "id": "event-nct07403188-update",
+    "date": "2026-02-11",
+    "event_type": "试验更新",
+    "title": "Kyverna启动KYV-101跨适应症长期随访研究",
+    "summary": "NCT07403188计划入组70例既往接受过KYV-101的受试者，覆盖MS、MG、SPS、LN、SSc、皮肌炎和RA。",
+    "impact": "把Kyverna自身免疫CAR-T证据重心从短期应答进一步推向15年延迟不良事件、CAR持续性和跨病种长期结局。",
+    "priority": "高",
+    "topic": "跨病种",
+    "status": "Recruiting",
+    "source_label": "ClinicalTrials.gov",
+    "source_url": "https://clinicaltrials.gov/study/NCT07403188",
+    "entities": [
+      {
+        "type": "company",
+        "id": "kyverna-kyv101"
+      },
+      {
+        "type": "trial",
+        "id": "kyv101-autoimmune-ltfu"
+      }
+    ]
+  },
+  {
     "id": "event-iaso-equecel-fda-autoimmune-ind",
     "date": "2024-08-12",
     "event_type": "公司披露",
@@ -807,7 +830,7 @@
     "topic": "跨病种",
     "status": "FDA IND获批（公司口径）",
     "source_label": "IASO Bio",
-    "source_url": "https://www.iasobio.com/info.php?id=259",
+    "source_url": "https://www.iasobio.com/info.php?id=251",
     "entities": [
       {
         "type": "company",
@@ -835,6 +858,25 @@
       {
         "type": "trial",
         "id": "ct103a-neuro-autoimmune-phase1"
+      }
+    ]
+  },
+  {
+    "id": "event-feed-42414128",
+    "date": "2026-07-07",
+    "event_type": "研究发布",
+    "title": "儿童SLE相关难治性ITP的双靶点CAR-T病例进入证据池",
+    "summary": "PubMed来信报告上海儿童医学中心使用抗CD19/CD22 CAR-T治疗儿科SLE相关难治性ITP的个案经历。",
+    "impact": "为CAR-T从成人系统性自免扩展到儿科血液学自身免疫表型提供早期信号，但仍停留在单例证据层级。",
+    "priority": "中",
+    "topic": "跨病种",
+    "status": "已审核",
+    "source_label": "PubMed",
+    "source_url": "https://pubmed.ncbi.nlm.nih.gov/42414128/",
+    "entities": [
+      {
+        "type": "research",
+        "id": "pmid-42414128"
       }
     ]
   },

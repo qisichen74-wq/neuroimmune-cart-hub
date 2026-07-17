@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-07-16",
+  "as_of": "2026-07-17",
   "policy_version": "1.0.0",
   "status_definitions": {
     "已核验": "已与指定一手或权威来源逐字段比对",
@@ -2550,8 +2550,8 @@
       "record_id": "iaso-equecel-autoimmune",
       "status": "已核验",
       "confidence": "高",
-      "last_verified_at": "2026-07-14",
-      "next_review_at": "2026-07-28",
+      "last_verified_at": "2026-07-17",
+      "next_review_at": "2026-07-31",
       "source_ids": [
         "iaso-primary",
         "clinicaltrials-gov"
@@ -2566,15 +2566,15 @@
         "source_url",
         "source_last_update"
       ],
-      "note": "依据IASO官网2024-08-12消息、官网pipeline及ClinicalTrials.gov NCT04561557核验。美国自身免疫IND按适应症计为MG、MS、SLE、LN四项；pipeline将SLE/LN合并一行。中国MG IND及MS、SLE、IIM等IIT与美国IND分开记录。"
+      "note": "2026-07-17复核IASO官网2024-08-12原文、官网pipeline及ClinicalTrials.gov NCT04561557；官网原文链接纠正为info.php?id=251。美国自身免疫IND按适应症计为MG、MS、SLE、LN四项；pipeline将SLE/LN合并一行。中国MG IND及MS、SLE、IIM等IIT与美国IND分开记录。"
     },
     {
       "record_type": "trial",
       "record_id": "ct103a-neuro-autoimmune-phase1",
       "status": "已核验",
       "confidence": "高",
-      "last_verified_at": "2026-07-14",
-      "next_review_at": "2026-07-21",
+      "last_verified_at": "2026-07-17",
+      "next_review_at": "2026-07-24",
       "source_ids": [
         "clinicaltrials-gov"
       ],
@@ -2597,8 +2597,8 @@
       "record_id": "event-iaso-equecel-fda-autoimmune-ind",
       "status": "已核验",
       "confidence": "高",
-      "last_verified_at": "2026-07-14",
-      "next_review_at": "2026-07-21",
+      "last_verified_at": "2026-07-17",
+      "next_review_at": "2026-07-24",
       "source_ids": [
         "iaso-primary"
       ],
@@ -2608,15 +2608,15 @@
         "source_url",
         "entities"
       ],
-      "note": "事件日期采用IASO官网原文发布日期；官方原文明确为美国FDA批准SLE和LN的IND，并回顾MG、MS既有自身免疫IND。"
+      "note": "2026-07-17复核后确认事件日期仍采用IASO官网原文发布日期2024-08-12；官网原文链接纠正为info.php?id=251。官方原文明确为美国FDA批准SLE和LN的IND，并回顾MG、MS既有自身免疫IND。"
     },
     {
       "record_type": "event",
       "record_id": "event-nct04561557-update",
       "status": "已核验",
       "confidence": "高",
-      "last_verified_at": "2026-07-14",
-      "next_review_at": "2026-07-21",
+      "last_verified_at": "2026-07-17",
+      "next_review_at": "2026-07-24",
       "source_ids": [
         "clinicaltrials-gov"
       ],
@@ -2633,8 +2633,8 @@
       "record_id": "icell-icg318-autoimmune",
       "status": "已核验",
       "confidence": "高",
-      "last_verified_at": "2026-07-14",
-      "next_review_at": "2026-07-28",
+      "last_verified_at": "2026-07-17",
+      "next_review_at": "2026-07-31",
       "source_ids": [
         "icell-primary",
         "ncbi-pubmed",
@@ -2650,15 +2650,15 @@
         "source_url",
         "source_last_update"
       ],
-      "note": "依据iCell官网、PMID 41612420及ClinicalTrials.gov NCT06787989、NCT07328581核验；论文中的ICG318与注册库SLE/LN项目名称一致，但未把论文强行绑定到单一NCT。"
+      "note": "2026-07-17复核iCell官网、PMID 41612420及ClinicalTrials.gov NCT06787989、NCT07328581，未见可确认的新正式披露；论文中的ICG318与注册库SLE/LN项目名称一致，但未把论文强行绑定到单一NCT。"
     },
     {
       "record_type": "trial",
       "record_id": "icell-bcmacd19-itp-phase1",
       "status": "已核验",
       "confidence": "中",
-      "last_verified_at": "2026-07-14",
-      "next_review_at": "2026-07-21",
+      "last_verified_at": "2026-07-17",
+      "next_review_at": "2026-07-24",
       "source_ids": [
         "clinicaltrials-gov"
       ],
@@ -2681,8 +2681,8 @@
       "record_id": "event-nct06787989-update",
       "status": "已核验",
       "confidence": "中",
-      "last_verified_at": "2026-07-14",
-      "next_review_at": "2026-07-21",
+      "last_verified_at": "2026-07-17",
+      "next_review_at": "2026-07-24",
       "source_ids": [
         "clinicaltrials-gov"
       ],
@@ -2699,8 +2699,8 @@
       "record_id": "icell-icg318-sle-phase12",
       "status": "已核验",
       "confidence": "高",
-      "last_verified_at": "2026-07-14",
-      "next_review_at": "2026-07-21",
+      "last_verified_at": "2026-07-17",
+      "next_review_at": "2026-07-24",
       "source_ids": [
         "clinicaltrials-gov"
       ],
@@ -2723,8 +2723,8 @@
       "record_id": "event-nct07328581-update",
       "status": "已核验",
       "confidence": "高",
-      "last_verified_at": "2026-07-14",
-      "next_review_at": "2026-07-21",
+      "last_verified_at": "2026-07-17",
+      "next_review_at": "2026-07-24",
       "source_ids": [
         "clinicaltrials-gov"
       ],

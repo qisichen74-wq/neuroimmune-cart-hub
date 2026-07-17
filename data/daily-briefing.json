@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-15T16:44:14.512Z",
-  "as_of": "2026-07-15",
+  "generated_at": "2026-07-17T03:57:41.015Z",
+  "as_of": "2026-07-17",
   "headline": {
     "id": "pmid-42251699",
     "title": "CAR-T细胞疗法使合并CNS受累CLL与多发性硬化患者获得完全缓解",
@@ -10,11 +10,11 @@
     "evidence_level": "病例报道·IIT"
   },
   "snapshot": {
-    "formal_records": 154,
-    "externally_verified": 145,
+    "formal_records": 158,
+    "externally_verified": 148,
     "active_priority_trials": 28,
-    "candidate_items": 860,
-    "quality_score": 82
+    "candidate_items": 0,
+    "quality_score": 11
   },
   "verified_updates": [
     {
@@ -224,91 +224,438 @@
       "message": "注册库记录超过180天未更新，当前状态需谨慎解释"
     },
     {
+      "code": "source_check_failed",
+      "record_type": "trial",
+      "record_id": "kyv101-ms-phase1",
+      "message": "官方来源访问失败：fetch failed"
+    },
+    {
+      "code": "source_check_failed",
+      "record_type": "trial",
+      "record_id": "descartes08-mg-rct",
+      "message": "官方来源访问失败：fetch failed"
+    },
+    {
+      "code": "source_check_failed",
+      "record_type": "trial",
+      "record_id": "qh103-neuro-autoimmune",
+      "message": "官方来源访问失败：fetch failed"
+    },
+    {
+      "code": "source_check_failed",
+      "record_type": "trial",
+      "record_id": "relma-autoimmune-ssc",
+      "message": "官方来源访问失败：fetch failed"
+    },
+    {
+      "code": "source_check_failed",
+      "record_type": "trial",
+      "record_id": "tianjin-ucar19bcma-neuro",
+      "message": "官方来源访问失败：fetch failed"
+    },
+    {
+      "code": "source_check_failed",
+      "record_type": "trial",
+      "record_id": "sys6020-mg-phase1",
+      "message": "官方来源访问失败：fetch failed"
+    },
+    {
+      "code": "source_check_failed",
+      "record_type": "trial",
+      "record_id": "kite363-neuro-phase1",
+      "message": "官方来源访问失败：fetch failed"
+    },
+    {
+      "code": "source_check_failed",
+      "record_type": "trial",
+      "record_id": "cc97540-breakfree2",
+      "message": "官方来源访问失败：fetch failed"
+    },
+    {
+      "code": "source_check_failed",
+      "record_type": "trial",
+      "record_id": "ytb323-mg-phase12",
+      "message": "官方来源访问失败：fetch failed"
+    },
+    {
+      "code": "source_check_failed",
+      "record_type": "trial",
+      "record_id": "ctx112-autoimmune-phase1",
+      "message": "官方来源访问失败：fetch failed"
+    },
+    {
+      "code": "source_check_failed",
+      "record_type": "trial",
+      "record_id": "ft819-autoimmune-phase1",
+      "message": "官方来源访问失败：fetch failed"
+    },
+    {
+      "code": "source_check_failed",
+      "record_type": "trial",
+      "record_id": "qt019c-neuro-phase1",
+      "message": "官方来源访问失败：fetch failed"
+    },
+    {
+      "code": "source_check_failed",
+      "record_type": "trial",
+      "record_id": "allo329-autoimmune-phase1",
+      "message": "官方来源访问失败：fetch failed"
+    },
+    {
+      "code": "source_check_failed",
+      "record_type": "trial",
+      "record_id": "zamtocel-autoimmune-phase1",
+      "message": "官方来源访问失败：fetch failed"
+    },
+    {
+      "code": "source_check_failed",
+      "record_type": "trial",
+      "record_id": "ti0032-invivo-autoimmune",
+      "message": "官方来源访问失败：fetch failed"
+    },
+    {
+      "code": "source_check_failed",
+      "record_type": "trial",
+      "record_id": "zju-ucar19bcma-autoimmune",
+      "message": "官方来源访问失败：fetch failed"
+    },
+    {
+      "code": "source_check_failed",
+      "record_type": "trial",
+      "record_id": "magicrna-hn2302-autoimmune",
+      "message": "官方来源访问失败：fetch failed"
+    },
+    {
+      "code": "source_check_failed",
+      "record_type": "trial",
+      "record_id": "arcellx-anitocel-mg-phase1",
+      "message": "官方来源访问失败：fetch failed"
+    },
+    {
+      "code": "source_check_failed",
+      "record_type": "trial",
+      "record_id": "tongji-v001bcma-autoimmune",
+      "message": "官方来源访问失败：fetch failed"
+    },
+    {
+      "code": "source_check_failed",
+      "record_type": "trial",
+      "record_id": "ihematology-xiniao-ucar-autoimmune",
+      "message": "官方来源访问失败：fetch failed"
+    },
+    {
+      "code": "source_check_failed",
+      "record_type": "trial",
+      "record_id": "xuzhou-xiniao-ucar-autoimmune",
+      "message": "官方来源访问失败：fetch failed"
+    },
+    {
+      "code": "source_check_failed",
+      "record_type": "trial",
+      "record_id": "pku3-qh103-autoimmune",
+      "message": "官方来源访问失败：fetch failed"
+    },
+    {
+      "code": "source_check_failed",
+      "record_type": "trial",
+      "record_id": "gobroad-ol108-autoimmune",
+      "message": "官方来源访问失败：fetch failed"
+    },
+    {
+      "code": "source_check_failed",
+      "record_type": "trial",
+      "record_id": "changzhou-ucar19bcma-autoimmune",
+      "message": "官方来源访问失败：fetch failed"
+    },
+    {
+      "code": "source_check_failed",
+      "record_type": "trial",
+      "record_id": "pkuph-bcmacd19-autoimmune-phase2",
+      "message": "官方来源访问失败：fetch failed"
+    },
+    {
+      "code": "source_check_failed",
+      "record_type": "trial",
+      "record_id": "cabaletta-resecel-mg-phase12",
+      "message": "官方来源访问失败：fetch failed"
+    },
+    {
+      "code": "source_check_failed",
+      "record_type": "trial",
+      "record_id": "precision-cd19-autoimmune-phase1",
+      "message": "官方来源访问失败：fetch failed"
+    },
+    {
+      "code": "source_check_failed",
+      "record_type": "trial",
+      "record_id": "hadassah-hbi0101-autoimmune",
+      "message": "官方来源访问失败：fetch failed"
+    },
+    {
+      "code": "source_check_failed",
+      "record_type": "trial",
+      "record_id": "renji-c-car168-autoimmune",
+      "message": "官方来源访问失败：fetch failed"
+    },
+    {
+      "code": "source_check_failed",
+      "record_type": "trial",
+      "record_id": "adicet-prulacel-autoimmune-phase1",
+      "message": "官方来源访问失败：fetch failed"
+    },
+    {
+      "code": "source_check_failed",
+      "record_type": "trial",
+      "record_id": "changhai-kn3601-autoimmune",
+      "message": "官方来源访问失败：fetch failed"
+    },
+    {
+      "code": "source_check_failed",
+      "record_type": "trial",
+      "record_id": "huashan-c-car168-cns-autoimmune",
+      "message": "官方来源访问失败：fetch failed"
+    },
+    {
+      "code": "source_check_failed",
+      "record_type": "trial",
+      "record_id": "kyv101-autoimmune-ltfu",
+      "message": "官方来源访问失败：fetch failed"
+    },
+    {
+      "code": "source_check_failed",
+      "record_type": "trial",
+      "record_id": "gustaveroussy-cellattack1-autoimmune",
+      "message": "官方来源访问失败：fetch failed"
+    },
+    {
+      "code": "source_check_failed",
+      "record_type": "trial",
+      "record_id": "ct103a-neuro-autoimmune-phase1",
+      "message": "官方来源访问失败：fetch failed"
+    },
+    {
+      "code": "source_check_failed",
+      "record_type": "trial",
+      "record_id": "icell-bcmacd19-itp-phase1",
+      "message": "官方来源访问失败：fetch failed"
+    },
+    {
+      "code": "source_check_failed",
+      "record_type": "trial",
+      "record_id": "icell-icg318-sle-phase12",
+      "message": "官方来源访问失败：fetch failed"
+    },
+    {
+      "code": "source_check_failed",
+      "record_type": "trial",
+      "record_id": "tangdu-cd19bcma-mg-iit",
+      "message": "官方来源访问失败：fetch failed"
+    },
+    {
+      "code": "source_check_failed",
+      "record_type": "trial",
+      "record_id": "tongji-rd0605-neuro-iit",
+      "message": "官方来源访问失败：fetch failed"
+    },
+    {
+      "code": "source_check_failed",
+      "record_type": "research",
+      "record_id": "pmid-42414128",
+      "message": "官方来源访问失败：fetch failed"
+    },
+    {
+      "code": "source_check_failed",
+      "record_type": "research",
+      "record_id": "pmid-42295377",
+      "message": "官方来源访问失败：fetch failed"
+    },
+    {
+      "code": "source_check_failed",
+      "record_type": "research",
+      "record_id": "pmid-42286319",
+      "message": "官方来源访问失败：fetch failed"
+    },
+    {
+      "code": "source_check_failed",
+      "record_type": "research",
+      "record_id": "pmid-42251699",
+      "message": "官方来源访问失败：fetch failed"
+    },
+    {
+      "code": "source_check_failed",
+      "record_type": "research",
+      "record_id": "pmid-42223209",
+      "message": "官方来源访问失败：fetch failed"
+    },
+    {
+      "code": "source_check_failed",
+      "record_type": "research",
+      "record_id": "pmid-42167622",
+      "message": "官方来源访问失败：fetch failed"
+    },
+    {
+      "code": "source_check_failed",
+      "record_type": "research",
+      "record_id": "pmid-42171443",
+      "message": "官方来源访问失败：fetch failed"
+    },
+    {
+      "code": "source_check_failed",
+      "record_type": "research",
+      "record_id": "pmid-41935952",
+      "message": "官方来源访问失败：fetch failed"
+    },
+    {
+      "code": "source_check_failed",
+      "record_type": "research",
+      "record_id": "pmid-41747738",
+      "message": "官方来源访问失败：fetch failed"
+    },
+    {
+      "code": "source_check_failed",
+      "record_type": "research",
+      "record_id": "pmid-41644365",
+      "message": "官方来源访问失败：fetch failed"
+    },
+    {
+      "code": "source_check_failed",
+      "record_type": "research",
+      "record_id": "pmid-41612420",
+      "message": "官方来源访问失败：fetch failed"
+    },
+    {
+      "code": "source_check_failed",
+      "record_type": "research",
+      "record_id": "pmid-41514038",
+      "message": "官方来源访问失败：fetch failed"
+    },
+    {
+      "code": "source_check_failed",
+      "record_type": "research",
+      "record_id": "pmid-41514039",
+      "message": "官方来源访问失败：fetch failed"
+    },
+    {
+      "code": "source_check_failed",
+      "record_type": "research",
+      "record_id": "pmid-41240964",
+      "message": "官方来源访问失败：fetch failed"
+    },
+    {
+      "code": "source_check_failed",
+      "record_type": "research",
+      "record_id": "pmid-41245531",
+      "message": "官方来源访问失败：fetch failed"
+    },
+    {
+      "code": "source_check_failed",
+      "record_type": "research",
+      "record_id": "pmid-41101309",
+      "message": "官方来源访问失败：fetch failed"
+    },
+    {
+      "code": "source_check_failed",
+      "record_type": "research",
+      "record_id": "pmid-40856088",
+      "message": "官方来源访问失败：fetch failed"
+    },
+    {
+      "code": "source_check_failed",
+      "record_type": "research",
+      "record_id": "pmid-38554710",
+      "message": "官方来源访问失败：fetch failed"
+    },
+    {
+      "code": "source_check_failed",
+      "record_type": "research",
+      "record_id": "pmid-38409527",
+      "message": "官方来源访问失败：fetch failed"
+    },
+    {
+      "code": "source_check_failed",
+      "record_type": "research",
+      "record_id": "pmid-37353278",
+      "message": "官方来源访问失败：fetch failed"
+    },
+    {
+      "code": "source_check_failed",
+      "record_type": "research",
+      "record_id": "pmid-36596762",
+      "message": "官方来源访问失败：fetch failed"
+    },
+    {
+      "code": "source_check_failed",
+      "record_type": "research",
+      "record_id": "pmid-38728414",
+      "message": "官方来源访问失败：fetch failed"
+    },
+    {
+      "code": "source_check_failed",
+      "record_type": "research",
+      "record_id": "pmid-40425008",
+      "message": "官方来源访问失败：fetch failed"
+    },
+    {
+      "code": "discovery_source_failed",
+      "record_type": "system",
+      "record_id": "-",
+      "message": "候选情报来源访问失败：NCBI PubMed / fetch failed"
+    },
+    {
+      "code": "discovery_source_failed",
+      "record_type": "system",
+      "record_id": "-",
+      "message": "候选情报来源访问失败：ClinicalTrials.gov / fetch failed"
+    },
+    {
+      "code": "discovery_source_failed",
+      "record_type": "system",
+      "record_id": "-",
+      "message": "候选情报来源访问失败：IASO Bio Official News & Pipeline / 未知错误"
+    },
+    {
+      "code": "discovery_sentinel_missing",
+      "record_type": "system",
+      "record_id": "-",
+      "message": "漏检哨兵未命中：IASO Bio Official News & Pipeline / https://www.iasobio.com/info.php?id=251"
+    },
+    {
+      "code": "discovery_source_failed",
+      "record_type": "system",
+      "record_id": "-",
+      "message": "候选情报来源访问失败：iCell Gene Therapeutics Official Website / 未知错误"
+    },
+    {
       "code": "regulatory_source_failed",
       "record_type": "system",
       "record_id": "-",
       "message": "监管来源访问失败：国家药品监督管理局"
+    },
+    {
+      "code": "regulatory_source_failed",
+      "record_type": "system",
+      "record_id": "-",
+      "message": "监管来源访问失败：NMPA药物临床试验审批"
+    },
+    {
+      "code": "regulatory_source_failed",
+      "record_type": "system",
+      "record_id": "-",
+      "message": "监管来源访问失败：NMPA药物临床试验登记"
+    },
+    {
+      "code": "regulatory_source_failed",
+      "record_type": "system",
+      "record_id": "-",
+      "message": "监管来源访问失败：国家药监局药品审评中心"
+    },
+    {
+      "code": "regulatory_source_failed",
+      "record_type": "system",
+      "record_id": "-",
+      "message": "监管来源访问失败：药物临床试验登记与信息公示平台"
     }
   ],
-  "candidate_queue": [
-    {
-      "type": "trial",
-      "external_id": "NCT06502015",
-      "title": "Biomarkers of Neurological Autoimmune Diseases",
-      "score": 22,
-      "tier": "立即核验",
-      "reasons": [
-        "正式注册试验",
-        "命中重点实体：IASO Bio / Eque-cel / CT103A",
-        "命中5个重点病种",
-        "当前处于活跃状态"
-      ],
-      "source_url": "https://clinicaltrials.gov/study/NCT06502015"
-    },
-    {
-      "type": "trial",
-      "external_id": "NCT06775912",
-      "title": "Clinical Study on Targeted CD19/BCMA CAR-T Therapy for Autoimmune Diseases",
-      "score": 20,
-      "tier": "立即核验",
-      "reasons": [
-        "正式注册试验",
-        "命中7个重点病种",
-        "当前处于活跃状态"
-      ],
-      "source_url": "https://clinicaltrials.gov/study/NCT06775912"
-    },
-    {
-      "type": "trial",
-      "external_id": "NCT07676266",
-      "title": "An Exploratory Clinical Study of Anti-CD20/B-cell Maturation Antigen (BCMA) Chimeric Antigen Receptor Autologous T Cell Product (C-CAR168) in the Treatment of Autoimmune Diseases Refractory to Standard Therapy",
-      "score": 16,
-      "tier": "立即核验",
-      "reasons": [
-        "正式注册试验",
-        "命中6个重点病种"
-      ],
-      "source_url": "https://clinicaltrials.gov/study/NCT07676266"
-    },
-    {
-      "type": "trial",
-      "external_id": "NCT07337785",
-      "title": "Clinical Study on the Safety, Efficacy, and Pharmacokinetics of Universal CAR-T Cell Injection Targeting CD19/BCMA in Patients With Neurological Autoimmune Diseases",
-      "score": 16,
-      "tier": "立即核验",
-      "reasons": [
-        "正式注册试验",
-        "命中5个重点病种",
-        "当前处于活跃状态"
-      ],
-      "source_url": "https://clinicaltrials.gov/study/NCT07337785"
-    },
-    {
-      "type": "trial",
-      "external_id": "NCT07315087",
-      "title": "A Clinical Study Evaluating the Safety and Preliminary Efficacy of Universal Allogeneic CAR T-cell Therapy Targeting CD19 and BCMA(QT-019C) in Patients With Relapse/Refractory Autoimmune Diseases",
-      "score": 16,
-      "tier": "立即核验",
-      "reasons": [
-        "正式注册试验",
-        "命中5个重点病种",
-        "当前处于活跃状态"
-      ],
-      "source_url": "https://clinicaltrials.gov/study/NCT07315087"
-    },
-    {
-      "type": "trial",
-      "external_id": "NCT06888960",
-      "title": "An Exploratory Clinical Study on the Safety of CC312 in Treating Patients With Refractory Autoimmune Diseases",
-      "score": 16,
-      "tier": "立即核验",
-      "reasons": [
-        "正式注册试验",
-        "命中5个重点病种",
-        "当前处于活跃状态"
-      ],
-      "source_url": "https://clinicaltrials.gov/study/NCT06888960"
-    }
-  ],
+  "candidate_queue": [],
   "editorial_note": "头条、动态和试验均来自正式核验数据；候选队列仅表示下一步核验优先级。"
 }
