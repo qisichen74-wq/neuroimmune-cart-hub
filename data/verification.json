@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-07-17",
+  "as_of": "2026-07-21",
   "policy_version": "1.0.0",
   "status_definitions": {
     "已核验": "已与指定一手或权威来源逐字段比对",
@@ -358,8 +358,8 @@
       "record_id": "kyverna-kyv101",
       "status": "已核验",
       "confidence": "高",
-      "last_verified_at": "2026-07-11",
-      "next_review_at": "2026-07-25",
+      "last_verified_at": "2026-07-21",
+      "next_review_at": "2026-08-04",
       "source_ids": [
         "kyverna-ir",
         "clinicaltrials-gov"
@@ -373,7 +373,7 @@
         "source_url",
         "source_last_update"
       ],
-      "note": "公司披露与NCT06451159交叉核验。"
+      "note": "ClinicalTrials.gov API确认KYSA-6为Phase 2/3、Recruiting；Kyverna 2026-05-12公告确认注册性Phase 3正在全球入组。"
     },
     {
       "record_type": "company",
@@ -547,8 +547,8 @@
       "record_id": "cabaletta-resecel",
       "status": "已核验",
       "confidence": "高",
-      "last_verified_at": "2026-07-13",
-      "next_review_at": "2026-07-27",
+      "last_verified_at": "2026-07-21",
+      "next_review_at": "2026-08-04",
       "source_ids": [
         "cabaletta-primary",
         "clinicaltrials-gov"
@@ -563,7 +563,7 @@
         "source_url",
         "source_last_update"
       ],
-      "note": "公司一季度更新与ClinicalTrials.gov交叉核验，确认RESET项目群覆盖MG并保留公司披露证据边界。"
+      "note": "2026-07-21复核Cabaletta 2026-06-03正式披露与ClinicalTrials.gov，确认myositis注册队列推进、SSc注册性研究计划和PC-free lupus仍属于公司披露边界。"
     },
     {
       "record_type": "company",
@@ -2125,6 +2125,24 @@
     },
     {
       "record_type": "event",
+      "record_id": "event-cabaletta-eular2026",
+      "status": "已核验",
+      "confidence": "中",
+      "last_verified_at": "2026-07-21",
+      "next_review_at": "2026-07-28",
+      "source_ids": [
+        "cabaletta-primary"
+      ],
+      "verified_fields": [
+        "date",
+        "title",
+        "source_url",
+        "entities"
+      ],
+      "note": "事件采用Cabaletta 2026-06-03正式披露日期；SSc注册性研究启动时间和PC-free lupus均保留为公司前瞻性表述。"
+    },
+    {
+      "record_type": "event",
       "record_id": "event-nct06056921-update",
       "status": "已核验",
       "confidence": "低",
@@ -2633,8 +2651,8 @@
       "record_id": "icell-icg318-autoimmune",
       "status": "已核验",
       "confidence": "高",
-      "last_verified_at": "2026-07-17",
-      "next_review_at": "2026-07-31",
+      "last_verified_at": "2026-07-21",
+      "next_review_at": "2026-08-04",
       "source_ids": [
         "icell-primary",
         "ncbi-pubmed",
@@ -2650,7 +2668,7 @@
         "source_url",
         "source_last_update"
       ],
-      "note": "2026-07-17复核iCell官网、PMID 41612420及ClinicalTrials.gov NCT06787989、NCT07328581，未见可确认的新正式披露；论文中的ICG318与注册库SLE/LN项目名称一致，但未把论文强行绑定到单一NCT。"
+      "note": "2026-07-21复核iCell官网、PMID 41612420及ClinicalTrials.gov NCT06787989、NCT07328581、NCT07715136；官网未见对应IIM独立新闻稿，新增事实以ClinicalTrials.gov首次公开为准。"
     },
     {
       "record_type": "trial",
@@ -2719,6 +2737,30 @@
       "note": "依据ClinicalTrials.gov API核验NCT07328581；官方试验名称直接使用ICG318。"
     },
     {
+      "record_type": "trial",
+      "record_id": "icell-icg318-iim-phase1",
+      "status": "已核验",
+      "confidence": "高",
+      "last_verified_at": "2026-07-21",
+      "next_review_at": "2026-07-28",
+      "source_ids": [
+        "clinicaltrials-gov"
+      ],
+      "verified_fields": [
+        "registry_id",
+        "official_title",
+        "sponsor",
+        "product",
+        "phase",
+        "status",
+        "enrollment",
+        "study_start",
+        "estimated_completion",
+        "registry_last_update"
+      ],
+      "note": "依据ClinicalTrials.gov API逐字段核验NCT07715136；Study First Post与Last Update Post均为2026-07-20。"
+    },
+    {
       "record_type": "event",
       "record_id": "event-nct07328581-update",
       "status": "已核验",
@@ -2735,6 +2777,42 @@
         "entities"
       ],
       "note": "事件日期采用ClinicalTrials.gov最近更新发布日期。"
+    },
+    {
+      "record_type": "event",
+      "record_id": "event-nct07715136-update",
+      "status": "已核验",
+      "confidence": "高",
+      "last_verified_at": "2026-07-21",
+      "next_review_at": "2026-07-28",
+      "source_ids": [
+        "clinicaltrials-gov"
+      ],
+      "verified_fields": [
+        "date",
+        "status",
+        "source_url",
+        "entities"
+      ],
+      "note": "事件日期采用ClinicalTrials.gov首次公开/最近更新发布日期2026-07-20。"
+    },
+    {
+      "record_type": "event",
+      "record_id": "event-cartesian-westgene-invivo",
+      "status": "已核验",
+      "confidence": "中",
+      "last_verified_at": "2026-07-21",
+      "next_review_at": "2026-07-28",
+      "source_ids": [
+        "cartesian-ir"
+      ],
+      "verified_fields": [
+        "date",
+        "title",
+        "source_url",
+        "entities"
+      ],
+      "note": "事件采用Cartesian 2026-06-09正式披露日期；2H26启动和1H27读数均保留为公司前瞻性表述。"
     },
     {
       "record_type": "research",
@@ -3319,8 +3397,8 @@
       "record_id": "cabaletta-resecel-myositis",
       "status": "已核验",
       "confidence": "高",
-      "last_verified_at": "2026-07-17",
-      "next_review_at": "2026-08-16",
+      "last_verified_at": "2026-07-21",
+      "next_review_at": "2026-07-28",
       "source_ids": [
         "clinicaltrials-gov"
       ],
@@ -3332,9 +3410,10 @@
         "status",
         "enrollment",
         "study_start",
-        "estimated_completion"
+        "estimated_completion",
+        "registry_last_update"
       ],
-      "note": "已通过ClinicalTrials.gov API于2026-07-17逐字段核验NCT06154252。"
+      "note": "已通过ClinicalTrials.gov API于2026-07-21逐字段核验NCT06154252；官方注册库最后更新时间为2026-07-17。"
     },
     {
       "record_type": "trial",
@@ -3379,6 +3458,224 @@
         "estimated_completion"
       ],
       "note": "已通过ClinicalTrials.gov API于2026-07-17逐字段核验NCT07391605。"
+    },
+    {
+      "record_type": "company",
+      "record_id": "miltenyi-mbcart20191",
+      "status": "已核验",
+      "confidence": "高",
+      "last_verified_at": "2026-07-21",
+      "next_review_at": "2026-08-04",
+      "source_ids": [
+        "clinicaltrials-gov"
+      ],
+      "verified_fields": [
+        "company",
+        "product",
+        "technology",
+        "focus",
+        "stage",
+        "status",
+        "source_url",
+        "source_last_update"
+      ],
+      "note": "已通过ClinicalTrials.gov API于2026-07-21逐字段核验NCT07178431对应的Miltenyi MS项目。"
+    },
+    {
+      "record_type": "company",
+      "record_id": "tr1x-trx319",
+      "status": "已核验",
+      "confidence": "高",
+      "last_verified_at": "2026-07-21",
+      "next_review_at": "2026-08-04",
+      "source_ids": [
+        "clinicaltrials-gov"
+      ],
+      "verified_fields": [
+        "company",
+        "product",
+        "technology",
+        "focus",
+        "stage",
+        "status",
+        "source_url",
+        "source_last_update"
+      ],
+      "note": "已通过ClinicalTrials.gov API于2026-07-21逐字段核验NCT07477639对应的Tr1X progressive MS项目。"
+    },
+    {
+      "record_type": "trial",
+      "record_id": "miltenyi-mbcart20191-ms-phase12a",
+      "status": "已核验",
+      "confidence": "高",
+      "last_verified_at": "2026-07-21",
+      "next_review_at": "2026-07-28",
+      "source_ids": [
+        "clinicaltrials-gov"
+      ],
+      "verified_fields": [
+        "registry_id",
+        "official_title",
+        "sponsor",
+        "phase",
+        "design",
+        "region",
+        "status",
+        "enrollment",
+        "study_start",
+        "estimated_completion",
+        "registry_last_update"
+      ],
+      "note": "已通过ClinicalTrials.gov API于2026-07-21逐字段核验NCT07178431。"
+    },
+    {
+      "record_type": "trial",
+      "record_id": "cabaletta-resecel-ms-phase12",
+      "status": "已核验",
+      "confidence": "高",
+      "last_verified_at": "2026-07-21",
+      "next_review_at": "2026-07-28",
+      "source_ids": [
+        "clinicaltrials-gov"
+      ],
+      "verified_fields": [
+        "registry_id",
+        "official_title",
+        "sponsor",
+        "phase",
+        "design",
+        "region",
+        "status",
+        "enrollment",
+        "study_start",
+        "estimated_completion",
+        "registry_last_update"
+      ],
+      "note": "已通过ClinicalTrials.gov API于2026-07-21逐字段核验NCT07006805；官方状态为Withdrawn，且撤回发生在中心启动前与零入组状态下。"
+    },
+    {
+      "record_type": "trial",
+      "record_id": "tr1x-trx319-impact-ms",
+      "status": "已核验",
+      "confidence": "高",
+      "last_verified_at": "2026-07-21",
+      "next_review_at": "2026-07-28",
+      "source_ids": [
+        "clinicaltrials-gov"
+      ],
+      "verified_fields": [
+        "registry_id",
+        "official_title",
+        "sponsor",
+        "phase",
+        "design",
+        "region",
+        "status",
+        "enrollment",
+        "study_start",
+        "estimated_completion",
+        "registry_last_update"
+      ],
+      "note": "已通过ClinicalTrials.gov API于2026-07-21逐字段核验NCT07477639。"
+    },
+    {
+      "record_type": "event",
+      "record_id": "event-cabaletta-resetms-withdrawal",
+      "status": "已核验",
+      "confidence": "高",
+      "last_verified_at": "2026-07-21",
+      "next_review_at": "2026-07-28",
+      "source_ids": [
+        "clinicaltrials-gov"
+      ],
+      "verified_fields": [
+        "date",
+        "status",
+        "source_url",
+        "entities"
+      ],
+      "note": "事件日期采用ClinicalTrials.gov最近更新发布日期2026-06-25，并保留官方撤回原因。"
+    },
+    {
+      "record_type": "event",
+      "record_id": "event-miltenyi-mbcart20191-ms",
+      "status": "已核验",
+      "confidence": "高",
+      "last_verified_at": "2026-07-21",
+      "next_review_at": "2026-07-28",
+      "source_ids": [
+        "clinicaltrials-gov"
+      ],
+      "verified_fields": [
+        "date",
+        "status",
+        "source_url",
+        "entities"
+      ],
+      "note": "事件日期采用ClinicalTrials.gov最近更新发布日期2026-05-11。"
+    },
+    {
+      "record_type": "event",
+      "record_id": "event-tr1x-impactms-registration",
+      "status": "已核验",
+      "confidence": "高",
+      "last_verified_at": "2026-07-21",
+      "next_review_at": "2026-07-28",
+      "source_ids": [
+        "clinicaltrials-gov"
+      ],
+      "verified_fields": [
+        "date",
+        "status",
+        "source_url",
+        "entities"
+      ],
+      "note": "事件日期采用ClinicalTrials.gov首次公开后的最近更新发布日期2026-03-19。"
+    },
+    {
+      "record_type": "trial",
+      "record_id": "kyv101-mg-kysa6-phase23",
+      "status": "已核验",
+      "confidence": "高",
+      "last_verified_at": "2026-07-21",
+      "next_review_at": "2026-07-28",
+      "source_ids": [
+        "clinicaltrials-gov",
+        "kyverna-ir"
+      ],
+      "verified_fields": [
+        "registry_id",
+        "official_title",
+        "sponsor",
+        "phase",
+        "design",
+        "region",
+        "status",
+        "enrollment",
+        "study_start",
+        "estimated_completion",
+        "registry_last_update"
+      ],
+      "note": "已通过ClinicalTrials.gov API于2026-07-21逐字段核验NCT06193889，并由公司公告交叉核验其FDA对齐的注册性Phase 3定位。"
+    },
+    {
+      "record_type": "event",
+      "record_id": "event-kyverna-kysa6-phase3",
+      "status": "已核验",
+      "confidence": "高",
+      "last_verified_at": "2026-07-21",
+      "next_review_at": "2026-07-28",
+      "source_ids": [
+        "clinicaltrials-gov",
+        "kyverna-ir"
+      ],
+      "verified_fields": [
+        "date",
+        "status",
+        "source_url",
+        "entities"
+      ],
+      "note": "事件日期采用ClinicalTrials.gov最近更新发布日期2026-07-08；注册性定位由Kyverna正式公告交叉核验。"
     }
   ]
 }

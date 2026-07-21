@@ -1,6 +1,6 @@
 {
   "publication_start_date": "2025/01/01",
-  "max_records_per_query": 5000,
+  "max_records_per_query": 10000,
   "sentinels": [
     {
       "source": "pubmed",
@@ -31,6 +31,51 @@
       "source": "official:iaso-official",
       "external_id": "https://www.iasobio.com/proline.php",
       "reason": "IASO当前pipeline"
+    },
+    {
+      "source": "official:cabaletta-official",
+      "external_id": "https://www.cabalettabio.com/pipeline/caba-201",
+      "reason": "rese-cel / CABA-201 pipeline"
+    },
+    {
+      "source": "official:cabaletta-official",
+      "external_id": "https://www.cabalettabio.com/investors/news-events/press-releases/detail/148/cabaletta-bio-reports-first-quarter-2026-financial-results",
+      "reason": "Cabaletta最新自身免疫项目正式披露"
+    },
+    {
+      "source": "clinicaltrials",
+      "external_id": "NCT07006805",
+      "reason": "Cabaletta RESET-MS Phase 1/2（已撤回，需持续保留状态监测）"
+    },
+    {
+      "source": "clinicaltrials",
+      "external_id": "NCT07178431",
+      "reason": "Miltenyi MB-CART2019.1 难治性MS Phase 1/2a"
+    },
+    {
+      "source": "clinicaltrials",
+      "external_id": "NCT07477639",
+      "reason": "Tr1X TRX319 / IMPACT-MS 进展性MS Phase 1/2a"
+    },
+    {
+      "source": "official:cartesian-official",
+      "external_id": "https://www.cartesiantherapeutics.com/pipeline/",
+      "reason": "Descartes-08当前pipeline"
+    },
+    {
+      "source": "official:cartesian-official",
+      "external_id": "https://ir.cartesiantherapeutics.com/news-releases/news-release-details/cartesian-therapeutics-secures-150-million-non-dilutive",
+      "reason": "Cartesian近期正式披露"
+    },
+    {
+      "source": "official:kyverna-official",
+      "external_id": "https://kyvernatx.com/platform-pipeline/pipeline/",
+      "reason": "KYV-101当前pipeline"
+    },
+    {
+      "source": "official:kyverna-official",
+      "external_id": "https://ir.kyvernatx.com/news-releases/news-release-details/kyverna-presents-registrational-trial-primary-analysis-miv-cel",
+      "reason": "Kyverna近期正式披露"
     }
   ],
   "entities": [
@@ -63,6 +108,91 @@
         "ICG318",
         "BCMA-CD19-IL-15",
         "BCMA-CD19 cCAR"
+      ]
+    },
+    {
+      "id": "cabaletta-resecel",
+      "label": "Cabaletta Bio / rese-cel / CABA-201",
+      "aliases": [
+        "Cabaletta Bio",
+        "rese-cel",
+        "CABA-201",
+        "RESET",
+        "RESET-MG",
+        "RESET-MS"
+      ],
+      "priority_aliases": [
+        "rese-cel",
+        "CABA-201",
+        "RESET-MG",
+        "RESET-MS"
+      ]
+    },
+    {
+      "id": "miltenyi-autoimmune",
+      "label": "Miltenyi Biomedicine / zamto-cel / MB-CART2019.1",
+      "aliases": [
+        "Miltenyi Biomedicine",
+        "Miltenyi Biomedicine GmbH",
+        "zamto-cel",
+        "zamtocabtagene autoleucel",
+        "MB-CART2019.1",
+        "MB-CART 2019.1"
+      ],
+      "priority_aliases": [
+        "Miltenyi Biomedicine",
+        "zamto-cel",
+        "MB-CART2019.1",
+        "MB-CART 2019.1"
+      ]
+    },
+    {
+      "id": "tr1x-trx319",
+      "label": "Tr1X / TRX319 / IMPACT-MS",
+      "aliases": [
+        "Tr1X",
+        "Tr1X, Inc.",
+        "TRX319",
+        "IMPACT-MS",
+        "IMPACT MS"
+      ],
+      "priority_aliases": [
+        "Tr1X",
+        "TRX319",
+        "IMPACT-MS",
+        "IMPACT MS"
+      ]
+    },
+    {
+      "id": "cartesian-descartes08",
+      "label": "Cartesian / Descartes-08",
+      "aliases": [
+        "Cartesian",
+        "Cartesian Therapeutics",
+        "Descartes-08",
+        "Descartes 08",
+        "AURORA"
+      ],
+      "priority_aliases": [
+        "Descartes-08",
+        "Descartes 08",
+        "AURORA"
+      ]
+    },
+    {
+      "id": "kyverna-kyv101",
+      "label": "Kyverna / KYV-101",
+      "aliases": [
+        "Kyverna",
+        "Kyverna Therapeutics",
+        "KYV-101",
+        "KYSA-6",
+        "miv-cel"
+      ],
+      "priority_aliases": [
+        "KYV-101",
+        "KYSA-6",
+        "miv-cel"
       ]
     }
   ],
@@ -100,6 +230,97 @@
       ],
       "follow_link_patterns": [],
       "max_pages": 4,
+      "monitor_assets": true
+    },
+    {
+      "id": "cabaletta-official",
+      "name": "Cabaletta Bio Pipeline & Press Releases",
+      "source_id": "cabaletta-primary",
+      "entity_ids": [
+        "cabaletta-resecel"
+      ],
+      "urls": [
+        "https://www.cabalettabio.com/pipeline/caba-201",
+        "https://www.cabalettabio.com/investors/news-events/press-releases"
+      ],
+      "follow_link_patterns": [
+        "/investors/news-events/press-releases/detail/"
+      ],
+      "candidate_link_patterns": [
+        "/investors/news-events/press-releases/detail/"
+      ],
+      "max_pages": 8,
+      "monitor_assets": true
+    },
+    {
+      "id": "miltenyi-official",
+      "name": "Miltenyi Biomedicine Official Website",
+      "source_id": "company-primary",
+      "entity_ids": [
+        "miltenyi-autoimmune"
+      ],
+      "urls": [
+        "https://www.miltenyibiomedicine.com/"
+      ],
+      "follow_link_patterns": [],
+      "candidate_link_patterns": [],
+      "max_pages": 2,
+      "monitor_assets": true
+    },
+    {
+      "id": "tr1x-official",
+      "name": "Tr1X Official Website",
+      "source_id": "company-primary",
+      "entity_ids": [
+        "tr1x-trx319"
+      ],
+      "urls": [
+        "https://www.tr1x.bio/"
+      ],
+      "follow_link_patterns": [],
+      "candidate_link_patterns": [],
+      "max_pages": 2,
+      "monitor_assets": true
+    },
+    {
+      "id": "cartesian-official",
+      "name": "Cartesian Therapeutics Pipeline & Press Releases",
+      "source_id": "cartesian-ir",
+      "entity_ids": [
+        "cartesian-descartes08"
+      ],
+      "urls": [
+        "https://www.cartesiantherapeutics.com/pipeline/",
+        "https://ir.cartesiantherapeutics.com/news-and-events/press-releases?page=1"
+      ],
+      "follow_link_patterns": [
+        "page=",
+        "/news-releases/news-release-details/"
+      ],
+      "candidate_link_patterns": [
+        "/news-releases/news-release-details/"
+      ],
+      "max_pages": 10,
+      "monitor_assets": true
+    },
+    {
+      "id": "kyverna-official",
+      "name": "Kyverna Pipeline & Press Releases",
+      "source_id": "kyverna-ir",
+      "entity_ids": [
+        "kyverna-kyv101"
+      ],
+      "urls": [
+        "https://kyvernatx.com/platform-pipeline/pipeline/",
+        "https://ir.kyvernatx.com/news-releases"
+      ],
+      "follow_link_patterns": [
+        "/news-releases/news-release-details/"
+      ],
+      "candidate_link_patterns": [
+        "/news-releases/news-release-details/"
+      ],
+      "max_pages": 8,
       "monitor_assets": true
     }
   ]

@@ -12,18 +12,18 @@
       "MG",
       "PV"
     ],
-    "stage": "多项Phase 1/2 / myositis注册导向",
+    "stage": "多项Phase 1/2 / myositis注册导向 / SSc注册准备",
     "region": "US / Europe",
     "priority": "高",
-    "status": "多项目Recruiting",
-    "source_url": "https://www.cabalettabio.com/investors/news-events/press-releases/detail/148/cabaletta-bio-reports-first-quarter-2026-financial-results",
-    "source_last_update": "2026-05-14",
+    "status": "多项目Recruiting；SSc注册性研究计划已披露",
+    "source_url": "https://www.cabalettabio.com/investors/news-events/press-releases/detail/149/cabaletta-bio-announces-new-rese-cel-data-and-development",
+    "source_last_update": "2026-06-03",
     "evidence_anchor": "rese-cel已形成覆盖SLE、肌炎、SSc、MG和PV的RESET临床项目群。",
-    "recent_update": "2026年一季度更新显示myositis注册性开发推进，并继续扩展无预处理策略。",
+    "recent_update": "2026-06-03正式披露显示RESET-Myositis注册队列推进，SSc单臂注册性研究预计4Q26启动，PC-free lupus继续扩量探索。",
     "watch_points": [
-      "myositis注册性队列执行",
-      "无预处理方案的疗效与安全性",
-      "SLE、SSc与MG注册路径"
+      "myositis注册性队列执行与中期读出",
+      "SSc单臂注册研究设计与4Q26启动节奏",
+      "PC-free lupus剂量探索与深度B细胞清除"
     ],
     "study_sponsorship": "Sponsor-initiated",
     "development_band": "Pivotal study",
@@ -58,8 +58,8 @@
   {
     "id": "kyverna-kyv101",
     "record_kind": "company_program",
-    "source_url": "https://ir.kyvernatx.com/news-releases/news-release-details/kyverna-presents-registrational-trial-primary-analysis-miv-cel",
-    "source_last_update": "2026-04-21",
+    "source_url": "https://ir.kyvernatx.com/news-releases/news-release-details/kyverna-therapeutics-announces-initiation-rolling-sps-bla",
+    "source_last_update": "2026-05-12",
     "company": "Kyverna",
     "product": "KYV-101",
     "technology": "CD19 CAR-T",
@@ -69,13 +69,14 @@
       "MS",
       "LN"
     ],
-    "stage": "SPS注册性分析 / MG Phase 2 / MS Phase 1 IIT",
+    "stage": "SPS滚动BLA / gMG注册性Phase 3 / MS Phase 1 IIT",
     "region": "US / EU",
     "priority": "高",
-    "status": "临床后期 / 多适应症推进",
-    "evidence_anchor": "自免CAR-T代表性平台公司，适合作为海外竞争格局核心锚点。",
-    "recent_update": "2026年4月披露SPS注册性试验主要分析；MS Phase 1 IIT当前Active, not recruiting。",
+    "status": "SPS滚动BLA；gMG Phase 3 Recruiting",
+    "evidence_anchor": "miv-cel已在SPS进入滚动BLA，并在gMG推进随机、标准治疗对照的注册性Phase 3，是海外神经免疫CAR-T后期开发核心锚点。",
+    "recent_update": "2026-05-12公司确认KYSA-6注册性Phase 3持续入组；ClinicalTrials.gov于2026-07-08更新为Phase 2/3、Recruiting、计划66例。",
     "watch_points": [
+      "KYSA-6 Phase 3全球入组与24周共同主要终点",
       "MS临床推进速度",
       "不同适应症间的扩展顺序",
       "长期B细胞重建与安全管理"
@@ -93,21 +94,23 @@
     "focus": [
       "SLE",
       "LN",
+      "IIM",
       "refractory immune thrombocytopenia",
       "IBD"
     ],
     "stage": "Phase 1 / Phase 1/2",
     "region": "China / US",
     "priority": "高",
-    "status": "SLE扩展随访已发表；ITP试验Recruiting；SLE/LN和IBD试验Not yet recruiting",
-    "source_url": "https://pubmed.ncbi.nlm.nih.gov/41612420/",
-    "source_last_update": "2026-01-29",
-    "evidence_anchor": "PubMed正式论文显示ICG318在12例难治性SLE中形成长期停药缓解信号，ClinicalTrials.gov还显示iCell继续推进ITP与SLE/LN注册试验。",
-    "recent_update": "PMID 41612420于2026-01-29发表；NCT06787989维持Recruiting，NCT07328581显示Not yet recruiting。",
+    "status": "SLE扩展随访已发表；ITP和IIM试验Recruiting；SLE/LN和IBD试验Not yet recruiting",
+    "source_url": "https://clinicaltrials.gov/study/NCT07715136",
+    "source_last_update": "2026-07-20",
+    "evidence_anchor": "PubMed正式论文显示ICG318在12例难治性SLE中形成长期停药缓解信号，ClinicalTrials.gov显示iCell已把ICG318推进到ITP、IIM和SLE/LN注册研究。",
+    "recent_update": "NCT07715136于2026-07-20首次公开，ICG318新增难治性炎性肌病Phase 1；NCT06787989维持Recruiting，NCT07328581仍为Not yet recruiting。",
     "watch_points": [
+      "IIM Phase 1首例入组与DM/IMNM/ASyS亚型分布",
       "SLE/LN新试验何时真正启动入组",
       "长期感染、生育和重复缓解可复制性",
-      "ITP与SLE不同病种之间的风险收益是否一致"
+      "跨SLE、ITP与IIM病种的一致性"
     ],
     "study_sponsorship": "Sponsor-initiated",
     "development_band": "Ph2",
@@ -393,6 +396,59 @@
     "study_sponsorship": "Sponsor-initiated",
     "development_band": "Ph1",
     "development_rank": 2
+  },
+  {
+    "id": "miltenyi-mbcart20191",
+    "record_kind": "company_program",
+    "company": "Miltenyi Biomedicine",
+    "product": "MB-CART2019.1",
+    "technology": "CAR-T（ClinicalTrials.gov未披露靶点）",
+    "focus": [
+      "refractory MS"
+    ],
+    "stage": "Phase 1/2a",
+    "region": "Germany",
+    "priority": "高",
+    "status": "Recruiting",
+    "source_url": "https://clinicaltrials.gov/study/NCT07178431",
+    "source_last_update": "2026-05-11",
+    "evidence_anchor": "ClinicalTrials.gov显示Miltenyi已把MB-CART2019.1推进到难治性MS的Phase I/IIa。",
+    "recent_update": "NCT07178431于2026-05-11更新，计划在柏林开展26例活动性难治性PPMS/SPMS单臂研究。",
+    "watch_points": [
+      "BOIN剂量递增与RP2D",
+      "48周NEDA-3",
+      "CRS/ICANS与长期免疫重建"
+    ],
+    "study_sponsorship": "Sponsor-initiated",
+    "development_band": "Ph2",
+    "development_rank": 3
+  },
+  {
+    "id": "tr1x-trx319",
+    "record_kind": "company_program",
+    "company": "Tr1X, Inc.",
+    "product": "TRX319",
+    "technology": "Cell therapy（ClinicalTrials.gov未披露靶点）",
+    "focus": [
+      "PPMS",
+      "SPMS"
+    ],
+    "stage": "Phase 1/2a",
+    "region": "US",
+    "priority": "高",
+    "status": "Recruiting",
+    "source_url": "https://clinicaltrials.gov/study/NCT07477639",
+    "source_last_update": "2026-03-19",
+    "evidence_anchor": "ClinicalTrials.gov显示TRX319已进入进展性MS的IMPACT-MS Phase 1/2a。",
+    "recent_update": "NCT07477639于2026-03-19首次公开，计划入组39例，并探索是否需要Bendamustine预处理。",
+    "watch_points": [
+      "最多3次给药的可操作性",
+      "Bendamustine预处理必要性",
+      "OCB/CSF IgG、MRI和EDSS读出"
+    ],
+    "study_sponsorship": "Sponsor-initiated",
+    "development_band": "Ph2",
+    "development_rank": 3
   },
   {
     "id": "magicrna-hn2302",

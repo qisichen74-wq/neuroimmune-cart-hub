@@ -28,7 +28,7 @@
     "暂无新增动态": "No new verified update", "暂无重点试验": "No priority trial",
     "研究证据库": "Research evidence library", "格局概览": "Landscape overview",
     "公司与项目矩阵": "Company and program matrix", "重点项目": "Priority programs", "格局判断": "Landscape assessment",
-    "项目对比矩阵": "Program comparison matrix", "候选情报池": "Intelligence candidate pool",
+    "项目对比矩阵": "Program comparison matrix", "候选情报池": "Intelligence candidate pool", "官网更新雷达": "Official update radar",
     "官方字段变化历史": "Official-field change history", "变化记录": "Change log",
     "数据质量与自我核查": "Data quality and self-audit", "分数据集核验覆盖": "Verification coverage by dataset",
     "当前核查事项": "Current audit items", "复核周期": "Review cadence", "自动检查范围": "Automated checks",
@@ -109,6 +109,7 @@
     ["研究情报", "research.html"],
     ["竞争格局", "landscape.html"],
     ["项目对比", "comparison.html"],
+    ["官网雷达", "radar.html"],
     ["变化历史", "history.html"],
     ["候选池", "candidates.html"]
   ];
@@ -238,6 +239,13 @@
   candidateLink.textContent = "候选池";
   if (currentFile === "candidates.html") candidateLink.setAttribute("aria-current", "page");
   actions.appendChild(candidateLink);
+
+  const radarLink = document.createElement("a");
+  radarLink.className = "app-shell-health app-shell-candidates";
+  radarLink.href = "radar.html";
+  radarLink.textContent = "官网雷达";
+  if (currentFile === "radar.html") radarLink.setAttribute("aria-current", "page");
+  actions.insertBefore(radarLink, candidateLink);
 
   const comparisonLink = document.createElement("a");
   comparisonLink.className = "app-shell-health app-shell-candidates";

@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-17T08:57:13.868Z",
+  "generated_at": "2026-07-21T10:51:07.243Z",
   "source_policy": "Official APIs are compared with local structured fields; differences require editorial review and are never auto-applied.",
   "summary": {
-    "records_checked": 73,
-    "successful": 73,
+    "records_checked": 74,
+    "successful": 74,
     "failed": 0,
     "differences": 1
   },
@@ -612,6 +612,22 @@
     },
     {
       "record_type": "trial",
+      "record_id": "icell-icg318-iim-phase1",
+      "external_id": "NCT07715136",
+      "status": "ok",
+      "source_url": "https://clinicaltrials.gov/study/NCT07715136",
+      "remote": {
+        "official_title": "A Single-arm, Open-label Phase I Clinical Study to Evaluate ICG318 CAR-T in Adults With Refractory Inflammatory Myopathy",
+        "sponsor": "iCell Gene Therapeutics",
+        "status": "RECRUITING",
+        "enrollment": 10,
+        "study_start": "2025-03-20",
+        "estimated_completion": "2027-12-31",
+        "registry_last_update": "2026-07-20"
+      }
+    },
+    {
+      "record_type": "trial",
       "record_id": "tangdu-cd19bcma-mg-iit",
       "external_id": "NCT06371040",
       "status": "ok",
@@ -655,7 +671,7 @@
         "enrollment": 74,
         "study_start": "2023-12-20",
         "estimated_completion": "2028-07",
-        "registry_last_update": "2026-07-14"
+        "registry_last_update": "2026-07-17"
       }
     },
     {

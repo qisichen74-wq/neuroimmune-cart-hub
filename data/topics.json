@@ -9,7 +9,7 @@
     "summary": "MS已有CD19 CAR-T两例人体证据、CT103A抗BCMA五例研究及多项Sponsor-initiated与IIT试验，但疾病进展获益仍待验证。",
     "thesis": "MS方向的价值不只取决于短期疾病活动下降，还取决于长期缓解、神经功能结局、B细胞重建和毒性鉴别能否形成一致证据链。",
     "unmet_need": "难治或进展性患者仍缺少能够深度重置异常免疫记忆并带来持久缓解的治疗。",
-    "next_catalyst": "KYV-101等Sponsor-initiated研究与CT103A/RD06-05 IIT的长期EDSS、MRI、脑脊液和免疫重建数据。",
+    "next_catalyst": "KYV-101、MB-CART2019.1、TRX319等Sponsor-initiated研究与CT103A/RD06-05 IIT的长期EDSS、MRI、脑脊液和免疫重建数据。",
     "keywords": [
       "MS",
       "多发性硬化",
@@ -37,6 +37,9 @@
       ],
       "company": [
         "kyverna-kyv101",
+        "cabaletta-resecel",
+        "miltenyi-mbcart20191",
+        "tr1x-trx319",
         "tongji-ct103a-neuro",
         "hadassah-hbi0101",
         "renji-c-car168",
@@ -45,6 +48,9 @@
       ],
       "trial": [
         "kyv101-ms-phase1",
+        "cabaletta-resecel-ms-phase12",
+        "miltenyi-mbcart20191-ms-phase12a",
+        "tr1x-trx319-impact-ms",
         "tongji-rd0605-neuro-iit",
         "ct103a-neuro-autoimmune-phase1",
         "hadassah-hbi0101-autoimmune",
@@ -59,7 +65,7 @@
         "summary": "MS now has two-patient CD19 CAR-T evidence, a five-patient CT103A anti-BCMA series, and several sponsor-initiated and IIT studies, while benefit on disability progression remains unproven.",
         "thesis": "Value in MS depends not only on short-term disease-activity suppression, but on a coherent chain of durable remission, neurological outcomes, B-cell reconstitution, and toxicity attribution.",
         "unmet_need": "Patients with refractory or progressive disease still lack a therapy that deeply resets pathological immune memory and delivers durable remission.",
-        "next_catalyst": "Long-term EDSS, MRI, CSF, and immune-reconstitution data from sponsor studies such as KYV-101 and IIT programs including CT103A and RD06-05.",
+        "next_catalyst": "Long-term EDSS, MRI, CSF, and immune-reconstitution data from sponsor studies such as KYV-101, MB-CART2019.1, and TRX319, plus IIT programs including CT103A and RD06-05.",
         "keywords": [
           "MS",
           "Multiple sclerosis",
@@ -88,9 +94,9 @@
     "priority": "高",
     "maturity": "Pivotal验证",
     "summary": "MG已形成从病例、IIT、随机Phase 2b到pivotal Phase 3的多层级证据，是神经免疫CAR-T中临床成熟度最高的适应症之一。",
-    "thesis": "MG方向的关键不是证明短期可应答，而是比较mRNA CAR-T在重复给药、持续性、执行复杂度和标准治疗对照下是否形成真实优势。",
+    "thesis": "MG方向已形成两条关键性验证路径：重复给药mRNA CAR-T的安慰剂对照Phase 3，以及单次自体CD19 CAR-T对标准免疫抑制治疗的注册性Phase 3；关键是比较疗效持续性、安全性与执行复杂度。",
     "unmet_need": "难治患者需要更稳定的疾病控制，同时降低长期免疫抑制和反复住院负担。",
-    "next_catalyst": "Cartesian AURORA Phase 3读出，以及中国双靶点IIT的扩大样本和长期随访。",
+    "next_catalyst": "Kyverna KYSA-6与Cartesian AURORA两项Phase 3的入组和读出，以及中国双靶点IIT的扩大样本与长期随访。",
     "keywords": [
       "MG",
       "重症肌无力",
@@ -119,6 +125,7 @@
         "pmid-41747738"
       ],
       "company": [
+        "kyverna-kyv101",
         "cartesian-descartes08",
         "tangdu-cd19bcma-mg",
         "tongji-ct103a-neuro",
@@ -130,6 +137,7 @@
         "iaso-equecel-autoimmune"
       ],
       "trial": [
+        "kyv101-mg-kysa6-phase23",
         "descartes08-mg-rct",
         "tangdu-cd19bcma-mg-iit",
         "tongji-rd0605-neuro-iit",
@@ -146,9 +154,9 @@
         "name": "Myasthenia Gravis (MG)",
         "maturity": "Pivotal validation",
         "summary": "MG has evidence spanning cases, IITs, a randomized Phase 2b study, and a pivotal Phase 3 trial, making it one of the most clinically mature neuroimmune CAR-T indications.",
-        "thesis": "The central question is whether repeat-dosed mRNA CAR-T creates a meaningful advantage in durability, execution, and comparative efficacy against standard therapy, not merely whether short-term responses occur.",
+        "thesis": "MG now has two pivotal paths: a placebo-controlled Phase 3 of repeat-dosed mRNA CAR-T and a registrational Phase 3 comparing single-dose autologous CD19 CAR-T with standard immunosuppression. Durability, safety, and operational complexity are the key comparisons.",
         "unmet_need": "Refractory patients need more stable disease control with less chronic immunosuppression and fewer hospitalizations.",
-        "next_catalyst": "Readout from Cartesian's AURORA Phase 3 program and larger, longer follow-up from Chinese dual-target IITs.",
+        "next_catalyst": "Enrollment and readouts from Kyverna's KYSA-6 and Cartesian's AURORA Phase 3 programs, plus larger and longer follow-up from Chinese dual-target IITs.",
         "keywords": [
           "MG",
           "Myasthenia gravis",
@@ -616,10 +624,10 @@
     "kind": "疾病专题",
     "priority": "高",
     "maturity": "注册导向Phase 2/3与人体证据",
-    "summary": "IIM已形成抗合成酶综合征、免疫介导坏死性肌病和皮肌炎等人体证据，并出现Cabaletta注册导向Phase 2/3及Novartis、Cartesian随机Phase 2竞争格局。",
+    "summary": "IIM已形成抗合成酶综合征、免疫介导坏死性肌病和皮肌炎等人体证据，并出现Cabaletta注册导向Phase 2/3、iCell中国Phase 1，以及Novartis、Cartesian随机Phase 2竞争格局。",
     "thesis": "IIM必须按DM、ASyS、IMNM及青少年IIM分层；应同时评价肌力、TIS、CK、皮肤、间质性肺病和激素停用，不能以单一酶学改善替代多器官获益。",
     "unmet_need": "难治患者可持续出现肌无力、吞咽障碍、皮肤病变和进展性间质性肺病，且部分患者在B细胞重建后复发。",
-    "next_catalyst": "RESET-Myositis Phase 2b/注册队列执行、YTB323随机对照结果及Descartes-08无清淋重复给药研究启动和早期读出。",
+    "next_catalyst": "RESET-Myositis Phase 2b/注册队列执行、iCell ICG318 Phase 1首批无药缓解与安全性数据，以及YTB323随机对照结果和Descartes-08无清淋重复给药研究启动/早期读出。",
     "keywords": [
       "IIM",
       "特发性肌炎",
@@ -648,6 +656,7 @@
       ],
       "company": [
         "cabaletta-resecel",
+        "icell-icg318-autoimmune",
         "novartis-ytb323",
         "cartesian-descartes08",
         "crispr-ctx112",
@@ -660,6 +669,7 @@
       ],
       "trial": [
         "cabaletta-resecel-myositis",
+        "icell-icg318-iim-phase1",
         "novartis-rapcabtagene-iim-phase2",
         "cartesian-descartes08-myositis-phase2",
         "ctx112-autoimmune-phase1",
@@ -676,10 +686,10 @@
       "en": {
         "name": "Idiopathic Inflammatory Myopathy (IIM)",
         "maturity": "Registration-oriented Phase 2/3 and human evidence",
-        "summary": "IIM now has human evidence across antisynthetase syndrome, immune-mediated necrotizing myopathy, and dermatomyositis, alongside Cabaletta's registration-oriented Phase 2/3 and randomized Phase 2 programs from Novartis and Cartesian.",
+        "summary": "IIM now has human evidence across antisynthetase syndrome, immune-mediated necrotizing myopathy, and dermatomyositis, alongside Cabaletta's registration-oriented Phase 2/3 program, iCell's China Phase 1 entry, and randomized Phase 2 programs from Novartis and Cartesian.",
         "thesis": "DM, ASyS, IMNM, and juvenile IIM must be stratified. Muscle strength, TIS, CK, skin disease, interstitial lung disease, and steroid withdrawal should be assessed together rather than substituting enzyme improvement for multi-organ benefit.",
         "unmet_need": "Refractory disease can cause persistent weakness, dysphagia, skin disease, and progressive interstitial lung disease, with some patients relapsing after B-cell reconstitution.",
-        "next_catalyst": "Execution of RESET-Myositis Phase 2b/registrational cohorts, randomized YTB323 results, and launch and early readout of the lymphodepletion-free repeat-dose Descartes-08 study.",
+        "next_catalyst": "Execution of RESET-Myositis Phase 2b/registrational cohorts, first drug-free-remission and safety data from iCell's ICG318 Phase 1, randomized YTB323 results, and launch and early readout of the lymphodepletion-free repeat-dose Descartes-08 study.",
         "keywords": [
           "IIM",
           "Inflammatory myopathy",

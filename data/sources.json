@@ -17,7 +17,7 @@
     "source_type": "权威试验注册库",
     "authority": "高",
     "url": "https://clinicaltrials.gov/",
-    "last_checked_at": "2026-07-17",
+    "last_checked_at": "2026-07-21",
     "check_interval_days": 7,
     "status": "可用",
     "scope": "试验状态、阶段、申办方、入排标准、终点和更新时间"
@@ -57,25 +57,25 @@
   },
   {
     "id": "kyverna-ir",
-    "name": "Kyverna Therapeutics Investor Relations",
+    "name": "Kyverna Therapeutics Official Pipeline & Press Releases",
     "source_type": "企业正式披露",
     "authority": "中高",
     "url": "https://ir.kyvernatx.com/",
-    "last_checked_at": "2026-07-11",
+    "last_checked_at": "2026-07-21",
     "check_interval_days": 14,
     "status": "可用",
-    "scope": "miv-cel / KYV-101管线、临床更新和公司里程碑"
+    "scope": "KYV-101 / miv-cel pipeline、press release和公司正式披露"
   },
   {
     "id": "cartesian-ir",
-    "name": "Cartesian Therapeutics Investor Relations",
+    "name": "Cartesian Therapeutics Official Pipeline & Press Releases",
     "source_type": "企业正式披露",
     "authority": "中高",
     "url": "https://ir.cartesiantherapeutics.com/",
-    "last_checked_at": "2026-07-11",
+    "last_checked_at": "2026-07-21",
     "check_interval_days": 14,
     "status": "可用",
-    "scope": "Descartes-08管线、AURORA进展和公司里程碑"
+    "scope": "Descartes-08 pipeline、AURORA进展和公司正式披露"
   },
   {
     "id": "fda-car-t-safety",
@@ -94,10 +94,10 @@
     "source_type": "企业正式披露",
     "authority": "中高",
     "url": "https://www.cabalettabio.com/pipeline/caba-201",
-    "last_checked_at": "2026-07-13",
+    "last_checked_at": "2026-07-21",
     "check_interval_days": 14,
     "status": "可用",
-    "scope": "rese-cel/CABA-201 RESET项目、开发阶段和适应症布局"
+    "scope": "rese-cel/CABA-201 pipeline、RESET项目进展和press release"
   },
   {
     "id": "iaso-primary",
@@ -116,7 +116,7 @@
     "source_type": "企业正式披露",
     "authority": "中高",
     "url": "https://www.icellgene.com/",
-    "last_checked_at": "2026-07-17",
+    "last_checked_at": "2026-07-21",
     "check_interval_days": 14,
     "status": "可用",
     "scope": "ICG318/cCAR自身免疫管线、公司新闻和正式出版物索引"
@@ -138,7 +138,7 @@
     "source_type": "权威监管来源",
     "authority": "高",
     "url": "https://www.nmpa.gov.cn/",
-    "last_checked_at": "2026-07-14",
+    "last_checked_at": "2026-07-21",
     "check_interval_days": 7,
     "status": "访问受限（HTTP 412）",
     "scope": "中国药品批准、监管公告与CAR-T类别政策；不得用试验注册状态代替产品批准"

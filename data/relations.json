@@ -420,6 +420,16 @@
     "confidence": "高"
   },
   {
+    "id": "rel-icell-icg318-iim-trial",
+    "source_type": "company",
+    "source_id": "icell-icg318-autoimmune",
+    "target_type": "trial",
+    "target_id": "icell-icg318-iim-phase1",
+    "relation": "推进",
+    "rationale": "iCell Gene Therapeutics是NCT07715136主办方，试验名称直接使用ICG318。",
+    "confidence": "高"
+  },
+  {
     "id": "rel-icell-paper-company",
     "source_type": "research",
     "source_id": "pmid-41612420",
@@ -677,6 +687,46 @@
     "target_id": "kyverna-kyv101",
     "relation": "构成长随访证据",
     "rationale": "延长随访来自同一KYV-101病例并评价约两年半结构与临床结局。",
+    "confidence": "高"
+  },
+  {
+    "id": "rel-cabaletta-resetms-trial",
+    "source_type": "company",
+    "source_id": "cabaletta-resecel",
+    "target_type": "trial",
+    "target_id": "cabaletta-resecel-ms-phase12",
+    "relation": "曾推进",
+    "rationale": "Cabaletta曾登记RESET-MS，但NCT07006805于2026-06-25在中心启动前和零入组状态下Withdrawn。",
+    "confidence": "高"
+  },
+  {
+    "id": "rel-miltenyi-mbcart20191-trial",
+    "source_type": "company",
+    "source_id": "miltenyi-mbcart20191",
+    "target_type": "trial",
+    "target_id": "miltenyi-mbcart20191-ms-phase12a",
+    "relation": "推进",
+    "rationale": "Miltenyi Biomedicine GmbH是NCT07178431主办方，评估MB-CART2019.1治疗难治性MS。",
+    "confidence": "高"
+  },
+  {
+    "id": "rel-tr1x-trx319-trial",
+    "source_type": "company",
+    "source_id": "tr1x-trx319",
+    "target_type": "trial",
+    "target_id": "tr1x-trx319-impact-ms",
+    "relation": "推进",
+    "rationale": "Tr1X, Inc.是NCT07477639主办方，评估TRX319治疗PPMS/SPMS。",
+    "confidence": "高"
+  },
+  {
+    "id": "rel-kyverna-kyv101-kysa6-trial",
+    "source_type": "company",
+    "source_id": "kyverna-kyv101",
+    "target_type": "trial",
+    "target_id": "kyv101-mg-kysa6-phase23",
+    "relation": "推进",
+    "rationale": "Kyverna Therapeutics是NCT06193889主办方，KYSA-6已进入FDA对齐的gMG注册性Phase 3并持续招募。",
     "confidence": "高"
   }
 ]

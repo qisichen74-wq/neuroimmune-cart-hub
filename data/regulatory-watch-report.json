@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-17T08:57:30.132Z",
+  "generated_at": "2026-07-21T10:51:14.821Z",
   "policy": {
     "trial_registration": "登记平台存在试验记录，只能证明试验已登记公示。",
     "clinical_trial_authorization": "临床试验获准或默示许可，不等同于产品获准上市。",
@@ -20,8 +20,8 @@
       "status": "error",
       "http_status": 412,
       "resolved_url": "https://www.nmpa.gov.cn/",
-      "content_bytes": 2477,
-      "checked_at": "2026-07-17T08:57:28.164Z"
+      "content_bytes": 2613,
+      "checked_at": "2026-07-21T10:51:06.334Z"
     },
     {
       "id": "nmpa-trial-approval",
@@ -32,7 +32,7 @@
       "http_status": 200,
       "resolved_url": "https://zwfw.nmpa.gov.cn/web/taskview/11100000MB0341032Y100017210200001",
       "content_bytes": 386425,
-      "checked_at": "2026-07-17T08:57:29.042Z"
+      "checked_at": "2026-07-21T10:51:07.534Z"
     },
     {
       "id": "nmpa-trial-registration",
@@ -43,7 +43,7 @@
       "http_status": 200,
       "resolved_url": "https://zwfw.nmpa.gov.cn/web/taskview/11100000MB0341032Y100207202900001",
       "content_bytes": 92655,
-      "checked_at": "2026-07-17T08:57:29.401Z"
+      "checked_at": "2026-07-21T10:51:13.029Z"
     },
     {
       "id": "cde-home",
@@ -53,8 +53,8 @@
       "status": "available",
       "http_status": 200,
       "resolved_url": "https://www.cde.org.cn/",
-      "content_bytes": 90235,
-      "checked_at": "2026-07-17T08:57:29.813Z"
+      "content_bytes": 90513,
+      "checked_at": "2026-07-21T10:51:14.472Z"
     },
     {
       "id": "china-drug-trials",
@@ -64,8 +64,8 @@
       "status": "available",
       "http_status": 200,
       "resolved_url": "https://www.chinadrugtrials.org.cn/",
-      "content_bytes": 43127,
-      "checked_at": "2026-07-17T08:57:30.132Z"
+      "content_bytes": 43499,
+      "checked_at": "2026-07-21T10:51:14.821Z"
     }
   ]
 }

@@ -33,6 +33,37 @@
     "development_rank": 2
   },
   {
+    "id": "kyv101-mg-kysa6-phase23",
+    "record_kind": "registered_trial",
+    "registry_id": "NCT06193889",
+    "registry_url": "https://clinicaltrials.gov/study/NCT06193889",
+    "registry_last_update": "2026-07-08",
+    "official_title": "KYSA-6: A Phase 2/3, Open-Label, Randomized, Controlled, Multicenter Study of KYV-101, an Autologous Fully Human Anti-CD19 Chimeric Antigen Receptor T-cell (CD19 CAR T) Therapy, Versus Ongoing Standard-Of-Care Immunosuppressive Therapy in Patients With Generalized Myasthenia Gravis",
+    "trial_name": "KYSA-6: miv-cel in Generalized Myasthenia Gravis",
+    "sponsor": "Kyverna Therapeutics",
+    "product": "miv-cel（KYV-101）",
+    "indication": "gMG",
+    "phase": "Phase 2/3",
+    "design": "Phase 2开放标签单臂；Phase 3开放标签、随机、标准治疗对照、多中心",
+    "region": "US / Australia / Brazil / Germany / Saudi Arabia / UK",
+    "status": "Recruiting",
+    "enrollment": 66,
+    "study_start": "2024-08-28",
+    "estimated_completion": "2028-09",
+    "priority": "高",
+    "evidence_goal": "在FDA对齐的注册性Phase 3中比较单次miv-cel与持续标准免疫抑制治疗对gMG功能结局的影响。",
+    "key_question": "miv-cel能否在24周MG-ADL与QMG共同主要终点上优于标准治疗，并维持可接受的长期安全性。",
+    "watch_points": [
+      "Phase 3全球入组进度",
+      "24周MG-ADL与QMG共同主要终点",
+      "标准治疗对照与24周后可选交叉的解释边界",
+      "18个月安全性及长期停用免疫治疗比例"
+    ],
+    "study_sponsorship": "Sponsor-initiated",
+    "development_band": "Pivotal study",
+    "development_rank": 4
+  },
+  {
     "id": "descartes08-mg-rct",
     "record_kind": "registered_trial",
     "registry_id": "NCT06799247",
@@ -467,6 +498,36 @@
     "development_rank": 2
   },
   {
+    "id": "miltenyi-mbcart20191-ms-phase12a",
+    "record_kind": "registered_trial",
+    "registry_id": "NCT07178431",
+    "registry_url": "https://clinicaltrials.gov/study/NCT07178431",
+    "registry_last_update": "2026-05-11",
+    "official_title": "An Open Label Phase I/IIa, Multicenter, Interventional Single-arm Trial of MB-CART 2019.1 in Patients With Refractory Multiple Sclerosis (MS)",
+    "trial_name": "MB-CART2019.1 in Refractory Multiple Sclerosis",
+    "sponsor": "Miltenyi Biomedicine GmbH",
+    "product": "MB-CART2019.1",
+    "indication": "MS / refractory PPMS / SPMS",
+    "phase": "Phase 1/2a",
+    "design": "开放标签、多中心、单臂、Phase I BOIN剂量递增后进入IIa",
+    "region": "Germany",
+    "status": "Recruiting",
+    "enrollment": 26,
+    "study_start": "2026-04-01",
+    "estimated_completion": "2030-08-16",
+    "priority": "高",
+    "evidence_goal": "评估MB-CART2019.1在活动性难治性进展型MS中的可行性、安全性与初步疗效，并确定RP2D。",
+    "key_question": "Miltenyi能否在PPMS/SPMS中把RP2D、28天安全性与48周NEDA-3连接成可解释的前瞻性证据链。",
+    "watch_points": [
+      "BOIN剂量递增与RP2D",
+      "48周NEDA-3",
+      "CRS/ICANS及长期免疫重建"
+    ],
+    "study_sponsorship": "Sponsor-initiated",
+    "development_band": "Ph2",
+    "development_rank": 3
+  },
+  {
     "id": "ti0032-invivo-autoimmune",
     "record_kind": "registered_trial",
     "registry_id": "NCT07413341",
@@ -837,6 +898,36 @@
     "development_rank": 3
   },
   {
+    "id": "cabaletta-resecel-ms-phase12",
+    "record_kind": "registered_trial",
+    "registry_id": "NCT07006805",
+    "registry_url": "https://clinicaltrials.gov/study/NCT07006805",
+    "registry_last_update": "2026-06-25",
+    "official_title": "RESET-MS: A Phase 1/2, Open-Label Study to Evaluate the Safety and Efficacy of Autologous CD19-specific Chimeric Antigen Receptor T Cells (CABA-201) in Participants With Multiple Sclerosis",
+    "trial_name": "RESET-MS: CABA-201 in Multiple Sclerosis",
+    "sponsor": "Cabaletta Bio",
+    "product": "rese-cel（CABA-201）",
+    "indication": "MS / RMS / PMS",
+    "phase": "Phase 1/2",
+    "design": "开放标签、序贯、非随机、多中心",
+    "region": "US",
+    "status": "Withdrawn",
+    "enrollment": 0,
+    "study_start": "2026-06",
+    "estimated_completion": "2029-10",
+    "priority": "高",
+    "evidence_goal": "原拟评估自体CD19 CAR-T在MS中的安全性、药效学与MRI/EDSS疾病活动信号。",
+    "key_question": "项目在中心启动前且零入组撤回，后续更关键的是Cabaletta是否会重启MS开发。",
+    "watch_points": [
+      "MS适应症是否重新进入正式管线",
+      "撤回后的资产优先级变化",
+      "RMS与PMS设计是否被其他项目继承"
+    ],
+    "study_sponsorship": "Sponsor-initiated",
+    "development_band": "Ph2",
+    "development_rank": 3
+  },
+  {
     "id": "precision-cd19-autoimmune-phase1",
     "record_kind": "registered_trial",
     "registry_id": "NCT06056921",
@@ -1185,6 +1276,38 @@
     "development_rank": 3
   },
   {
+    "id": "icell-icg318-iim-phase1",
+    "record_kind": "registered_trial",
+    "registry_id": "NCT07715136",
+    "registry_url": "https://clinicaltrials.gov/study/NCT07715136",
+    "registry_last_update": "2026-07-20",
+    "official_title": "A Single-arm, Open-label Phase I Clinical Study to Evaluate ICG318 CAR-T in Adults With Refractory Inflammatory Myopathy",
+    "trial_name": "ICG318 in Refractory Inflammatory Myopathy",
+    "sponsor": "iCell Gene Therapeutics",
+    "collaborators": [],
+    "product": "ICG318",
+    "indication": "IIM / Dermatomyositis / IMNM / ASyS",
+    "phase": "Phase 1",
+    "design": "开放标签、单臂、序贯剂量探索；环磷酰胺清淋后单次输注",
+    "region": "China",
+    "status": "Recruiting",
+    "enrollment": 10,
+    "study_start": "2025-03-20",
+    "estimated_completion": "2027-12-31",
+    "priority": "高",
+    "evidence_goal": "评估ICG318在难治性炎性肌病中的安全性、耐受性、无药缓解和肌力/皮肤/肌外器官改善。",
+    "key_question": "双靶点BCMA/CD19 cCAR-T能否把既有SLE信号扩展到IIM，并在肌力、皮肤和肌外活动度上形成一致改善。",
+    "watch_points": [
+      "DM、IMNM与ASyS实际入组构成",
+      "6/12/24个月无药缓解比例",
+      "MMT-8、CDASI与MDAAT变化",
+      "B细胞清除、低丙球和感染管理"
+    ],
+    "study_sponsorship": "Sponsor-initiated",
+    "development_band": "Ph1",
+    "development_rank": 2
+  },
+  {
     "id": "tangdu-cd19bcma-mg-iit",
     "record_kind": "registered_trial",
     "registry_id": "NCT06371040",
@@ -1284,7 +1407,7 @@
     "record_kind": "registered_trial",
     "registry_id": "NCT06154252",
     "registry_url": "https://clinicaltrials.gov/study/NCT06154252",
-    "registry_last_update": "2026-07-14",
+    "registry_last_update": "2026-07-17",
     "official_title": "A Phase 1/2, Open-Label Study to Evaluate the Safety and Efficacy of Autologous CD19-specific Chimeric Antigen Receptor T Cells (CABA-201) in Subjects With Active Idiopathic Inflammatory Myopathy or Juvenile Idiopathic Inflammatory Myopathy",
     "trial_name": "RESET-Myositis：rese-cel治疗成人及青少年IIM",
     "sponsor": "Cabaletta Bio",
@@ -1416,5 +1539,35 @@
         ]
       }
     }
+  },
+  {
+    "id": "tr1x-trx319-impact-ms",
+    "record_kind": "registered_trial",
+    "registry_id": "NCT07477639",
+    "registry_url": "https://clinicaltrials.gov/study/NCT07477639",
+    "registry_last_update": "2026-03-19",
+    "official_title": "A Phase 1/2a, Open-Label, Dose-Escalation Study to Evaluate the Safety and Preliminary Efficacy of TRX319 in Subjects With Primary or Secondary Progressive Multiple Sclerosis",
+    "trial_name": "IMPACT-MS: TRX319 in Progressive Multiple Sclerosis",
+    "sponsor": "Tr1X, Inc.",
+    "product": "TRX319",
+    "indication": "MS / PPMS / SPMS",
+    "phase": "Phase 1/2a",
+    "design": "开放标签、序贯剂量递增、可选Bendamustine预处理、最多3次给药",
+    "region": "US",
+    "status": "Recruiting",
+    "enrollment": 39,
+    "study_start": "2026-03",
+    "estimated_completion": "2029-01",
+    "priority": "高",
+    "evidence_goal": "评估TRX319在进展性MS中的安全性、初步疗效及Bendamustine预处理必要性。",
+    "key_question": "最多3次给药与可选Bendamustine预处理能否在progressive MS中形成可执行且可解释的细胞治疗路径。",
+    "watch_points": [
+      "Bendamustine预处理必要性",
+      "OCB/CSF IgG与MRI/EDSS信号",
+      "12个月安全性与RCL监测"
+    ],
+    "study_sponsorship": "Sponsor-initiated",
+    "development_band": "Ph2",
+    "development_rank": 3
   }
 ]

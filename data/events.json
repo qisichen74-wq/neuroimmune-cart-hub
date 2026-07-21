@@ -636,6 +636,25 @@
     ]
   },
   {
+    "id": "event-cabaletta-eular2026",
+    "date": "2026-06-03",
+    "event_type": "公司披露",
+    "title": "Cabaletta在EULAR 2026披露rese-cel跨项目更新",
+    "summary": "公司正式披露RESET-Myositis注册队列推进，并计划于2026年第四季度启动约25例SSc-ILD单臂注册性研究。",
+    "impact": "把rese-cel从myositis注册导向推进到SSc注册准备，并继续探索PC-free lupus；这些仍属公司口径，需等待注册库与同行评议补充。",
+    "priority": "高",
+    "topic": "跨病种",
+    "status": "公司更新",
+    "source_label": "Cabaletta Bio",
+    "source_url": "https://www.cabalettabio.com/investors/news-events/press-releases/detail/149/cabaletta-bio-announces-new-rese-cel-data-and-development",
+    "entities": [
+      {
+        "type": "company",
+        "id": "cabaletta-resecel"
+      }
+    ]
+  },
+  {
     "id": "event-nct06056921-update",
     "date": "2023-09-28",
     "event_type": "试验更新",
@@ -946,6 +965,140 @@
       {
         "type": "trial",
         "id": "icell-icg318-sle-phase12"
+      }
+    ]
+  },
+  {
+    "id": "event-nct07715136-update",
+    "date": "2026-07-20",
+    "event_type": "试验登记",
+    "title": "iCell登记ICG318治疗难治性炎性肌病的Phase 1研究",
+    "summary": "NCT07715136首次公开，计划在四川大学华西医院入组10例难治性IIM成人患者。",
+    "impact": "说明iCell将BCMA/CD19双靶点cCAR-T从SLE/ITP扩展到IIM，并把无药缓解、MMT-8、CDASI和MDAAT纳入正式前瞻性观察。",
+    "priority": "高",
+    "topic": "IIM",
+    "status": "Recruiting",
+    "source_label": "ClinicalTrials.gov",
+    "source_url": "https://clinicaltrials.gov/study/NCT07715136",
+    "entities": [
+      {
+        "type": "company",
+        "id": "icell-icg318-autoimmune"
+      },
+      {
+        "type": "trial",
+        "id": "icell-icg318-iim-phase1"
+      }
+    ]
+  },
+  {
+    "id": "event-cartesian-westgene-invivo",
+    "date": "2026-06-09",
+    "event_type": "公司披露",
+    "title": "Cartesian披露基于Descartes-08 mRNA的gMG in vivo CAR-T计划",
+    "summary": "公司宣布与WestGene合作，计划在2026年下半年启动面向gMG的in vivo BCMA CAR-T Phase 1，并预计2027年上半年获得首批数据。",
+    "impact": "说明Cartesian在AURORA之外推进无需ex vivo制造的BCMA路径，但该项目尚未见试验注册，当前仍属前瞻性公司披露。",
+    "priority": "中",
+    "topic": "MG",
+    "status": "公司更新",
+    "source_label": "Cartesian Therapeutics",
+    "source_url": "https://ir.cartesiantherapeutics.com/news-releases/news-release-details/cartesian-therapeutics-announces-strategic-licensing-agreement",
+    "entities": [
+      {
+        "type": "company",
+        "id": "cartesian-descartes08"
+      }
+    ]
+  },
+  {
+    "id": "event-cabaletta-resetms-withdrawal",
+    "date": "2026-06-25",
+    "event_type": "试验更新",
+    "title": "Cabaletta将RESET-MS官方状态更新为Withdrawn",
+    "summary": "NCT07006805在中心启动前且零入组即被撤回，原因为申办方重新调整开发组合。",
+    "impact": "说明Cabaletta曾正式注册MS Phase 1/2，但当前不应按活跃MS管线解读。",
+    "priority": "高",
+    "topic": "MS",
+    "status": "Withdrawn",
+    "source_label": "ClinicalTrials.gov",
+    "source_url": "https://clinicaltrials.gov/study/NCT07006805",
+    "entities": [
+      {
+        "type": "company",
+        "id": "cabaletta-resecel"
+      },
+      {
+        "type": "trial",
+        "id": "cabaletta-resecel-ms-phase12"
+      }
+    ]
+  },
+  {
+    "id": "event-miltenyi-mbcart20191-ms",
+    "date": "2026-05-11",
+    "event_type": "试验更新",
+    "title": "Miltenyi的MB-CART2019.1难治性MS Phase I/IIa维持Recruiting",
+    "summary": "NCT07178431评估MB-CART2019.1治疗活动性难治性PPMS/SPMS，计划入组26例。",
+    "impact": "欧洲自免CAR-T竞争格局新增面向进展性MS的正式单臂试验对象。",
+    "priority": "高",
+    "topic": "MS",
+    "status": "Recruiting",
+    "source_label": "ClinicalTrials.gov",
+    "source_url": "https://clinicaltrials.gov/study/NCT07178431",
+    "entities": [
+      {
+        "type": "company",
+        "id": "miltenyi-mbcart20191"
+      },
+      {
+        "type": "trial",
+        "id": "miltenyi-mbcart20191-ms-phase12a"
+      }
+    ]
+  },
+  {
+    "id": "event-tr1x-impactms-registration",
+    "date": "2026-03-19",
+    "event_type": "试验登记",
+    "title": "Tr1X登记TRX319治疗进展性MS的IMPACT-MS Phase 1/2a",
+    "summary": "NCT07477639首次公开，TRX319面向PPMS/SPMS，计划入组39例，并探索Bendamustine预处理。",
+    "impact": "把progressive MS纳入一项最多3次给药的Sponsor-initiated细胞治疗设计，和一次性自体CAR-T形成不同比较维度。",
+    "priority": "高",
+    "topic": "MS",
+    "status": "Recruiting",
+    "source_label": "ClinicalTrials.gov",
+    "source_url": "https://clinicaltrials.gov/study/NCT07477639",
+    "entities": [
+      {
+        "type": "company",
+        "id": "tr1x-trx319"
+      },
+      {
+        "type": "trial",
+        "id": "tr1x-trx319-impact-ms"
+      }
+    ]
+  },
+  {
+    "id": "event-kyverna-kysa6-phase3",
+    "date": "2026-07-08",
+    "event_type": "试验更新",
+    "title": "Kyverna的KYSA-6注册性gMG Phase 3持续招募",
+    "summary": "NCT06193889已扩展为Phase 2/3；Phase 3采用开放标签、随机、标准免疫抑制治疗对照设计，计划总入组66例。",
+    "impact": "gMG赛道除Cartesian AURORA外，新增一项单次自体CD19 CAR-T对标准治疗的注册性Phase 3比较轴。",
+    "priority": "高",
+    "topic": "MG",
+    "status": "Recruiting",
+    "source_label": "ClinicalTrials.gov / Kyverna",
+    "source_url": "https://clinicaltrials.gov/study/NCT06193889",
+    "entities": [
+      {
+        "type": "company",
+        "id": "kyverna-kyv101"
+      },
+      {
+        "type": "trial",
+        "id": "kyv101-mg-kysa6-phase23"
       }
     ]
   }

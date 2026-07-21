@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-17T08:57:13.868Z",
+  "generated_at": "2026-07-21T10:51:07.243Z",
   "records": {
     "trial:kyv101-ms-phase1": {
       "official_title": "Phase 1, Open-Label, Single Center Study of KYV-101, an Autologous Fully-Human Anti-CD19 Chimeric Antigen Receptor T Cell (CD19 CAR T) Therapy, in Participants With Treatment Refractory Progressive Multiple Sclerosis",
@@ -334,6 +334,15 @@
       "estimated_completion": "2028-12",
       "registry_last_update": "2026-01-09"
     },
+    "trial:icell-icg318-iim-phase1": {
+      "official_title": "A Single-arm, Open-label Phase I Clinical Study to Evaluate ICG318 CAR-T in Adults With Refractory Inflammatory Myopathy",
+      "sponsor": "iCell Gene Therapeutics",
+      "status": "RECRUITING",
+      "enrollment": 10,
+      "study_start": "2025-03-20",
+      "estimated_completion": "2027-12-31",
+      "registry_last_update": "2026-07-20"
+    },
     "trial:tangdu-cd19bcma-mg-iit": {
       "official_title": "Evaluate the Safety and Efficacy of CD19-BCMA Targeted CAR-T Therapy for Refractory, Generalized Myasthenia Gravis: A Single-center, Open-label, Single-arm, Dose-finding Study",
       "sponsor": "Ting Chang, MD",
@@ -359,7 +368,7 @@
       "enrollment": 74,
       "study_start": "2023-12-20",
       "estimated_completion": "2028-07",
-      "registry_last_update": "2026-07-14"
+      "registry_last_update": "2026-07-17"
     },
     "trial:novartis-rapcabtagene-iim-phase2": {
       "official_title": "A Phase 2, Randomized, Open-label, Controlled Study to Evaluate the Efficacy and Safety of Rapcabtagene Autoleucel Versus Comparator in Participants With Severe Refractory Idiopathic Inflammatory Myopathies (IIM)",

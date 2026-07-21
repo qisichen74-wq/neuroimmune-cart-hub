@@ -53,14 +53,37 @@ const previousOfficialRuns = new Map(
     .map((run) => [run.source_id, run])
 );
 
+const browserHeaders = {
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/126 Safari/537.36",
+  "accept": "text/html,application/xhtml+xml,application/json;q=0.9,*/*;q=0.8",
+  "accept-language": "en-US,en;q=0.8,zh-CN;q=0.6"
+};
+const describeFetchError = (error) => [...new Set([
+  error?.name,
+  error?.cause?.code,
+  error?.cause?.message,
+  error?.message
+].filter(Boolean))].join(" / ");
 const fetchResponse = async (url) => {
-  const response = await fetch(url, {
-    headers: { "user-agent": "neuroimmune-cart-hub/0.2 discovery" },
-    redirect: "follow",
-    signal: AbortSignal.timeout(20000)
-  });
-  if (!response.ok) throw new Error(`${response.status} ${response.statusText}`);
-  return response;
+  let lastError;
+  for (let attempt = 0; attempt < 2; attempt += 1) {
+    try {
+      const response = await fetch(url, {
+        headers: browserHeaders,
+        redirect: "follow",
+        signal: AbortSignal.timeout(15000)
+      });
+      if (response.ok) return response;
+      const error = new Error(`${response.status} ${response.statusText}`);
+      if (response.status < 500 && response.status !== 429) throw error;
+      lastError = error;
+    } catch (error) {
+      lastError = error;
+      if (attempt === 1) break;
+    }
+    await new Promise((resolve) => setTimeout(resolve, 500 * (attempt + 1)));
+  }
+  throw new Error(describeFetchError(lastError) || "unknown fetch error");
 };
 const fetchJson = async (url) => (await fetchResponse(url)).json();
 const clean = (value) => String(value ?? "").replace(/\s+/g, " ").trim();
@@ -73,7 +96,7 @@ const includesAlias = (text, alias) => {
 
 const diseases = [
   { label: "multiple sclerosis", aliases: ["multiple sclerosis", "MS"] },
-  { label: "myasthenia gravis", aliases: ["myasthenia gravis", "MG"] },
+  { label: "myasthenia gravis", aliases: ["myasthenia gravis", "generalized myasthenia gravis", "gMG", "MG"] },
   { label: "neuromyelitis optica", aliases: ["neuromyelitis optica", "NMOSD"] },
   { label: "MOGAD", aliases: ["MOGAD", "myelin oligodendrocyte glycoprotein antibody-associated disease"] },
   { label: "stiff person", aliases: ["stiff person", "SPS"] },
@@ -95,7 +118,23 @@ const detectEntities = (text) => config.entities
 const detectPriorityEntities = (text) => config.entities
   .filter((entity) => (entity.priority_aliases || []).some((alias) => includesAlias(text, alias)))
   .map((entity) => entity.id);
+const matchesPatterns = (value, patterns = []) => patterns.some((pattern) => String(value || "").includes(pattern));
 const entityClause = (entity) => entity.aliases.map((alias) => `"${alias}"`).join(" OR ");
+const trialModalityTerms = [
+  "\"CAR-T\"",
+  "\"CAR T\"",
+  "\"chimeric antigen receptor\"",
+  "\"cell therapy\"",
+  "\"T-cell therapy\"",
+  "\"T cell therapy\"",
+  "\"engineered T cell\"",
+  "\"engineered T-cell\""
+];
+const trialModalityPattern = /\b(?:CAR[- ]?T|chimeric antigen receptor|cell therapy|T[- ]cell therapy|engineered T[- ]cell)\b/i;
+const diseaseQueryClause = (disease) => disease.aliases
+  .filter((alias) => alias.length > 3)
+  .map((alias) => `"${alias}"`)
+  .join(" OR ");
 const diseaseClause = diseases
   .flatMap((disease) => disease.aliases.filter((alias) => alias.length > 3))
   .map((term) => `"${term}"`)
@@ -204,11 +243,17 @@ const fetchClinicalTrials = async (term) => {
 };
 
 try {
-  const themeQuery = `(CAR-T OR "CAR T" OR "chimeric antigen receptor") AND (${diseaseClause})`;
+  const modalityClause = trialModalityTerms.join(" OR ");
+  const themeQuery = `(${modalityClause}) AND (${diseaseClause})`;
   const queryRuns = [];
   const studyMatches = new Map();
   const trialQueries = [
     { id: "theme", term: themeQuery, entityId: null },
+    ...diseases.map((disease) => ({
+      id: `disease:${disease.label}`,
+      term: `(${diseaseQueryClause(disease)}) AND (${modalityClause})`,
+      entityId: null
+    })),
     ...config.entities.map((entity) => ({ id: `entity:${entity.id}`, term: `(${entityClause(entity)})`, entityId: entity.id }))
   ];
   for (const query of trialQueries) {
@@ -242,11 +287,14 @@ try {
     ].filter(Boolean).join(" ");
     const matchedDiseases = detectDiseases(`${conditions.join(" ")} ${identification.officialTitle || ""} ${identification.briefTitle || ""}`);
     const priorityEntities = detectPriorityEntities(searchable);
+    const modalityMatched = trialModalityPattern.test(searchable);
+    const diseaseQueryHit = [...match.queryIds].some((queryId) => queryId.startsWith("disease:"));
     const matchedEntityIds = new Set([
       ...priorityEntities,
       ...(matchedDiseases.length ? [...match.entityIds, ...detectEntities(searchable)] : [])
     ]);
-    if (!match.queryIds.has("theme") && !matchedDiseases.length && !priorityEntities.length) continue;
+    if (!match.queryIds.has("theme") && !diseaseQueryHit && !matchedDiseases.length && !priorityEntities.length) continue;
+    if (!modalityMatched && !priorityEntities.length) continue;
     candidates.push({
       candidate_type: "trial",
       external_id: nctId,
@@ -308,7 +356,9 @@ const extractAssets = (html, pageUrl) => {
   return assets;
 };
 
-for (const officialSource of config.official_sources || []) {
+const scanOfficialSource = async (officialSource) => {
+  const startedAt = Date.now();
+  const previous = previousOfficialRuns.get(officialSource.id);
   const queue = [...officialSource.urls];
   const seen = new Set();
   const discoveredLinks = new Map();
@@ -330,20 +380,32 @@ for (const officialSource of config.official_sources || []) {
         const sameOrigin = new URL(anchor.url).origin === new URL(pageUrl).origin;
         if (sameOrigin && (officialSource.follow_link_patterns || []).some((pattern) => anchor.url.includes(pattern)) && !seen.has(anchor.url)) queue.push(anchor.url);
         if (!sameOrigin || !anchor.text || knownUrls.has(anchor.url)) continue;
-        const matchedDiseases = detectDiseases(anchor.text);
-        const priorityEntities = detectPriorityEntities(anchor.text);
+        const candidateText = `${anchor.text} ${anchor.url}`;
+        const matchedDiseases = detectDiseases(candidateText);
+        const priorityEntities = detectPriorityEntities(candidateText);
         const matchedEntities = new Set([
           ...priorityEntities,
-          ...(matchedDiseases.length ? detectEntities(anchor.text) : [])
+          ...detectEntities(candidateText)
         ]);
-        if (!matchedDiseases.length) continue;
-        discoveredLinks.set(anchor.url, { ...anchor, matchedEntities: [...matchedEntities], matchedDiseases });
+        const matchedCandidateLink = matchesPatterns(anchor.url, officialSource.candidate_link_patterns || []);
+        // Company names appear in nearly every IR URL. Keep only links that
+        // mention a tracked product alias or a target disease.
+        if (!matchedDiseases.length && !priorityEntities.length) continue;
+        discoveredLinks.set(anchor.url, {
+          ...anchor,
+          matchedEntities: [...matchedEntities],
+          matchedDiseases,
+          matchedCandidateLink
+        });
       }
     } catch (error) {
       errors.push({ url: pageUrl, error: error.message });
     }
   }
+  const previousRelevantUrls = new Set(previous?.relevant_urls || []);
+  const hasLinkBaseline = Array.isArray(previous?.relevant_urls);
   for (const item of discoveredLinks.values()) {
+    if (!hasLinkBaseline || previousRelevantUrls.has(item.url)) continue;
     candidates.push({
       candidate_type: "official_update",
       external_id: item.url,
@@ -364,9 +426,15 @@ for (const officialSource of config.official_sources || []) {
     page_content: [...pageContentHashes].sort(([left], [right]) => left.localeCompare(right))
   });
   const fingerprint = createHash("sha256").update(fingerprintInput).digest("hex");
-  const previous = previousOfficialRuns.get(officialSource.id);
-  const fingerprintVersion = 2;
-  const changed = previous?.fingerprint && previous.fingerprint_version === fingerprintVersion ? previous.fingerprint !== fingerprint : null;
+  const fingerprintVersion = 3;
+  const runStatus = errors.length === seen.size ? "error" : errors.length ? "partial" : "ok";
+  // Only compare complete snapshots. A failed or partial fetch changes the
+  // fingerprint too, but that is a monitoring outage rather than a site update.
+  const comparable = runStatus === "ok"
+    && previous?.status === "ok"
+    && previous?.fingerprint
+    && previous.fingerprint_version === fingerprintVersion;
+  const changed = comparable ? previous.fingerprint !== fingerprint : null;
   if (changed) {
     candidates.push({
       candidate_type: "official_update",
@@ -385,17 +453,21 @@ for (const officialSource of config.official_sources || []) {
     source: officialSource.name,
     source_id: officialSource.id,
     source_kind: "official_website",
-    status: errors.length === seen.size ? "error" : errors.length ? "partial" : "ok",
+    status: runStatus,
     pages_scanned: seen.size,
+    successful_pages: pageContentHashes.size,
     relevant_links: discoveredLinks.size,
+    relevant_urls: [...discoveredLinks.keys()].sort(),
     assets_monitored: monitoredAssets.size,
     fingerprint,
     fingerprint_version: fingerprintVersion,
     changed,
+    duration_ms: Date.now() - startedAt,
     sentinel_check: sentinelCheck(`official:${officialSource.id}`, new Set([...seen, ...observedLinks])),
     errors
   });
-}
+};
+await Promise.all((config.official_sources || []).map(scanOfficialSource));
 
 const rank = (item) => {
   let score = item.matched_diseases.length * 2;
@@ -436,6 +508,12 @@ for (const item of candidates) {
 const rankedCandidates = [...uniqueCandidates.values()].sort((a, b) =>
   b.relevance_score - a.relevance_score
   || String(b.publication_date || b.last_update_posted).localeCompare(String(a.publication_date || a.last_update_posted))
+  || String(a.external_id).localeCompare(String(b.external_id))
+);
+
+sourceRuns.sort((a, b) =>
+  String(a.source_kind).localeCompare(String(b.source_kind))
+  || String(a.source_id || a.source).localeCompare(String(b.source_id || b.source))
 );
 
 const report = {
@@ -460,6 +538,21 @@ const report = {
   candidates: rankedCandidates
 };
 
-await writeFile(path.join(root, "data/candidate-report.json"), `${JSON.stringify(report, null, 2)}\n`);
+const radarData = {
+  report: {
+    generated_at: report.generated_at,
+    summary: report.summary,
+    source_runs: report.source_runs.filter((run) => run.source_kind === "official_website"),
+    candidates: report.candidates.filter((candidate) => candidate.candidate_type === "official_update")
+  },
+  config: {
+    official_sources: config.official_sources || [],
+    entities: config.entities || []
+  }
+};
+await Promise.all([
+  writeFile(path.join(root, "data/candidate-report.json"), `${JSON.stringify(report, null, 2)}\n`),
+  writeFile(path.join(root, "assets/radar-data.js"), `globalThis.NEUROIMMUNE_RADAR_DATA = ${JSON.stringify(radarData)};\n`)
+]);
 console.log(`Discovery: ${report.summary.candidates} candidates | ${report.summary.research} research | ${report.summary.trials} trials | ${report.summary.official_updates} official | ${report.summary.source_failures} failures | ${report.summary.truncated_sources} truncated | ${report.summary.missing_sentinels} sentinels missing`);
 if (report.summary.source_failures || report.summary.truncated_sources || report.summary.missing_sentinels) process.exitCode = 2;

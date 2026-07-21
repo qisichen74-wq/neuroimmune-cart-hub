@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-17T08:57:30.467Z",
+  "generated_at": "2026-07-19T02:44:38.998Z",
   "as_of": "2026-07-17",
   "headline": {
     "id": "pmid-42251699",
@@ -11,10 +11,10 @@
   },
   "snapshot": {
     "formal_records": 170,
-    "externally_verified": 159,
+    "externally_verified": 130,
     "active_priority_trials": 31,
-    "candidate_items": 859,
-    "quality_score": 81
+    "candidate_items": 3045,
+    "quality_score": 47
   },
   "verified_updates": [
     {
@@ -224,10 +224,214 @@
       "message": "注册库记录超过180天未更新，当前状态需谨慎解释"
     },
     {
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "kyv101-ms-phase1",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "descartes08-mg-rct",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "academic-cd19-autoimmune-series",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "qh103-neuro-autoimmune",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "relma-autoimmune-ssc",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "tianjin-ucar19bcma-neuro",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "sys6020-mg-phase1",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "kite363-neuro-phase1",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "cc97540-breakfree2",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "ytb323-mg-phase12",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "ctx112-autoimmune-phase1",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "ft819-autoimmune-phase1",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "qt019c-neuro-phase1",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "allo329-autoimmune-phase1",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "zamtocel-autoimmune-phase1",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "ti0032-invivo-autoimmune",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-feed-42251699",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-feed-42223209",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-feed-42167622",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-feed-42286319",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-feed-42171443",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-feed-42295377",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-monitor-kyv101",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-monitor-descartes",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-qh103-registration",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-safety-infection",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-safety-longterm",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-feed-41514039",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-nct06939166-update",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-nct06688435-update",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-kite363-update",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-cc97540-update",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-ytb323-update",
+      "message": "已超过 7 天复核周期"
+    },
+    {
       "code": "official_source_difference",
       "record_type": "trial",
       "record_id": "tangdu-cd19bcma-mg-iit",
       "message": "官方来源字段已变化：sponsor"
+    },
+    {
+      "code": "discovery_source_truncated",
+      "record_type": "system",
+      "record_id": "-",
+      "message": "候选情报来源结果被上限截断：ClinicalTrials.gov"
     },
     {
       "code": "regulatory_source_failed",
@@ -250,6 +454,20 @@
         "当前处于活跃状态"
       ],
       "source_url": "https://clinicaltrials.gov/study/NCT06502015"
+    },
+    {
+      "type": "trial",
+      "external_id": "NCT05869955",
+      "title": "A Phase 1, Multicenter, Open-Label Study Of CC-97540 (BMS-986353), CD19-Targeted Nex-T Chimeric Antigen Receptor (CAR) T Cells, in Participants With Severe, Refractory Autoimmune Diseases: Systemic Lupus Erythematosus, Idiopathic Inflammatory Myopathy, Systemic Sclerosis, or Rheumatoid Arthritis (Breakfree-1)",
+      "score": 20,
+      "tier": "立即核验",
+      "reasons": [
+        "正式注册试验",
+        "命中重点实体：Cartesian / Descartes-08",
+        "命中4个重点病种",
+        "当前处于活跃状态"
+      ],
+      "source_url": "https://clinicaltrials.gov/study/NCT05869955"
     },
     {
       "type": "trial",
@@ -278,42 +496,31 @@
     },
     {
       "type": "trial",
-      "external_id": "NCT07315087",
-      "title": "A Clinical Study Evaluating the Safety and Preliminary Efficacy of Universal Allogeneic CAR T-cell Therapy Targeting CD19 and BCMA(QT-019C) in Patients With Relapse/Refractory Autoimmune Diseases",
-      "score": 16,
+      "external_id": "NCT07089121",
+      "title": "Descartes-08 for Children, Adolescents and Young Adults With Childhood-onset Systemic Lupus Erythematosus, ANCA-associated Vasculitis, Juvenile Myasthenia Gravis, and Juvenile Dermatomyositis",
+      "score": 18,
       "tier": "立即核验",
       "reasons": [
         "正式注册试验",
-        "命中5个重点病种",
+        "命中重点实体：Cartesian / Descartes-08",
+        "命中3个重点病种",
         "当前处于活跃状态"
       ],
-      "source_url": "https://clinicaltrials.gov/study/NCT07315087"
+      "source_url": "https://clinicaltrials.gov/study/NCT07089121"
     },
     {
       "type": "trial",
-      "external_id": "NCT06888960",
-      "title": "An Exploratory Clinical Study on the Safety of CC312 in Treating Patients With Refractory Autoimmune Diseases",
-      "score": 16,
+      "external_id": "NCT06152172",
+      "title": "CARTIMMUNE: A Single-Center Study of Patients With Autoimmune Diseases Receiving an Autologous Fully-Human Anti-CD19 Chimeric Antigen Receptor T-Cell (KYV 101)",
+      "score": 18,
       "tier": "立即核验",
       "reasons": [
         "正式注册试验",
-        "命中5个重点病种",
+        "命中重点实体：Kyverna / KYV-101",
+        "命中3个重点病种",
         "当前处于活跃状态"
       ],
-      "source_url": "https://clinicaltrials.gov/study/NCT06888960"
-    },
-    {
-      "type": "official_update",
-      "external_id": "https://www.iasobio.com/info.php?id=285",
-      "title": "16 2025-10 Cell Publishes Breakthrough Research Results of IASO Bio's Anti-BCMA CAR-T Equecabtagene Autoleucel in Autoimmune Disease Multiple Sclerosis",
-      "score": 14,
-      "tier": "立即核验",
-      "reasons": [
-        "企业官网一手披露",
-        "命中重点实体：IASO Bio / Eque-cel / CT103A",
-        "命中2个重点病种"
-      ],
-      "source_url": "https://www.iasobio.com/info.php?id=285"
+      "source_url": "https://clinicaltrials.gov/study/NCT06152172"
     }
   ],
   "editorial_note": "头条、动态和试验均来自正式核验数据；候选队列仅表示下一步核验优先级。"

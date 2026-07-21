@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-07-17T09:12:45.811Z",
-  "as_of": "2026-07-17",
+  "generated_at": "2026-07-21T14:23:29.630Z",
+  "as_of": "2026-07-21",
   "policy_version": "1.0.0",
   "status": "需关注",
-  "score": 81,
+  "score": 24,
   "summary": {
-    "total_records": 170,
+    "total_records": 184,
     "datasets": 6,
     "errors": 0,
-    "warnings": 19,
-    "verified": 159,
-    "internally_reviewed": 11,
+    "warnings": 76,
+    "verified": 120,
+    "internally_reviewed": 7,
     "pending_external_verification": 0,
-    "stale": 17,
+    "stale": 74,
     "source_checks": {
-      "records_checked": 73,
-      "successful": 73,
+      "records_checked": 74,
+      "successful": 74,
       "failed": 0,
       "differences": 1
     },
     "discovery": {
-      "candidates": 859,
-      "research": 537,
-      "trials": 304,
-      "official_updates": 18,
-      "immediate_review": 104,
-      "watchlist": 204,
-      "background": 43,
-      "low_relevance": 508,
+      "candidates": 3032,
+      "research": 2481,
+      "trials": 548,
+      "official_updates": 3,
+      "immediate_review": 626,
+      "watchlist": 199,
+      "background": 108,
+      "low_relevance": 2099,
       "source_failures": 0,
       "partial_sources": 0,
       "truncated_sources": 0,
@@ -51,18 +51,18 @@
     {
       "type": "company",
       "label": "竞争对象",
-      "records": 38,
-      "verified": 38,
+      "records": 40,
+      "verified": 40,
       "pending": 0,
       "stale": 0
     },
     {
       "type": "trial",
       "label": "临床试验",
-      "records": 44,
-      "verified": 44,
+      "records": 49,
+      "verified": 21,
       "pending": 0,
-      "stale": 17
+      "stale": 45
     },
     {
       "type": "safety",
@@ -75,10 +75,10 @@
     {
       "type": "event",
       "label": "动态事件",
-      "records": 42,
-      "verified": 38,
+      "records": 49,
+      "verified": 20,
       "pending": 0,
-      "stale": 0
+      "stale": 29
     },
     {
       "type": "topic",
@@ -230,6 +230,405 @@
       "record_type": "trial",
       "record_id": "tangdu-cd19bcma-mg-iit",
       "message": "注册库记录超过180天未更新，当前状态需谨慎解释"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "kyv101-ms-phase1",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "descartes08-mg-rct",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "academic-cd19-autoimmune-series",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "qh103-neuro-autoimmune",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "relma-autoimmune-ssc",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "tianjin-ucar19bcma-neuro",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "sys6020-mg-phase1",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "kite363-neuro-phase1",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "cc97540-breakfree2",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "ytb323-mg-phase12",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "ctx112-autoimmune-phase1",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "ft819-autoimmune-phase1",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "qt019c-neuro-phase1",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "allo329-autoimmune-phase1",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "zamtocel-autoimmune-phase1",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "ti0032-invivo-autoimmune",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "zju-ucar19bcma-autoimmune",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "magicrna-hn2302-autoimmune",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "arcellx-anitocel-mg-phase1",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "tongji-v001bcma-autoimmune",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "ihematology-xiniao-ucar-autoimmune",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "xuzhou-xiniao-ucar-autoimmune",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "pku3-qh103-autoimmune",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "gobroad-ol108-autoimmune",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "changzhou-ucar19bcma-autoimmune",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "pkuph-bcmacd19-autoimmune-phase2",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "cabaletta-resecel-mg-phase12",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "precision-cd19-autoimmune-phase1",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-feed-42251699",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-feed-42223209",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-feed-42167622",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-feed-42286319",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-feed-42171443",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-feed-42295377",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-monitor-kyv101",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-monitor-descartes",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-qh103-registration",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-safety-infection",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-safety-longterm",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-feed-41514039",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-nct06939166-update",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-nct06688435-update",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-kite363-update",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-cc97540-update",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-ytb323-update",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-nct07305116-update",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-nct07523282-update",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-nct06626919-update",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-nct07339540-update",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-nct06941129-update",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-nct07155369-update",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-nct06828042-update",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-nct06980597-update",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-nct06978738-update",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-nct06794008-update",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-cabaletta-resetmg-phase12",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-nct06056921-update",
+      "message": "已超过 7 天复核周期"
     },
     {
       "severity": "warning",
@@ -907,8 +1306,8 @@
         "cabaletta-primary",
         "clinicaltrials-gov"
       ],
-      "last_verified_at": "2026-07-13",
-      "next_review_at": "2026-07-27",
+      "last_verified_at": "2026-07-21",
+      "next_review_at": "2026-08-04",
       "verified_fields": [
         "company",
         "product",
@@ -919,7 +1318,7 @@
         "source_url",
         "source_last_update"
       ],
-      "note": "公司一季度更新与ClinicalTrials.gov交叉核验，确认RESET项目群覆盖MG并保留公司披露证据边界。",
+      "note": "2026-07-21复核Cabaletta 2026-06-03正式披露与ClinicalTrials.gov，确认myositis注册队列推进、SSc注册性研究计划和PC-free lupus仍属于公司披露边界。",
       "stale": false
     },
     {
@@ -954,8 +1353,8 @@
         "kyverna-ir",
         "clinicaltrials-gov"
       ],
-      "last_verified_at": "2026-07-11",
-      "next_review_at": "2026-07-25",
+      "last_verified_at": "2026-07-21",
+      "next_review_at": "2026-08-04",
       "verified_fields": [
         "product",
         "focus",
@@ -965,7 +1364,7 @@
         "source_url",
         "source_last_update"
       ],
-      "note": "公司披露与NCT06451159交叉核验。",
+      "note": "ClinicalTrials.gov API确认KYSA-6为Phase 2/3、Recruiting；Kyverna 2026-05-12公告确认注册性Phase 3正在全球入组。",
       "stale": false
     },
     {
@@ -978,8 +1377,8 @@
         "ncbi-pubmed",
         "clinicaltrials-gov"
       ],
-      "last_verified_at": "2026-07-17",
-      "next_review_at": "2026-07-31",
+      "last_verified_at": "2026-07-21",
+      "next_review_at": "2026-08-04",
       "verified_fields": [
         "company",
         "product",
@@ -990,7 +1389,7 @@
         "source_url",
         "source_last_update"
       ],
-      "note": "2026-07-17复核iCell官网、PMID 41612420及ClinicalTrials.gov NCT06787989、NCT07328581，未见可确认的新正式披露；论文中的ICG318与注册库SLE/LN项目名称一致，但未把论文强行绑定到单一NCT。",
+      "note": "2026-07-21复核iCell官网、PMID 41612420及ClinicalTrials.gov NCT06787989、NCT07328581、NCT07715136；官网未见对应IIM独立新闻稿，新增事实以ClinicalTrials.gov首次公开为准。",
       "stale": false
     },
     {
@@ -1222,6 +1621,52 @@
         "source_last_update"
       ],
       "note": "依据NCT06708845。",
+      "stale": false
+    },
+    {
+      "record_type": "company",
+      "record_id": "miltenyi-mbcart20191",
+      "status": "已核验",
+      "confidence": "高",
+      "source_ids": [
+        "clinicaltrials-gov"
+      ],
+      "last_verified_at": "2026-07-21",
+      "next_review_at": "2026-08-04",
+      "verified_fields": [
+        "company",
+        "product",
+        "technology",
+        "focus",
+        "stage",
+        "status",
+        "source_url",
+        "source_last_update"
+      ],
+      "note": "已通过ClinicalTrials.gov API于2026-07-21逐字段核验NCT07178431对应的Miltenyi MS项目。",
+      "stale": false
+    },
+    {
+      "record_type": "company",
+      "record_id": "tr1x-trx319",
+      "status": "已核验",
+      "confidence": "高",
+      "source_ids": [
+        "clinicaltrials-gov"
+      ],
+      "last_verified_at": "2026-07-21",
+      "next_review_at": "2026-08-04",
+      "verified_fields": [
+        "company",
+        "product",
+        "technology",
+        "focus",
+        "stage",
+        "status",
+        "source_url",
+        "source_last_update"
+      ],
+      "note": "已通过ClinicalTrials.gov API于2026-07-21逐字段核验NCT07477639对应的Tr1X progressive MS项目。",
       "stale": false
     },
     {
@@ -1795,6 +2240,33 @@
         "registry_last_update"
       ],
       "note": "依据NCT06451159；当前Active, not recruiting。",
+      "stale": true
+    },
+    {
+      "record_type": "trial",
+      "record_id": "kyv101-mg-kysa6-phase23",
+      "status": "已核验",
+      "confidence": "高",
+      "source_ids": [
+        "clinicaltrials-gov",
+        "kyverna-ir"
+      ],
+      "last_verified_at": "2026-07-21",
+      "next_review_at": "2026-07-28",
+      "verified_fields": [
+        "registry_id",
+        "official_title",
+        "sponsor",
+        "phase",
+        "design",
+        "region",
+        "status",
+        "enrollment",
+        "study_start",
+        "estimated_completion",
+        "registry_last_update"
+      ],
+      "note": "已通过ClinicalTrials.gov API于2026-07-21逐字段核验NCT06193889，并由公司公告交叉核验其FDA对齐的注册性Phase 3定位。",
       "stale": false
     },
     {
@@ -1822,7 +2294,7 @@
         "registry_last_update"
       ],
       "note": "更新为正在招募的Phase 3 AURORA（NCT06799247）。",
-      "stale": false
+      "stale": true
     },
     {
       "record_type": "trial",
@@ -1845,7 +2317,7 @@
         "source_url"
       ],
       "note": "PMID 38381673确认15例病例系列；明确标记为非单一注册试验。",
-      "stale": false
+      "stale": true
     },
     {
       "record_type": "trial",
@@ -1872,7 +2344,7 @@
         "registry_last_update"
       ],
       "note": "依据NCT07526493；2026-05-12更新为Recruiting。",
-      "stale": false
+      "stale": true
     },
     {
       "record_type": "trial",
@@ -1898,7 +2370,7 @@
         "registry_last_update"
       ],
       "note": "依据NCT06414135；注册状态为Recruiting，但最后更新停留在2024-08，需继续核查实际状态。",
-      "stale": false
+      "stale": true
     },
     {
       "record_type": "trial",
@@ -1925,7 +2397,7 @@
         "registry_last_update"
       ],
       "note": "依据ClinicalTrials.gov API核验NCT06939166；未将注册状态解释为NMPA产品批准。",
-      "stale": false
+      "stale": true
     },
     {
       "record_type": "trial",
@@ -1953,7 +2425,7 @@
         "registry_last_update"
       ],
       "note": "ClinicalTrials.gov API可核验试验字段；记录最后更新于2025-08-06。NMPA官网未检得可公开匹配的具体品种批准结论。",
-      "stale": false
+      "stale": true
     },
     {
       "record_type": "trial",
@@ -1981,7 +2453,7 @@
         "registry_last_update"
       ],
       "note": "依据ClinicalTrials.gov API核验NCT07304154。",
-      "stale": false
+      "stale": true
     },
     {
       "record_type": "trial",
@@ -2009,7 +2481,7 @@
         "registry_last_update"
       ],
       "note": "依据ClinicalTrials.gov API核验NCT06220201。",
-      "stale": false
+      "stale": true
     },
     {
       "record_type": "trial",
@@ -2037,7 +2509,7 @@
         "registry_last_update"
       ],
       "note": "依据ClinicalTrials.gov API核验NCT06704269。",
-      "stale": false
+      "stale": true
     },
     {
       "record_type": "trial",
@@ -2060,7 +2532,7 @@
         "registry_last_update"
       ],
       "note": "依据NCT06925542。",
-      "stale": false
+      "stale": true
     },
     {
       "record_type": "trial",
@@ -2083,7 +2555,7 @@
         "registry_last_update"
       ],
       "note": "依据NCT06308978。",
-      "stale": false
+      "stale": true
     },
     {
       "record_type": "trial",
@@ -2106,7 +2578,7 @@
         "registry_last_update"
       ],
       "note": "依据NCT07392528；当前尚未招募。",
-      "stale": false
+      "stale": true
     },
     {
       "record_type": "trial",
@@ -2129,7 +2601,7 @@
         "registry_last_update"
       ],
       "note": "依据NCT07085104。",
-      "stale": false
+      "stale": true
     },
     {
       "record_type": "trial",
@@ -2152,6 +2624,32 @@
         "registry_last_update"
       ],
       "note": "依据NCT06708845。",
+      "stale": true
+    },
+    {
+      "record_type": "trial",
+      "record_id": "miltenyi-mbcart20191-ms-phase12a",
+      "status": "已核验",
+      "confidence": "高",
+      "source_ids": [
+        "clinicaltrials-gov"
+      ],
+      "last_verified_at": "2026-07-21",
+      "next_review_at": "2026-07-28",
+      "verified_fields": [
+        "registry_id",
+        "official_title",
+        "sponsor",
+        "phase",
+        "design",
+        "region",
+        "status",
+        "enrollment",
+        "study_start",
+        "estimated_completion",
+        "registry_last_update"
+      ],
+      "note": "已通过ClinicalTrials.gov API于2026-07-21逐字段核验NCT07178431。",
       "stale": false
     },
     {
@@ -2175,7 +2673,7 @@
         "registry_last_update"
       ],
       "note": "依据NCT07413341。",
-      "stale": false
+      "stale": true
     },
     {
       "record_type": "trial",
@@ -2200,7 +2698,7 @@
         "registry_last_update"
       ],
       "note": "依据ClinicalTrials.gov API核验NCT07305116。",
-      "stale": false
+      "stale": true
     },
     {
       "record_type": "trial",
@@ -2225,7 +2723,7 @@
         "registry_last_update"
       ],
       "note": "依据ClinicalTrials.gov API核验NCT07523282；官方仅在干预别名中明确其为in vivo CAR-T。",
-      "stale": false
+      "stale": true
     },
     {
       "record_type": "trial",
@@ -2250,7 +2748,7 @@
         "registry_last_update"
       ],
       "note": "依据ClinicalTrials.gov API核验NCT06626919。",
-      "stale": false
+      "stale": true
     },
     {
       "record_type": "trial",
@@ -2275,7 +2773,7 @@
         "registry_last_update"
       ],
       "note": "依据ClinicalTrials.gov API核验NCT07339540；官方描述明确体内转导后形成CAR-T。",
-      "stale": false
+      "stale": true
     },
     {
       "record_type": "trial",
@@ -2301,7 +2799,7 @@
         "registry_last_update"
       ],
       "note": "依据ClinicalTrials.gov API核验NCT06941129；注册库最后更新时间较旧。",
-      "stale": false
+      "stale": true
     },
     {
       "record_type": "trial",
@@ -2326,7 +2824,7 @@
         "registry_last_update"
       ],
       "note": "依据ClinicalTrials.gov API核验NCT07155369；状态为Active, not recruiting，注册库最后更新时间较旧。",
-      "stale": false
+      "stale": true
     },
     {
       "record_type": "trial",
@@ -2351,7 +2849,7 @@
         "registry_last_update"
       ],
       "note": "依据ClinicalTrials.gov API核验NCT06828042；注册库最后更新时间较旧。",
-      "stale": false
+      "stale": true
     },
     {
       "record_type": "trial",
@@ -2376,7 +2874,7 @@
         "registry_last_update"
       ],
       "note": "依据ClinicalTrials.gov API核验NCT06980597；注册库最后更新时间较旧。",
-      "stale": false
+      "stale": true
     },
     {
       "record_type": "trial",
@@ -2401,7 +2899,7 @@
         "registry_last_update"
       ],
       "note": "依据ClinicalTrials.gov API核验NCT06978738；当前尚未招募且注册库最后更新时间较旧。",
-      "stale": false
+      "stale": true
     },
     {
       "record_type": "trial",
@@ -2426,7 +2924,7 @@
         "registry_last_update"
       ],
       "note": "依据ClinicalTrials.gov API核验NCT06794008；官方登记为Phase 2，但注册库最后更新时间较旧。",
-      "stale": false
+      "stale": true
     },
     {
       "record_type": "trial",
@@ -2453,6 +2951,32 @@
         "registry_last_update"
       ],
       "note": "依据NCT06359041逐字段核对，并用Cabaletta 2026-05-14正式披露确认RESET-MG项目归属。",
+      "stale": true
+    },
+    {
+      "record_type": "trial",
+      "record_id": "cabaletta-resecel-ms-phase12",
+      "status": "已核验",
+      "confidence": "高",
+      "source_ids": [
+        "clinicaltrials-gov"
+      ],
+      "last_verified_at": "2026-07-21",
+      "next_review_at": "2026-07-28",
+      "verified_fields": [
+        "registry_id",
+        "official_title",
+        "sponsor",
+        "phase",
+        "design",
+        "region",
+        "status",
+        "enrollment",
+        "study_start",
+        "estimated_completion",
+        "registry_last_update"
+      ],
+      "note": "已通过ClinicalTrials.gov API于2026-07-21逐字段核验NCT07006805；官方状态为Withdrawn，且撤回发生在中心启动前与零入组状态下。",
       "stale": false
     },
     {
@@ -2478,7 +3002,7 @@
         "registry_last_update"
       ],
       "note": "依据ClinicalTrials.gov API核验NCT06056921；注册库自2023-09后未刷新，当前状态需谨慎解释。",
-      "stale": false
+      "stale": true
     },
     {
       "record_type": "trial",
@@ -2732,6 +3256,31 @@
     },
     {
       "record_type": "trial",
+      "record_id": "icell-icg318-iim-phase1",
+      "status": "已核验",
+      "confidence": "高",
+      "source_ids": [
+        "clinicaltrials-gov"
+      ],
+      "last_verified_at": "2026-07-21",
+      "next_review_at": "2026-07-28",
+      "verified_fields": [
+        "registry_id",
+        "official_title",
+        "sponsor",
+        "product",
+        "phase",
+        "status",
+        "enrollment",
+        "study_start",
+        "estimated_completion",
+        "registry_last_update"
+      ],
+      "note": "依据ClinicalTrials.gov API逐字段核验NCT07715136；Study First Post与Last Update Post均为2026-07-20。",
+      "stale": false
+    },
+    {
+      "record_type": "trial",
       "record_id": "tangdu-cd19bcma-mg-iit",
       "status": "已核验",
       "confidence": "高",
@@ -2802,8 +3351,8 @@
       "source_ids": [
         "clinicaltrials-gov"
       ],
-      "last_verified_at": "2026-07-17",
-      "next_review_at": "2026-08-16",
+      "last_verified_at": "2026-07-21",
+      "next_review_at": "2026-07-28",
       "verified_fields": [
         "registry_id",
         "official_title",
@@ -2812,9 +3361,10 @@
         "status",
         "enrollment",
         "study_start",
-        "estimated_completion"
+        "estimated_completion",
+        "registry_last_update"
       ],
-      "note": "已通过ClinicalTrials.gov API于2026-07-17逐字段核验NCT06154252。",
+      "note": "已通过ClinicalTrials.gov API于2026-07-21逐字段核验NCT06154252；官方注册库最后更新时间为2026-07-17。",
       "stale": false
     },
     {
@@ -2861,6 +3411,32 @@
         "estimated_completion"
       ],
       "note": "已通过ClinicalTrials.gov API于2026-07-17逐字段核验NCT07391605。",
+      "stale": false
+    },
+    {
+      "record_type": "trial",
+      "record_id": "tr1x-trx319-impact-ms",
+      "status": "已核验",
+      "confidence": "高",
+      "source_ids": [
+        "clinicaltrials-gov"
+      ],
+      "last_verified_at": "2026-07-21",
+      "next_review_at": "2026-07-28",
+      "verified_fields": [
+        "registry_id",
+        "official_title",
+        "sponsor",
+        "phase",
+        "design",
+        "region",
+        "status",
+        "enrollment",
+        "study_start",
+        "estimated_completion",
+        "registry_last_update"
+      ],
+      "note": "已通过ClinicalTrials.gov API于2026-07-21逐字段核验NCT07477639。",
       "stale": false
     },
     {
@@ -3031,7 +3607,7 @@
         "source_url"
       ],
       "note": "日期与对应PubMed记录同步。",
-      "stale": false
+      "stale": true
     },
     {
       "record_type": "event",
@@ -3048,7 +3624,7 @@
         "source_url"
       ],
       "note": "日期与对应PubMed记录同步。",
-      "stale": false
+      "stale": true
     },
     {
       "record_type": "event",
@@ -3065,7 +3641,7 @@
         "source_url"
       ],
       "note": "日期与对应PubMed记录同步。",
-      "stale": false
+      "stale": true
     },
     {
       "record_type": "event",
@@ -3082,7 +3658,7 @@
         "source_url"
       ],
       "note": "日期与对应PubMed记录同步。",
-      "stale": false
+      "stale": true
     },
     {
       "record_type": "event",
@@ -3099,7 +3675,7 @@
         "source_url"
       ],
       "note": "日期与对应PubMed记录同步。",
-      "stale": false
+      "stale": true
     },
     {
       "record_type": "event",
@@ -3116,7 +3692,7 @@
         "source_url"
       ],
       "note": "日期与对应PubMed记录同步。",
-      "stale": false
+      "stale": true
     },
     {
       "record_type": "event",
@@ -3127,7 +3703,7 @@
         "internal-curation"
       ],
       "last_verified_at": "2026-07-10",
-      "stale": false
+      "stale": true
     },
     {
       "record_type": "event",
@@ -3138,7 +3714,7 @@
         "internal-curation"
       ],
       "last_verified_at": "2026-07-10",
-      "stale": false
+      "stale": true
     },
     {
       "record_type": "event",
@@ -3159,7 +3735,7 @@
         "entities"
       ],
       "note": "事件日期采用ClinicalTrials.gov最近更新发布日期。",
-      "stale": false
+      "stale": true
     },
     {
       "record_type": "event",
@@ -3170,7 +3746,7 @@
         "internal-curation"
       ],
       "last_verified_at": "2026-07-10",
-      "stale": false
+      "stale": true
     },
     {
       "record_type": "event",
@@ -3181,7 +3757,7 @@
         "internal-curation"
       ],
       "last_verified_at": "2026-07-10",
-      "stale": false
+      "stale": true
     },
     {
       "record_type": "event",
@@ -3199,7 +3775,7 @@
         "entities"
       ],
       "note": "日期与对应PubMed电子出版日期同步。",
-      "stale": false
+      "stale": true
     },
     {
       "record_type": "event",
@@ -3218,7 +3794,7 @@
         "entities"
       ],
       "note": "事件日期采用ClinicalTrials.gov最近更新发布日期。",
-      "stale": false
+      "stale": true
     },
     {
       "record_type": "event",
@@ -3237,7 +3813,7 @@
         "entities"
       ],
       "note": "事件日期采用ClinicalTrials.gov最近更新发布日期；因记录较旧保留谨慎标注。",
-      "stale": false
+      "stale": true
     },
     {
       "record_type": "event",
@@ -3256,7 +3832,7 @@
         "entities"
       ],
       "note": "日期采用官方最近更新发布日期。",
-      "stale": false
+      "stale": true
     },
     {
       "record_type": "event",
@@ -3275,7 +3851,7 @@
         "entities"
       ],
       "note": "日期采用官方最近更新发布日期。",
-      "stale": false
+      "stale": true
     },
     {
       "record_type": "event",
@@ -3294,7 +3870,7 @@
         "entities"
       ],
       "note": "日期采用官方最近更新发布日期。",
-      "stale": false
+      "stale": true
     },
     {
       "record_type": "event",
@@ -3313,7 +3889,7 @@
         "entities"
       ],
       "note": "事件日期采用ClinicalTrials.gov最近更新发布日期。",
-      "stale": false
+      "stale": true
     },
     {
       "record_type": "event",
@@ -3332,7 +3908,7 @@
         "entities"
       ],
       "note": "事件日期采用ClinicalTrials.gov最近更新发布日期；in vivo CAR-T属性仅在干预别名中确认。",
-      "stale": false
+      "stale": true
     },
     {
       "record_type": "event",
@@ -3351,7 +3927,7 @@
         "entities"
       ],
       "note": "事件日期采用ClinicalTrials.gov最近更新发布日期。",
-      "stale": false
+      "stale": true
     },
     {
       "record_type": "event",
@@ -3370,7 +3946,7 @@
         "entities"
       ],
       "note": "事件日期采用ClinicalTrials.gov最近更新发布日期。",
-      "stale": false
+      "stale": true
     },
     {
       "record_type": "event",
@@ -3389,7 +3965,7 @@
         "entities"
       ],
       "note": "事件日期采用ClinicalTrials.gov最近更新发布日期；注册库最后更新时间较旧。",
-      "stale": false
+      "stale": true
     },
     {
       "record_type": "event",
@@ -3408,7 +3984,7 @@
         "entities"
       ],
       "note": "事件日期采用ClinicalTrials.gov最近更新发布日期；状态为Active, not recruiting且注册库最后更新时间较旧。",
-      "stale": false
+      "stale": true
     },
     {
       "record_type": "event",
@@ -3427,7 +4003,7 @@
         "entities"
       ],
       "note": "事件日期采用ClinicalTrials.gov最近更新发布日期；注册库最后更新时间较旧。",
-      "stale": false
+      "stale": true
     },
     {
       "record_type": "event",
@@ -3446,7 +4022,7 @@
         "entities"
       ],
       "note": "事件日期采用ClinicalTrials.gov最近更新发布日期；注册库最后更新时间较旧。",
-      "stale": false
+      "stale": true
     },
     {
       "record_type": "event",
@@ -3465,7 +4041,7 @@
         "entities"
       ],
       "note": "事件日期采用ClinicalTrials.gov最近更新发布日期；当前尚未招募且注册库最后更新时间较旧。",
-      "stale": false
+      "stale": true
     },
     {
       "record_type": "event",
@@ -3484,7 +4060,7 @@
         "entities"
       ],
       "note": "事件日期采用ClinicalTrials.gov最近更新发布日期；Phase 2项目注册库最后更新时间较旧。",
-      "stale": false
+      "stale": true
     },
     {
       "record_type": "event",
@@ -3503,6 +4079,25 @@
         "entities"
       ],
       "note": "事件采用Cabaletta 2026-05-14正式披露日期；疗效信息保留为公司口径。",
+      "stale": true
+    },
+    {
+      "record_type": "event",
+      "record_id": "event-cabaletta-eular2026",
+      "status": "已核验",
+      "confidence": "中",
+      "source_ids": [
+        "cabaletta-primary"
+      ],
+      "last_verified_at": "2026-07-21",
+      "next_review_at": "2026-07-28",
+      "verified_fields": [
+        "date",
+        "title",
+        "source_url",
+        "entities"
+      ],
+      "note": "事件采用Cabaletta 2026-06-03正式披露日期；SSc注册性研究启动时间和PC-free lupus均保留为公司前瞻性表述。",
       "stale": false
     },
     {
@@ -3522,7 +4117,7 @@
         "entities"
       ],
       "note": "事件日期采用ClinicalTrials.gov最近更新发布日期；注册库自2023-09后未刷新。",
-      "stale": false
+      "stale": true
     },
     {
       "record_type": "event",
@@ -3767,6 +4362,121 @@
         "entities"
       ],
       "note": "事件日期采用ClinicalTrials.gov最近更新发布日期。",
+      "stale": false
+    },
+    {
+      "record_type": "event",
+      "record_id": "event-nct07715136-update",
+      "status": "已核验",
+      "confidence": "高",
+      "source_ids": [
+        "clinicaltrials-gov"
+      ],
+      "last_verified_at": "2026-07-21",
+      "next_review_at": "2026-07-28",
+      "verified_fields": [
+        "date",
+        "status",
+        "source_url",
+        "entities"
+      ],
+      "note": "事件日期采用ClinicalTrials.gov首次公开/最近更新发布日期2026-07-20。",
+      "stale": false
+    },
+    {
+      "record_type": "event",
+      "record_id": "event-cartesian-westgene-invivo",
+      "status": "已核验",
+      "confidence": "中",
+      "source_ids": [
+        "cartesian-ir"
+      ],
+      "last_verified_at": "2026-07-21",
+      "next_review_at": "2026-07-28",
+      "verified_fields": [
+        "date",
+        "title",
+        "source_url",
+        "entities"
+      ],
+      "note": "事件采用Cartesian 2026-06-09正式披露日期；2H26启动和1H27读数均保留为公司前瞻性表述。",
+      "stale": false
+    },
+    {
+      "record_type": "event",
+      "record_id": "event-cabaletta-resetms-withdrawal",
+      "status": "已核验",
+      "confidence": "高",
+      "source_ids": [
+        "clinicaltrials-gov"
+      ],
+      "last_verified_at": "2026-07-21",
+      "next_review_at": "2026-07-28",
+      "verified_fields": [
+        "date",
+        "status",
+        "source_url",
+        "entities"
+      ],
+      "note": "事件日期采用ClinicalTrials.gov最近更新发布日期2026-06-25，并保留官方撤回原因。",
+      "stale": false
+    },
+    {
+      "record_type": "event",
+      "record_id": "event-miltenyi-mbcart20191-ms",
+      "status": "已核验",
+      "confidence": "高",
+      "source_ids": [
+        "clinicaltrials-gov"
+      ],
+      "last_verified_at": "2026-07-21",
+      "next_review_at": "2026-07-28",
+      "verified_fields": [
+        "date",
+        "status",
+        "source_url",
+        "entities"
+      ],
+      "note": "事件日期采用ClinicalTrials.gov最近更新发布日期2026-05-11。",
+      "stale": false
+    },
+    {
+      "record_type": "event",
+      "record_id": "event-tr1x-impactms-registration",
+      "status": "已核验",
+      "confidence": "高",
+      "source_ids": [
+        "clinicaltrials-gov"
+      ],
+      "last_verified_at": "2026-07-21",
+      "next_review_at": "2026-07-28",
+      "verified_fields": [
+        "date",
+        "status",
+        "source_url",
+        "entities"
+      ],
+      "note": "事件日期采用ClinicalTrials.gov首次公开后的最近更新发布日期2026-03-19。",
+      "stale": false
+    },
+    {
+      "record_type": "event",
+      "record_id": "event-kyverna-kysa6-phase3",
+      "status": "已核验",
+      "confidence": "高",
+      "source_ids": [
+        "clinicaltrials-gov",
+        "kyverna-ir"
+      ],
+      "last_verified_at": "2026-07-21",
+      "next_review_at": "2026-07-28",
+      "verified_fields": [
+        "date",
+        "status",
+        "source_url",
+        "entities"
+      ],
+      "note": "事件日期采用ClinicalTrials.gov最近更新发布日期2026-07-08；注册性定位由Kyverna正式公告交叉核验。",
       "stale": false
     },
     {
