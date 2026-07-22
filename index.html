@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>神经免疫CAR-T情报工作台</title>
+<title>自身免疫CAR-T情报工作台</title>
 <style>
   :root {
     --bg: #fdf8ee;
@@ -346,7 +346,7 @@
 <body>
 
 <nav>
-  <a href="index.html" class="nav-logo"><span class="live-dot"></span>神经免疫 CAR-T 情报工作台</a>
+  <a href="index.html" class="nav-logo"><span class="live-dot"></span>自身免疫 CAR-T 情报工作台</a>
   <ul class="nav-links">
     <li><a href="index.html" class="active">首页</a></li>
 
@@ -361,11 +361,11 @@
 <main class="page-shell">
   <section class="hero">
     <div>
-      <div class="hero-eyebrow">Neuroimmune CAR-T Intelligence Desk</div>
-      <h1>神经免疫 CAR-T <em>研发情报工作台</em></h1>
-      <p class="hero-sub">汇总经核验的研究、临床试验、竞争项目与安全信号，持续识别关键变化、证据缺口和下一步催化剂。</p>
+      <div class="hero-eyebrow">Autoimmune CAR-T Intelligence Desk</div>
+      <h1>自身免疫 CAR-T <em>研发情报工作台</em></h1>
+      <p class="hero-sub">汇总经核验的研究、临床试验、竞争项目与安全信号，覆盖神经、风湿、肌肉、肺与多器官自身免疫疾病。</p>
       <div class="hero-notes">
-        <span class="hero-note">覆盖适应症：MS / MG / NMOSD / CIDP / AE / IIM / SSc / 其他自免</span>
+        <span class="hero-note">覆盖专题：SLE / RA / AI-ILD / SSc / IIM / MS / MG / NMOSD / 其他自免</span>
         <span class="hero-note">核心来源：PubMed、ClinicalTrials.gov、NMPA / CDE、公司正式披露</span>
         <span class="hero-note" id="hero-update-note">状态：正在同步最新情报</span>
       </div>
@@ -373,7 +373,7 @@
         <div class="stat"><span class="stat-num" id="stat-total">—</span><span class="stat-label">正式记录</span><span class="stat-help">进入生产数据集的结构化对象</span></div>
         <div class="stat"><span class="stat-num" id="stat-high">—</span><span class="stat-label">活跃重点试验</span><span class="stat-help">处于招募或活跃随访的高优先级试验</span></div>
         <div class="stat"><span class="stat-num" id="stat-reviewed">—</span><span class="stat-label">外部已核验</span><span class="stat-help">完成一手来源逐字段核查</span></div>
-        <div class="stat"><span class="stat-num" id="stat-disease">—</span><span class="stat-label">候选情报</span><span class="stat-help">等待编辑核验的主动发现结果</span></div>
+        <div class="stat"><span class="stat-num" id="stat-disease">—</span><span class="stat-label">专题覆盖</span><span class="stat-help">已建立持续更新的疾病专题</span></div>
       </div>
     </div>
 
@@ -397,19 +397,6 @@
       <div class="section-meta" id="featured-count">0 条重点</div>
     </div>
     <div class="featured-grid" id="featured-grid"></div>
-  </section>
-
-  <section class="section">
-    <div class="section-head">
-      <div>
-        <div class="section-kicker">Overview</div>
-        <h2 class="section-title">情报覆盖概览</h2>
-      </div>
-    </div>
-    <div class="overview-grid">
-      <div class="metric-stack" id="metric-stack"></div>
-      <div class="topic-grid" id="topic-grid"></div>
-    </div>
   </section>
 
   <section class="section">
@@ -450,47 +437,11 @@
     </div>
   </section>
 
-  <section class="section">
-    <div class="section-head">
-      <div>
-        <div class="section-kicker">Landscape Snapshot</div>
-        <h2 class="section-title">关键玩家与产品线快照</h2>
-      </div>
-    </div>
-    <div class="entity-grid" id="entity-grid"></div>
-  </section>
-
-  <section class="section">
-    <div class="section-head">
-      <div>
-        <div class="section-kicker">Sources</div>
-        <h2 class="section-title">权威来源与核验方法</h2>
-      </div>
-    </div>
-    <div class="sources-grid" id="sources-grid"></div>
-    <div class="method-grid" style="margin-top:12px;">
-      <div class="method-step">
-        <div class="method-index">01</div>
-        <div class="method-title">抓取公开来源</div>
-        <p class="method-copy">监测 PubMed、ClinicalTrials.gov、监管机构和企业正式披露。</p>
-      </div>
-      <div class="method-step">
-        <div class="method-index">02</div>
-        <div class="method-title">做结构化摘要</div>
-        <p class="method-copy">统一记录适应症、证据等级、关键结论、来源、日期与核验状态。</p>
-      </div>
-      <div class="method-step">
-        <div class="method-index">03</div>
-        <div class="method-title">沉淀专题判断</div>
-        <p class="method-copy">将重复信号汇总为专题、项目关系与证据观察轴。</p>
-      </div>
-    </div>
-  </section>
 </main>
 
 <footer>
   <p>仅供科研与产业情报参考，不构成临床诊疗建议。请以原始来源和正式披露信息为准。</p>
-  <span><a href="quality.html">数据质量</a> · <span id="footer-update">更新于 —</span></span>
+  <span id="footer-update">更新于 —</span>
 </footer>
 
 <script>
@@ -587,12 +538,6 @@ const SAMPLE_DATA = [
   }
 ];
 
-const LANDSCAPE_DATA = [
-  { company: "Kyverna", product: "miv-cel（KYV-101）", stage: "gMG注册性Phase 3", focus: "gMG、SPS、MS 等B细胞驱动自免", note: "KYSA-6正以随机、标准治疗对照设计推进Phase 3，SPS项目已进入滚动BLA。" },
-  { company: "Cartesian", product: "Descartes-08", stage: "随机对照 / IND", focus: "MG", note: "mRNA CAR-T路线差异化明显，试验设计与给药模式是关键观察点。" },
-  { company: "科济药业", product: "CT103A", stage: "病例系列 / IIT", focus: "自免拓展", note: "国内产品外延到自免领域的潜在路径需要持续看真实世界与机制数据。" }
-];
-
 const SOURCE_DATA = [
   { name: "PubMed 文献", type: "Primary Literature", copy: "用于跟踪最新论文、病例报道、综述与转化研究，是当前首页的主数据源。 ", meta: "适合研究情报流" },
   { name: "临床试验公开信息", type: "Registry", copy: "用于核验试验阶段、入排标准、执行状态与关键日期。", meta: "项目状态依据" },
@@ -601,6 +546,7 @@ const SOURCE_DATA = [
 
 let allData = [];
 let currentFilter = "全部";
+const LANGUAGE = localStorage.getItem("intel-language") === "en" ? "en" : "zh";
 
 async function loadFeed() {
   try {
@@ -613,7 +559,7 @@ async function loadFeed() {
   }
 
   normalizeData();
-  renderOverview();
+  renderHeadlineStats();
   renderFeatured();
   renderStaticModules();
   applyFilter(currentFilter);
@@ -629,64 +575,25 @@ function normalizeData() {
     publish_date: "",
     tags: [],
     takeaway: item.priority_reason || "",
-    ...item
+    ...item,
+    ...(LANGUAGE === "en" ? {
+      title_cn: item.official_title || item.title_cn,
+      one_liner: `${item.journal || "Primary source"} · ${(item.publication_type || []).join(" / ") || "Research report"}`,
+      takeaway: `Editorial priority: ${item.priority === "高" ? "high" : item.priority === "中" ? "medium" : "background"}. Open the primary source for the verified finding and study limitations.`,
+      priority_reason: "Priority reflects evidence type, novelty, and potential impact on development decisions.",
+      evidence_level: (item.publication_type || []).join(" / ") || "Research report",
+      status: item.status === "已审核" ? "Reviewed" : item.status === "已忽略" ? "Excluded" : "Pending review",
+      tags: [item.disease, item.entity, ...(item.publication_type || [])].filter(Boolean)
+    } : {})
   }));
 }
 
-function renderOverview() {
+function renderHeadlineStats() {
   const uniqueDiseases = [...new Set(allData.map((d) => d.disease))];
   document.getElementById("stat-total").textContent = allData.length;
   document.getElementById("stat-high").textContent = allData.filter((d) => d.priority === "高").length;
-  document.getElementById("stat-reviewed").textContent = allData.filter((d) => d.status === "已审核").length;
+  document.getElementById("stat-reviewed").textContent = allData.filter((d) => d.status === "已审核" || d.status === "Reviewed").length;
   document.getElementById("stat-disease").textContent = uniqueDiseases.length;
-
-  const metricData = [
-    {
-      value: allData.filter((d) => d.priority === "高").length,
-      title: "需要快速研判的高优先级条目",
-      note: "适合放到晨会、周报或专题跟踪里优先讨论。"
-    },
-    {
-      value: allData.filter((d) => d.status === "待审核").length,
-      title: "待补判断的新增条目",
-      note: "这些内容已经纳入池子，但还没有形成明确结论。"
-    },
-    {
-      value: allData.filter((d) => !(d.evidence_level || "").includes("综述")).length,
-      title: "原始研究或临床证据",
-      note: "和综述相比，更适合直接支撑情报判断。"
-    },
-    {
-      value: new Set(allData.flatMap((d) => d.tags || [])).size || 0,
-      title: "已出现的主题标签",
-      note: "按适应症、证据等级和技术路线聚合。"
-    }
-  ];
-
-  document.getElementById("metric-stack").innerHTML = metricData.map((metric) => `
-    <div class="metric-card">
-      <span class="metric-value">${metric.value}</span>
-      <span class="metric-title">${metric.title}</span>
-      <span class="metric-note">${metric.note}</span>
-    </div>
-  `).join("");
-
-  const counts = uniqueDiseases.map((disease) => ({
-    disease,
-    count: allData.filter((item) => item.disease === disease).length
-  })).sort((a, b) => b.count - a.count);
-
-  const maxCount = counts[0] ? counts[0].count : 1;
-  document.getElementById("topic-grid").innerHTML = counts.slice(0, 4).map((topic) => `
-    <div class="topic-card">
-      <div class="topic-top">
-        <div class="topic-name">${topic.disease}</div>
-        <div class="topic-count">${topic.count} 条</div>
-      </div>
-      <div class="topic-copy">已纳入 ${topic.disease} 相关研究，可查看证据、项目与安全关联。</div>
-      <div class="topic-bar"><span style="width:${Math.max((topic.count / maxCount) * 100, 14)}%"></span></div>
-    </div>
-  `).join("");
 }
 
 function renderFeatured() {
@@ -745,23 +652,6 @@ function renderStaticModules() {
     ? tags.map((tag) => `<span class="tag-pill">${tag}</span>`).join("")
     : '<span class="tag-pill">标签待补</span>';
 
-  document.getElementById("entity-grid").innerHTML = LANDSCAPE_DATA.map((entity) => `
-    <article class="entity-card">
-      <div class="entity-name">${entity.company}</div>
-      <div class="entity-product">${entity.product}</div>
-      <div class="entity-copy">${entity.note}</div>
-      <div class="entity-meta">聚焦：${entity.focus}<br>阶段：${entity.stage}</div>
-    </article>
-  `).join("");
-
-  document.getElementById("sources-grid").innerHTML = SOURCE_DATA.map((source) => `
-    <article class="source-card">
-      <div class="source-name">${source.name}</div>
-      <div class="source-type">${source.type}</div>
-      <div class="source-copy">${source.copy}</div>
-      <div class="source-meta">${source.meta}</div>
-    </article>
-  `).join("");
 }
 
 function filterCards(filter) {
@@ -782,8 +672,8 @@ function applyFilter(filter) {
   let filtered = allData;
   if (filter === "高") filtered = allData.filter((d) => d.priority === "高");
   else if (filter === "中") filtered = allData.filter((d) => d.priority === "中");
-  else if (filter === "已审核") filtered = allData.filter((d) => d.status === "已审核");
-  else if (filter === "待审核") filtered = allData.filter((d) => d.status === "待审核");
+  else if (filter === "已审核") filtered = allData.filter((d) => d.status === "已审核" || d.status === "Reviewed");
+  else if (filter === "待审核") filtered = allData.filter((d) => d.status === "待审核" || d.status === "Pending review");
   else if (filter !== "全部") filtered = allData.filter((d) => d.disease === filter);
 
   document.getElementById("feed-count").textContent = filtered.length + " 条情报";
@@ -794,9 +684,9 @@ function applyFilter(filter) {
   }
 
   container.innerHTML = filtered.map((item) => {
-    const reviewBadge = item.status === "已审核"
+    const reviewBadge = item.status === "已审核" || item.status === "Reviewed"
       ? '<span class="review-badge review-done">已审核</span>'
-      : item.status === "已忽略"
+      : item.status === "已忽略" || item.status === "Excluded"
       ? '<span class="review-badge review-ignored">已忽略</span>'
       : '<span class="review-badge review-pending">待审核</span>';
 

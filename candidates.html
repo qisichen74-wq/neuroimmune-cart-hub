@@ -7,6 +7,26 @@
 <main class="shell"><section class="hero"><span class="kicker">DISCOVERY QUEUE</span><h1>候选情报池</h1><p>汇总PubMed、ClinicalTrials.gov和重点企业官网的自动发现结果，并按证据类型、病种与项目状态分级。</p></section><section class="stats" id="stats"></section><section class="toolbar"><input id="query" type="search" placeholder="搜索标题、PMID、NCT、申办方或病种"><select id="type"><option value="all">全部类型</option><option value="trial">临床试验</option><option value="research">研究文献</option><option value="official_update">官网更新</option></select><select id="score"><option value="0">全部相关度</option><option value="8">高相关度（8+）</option><option value="10">核心候选（10+）</option></select></section><div class="result-head"><span id="result-count">正在读取候选报告...</span><span id="generated"></span></div><section class="list" id="list"></section></main>
 <footer>候选记录不代表疗效、安全性、注册状态或监管结论已经获得本网站确认。</footer>
 <script>
+if(localStorage.getItem("intel-language")==="en"){
+  const candidateFetch=window.fetch.bind(window);
+  window.fetch=async(...args)=>{
+    const response=await candidateFetch(...args);
+    const url=String(args[0]||"");
+    if(!url.includes("candidate-report.json"))return response;
+    const data=await response.clone().json();
+    data.candidates=(data.candidates||[]).map(item=>({...item,
+      title:/[\u3400-\u9fff]/.test(item.title||"")?`${item.candidate_type==="trial"?"Clinical trial":item.candidate_type==="official_update"?"Official update":"Research record"} · ${item.external_id||"candidate"}`:item.title,
+      triage_reasons:["Awaiting field-level verification against the primary source."],
+      matched_diseases:(item.matched_diseases||[]).map(value=>/[\u3400-\u9fff]/.test(value)?"Other autoimmune":value),
+      sponsor:/[\u3400-\u9fff]/.test(item.sponsor||"")?"Primary registry":item.sponsor,
+      journal:/[\u3400-\u9fff]/.test(item.journal||"")?"Primary literature":item.journal,
+      source:/[\u3400-\u9fff]/.test(item.source||"")?"Official source":item.source
+    }));
+    return new Response(JSON.stringify(data),{status:response.status,statusText:response.statusText,headers:response.headers});
+  };
+}
+</script>
+<script>
 const esc=value=>String(value??"").replace(/[&<>"']/g,char=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[char]));let report={candidates:[],summary:{}};async function load(){try{report=await fetch("data/candidate-report.json").then(response=>response.json());renderStats();apply();document.getElementById("generated").textContent="发现于 "+new Date(report.generated_at).toLocaleString("zh-CN")}catch{document.getElementById("list").innerHTML='<div class="empty">候选报告尚未生成。</div>'}}function renderStats(){const s=report.summary;document.getElementById("stats").innerHTML=[[s.candidates,"候选总数"],[s.trials,"临床试验"],[s.research,"研究文献"],[report.candidates.filter(item=>item.relevance_score>=10).length,"核心候选"]].map(([value,label])=>`<div class="stat"><strong>${value}</strong><span>${label}</span></div>`).join("")}function apply(){const query=document.getElementById("query").value.trim().toLowerCase();const type=document.getElementById("type").value;const min=Number(document.getElementById("score").value);const rows=report.candidates.filter(item=>(type==="all"||item.candidate_type===type)&&item.relevance_score>=min&&(!query||JSON.stringify(item).toLowerCase().includes(query)));document.getElementById("result-count").textContent=`显示 ${rows.length} / ${report.candidates.length} 条候选`;document.getElementById("list").innerHTML=rows.length?rows.map(item=>`<article class="candidate"><div class="score">${item.relevance_score}<small>相关度</small></div><div><h2><a href="${esc(item.source_url)}" target="_blank" rel="noopener">${esc(item.title)}</a></h2><div class="meta"><span class="tag pending">待人工核验</span><span class="tag">${item.candidate_type==="trial"?"临床试验":"研究文献"}</span>${(item.matched_diseases||[]).map(value=>`<span class="tag">${esc(value)}</span>`).join("")}</div></div><div class="side"><strong>${esc(item.external_id)}</strong>${esc(item.sponsor||item.journal||item.source)}<br>${esc(item.last_update_posted||item.publication_date||"")}</div></article>`).join(""):'<div class="empty">当前筛选条件下没有候选记录。</div>'}document.querySelectorAll("input,select").forEach(element=>element.addEventListener("input",apply));load();
 </script><script>
 const tierSelect=document.createElement("select");tierSelect.id="tier";tierSelect.innerHTML='<option value="all">全部分级</option><option value="立即核验">立即核验</option><option value="持续观察">持续观察</option><option value="背景材料">背景材料</option><option value="低相关">低相关</option>';document.querySelector(".toolbar").insertBefore(tierSelect,document.getElementById("score"));tierSelect.addEventListener("input",apply);

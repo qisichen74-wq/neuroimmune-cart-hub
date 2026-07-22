@@ -4,9 +4,9 @@
   document.documentElement.lang = isEnglish ? "en" : "zh-CN";
 
   const englishUi = {
-    "神经免疫 CAR-T 情报工作台": "Neuroimmune CAR-T Intelligence Hub",
-    "首页": "Home", "专题档案": "Dossiers", "研究情报": "Research", "竞争格局": "Landscape",
-    "项目对比": "Compare", "变化历史": "Changes", "候选池": "Watchlist", "检索": "Search",
+    "神经免疫 CAR-T 情报工作台": "Autoimmune CAR-T Intelligence Hub", "自身免疫 CAR-T 情报工作台": "Autoimmune CAR-T Intelligence Hub", "自身免疫CAR-T情报工作台": "Autoimmune CAR-T Intelligence Hub",
+    "首页": "Home", "专题档案": "Dossiers", "疾病专题": "Disease dossiers", "自身免疫疾病专题": "Autoimmune disease dossiers", "专题报道与档案": "Special reports and dossiers", "专题报道": "Special report", "人工审核": "Human review", "人工审核中心": "Human Review Center", "研究情报": "Research", "竞争格局": "Landscape",
+    "项目对比": "Category Search", "分类检索": "Category Search", "变化历史": "Changes", "候选池": "Watchlist", "检索": "Search", "内部登录": "Staff login",
     "全局检索": "Global search", "数据质量": "Data quality", "质量未知": "Quality unavailable",
     "适应症档案": "Indication dossiers", "研究证据": "Research evidence", "竞争对象": "Programs",
     "临床试验": "Clinical trials", "竞争项目": "Development programs", "核心判断": "Core assessment",
@@ -28,7 +28,7 @@
     "暂无新增动态": "No new verified update", "暂无重点试验": "No priority trial",
     "研究证据库": "Research evidence library", "格局概览": "Landscape overview",
     "公司与项目矩阵": "Company and program matrix", "重点项目": "Priority programs", "格局判断": "Landscape assessment",
-    "项目对比矩阵": "Program comparison matrix", "候选情报池": "Intelligence candidate pool", "官网更新雷达": "Official update radar",
+    "项目对比矩阵": "Category search", "分类检索": "Category search", "候选情报池": "Intelligence candidate pool", "官网更新雷达": "Official update radar", "官网雷达": "Official radar",
     "官方字段变化历史": "Official-field change history", "变化记录": "Change log",
     "数据质量与自我核查": "Data quality and self-audit", "分数据集核验覆盖": "Verification coverage by dataset",
     "当前核查事项": "Current audit items", "复核周期": "Review cadence", "自动检查范围": "Automated checks",
@@ -45,7 +45,50 @@
     "注册试验": "Registered trials", "活跃项目": "Active programs", "技术路线": "Technology routes",
     "试验快照": "Trial snapshots", "文献快照": "Literature snapshots", "累计字段变化": "Field changes",
     "变更前": "Previous", "变更后": "Current", "当前没有检测到官方字段变化。": "No official-field change detected.",
-    "变化历史尚未生成。": "Change history is not available yet.", "来源": "Source", "专题": "Dossier"
+    "变化历史尚未生成。": "Change history is not available yet.", "来源": "Source", "专题": "Dossier",
+    "数据更新": "Data updated", "复核周期": "Review cadence", "30天": "30 days", "共 10 个疾病专题": "10 disease dossiers",
+    "从神经免疫扩展到全谱系自身免疫疾病，按疾病持续聚合研究、项目、试验、关键判断与证据缺口。": "Expanding from neuroimmunology to the full autoimmune spectrum, with continuously curated evidence, programs, trials, assessments, and gaps by disease.",
+    "当前已建立 SLE、AI-ILD、RA 等专题；其余自身免疫病将按证据密度和人工审核进度持续建档。覆盖范围代表情报监测范围，不代表CAR-T已获得相应适应症批准。": "SLE, AI-ILD, RA, and other dossiers are now available. Additional autoimmune diseases will be added according to evidence density and review progress. Coverage indicates monitoring scope, not regulatory approval.",
+    "疾病专题用于组织情报判断，不替代原始证据审阅或临床决策。": "Disease dossiers organize intelligence assessments and do not replace primary-evidence review or clinical decisions.",
+    "专题内容由结构化数据聚合生成，关联关系代表情报上下文，不自动等同于临床因果。": "Special reports are generated from structured data. Links represent intelligence context and do not imply clinical causality.",
+    "当前没有疾病专题。": "No disease dossier is currently available.", "正在构建疾病专题...": "Building disease dossiers...",
+    "高优先级": "High priority", "中优先级": "Medium priority", "低优先级": "Low priority",
+    "神经免疫 CAR-T 研发情报工作台": "Autoimmune CAR-T R&D Intelligence Hub", "自身免疫": "Autoimmune", "研发情报工作台": "R&D Intelligence Hub", "其他自免": "Other autoimmune", "病例系列": "Case series",
+    "汇总经核验的研究、临床试验、竞争项目与安全信号，持续识别关键变化、证据缺口和下一步催化剂。": "Curating verified research, clinical trials, development programs, and safety signals across autoimmune diseases to identify material changes, evidence gaps, and upcoming catalysts.",
+    "覆盖适应症：MS / MG / NMOSD / CIDP / AE / IIM / SSc / 其他自免": "Coverage: SLE / RA / AI-ILD / SSc / IIM / MS / MG / NMOSD and other autoimmune diseases",
+    "核心来源：PubMed、ClinicalTrials.gov、NMPA / CDE、公司正式披露": "Primary sources: PubMed, ClinicalTrials.gov, NMPA / CDE, and official company disclosures",
+    "今日重点": "Today's focus", "正在加载重点情报...": "Loading priority intelligence...", "等待数据": "Waiting for data", "进入研究情报": "Open research intelligence",
+    "正式记录": "Formal records", "活跃重点试验": "Active priority trials", "外部已核验": "Externally verified", "候选情报": "Candidate intelligence",
+    "进入生产数据集的结构化对象": "Structured objects in the production dataset", "处于招募或活跃随访的高优先级试验": "High-priority trials recruiting or in active follow-up", "完成一手来源逐字段核查": "Field-level checks completed against primary sources", "等待编辑核验的主动发现结果": "Proactively discovered items awaiting editorial verification",
+    "最新研究情报流": "Latest research intelligence", "关键玩家与产品线快照": "Key programs and pipelines", "人工审核中心展示流程、队列与闭环条件；医学和监管判断仍以一手来源及具名审核记录为准。": "The review center shows workflow, queues, and closure criteria. Medical and regulatory judgments remain grounded in primary sources and named review records.",
+    "汇总经核验的研究、临床试验、竞争项目与安全信号，覆盖神经、风湿、肌肉、肺与多器官自身免疫疾病。": "Curating verified research, clinical trials, development programs, and safety signals across neurological, rheumatic, muscular, pulmonary, and multi-organ autoimmune diseases.",
+    "覆盖专题：SLE / RA / AI-ILD / SSc / IIM / MS / MG / NMOSD / 其他自免": "Dossiers: SLE / RA / AI-ILD / SSc / IIM / MS / MG / NMOSD / other autoimmune diseases",
+    "状态：最新同步时间": "Latest synchronization", "条重点": " priority items",
+    "暂无符合条件的情报": "No intelligence matches these filters", "正在读取最新情报...": "Loading the latest intelligence...",
+    "尚无补充说明。": "No additional note.", "暂无明确结论。": "No conclusion yet.", "暂无摘要": "No summary",
+    "聚焦：": "Focus: ", "阶段：": "Stage: ", "标签待补": "Tags pending",
+    "仅供科研与产业情报参考，不构成临床诊疗建议。请以原始来源和正式披露信息为准。": "For research and industry intelligence only; not clinical advice. Refer to primary sources and official disclosures."
+    ,"审核中心展示流程、队列与闭环条件；医学和监管判断仍以一手来源及具名审核记录为准。": "The review center shows workflow, queues, and closure criteria. Medical and regulatory judgments remain grounded in primary sources and named review records."
+    ,"按证据等级、适应症、优先级与核验状态整理临床研究、病例系列、队列和系统综述。": "Clinical studies, case series, cohorts, and systematic reviews organized by evidence level, indication, priority, and verification status."
+    ,"数据状态": "Data status", "数据覆盖": "Data coverage", "搜索": "Search", "优先级": "Priority", "适应症": "Indication", "证据类型": "Evidence type", "审核状态": "Review status"
+    ,"原始研究 / 临床": "Primary / clinical research", "综述": "Review", "研究情报总数": "Research records"
+    ,"当前接入 feed.json 的全部条目": "All records currently loaded from feed.json", "适合先读完并进入专题追踪": "Read first and consider for dossier tracking", "已经形成初步判断的条目": "Records with an initial editorial assessment", "比综述更适合直接支撑判断": "More suitable than reviews for direct assessment"
+    ,"按优先级排序": "Sort by priority", "按发布时间排序": "Sort by publication date", "按PMID排序": "Sort by PMID", "按审核状态排序": "Sort by review status", "情报详情": "Intelligence profile"
+    ,"最近同步": "Last synchronized", "仅供科研与产业情报参考，不构成临床诊疗建议。请以原始来源与正式披露信息为准。": "For research and industry intelligence only; not clinical advice. Refer to primary sources and official disclosures."
+    ,"追踪中的重点玩家": "Programs tracked", "当前已纳入竞争格局页的公司与学术中心": "Companies and academic centers currently included in the landscape", "高优先级对象": "High-priority programs", "适合进入周报和专题跟踪的核心玩家": "Core programs for weekly and dossier tracking", "区域分布": "Regions", "帮助快速判断竞争热点主要落在哪些市场": "Shows where competitive activity is concentrated", "竞争格局已经触达的专题范围": "Disease areas represented in the landscape"
+    ,"开发阶段": "Development stage", "区域": "Region", "观察面板": "Monitoring", "IIT项目": "IIT programs", "中国相关对象": "China-linked programs"
+    ,"按开发成熟度排序": "Sort by development maturity", "按区域排序": "Sort by region", "按公司名排序": "Sort by company", "公司 / 产品": "Company / product", "路线": "Platform", "重点适应症": "Priority indications", "判断": "Assessment", "技术待补": "Technology pending", "阶段待补": "Stage pending", "发起类型待补": "Sponsor type pending", "区域待补": "Region pending"
+    ,"汇总PubMed、ClinicalTrials.gov和重点企业官网的自动发现结果，并按证据类型、病种与项目状态分级。": "Automatically discovered records from PubMed, ClinicalTrials.gov, and priority company websites, triaged by evidence type, disease, and program status."
+    ,"候选总数": "Candidates", "立即核验": "Immediate review", "持续观察": "Watch", "背景材料": "Background", "低相关": "Low relevance", "核心候选": "Core candidates", "研究文献": "Research", "官网更新": "Official update", "相关度": "Relevance", "待分级": "Untriaged", "发现于": "Discovered", "全部类型": "All types", "全部相关度": "All relevance", "全部分级": "All tiers", "高相关度（8+）": "High relevance (8+)", "核心候选（10+）": "Core candidates (10+)", "当前筛选条件下没有候选记录。": "No candidate matches the current filters.", "候选报告尚未生成。": "Candidate report is not available.", "候选记录不代表疗效、安全性、注册状态或监管结论已经获得本网站确认。": "Candidate records do not mean efficacy, safety, registration status, or regulatory conclusions have been verified by this site."
+    ,"每次网站启动前自动检查数据结构、来源、日期、跨表引用和核验时效；阻断错误会阻止启动，待核验事项会保留为明确警告。": "Each site start checks data structure, sources, dates, cross-dataset references, and verification freshness. Blocking errors stop startup; pending items remain explicit warnings."
+    ,"质量策略": "Quality policy", "截止": "as of", "报告生成": "Report generated", "结构化对象": "Structured objects", "内部已审核": "Internally reviewed", "待外部核验": "Pending external verification", "阻断错误": "Blocking errors", "已过期": "Overdue"
+    ,"绿色进度只表示完成外部逐字段核验；内部编辑判断单独计数，不与外部事实混合。": "Green progress means field-level external verification only. Internal editorial assessments are counted separately from external facts."
+    ,"已核验": "Verified", "待核验": "Pending", "过期": "Overdue", "没有发现问题。": "No issue found.", "只有登记过的来源才能进入核验记录；内部判断不能冒充权威外部来源。": "Only registered sources can enter verification records; internal assessments cannot be presented as authoritative external sources.", "权威度": "Authority", "天复核": "-day review", "质量面板展示结构完整性、来源核验和数据时效性；“无错误”不等同于所有业务判断均已被外部证实。": "The quality panel shows structural integrity, source verification, and freshness. No errors does not mean every business assessment is externally confirmed."
+    ,"横向比较正式核验项目的技术路线、靶点、阶段、病种、状态、规模和更新时间。矩阵用于研发与竞争判断，不替代原始试验方案。": "Compare verified programs across platform, target, stage, disease, status, enrollment, and update date. The matrix supports R&D and competitive assessment and does not replace the primary protocol."
+    ,"全部技术路线": "All platforms", "全部状态": "All statuses", "全部地区": "All regions", "体内CAR-T": "In vivo CAR-T", "异体/现货CAR-T": "Allogeneic / off-the-shelf CAR-T", "自体CAR-T": "Autologous CAR-T", "待分类": "Unclassified", "未注明": "Not stated", "靶点": "Target", "状态": "Status", "规模": "Enrollment", "地区": "Region", "最近更新": "Last updated", "关键问题": "Key question", "仅纳入正式数据集；候选池项目需完成核验后才会出现在矩阵中。": "Only formal records are included. Candidate programs appear after verification."
+    ,"记录ClinicalTrials.gov和NCBI官方字段变化，包括状态、入组数、关键日期、标题和DOI。": "Tracks official ClinicalTrials.gov and NCBI field changes, including status, enrollment, key dates, titles, and DOI.", "变化日志最多保留最近1000项；每条变化仍需结合原始记录解释。": "The log retains up to 1,000 recent changes; each change must still be interpreted against the primary record."
+    ,"搜索疾病、产品、机构、机制或结论。结果直接来自当前结构化数据，不需要逐页查找。": "Search diseases, products, organizations, mechanisms, or assessments across the current structured dataset.", "对象类型": "Object type", "动态事件": "Events", "长期随访": "Long-term follow-up"
+    ,"关键产品官网更新雷达": "Priority product official-update radar", "同时监测 pipeline、press release 与 news 入口。系统只负责发现页面、链接和资产变化；产品阶段、适应症和监管含义仍由人工逐字段确认。": "Monitors pipeline, press-release, and news sources. The system detects page, link, and asset changes; product stage, indication, and regulatory meaning still require field-level human review.", "本轮监测脉冲": "Current monitoring pulse", "重点官网": "Priority websites", "可靠变化线索": "Reliable change signals", "访问异常": "Access issues", "哨兵未命中": "Missing sentinels"
   };
   const dataTranslations = [];
   const addPair = (source, target) => {
@@ -73,6 +116,7 @@
       }
     }
     text = text
+      .replace(/：/g, ": ")
       .replace(/^共\s*(\d+)\s*indications$/, "$1 indications")
       .replace(/^共\s*(\d+)\s*个适应症$/, "$1 indications")
       .replace(/研究\s+(\d+)/g, "Evidence $1")
@@ -80,8 +124,31 @@
       .replace(/试验\s+(\d+)/g, "Trials $1")
       .replace(/(\d+)\s*项/g, "$1 items")
       .replace(/(\d+)\s*items/g, "$1 items")
+      .replace(/(\d+)\s*条重点/g, "$1 priority items")
+      .replace(/(\d+)\s*条情报/g, "$1 intelligence items")
+      .replace(/(\d+)\s*条研究记录/g, "$1 research records")
+      .replace(/当前已接入\s*(\d+)\s*条研究情报/g, "$1 research records currently available")
+      .replace(/显示\s*(\d+)\s*\/\s*(\d+)\s*条研究情报/g, "Showing $1 / $2 research records")
+      .replace(/当前已接入\s*(\d+)\s*条Research/g, "$1 research records currently available")
+      .replace(/显示\s*(\d+)\s*\/\s*(\d+)\s*条Research/g, "Showing $1 / $2 research records")
+      .replace(/显示\s*(\d+)\s*\/\s*(\d+)\s*个重点对象/g, "Showing $1 / $2 priority programs")
+      .replace(/当前筛选结果\s*(\d+)\s*个/g, "$1 programs in the current filter")
+      .replace(/(\d+)\s*个/g, "$1 programs")
+      .replace(/显示\s*(\d+)\s*\/\s*(\d+)\s*条候选/g, "Showing $1 / $2 candidates")
+      .replace(/^发布\s*/, "Published ")
+      .replace(/^发现于\s*/, "Discovered ")
+      .replace(/^更新于\s*/, "Updated ")
       .replace(/质量\s*(\d+)/g, "Quality $1")
       .replace(/(\d+)\s*例/g, "$1 participants")
+      .replace(/(\d+)\s*天/g, "$1 days")
+      .replace(/错误/g, "errors")
+      .replace(/警告/g, "warnings")
+      .replace(/已核验\s*(\d+)/g, "Verified $1")
+      .replace(/待核验\s*(\d+)/g, "Pending $1")
+      .replace(/过期\s*(\d+)/g, "Overdue $1")
+      .replace(/权威度\s*/g, "Authority ")
+      .replace(/截止\s*/g, "as of ")
+      .replace(/(\d+) days复核/g, "$1-day review")
       .replace(/高优先级/g, "High priority")
       .replace(/中优先级/g, "Medium priority")
       .replace(/低优先级/g, "Low priority");
@@ -103,15 +170,31 @@
       });
     });
   };
+  const sanitizeUntranslatedEnglish = (root) => {
+    if (!isEnglish || !root) return;
+    if ((location.pathname.split("/").pop() || "") === "candidates.html") return;
+    const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+    const nodes = [];
+    while (walker.nextNode()) nodes.push(walker.currentNode);
+    nodes.forEach((node) => {
+      if (/^(SCRIPT|STYLE|NOSCRIPT)$/.test(node.parentElement?.tagName || "") || !/[\u3400-\u9fff]/.test(node.nodeValue || "")) return;
+      const raw = (node.nodeValue || "").trim();
+      if (raw === "中") return;
+      const retained = raw.replace(/[\u3400-\u9fff]+/g, " ").replace(/[，。；：“”‘’（）]/g, " ").replace(/\s+/g, " ").trim();
+      node.nodeValue = retained && /[A-Za-z0-9]/.test(retained) ? retained : "See source record for details.";
+    });
+  };
   const navigation = [
-    ["首页", "index.html"],
-    ["专题档案", "topics.html"],
-    ["研究情报", "research.html"],
-    ["竞争格局", "landscape.html"],
-    ["项目对比", "comparison.html"],
-    ["官网雷达", "radar.html"],
-    ["变化历史", "history.html"],
-    ["候选池", "candidates.html"]
+    ["首页", "index.html", "primary"],
+    ["疾病专题", "topics.html", "primary"],
+    ["研究情报", "research.html", "primary"],
+    ["竞争格局", "landscape.html", "primary"],
+    ["分类检索", "comparison.html", "primary"]
+  ];
+  const internalNavigation = [
+    ["人工审核", "review.html", "internal"],
+    ["候选池", "candidates.html", "internal"],
+    ["数据质量", "quality.html", "internal"]
   ];
 
   const style = document.createElement("style");
@@ -119,8 +202,24 @@
     :root { --bg: #f4f6f4 !important; --surface: #ffffff !important; --soft: #eef2ef !important; --border: #d6ddd8 !important; --text: #172019 !important; --text2: #465149 !important; --text3: #707b73 !important; --accent: #176049 !important; --accent2: #0f766e !important; --accent-light: #e7f3ed !important; }
     body { background: var(--bg) !important; letter-spacing: 0 !important; }
     nav { z-index: 1000 !important; }
+    nav .nav-links { align-items: center !important; gap: 5px !important; }
+    nav .nav-links a {
+      display: inline-flex !important; align-items: center; min-height: 34px; padding: 7px 10px !important;
+      border: 1px solid var(--border, #d8ddd7) !important; border-radius: 7px !important;
+      background: var(--surface, #fff) !important; color: var(--text2, #465049) !important;
+      font-size: 11px !important; font-weight: 650; text-decoration: none !important;
+    }
+    nav .nav-links a:hover { border-color: #9fc5b4 !important; background: var(--accent-light, #e6f3ed) !important; color: var(--accent, #176049) !important; }
+    nav .nav-links a.active, nav .nav-links a[aria-current="page"] { border-color: var(--accent, #176049) !important; background: var(--accent, #176049) !important; color: #fff !important; }
+    nav .nav-links a.app-shell-review-link:not(.active) { border-color: #b9d4c6 !important; background: var(--accent-light, #e6f3ed) !important; color: var(--accent, #176049) !important; }
     .app-shell-actions { display: flex; align-items: center; gap: 7px; flex: 0 0 auto; }
     .app-shell-actions > a { text-decoration: none !important; }
+    .app-shell-login {
+      display: inline-flex; align-items: center; min-height: 30px; padding: 5px 9px;
+      border: 1px solid var(--border, #d8ddd7); border-radius: 7px;
+      background: var(--surface, #fff); color: var(--text3, #737d75);
+      font: 700 10px var(--font-mono, var(--mono, monospace)); white-space: nowrap;
+    }
     .app-shell-health {
       display: inline-flex; align-items: center; gap: 6px; padding: 5px 9px;
       border: 1px solid var(--border, #d8ddd7); border-radius: 999px;
@@ -165,7 +264,7 @@
     body.app-shell-open .app-shell-drawer { transform: translateX(0); }
     @media (max-width: 1120px) {
       nav { padding-left: 18px !important; padding-right: 18px !important; }
-      nav .nav-links a { padding-left: 7px !important; padding-right: 7px !important; font-size: 11px !important; }
+      nav .nav-links a { padding-left: 7px !important; padding-right: 7px !important; font-size: 10px !important; }
       .app-shell-actions .global-search-link { display: none; }
     }
     @media (max-width: 860px) {
@@ -193,6 +292,8 @@
   document.head.appendChild(style);
 
   const currentFile = location.pathname.split("/").pop() || "index.html";
+  const internalPage = ["review.html", "candidates.html", "quality.html"].includes(currentFile);
+  const visibleNavigation = internalPage ? internalNavigation : navigation;
   const activeFile = (() => {
     if (currentFile === "detail.html") {
       const type = new URLSearchParams(location.search).get("type");
@@ -204,6 +305,19 @@
 
   const pageNav = document.querySelector("body > nav");
   if (!pageNav) return;
+
+  const logo = pageNav.querySelector(".nav-logo");
+  if (logo) {
+    [...logo.childNodes].filter((node) => node.nodeType === Node.TEXT_NODE).forEach((node) => node.remove());
+    logo.append(document.createTextNode("自身免疫 CAR-T 情报工作台"));
+  }
+  document.title = document.title.replaceAll("神经免疫", "自身免疫");
+  if (isEnglish) document.title = translateValue(document.title);
+
+  let desktopLinks = pageNav.querySelector(".nav-links");
+  if (desktopLinks) {
+    desktopLinks.innerHTML = visibleNavigation.map(([label, href]) => `<li><a href="${href}" class="${href === activeFile ? "active" : ""}"${href === activeFile ? ' aria-current="page"' : ""}>${label}</a></li>`).join("");
+  }
 
   pageNav.querySelectorAll(".nav-links a").forEach((link) => {
     const isActive = link.getAttribute("href") === activeFile;
@@ -221,6 +335,14 @@
     actions.appendChild(searchLink);
   }
 
+  if (!internalPage) {
+    const loginLink = document.createElement("a");
+    loginLink.className = "app-shell-login";
+    loginLink.href = location.protocol === "file:" ? "http://127.0.0.1:8765/login.html" : "login.html";
+    loginLink.textContent = "内部登录";
+    actions.appendChild(loginLink);
+  }
+
   const languageButton = document.createElement("button");
   languageButton.className = "app-shell-language";
   languageButton.type = "button";
@@ -232,34 +354,6 @@
     location.reload();
   });
   actions.appendChild(languageButton);
-
-  const candidateLink = document.createElement("a");
-  candidateLink.className = "app-shell-health app-shell-candidates";
-  candidateLink.href = "candidates.html";
-  candidateLink.textContent = "候选池";
-  if (currentFile === "candidates.html") candidateLink.setAttribute("aria-current", "page");
-  actions.appendChild(candidateLink);
-
-  const radarLink = document.createElement("a");
-  radarLink.className = "app-shell-health app-shell-candidates";
-  radarLink.href = "radar.html";
-  radarLink.textContent = "官网雷达";
-  if (currentFile === "radar.html") radarLink.setAttribute("aria-current", "page");
-  actions.insertBefore(radarLink, candidateLink);
-
-  const comparisonLink = document.createElement("a");
-  comparisonLink.className = "app-shell-health app-shell-candidates";
-  comparisonLink.href = "comparison.html";
-  comparisonLink.textContent = "对比";
-  if (currentFile === "comparison.html") comparisonLink.setAttribute("aria-current", "page");
-  actions.insertBefore(comparisonLink, candidateLink);
-
-  const healthLink = document.createElement("a");
-  healthLink.className = "app-shell-health";
-  healthLink.href = "quality.html";
-  healthLink.textContent = "质量 --";
-  if (currentFile === "quality.html") healthLink.setAttribute("aria-current", "page");
-  actions.appendChild(healthLink);
 
   const menuButton = document.createElement("button");
   menuButton.className = "app-shell-menu-button";
@@ -279,13 +373,12 @@
   drawer.id = "app-shell-drawer";
   drawer.setAttribute("aria-label", "网站导航");
   drawer.innerHTML = `
-    <nav>${navigation.map(([label, href]) => `<a class="app-shell-mobile-link${href === activeFile ? " is-active" : ""}" href="${href}"${href === activeFile ? ' aria-current="page"' : ""}>${label}</a>`).join("")}</nav>
+    <nav>${visibleNavigation.map(([label, href]) => `<a class="app-shell-mobile-link${href === activeFile ? " is-active" : ""}" href="${href}"${href === activeFile ? ' aria-current="page"' : ""}>${label}</a>`).join("")}</nav>
     <div class="app-shell-mobile-divider"></div>
     <nav>
       <a class="app-shell-mobile-link${currentFile === "search.html" ? " is-active" : ""}" href="search.html">全局检索</a>
-      <a class="app-shell-mobile-link${currentFile === "quality.html" ? " is-active" : ""}" href="quality.html">数据质量</a>
+      ${internalPage ? '<a class="app-shell-mobile-link" href="index.html">返回公开站</a>' : `<a class="app-shell-mobile-link" href="${location.protocol === "file:" ? "http://127.0.0.1:8765/login.html" : "login.html"}">内部登录</a>`}
     </nav>
-    <div class="app-shell-mobile-meta" id="app-shell-mobile-meta">质量报告载入中</div>
   `;
   document.body.append(backdrop, drawer);
 
@@ -308,21 +401,6 @@
   document.addEventListener("keydown", (event) => { if (event.key === "Escape" && document.body.classList.contains("app-shell-open")) setOpen(false); });
   addEventListener("resize", () => { if (innerWidth > 860 && document.body.classList.contains("app-shell-open")) setOpen(false); });
 
-  fetch("data/quality-report.json")
-    .then((response) => response.ok ? response.json() : Promise.reject())
-    .then((report) => {
-      healthLink.textContent = `质量 ${report.score}`;
-      healthLink.classList.toggle("is-good", report.status === "通过" || report.score >= 95);
-      healthLink.classList.toggle("is-blocked", report.status === "阻断");
-      healthLink.title = `${report.status} · ${report.summary.errors}个错误 · ${report.summary.warnings}个警告`;
-      const mobileMeta = document.getElementById("app-shell-mobile-meta");
-      if (mobileMeta) mobileMeta.textContent = `质量 ${report.score} · ${report.summary.errors} 错误 · ${report.summary.warnings} 警告`;
-    })
-    .catch(() => {
-      healthLink.textContent = "质量未知";
-      healthLink.classList.add("is-blocked");
-    });
-
   if (isEnglish) {
     const observer = new MutationObserver((mutations) => mutations.forEach((mutation) => {
       mutation.addedNodes.forEach((node) => translateNode(node.nodeType === Node.TEXT_NODE ? node.parentElement : node));
@@ -344,7 +422,11 @@
         collectPairs(item, item.i18n?.en);
       });
       dataTranslations.sort((a, b) => b[0].length - a[0].length);
+      if (currentFile === "candidates.html") return;
       translateNode(document.body);
+      sanitizeUntranslatedEnglish(document.body);
+      setTimeout(() => { translateNode(document.body); sanitizeUntranslatedEnglish(document.body); }, 500);
+      setTimeout(() => { translateNode(document.body); sanitizeUntranslatedEnglish(document.body); }, 1500);
     }).catch(() => {});
   }
 })();

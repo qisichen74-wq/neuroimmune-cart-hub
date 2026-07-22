@@ -8,11 +8,14 @@ const output = path.join(root, "dist");
 await rm(output, { recursive: true, force: true });
 await mkdir(output, { recursive: true });
 
-const rootFiles = (await readdir(root)).filter((file) => file.endsWith(".html"));
+const internalPages = new Set(["login.html", "review.html", "candidates.html", "quality.html", "radar.html", "history.html"]);
+const rootFiles = (await readdir(root)).filter((file) => file.endsWith(".html") && !internalPages.has(file));
 await Promise.all(rootFiles.map((file) => cp(path.join(root, file), path.join(output, file))));
-await Promise.all(["assets", "data"].map((directory) =>
-  cp(path.join(root, directory), path.join(output, directory), { recursive: true })
-));
+await cp(path.join(root, "assets"), path.join(output, "assets"), { recursive: true });
+await mkdir(path.join(output, "data"), { recursive: true });
+const internalData = new Set(["candidate-report.json", "review-decisions.json", "review-workflow.json", "source-sync-report.json"]);
+const publicDataFiles = (await readdir(path.join(root, "data"))).filter((file) => !internalData.has(file));
+await Promise.all(publicDataFiles.map((file) => cp(path.join(root, "data", file), path.join(output, "data", file))));
 
 const notFound = `<!doctype html>
 <html lang="zh-CN">

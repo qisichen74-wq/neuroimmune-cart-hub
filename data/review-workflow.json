@@ -1,0 +1,78 @@
+{
+  "generated_at": "2026-07-21T13:30:00Z",
+  "policy_version": "1.1.0",
+  "closure_definition": "每条候选必须形成可追溯的发布、观察或排除决定，并记录来源、审核人、决定时间、理由及下次复核日期。",
+  "stages": [
+    {
+      "id": "discover",
+      "name": "发现与去重",
+      "owner": "自动流程",
+      "sla_hours": 4,
+      "exit_criteria": "生成唯一候选ID，保留原始链接、发现时间和重复项关系"
+    },
+    {
+      "id": "triage",
+      "name": "人工认领与分级",
+      "owner": "值班编辑",
+      "sla_hours": 24,
+      "exit_criteria": "明确负责人、优先级、病种和预计完成时间"
+    },
+    {
+      "id": "verify",
+      "name": "一手来源逐字段核验",
+      "owner": "医学编辑",
+      "sla_hours": 48,
+      "exit_criteria": "核对标题、日期、阶段、样本量、终点和原始措辞，并记录字段级来源"
+    },
+    {
+      "id": "decide",
+      "name": "编辑决策",
+      "owner": "专题负责人",
+      "sla_hours": 24,
+      "exit_criteria": "做出发布、持续观察或排除决定；排除必须填写理由"
+    },
+    {
+      "id": "publish",
+      "name": "写入与全量审计",
+      "owner": "数据编辑",
+      "sla_hours": 8,
+      "exit_criteria": "正式数据、关联关系和verification记录同步写入，自动审计无阻断错误"
+    },
+    {
+      "id": "recheck",
+      "name": "定期复核与反馈",
+      "owner": "专题负责人",
+      "sla_hours": 720,
+      "exit_criteria": "到期复核、冲突回退至核验阶段，专题判断和检索索引同步刷新"
+    }
+  ],
+  "decision_states": [
+    {
+      "state": "发布",
+      "meaning": "完成核验并进入正式数据集",
+      "next": "按数据类型进入定期复核"
+    },
+    {
+      "state": "持续观察",
+      "meaning": "相关但证据不足，保留在候选池",
+      "next": "新来源或到期时重新分级"
+    },
+    {
+      "state": "排除",
+      "meaning": "重复、低相关、来源不可用或不满足纳入标准",
+      "next": "保留理由，防止同一条目反复进入队列"
+    }
+  ],
+  "required_audit_fields": [
+    "candidate_id",
+    "reviewer",
+    "claimed_at",
+    "decision",
+    "decision_at",
+    "decision_reason",
+    "source_ids",
+    "verified_fields",
+    "published_record_ids",
+    "next_review_at"
+  ]
+}

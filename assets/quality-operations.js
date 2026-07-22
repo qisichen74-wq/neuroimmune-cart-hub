@@ -1,4 +1,5 @@
 (() => {
+  if (localStorage.getItem("intel-language") === "en") return;
   const esc = (value) => String(value ?? "").replace(/[&<>"']/g, (char) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#039;" })[char]);
 
   const render = async () => {
