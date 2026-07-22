@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-07-21T14:23:29.630Z",
+  "generated_at": "2026-07-22T12:09:03.614Z",
   "as_of": "2026-07-21",
   "policy_version": "1.0.0",
   "status": "需关注",
-  "score": 24,
+  "score": 11,
   "summary": {
-    "total_records": 184,
+    "total_records": 187,
     "datasets": 6,
     "errors": 0,
-    "warnings": 76,
-    "verified": 120,
-    "internally_reviewed": 7,
+    "warnings": 89,
+    "verified": 107,
+    "internally_reviewed": 10,
     "pending_external_verification": 0,
-    "stale": 74,
+    "stale": 87,
     "source_checks": {
       "records_checked": 74,
       "successful": 74,
@@ -60,9 +60,9 @@
       "type": "trial",
       "label": "临床试验",
       "records": 49,
-      "verified": 21,
+      "verified": 15,
       "pending": 0,
-      "stale": 45
+      "stale": 51
     },
     {
       "type": "safety",
@@ -76,14 +76,14 @@
       "type": "event",
       "label": "动态事件",
       "records": 49,
-      "verified": 20,
+      "verified": 13,
       "pending": 0,
-      "stale": 29
+      "stale": 36
     },
     {
       "type": "topic",
       "label": "专题档案",
-      "records": 7,
+      "records": 10,
       "verified": 0,
       "pending": 0,
       "stale": 0
@@ -430,6 +430,48 @@
     {
       "severity": "warning",
       "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "hadassah-hbi0101-autoimmune",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "renji-c-car168-autoimmune",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "adicet-prulacel-autoimmune-phase1",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "changhai-kn3601-autoimmune",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "huashan-c-car168-cns-autoimmune",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "gustaveroussy-cellattack1-autoimmune",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
       "record_type": "event",
       "record_id": "event-feed-42251699",
       "message": "已超过 7 天复核周期"
@@ -628,6 +670,55 @@
       "code": "verification_stale",
       "record_type": "event",
       "record_id": "event-nct06056921-update",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-nct07085676-update",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-nct06249438-update",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-nct06375993-update",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-nct07246096-update",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-nct07341828-update",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-nct07544225-update",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-feed-41612420",
       "message": "已超过 7 天复核周期"
     },
     {
@@ -3027,7 +3118,7 @@
         "registry_last_update"
       ],
       "note": "依据ClinicalTrials.gov API核验NCT07085676。",
-      "stale": false
+      "stale": true
     },
     {
       "record_type": "trial",
@@ -3052,7 +3143,7 @@
         "registry_last_update"
       ],
       "note": "依据ClinicalTrials.gov API核验NCT06249438；注册库最后更新时间较旧。",
-      "stale": false
+      "stale": true
     },
     {
       "record_type": "trial",
@@ -3077,7 +3168,7 @@
         "registry_last_update"
       ],
       "note": "依据ClinicalTrials.gov API核验NCT06375993。",
-      "stale": false
+      "stale": true
     },
     {
       "record_type": "trial",
@@ -3102,7 +3193,7 @@
         "registry_last_update"
       ],
       "note": "依据ClinicalTrials.gov API核验NCT07246096。",
-      "stale": false
+      "stale": true
     },
     {
       "record_type": "trial",
@@ -3127,7 +3218,7 @@
         "registry_last_update"
       ],
       "note": "依据ClinicalTrials.gov API核验NCT07341828。",
-      "stale": false
+      "stale": true
     },
     {
       "record_type": "trial",
@@ -3177,7 +3268,7 @@
         "registry_last_update"
       ],
       "note": "依据ClinicalTrials.gov API核验NCT07544225。",
-      "stale": false
+      "stale": true
     },
     {
       "record_type": "trial",
@@ -4136,7 +4227,7 @@
         "entities"
       ],
       "note": "事件日期采用ClinicalTrials.gov最近更新发布日期。",
-      "stale": false
+      "stale": true
     },
     {
       "record_type": "event",
@@ -4155,7 +4246,7 @@
         "entities"
       ],
       "note": "事件日期采用ClinicalTrials.gov最近更新发布日期；注册库最后更新时间较旧。",
-      "stale": false
+      "stale": true
     },
     {
       "record_type": "event",
@@ -4174,7 +4265,7 @@
         "entities"
       ],
       "note": "事件日期采用ClinicalTrials.gov最近更新发布日期。",
-      "stale": false
+      "stale": true
     },
     {
       "record_type": "event",
@@ -4193,7 +4284,7 @@
         "entities"
       ],
       "note": "事件日期采用ClinicalTrials.gov最近更新发布日期。",
-      "stale": false
+      "stale": true
     },
     {
       "record_type": "event",
@@ -4212,7 +4303,7 @@
         "entities"
       ],
       "note": "事件日期采用ClinicalTrials.gov最近更新发布日期。",
-      "stale": false
+      "stale": true
     },
     {
       "record_type": "event",
@@ -4231,7 +4322,7 @@
         "entities"
       ],
       "note": "事件日期采用ClinicalTrials.gov最近更新发布日期。",
-      "stale": false
+      "stale": true
     },
     {
       "record_type": "event",
@@ -4324,7 +4415,7 @@
         "entities"
       ],
       "note": "事件日期采用PubMed发布日期。",
-      "stale": false
+      "stale": true
     },
     {
       "record_type": "event",
@@ -4548,6 +4639,39 @@
     {
       "record_type": "topic",
       "record_id": "idiopathic-inflammatory-myopathy",
+      "status": "内部审核",
+      "confidence": "中",
+      "source_ids": [
+        "internal-curation"
+      ],
+      "last_verified_at": "2026-07-10",
+      "stale": false
+    },
+    {
+      "record_type": "topic",
+      "record_id": "systemic-lupus-erythematosus",
+      "status": "内部审核",
+      "confidence": "中",
+      "source_ids": [
+        "internal-curation"
+      ],
+      "last_verified_at": "2026-07-10",
+      "stale": false
+    },
+    {
+      "record_type": "topic",
+      "record_id": "autoimmune-associated-interstitial-lung-disease",
+      "status": "内部审核",
+      "confidence": "中",
+      "source_ids": [
+        "internal-curation"
+      ],
+      "last_verified_at": "2026-07-10",
+      "stale": false
+    },
+    {
+      "record_type": "topic",
+      "record_id": "rheumatoid-arthritis",
       "status": "内部审核",
       "confidence": "中",
       "source_ids": [

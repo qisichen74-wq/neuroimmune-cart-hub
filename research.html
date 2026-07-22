@@ -458,6 +458,7 @@ let allData = [];
 let filteredData = [];
 let searchQuery = "";
 let sortBy = "priority";
+const LANGUAGE = localStorage.getItem("intel-language") === "en" ? "en" : "zh";
 const activeFilters = {
   priority: "全部",
   disease: "全部",
@@ -497,7 +498,15 @@ function normalizeData() {
     region: "",
     tags: [],
     takeaway: item.priority_reason || "",
-    ...item
+    ...item,
+    ...(LANGUAGE === "en" ? {
+      title_cn: item.official_title || item.title_cn,
+      one_liner: `${item.journal || "Primary source"} · ${(item.publication_type || []).join(" / ") || "Research report"}`,
+      takeaway: "Open the primary source to review the verified finding, population, and limitations.",
+      priority_reason: "Priority reflects evidence type, novelty, and potential impact on development decisions.",
+      evidence_level: (item.publication_type || []).join(" / ") || "Research report",
+      tags: [item.disease, item.entity, ...(item.publication_type || [])].filter(Boolean)
+    } : {})
   }));
 }
 

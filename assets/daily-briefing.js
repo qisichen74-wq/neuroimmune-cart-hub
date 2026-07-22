@@ -1,4 +1,5 @@
 (() => {
+  if (localStorage.getItem("intel-language") === "en") return;
   const esc = (value) => String(value ?? "").replace(/[&<>"']/g, (char) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#039;" })[char]);
   const style = document.createElement("style");
   style.textContent = `
@@ -33,11 +34,10 @@
   document.head.appendChild(style);
   Promise.all([
     fetch("data/daily-briefing.json").then((response) => response.json()),
-    fetch("data/candidate-report.json").then((response) => response.json()).catch(() => ({ candidates: [], source_runs: [], summary: {} })),
-    fetch("data/quality-report.json").then((response) => response.json()).catch(() => ({ summary: {} })),
-    fetch("data/source-sync-report.json").then((response) => response.json()).catch(() => ({ differences: [] }))
-  ]).then(([briefing, candidates, quality, sourceSync]) => {
-    const statValues = { "stat-total": briefing.snapshot.formal_records, "stat-high": briefing.snapshot.active_priority_trials, "stat-reviewed": briefing.snapshot.externally_verified, "stat-disease": briefing.snapshot.candidate_items };
+    fetch("data/topics.json").then((response) => response.json()).catch(() => [])
+  ]).then(([briefing, topics]) => {
+    const dossierCount = topics.filter((topic) => topic.kind === "疾病专题").length;
+    const statValues = { "stat-total": briefing.snapshot.formal_records, "stat-high": briefing.snapshot.active_priority_trials, "stat-reviewed": briefing.snapshot.externally_verified, "stat-disease": dossierCount };
     const applyStats = () => Object.entries(statValues).forEach(([id, value]) => { const element = document.getElementById(id); if (element && element.textContent !== String(value)) element.textContent = value; });
     applyStats();
     const statsRoot = document.querySelector(".hero-stats");
@@ -47,34 +47,17 @@
     const section = document.createElement("section");
     section.className = "decision-board";
     section.id = "daily-briefing";
-    const officialRuns = new Map((candidates.source_runs || []).filter((run) => run.source_kind === "official_website").map((run) => [run.source_id, run]));
-    const reliableOfficial = (candidates.candidates || []).filter((item) => {
-      if (item.candidate_type !== "official_update") return false;
-      const sourceMatch = (item.query_matches || []).find((value) => value.startsWith("official:"));
-      const sourceId = sourceMatch?.split(":")[1];
-      const run = officialRuns.get(sourceId);
-      return !run || run.status !== "error";
-    });
     const decisions = [];
-    reliableOfficial.slice(0, 2).forEach((item) => decisions.push({
-      badge: "待人工", tone: "review", title: item.title, copy: (item.triage_reasons || []).join(" · ") || "官网线索已进入候选池，尚未写入正式数据。", meta: item.publication_date || "官网监测", href: "radar.html", action: "进入雷达复核", weight: 100
-    }));
-    (sourceSync.differences || []).slice(0, 1).forEach((item) => decisions.push({
-      badge: "字段差异", tone: "review", title: `官方登记与本地记录存在差异：${item.record_id}`, copy: `${item.field}：本地“${item.local_value}”，官方“${item.remote_value}”。需判断是口径变化还是实质更新。`, meta: "官方 API 对照", href: item.source_url, action: "查看官方记录", external: true, weight: 95
-    }));
-    (briefing.verified_updates || []).slice(0, 3).forEach((item) => decisions.push({
+    (briefing.verified_updates || []).slice(0, 5).forEach((item) => decisions.push({
       badge: "已核验", tone: "verified", title: item.title, copy: item.summary, meta: `${item.date} · ${item.topic}`, href: item.source_url, action: "查看一手来源", external: true, weight: 80
     }));
-    if (quality.summary?.stale) decisions.push({
-      badge: "复核到期", tone: "risk", title: `${quality.summary.stale} 条记录已进入复核窗口`, copy: "过期不等于事实失效，但相关状态不应继续被当作当前结论使用。", meta: "质量与时效", href: "quality.html", action: "查看复核清单", weight: 70
-    });
     const trial = (briefing.trial_watch || [])[0];
     if (trial) decisions.push({
       badge: "持续观察", tone: "watch", title: trial.name, copy: `${trial.product} · ${trial.indication} · ${trial.status} · 计划入组 ${trial.enrollment} 例`, meta: `注册更新 ${trial.last_update}`, href: `detail.html?type=trial&id=${encodeURIComponent(trial.id)}`, action: "打开试验档案", weight: 60
     });
     const topDecisions = decisions.sort((left, right) => right.weight - left.weight).slice(0, 5);
     const cards = topDecisions.map((item, index) => `<article class="decision-card"><div class="decision-type"><span class="decision-badge ${item.tone}">${esc(item.badge)}</span><span class="decision-number">0${index + 1}</span></div><h3>${esc(item.title)}</h3><p>${esc(item.copy)}</p><div class="decision-action"><span>${esc(item.meta)}</span><a href="${esc(item.href)}"${item.external ? ' target="_blank" rel="noopener"' : ""}>${esc(item.action)} →</a></div></article>`).join("");
-    section.innerHTML = `<div class="decision-head"><div><div class="decision-kicker">DECISION DESK · ${topDecisions.length}/5</div><h2>今天最需要知道的五件事</h2></div><div><p>按官网变化、官方字段差异、已核验动态和复核风险排序。黄色事项仍需人工判断，不进入正式结论。</p><a class="decision-link" href="radar.html">打开官网更新雷达 →</a></div></div><div class="decision-grid">${cards || '<div class="decision-empty">当前没有需要升级到决策层的事项。</div>'}</div><div class="decision-foot"><span>生成 ${new Date(briefing.generated_at).toLocaleString("zh-CN")}</span><span>正式记录 ${briefing.snapshot.formal_records}</span><span>外部核验 ${briefing.snapshot.externally_verified}</span><span>候选池 ${briefing.snapshot.candidate_items}</span><span>质量 ${briefing.snapshot.quality_score}</span></div>`;
+    section.innerHTML = `<div class="decision-head"><div><div class="decision-kicker">DECISION DESK · ${topDecisions.length}/5</div><h2>今天最需要知道的五件事</h2></div><div><p>仅展示已进入正式数据集的核验动态和重点试验，便于快速进入对应档案。</p><a class="decision-link" href="research.html">浏览研究情报 →</a></div></div><div class="decision-grid">${cards || '<div class="decision-empty">当前没有需要升级到决策层的事项。</div>'}</div><div class="decision-foot"><span>生成 ${new Date(briefing.generated_at).toLocaleString("zh-CN")}</span><span>正式记录 ${briefing.snapshot.formal_records}</span><span>外部核验 ${briefing.snapshot.externally_verified}</span><span>疾病专题 ${dossierCount}</span></div>`;
     hero.insertAdjacentElement("afterend", section);
   }).catch(() => {});
 })();

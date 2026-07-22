@@ -710,5 +710,115 @@
         ]
       }
     }
+  },
+  {
+    "id": "systemic-lupus-erythematosus",
+    "name": "系统性红斑狼疮（SLE）",
+    "short_name": "SLE",
+    "kind": "疾病专题",
+    "priority": "高",
+    "maturity": "多队列人体证据与注册试验扩展",
+    "updated_at": "2026-07-21",
+    "summary": "SLE是当前自身免疫CAR-T证据最密集的病种之一，已覆盖自体、异体、双靶点、CAR-NK和体内CAR-T等多条路线。",
+    "thesis": "SLE专题应把无药缓解、SLEDAI/BILAG、补体与自身抗体、肾脏病理、B细胞重建和感染风险放在同一条证据链上，避免仅凭短期血清学改善判断疾病重置。",
+    "unmet_need": "重症或难治性SLE及狼疮肾炎仍可出现反复器官损伤、长期激素暴露和多线免疫抑制失败。",
+    "next_catalyst": "更大样本前瞻性队列、狼疮肾炎器官结局、无预处理与现货型产品的首批人体数据，以及长期无药缓解和感染随访。",
+    "keywords": ["SLE", "系统性红斑狼疮", "狼疮肾炎", "无药缓解", "免疫重置"],
+    "key_questions": [
+      "无药缓解能否在B细胞重建后持续",
+      "肾脏病理改善是否与全身疾病活动同步",
+      "自体、异体、双靶点和体内CAR-T的风险收益如何比较"
+    ],
+    "evidence_gaps": [
+      "跨队列终点和随访时间仍不统一",
+      "儿童、肾脏和血液学亚型的可外推性有限",
+      "长期感染、生育和再次治疗策略数据不足"
+    ],
+    "related": {
+      "research": ["pmid-42414128", "pmid-41935952", "pmid-41644365", "pmid-41612420", "pmid-41240964", "pmid-42167622"],
+      "company": ["cabaletta-resecel", "icell-icg318-autoimmune", "crispr-ctx112", "fate-ft819", "allogene-allo329", "adicet-prulacel", "iaso-equecel-autoimmune", "miltenyi-zamtocel", "magicrna-hn2302", "changhai-kn3601"],
+      "trial": ["icell-icg318-sle-phase12", "ctx112-autoimmune-phase1", "ft819-autoimmune-phase1", "allo329-autoimmune-phase1", "zamtocel-autoimmune-phase1", "magicrna-hn2302-autoimmune", "adicet-prulacel-autoimmune-phase1", "changhai-kn3601-autoimmune", "gustaveroussy-cellattack1-autoimmune", "academic-cd19-autoimmune-series"]
+    },
+    "i18n": {
+      "en": {
+        "name": "Systemic Lupus Erythematosus (SLE)",
+        "maturity": "Multi-cohort human evidence and expanding registered trials",
+        "summary": "SLE is one of the most evidence-dense autoimmune CAR-T indications, spanning autologous, allogeneic, dual-target, CAR-NK, and in vivo approaches.",
+        "thesis": "Drug-free remission, SLEDAI/BILAG, complement and autoantibodies, renal pathology, B-cell reconstitution, and infection risk must be interpreted as one evidence chain rather than inferring immune reset from short-term serology alone.",
+        "unmet_need": "Severe or refractory SLE and lupus nephritis can still cause recurrent organ damage, prolonged steroid exposure, and failure of multiple immunosuppressive lines.",
+        "next_catalyst": "Larger prospective cohorts, organ outcomes in lupus nephritis, first human data from conditioning-free and off-the-shelf products, and long-term follow-up of drug-free remission and infections.",
+        "keywords": ["SLE", "Systemic lupus erythematosus", "Lupus nephritis", "Drug-free remission", "Immune reset"],
+        "key_questions": ["Can drug-free remission persist after B-cell reconstitution?", "Does renal pathology improve in parallel with systemic disease activity?", "How do autologous, allogeneic, dual-target, and in vivo CAR-T approaches compare?"],
+        "evidence_gaps": ["Endpoints and follow-up remain inconsistent across cohorts", "Generalizability to pediatric, renal, and hematologic subtypes is limited", "Long-term infection, fertility, and retreatment data remain insufficient"]
+      }
+    }
+  },
+  {
+    "id": "autoimmune-associated-interstitial-lung-disease",
+    "name": "自身免疫相关间质性肺病（AI-ILD）",
+    "short_name": "AI-ILD",
+    "kind": "疾病专题",
+    "priority": "高",
+    "maturity": "跨病种病例信号与肌炎试验",
+    "updated_at": "2026-07-21",
+    "summary": "AI-ILD目前的CAR-T信号主要来自抗合成酶综合征、IIM和系统性硬化症，独立的ILD专病证据仍然有限。",
+    "thesis": "ILD不能只作为伴随症状记录；专题应独立追踪FVC、DLCO、HRCT、氧疗、激素减量、急性加重与感染，把肺部获益和原发自身免疫病活动分开评价。",
+    "unmet_need": "进展性纤维化、快速进展型ILD和多线免疫抑制失败可造成不可逆肺功能下降及高死亡风险。",
+    "next_catalyst": "RESET-Myositis等研究的肺功能与HRCT分层结果，以及SSc和抗合成酶综合征队列的长期呼吸结局。",
+    "keywords": ["AI-ILD", "间质性肺病", "抗合成酶综合征", "FVC / DLCO", "HRCT"],
+    "key_questions": ["肺功能和影像改善能否独立于肌肉或皮肤应答持续", "哪些ILD表型最可能从深度B细胞或浆细胞清除获益", "如何区分感染、清淋毒性和原病急性加重"],
+    "evidence_gaps": ["缺少以ILD为主要入组和评价对象的CAR-T研究", "现有病例肺部终点报告不一致", "纤维化不可逆阶段与治疗窗口尚未明确"],
+    "related": {
+      "research": ["pmid-36930673", "pmid-40268741", "pmid-40245922", "pmid-38381673", "pmid-42223209"],
+      "company": ["cabaletta-resecel", "icell-icg318-autoimmune", "novartis-ytb323", "cartesian-descartes08", "erlangen-cd19"],
+      "trial": ["cabaletta-resecel-myositis", "icell-icg318-iim-phase1", "novartis-rapcabtagene-iim-phase2", "cartesian-descartes08-myositis-phase2", "academic-cd19-autoimmune-series", "relma-autoimmune-ssc"]
+    },
+    "i18n": {
+      "en": {
+        "name": "Autoimmune-associated Interstitial Lung Disease (AI-ILD)",
+        "maturity": "Cross-disease case signals and myositis trials",
+        "summary": "Current CAR-T signals in AI-ILD mainly come from antisynthetase syndrome, IIM, and systemic sclerosis; dedicated ILD evidence remains limited.",
+        "thesis": "ILD should not be treated as a secondary symptom. FVC, DLCO, HRCT, oxygen use, steroid tapering, acute exacerbations, and infections need dedicated tracking, with pulmonary benefit separated from activity in the underlying autoimmune disease.",
+        "unmet_need": "Progressive fibrosis, rapidly progressive ILD, and failure of multiple immunosuppressive lines can cause irreversible lung-function loss and high mortality.",
+        "next_catalyst": "Stratified lung-function and HRCT results from studies such as RESET-Myositis, plus long-term respiratory outcomes in SSc and antisynthetase-syndrome cohorts.",
+        "keywords": ["AI-ILD", "Interstitial lung disease", "Antisynthetase syndrome", "FVC / DLCO", "HRCT"],
+        "key_questions": ["Can lung-function and imaging benefit persist independently of muscle or skin response?", "Which ILD phenotypes are most likely to benefit from deep B-cell or plasma-cell depletion?", "How should infection, conditioning toxicity, and disease exacerbation be separated?"],
+        "evidence_gaps": ["No CAR-T study primarily enrolls and evaluates ILD", "Pulmonary endpoints are inconsistently reported in current cases", "The treatment window before irreversible fibrosis remains undefined"]
+      }
+    }
+  },
+  {
+    "id": "rheumatoid-arthritis",
+    "name": "类风湿关节炎（RA）",
+    "short_name": "RA",
+    "kind": "疾病专题",
+    "priority": "中",
+    "maturity": "早期篮式试验入组",
+    "updated_at": "2026-07-21",
+    "summary": "RA已进入多个自身免疫CAR-T篮式试验和长期随访项目，但公开的RA独立疗效证据仍处于空白或极早期。",
+    "thesis": "RA的情报价值首先取决于是否能在难治患者中实现可持续无药或低药疾病控制，并以DAS28、ACR应答、影像进展、功能和安全性证明其相对成熟治疗体系的增量价值。",
+    "unmet_need": "部分难治患者经历多种生物制剂和靶向合成药物后仍有持续炎症、结构损伤和功能下降。",
+    "next_catalyst": "HBI0101、KN3601和CELL-ATTACK 1等篮式研究中RA队列的入组确认、首例安全性及独立疗效读出。",
+    "keywords": ["RA", "类风湿关节炎", "DAS28", "ACR response", "难治性RA"],
+    "key_questions": ["RA是否需要与SLE不同的患者筛选和终点框架", "深度免疫清除相对现有多线靶向治疗的增量价值是什么", "无药缓解能否抵消清淋、感染和制造负担"],
+    "evidence_gaps": ["缺少公开的RA独立人体疗效数据", "篮式试验中的RA样本量和分析计划尚不清晰", "与成熟标准治疗的比较框架尚未建立"],
+    "related": {
+      "research": ["pmid-42167622"],
+      "company": ["hadassah-hbi0101", "changhai-kn3601", "gustaveroussy-cellattack1", "kyverna-kyv101"],
+      "trial": ["hadassah-hbi0101-autoimmune", "changhai-kn3601-autoimmune", "gustaveroussy-cellattack1-autoimmune", "kyv101-autoimmune-ltfu"]
+    },
+    "i18n": {
+      "en": {
+        "name": "Rheumatoid Arthritis (RA)",
+        "maturity": "Early basket-trial enrollment",
+        "summary": "RA is included in several autoimmune CAR-T basket and long-term follow-up studies, but public RA-specific efficacy evidence remains absent or extremely early.",
+        "thesis": "The first test is whether refractory RA can achieve durable drug-free or low-treatment disease control. DAS28, ACR response, imaging progression, function, and safety must demonstrate incremental value over a mature treatment landscape.",
+        "unmet_need": "Some refractory patients retain active inflammation, structural damage, and functional decline after multiple biologic and targeted synthetic therapies.",
+        "next_catalyst": "Confirmed RA enrollment, first-patient safety, and disease-specific efficacy readouts from HBI0101, KN3601, CELL-ATTACK 1, and related basket studies.",
+        "keywords": ["RA", "Rheumatoid arthritis", "DAS28", "ACR response", "Refractory RA"],
+        "key_questions": ["Does RA require a different selection and endpoint framework from SLE?", "What incremental value can deep immune depletion offer over existing targeted therapies?", "Can drug-free remission offset conditioning, infection, and manufacturing burden?"],
+        "evidence_gaps": ["No public RA-specific human efficacy dataset", "RA sample sizes and analysis plans in basket trials remain unclear", "No comparison framework against established standard therapy"]
+      }
+    }
   }
 ]

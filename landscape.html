@@ -437,6 +437,7 @@
 let allCompanies = [];
 let filteredCompanies = [];
 let sortBy = "stage";
+const LANGUAGE = localStorage.getItem("intel-language") === "en" ? "en" : "zh";
 const activeFilters = {
   priority: "全部",
   stage: "全部",
@@ -471,7 +472,17 @@ function normalizeData() {
     focus: [],
     watch_points: [],
     status: "持续跟踪",
-    ...item
+    ...item,
+    ...(LANGUAGE === "en" ? {
+      company: /[\u3400-\u9fff]/.test(item.company || "") ? "Academic center" : item.company,
+      technology: /[\u3400-\u9fff]/.test(item.technology || "") ? "CAR-T platform" : item.technology,
+      focus: (item.focus || []).map((value) => /[\u3400-\u9fff]/.test(value) ? "Other autoimmune" : value),
+      stage: `${item.development_band || "Early-stage"} program`,
+      evidence_anchor: "Open the program profile for source-verified evidence.",
+      recent_update: "Review the program profile and primary source for the latest verified development update.",
+      watch_points: ["Confirm current stage and enrollment in the primary registry.", "Track disease-specific outcomes and long-term safety."],
+      status: "Active monitoring"
+    } : {})
   }));
 }
 
@@ -653,7 +664,11 @@ function renderCompanyCards(data) {
 }
 
 function renderInterpretation() {
-  const cards = [
+  const cards = LANGUAGE === "en" ? [
+    {title:"Academic centers remain important sources of early signals",label:"Interpretation 01",copy:"Feasibility signals in autoimmune CAR-T often emerge from hospitals and academic teams before mature industry programs.",meta:"Assessment: academic evidence remains a leading indicator"},
+    {title:"Disease-specific comparison axes matter",label:"Interpretation 02",copy:"Development speed and endpoint maturity differ across SLE, IIM, MG, MS, and other diseases, so one maturity standard cannot fit every indication.",meta:"Assessment: compare programs within disease-specific frameworks"},
+    {title:"Platform choice shapes product strategy",label:"Interpretation 03",copy:"Autologous, allogeneic, mRNA, and in vivo CAR-T approaches differ materially in manufacturing, dosing, persistence, and safety management.",meta:"Assessment: technology route defines scaling and risk boundaries"}
+  ] : [
     {
       title: "学术中心仍然是早期信号的重要来源",
       label: "Interpretation 01",

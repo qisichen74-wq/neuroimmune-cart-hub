@@ -210,9 +210,10 @@ if (!regulatoryReport) {
 
 const htmlFiles = (await readdir(root)).filter((file) => file.endsWith(".html"));
 const htmlFileSet = new Set(htmlFiles);
+const standaloneInternalPages = new Set(["login.html", "review.html"]);
 for (const file of htmlFiles) {
   const html = await readFile(path.join(root, file), "utf8");
-  if (!html.includes('src="assets/app-shell.js"')) addIssue("error", "shared_shell_missing", "页面未接入共享导航与质量状态", "page", file);
+  if (!standaloneInternalPages.has(file) && !html.includes('src="assets/app-shell.js"')) addIssue("error", "shared_shell_missing", "页面未接入共享导航与质量状态", "page", file);
   for (const match of html.matchAll(/href="([^"#]+\.html)(?:\?[^"#]*)?"/g)) {
     const target = match[1].replace(/^\.\//, "");
     if (!htmlFileSet.has(target)) addIssue("error", "broken_internal_page_link", `内部页面链接不存在：${target}`, "page", file);
