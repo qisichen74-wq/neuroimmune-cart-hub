@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T10:51:07.243Z",
+  "generated_at": "2026-07-27T23:33:43.876Z",
   "records": {
     "trial:kyv101-ms-phase1": {
       "official_title": "Phase 1, Open-Label, Single Center Study of KYV-101, an Autologous Fully-Human Anti-CD19 Chimeric Antigen Receptor T Cell (CD19 CAR T) Therapy, in Participants With Treatment Refractory Progressive Multiple Sclerosis",
@@ -9,6 +9,15 @@
       "study_start": "2024-06-20",
       "estimated_completion": "2027-02",
       "registry_last_update": "2026-01-23"
+    },
+    "trial:kyv101-mg-kysa6-phase23": {
+      "official_title": "KYSA-6: A Phase 2/3, Open-Label, Randomized, Controlled, Multicenter Study of KYV-101, an Autologous Fully Human Anti-CD19 Chimeric Antigen Receptor T-cell (CD19 CAR T) Therapy, Versus Ongoing Standard-Of-Care Immunosuppressive Therapy in Patients With Generalized Myasthenia Gravis",
+      "sponsor": "Kyverna Therapeutics",
+      "status": "RECRUITING",
+      "enrollment": 66,
+      "study_start": "2024-08-28",
+      "estimated_completion": "2028-09",
+      "registry_last_update": "2026-07-08"
     },
     "trial:descartes08-mg-rct": {
       "official_title": "A Randomized, Double-Blind, Placebo-Controlled Phase 3 Trial of Descartes-08 in Patients With Generalized Myasthenia Gravis (MG)",
@@ -71,7 +80,7 @@
       "enrollment": 120,
       "study_start": "2024-03-28",
       "estimated_completion": "2027-07-15",
-      "registry_last_update": "2026-07-01"
+      "registry_last_update": "2026-07-23"
     },
     "trial:ytb323-mg-phase12": {
       "official_title": "An Open-label, Multi-center, Phase I/II Study to Assess Safety, Efficacy, and Cellular Kinetics of YTB323 in Participants With Treatment-resistant Generalized Myasthenia Gravis",
@@ -89,7 +98,7 @@
       "enrollment": 80,
       "study_start": "2025-03-10",
       "estimated_completion": "2031-12-31",
-      "registry_last_update": "2026-06-15"
+      "registry_last_update": "2026-07-22"
     },
     "trial:ft819-autoimmune-phase1": {
       "official_title": "A Phase 1 Study of FT819 in B-cell Mediated Autoimmune Disease",
@@ -116,7 +125,7 @@
       "enrollment": 66,
       "study_start": "2025-11-13",
       "estimated_completion": "2032-10",
-      "registry_last_update": "2026-06-18"
+      "registry_last_update": "2026-07-24"
     },
     "trial:zamtocel-autoimmune-phase1": {
       "official_title": "A Phase I Multicohort Trial of Zamtocabtagene Autoleucel (Zamto-Cel) in Subjects With Severe Refractory Autoimmune Diseases",
@@ -126,6 +135,15 @@
       "study_start": "2026-07",
       "estimated_completion": "2028-07",
       "registry_last_update": "2026-06-11"
+    },
+    "trial:miltenyi-mbcart20191-ms-phase12a": {
+      "official_title": "An Open Label Phase I/IIa, Multicenter, Interventional Single-arm Trial of MB-CART 2019.1 in Patients With Refractory Multiple Sclerosis (MS)",
+      "sponsor": "Miltenyi Biomedicine GmbH",
+      "status": "RECRUITING",
+      "enrollment": 26,
+      "study_start": "2026-04-01",
+      "estimated_completion": "2030-08-16",
+      "registry_last_update": "2026-05-11"
     },
     "trial:ti0032-invivo-autoimmune": {
       "official_title": "A Clinical Study on the Safety and Efficacy of in Vivo CAR-T Cell Therapy (TI-0032-III Injection) for the Treatment of Relapsed and Refractory Autoimmune Diseases",
@@ -234,6 +252,15 @@
       "study_start": "2024-12-17",
       "estimated_completion": "2029-09",
       "registry_last_update": "2026-05-18"
+    },
+    "trial:cabaletta-resecel-ms-phase12": {
+      "official_title": "RESET-MS: A Phase 1/2, Open-Label Study to Evaluate the Safety and Efficacy of Autologous CD19-specific Chimeric Antigen Receptor T Cells (CABA-201) in Participants With Multiple Sclerosis",
+      "sponsor": "Cabaletta Bio",
+      "status": "WITHDRAWN",
+      "enrollment": 0,
+      "study_start": "2026-06",
+      "estimated_completion": "2029-10",
+      "registry_last_update": "2026-06-25"
     },
     "trial:precision-cd19-autoimmune-phase1": {
       "official_title": "Clinical Study of CD19 Targeting Chimeric Antigen Receptor T Lymphocytes (CAR-T) in the Treatment of Refractory Autoimmune Diseases",
@@ -368,7 +395,7 @@
       "enrollment": 74,
       "study_start": "2023-12-20",
       "estimated_completion": "2028-07",
-      "registry_last_update": "2026-07-17"
+      "registry_last_update": "2026-07-23"
     },
     "trial:novartis-rapcabtagene-iim-phase2": {
       "official_title": "A Phase 2, Randomized, Open-label, Controlled Study to Evaluate the Efficacy and Safety of Rapcabtagene Autoleucel Versus Comparator in Participants With Severe Refractory Idiopathic Inflammatory Myopathies (IIM)",
@@ -387,6 +414,15 @@
       "study_start": "2026-04-28",
       "estimated_completion": "2028-05",
       "registry_last_update": "2026-04-23"
+    },
+    "trial:tr1x-trx319-impact-ms": {
+      "official_title": "A Phase 1/2a, Open-Label, Dose-Escalation Study to Evaluate the Safety and Preliminary Efficacy of TRX319 in Subjects With Primary or Secondary Progressive Multiple Sclerosis",
+      "sponsor": "Tr1X, Inc.",
+      "status": "RECRUITING",
+      "enrollment": 39,
+      "study_start": "2026-03",
+      "estimated_completion": "2029-01",
+      "registry_last_update": "2026-03-19"
     },
     "research:pmid-42414128": {
       "official_title": "Anti-CD19/CD22 CAR T cells in refractory immune thrombocytopenia of paediatric systemic lupus erythematosus.",

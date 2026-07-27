@@ -1,4 +1,37 @@
 {
-  "generated_at": "2026-07-21T10:51:07.243Z",
-  "changes": []
+  "generated_at": "2026-07-27T23:33:43.876Z",
+  "changes": [
+    {
+      "detected_at": "2026-07-27T23:33:43.876Z",
+      "record_type": "trial",
+      "record_id": "cc97540-breakfree2",
+      "field": "registry_last_update",
+      "previous_value": "2026-07-01",
+      "current_value": "2026-07-23"
+    },
+    {
+      "detected_at": "2026-07-27T23:33:43.876Z",
+      "record_type": "trial",
+      "record_id": "ctx112-autoimmune-phase1",
+      "field": "registry_last_update",
+      "previous_value": "2026-06-15",
+      "current_value": "2026-07-22"
+    },
+    {
+      "detected_at": "2026-07-27T23:33:43.876Z",
+      "record_type": "trial",
+      "record_id": "allo329-autoimmune-phase1",
+      "field": "registry_last_update",
+      "previous_value": "2026-06-18",
+      "current_value": "2026-07-24"
+    },
+    {
+      "detected_at": "2026-07-27T23:33:43.876Z",
+      "record_type": "trial",
+      "record_id": "cabaletta-resecel-myositis",
+      "field": "registry_last_update",
+      "previous_value": "2026-07-17",
+      "current_value": "2026-07-23"
+    }
+  ]
 }

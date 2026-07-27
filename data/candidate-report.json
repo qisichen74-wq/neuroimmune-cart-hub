@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-07-21T13:24:43.133Z",
+  "generated_at": "2026-07-27T23:32:51.423Z",
   "policy": "Candidates are discovery leads only. They must be verified against primary records before entering production datasets.",
   "query_window": "Publications since 2025/01/01; complete paginated ClinicalTrials.gov results; tracked official websites",
   "summary": {
-    "candidates": 3032,
-    "research": 2481,
+    "candidates": 3062,
+    "research": 2509,
     "trials": 548,
-    "official_updates": 3,
-    "immediate_review": 626,
-    "watchlist": 199,
-    "background": 108,
-    "low_relevance": 2099,
+    "official_updates": 5,
+    "immediate_review": 631,
+    "watchlist": 200,
+    "background": 109,
+    "low_relevance": 2122,
     "source_failures": 0,
     "partial_sources": 0,
     "truncated_sources": 0,
@@ -21,54 +21,55 @@
       "source": "ClinicalTrials.gov",
       "source_kind": "official_api",
       "status": "ok",
-      "results_scanned": 9009,
+      "results_scanned": 9020,
       "known_records_seen": [
-        "NCT06978738",
-        "NCT06794008",
-        "NCT07246096",
         "NCT07304154",
-        "NCT06665256",
+        "NCT06359041",
+        "NCT06308978",
+        "NCT07523282",
+        "NCT06056921",
+        "NCT06371040",
+        "NCT07085676",
+        "NCT06787989",
+        "NCT07246096",
+        "NCT06154252",
+        "NCT06799247",
+        "NCT07392528",
         "NCT06939166",
-        "NCT06708845",
         "NCT07305116",
         "NCT06414135",
-        "NCT06371040",
+        "NCT06980597",
+        "NCT06704269",
         "NCT07526493",
-        "NCT06249438",
-        "NCT07006805",
-        "NCT07085676",
-        "NCT07403188",
+        "NCT06828042",
         "NCT06688435",
-        "NCT06308978",
-        "NCT07339540",
-        "NCT07328581",
-        "NCT06799247",
-        "NCT07391605",
-        "NCT07477639",
-        "NCT04561557",
+        "NCT06794008",
         "NCT07715136",
-        "NCT06154252",
+        "NCT07341828",
+        "NCT06451159",
+        "NCT06941129",
+        "NCT07413341",
+        "NCT07477639",
+        "NCT06193889",
         "NCT07337785",
         "NCT06375993",
-        "NCT06451159",
-        "NCT06704269",
-        "NCT06359041",
-        "NCT06980597",
-        "NCT06941129",
-        "NCT06626919",
-        "NCT06220201",
-        "NCT07413341",
-        "NCT07341828",
-        "NCT07392528",
-        "NCT06787989",
-        "NCT07085104",
-        "NCT06828042",
+        "NCT06708845",
         "NCT07544225",
-        "NCT06056921",
-        "NCT07523282",
-        "NCT06925542",
+        "NCT06978738",
+        "NCT07339540",
+        "NCT06249438",
+        "NCT04561557",
+        "NCT06220201",
+        "NCT07085104",
+        "NCT07403188",
+        "NCT06665256",
         "NCT07155369",
-        "NCT07178431"
+        "NCT06626919",
+        "NCT07328581",
+        "NCT06925542",
+        "NCT07006805",
+        "NCT07178431",
+        "NCT07391605"
       ],
       "sentinel_check": {
         "expected": [
@@ -92,8 +93,8 @@
       "query_runs": [
         {
           "query_id": "theme",
-          "total_results": 490,
-          "results_scanned": 490,
+          "total_results": 491,
+          "results_scanned": 491,
           "truncated": false
         },
         {
@@ -140,8 +141,8 @@
         },
         {
           "query_id": "disease:systemic lupus",
-          "total_results": 186,
-          "results_scanned": 186,
+          "total_results": 187,
+          "results_scanned": 187,
           "truncated": false
         },
         {
@@ -164,8 +165,8 @@
         },
         {
           "query_id": "disease:autoimmune disease",
-          "total_results": 450,
-          "results_scanned": 450,
+          "total_results": 451,
+          "results_scanned": 451,
           "truncated": false
         },
         {
@@ -182,8 +183,8 @@
         },
         {
           "query_id": "entity:cabaletta-resecel",
-          "total_results": 334,
-          "results_scanned": 334,
+          "total_results": 337,
+          "results_scanned": 337,
           "truncated": false
         },
         {
@@ -200,8 +201,8 @@
         },
         {
           "query_id": "entity:cartesian-descartes08",
-          "total_results": 8142,
-          "results_scanned": 8142,
+          "total_results": 8149,
+          "results_scanned": 8149,
           "truncated": false
         },
         {
@@ -217,14 +218,14 @@
       "source": "NCBI PubMed",
       "source_kind": "official_api",
       "status": "ok",
-      "results_scanned": 2502,
+      "results_scanned": 2530,
       "known_records_seen": [
         "41240964",
         "42414128",
+        "42286319",
         "42167622",
         "41935952",
         "42295377",
-        "42286319",
         "42251699",
         "42223209",
         "41644365",
@@ -253,8 +254,8 @@
       "query_runs": [
         {
           "query_id": "theme",
-          "total_results": 555,
-          "results_scanned": 555,
+          "total_results": 561,
+          "results_scanned": 561,
           "truncated": false
         },
         {
@@ -271,8 +272,8 @@
         },
         {
           "query_id": "entity:cabaletta-resecel",
-          "total_results": 803,
-          "results_scanned": 803,
+          "total_results": 813,
+          "results_scanned": 813,
           "truncated": false
         },
         {
@@ -289,8 +290,8 @@
         },
         {
           "query_id": "entity:cartesian-descartes08",
-          "total_results": 1181,
-          "results_scanned": 1181,
+          "total_results": 1194,
+          "results_scanned": 1194,
           "truncated": false
         },
         {
@@ -321,10 +322,10 @@
         "https://www.cabalettabio.com/pipeline/caba-201"
       ],
       "assets_monitored": 3,
-      "fingerprint": "f4a306d0756f0fe94e11150fe680d983663421ad34f6940044e770e63c74894d",
+      "fingerprint": "a5be497c4867467227f9677c1bc2c78f1413c2204f5819edf8bdd130f7d50d76",
       "fingerprint_version": 3,
       "changed": true,
-      "duration_ms": 1432,
+      "duration_ms": 1094,
       "sentinel_check": {
         "expected": [
           "https://www.cabalettabio.com/pipeline/caba-201",
@@ -351,10 +352,10 @@
         "https://www.cartesiantherapeutics.com/pipeline"
       ],
       "assets_monitored": 29,
-      "fingerprint": "22b0d2be8caaab1d1b3f0f717e1e0ceed04a6d3ed9ed05adfcff9b7a93ec93e6",
+      "fingerprint": "903c5d3bcfb3b3f8d4b9f5a35d9f2a919f13dff2ee0c0d0bbb1191c243a891f8",
       "fingerprint_version": 3,
       "changed": true,
-      "duration_ms": 7680,
+      "duration_ms": 3612,
       "sentinel_check": {
         "expected": [
           "https://www.cartesiantherapeutics.com/pipeline/",
@@ -424,7 +425,7 @@
       "fingerprint": "8cf111225d5228211f758ff0a9c1ee5edc5afeacf0370c4f1dedae15e74a2461",
       "fingerprint_version": 3,
       "changed": false,
-      "duration_ms": 1190,
+      "duration_ms": 3609,
       "sentinel_check": {
         "expected": [
           "https://www.iasobio.com/info.php?id=251",
@@ -451,7 +452,7 @@
       "fingerprint": "f2c47d8362e5354c97164ea6b19fa1e2a0fbd226fca7da7a8ee23bb7bd8e3dfe",
       "fingerprint_version": 3,
       "changed": false,
-      "duration_ms": 1247,
+      "duration_ms": 463,
       "sentinel_check": {
         "expected": [],
         "found": [],
@@ -466,10 +467,11 @@
       "status": "ok",
       "pages_scanned": 8,
       "successful_pages": 8,
-      "relevant_links": 8,
+      "relevant_links": 9,
       "relevant_urls": [
         "https://ir.kyvernatx.com/news-releases/news-release-details/kyverna-presents-longer-term-phase-2-data-miv-cel-generalized",
-        "https://ir.kyvernatx.com/news-releases/news-release-details/kyverna-therapeutics-announces-initiation-rolling-sps-bla",
+        "https://ir.kyvernatx.com/news-releases/news-release-details/kyverna-presents-registrational-trial-primary-analysis-miv-cel",
+        "https://ir.kyvernatx.com/news-releases/news-release-details/kyverna-therapeutics-and-elevatebio-enter-commercial",
         "https://ir.kyvernatx.com/news-releases/news-release-details/kyverna-therapeutics-highlights-updated-miv-cel-data-eular",
         "https://kyvernatx.com/patients/lupus-nephritis",
         "https://kyvernatx.com/patients/multiple-sclerosis",
@@ -478,10 +480,10 @@
         "https://kyvernatx.com/patients/systemic-sclerosis"
       ],
       "assets_monitored": 16,
-      "fingerprint": "40d6b61074d566174969000e471885cc699f9fb50992feb9dabc7d7871ed26c8",
+      "fingerprint": "f807712dca9a95948275b940e741819788f3c77aa46d4db107b8b2aee8e7079b",
       "fingerprint_version": 3,
       "changed": true,
-      "duration_ms": 5326,
+      "duration_ms": 2677,
       "sentinel_check": {
         "expected": [
           "https://kyvernatx.com/platform-pipeline/pipeline/",
@@ -507,8 +509,8 @@
       "assets_monitored": 11,
       "fingerprint": "2a5f17199ef5054d8c001b321fc106410df6d3836156512fbbc07c105c487682",
       "fingerprint_version": 3,
-      "changed": null,
-      "duration_ms": 5151,
+      "changed": false,
+      "duration_ms": 695,
       "sentinel_check": {
         "expected": [],
         "found": [],
@@ -531,8 +533,8 @@
       "assets_monitored": 19,
       "fingerprint": "0ee8114fae9c8582c707a871b1bee97594eda2093c7494b289334b8c45d1047c",
       "fingerprint_version": 3,
-      "changed": null,
-      "duration_ms": 2158,
+      "changed": false,
+      "duration_ms": 1383,
       "sentinel_check": {
         "expected": [],
         "found": [],
@@ -684,6 +686,47 @@
     },
     {
       "candidate_type": "trial",
+      "external_id": "NCT07089121",
+      "title": "Descartes-08 for Children, Adolescents and Young Adults With Childhood-onset Systemic Lupus Erythematosus, ANCA-associated Vasculitis, Juvenile Myasthenia Gravis, and Juvenile Dermatomyositis",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT07089121",
+      "status": "RECRUITING",
+      "last_update_posted": "2026-07-27",
+      "phase": [
+        "PHASE1",
+        "PHASE2"
+      ],
+      "enrollment": 50,
+      "sponsor": "Cartesian Therapeutics",
+      "conditions": [
+        "Childhood-onset Systemic Lupus Erythematous",
+        "ANCA-Associated Vasculitis (AAV)",
+        "Juvenile Myasthenia Gravis",
+        "Juvenile Dermatomyositis"
+      ],
+      "matched_diseases": [
+        "myasthenia gravis",
+        "systemic lupus",
+        "myositis"
+      ],
+      "matched_entities": [
+        "cartesian-descartes08"
+      ],
+      "query_matches": [
+        "entity:cartesian-descartes08"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 18,
+      "triage_tier": "立即核验",
+      "triage_reasons": [
+        "正式注册试验",
+        "命中重点实体：Cartesian / Descartes-08",
+        "命中3个重点病种",
+        "当前处于活跃状态"
+      ]
+    },
+    {
+      "candidate_type": "trial",
       "external_id": "NCT07676266",
       "title": "An Exploratory Clinical Study of Anti-CD20/B-cell Maturation Antigen (BCMA) Chimeric Antigen Receptor Autologous T Cell Product (C-CAR168) in the Treatment of Autoimmune Diseases Refractory to Standard Therapy",
       "source": "ClinicalTrials.gov",
@@ -729,47 +772,6 @@
       "triage_reasons": [
         "正式注册试验",
         "命中7个重点病种"
-      ]
-    },
-    {
-      "candidate_type": "trial",
-      "external_id": "NCT07089121",
-      "title": "Descartes-08 for Children, Adolescents and Young Adults With Childhood-onset Systemic Lupus Erythematosus, ANCA-associated Vasculitis, Juvenile Myasthenia Gravis, and Juvenile Dermatomyositis",
-      "source": "ClinicalTrials.gov",
-      "source_url": "https://clinicaltrials.gov/study/NCT07089121",
-      "status": "RECRUITING",
-      "last_update_posted": "2026-04-08",
-      "phase": [
-        "PHASE1",
-        "PHASE2"
-      ],
-      "enrollment": 50,
-      "sponsor": "Cartesian Therapeutics",
-      "conditions": [
-        "Childhood-onset Systemic Lupus Erythematous",
-        "ANCA-Associated Vasculitis (AAV)",
-        "Juvenile Myasthenia Gravis",
-        "Juvenile Dermatomyositis"
-      ],
-      "matched_diseases": [
-        "myasthenia gravis",
-        "systemic lupus",
-        "myositis"
-      ],
-      "matched_entities": [
-        "cartesian-descartes08"
-      ],
-      "query_matches": [
-        "entity:cartesian-descartes08"
-      ],
-      "review_status": "待人工核验",
-      "relevance_score": 18,
-      "triage_tier": "立即核验",
-      "triage_reasons": [
-        "正式注册试验",
-        "命中重点实体：Cartesian / Descartes-08",
-        "命中3个重点病种",
-        "当前处于活跃状态"
       ]
     },
     {
@@ -996,81 +998,78 @@
     },
     {
       "candidate_type": "trial",
-      "external_id": "NCT06588491",
-      "title": "KYSA-8: A Phase 2 Open-Label, Single-Arm, Multicenter Study of KYV-101, an Autologous Fully Human Anti-CD19 Chimeric Antigen Receptor T-Cell (CD19 CAR T) Therapy, in Subjects With Treatment Refractory Stiff Person Syndrome",
+      "external_id": "NCT07224373",
+      "title": "A Phase 1b, Open-label, Multi-center, Randomized Study Evaluating the Safety and Tolerability of AZD0120, an Autologous CD19/BCMA Targeting Chimeric Antigen Receptor T-cells, in Adults With Refractory Relapsing or Progressive Multiple Sclerosis",
       "source": "ClinicalTrials.gov",
-      "source_url": "https://clinicaltrials.gov/study/NCT06588491",
-      "status": "ACTIVE_NOT_RECRUITING",
-      "last_update_posted": "2026-07-13",
+      "source_url": "https://clinicaltrials.gov/study/NCT07224373",
+      "status": "RECRUITING",
+      "last_update_posted": "2026-07-27",
       "phase": [
-        "PHASE2"
+        "PHASE1"
       ],
-      "enrollment": 25,
-      "sponsor": "Kyverna Therapeutics",
+      "enrollment": 24,
+      "sponsor": "AstraZeneca",
       "conditions": [
-        "Stiff-Person Syndrome",
-        "SPS"
+        "Multiple Sclerosis"
       ],
       "matched_diseases": [
-        "stiff person"
+        "multiple sclerosis"
       ],
       "matched_entities": [
-        "kyverna-kyv101",
         "cartesian-descartes08"
       ],
       "query_matches": [
         "theme",
-        "disease:stiff person",
+        "disease:multiple sclerosis",
         "disease:autoimmune disease",
-        "entity:cartesian-descartes08",
-        "entity:kyverna-kyv101"
+        "entity:cartesian-descartes08"
       ],
       "review_status": "待人工核验",
       "relevance_score": 14,
       "triage_tier": "立即核验",
       "triage_reasons": [
         "正式注册试验",
-        "命中重点实体：Kyverna / KYV-101、Cartesian / Descartes-08",
+        "命中重点实体：Cartesian / Descartes-08",
         "命中1个重点病种",
         "当前处于活跃状态"
       ]
     },
     {
       "candidate_type": "trial",
-      "external_id": "NCT06193889",
-      "title": "KYSA-6: A Phase 2/3, Open-Label, Randomized, Controlled, Multicenter Study of KYV-101, an Autologous Fully Human Anti-CD19 Chimeric Antigen Receptor T-cell (CD19 CAR T) Therapy, Versus Ongoing Standard-Of-Care Immunosuppressive Therapy in Patients With Generalized Myasthenia Gravis",
+      "external_id": "NCT06328777",
+      "title": "A Phase 1/2, Open-Label Study to Evaluate the Safety and Efficacy of Autologous CD19-specific Chimeric Antigen Receptor T Cells (CABA-201) in Subjects With Systemic Sclerosis",
       "source": "ClinicalTrials.gov",
-      "source_url": "https://clinicaltrials.gov/study/NCT06193889",
+      "source_url": "https://clinicaltrials.gov/study/NCT06328777",
       "status": "RECRUITING",
-      "last_update_posted": "2026-07-08",
+      "last_update_posted": "2026-07-22",
       "phase": [
-        "PHASE2",
-        "PHASE3"
+        "PHASE1",
+        "PHASE2"
       ],
-      "enrollment": 66,
-      "sponsor": "Kyverna Therapeutics",
+      "enrollment": 12,
+      "sponsor": "Cabaletta Bio",
       "conditions": [
-        "Myasthenia Gravis",
-        "Generalized Myasthenia Gravis"
+        "Systemic Sclerosis",
+        "Scleroderma"
       ],
       "matched_diseases": [
-        "myasthenia gravis"
+        "systemic sclerosis"
       ],
       "matched_entities": [
-        "kyverna-kyv101"
+        "cabaletta-resecel"
       ],
       "query_matches": [
         "theme",
-        "disease:myasthenia gravis",
+        "disease:systemic sclerosis",
         "disease:autoimmune disease",
-        "entity:kyverna-kyv101"
+        "entity:cabaletta-resecel"
       ],
       "review_status": "待人工核验",
       "relevance_score": 14,
       "triage_tier": "立即核验",
       "triage_reasons": [
         "正式注册试验",
-        "命中重点实体：Kyverna / KYV-101",
+        "命中重点实体：Cabaletta Bio / rese-cel / CABA-201",
         "命中1个重点病种",
         "当前处于活跃状态"
       ]
@@ -1228,84 +1227,6 @@
       "triage_reasons": [
         "正式注册试验",
         "命中重点实体：IASO Bio / Eque-cel / CT103A",
-        "命中1个重点病种",
-        "当前处于活跃状态"
-      ]
-    },
-    {
-      "candidate_type": "trial",
-      "external_id": "NCT07224373",
-      "title": "A Phase 1b, Open-label, Multi-center, Randomized Study Evaluating the Safety and Tolerability of AZD0120, an Autologous CD19/BCMA Targeting Chimeric Antigen Receptor T-cells, in Adults With Refractory Relapsing or Progressive Multiple Sclerosis",
-      "source": "ClinicalTrials.gov",
-      "source_url": "https://clinicaltrials.gov/study/NCT07224373",
-      "status": "RECRUITING",
-      "last_update_posted": "2026-05-22",
-      "phase": [
-        "PHASE1"
-      ],
-      "enrollment": 24,
-      "sponsor": "AstraZeneca",
-      "conditions": [
-        "Multiple Sclerosis"
-      ],
-      "matched_diseases": [
-        "multiple sclerosis"
-      ],
-      "matched_entities": [
-        "cartesian-descartes08"
-      ],
-      "query_matches": [
-        "theme",
-        "disease:multiple sclerosis",
-        "disease:autoimmune disease",
-        "entity:cartesian-descartes08"
-      ],
-      "review_status": "待人工核验",
-      "relevance_score": 14,
-      "triage_tier": "立即核验",
-      "triage_reasons": [
-        "正式注册试验",
-        "命中重点实体：Cartesian / Descartes-08",
-        "命中1个重点病种",
-        "当前处于活跃状态"
-      ]
-    },
-    {
-      "candidate_type": "trial",
-      "external_id": "NCT06328777",
-      "title": "A Phase 1/2, Open-Label Study to Evaluate the Safety and Efficacy of Autologous CD19-specific Chimeric Antigen Receptor T Cells (CABA-201) in Subjects With Systemic Sclerosis",
-      "source": "ClinicalTrials.gov",
-      "source_url": "https://clinicaltrials.gov/study/NCT06328777",
-      "status": "RECRUITING",
-      "last_update_posted": "2026-05-14",
-      "phase": [
-        "PHASE1",
-        "PHASE2"
-      ],
-      "enrollment": 12,
-      "sponsor": "Cabaletta Bio",
-      "conditions": [
-        "Systemic Sclerosis",
-        "Scleroderma"
-      ],
-      "matched_diseases": [
-        "systemic sclerosis"
-      ],
-      "matched_entities": [
-        "cabaletta-resecel"
-      ],
-      "query_matches": [
-        "theme",
-        "disease:systemic sclerosis",
-        "disease:autoimmune disease",
-        "entity:cabaletta-resecel"
-      ],
-      "review_status": "待人工核验",
-      "relevance_score": 14,
-      "triage_tier": "立即核验",
-      "triage_reasons": [
-        "正式注册试验",
-        "命中重点实体：Cabaletta Bio / rese-cel / CABA-201",
         "命中1个重点病种",
         "当前处于活跃状态"
       ]
@@ -2287,6 +2208,82 @@
     },
     {
       "candidate_type": "trial",
+      "external_id": "NCT03853616",
+      "title": "A Phase I Safety, Dose Finding and Feasibility Trial of MB-CART19.1 in Patients With Relapsed or Refractory CD19 Positive B Cell Malignancies",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT03853616",
+      "status": "ACTIVE_NOT_RECRUITING",
+      "last_update_posted": "2026-07-24",
+      "phase": [
+        "PHASE1"
+      ],
+      "enrollment": 48,
+      "sponsor": "Miltenyi Biomedicine GmbH",
+      "conditions": [
+        "Acute Lymphoblastic Leukemia Recurrent",
+        "B-cell Lymphoma Recurrent",
+        "B-cell Lymphoma Refractory",
+        "Chronic Lymphocytic Leukemia Recurrent",
+        "Chronic Lymphocytic Leukemia Refractory"
+      ],
+      "matched_diseases": [],
+      "matched_entities": [
+        "miltenyi-autoimmune"
+      ],
+      "query_matches": [
+        "entity:miltenyi-autoimmune"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 12,
+      "triage_tier": "立即核验",
+      "triage_reasons": [
+        "正式注册试验",
+        "命中重点实体：Miltenyi Biomedicine / zamto-cel / MB-CART2019.1",
+        "当前处于活跃状态"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT06588491",
+      "title": "KYSA-8: A Phase 2 Open-Label, Single-Arm, Multicenter Study of KYV-101, an Autologous Fully Human Anti-CD19 Chimeric Antigen Receptor T-Cell (CD19 CAR T) Therapy, in Subjects With Treatment Refractory Stiff Person Syndrome",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT06588491",
+      "status": "COMPLETED",
+      "last_update_posted": "2026-07-24",
+      "phase": [
+        "PHASE2"
+      ],
+      "enrollment": 27,
+      "sponsor": "Kyverna Therapeutics",
+      "conditions": [
+        "Stiff-Person Syndrome",
+        "SPS"
+      ],
+      "matched_diseases": [
+        "stiff person"
+      ],
+      "matched_entities": [
+        "kyverna-kyv101",
+        "cartesian-descartes08"
+      ],
+      "query_matches": [
+        "theme",
+        "disease:stiff person",
+        "disease:autoimmune disease",
+        "entity:cartesian-descartes08",
+        "entity:kyverna-kyv101"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 12,
+      "triage_tier": "立即核验",
+      "triage_reasons": [
+        "正式注册试验",
+        "命中重点实体：Kyverna / KYV-101、Cartesian / Descartes-08",
+        "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "trial",
       "external_id": "NCT07707479",
       "title": "Effect of Long-acting PTH Analogues on Markers of Subclinical Arterial and Myocardial Injury in Chronic Hypoparathyroidism..",
       "source": "ClinicalTrials.gov",
@@ -2998,42 +2995,6 @@
       "triage_reasons": [
         "正式注册试验",
         "命中重点实体：Cartesian / Descartes-08",
-        "当前处于活跃状态"
-      ]
-    },
-    {
-      "candidate_type": "trial",
-      "external_id": "NCT03853616",
-      "title": "A Phase I Safety, Dose Finding and Feasibility Trial of MB-CART19.1 in Patients With Relapsed or Refractory CD19 Positive B Cell Malignancies",
-      "source": "ClinicalTrials.gov",
-      "source_url": "https://clinicaltrials.gov/study/NCT03853616",
-      "status": "ACTIVE_NOT_RECRUITING",
-      "last_update_posted": "2026-04-16",
-      "phase": [
-        "PHASE1"
-      ],
-      "enrollment": 48,
-      "sponsor": "Miltenyi Biomedicine GmbH",
-      "conditions": [
-        "Acute Lymphoblastic Leukemia Recurrent",
-        "B-cell Lymphoma Recurrent",
-        "B-cell Lymphoma Refractory",
-        "Chronic Lymphocytic Leukemia Recurrent",
-        "Chronic Lymphocytic Leukemia Refractory"
-      ],
-      "matched_diseases": [],
-      "matched_entities": [
-        "miltenyi-autoimmune"
-      ],
-      "query_matches": [
-        "entity:miltenyi-autoimmune"
-      ],
-      "review_status": "待人工核验",
-      "relevance_score": 12,
-      "triage_tier": "立即核验",
-      "triage_reasons": [
-        "正式注册试验",
-        "命中重点实体：Miltenyi Biomedicine / zamto-cel / MB-CART2019.1",
         "当前处于活跃状态"
       ]
     },
@@ -4888,6 +4849,36 @@
     },
     {
       "candidate_type": "research",
+      "external_id": "42128226",
+      "title": "Improved assessment of coronary artery disease in obese patients with flurpiridaz-(18)F positron emission tomography myocardial perfusion imaging: A prespecified subgroup analysis of the AURORA phase 3 study.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42128226/",
+      "publication_date": "2026 May 12",
+      "journal": "Journal of nuclear cardiology : official publication of the American Society of Nuclear Cardiology",
+      "doi": "10.1016/j.nuclcard.2026.102741",
+      "publication_type": [
+        "Journal Article",
+        "Clinical Trial, Phase III",
+        "Multicenter Study",
+        "Randomized Controlled Trial"
+      ],
+      "matched_diseases": [],
+      "matched_entities": [
+        "cartesian-descartes08"
+      ],
+      "query_matches": [
+        "entity:cartesian-descartes08"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 11,
+      "triage_tier": "立即核验",
+      "triage_reasons": [
+        "高等级研究类型",
+        "命中重点实体：Cartesian / Descartes-08"
+      ]
+    },
+    {
+      "candidate_type": "research",
       "external_id": "41501916",
       "title": "Home-based patient-centered physical activity program for quality of life preservation during neoadjuvant chemotherapy in breast cancer: the AURORA randomized controlled trial protocol.",
       "source": "NCBI PubMed",
@@ -5149,6 +5140,116 @@
       ]
     },
     {
+      "candidate_type": "official_update",
+      "external_id": "https://ir.kyvernatx.com/news-releases/news-release-details/kyverna-presents-registrational-trial-primary-analysis-miv-cel",
+      "title": "presented",
+      "source": "Kyverna Pipeline & Press Releases",
+      "source_url": "https://ir.kyvernatx.com/news-releases/news-release-details/kyverna-presents-registrational-trial-primary-analysis-miv-cel",
+      "publication_date": "",
+      "matched_diseases": [],
+      "matched_entities": [
+        "kyverna-kyv101"
+      ],
+      "query_matches": [
+        "official:kyverna-official"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 10,
+      "triage_tier": "立即核验",
+      "triage_reasons": [
+        "企业官网一手披露",
+        "命中重点实体：Kyverna / KYV-101"
+      ]
+    },
+    {
+      "candidate_type": "official_update",
+      "external_id": "https://ir.kyvernatx.com/news-releases/news-release-details/kyverna-therapeutics-and-elevatebio-enter-commercial",
+      "title": "Kyverna Therapeutics and ElevateBio Enter into Commercial Manufacturing and Supply Agreement for Miv-cel",
+      "source": "Kyverna Pipeline & Press Releases",
+      "source_url": "https://ir.kyvernatx.com/news-releases/news-release-details/kyverna-therapeutics-and-elevatebio-enter-commercial",
+      "publication_date": "",
+      "matched_diseases": [],
+      "matched_entities": [
+        "kyverna-kyv101"
+      ],
+      "query_matches": [
+        "official:kyverna-official"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 10,
+      "triage_tier": "立即核验",
+      "triage_reasons": [
+        "企业官网一手披露",
+        "命中重点实体：Kyverna / KYV-101"
+      ]
+    },
+    {
+      "candidate_type": "official_update",
+      "external_id": "official-change:cabaletta-official:a5be497c4867",
+      "title": "Cabaletta Bio Pipeline & Press Releases 页面或管线资产发生变化",
+      "source": "Cabaletta Bio Pipeline & Press Releases",
+      "source_url": "https://www.cabalettabio.com/pipeline/caba-201",
+      "publication_date": "2026-07-27",
+      "matched_diseases": [],
+      "matched_entities": [
+        "cabaletta-resecel"
+      ],
+      "query_matches": [
+        "official:cabaletta-official:change"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 10,
+      "triage_tier": "立即核验",
+      "triage_reasons": [
+        "企业官网一手披露",
+        "命中重点实体：Cabaletta Bio / rese-cel / CABA-201"
+      ]
+    },
+    {
+      "candidate_type": "official_update",
+      "external_id": "official-change:cartesian-official:903c5d3bcfb3",
+      "title": "Cartesian Therapeutics Pipeline & Press Releases 页面或管线资产发生变化",
+      "source": "Cartesian Therapeutics Pipeline & Press Releases",
+      "source_url": "https://www.cartesiantherapeutics.com/pipeline/",
+      "publication_date": "2026-07-27",
+      "matched_diseases": [],
+      "matched_entities": [
+        "cartesian-descartes08"
+      ],
+      "query_matches": [
+        "official:cartesian-official:change"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 10,
+      "triage_tier": "立即核验",
+      "triage_reasons": [
+        "企业官网一手披露",
+        "命中重点实体：Cartesian / Descartes-08"
+      ]
+    },
+    {
+      "candidate_type": "official_update",
+      "external_id": "official-change:kyverna-official:f807712dca9a",
+      "title": "Kyverna Pipeline & Press Releases 页面或管线资产发生变化",
+      "source": "Kyverna Pipeline & Press Releases",
+      "source_url": "https://kyvernatx.com/platform-pipeline/pipeline/",
+      "publication_date": "2026-07-27",
+      "matched_diseases": [],
+      "matched_entities": [
+        "kyverna-kyv101"
+      ],
+      "query_matches": [
+        "official:kyverna-official:change"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 10,
+      "triage_tier": "立即核验",
+      "triage_reasons": [
+        "企业官网一手披露",
+        "命中重点实体：Kyverna / KYV-101"
+      ]
+    },
+    {
       "candidate_type": "trial",
       "external_id": "NCT07717164",
       "title": "Comparison of the PRAISE -IR (\"Phase 2 Study of Personalized r-ATG Dosing to Improve Survival Through Enhanced Immune Reconstitution in Pediatric and Adult Patients Undergoing Ex-vivo CD34-Selected Allogeneic-HCT\", NCT04872595) Study Population With CIBMTR Controls",
@@ -5177,72 +5278,6 @@
       "triage_reasons": [
         "正式注册试验",
         "命中重点实体：Miltenyi Biomedicine / zamto-cel / MB-CART2019.1"
-      ]
-    },
-    {
-      "candidate_type": "official_update",
-      "external_id": "official-change:cabaletta-official:f4a306d0756f",
-      "title": "Cabaletta Bio Pipeline & Press Releases 页面或管线资产发生变化",
-      "source": "Cabaletta Bio Pipeline & Press Releases",
-      "source_url": "https://www.cabalettabio.com/pipeline/caba-201",
-      "publication_date": "2026-07-21",
-      "matched_diseases": [],
-      "matched_entities": [
-        "cabaletta-resecel"
-      ],
-      "query_matches": [
-        "official:cabaletta-official:change"
-      ],
-      "review_status": "待人工核验",
-      "relevance_score": 10,
-      "triage_tier": "立即核验",
-      "triage_reasons": [
-        "企业官网一手披露",
-        "命中重点实体：Cabaletta Bio / rese-cel / CABA-201"
-      ]
-    },
-    {
-      "candidate_type": "official_update",
-      "external_id": "official-change:cartesian-official:22b0d2be8caa",
-      "title": "Cartesian Therapeutics Pipeline & Press Releases 页面或管线资产发生变化",
-      "source": "Cartesian Therapeutics Pipeline & Press Releases",
-      "source_url": "https://www.cartesiantherapeutics.com/pipeline/",
-      "publication_date": "2026-07-21",
-      "matched_diseases": [],
-      "matched_entities": [
-        "cartesian-descartes08"
-      ],
-      "query_matches": [
-        "official:cartesian-official:change"
-      ],
-      "review_status": "待人工核验",
-      "relevance_score": 10,
-      "triage_tier": "立即核验",
-      "triage_reasons": [
-        "企业官网一手披露",
-        "命中重点实体：Cartesian / Descartes-08"
-      ]
-    },
-    {
-      "candidate_type": "official_update",
-      "external_id": "official-change:kyverna-official:40d6b61074d5",
-      "title": "Kyverna Pipeline & Press Releases 页面或管线资产发生变化",
-      "source": "Kyverna Pipeline & Press Releases",
-      "source_url": "https://kyvernatx.com/platform-pipeline/pipeline/",
-      "publication_date": "2026-07-21",
-      "matched_diseases": [],
-      "matched_entities": [
-        "kyverna-kyv101"
-      ],
-      "query_matches": [
-        "official:kyverna-official:change"
-      ],
-      "review_status": "待人工核验",
-      "relevance_score": 10,
-      "triage_tier": "立即核验",
-      "triage_reasons": [
-        "企业官网一手披露",
-        "命中重点实体：Kyverna / KYV-101"
       ]
     },
     {
@@ -11178,6 +11213,39 @@
     },
     {
       "candidate_type": "trial",
+      "external_id": "NCT07490951",
+      "title": "A Clinical Study of the Safety, Tolerability and Preliminary Efficacy of CD19/BCMA-targeted CAR-T Therapy in Refractory Autoimmune Diseases",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT07490951",
+      "status": "RECRUITING",
+      "last_update_posted": "2026-07-27",
+      "phase": [
+        "NA"
+      ],
+      "enrollment": 20,
+      "sponsor": "Liang Zou",
+      "conditions": [
+        "Autoimmune Diseases"
+      ],
+      "matched_diseases": [
+        "autoimmune disease"
+      ],
+      "matched_entities": [],
+      "query_matches": [
+        "theme",
+        "disease:autoimmune disease"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 8,
+      "triage_tier": "持续观察",
+      "triage_reasons": [
+        "正式注册试验",
+        "命中1个重点病种",
+        "当前处于活跃状态"
+      ]
+    },
+    {
+      "candidate_type": "trial",
       "external_id": "NCT06935474",
       "title": "Multi-center, Phase 1/2 Study of an Autologous Anti-CD20/BCMA CAR T Cell Therapy (C-CAR168) for the Treatment of Autoimmune Disease Refractory to Standard Therapy",
       "source": "ClinicalTrials.gov",
@@ -13081,6 +13149,36 @@
         "cabaletta-resecel"
       ],
       "query_matches": [
+        "entity:cabaletta-resecel"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 8,
+      "triage_tier": "立即核验",
+      "triage_reasons": [
+        "命中重点实体：Cabaletta Bio / rese-cel / CABA-201",
+        "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42486100",
+      "title": "Safety and efficacy of low-dose, cord blood-derived CD19 CAR-NK cells with 4-1BB co-stimulation in refractory systemic lupus erythematosus.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42486100/",
+      "publication_date": "2026 Jul 22",
+      "journal": "Med (New York, N.Y.)",
+      "doi": "10.1016/j.medj.2026.101226",
+      "publication_type": [
+        "Journal Article"
+      ],
+      "matched_diseases": [
+        "systemic lupus"
+      ],
+      "matched_entities": [
+        "cabaletta-resecel"
+      ],
+      "query_matches": [
+        "theme",
         "entity:cabaletta-resecel"
       ],
       "review_status": "待人工核验",
@@ -16494,6 +16592,34 @@
     },
     {
       "candidate_type": "research",
+      "external_id": "42235055",
+      "title": "Systematic Review of Chimeric Antigen Receptor T-cell Therapy in Autoimmune Diseases.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42235055/",
+      "publication_date": "2026 May 27",
+      "journal": "Journal of clinical rheumatology : practical reports on rheumatic & musculoskeletal diseases",
+      "doi": "10.1097/RHU.0000000000002354",
+      "publication_type": [
+        "Journal Article",
+        "Systematic Review"
+      ],
+      "matched_diseases": [
+        "autoimmune disease"
+      ],
+      "matched_entities": [],
+      "query_matches": [
+        "theme"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 7,
+      "triage_tier": "立即核验",
+      "triage_reasons": [
+        "高等级研究类型",
+        "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "research",
       "external_id": "41781158",
       "title": "CAR-T cell therapy for treatment-refractory rheumatic autoimmune diseases: a systematic review of clinical outcomes and safety profiles.",
       "source": "NCBI PubMed",
@@ -16916,6 +17042,37 @@
       "triage_tier": "立即核验",
       "triage_reasons": [
         "高等级研究类型",
+        "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT07720310",
+      "title": "Anti-CD19 CAR-T Cell Therapy for Patients With Refractory Systemic Lupus Erythematosus",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT07720310",
+      "status": "ENROLLING_BY_INVITATION",
+      "last_update_posted": "2026-07-22",
+      "phase": [],
+      "enrollment": 12,
+      "sponsor": "N.N. Alexandrov National Cancer Centre",
+      "conditions": [
+        "System Lupus Erythematosus(SLE)"
+      ],
+      "matched_diseases": [
+        "systemic lupus"
+      ],
+      "matched_entities": [],
+      "query_matches": [
+        "theme",
+        "disease:systemic lupus",
+        "disease:autoimmune disease"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 6,
+      "triage_tier": "持续观察",
+      "triage_reasons": [
+        "正式注册试验",
         "命中1个重点病种"
       ]
     },
@@ -17484,38 +17641,6 @@
       "query_matches": [
         "theme",
         "disease:multiple sclerosis",
-        "disease:autoimmune disease"
-      ],
-      "review_status": "待人工核验",
-      "relevance_score": 6,
-      "triage_tier": "持续观察",
-      "triage_reasons": [
-        "正式注册试验",
-        "命中1个重点病种"
-      ]
-    },
-    {
-      "candidate_type": "trial",
-      "external_id": "NCT07490951",
-      "title": "A Clinical Study on the Safety, Tolerability and Preliminary Efficacy of Targeted CD19/BCMA CAR-T Therapy in the Treatment of Refractory Autoimmune Diseases (ADs)",
-      "source": "ClinicalTrials.gov",
-      "source_url": "https://clinicaltrials.gov/study/NCT07490951",
-      "status": "NOT_YET_RECRUITING",
-      "last_update_posted": "2026-03-24",
-      "phase": [
-        "NA"
-      ],
-      "enrollment": 20,
-      "sponsor": "Shenzhen Genocury Biotech Co., Ltd.",
-      "conditions": [
-        "Autoimmune Diseases"
-      ],
-      "matched_diseases": [
-        "autoimmune disease"
-      ],
-      "matched_entities": [],
-      "query_matches": [
-        "theme",
         "disease:autoimmune disease"
       ],
       "review_status": "待人工核验",
@@ -18192,32 +18317,6 @@
       "publication_date": "2026 May 14",
       "journal": "Journal of mood and anxiety disorders",
       "doi": "10.1016/j.xjmad.2026.100180",
-      "publication_type": [
-        "Journal Article"
-      ],
-      "matched_diseases": [],
-      "matched_entities": [
-        "cartesian-descartes08"
-      ],
-      "query_matches": [
-        "entity:cartesian-descartes08"
-      ],
-      "review_status": "待人工核验",
-      "relevance_score": 6,
-      "triage_tier": "立即核验",
-      "triage_reasons": [
-        "命中重点实体：Cartesian / Descartes-08"
-      ]
-    },
-    {
-      "candidate_type": "research",
-      "external_id": "42128226",
-      "title": "Improved assessment of coronary artery disease in obese Patients with flurpiridaz-(18)F positron emission tomography myocardial perfusion imaging: A prespecified subgroup analysis of the AURORA phase 3 study.",
-      "source": "NCBI PubMed",
-      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42128226/",
-      "publication_date": "2026 May 12",
-      "journal": "Journal of nuclear cardiology : official publication of the American Society of Nuclear Cardiology",
-      "doi": "10.1016/j.nuclcard.2026.102741",
       "publication_type": [
         "Journal Article"
       ],
@@ -18971,6 +19070,33 @@
     },
     {
       "candidate_type": "research",
+      "external_id": "42490878",
+      "title": "Aurora kinase B as a therapeutic target in HPV-induced cervical cancer: mechanisms and future perspectives.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42490878/",
+      "publication_date": "2026 Jul 3",
+      "journal": "Frontiers in oncology",
+      "doi": "10.3389/fonc.2026.1857128",
+      "publication_type": [
+        "Journal Article",
+        "Review"
+      ],
+      "matched_diseases": [],
+      "matched_entities": [
+        "cartesian-descartes08"
+      ],
+      "query_matches": [
+        "entity:cartesian-descartes08"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 6,
+      "triage_tier": "立即核验",
+      "triage_reasons": [
+        "命中重点实体：Cartesian / Descartes-08"
+      ]
+    },
+    {
+      "candidate_type": "research",
       "external_id": "42476287",
       "title": "Polyploid giant cancer cells: A hidden cost of Aurora Kinase inhibitors and antimitotic therapies revealed through the PGCC Explorer.",
       "source": "NCBI PubMed",
@@ -19058,6 +19184,32 @@
       "doi": "10.1126/science.aek5958",
       "publication_type": [
         "News"
+      ],
+      "matched_diseases": [],
+      "matched_entities": [
+        "cartesian-descartes08"
+      ],
+      "query_matches": [
+        "entity:cartesian-descartes08"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 6,
+      "triage_tier": "立即核验",
+      "triage_reasons": [
+        "命中重点实体：Cartesian / Descartes-08"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42500578",
+      "title": "Targeting Aurora A Kinase Enhance the CDK4/6 Inhibitor Sensitivity in HR+/HER2- Breast Cancer.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42500578/",
+      "publication_date": "2026 Jul 16",
+      "journal": "Oncology research",
+      "doi": "10.32604/or.2026.081653",
+      "publication_type": [
+        "Journal Article"
       ],
       "matched_diseases": [],
       "matched_entities": [
@@ -23103,7 +23255,8 @@
       "publication_type": [
         "Journal Article",
         "Observational Study",
-        "Multicenter Study"
+        "Multicenter Study",
+        "Research Support, Non-U.S. Gov't"
       ],
       "matched_diseases": [],
       "matched_entities": [
@@ -23945,7 +24098,8 @@
       "journal": "Investigative ophthalmology & visual science",
       "doi": "10.1167/iovs.66.2.20",
       "publication_type": [
-        "Journal Article"
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
       ],
       "matched_diseases": [],
       "matched_entities": [
@@ -26740,6 +26894,32 @@
       "matched_entities": [],
       "query_matches": [
         "entity:cartesian-descartes08"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 5,
+      "triage_tier": "背景材料",
+      "triage_reasons": [
+        "高等级研究类型"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42201777",
+      "title": "CD19 CAR T-cell therapy is feasible for patients with pemphigus vulgaris treated without lymphodepletion in the RESET-PV trial.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42201777/",
+      "publication_date": "2026 Jul 30",
+      "journal": "Blood",
+      "doi": "10.1182/blood.2025032093",
+      "publication_type": [
+        "Journal Article",
+        "Clinical Trial"
+      ],
+      "matched_diseases": [],
+      "matched_entities": [],
+      "query_matches": [
+        "theme",
+        "entity:cabaletta-resecel"
       ],
       "review_status": "待人工核验",
       "relevance_score": 5,
@@ -29718,32 +29898,6 @@
     },
     {
       "candidate_type": "research",
-      "external_id": "42235055",
-      "title": "Systematic Review of Chimeric Antigen Receptor T-cell Therapy in Autoimmune Diseases.",
-      "source": "NCBI PubMed",
-      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42235055/",
-      "publication_date": "2026 May 27",
-      "journal": "Journal of clinical rheumatology : practical reports on rheumatic & musculoskeletal diseases",
-      "doi": "10.1097/RHU.0000000000002354",
-      "publication_type": [
-        "Journal Article"
-      ],
-      "matched_diseases": [
-        "autoimmune disease"
-      ],
-      "matched_entities": [],
-      "query_matches": [
-        "theme"
-      ],
-      "review_status": "待人工核验",
-      "relevance_score": 2,
-      "triage_tier": "低相关",
-      "triage_reasons": [
-        "命中1个重点病种"
-      ]
-    },
-    {
-      "candidate_type": "research",
       "external_id": "42161854",
       "title": "The hunt for a cure: modern medical approaches for immune thrombocytopenia.",
       "source": "NCBI PubMed",
@@ -30435,6 +30589,85 @@
     },
     {
       "candidate_type": "research",
+      "external_id": "42498681",
+      "title": "BCMA-directed CAR-T cell therapy induces durable drug-free remission in refractory primary immune thrombocytopenia.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42498681/",
+      "publication_date": "2026 Jul 24",
+      "journal": "Blood",
+      "doi": "10.1182/blood.2026035047",
+      "publication_type": [
+        "Journal Article"
+      ],
+      "matched_diseases": [
+        "immune thrombocytopenia"
+      ],
+      "matched_entities": [],
+      "query_matches": [
+        "theme"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 2,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42493310",
+      "title": "CNS immune remodelling in SLE associated with anti-CD19 CAR-T therapy.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42493310/",
+      "publication_date": "2026 Jul 23",
+      "journal": "Annals of the rheumatic diseases",
+      "doi": "10.1016/j.ard.2026.06.030",
+      "publication_type": [
+        "Journal Article"
+      ],
+      "matched_diseases": [
+        "systemic lupus"
+      ],
+      "matched_entities": [],
+      "query_matches": [
+        "theme"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 2,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42482223",
+      "title": "Targeting progressive multiple sclerosis: Toward mechanism-informed precision medicine.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42482223/",
+      "publication_date": "2026 Jul 21",
+      "journal": "Journal of internal medicine",
+      "doi": "10.1111/joim.70125",
+      "publication_type": [
+        "Journal Article",
+        "Review"
+      ],
+      "matched_diseases": [
+        "multiple sclerosis"
+      ],
+      "matched_entities": [],
+      "query_matches": [
+        "theme"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 2,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "research",
       "external_id": "42476268",
       "title": "Beyond immune checkpoint blockade: T cell engagers and antibody-drug conjugates in cancer and autoimmune disease.",
       "source": "NCBI PubMed",
@@ -31006,6 +31239,32 @@
       ],
       "matched_diseases": [
         "autoimmune disease"
+      ],
+      "matched_entities": [],
+      "query_matches": [
+        "theme"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 2,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42481080",
+      "title": "KDOQI US Commentary on the KDIGO 2024 Clinical Practice Guideline for the Management of Lupus Nephritis.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42481080/",
+      "publication_date": "2026 Aug",
+      "journal": "American journal of kidney diseases : the official journal of the National Kidney Foundation",
+      "doi": "10.1053/j.ajkd.2026.05.002",
+      "publication_type": [
+        "Journal Article"
+      ],
+      "matched_diseases": [
+        "systemic lupus"
       ],
       "matched_entities": [],
       "query_matches": [
@@ -35326,7 +35585,8 @@
       "doi": "10.1016/j.jtha.2024.09.024",
       "publication_type": [
         "Case Reports",
-        "Journal Article"
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
       ],
       "matched_diseases": [
         "systemic lupus"
@@ -35528,6 +35788,55 @@
       "triage_tier": "低相关",
       "triage_reasons": [
         "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42505130",
+      "title": "The use of machine learning interatomic potentials for the verification of experimental molecular crystal structures.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42505130/",
+      "publication_date": "2026 Sep 1",
+      "journal": "IUCrJ",
+      "doi": "10.1107/S2052252526006949",
+      "publication_type": [
+        "Journal Article"
+      ],
+      "matched_diseases": [],
+      "matched_entities": [],
+      "query_matches": [
+        "entity:cartesian-descartes08"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 0,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "仅命中宽泛检索词"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42498517",
+      "title": "The Secret (Mitotic) Life of Clathrin.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42498517/",
+      "publication_date": "2026 Sep",
+      "journal": "Traffic (Copenhagen, Denmark)",
+      "doi": "10.1111/tra.70047",
+      "publication_type": [
+        "Journal Article",
+        "Review"
+      ],
+      "matched_diseases": [],
+      "matched_entities": [],
+      "query_matches": [
+        "entity:cartesian-descartes08"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 0,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "仅命中宽泛检索词"
       ]
     },
     {
@@ -36402,31 +36711,6 @@
       "matched_diseases": [],
       "matched_entities": [],
       "query_matches": [
-        "entity:cabaletta-resecel"
-      ],
-      "review_status": "待人工核验",
-      "relevance_score": 0,
-      "triage_tier": "低相关",
-      "triage_reasons": [
-        "仅命中宽泛检索词"
-      ]
-    },
-    {
-      "candidate_type": "research",
-      "external_id": "42201777",
-      "title": "CD19 CAR T Therapy Is Feasible in Patients with Pemphigus Vulgaris Treated Without Lymphodepletion in the RESET-PV Trial.",
-      "source": "NCBI PubMed",
-      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42201777/",
-      "publication_date": "2026 May 26",
-      "journal": "Blood",
-      "doi": "10.1182/blood.2025032093",
-      "publication_type": [
-        "Journal Article"
-      ],
-      "matched_diseases": [],
-      "matched_entities": [],
-      "query_matches": [
-        "theme",
         "entity:cabaletta-resecel"
       ],
       "review_status": "待人工核验",
@@ -42791,7 +43075,7 @@
     {
       "candidate_type": "research",
       "external_id": "42262522",
-      "title": "Reduced CCL/Be-specific CD4+ T cells in CCL3-deficient or peptide-MHC II CAR-T cell-treated mice.",
+      "title": "Reduced CCL/Be-specific CD4+ T cells in CCL3-deficient or peptide-MHCII CAR-T cell-treated mice.",
       "source": "NCBI PubMed",
       "source_url": "https://pubmed.ncbi.nlm.nih.gov/42262522/",
       "publication_date": "2026 Jun 2",
@@ -43712,6 +43996,30 @@
     },
     {
       "candidate_type": "research",
+      "external_id": "42494384",
+      "title": "Quantum Landauer erasure using magnetic tunneling junctions.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42494384/",
+      "publication_date": "2026 Jun 1",
+      "journal": "Nanoscale advances",
+      "doi": "10.1039/d5na01057h",
+      "publication_type": [
+        "Journal Article"
+      ],
+      "matched_diseases": [],
+      "matched_entities": [],
+      "query_matches": [
+        "entity:cabaletta-resecel"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 0,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "仅命中宽泛检索词"
+      ]
+    },
+    {
+      "candidate_type": "research",
       "external_id": "41348787",
       "title": "BpBLS: A Knowledge-Embedded Bi-Incremental Broad Learning System for Wearable Cuffless Blood Pressure Estimation.",
       "source": "NCBI PubMed",
@@ -43939,8 +44247,7 @@
       "journal": "Cell host & microbe",
       "doi": "10.1016/j.chom.2026.06.014",
       "publication_type": [
-        "Journal Article",
-        "Review"
+        "Journal Article"
       ],
       "matched_diseases": [],
       "matched_entities": [],
@@ -43957,7 +44264,7 @@
     {
       "candidate_type": "research",
       "external_id": "42419590",
-      "title": "Beyond Conventional CARs: Expanding the Targetable Antigen Landscape in CAR-T Cell Therapy.",
+      "title": "Beyond Conventional Chimeric Antigen Receptors: Expanding the Targetable Antigen Landscape in Chimeric Antigen Receptor-T Cell Therapy.",
       "source": "NCBI PubMed",
       "source_url": "https://pubmed.ncbi.nlm.nih.gov/42419590/",
       "publication_date": "2026 Jul 8",
@@ -43995,6 +44302,31 @@
       "matched_entities": [],
       "query_matches": [
         "entity:cartesian-descartes08"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 0,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "仅命中宽泛检索词"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42483189",
+      "title": "Unraveling the autoimmune architecture of pemphigus: from B-cell depletion to network-based immune engineering.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42483189/",
+      "publication_date": "2026 Jul 7",
+      "journal": "Frontiers in immunology",
+      "doi": "10.3389/fimmu.2026.1844632",
+      "publication_type": [
+        "Journal Article",
+        "Review"
+      ],
+      "matched_diseases": [],
+      "matched_entities": [],
+      "query_matches": [
+        "entity:cabaletta-resecel"
       ],
       "review_status": "待人工核验",
       "relevance_score": 0,
@@ -44175,6 +44507,294 @@
     },
     {
       "candidate_type": "research",
+      "external_id": "42504587",
+      "title": "Stress and mitosis-dependent phosphorylation of NIFK on Ser247.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42504587/",
+      "publication_date": "2026 Jul 27",
+      "journal": "Journal of cell science",
+      "doi": "10.1242/jcs.264641",
+      "publication_type": [
+        "Journal Article"
+      ],
+      "matched_diseases": [],
+      "matched_entities": [],
+      "query_matches": [
+        "entity:cartesian-descartes08"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 0,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "仅命中宽泛检索词"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42507568",
+      "title": "LPCM: Learning-based Predictive Coding for LiDAR Point Cloud Compression.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42507568/",
+      "publication_date": "2026 Jul 27",
+      "journal": "IEEE transactions on image processing : a publication of the IEEE Signal Processing Society",
+      "doi": "10.1109/TIP.2026.3714856",
+      "publication_type": [
+        "Journal Article"
+      ],
+      "matched_diseases": [],
+      "matched_entities": [],
+      "query_matches": [
+        "entity:cartesian-descartes08"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 0,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "仅命中宽泛检索词"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42508145",
+      "title": "Extracellular vesicles derived from fetal stem cells in early pregnancy modulate glycolysis and lipid metabolism to induce apoptosis in cancer cells.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42508145/",
+      "publication_date": "2026 Jul 27",
+      "journal": "Translational oncology",
+      "doi": "10.1016/j.tranon.2026.102938",
+      "publication_type": [
+        "Journal Article"
+      ],
+      "matched_diseases": [],
+      "matched_entities": [],
+      "query_matches": [
+        "entity:cabaletta-resecel"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 0,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "仅命中宽泛检索词"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42503300",
+      "title": "Pixel-Wise Uncertainty Quantification of Accelerated MRI Reconstruction.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42503300/",
+      "publication_date": "2026 Jul 26",
+      "journal": "Magnetic resonance in medicine",
+      "doi": "10.1002/mrm.70526",
+      "publication_type": [
+        "Journal Article"
+      ],
+      "matched_diseases": [],
+      "matched_entities": [],
+      "query_matches": [
+        "entity:cartesian-descartes08"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 0,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "仅命中宽泛检索词"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42503318",
+      "title": "Depression and anxiety escalate across academic semesters within a dominant annual rhythm: Weekly multiyear evidence from U.S. college students.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42503318/",
+      "publication_date": "2026 Jul 26",
+      "journal": "Journal of affective disorders",
+      "doi": "10.1016/j.jad.2026.122321",
+      "publication_type": [
+        "Journal Article"
+      ],
+      "matched_diseases": [],
+      "matched_entities": [],
+      "query_matches": [
+        "entity:cabaletta-resecel"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 0,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "仅命中宽泛检索词"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42496885",
+      "title": "Orchestrating resistance trajectories in TaO(x) memristors: the synergy of pulse stimulus and initial filament states.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42496885/",
+      "publication_date": "2026 Jul 24",
+      "journal": "Materials horizons",
+      "doi": "10.1039/d6mh00513f",
+      "publication_type": [
+        "Journal Article"
+      ],
+      "matched_diseases": [],
+      "matched_entities": [],
+      "query_matches": [
+        "entity:cabaletta-resecel"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 0,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "仅命中宽泛检索词"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42498859",
+      "title": "Context Matters: Mapping Social Determinants of Health and Physical Function in Older People with HIV Using Geolocation Data.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42498859/",
+      "publication_date": "2026 Jul 24",
+      "journal": "Journal of urban health : bulletin of the New York Academy of Medicine",
+      "doi": "10.1007/s11524-026-01116-9",
+      "publication_type": [
+        "Journal Article"
+      ],
+      "matched_diseases": [],
+      "matched_entities": [],
+      "query_matches": [
+        "entity:cartesian-descartes08"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 0,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "仅命中宽泛检索词"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42504416",
+      "title": "Competitive Multi-Ion Transport in Sub-Nanopores Enables Memristive Behaviors and Synaptic Plasticity.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42504416/",
+      "publication_date": "2026 Jul 24",
+      "journal": "ACS applied materials & interfaces",
+      "doi": "10.1021/acsami.6c10781",
+      "publication_type": [
+        "Journal Article"
+      ],
+      "matched_diseases": [],
+      "matched_entities": [],
+      "query_matches": [
+        "entity:cabaletta-resecel"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 0,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "仅命中宽泛检索词"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42460830",
+      "title": "Beyond innovation: why rare disease gene therapy needs a reset.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42460830/",
+      "publication_date": "2026 Jul 23",
+      "journal": "Expert opinion on biological therapy",
+      "doi": "10.1080/14712598.2026.2706035",
+      "publication_type": [
+        "Editorial"
+      ],
+      "matched_diseases": [],
+      "matched_entities": [],
+      "query_matches": [
+        "entity:cabaletta-resecel"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 0,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "仅命中宽泛检索词"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42489340",
+      "title": "Volatile ZrO(2) Antiferroelectric Tunnel Junctions for Rapid, Energy-Efficient Physical Reservoir Computing.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42489340/",
+      "publication_date": "2026 Jul 23",
+      "journal": "Advanced science (Weinheim, Baden-Wurttemberg, Germany)",
+      "doi": "10.1002/advs.76692",
+      "publication_type": [
+        "Journal Article"
+      ],
+      "matched_diseases": [],
+      "matched_entities": [],
+      "query_matches": [
+        "entity:cabaletta-resecel"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 0,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "仅命中宽泛检索词"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42489683",
+      "title": "Multikinase Inhibition with Tinengotinib in Advanced Solid Tumors: Results from a Multicenter Phase Ib/II Trial.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42489683/",
+      "publication_date": "2026 Jul 23",
+      "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+      "doi": "10.1158/1078-0432.CCR-26-1076",
+      "publication_type": [
+        "Journal Article"
+      ],
+      "matched_diseases": [],
+      "matched_entities": [],
+      "query_matches": [
+        "entity:cartesian-descartes08"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 0,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "仅命中宽泛检索词"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42490276",
+      "title": "Computational protein stability analysis of SCN1A missense variants reveals domain-dependent stability patterns.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42490276/",
+      "publication_date": "2026 Jul 23",
+      "journal": "Epilepsia open",
+      "doi": "10.1002/epi4.70312",
+      "publication_type": [
+        "Journal Article"
+      ],
+      "matched_diseases": [],
+      "matched_entities": [],
+      "query_matches": [
+        "entity:cartesian-descartes08"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 0,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "仅命中宽泛检索词"
+      ]
+    },
+    {
+      "candidate_type": "research",
       "external_id": "42289849",
       "title": "A peripheral blood-based approach involving vimentin along with AURKA enabled efficient tracking of elusive Oct4/Sox2-expressing disseminated breast cancer stem cells.",
       "source": "NCBI PubMed",
@@ -44199,8 +44819,128 @@
     },
     {
       "candidate_type": "research",
+      "external_id": "42486609",
+      "title": "Therapy-induced senescence rewires the melanoma secretome to promote antitumor immune response and augment cell therapies.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42486609/",
+      "publication_date": "2026 Jul 22",
+      "journal": "Journal for immunotherapy of cancer",
+      "doi": "10.1136/jitc-2025-013441",
+      "publication_type": [
+        "Journal Article"
+      ],
+      "matched_diseases": [],
+      "matched_entities": [],
+      "query_matches": [
+        "entity:cartesian-descartes08"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 0,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "仅命中宽泛检索词"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42486671",
+      "title": "Hemifield-Specific Motion Extrapolation Reveals Limits of Interhemispheric Integration.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42486671/",
+      "publication_date": "2026 Jul 22",
+      "journal": "eNeuro",
+      "doi": "10.1523/ENEURO.0004-26.2026",
+      "publication_type": [
+        "Journal Article"
+      ],
+      "matched_diseases": [],
+      "matched_entities": [],
+      "query_matches": [
+        "entity:cabaletta-resecel"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 0,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "仅命中宽泛检索词"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42478961",
+      "title": "Dual-MEK Inhibitor Atebimetinib Displays Broad Activity in RAS- and RAF-Mutant Tumors via Deep Cyclic Inhibition and Resisting RAF-Bypass.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42478961/",
+      "publication_date": "2026 Jul 21",
+      "journal": "Cancer research",
+      "doi": "10.1158/0008-5472.CAN-25-4907",
+      "publication_type": [
+        "Journal Article"
+      ],
+      "matched_diseases": [],
+      "matched_entities": [],
+      "query_matches": [
+        "entity:cabaletta-resecel"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 0,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "仅命中宽泛检索词"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42480527",
+      "title": "Localized PD-1 CAR T therapy reprograms neuroinflammation.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42480527/",
+      "publication_date": "2026 Jul 21",
+      "journal": "Cell",
+      "doi": "10.1016/j.cell.2026.06.036",
+      "publication_type": [
+        "Journal Article"
+      ],
+      "matched_diseases": [],
+      "matched_entities": [],
+      "query_matches": [
+        "theme"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 0,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "仅命中宽泛检索词"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42481665",
+      "title": "DNA methylation reprogramming of gene regulatory elements is associated with lung metastasis in triple-negative breast cancer.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42481665/",
+      "publication_date": "2026 Jul 21",
+      "journal": "Communications biology",
+      "doi": "10.1038/s42003-026-10698-8",
+      "publication_type": [
+        "Journal Article"
+      ],
+      "matched_diseases": [],
+      "matched_entities": [],
+      "query_matches": [
+        "entity:cartesian-descartes08"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 0,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "仅命中宽泛检索词"
+      ]
+    },
+    {
+      "candidate_type": "research",
       "external_id": "42476334",
-      "title": "The Systemic Homeostatic Integration-Field Theory (SHIFT): Lipid-Based Particle Ensembles as a Candidate Ascending Observational Layer for Whole-Body Homeostasis.",
+      "title": "The systemic homeostatic integration-field theory (SHIFT): Lipid-based particle ensemble as a candidate ascending observational layer for whole-body homeostasis.",
       "source": "NCBI PubMed",
       "source_url": "https://pubmed.ncbi.nlm.nih.gov/42476334/",
       "publication_date": "2026 Jul 20",
@@ -44633,30 +45373,6 @@
     },
     {
       "candidate_type": "research",
-      "external_id": "42460830",
-      "title": "Beyond innovation: why rare disease gene therapy needs a reset.",
-      "source": "NCBI PubMed",
-      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42460830/",
-      "publication_date": "2026 Jul 16",
-      "journal": "Expert opinion on biological therapy",
-      "doi": "10.1080/14712598.2026.2706035",
-      "publication_type": [
-        "Editorial"
-      ],
-      "matched_diseases": [],
-      "matched_entities": [],
-      "query_matches": [
-        "entity:cabaletta-resecel"
-      ],
-      "review_status": "待人工核验",
-      "relevance_score": 0,
-      "triage_tier": "低相关",
-      "triage_reasons": [
-        "仅命中宽泛检索词"
-      ]
-    },
-    {
-      "candidate_type": "research",
       "external_id": "42461652",
       "title": "Emerging concepts in baroreflex regulation of action potential subpopulations in human muscle sympathetic nerve activity.",
       "source": "NCBI PubMed",
@@ -44938,6 +45654,30 @@
       "matched_entities": [],
       "query_matches": [
         "theme"
+      ],
+      "review_status": "待人工核验",
+      "relevance_score": 0,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "仅命中宽泛检索词"
+      ]
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42481346",
+      "title": "Dynamic behavior of double-cube multi-bubble system driven by square waves.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42481346/",
+      "publication_date": "2026 Jul 14",
+      "journal": "Ultrasonics sonochemistry",
+      "doi": "10.1016/j.ultsonch.2026.107955",
+      "publication_type": [
+        "Journal Article"
+      ],
+      "matched_diseases": [],
+      "matched_entities": [],
+      "query_matches": [
+        "entity:cartesian-descartes08"
       ],
       "review_status": "待人工核验",
       "relevance_score": 0,
@@ -51927,7 +52667,8 @@
       "publication_type": [
         "Journal Article",
         "Review",
-        "Video-Audio Media"
+        "Video-Audio Media",
+        "Research Support, Non-U.S. Gov't"
       ],
       "matched_diseases": [],
       "matched_entities": [],
@@ -53341,7 +54082,9 @@
       "journal": "International journal of radiation oncology, biology, physics",
       "doi": "10.1016/j.ijrobp.2025.08.059",
       "publication_type": [
-        "Journal Article"
+        "Journal Article",
+        "Research Support, N.I.H., Extramural",
+        "Research Support, Non-U.S. Gov't"
       ],
       "matched_diseases": [],
       "matched_entities": [],
@@ -62405,7 +63148,8 @@
       "journal": "Journal of proteome research",
       "doi": "10.1021/acs.jproteome.4c00742",
       "publication_type": [
-        "Journal Article"
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
       ],
       "matched_diseases": [],
       "matched_entities": [],
@@ -71639,7 +72383,8 @@
       "journal": "Journal of the American Heart Association",
       "doi": "10.1161/JAHA.124.037402",
       "publication_type": [
-        "Journal Article"
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
       ],
       "matched_diseases": [],
       "matched_entities": [],
@@ -73182,7 +73927,8 @@
       "journal": "Trends in plant science",
       "doi": "10.1016/j.tplants.2025.11.014",
       "publication_type": [
-        "Journal Article"
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
       ],
       "matched_diseases": [],
       "matched_entities": [],
@@ -76032,7 +76778,8 @@
       "journal": "Analytical chemistry",
       "doi": "10.1021/acs.analchem.5c03168",
       "publication_type": [
-        "Journal Article"
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
       ],
       "matched_diseases": [],
       "matched_entities": [],
@@ -76056,7 +76803,9 @@
       "journal": "Nature chemistry",
       "doi": "10.1038/s41557-025-01889-7",
       "publication_type": [
-        "Journal Article"
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't",
+        "Research Support, N.I.H., Extramural"
       ],
       "matched_diseases": [],
       "matched_entities": [],

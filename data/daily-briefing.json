@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-19T02:44:38.998Z",
-  "as_of": "2026-07-17",
+  "generated_at": "2026-07-27T23:34:04.378Z",
+  "as_of": "2026-07-21",
   "headline": {
     "id": "pmid-42251699",
     "title": "CAR-T细胞疗法使合并CNS受累CLL与多发性硬化患者获得完全缓解",
@@ -10,13 +10,29 @@
     "evidence_level": "病例报道·IIT"
   },
   "snapshot": {
-    "formal_records": 170,
-    "externally_verified": 130,
-    "active_priority_trials": 31,
-    "candidate_items": 3045,
-    "quality_score": 47
+    "formal_records": 187,
+    "externally_verified": 67,
+    "active_priority_trials": 35,
+    "candidate_items": 3062,
+    "quality_score": 0
   },
   "verified_updates": [
+    {
+      "id": "event-nct07715136-update",
+      "title": "iCell登记ICG318治疗难治性炎性肌病的Phase 1研究",
+      "summary": "NCT07715136首次公开，计划在四川大学华西医院入组10例难治性IIM成人患者。",
+      "date": "2026-07-20",
+      "source_url": "https://clinicaltrials.gov/study/NCT07715136",
+      "topic": "IIM"
+    },
+    {
+      "id": "event-kyverna-kysa6-phase3",
+      "title": "Kyverna的KYSA-6注册性gMG Phase 3持续招募",
+      "summary": "NCT06193889已扩展为Phase 2/3；Phase 3采用开放标签、随机、标准免疫抑制治疗对照设计，计划总入组66例。",
+      "date": "2026-07-08",
+      "source_url": "https://clinicaltrials.gov/study/NCT06193889",
+      "topic": "MG"
+    },
     {
       "id": "event-feed-42414128",
       "title": "儿童SLE相关难治性ITP的双靶点CAR-T病例进入证据池",
@@ -40,25 +56,19 @@
       "date": "2026-07-01",
       "source_url": "https://clinicaltrials.gov/study/NCT06220201",
       "topic": "MS / MG"
-    },
-    {
-      "id": "event-ytb323-update",
-      "title": "Novartis YTB323 MG I/II期试验更新",
-      "summary": "NCT06704269正在招募15例治疗抵抗性全身型MG患者。",
-      "date": "2026-06-26",
-      "source_url": "https://clinicaltrials.gov/study/NCT06704269",
-      "topic": "MG"
-    },
-    {
-      "id": "event-feed-42295377",
-      "title": "MS新兴治疗策略综述补充竞品治疗背景",
-      "summary": "将CAR-T放回多种创新和靶向治疗路线中比较，有助于判断其差异化价值。",
-      "date": "2026-06-15",
-      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42295377/",
-      "topic": "MS"
     }
   ],
   "trial_watch": [
+    {
+      "id": "icell-icg318-iim-phase1",
+      "name": "ICG318 in Refractory Inflammatory Myopathy",
+      "product": "ICG318",
+      "indication": "IIM / Dermatomyositis / IMNM / ASyS",
+      "status": "Recruiting",
+      "enrollment": 10,
+      "last_update": "2026-07-20",
+      "registry_url": "https://clinicaltrials.gov/study/NCT07715136"
+    },
     {
       "id": "cabaletta-resecel-myositis",
       "name": "RESET-Myositis：rese-cel治疗成人及青少年IIM",
@@ -66,8 +76,18 @@
       "indication": "Dermatomyositis / Antisynthetase syndrome / IMNM / Juvenile IIM",
       "status": "Recruiting",
       "enrollment": 74,
-      "last_update": "2026-07-14",
+      "last_update": "2026-07-17",
       "registry_url": "https://clinicaltrials.gov/study/NCT06154252"
+    },
+    {
+      "id": "kyv101-mg-kysa6-phase23",
+      "name": "KYSA-6: miv-cel in Generalized Myasthenia Gravis",
+      "product": "miv-cel（KYV-101）",
+      "indication": "gMG",
+      "status": "Recruiting",
+      "enrollment": 66,
+      "last_update": "2026-07-08",
+      "registry_url": "https://clinicaltrials.gov/study/NCT06193889"
     },
     {
       "id": "cc97540-breakfree2",
@@ -98,29 +118,15 @@
       "enrollment": 15,
       "last_update": "2026-06-26",
       "registry_url": "https://clinicaltrials.gov/study/NCT06704269"
-    },
-    {
-      "id": "novartis-rapcabtagene-iim-phase2",
-      "name": "YTB323对比标准治疗的随机Phase 2 IIM研究",
-      "product": "rapcabtagene autoleucel (YTB323)",
-      "indication": "Idiopathic inflammatory myopathies",
-      "status": "Active, not recruiting",
-      "enrollment": 21,
-      "last_update": "2026-06-23",
-      "registry_url": "https://clinicaltrials.gov/study/NCT06665256"
-    },
-    {
-      "id": "allo329-autoimmune-phase1",
-      "name": "ALLO-329 in Autoimmune Disease",
-      "product": "ALLO-329",
-      "indication": "SLE / LN / IIM / SSc",
-      "status": "Recruiting",
-      "enrollment": 66,
-      "last_update": "2026-06-18",
-      "registry_url": "https://clinicaltrials.gov/study/NCT07085104"
     }
   ],
   "risks": [
+    {
+      "code": "registry_record_stale",
+      "record_type": "trial",
+      "record_id": "kyv101-ms-phase1",
+      "message": "注册库记录超过180天未更新，当前状态需谨慎解释"
+    },
     {
       "code": "registry_record_stale",
       "record_type": "trial",
@@ -225,6 +231,156 @@
     },
     {
       "code": "verification_stale",
+      "record_type": "company",
+      "record_id": "cartesian-descartes08",
+      "message": "已超过 14 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "company",
+      "record_id": "novartis-ytb323",
+      "message": "已超过 14 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "company",
+      "record_id": "allogene-allo329",
+      "message": "已超过 14 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "company",
+      "record_id": "arcellx-anitocel",
+      "message": "已超过 14 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "company",
+      "record_id": "bms-cc97540",
+      "message": "已超过 14 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "company",
+      "record_id": "crispr-ctx112",
+      "message": "已超过 14 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "company",
+      "record_id": "fate-ft819",
+      "message": "已超过 14 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "company",
+      "record_id": "gilead-kite363",
+      "message": "已超过 14 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "company",
+      "record_id": "miltenyi-zamtocel",
+      "message": "已超过 14 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "company",
+      "record_id": "magicrna-hn2302",
+      "message": "已超过 14 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "company",
+      "record_id": "therorna-ti0032",
+      "message": "已超过 14 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "company",
+      "record_id": "cspc-sys6020",
+      "message": "已超过 14 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "company",
+      "record_id": "precision-cd19",
+      "message": "已超过 14 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "company",
+      "record_id": "erlangen-cd19",
+      "message": "已超过 14 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "company",
+      "record_id": "ihematology-xiniao-ucar",
+      "message": "已超过 14 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "company",
+      "record_id": "pkuph-bcmacd19",
+      "message": "已超过 14 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "company",
+      "record_id": "pku3-qh103",
+      "message": "已超过 14 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "company",
+      "record_id": "gobroad-ol108",
+      "message": "已超过 14 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "company",
+      "record_id": "tongji-qh103",
+      "message": "已超过 14 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "company",
+      "record_id": "tongji-v001bcma",
+      "message": "已超过 14 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "company",
+      "record_id": "tianjin-qt019c",
+      "message": "已超过 14 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "company",
+      "record_id": "tianjin-xiniao-ucar",
+      "message": "已超过 14 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "company",
+      "record_id": "zjuch-ucar19bcma",
+      "message": "已超过 14 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "company",
+      "record_id": "changzhou-ucar19bcma",
+      "message": "已超过 14 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "company",
+      "record_id": "xuzhou-xiniao-ucar",
+      "message": "已超过 14 天复核周期"
+    },
+    {
+      "code": "verification_stale",
       "record_type": "trial",
       "record_id": "kyv101-ms-phase1",
       "message": "已超过 7 天复核周期"
@@ -317,6 +473,168 @@
       "code": "verification_stale",
       "record_type": "trial",
       "record_id": "ti0032-invivo-autoimmune",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "zju-ucar19bcma-autoimmune",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "magicrna-hn2302-autoimmune",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "arcellx-anitocel-mg-phase1",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "tongji-v001bcma-autoimmune",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "ihematology-xiniao-ucar-autoimmune",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "xuzhou-xiniao-ucar-autoimmune",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "pku3-qh103-autoimmune",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "gobroad-ol108-autoimmune",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "changzhou-ucar19bcma-autoimmune",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "pkuph-bcmacd19-autoimmune-phase2",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "cabaletta-resecel-mg-phase12",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "precision-cd19-autoimmune-phase1",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "hadassah-hbi0101-autoimmune",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "renji-c-car168-autoimmune",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "adicet-prulacel-autoimmune-phase1",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "changhai-kn3601-autoimmune",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "huashan-c-car168-cns-autoimmune",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "kyv101-autoimmune-ltfu",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "gustaveroussy-cellattack1-autoimmune",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "ct103a-neuro-autoimmune-phase1",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "icell-bcmacd19-itp-phase1",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "icell-icg318-sle-phase12",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "tangdu-cd19bcma-mg-iit",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "tongji-rd0605-neuro-iit",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "xuzhou-bcmacd19-mg-phase1",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "novartis-rapcabtagene-iim-phase2",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "cartesian-descartes08-myositis-phase2",
       "message": "已超过 7 天复核周期"
     },
     {
@@ -422,16 +740,184 @@
       "message": "已超过 7 天复核周期"
     },
     {
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-nct07305116-update",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-nct07523282-update",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-nct06626919-update",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-nct07339540-update",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-nct06941129-update",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-nct07155369-update",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-nct06828042-update",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-nct06980597-update",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-nct06978738-update",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-nct06794008-update",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-cabaletta-resetmg-phase12",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-nct06056921-update",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-nct07085676-update",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-nct06249438-update",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-nct06375993-update",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-nct07246096-update",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-nct07341828-update",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-nct07544225-update",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-nct07403188-update",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-iaso-equecel-fda-autoimmune-ind",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-nct04561557-update",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-feed-42414128",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-feed-41612420",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-nct06787989-update",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-nct07328581-update",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "official_source_difference",
+      "record_type": "trial",
+      "record_id": "cc97540-breakfree2",
+      "message": "官方来源字段已变化：registry_last_update"
+    },
+    {
+      "code": "official_source_difference",
+      "record_type": "trial",
+      "record_id": "ctx112-autoimmune-phase1",
+      "message": "官方来源字段已变化：registry_last_update"
+    },
+    {
+      "code": "official_source_difference",
+      "record_type": "trial",
+      "record_id": "allo329-autoimmune-phase1",
+      "message": "官方来源字段已变化：registry_last_update"
+    },
+    {
       "code": "official_source_difference",
       "record_type": "trial",
       "record_id": "tangdu-cd19bcma-mg-iit",
       "message": "官方来源字段已变化：sponsor"
     },
     {
-      "code": "discovery_source_truncated",
-      "record_type": "system",
-      "record_id": "-",
-      "message": "候选情报来源结果被上限截断：ClinicalTrials.gov"
+      "code": "official_source_difference",
+      "record_type": "trial",
+      "record_id": "cabaletta-resecel-myositis",
+      "message": "官方来源字段已变化：registry_last_update"
     },
     {
       "code": "regulatory_source_failed",
@@ -441,20 +927,6 @@
     }
   ],
   "candidate_queue": [
-    {
-      "type": "trial",
-      "external_id": "NCT06502015",
-      "title": "Biomarkers of Neurological Autoimmune Diseases",
-      "score": 22,
-      "tier": "立即核验",
-      "reasons": [
-        "正式注册试验",
-        "命中重点实体：IASO Bio / Eque-cel / CT103A",
-        "命中5个重点病种",
-        "当前处于活跃状态"
-      ],
-      "source_url": "https://clinicaltrials.gov/study/NCT06502015"
-    },
     {
       "type": "trial",
       "external_id": "NCT05869955",
@@ -484,15 +956,17 @@
     },
     {
       "type": "trial",
-      "external_id": "NCT07676266",
-      "title": "An Exploratory Clinical Study of Anti-CD20/B-cell Maturation Antigen (BCMA) Chimeric Antigen Receptor Autologous T Cell Product (C-CAR168) in the Treatment of Autoimmune Diseases Refractory to Standard Therapy",
-      "score": 18,
+      "external_id": "NCT06347718",
+      "title": "CAR-T Cells in Systemic B Cell Mediated Autoimmune Disease",
+      "score": 20,
       "tier": "立即核验",
       "reasons": [
         "正式注册试验",
-        "命中7个重点病种"
+        "命中重点实体：Miltenyi Biomedicine / zamto-cel / MB-CART2019.1",
+        "命中4个重点病种",
+        "当前处于活跃状态"
       ],
-      "source_url": "https://clinicaltrials.gov/study/NCT07676266"
+      "source_url": "https://clinicaltrials.gov/study/NCT06347718"
     },
     {
       "type": "trial",
@@ -507,6 +981,18 @@
         "当前处于活跃状态"
       ],
       "source_url": "https://clinicaltrials.gov/study/NCT07089121"
+    },
+    {
+      "type": "trial",
+      "external_id": "NCT07676266",
+      "title": "An Exploratory Clinical Study of Anti-CD20/B-cell Maturation Antigen (BCMA) Chimeric Antigen Receptor Autologous T Cell Product (C-CAR168) in the Treatment of Autoimmune Diseases Refractory to Standard Therapy",
+      "score": 18,
+      "tier": "立即核验",
+      "reasons": [
+        "正式注册试验",
+        "命中7个重点病种"
+      ],
+      "source_url": "https://clinicaltrials.gov/study/NCT07676266"
     },
     {
       "type": "trial",

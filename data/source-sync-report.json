@@ -1,13 +1,37 @@
 {
-  "generated_at": "2026-07-21T10:51:07.243Z",
+  "generated_at": "2026-07-27T23:33:43.876Z",
   "source_policy": "Official APIs are compared with local structured fields; differences require editorial review and are never auto-applied.",
   "summary": {
-    "records_checked": 74,
-    "successful": 74,
+    "records_checked": 78,
+    "successful": 78,
     "failed": 0,
-    "differences": 1
+    "differences": 5
   },
   "differences": [
+    {
+      "record_type": "trial",
+      "record_id": "cc97540-breakfree2",
+      "field": "registry_last_update",
+      "local_value": "2026-07-01",
+      "remote_value": "2026-07-23",
+      "source_url": "https://clinicaltrials.gov/study/NCT06220201"
+    },
+    {
+      "record_type": "trial",
+      "record_id": "ctx112-autoimmune-phase1",
+      "field": "registry_last_update",
+      "local_value": "2026-06-15",
+      "remote_value": "2026-07-22",
+      "source_url": "https://clinicaltrials.gov/study/NCT06925542"
+    },
+    {
+      "record_type": "trial",
+      "record_id": "allo329-autoimmune-phase1",
+      "field": "registry_last_update",
+      "local_value": "2026-06-18",
+      "remote_value": "2026-07-24",
+      "source_url": "https://clinicaltrials.gov/study/NCT07085104"
+    },
     {
       "record_type": "trial",
       "record_id": "tangdu-cd19bcma-mg-iit",
@@ -15,6 +39,14 @@
       "local_value": "Ting Chang / Tangdu Hospital",
       "remote_value": "Ting Chang, MD",
       "source_url": "https://clinicaltrials.gov/study/NCT06371040"
+    },
+    {
+      "record_type": "trial",
+      "record_id": "cabaletta-resecel-myositis",
+      "field": "registry_last_update",
+      "local_value": "2026-07-17",
+      "remote_value": "2026-07-23",
+      "source_url": "https://clinicaltrials.gov/study/NCT06154252"
     }
   ],
   "checks": [
@@ -32,6 +64,22 @@
         "study_start": "2024-06-20",
         "estimated_completion": "2027-02",
         "registry_last_update": "2026-01-23"
+      }
+    },
+    {
+      "record_type": "trial",
+      "record_id": "kyv101-mg-kysa6-phase23",
+      "external_id": "NCT06193889",
+      "status": "ok",
+      "source_url": "https://clinicaltrials.gov/study/NCT06193889",
+      "remote": {
+        "official_title": "KYSA-6: A Phase 2/3, Open-Label, Randomized, Controlled, Multicenter Study of KYV-101, an Autologous Fully Human Anti-CD19 Chimeric Antigen Receptor T-cell (CD19 CAR T) Therapy, Versus Ongoing Standard-Of-Care Immunosuppressive Therapy in Patients With Generalized Myasthenia Gravis",
+        "sponsor": "Kyverna Therapeutics",
+        "status": "RECRUITING",
+        "enrollment": 66,
+        "study_start": "2024-08-28",
+        "estimated_completion": "2028-09",
+        "registry_last_update": "2026-07-08"
       }
     },
     {
@@ -143,7 +191,7 @@
         "enrollment": 120,
         "study_start": "2024-03-28",
         "estimated_completion": "2027-07-15",
-        "registry_last_update": "2026-07-01"
+        "registry_last_update": "2026-07-23"
       }
     },
     {
@@ -175,7 +223,7 @@
         "enrollment": 80,
         "study_start": "2025-03-10",
         "estimated_completion": "2031-12-31",
-        "registry_last_update": "2026-06-15"
+        "registry_last_update": "2026-07-22"
       }
     },
     {
@@ -223,7 +271,7 @@
         "enrollment": 66,
         "study_start": "2025-11-13",
         "estimated_completion": "2032-10",
-        "registry_last_update": "2026-06-18"
+        "registry_last_update": "2026-07-24"
       }
     },
     {
@@ -240,6 +288,22 @@
         "study_start": "2026-07",
         "estimated_completion": "2028-07",
         "registry_last_update": "2026-06-11"
+      }
+    },
+    {
+      "record_type": "trial",
+      "record_id": "miltenyi-mbcart20191-ms-phase12a",
+      "external_id": "NCT07178431",
+      "status": "ok",
+      "source_url": "https://clinicaltrials.gov/study/NCT07178431",
+      "remote": {
+        "official_title": "An Open Label Phase I/IIa, Multicenter, Interventional Single-arm Trial of MB-CART 2019.1 in Patients With Refractory Multiple Sclerosis (MS)",
+        "sponsor": "Miltenyi Biomedicine GmbH",
+        "status": "RECRUITING",
+        "enrollment": 26,
+        "study_start": "2026-04-01",
+        "estimated_completion": "2030-08-16",
+        "registry_last_update": "2026-05-11"
       }
     },
     {
@@ -432,6 +496,22 @@
         "study_start": "2024-12-17",
         "estimated_completion": "2029-09",
         "registry_last_update": "2026-05-18"
+      }
+    },
+    {
+      "record_type": "trial",
+      "record_id": "cabaletta-resecel-ms-phase12",
+      "external_id": "NCT07006805",
+      "status": "ok",
+      "source_url": "https://clinicaltrials.gov/study/NCT07006805",
+      "remote": {
+        "official_title": "RESET-MS: A Phase 1/2, Open-Label Study to Evaluate the Safety and Efficacy of Autologous CD19-specific Chimeric Antigen Receptor T Cells (CABA-201) in Participants With Multiple Sclerosis",
+        "sponsor": "Cabaletta Bio",
+        "status": "WITHDRAWN",
+        "enrollment": 0,
+        "study_start": "2026-06",
+        "estimated_completion": "2029-10",
+        "registry_last_update": "2026-06-25"
       }
     },
     {
@@ -671,7 +751,7 @@
         "enrollment": 74,
         "study_start": "2023-12-20",
         "estimated_completion": "2028-07",
-        "registry_last_update": "2026-07-17"
+        "registry_last_update": "2026-07-23"
       }
     },
     {
@@ -704,6 +784,22 @@
         "study_start": "2026-04-28",
         "estimated_completion": "2028-05",
         "registry_last_update": "2026-04-23"
+      }
+    },
+    {
+      "record_type": "trial",
+      "record_id": "tr1x-trx319-impact-ms",
+      "external_id": "NCT07477639",
+      "status": "ok",
+      "source_url": "https://clinicaltrials.gov/study/NCT07477639",
+      "remote": {
+        "official_title": "A Phase 1/2a, Open-Label, Dose-Escalation Study to Evaluate the Safety and Preliminary Efficacy of TRX319 in Subjects With Primary or Secondary Progressive Multiple Sclerosis",
+        "sponsor": "Tr1X, Inc.",
+        "status": "RECRUITING",
+        "enrollment": 39,
+        "study_start": "2026-03",
+        "estimated_completion": "2029-01",
+        "registry_last_update": "2026-03-19"
       }
     },
     {
