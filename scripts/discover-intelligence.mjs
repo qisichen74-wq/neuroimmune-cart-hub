@@ -2,21 +2,26 @@ import { createHash } from "node:crypto";
 import { readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { candidatePoolDecision, candidateSummary } from "./candidate-policy.mjs";
+import { chinaDrugTrialsOfficialUrl, fetchChinaDrugTrials } from "./china-drug-trials.mjs";
+import { createJournalMetricLookup, withJournalMetric } from "./journal-metrics.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const loadJson = async (file) => JSON.parse(await readFile(path.join(root, file), "utf8"));
-const [research, trials, events, landscape, config] = await Promise.all([
+const [research, trials, events, landscape, config, journalMetrics] = await Promise.all([
   loadJson("data/feed.json"),
   loadJson("data/trials.json"),
   loadJson("data/events.json"),
   loadJson("data/landscape.json"),
-  loadJson("data/discovery-config.json")
+  loadJson("data/discovery-config.json"),
+  loadJson("data/journal-metrics.json")
 ]);
+const journalMetricLookup = createJournalMetricLookup(journalMetrics);
 let previousReport = null;
 try { previousReport = await loadJson("data/candidate-report.json"); } catch {}
 
 const knownPmids = new Set(research.map((item) => item.pmid).filter(Boolean).map(String));
-const knownNcts = new Set(trials.map((item) => item.registry_id).filter(Boolean));
+const knownTrialRegistryIds = new Set(trials.flatMap((item) => [item.registry_id, item.cde_registry_id]).filter(Boolean).map(String));
 const generatedAt = new Date().toISOString();
 const candidates = [];
 const sourceRuns = [];
@@ -64,12 +69,13 @@ const describeFetchError = (error) => [...new Set([
   error?.cause?.message,
   error?.message
 ].filter(Boolean))].join(" / ");
-const fetchResponse = async (url) => {
+const fetchResponse = async (url, options = {}) => {
   let lastError;
   for (let attempt = 0; attempt < 2; attempt += 1) {
     try {
       const response = await fetch(url, {
-        headers: browserHeaders,
+        ...options,
+        headers: { ...browserHeaders, ...(options.headers || {}) },
         redirect: "follow",
         signal: AbortSignal.timeout(15000)
       });
@@ -85,7 +91,7 @@ const fetchResponse = async (url) => {
   }
   throw new Error(describeFetchError(lastError) || "unknown fetch error");
 };
-const fetchJson = async (url) => (await fetchResponse(url)).json();
+const fetchJson = async (url, options) => (await fetchResponse(url, options)).json();
 const clean = (value) => String(value ?? "").replace(/\s+/g, " ").trim();
 const escapeRegExp = (value) => value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 const includesAlias = (text, alias) => {
@@ -95,18 +101,20 @@ const includesAlias = (text, alias) => {
 };
 
 const diseases = [
-  { label: "multiple sclerosis", aliases: ["multiple sclerosis", "MS"] },
-  { label: "myasthenia gravis", aliases: ["myasthenia gravis", "generalized myasthenia gravis", "gMG", "MG"] },
-  { label: "neuromyelitis optica", aliases: ["neuromyelitis optica", "NMOSD"] },
-  { label: "MOGAD", aliases: ["MOGAD", "myelin oligodendrocyte glycoprotein antibody-associated disease"] },
-  { label: "stiff person", aliases: ["stiff person", "SPS"] },
-  { label: "autoimmune encephalitis", aliases: ["autoimmune encephalitis", "NMDAR encephalitis", "NMDA receptor encephalitis", "LGI1 encephalitis", "CASPR2 encephalitis", "GABA-B receptor encephalitis", "AMPAR encephalitis", "DPPX encephalitis", "DAGLA antibody-associated encephalitis", "GAD65 encephalitis"] },
-  { label: "CIDP", aliases: ["CIDP", "chronic inflammatory demyelinating polyneuropathy"] },
-  { label: "systemic lupus", aliases: ["systemic lupus", "SLE", "lupus nephritis"] },
-  { label: "systemic sclerosis", aliases: ["systemic sclerosis", "scleroderma"] },
-  { label: "myositis", aliases: ["myositis", "inflammatory myopathy", "idiopathic inflammatory myopathy", "dermatomyositis", "antisynthetase syndrome", "immune-mediated necrotizing myopathy", "IMNM", "IIM"] },
-  { label: "immune thrombocytopenia", aliases: ["immune thrombocytopenia", "ITP"] },
-  { label: "autoimmune disease", aliases: ["autoimmune disease", "autoimmune diseases"] }
+  { label: "multiple sclerosis", aliases: ["multiple sclerosis", "MS", "多发性硬化", "多发性硬化症"] },
+  { label: "myasthenia gravis", aliases: ["myasthenia gravis", "generalized myasthenia gravis", "gMG", "MG", "重症肌无力", "全身型重症肌无力"] },
+  { label: "neuromyelitis optica", aliases: ["neuromyelitis optica", "NMOSD", "视神经脊髓炎", "视神经脊髓炎谱系疾病"] },
+  { label: "MOGAD", aliases: ["MOGAD", "myelin oligodendrocyte glycoprotein antibody-associated disease", "MOG抗体相关疾病"] },
+  { label: "stiff person", aliases: ["stiff person", "SPS", "僵人综合征"] },
+  { label: "autoimmune encephalitis", aliases: ["autoimmune encephalitis", "NMDAR encephalitis", "NMDA receptor encephalitis", "LGI1 encephalitis", "CASPR2 encephalitis", "GABA-B receptor encephalitis", "AMPAR encephalitis", "DPPX encephalitis", "DAGLA antibody-associated encephalitis", "GAD65 encephalitis", "自身免疫性脑炎"] },
+  { label: "CIDP", aliases: ["CIDP", "chronic inflammatory demyelinating polyneuropathy", "慢性炎性脱髓鞘性多发性神经病"] },
+  { label: "systemic lupus", aliases: ["systemic lupus", "SLE", "lupus nephritis", "系统性红斑狼疮", "狼疮性肾炎"] },
+  { label: "systemic sclerosis", aliases: ["systemic sclerosis", "scleroderma", "系统性硬化症", "系统性硬化病", "硬皮病"] },
+  { label: "myositis", aliases: ["myositis", "inflammatory myopathy", "idiopathic inflammatory myopathy", "dermatomyositis", "antisynthetase syndrome", "immune-mediated necrotizing myopathy", "IMNM", "IIM", "炎性肌病", "皮肌炎", "多发性肌炎", "免疫介导坏死性肌病"] },
+  { label: "immune thrombocytopenia", aliases: ["immune thrombocytopenia", "ITP", "免疫性血小板减少症", "免疫性血小板减少性紫癜"] },
+  { label: "rheumatoid arthritis", aliases: ["rheumatoid arthritis", "RA", "类风湿关节炎"] },
+  { label: "autoimmune ILD", aliases: ["autoimmune interstitial lung disease", "connective tissue disease-associated interstitial lung disease", "CTD-ILD", "AI-ILD", "自身免疫性间质性肺病", "结缔组织病相关间质性肺病"] },
+  { label: "autoimmune disease", aliases: ["autoimmune disease", "autoimmune diseases", "自身免疫性疾病", "自身免疫病"] }
 ];
 const detectDiseases = (text) => diseases
   .filter((disease) => disease.aliases.some((alias) => includesAlias(text, alias)))
@@ -130,13 +138,14 @@ const trialModalityTerms = [
   "\"engineered T cell\"",
   "\"engineered T-cell\""
 ];
-const trialModalityPattern = /\b(?:CAR[- ]?T|chimeric antigen receptor|cell therapy|T[- ]cell therapy|engineered T[- ]cell)\b/i;
+const trialModalityPattern = /\b(?:CAR[- ]?T|chimeric antigen receptor|cell therapy|T[- ]cell therapy|engineered T[- ]cell)\b|嵌合抗原受体|细胞治疗|CAR[+＋]?T细胞|T细胞注射液/i;
+const isEnglishRegistryAlias = (alias) => /^[\x20-\x7E]+$/.test(alias);
 const diseaseQueryClause = (disease) => disease.aliases
-  .filter((alias) => alias.length > 3)
+  .filter((alias) => alias.length > 3 && isEnglishRegistryAlias(alias))
   .map((alias) => `"${alias}"`)
   .join(" OR ");
 const diseaseClause = diseases
-  .flatMap((disease) => disease.aliases.filter((alias) => alias.length > 3))
+  .flatMap((disease) => disease.aliases.filter((alias) => alias.length > 3 && isEnglishRegistryAlias(alias)))
   .map((term) => `"${term}"`)
   .join(" OR ");
 
@@ -146,7 +155,11 @@ const fetchPubmedIds = async (term) => {
   const pageSize = 500;
   for (let retstart = 0; retstart < maxRecordsPerQuery; retstart += pageSize) {
     const params = new URLSearchParams({ db: "pubmed", term, retmode: "json", retmax: String(pageSize), retstart: String(retstart), sort: "pub date" });
-    const payload = await fetchJson(`https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?${params}`);
+    const payload = await fetchJson("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi", {
+      method: "POST",
+      headers: { "content-type": "application/x-www-form-urlencoded;charset=UTF-8" },
+      body: params.toString()
+    });
     total = Number(payload.esearchresult?.count || 0);
     const page = payload.esearchresult?.idlist || [];
     ids.push(...page);
@@ -268,9 +281,9 @@ try {
       studyMatches.set(nctId, match);
     }
   }
-  const knownRecordsSeen = [...studyMatches.keys()].filter((nctId) => knownNcts.has(nctId));
+  const knownRecordsSeen = [...studyMatches.keys()].filter((nctId) => knownTrialRegistryIds.has(nctId));
   for (const [nctId, match] of studyMatches) {
-    if (knownNcts.has(nctId)) continue;
+    if (knownTrialRegistryIds.has(nctId)) continue;
     const protocol = match.study.protocolSection || {};
     const identification = protocol.identificationModule || {};
     const status = protocol.statusModule || {};
@@ -325,6 +338,82 @@ try {
   });
 } catch (error) {
   sourceRuns.push({ source: "ClinicalTrials.gov", source_kind: "official_api", status: "error", error: error.message });
+}
+
+try {
+  const chinaResult = await fetchChinaDrugTrials({
+    sourceConfig: config.china_drug_trials,
+    headers: browserHeaders,
+    maxRecords: maxRecordsPerQuery
+  });
+  const relevantRecords = [];
+  const knownRecordsSeen = [];
+  for (const item of chinaResult.records || []) {
+    const registrationNumber = String(item.registration_number || "").toUpperCase();
+    if (!registrationNumber) continue;
+    if (knownTrialRegistryIds.has(registrationNumber)) {
+      knownRecordsSeen.push(registrationNumber);
+      continue;
+    }
+    const indications = clean(item.indications || item.indication || "");
+    const title = clean(item.title || item.title_professional || item.trial_title || registrationNumber);
+    const drugName = clean(item.drug_name || item.product || "");
+    const searchable = `${title} ${drugName} ${indications}`;
+    const matchedDiseases = detectDiseases(`${title} ${indications}`);
+    const priorityEntities = detectPriorityEntities(searchable);
+    if (!trialModalityPattern.test(searchable) || !matchedDiseases.length) continue;
+    const matchedEntityIds = new Set([...priorityEntities, ...detectEntities(searchable)]);
+    const sourceUrl = item.source_url || (item.trial_id
+      ? `${chinaDrugTrialsOfficialUrl}/clinicaltrials.searchlistdetail.dhtml?id=${encodeURIComponent(item.trial_id)}`
+      : `${chinaDrugTrialsOfficialUrl}/clinicaltrials.searchlist.dhtml?keywords=${registrationNumber}`);
+    relevantRecords.push(registrationNumber);
+    candidates.push({
+      candidate_type: "trial",
+      external_id: registrationNumber,
+      registry: "CDE China Drug Trials",
+      title,
+      source: "CDE 药物临床试验登记与信息公示平台",
+      source_url: sourceUrl,
+      status: clean(item.status),
+      last_update_posted: clean(item.last_update || item.update_date || item.first_publication_date || ""),
+      phase: item.phase ? [clean(item.phase)] : [],
+      enrollment: Number.isFinite(Number(item.enrollment)) ? Number(item.enrollment) : null,
+      sponsor: clean(item.sponsor || item.applicant || ""),
+      product: drugName,
+      conditions: indications ? [indications] : [],
+      matched_diseases: matchedDiseases,
+      matched_entities: [...matchedEntityIds],
+      query_matches: (item.query_ids || []).map((queryId) => `china-drug-trials:${queryId}`),
+      access_method: chinaResult.access_method,
+      review_status: "免人工审核"
+    });
+  }
+  sourceRuns.push({
+    source: "CDE 药物临床试验登记与信息公示平台",
+    source_id: "china-drug-trials",
+    source_kind: "official_registry",
+    official_url: chinaDrugTrialsOfficialUrl,
+    status: chinaResult.status,
+    access_method: chinaResult.access_method,
+    results_scanned: chinaResult.records?.length || 0,
+    relevant_records: relevantRecords.length,
+    relevant_registry_ids: relevantRecords.sort(),
+    known_records_seen: [...new Set(knownRecordsSeen)].sort(),
+    query_runs: chinaResult.query_runs || [],
+    truncated: Boolean(chinaResult.truncated),
+    blocked_by_js_challenge: Boolean(chinaResult.blocked_by_js_challenge),
+    errors: chinaResult.errors || [],
+    setup_hint: chinaResult.blocked_by_js_challenge ? "Set CHINA_DRUG_TRIALS_API_KEY to enable the managed read-only registry wrapper." : undefined
+  });
+} catch (error) {
+  sourceRuns.push({
+    source: "CDE 药物临床试验登记与信息公示平台",
+    source_id: "china-drug-trials",
+    source_kind: "official_registry",
+    official_url: chinaDrugTrialsOfficialUrl,
+    status: "error",
+    error: error.message
+  });
 }
 
 const decodeHtml = (value) => clean(String(value || "")
@@ -505,7 +594,9 @@ for (const item of candidates) {
   const existing = uniqueCandidates.get(key);
   if (!existing || item.relevance_score > existing.relevance_score) uniqueCandidates.set(key, item);
 }
-const rankedCandidates = [...uniqueCandidates.values()].sort((a, b) =>
+const policyDecisions = [...uniqueCandidates.values()].map((candidate) => ({ candidate, decision: candidatePoolDecision(candidate) }));
+const excludedResearch = policyDecisions.filter((entry) => entry.candidate.candidate_type === "research" && !entry.decision.eligible);
+const rankedCandidates = policyDecisions.filter((entry) => entry.decision.eligible).map((entry) => withJournalMetric(entry.candidate, journalMetricLookup)).sort((a, b) =>
   b.relevance_score - a.relevance_score
   || String(b.publication_date || b.last_update_posted).localeCompare(String(a.publication_date || a.last_update_posted))
   || String(a.external_id).localeCompare(String(b.external_id))
@@ -516,26 +607,42 @@ sourceRuns.sort((a, b) =>
   || String(a.source_id || a.source).localeCompare(String(b.source_id || b.source))
 );
 
+const criticalSourceFailures = sourceRuns.filter((run) =>
+  ["NCBI PubMed", "ClinicalTrials.gov"].includes(run.source) && run.status === "error"
+);
+const previousCandidates = previousReport?.candidates || [];
+const preservePreviousCandidates = Boolean(
+  criticalSourceFailures.length
+  && previousCandidates.length >= 50
+  && rankedCandidates.length < previousCandidates.length * 0.5
+);
+const effectiveCandidates = preservePreviousCandidates ? previousCandidates : rankedCandidates;
+const effectiveExcludedResearch = preservePreviousCandidates
+  ? Number(previousReport?.summary?.policy_excluded_research || 0)
+  : excludedResearch.length;
+
 const report = {
-  generated_at: generatedAt,
-  policy: "Candidates are discovery leads only. They must be verified against primary records before entering production datasets.",
-  query_window: `Publications since ${config.publication_start_date}; complete paginated ClinicalTrials.gov results; tracked official websites`,
+  generated_at: preservePreviousCandidates ? previousReport.generated_at : generatedAt,
+  last_attempt_at: generatedAt,
+  policy: "Research candidates must involve CAR-T or cell therapy and identify at least one disease or indication. High-scoring reviews and meta-analyses may be retained without a named disease. Registered clinical trials remain in the candidate pool but are exempt from human review.",
+  query_window: `Publications since ${config.publication_start_date}; complete paginated ClinicalTrials.gov results; CDE China Drug Trials registry queries; tracked official websites`,
   summary: {
-    candidates: rankedCandidates.length,
-    research: rankedCandidates.filter((item) => item.candidate_type === "research").length,
-    trials: rankedCandidates.filter((item) => item.candidate_type === "trial").length,
-    official_updates: rankedCandidates.filter((item) => item.candidate_type === "official_update").length,
-    immediate_review: rankedCandidates.filter((item) => item.triage_tier === "立即核验").length,
-    watchlist: rankedCandidates.filter((item) => item.triage_tier === "持续观察").length,
-    background: rankedCandidates.filter((item) => item.triage_tier === "背景材料").length,
-    low_relevance: rankedCandidates.filter((item) => item.triage_tier === "低相关").length,
+    ...candidateSummary(effectiveCandidates),
+    policy_excluded_research: effectiveExcludedResearch,
     source_failures: sourceRuns.filter((item) => item.status === "error").length,
     partial_sources: sourceRuns.filter((item) => item.status === "partial").length,
     truncated_sources: sourceRuns.filter((item) => item.truncated).length,
     missing_sentinels: sourceRuns.reduce((count, run) => count + (run.sentinel_check?.missing?.length || 0), 0)
   },
+  degraded_run: preservePreviousCandidates ? {
+    preserved_previous_candidates: true,
+    reason: "Critical discovery sources failed and the new candidate set was abnormally small.",
+    failed_sources: criticalSourceFailures.map((run) => run.source),
+    attempted_candidates: rankedCandidates.length,
+    preserved_candidates: previousCandidates.length
+  } : null,
   source_runs: sourceRuns,
-  candidates: rankedCandidates
+  candidates: effectiveCandidates
 };
 
 const radarData = {
@@ -555,4 +662,5 @@ await Promise.all([
   writeFile(path.join(root, "assets/radar-data.js"), `globalThis.NEUROIMMUNE_RADAR_DATA = ${JSON.stringify(radarData)};\n`)
 ]);
 console.log(`Discovery: ${report.summary.candidates} candidates | ${report.summary.research} research | ${report.summary.trials} trials | ${report.summary.official_updates} official | ${report.summary.source_failures} failures | ${report.summary.truncated_sources} truncated | ${report.summary.missing_sentinels} sentinels missing`);
+if (preservePreviousCandidates) console.log(`Discovery safeguard: preserved ${previousCandidates.length} previous candidates after critical source failure; attempted set had ${rankedCandidates.length}.`);
 if (report.summary.source_failures || report.summary.truncated_sources || report.summary.missing_sentinels) process.exitCode = 2;

@@ -1,6 +1,6 @@
-# 神经免疫 CAR-T 情报每日更新
+# 神经免疫 CAR-T 情报每周更新
 
-你是本项目的医学情报维护代理。请在 `/Users/chenqisi/neuroimmune-cart-hub` 中完成一次可审计的每日更新。直接检查、核验并编辑项目文件，不要只给建议，也不要为了制造更新记录而加入缺乏证据的内容。
+你是本项目的医学情报维护代理。请在 `/Users/chenqisi/neuroimmune-cart-hub` 中完成一次可审计的每周更新。直接检查、核验并编辑项目文件，不要只给建议，也不要为了制造更新记录而加入缺乏证据的内容。
 
 ## 目标
 
@@ -12,7 +12,7 @@
 ## 开始前
 
 - 先阅读 `data/verification.json`、`data/sources.json`、`data/quality-report.json`、全部业务数据文件和 `scripts/audit-data.mjs`。
-- 先运行 `npm run discover:sources` 生成候选情报池，再运行 `npm run check:sources` 和 `npm run check:regulatory` 生成官方来源报告，最后运行 `npm run audit:data`。审阅候选、字段差异和监管入口报告，并确认每个检索源的 `truncated` 均为 `false`；结果被分页或数量上限截断时，本次发现流程不完整。候选不得未经逐字段核验直接进入正式数据集；试验登记、临床试验许可和上市批准必须分开表述。
+- 先运行 `npm run discover:sources` 生成候选情报池，再运行 `npm run check:sources`、`npm run check:regulatory` 和 `npm run check:fda` 生成官方来源报告，最后运行 `npm run audit:data`。审阅候选、字段差异、NMPA/CDE监管入口和FDA报告，并确认每个检索源的 `truncated` 均为 `false`；结果被分页或数量上限截断时，本次发现流程不完整。候选不得未经逐字段核验直接进入正式数据集；试验登记、IND获准、上市批准、标签更新和安全信号必须分开表述。
 - 检查工作区已有改动。不得覆盖、回退或改写并非本次任务产生的用户改动。
 - 以中国标准时间的当天日期作为本次 `as_of` 和核验日期；事件日期、论文发布日期、注册库更新时间必须分别记录，禁止相互代替。
 
@@ -20,9 +20,9 @@
 
 按以下优先级检查自上次核验以来的新增或变更：
 
-1. ClinicalTrials.gov 等官方试验注册库：状态、入组、阶段、终点、中心、计划人数、主要日期和最后更新时间。
+1. ClinicalTrials.gov 与 CDE 药物临床试验登记与信息公示平台（chinadrugtrials.org.cn）：状态、入组、阶段、终点、中心、计划人数、主要日期和最后更新时间；同一试验的 NCT 与 CTR 登记应交叉关联但保留各自官方记录。
 2. PubMed/NCBI：正式发表、在线发表、更正、撤稿及与现有项目相关的新证据。
-3. FDA、EMA、NMPA、国家药监机构及其他正式监管公告：批准、警示、临床暂停和安全通信。
+3. FDA官方来源按层级检查：Drugs@FDA用于批准申请及文件，openFDA Label用于标签与黑框警告，openFDA/FAERS仅用于非因果安全信号，FDA/CBER用于细胞和基因治疗批准、指导原则、临床暂停及安全通信；同时检查EMA、NMPA和其他正式监管公告。
 4. 公司官网、投资者关系、正式管线页和公告：产品、合作、里程碑及项目终止。
 5. 大学、医院和研究机构官网：研究团队和由机构正式确认的临床进展。
 
@@ -39,6 +39,7 @@
 - 区分“未发现更新”和“已确认没有变化”。无法访问来源时，不刷新 `last_verified_at`。
 - 对已终止、撤回、暂停、招募状态改变或超过复核周期的项目优先处理。
 - 医学结论保持证据等级和适用范围，不把病例报告、早期单臂研究或公司声明描述为确定疗效。
+- FDA语义必须严格区分：ClinicalTrials.gov登记不等于IND获准；企业披露的IND进展只能记为公司口径；FDA/CBER批准页、批准函或Drugs@FDA正式记录才能支持上市批准；FAERS报告不能证明因果、发生率或产品间风险差异。
 
 ## 写入范围
 
@@ -58,7 +59,7 @@
 
 ## 自我核查与失败处理
 
-1. 完成编辑后重新运行 `npm run discover:sources`、`npm run check:sources` 和 `npm run audit:data`。
+1. 完成编辑后重新运行 `npm run discover:sources`、`npm run check:sources`、`npm run check:regulatory`、`npm run check:fda` 和 `npm run audit:data`。
 2. 检查 JSON 可解析、ID 唯一、日期合法、PMID/NCT 与 URL 匹配、跨表引用完整、来源已登记、核验日期真实。
 3. 对本次新增和修改逐条反查来源，确认没有把发布日期误写为事件日期，也没有把计划值写成实际结果。
 4. 若出现任何阻断错误，先修复；无法修复时，仅撤销本次任务产生的相关改动，不得影响用户原有改动。

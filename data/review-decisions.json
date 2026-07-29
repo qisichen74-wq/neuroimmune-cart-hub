@@ -1,4 +1,2669 @@
 {
-  "generated_at": null,
-  "decisions": []
+  "generated_at": "2026-07-22T13:57:15.226Z",
+  "decisions": [
+    {
+      "candidate_id": "trial:NCT05869955",
+      "candidate_type": "trial",
+      "external_id": "NCT05869955",
+      "source_url": "https://clinicaltrials.gov/study/NCT05869955",
+      "reviewer": "reviewer",
+      "decision": "发布",
+      "action": "confirm",
+      "decision_at": "2026-07-22T12:46:06.150Z",
+      "decision_reason": "核对原始来源后确认",
+      "fields": {
+        "title": "A Phase 1, Multicenter, Open-Label Study Of CC-97540 (BMS-986353), CD19-Targeted Nex-T Chimeric Antigen Receptor (CAR) T Cells, in Participants With Severe, Refractory Autoimmune Diseases: Systemic Lupus Erythematosus, Idiopathic Inflammatory Myopathy, Systemic Sclerosis, or Rheumatoid Arthritis (Breakfree-1)",
+        "entity": "Juno Therapeutics, Inc., a Bristol-Myers Squibb Company",
+        "disease": "systemic lupus / systemic sclerosis / myositis / autoimmune disease",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "trial:NCT06775912",
+      "candidate_type": "trial",
+      "external_id": "NCT06775912",
+      "source_url": "https://clinicaltrials.gov/study/NCT06775912",
+      "reviewer": "reviewer",
+      "decision": "发布",
+      "action": "confirm",
+      "decision_at": "2026-07-22T12:46:21.295Z",
+      "decision_reason": "核对原始来源后确认",
+      "fields": {
+        "title": "Clinical Study on Targeted CD19/BCMA CAR-T Therapy for Autoimmune Diseases",
+        "entity": "Nanjing Bioheng Biotech Co., Ltd.",
+        "disease": "multiple sclerosis / myasthenia gravis / neuromyelitis optica / systemic lupus / systemic sclerosis / myositis / autoimmune disease",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "trial:NCT06347718",
+      "candidate_type": "trial",
+      "external_id": "NCT06347718",
+      "source_url": "https://clinicaltrials.gov/study/NCT06347718",
+      "reviewer": "reviewer",
+      "decision": "发布",
+      "action": "confirm",
+      "decision_at": "2026-07-22T12:46:53.527Z",
+      "decision_reason": "核对原始来源后确认",
+      "fields": {
+        "title": "CAR-T Cells in Systemic B Cell Mediated Autoimmune Disease",
+        "entity": "Miltenyi Biomedicine GmbH",
+        "disease": "systemic lupus / systemic sclerosis / myositis / autoimmune disease",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "trial:NCT05848713",
+      "candidate_type": "trial",
+      "external_id": "NCT05848713",
+      "source_url": "https://clinicaltrials.gov/study/NCT05848713",
+      "reviewer": "reviewer",
+      "decision": "发布",
+      "action": "confirm",
+      "decision_at": "2026-07-22T12:47:21.183Z",
+      "decision_reason": "核对原始来源后确认",
+      "fields": {
+        "title": "AntiThrombotic Therapy to Ameliorate Clinical Complications in Community Acquired Pneumonia",
+        "entity": "University of Manitoba",
+        "disease": "Community-acquired Pneumonia",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "trial:NCT03853616",
+      "candidate_type": "trial",
+      "external_id": "NCT03853616",
+      "source_url": "https://clinicaltrials.gov/study/NCT03853616",
+      "reviewer": "reviewer",
+      "decision": "发布",
+      "action": "confirm",
+      "decision_at": "2026-07-22T12:47:23.617Z",
+      "decision_reason": "核对原始来源后确认",
+      "fields": {
+        "title": "A Phase I Safety, Dose Finding and Feasibility Trial of MB-CART19.1 in Patients With Relapsed or Refractory CD19 Positive B Cell Malignancies",
+        "entity": "Miltenyi Biomedicine GmbH",
+        "disease": "Acute Lymphoblastic Leukemia Recurrent / B-cell Lymphoma Recurrent / B-cell Lymphoma Refractory / Chronic Lymphocytic Leukemia Recurrent / Chronic Lymphocytic Leukemia Refractory",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "trial:NCT06424340",
+      "candidate_type": "trial",
+      "external_id": "NCT06424340",
+      "source_url": "https://clinicaltrials.gov/study/NCT06424340",
+      "reviewer": "reviewer",
+      "decision": "发布",
+      "action": "confirm",
+      "decision_at": "2026-07-22T12:47:26.892Z",
+      "decision_reason": "核对原始来源后确认",
+      "fields": {
+        "title": "A Phase I/II Trial of MB-dNPM1-TCR.1 in HLA-A*02:01-positive Patients With Relapsed or Refractory NPM1-mutated AML to Determine Safety and Obtain First Data on Efficacy",
+        "entity": "Miltenyi Biomedicine GmbH",
+        "disease": "Leukemia, Myeloid, Acute",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "trial:NCT07439887",
+      "candidate_type": "trial",
+      "external_id": "NCT07439887",
+      "source_url": "https://clinicaltrials.gov/study/NCT07439887",
+      "reviewer": "reviewer",
+      "decision": "发布",
+      "action": "confirm",
+      "decision_at": "2026-07-22T12:47:29.284Z",
+      "decision_reason": "核对原始来源后确认",
+      "fields": {
+        "title": "Phase 1/2, Open-Label, Dose-Escalation Study to Evaluate Safety of a Single Intravitreal Injection of RTx-021 in Patients With Stargardt Disease (AURORA)",
+        "entity": "Ray Therapeutics, Inc.",
+        "disease": "Stargardt Disease",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "trial:NCT07507201",
+      "candidate_type": "trial",
+      "external_id": "NCT07507201",
+      "source_url": "https://clinicaltrials.gov/study/NCT07507201",
+      "reviewer": "reviewer",
+      "decision": "发布",
+      "action": "confirm",
+      "decision_at": "2026-07-22T12:47:34.999Z",
+      "decision_reason": "核对原始来源后确认",
+      "fields": {
+        "title": "An Exploratory Clinical Study Evaluate the Safety and Efficacy of Universal Universal Allogeneic CAR-T Cells Targeting CD19 and BCMA in the Treatment of B Cell-Related Autoimmune Disease",
+        "entity": "The Children's Hospital of Zhejiang University School of Medicine",
+        "disease": "systemic lupus / systemic sclerosis / autoimmune disease",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "trial:NCT07477990",
+      "candidate_type": "trial",
+      "external_id": "NCT07477990",
+      "source_url": "https://clinicaltrials.gov/study/NCT07477990",
+      "reviewer": "reviewer",
+      "decision": "发布",
+      "action": "confirm",
+      "decision_at": "2026-07-22T12:47:37.195Z",
+      "decision_reason": "核对原始来源后确认",
+      "fields": {
+        "title": "Phase III, Randomized, Multicenter, Open-label Clinical Trial to Evaluate the Efficacy and Safety of the Aurora® Digital Medical Device With Conventional Drug Treatment, Compared to Conventional Drug Treatment Alone, in Adult Patients With Moderate to Severe Generalized Anxiety Disorder",
+        "entity": "Psicofarma, S.A. De C.V.",
+        "disease": "General Anxiety Disorder",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "trial:NCT03936361",
+      "candidate_type": "trial",
+      "external_id": "NCT03936361",
+      "source_url": "https://clinicaltrials.gov/study/NCT03936361",
+      "reviewer": "reviewer",
+      "decision": "发布",
+      "action": "confirm",
+      "decision_at": "2026-07-22T12:47:39.444Z",
+      "decision_reason": "核对原始来源后确认",
+      "fields": {
+        "title": "STATINS USE IN INTRACEREBRAL HEMORRHAGE PATIENTS",
+        "entity": "Beth Israel Deaconess Medical Center",
+        "disease": "Intracerebral Hemorrhage",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "trial:NCT07055633",
+      "candidate_type": "trial",
+      "external_id": "NCT07055633",
+      "source_url": "https://clinicaltrials.gov/study/NCT07055633",
+      "reviewer": "reviewer",
+      "decision": "发布",
+      "action": "confirm",
+      "decision_at": "2026-07-22T12:47:41.432Z",
+      "decision_reason": "核对原始来源后确认",
+      "fields": {
+        "title": "Improving Cognitive Rehabilitation Outcomes for Veterans With mTBI+PTSD",
+        "entity": "VA Office of Research and Development",
+        "disease": "Mild Traumatic Brain Injury / Posttraumatic Stress Disorder",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "trial:NCT07494110",
+      "candidate_type": "trial",
+      "external_id": "NCT07494110",
+      "source_url": "https://clinicaltrials.gov/study/NCT07494110",
+      "reviewer": "reviewer",
+      "decision": "发布",
+      "action": "confirm",
+      "decision_at": "2026-07-22T12:47:43.918Z",
+      "decision_reason": "核对原始来源后确认",
+      "fields": {
+        "title": "Aurora: Evaluation of an AI-Based Narrative Intervention for Emotional Well-Being, Identity Processes, and Recovery-Oriented Outcomes in Clinical and Non-Clinical Populations",
+        "entity": "Universitat Autonoma de Barcelona",
+        "disease": "Institutionalization / Elderly / Mental Health / Wellbeing / Aging",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "official_update:official-change:cabaletta-official:f4a306d0756f",
+      "candidate_type": "official_update",
+      "external_id": "official-change:cabaletta-official:f4a306d0756f",
+      "source_url": "https://www.cabalettabio.com/pipeline/caba-201",
+      "reviewer": "reviewer",
+      "decision": "发布",
+      "action": "confirm",
+      "decision_at": "2026-07-22T12:48:39.275Z",
+      "decision_reason": "核对原始来源后确认",
+      "fields": {
+        "title": "Cabaletta Bio Pipeline & Press Releases 管线中删除SLE/LN的LD-free cohort",
+        "entity": "Cabaletta Bio Pipeline & Press Releases",
+        "disease": "SLE/LN",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "official_update:official-change:kyverna-official:40d6b61074d5",
+      "candidate_type": "official_update",
+      "external_id": "official-change:kyverna-official:40d6b61074d5",
+      "source_url": "https://kyvernatx.com/platform-pipeline/pipeline/",
+      "reviewer": "reviewer",
+      "decision": "排除",
+      "action": "exclude",
+      "decision_at": "2026-07-22T12:51:44.113Z",
+      "decision_reason": "和2026年6月份公司slides中的pipeline一样",
+      "fields": {
+        "title": "Kyverna Pipeline & Press Releases 页面或管线资产发生变化",
+        "entity": "Kyverna Pipeline & Press Releases",
+        "disease": "",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "official_update:official-change:cartesian-official:22b0d2be8caa",
+      "candidate_type": "official_update",
+      "external_id": "official-change:cartesian-official:22b0d2be8caa",
+      "source_url": "https://www.cartesiantherapeutics.com/pipeline/",
+      "reviewer": "reviewer",
+      "decision": "排除",
+      "action": "exclude",
+      "decision_at": "2026-07-22T12:53:15.550Z",
+      "decision_reason": "Release of Cartesian Therapeutics Announces New Employment Inducement Grants.",
+      "fields": {
+        "title": "Cartesian Therapeutics Pipeline & Press Releases 页面或管线资产发生变化",
+        "entity": "Cartesian Therapeutics Pipeline & Press Releases",
+        "disease": "",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:41342132",
+      "candidate_type": "research",
+      "external_id": "41342132",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41342132/",
+      "reviewer": "reviewer",
+      "decision": "排除",
+      "action": "exclude",
+      "decision_at": "2026-07-22T12:54:03.824Z",
+      "decision_reason": "Not related",
+      "fields": {
+        "title": "Value of 24- to 48-Hour Infarct Volume as a Surrogate for Clinical Outcome in Late-Window Thrombectomy May Be Limited: A Post Hoc Analysis of the AURORA Collaboration.",
+        "entity": "Stroke",
+        "disease": "",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:41410387",
+      "candidate_type": "research",
+      "external_id": "41410387",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41410387/",
+      "reviewer": "reviewer",
+      "decision": "排除",
+      "action": "exclude",
+      "decision_at": "2026-07-22T12:54:46.361Z",
+      "decision_reason": "not related",
+      "fields": {
+        "title": "Long-term safety and efficacy of voclosporin in Asian patients with lupus nephritis: A post hoc analysis of the AURORA 2 trial.",
+        "entity": "Modern rheumatology",
+        "disease": "systemic lupus",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:42459686",
+      "candidate_type": "research",
+      "external_id": "42459686",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42459686/",
+      "reviewer": "reviewer",
+      "decision": "发布",
+      "action": "confirm",
+      "decision_at": "2026-07-22T12:55:30.514Z",
+      "decision_reason": "核对原始来源后确认",
+      "fields": {
+        "title": "CAR-based cellular therapy for refractory systemic lupus erythematosus: an overlap-controlled systematic review.",
+        "entity": "Frontiers in immunology",
+        "disease": "systemic lupus",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:41501497",
+      "candidate_type": "research",
+      "external_id": "41501497",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41501497/",
+      "reviewer": "reviewer",
+      "decision": "发布",
+      "action": "confirm",
+      "decision_at": "2026-07-22T12:56:19.936Z",
+      "decision_reason": "核对原始来源后确认",
+      "fields": {
+        "title": "CD19 CAR-T cells for treatment-refractory autoimmune diseases: the phase 1/2 CASTLE basket trial.",
+        "entity": "Nature medicine",
+        "disease": "autoimmune disease",
+        "note": "高分文章"
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:40317902",
+      "candidate_type": "research",
+      "external_id": "40317902",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/40317902/",
+      "reviewer": "reviewer",
+      "decision": "排除",
+      "action": "exclude",
+      "decision_at": "2026-07-22T12:56:31.984Z",
+      "decision_reason": "not related",
+      "fields": {
+        "title": "Effect of Long-Term Voclosporin Treatment on Renal Histology in Patients With Active Lupus Nephritis With Repeat Renal Biopsies.",
+        "entity": "Arthritis & rheumatology (Hoboken, N.J.)",
+        "disease": "systemic lupus",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:40858468",
+      "candidate_type": "research",
+      "external_id": "40858468",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/40858468/",
+      "reviewer": "reviewer",
+      "decision": "发布",
+      "action": "confirm",
+      "decision_at": "2026-07-22T12:56:38.322Z",
+      "decision_reason": "核对原始来源后确认",
+      "fields": {
+        "title": "Genetically modified CD19-targeting IL-15 secreting NK cells for the treatment of systemic lupus erythematosus.",
+        "entity": "Annals of the rheumatic diseases",
+        "disease": "systemic lupus",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:41501916",
+      "candidate_type": "research",
+      "external_id": "41501916",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41501916/",
+      "reviewer": "reviewer",
+      "decision": "排除",
+      "action": "exclude",
+      "decision_at": "2026-07-22T12:56:49.725Z",
+      "decision_reason": "not related",
+      "fields": {
+        "title": "Home-based patient-centered physical activity program for quality of life preservation during neoadjuvant chemotherapy in breast cancer: the AURORA randomized controlled trial protocol.",
+        "entity": "Trials",
+        "disease": "",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:41577167",
+      "candidate_type": "research",
+      "external_id": "41577167",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41577167/",
+      "reviewer": "reviewer",
+      "decision": "排除",
+      "action": "exclude",
+      "decision_at": "2026-07-22T12:57:49.375Z",
+      "decision_reason": "not related",
+      "fields": {
+        "title": "Diagnostic performance of F-18 flurpiridaz in women: A sub-study of the Aurora Phase 3 trial.",
+        "entity": "Journal of nuclear cardiology : official publication of the American Society of Nuclear Cardiology",
+        "disease": "",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:41592279",
+      "candidate_type": "research",
+      "external_id": "41592279",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41592279/",
+      "reviewer": "reviewer",
+      "decision": "排除",
+      "action": "exclude",
+      "decision_at": "2026-07-22T12:58:01.100Z",
+      "decision_reason": "not related",
+      "fields": {
+        "title": "Targeting Aurora kinase A to prevent GVHD and relapse after myeloablative allogeneic hematopoietic cell transplantation.",
+        "entity": "Blood advances",
+        "disease": "",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:41371099",
+      "candidate_type": "research",
+      "external_id": "41371099",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41371099/",
+      "reviewer": "reviewer",
+      "decision": "排除",
+      "action": "exclude",
+      "decision_at": "2026-07-22T12:58:07.728Z",
+      "decision_reason": "not related",
+      "fields": {
+        "title": "Impact of PD-L1 on first-line osimertinib outcomes in EGFR-mutant NSCLC: real-world data from the AURORA25 study and meta-analysis.",
+        "entity": "Lung cancer (Amsterdam, Netherlands)",
+        "disease": "",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:40444809",
+      "candidate_type": "research",
+      "external_id": "40444809",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/40444809/",
+      "reviewer": "reviewer",
+      "decision": "排除",
+      "action": "exclude",
+      "decision_at": "2026-07-22T12:58:12.743Z",
+      "decision_reason": "not related",
+      "fields": {
+        "title": "Prognostic value of Aurora B expression in cancer patients: A meta-analysis.",
+        "entity": "Tumori",
+        "disease": "",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:39589337",
+      "candidate_type": "research",
+      "external_id": "39589337",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/39589337/",
+      "reviewer": "reviewer",
+      "decision": "排除",
+      "action": "exclude",
+      "decision_at": "2026-07-22T12:58:18.938Z",
+      "decision_reason": "not related",
+      "fields": {
+        "title": "Phase I/II Study of the Aurora Kinase A Inhibitor Alisertib and Pembrolizumab in Refractory, Rb-Deficient Head and Neck Squamous Cell Carcinomas.",
+        "entity": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+        "disease": "",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:41486656",
+      "candidate_type": "research",
+      "external_id": "41486656",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41486656/",
+      "reviewer": "reviewer",
+      "decision": "排除",
+      "action": "exclude",
+      "decision_at": "2026-07-22T12:58:29.382Z",
+      "decision_reason": "not related",
+      "fields": {
+        "title": "[Phase Ⅲ, multicenter, randomized, double-blinded, positive-controlled trial on the efficacy and safety of maribavir compared with valganciclovir in the treatment of post-transplant cytomegalovirus infection: Subgroup analysis of AURORA Trial in the Chinese population].",
+        "entity": "Zhonghua xue ye xue za zhi = Zhonghua xueyexue zazhi",
+        "disease": "",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:41390126",
+      "candidate_type": "research",
+      "external_id": "41390126",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41390126/",
+      "reviewer": "reviewer",
+      "decision": "排除",
+      "action": "exclude",
+      "decision_at": "2026-07-22T12:58:49.862Z",
+      "decision_reason": "not related",
+      "fields": {
+        "title": "Bitopertin shows efficacy in patients with erythropoietic protoporphyria: Results from the randomized, double-blind, placebo-controlled AURORA trial.",
+        "entity": "Journal of the American Academy of Dermatology",
+        "disease": "",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:40301088",
+      "candidate_type": "research",
+      "external_id": "40301088",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/40301088/",
+      "reviewer": "reviewer",
+      "decision": "排除",
+      "action": "exclude",
+      "decision_at": "2026-07-22T12:59:15.773Z",
+      "decision_reason": "in Japanese",
+      "fields": {
+        "title": "[Current trends in multiple sclerosis/neuromyelitis optica spectrum disorder therapy: considerations for domestic administration and personalized therapy].",
+        "entity": "Rinsho shinkeigaku = Clinical neurology",
+        "disease": "multiple sclerosis / neuromyelitis optica",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:39859183",
+      "candidate_type": "research",
+      "external_id": "39859183",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/39859183/",
+      "reviewer": "reviewer",
+      "decision": "发布",
+      "action": "confirm",
+      "decision_at": "2026-07-22T12:59:35.650Z",
+      "decision_reason": "核对原始来源后确认",
+      "fields": {
+        "title": "Exploring CAR T-Cell Dynamics: Balancing Potent Cytotoxicity and Controlled Inflammation in CAR T-Cells Derived from Systemic Sclerosis and Myositis Patients.",
+        "entity": "International journal of molecular sciences",
+        "disease": "systemic sclerosis / myositis",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:40058994",
+      "candidate_type": "research",
+      "external_id": "40058994",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/40058994/",
+      "reviewer": "reviewer",
+      "decision": "发布",
+      "action": "confirm",
+      "decision_at": "2026-07-22T12:59:44.612Z",
+      "decision_reason": "核对原始来源后确认",
+      "fields": {
+        "title": "Hematopoietic stem cell transplant, chimeric antigen receptor T-cells, and other cellular therapies as stepping stones toward long-term improvement in severe scleroderma and other autoimmune diseases.",
+        "entity": "Seminars in arthritis and rheumatism",
+        "disease": "systemic sclerosis / autoimmune disease",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:42098768",
+      "candidate_type": "research",
+      "external_id": "42098768",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42098768/",
+      "reviewer": "reviewer",
+      "decision": "排除",
+      "action": "exclude",
+      "decision_at": "2026-07-22T12:59:52.052Z",
+      "decision_reason": "not related",
+      "fields": {
+        "title": "Aurora A kinase activation contributes to the fibrotic phenotype in systemic sclerosis through primary cilia shortening.",
+        "entity": "Arthritis research & therapy",
+        "disease": "systemic sclerosis",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:42091691",
+      "candidate_type": "research",
+      "external_id": "42091691",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42091691/",
+      "reviewer": "reviewer",
+      "decision": "发布",
+      "action": "confirm",
+      "decision_at": "2026-07-22T12:59:56.284Z",
+      "decision_reason": "核对原始来源后确认",
+      "fields": {
+        "title": "Dual CAR-T cell therapy targeting CD19 and BCMA as a novel opportunity for immune reset in systemic lupus erythematosus.",
+        "entity": "Cellular & molecular immunology",
+        "disease": "systemic lupus",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:42070134",
+      "candidate_type": "research",
+      "external_id": "42070134",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42070134/",
+      "reviewer": "reviewer",
+      "decision": "排除",
+      "action": "exclude",
+      "decision_at": "2026-07-22T13:00:25.774Z",
+      "decision_reason": "not related",
+      "fields": {
+        "title": "Integrated affinity ultrafiltration UHPLC-QE-Orbitrap-MS and molecular docking for efficient screening of aurora kinase a inhibitors from Eomecon chionantha Hance.",
+        "entity": "Natural product research",
+        "disease": "multiple sclerosis",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:42292395",
+      "candidate_type": "research",
+      "external_id": "42292395",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42292395/",
+      "reviewer": "reviewer",
+      "decision": "发布",
+      "action": "confirm",
+      "decision_at": "2026-07-22T13:00:32.674Z",
+      "decision_reason": "核对原始来源后确认",
+      "fields": {
+        "title": "CAR-T cell therapy for autoimmune diseases: current clinical trial landscape and the next wave of development.",
+        "entity": "Frontiers in immunology",
+        "disease": "autoimmune disease",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:42171925",
+      "candidate_type": "research",
+      "external_id": "42171925",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42171925/",
+      "reviewer": "reviewer",
+      "decision": "排除",
+      "action": "exclude",
+      "decision_at": "2026-07-22T13:00:52.983Z",
+      "decision_reason": "not related",
+      "fields": {
+        "title": "A case of lupus nephritis achieving early remission using a treatment protocol similar to the AURORA trial with voclosporin and successfully discontinuing corticosteroids early.",
+        "entity": "CEN case reports",
+        "disease": "systemic lupus",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:42168367",
+      "candidate_type": "research",
+      "external_id": "42168367",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42168367/",
+      "reviewer": "reviewer",
+      "decision": "发布",
+      "action": "confirm",
+      "decision_at": "2026-07-22T13:00:55.820Z",
+      "decision_reason": "核对原始来源后确认",
+      "fields": {
+        "title": "Resetting autoimmune disease with CAR cell therapies.",
+        "entity": "Nature medicine",
+        "disease": "autoimmune disease",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:42245642",
+      "candidate_type": "research",
+      "external_id": "42245642",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42245642/",
+      "reviewer": "reviewer",
+      "decision": "发布",
+      "action": "confirm",
+      "decision_at": "2026-07-22T13:01:14.725Z",
+      "decision_reason": "核对原始来源后确认",
+      "fields": {
+        "title": "Bridging B-cell autoimmunity and oncology: the PD-1/PD-L1 paradox in systemic lupus erythematosus.",
+        "entity": "Frontiers in immunology",
+        "disease": "systemic lupus",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:42233033",
+      "candidate_type": "research",
+      "external_id": "42233033",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42233033/",
+      "reviewer": "reviewer",
+      "decision": "排除",
+      "action": "exclude",
+      "decision_at": "2026-07-22T13:01:27.413Z",
+      "decision_reason": "not related",
+      "fields": {
+        "title": "Global perspectives on lupus nephritis: a review of clinical trials and therapeutic innovations.",
+        "entity": "Frontiers in immunology",
+        "disease": "systemic lupus",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:42119368",
+      "candidate_type": "research",
+      "external_id": "42119368",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42119368/",
+      "reviewer": "reviewer",
+      "decision": "发布",
+      "action": "confirm",
+      "decision_at": "2026-07-22T13:01:32.780Z",
+      "decision_reason": "核对原始来源后确认",
+      "fields": {
+        "title": "Paving the road for CARs in pediatric autoimmune diseases.",
+        "entity": "Immunity",
+        "disease": "autoimmune disease",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:41787704",
+      "candidate_type": "research",
+      "external_id": "41787704",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41787704/",
+      "reviewer": "reviewer",
+      "decision": "发布",
+      "action": "confirm",
+      "decision_at": "2026-07-22T13:01:38.953Z",
+      "decision_reason": "核对原始来源后确认",
+      "fields": {
+        "title": "Dual-Targeting BCMA-CD19 CAR-T Cell Therapy in Systemic Lupus Erythematosus: Single-Cell and Immune Repertoire Analysis Reveals Mechanisms of Immune Reconstitution.",
+        "entity": "Arthritis & rheumatology (Hoboken, N.J.)",
+        "disease": "systemic lupus",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:41960033",
+      "candidate_type": "research",
+      "external_id": "41960033",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41960033/",
+      "reviewer": "reviewer",
+      "decision": "发布",
+      "action": "confirm",
+      "decision_at": "2026-07-22T13:01:44.736Z",
+      "decision_reason": "核对原始来源后确认",
+      "fields": {
+        "title": "Chimeric antigen receptor T-cell therapy in pediatric neurological autoimmune diseases: mechanisms, clinical applications, and future perspectives.",
+        "entity": "Frontiers in pediatrics",
+        "disease": "autoimmune disease",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:41867791",
+      "candidate_type": "research",
+      "external_id": "41867791",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41867791/",
+      "reviewer": "reviewer",
+      "decision": "排除",
+      "action": "exclude",
+      "decision_at": "2026-07-22T13:01:52.816Z",
+      "decision_reason": "not related",
+      "fields": {
+        "title": "Mechanistic insights into B-cell activation and autoreactivity regulation in active SLE and remission.",
+        "entity": "bioRxiv : the preprint server for biology",
+        "disease": "systemic lupus",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:41850942",
+      "candidate_type": "research",
+      "external_id": "41850942",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41850942/",
+      "reviewer": "reviewer",
+      "decision": "发布",
+      "action": "confirm",
+      "decision_at": "2026-07-22T13:02:00.607Z",
+      "decision_reason": "核对原始来源后确认",
+      "fields": {
+        "title": "Neutrophil transcriptomics in SLE reveals intrinsic disease signatures, shared ex vivo adaptation, and transcriptional reset after CAR T-cell therapy.",
+        "entity": "Annals of the rheumatic diseases",
+        "disease": "systemic lupus",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:42260211",
+      "candidate_type": "research",
+      "external_id": "42260211",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42260211/",
+      "reviewer": "reviewer",
+      "decision": "发布",
+      "action": "confirm",
+      "decision_at": "2026-07-22T13:02:07.218Z",
+      "decision_reason": "核对原始来源后确认",
+      "fields": {
+        "title": "Cellular therapies in systemic lupus erythematosus: recent progress and future directions.",
+        "entity": "Clinical rheumatology",
+        "disease": "systemic lupus",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:42226627",
+      "candidate_type": "research",
+      "external_id": "42226627",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42226627/",
+      "reviewer": "reviewer",
+      "decision": "排除",
+      "action": "exclude",
+      "decision_at": "2026-07-22T13:02:19.185Z",
+      "decision_reason": "not related",
+      "fields": {
+        "title": "Advances and unmet needs in the management of proliferative lupus nephritis: evidence, guidelines, and emerging therapies.",
+        "entity": "Kidney research and clinical practice",
+        "disease": "systemic lupus",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:42379764",
+      "candidate_type": "research",
+      "external_id": "42379764",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42379764/",
+      "reviewer": "reviewer",
+      "decision": "排除",
+      "action": "exclude",
+      "decision_at": "2026-07-22T13:02:24.714Z",
+      "decision_reason": "not related",
+      "fields": {
+        "title": "Adjuvant Molecular Hydrogen Facilitates Immunosuppressant Tapering and Sustained Remission in Systemic Lupus Erythematosus: A Case Report.",
+        "entity": "In vivo (Athens, Greece)",
+        "disease": "systemic lupus",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:42475287",
+      "candidate_type": "research",
+      "external_id": "42475287",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42475287/",
+      "reviewer": "reviewer",
+      "decision": "排除",
+      "action": "exclude",
+      "decision_at": "2026-07-22T13:03:18.128Z",
+      "decision_reason": "review without high quality",
+      "fields": {
+        "title": "Progress and promise of CAR-T cell treatment in autoimmune diseases.",
+        "entity": "PLoS medicine",
+        "disease": "autoimmune disease",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:42420832",
+      "candidate_type": "research",
+      "external_id": "42420832",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42420832/",
+      "reviewer": "reviewer",
+      "decision": "排除",
+      "action": "exclude",
+      "decision_at": "2026-07-22T13:03:34.657Z",
+      "decision_reason": "not related",
+      "fields": {
+        "title": "Navigating the therapeutic landscape: Biologics and immunosuppressive therapy in lupus nephritis during pregnancy.",
+        "entity": "Lupus",
+        "disease": "systemic lupus",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:42454374",
+      "candidate_type": "research",
+      "external_id": "42454374",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42454374/",
+      "reviewer": "reviewer",
+      "decision": "发布",
+      "action": "confirm",
+      "decision_at": "2026-07-22T13:03:43.829Z",
+      "decision_reason": "核对原始来源后确认",
+      "fields": {
+        "title": "BCMA-CD19 CAR T Cells in Systemic Lupus Erythematosus: Humoral Reset or Antigen-Specific Tolerance?",
+        "entity": "Arthritis & rheumatology (Hoboken, N.J.)",
+        "disease": "systemic lupus",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:42454387",
+      "candidate_type": "research",
+      "external_id": "42454387",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42454387/",
+      "reviewer": "reviewer",
+      "decision": "发布",
+      "action": "confirm",
+      "decision_at": "2026-07-22T13:03:49.528Z",
+      "decision_reason": "核对原始来源后确认",
+      "fields": {
+        "title": "Reply:BCMA-CD19 CAR T Cells in Systemic Lupus Erythematosus: Humoral Reset or Antigen-Specific Tolerance?",
+        "entity": "Arthritis & rheumatology (Hoboken, N.J.)",
+        "disease": "systemic lupus",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:41583477",
+      "candidate_type": "research",
+      "external_id": "41583477",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41583477/",
+      "reviewer": "reviewer",
+      "decision": "发布",
+      "action": "confirm",
+      "decision_at": "2026-07-22T13:06:34.982Z",
+      "decision_reason": "核对原始来源后确认",
+      "fields": {
+        "title": "Aberrant B cell responses as drivers of autoantibody generation and epitope diversification in SLE pathogenesis.",
+        "entity": "Frontiers in immunology",
+        "disease": "systemic lupus",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:41657283",
+      "candidate_type": "research",
+      "external_id": "41657283",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41657283/",
+      "reviewer": "reviewer",
+      "decision": "发布",
+      "action": "confirm",
+      "decision_at": "2026-07-22T13:06:46.982Z",
+      "decision_reason": "核对原始来源后确认",
+      "fields": {
+        "title": "From technological iteration to clinical breakthrough: advances of CAR-T cell therapy in autoimmune diseases.",
+        "entity": "Annals of medicine",
+        "disease": "autoimmune disease",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:42124727",
+      "candidate_type": "research",
+      "external_id": "42124727",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42124727/",
+      "reviewer": "reviewer",
+      "decision": "排除",
+      "action": "exclude",
+      "decision_at": "2026-07-22T13:07:06.509Z",
+      "decision_reason": "not related",
+      "fields": {
+        "title": "Imbalance of Ciliary Programs Drives Fibroblast Differentiation and Fibrotic Signaling in Systemic Sclerosis.",
+        "entity": "bioRxiv : the preprint server for biology",
+        "disease": "systemic sclerosis",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:41744771",
+      "candidate_type": "research",
+      "external_id": "41744771",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41744771/",
+      "reviewer": "reviewer",
+      "decision": "发布",
+      "action": "confirm",
+      "decision_at": "2026-07-22T13:07:11.543Z",
+      "decision_reason": "核对原始来源后确认",
+      "fields": {
+        "title": "Stem Cell-Based Therapies in Autoimmune Diseases: Current Evidence, Unmet Needs, and Future Directions-A Closing Editorial Review.",
+        "entity": "Cells",
+        "disease": "autoimmune disease",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:41962541",
+      "candidate_type": "research",
+      "external_id": "41962541",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41962541/",
+      "reviewer": "reviewer",
+      "decision": "发布",
+      "action": "confirm",
+      "decision_at": "2026-07-22T13:09:32.336Z",
+      "decision_reason": "核对原始来源后确认",
+      "fields": {
+        "title": "CD19 CAR-T therapy induces remission in refractory autoimmune hemolytic anemia with ITP and antiphospholipid syndrome.",
+        "entity": "Med (New York, N.Y.)",
+        "disease": "immune thrombocytopenia",
+        "note": "case report in new indication"
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:42208464",
+      "candidate_type": "research",
+      "external_id": "42208464",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42208464/",
+      "reviewer": "reviewer",
+      "decision": "排除",
+      "action": "exclude",
+      "decision_at": "2026-07-22T13:09:58.970Z",
+      "decision_reason": "not related",
+      "fields": {
+        "title": "New N-(isoxazol-3-yl)-4-(1,3,4-thiadiazol-3(2H)-yl)benzenesulfonamide derivatives as potent Aurora kinases inhibitors: Design, synthesis and anti-proliferative activity.",
+        "entity": "Bioorganic chemistry",
+        "disease": "",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:42003306",
+      "candidate_type": "research",
+      "external_id": "42003306",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42003306/",
+      "reviewer": "reviewer",
+      "decision": "排除",
+      "action": "exclude",
+      "decision_at": "2026-07-22T13:10:11.673Z",
+      "decision_reason": "not related",
+      "fields": {
+        "title": "Regulation of Citron kinase by CDK1 and Aurora B regulates midbody formation and stability.",
+        "entity": "Journal of cell science",
+        "disease": "",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:42169006",
+      "candidate_type": "research",
+      "external_id": "42169006",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42169006/",
+      "reviewer": "reviewer",
+      "decision": "排除",
+      "action": "exclude",
+      "decision_at": "2026-07-22T13:10:16.791Z",
+      "decision_reason": "not related",
+      "fields": {
+        "title": "Checkpoint kinase 2 coordinates autophagy activation and Aurora kinase A degradation to regulate primary cilia for cell invasion.",
+        "entity": "Cell communication and signaling : CCS",
+        "disease": "",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:42171920",
+      "candidate_type": "research",
+      "external_id": "42171920",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42171920/",
+      "reviewer": "reviewer",
+      "decision": "排除",
+      "action": "exclude",
+      "decision_at": "2026-07-22T13:10:20.608Z",
+      "decision_reason": "not related",
+      "fields": {
+        "title": "Inhibition of Aurora B induces senescence and potentiates immunotherapy in hepatocellular carcinoma.",
+        "entity": "Cellular oncology (Dordrecht, Netherlands)",
+        "disease": "",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:42132337",
+      "candidate_type": "research",
+      "external_id": "42132337",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42132337/",
+      "reviewer": "reviewer",
+      "decision": "排除",
+      "action": "exclude",
+      "decision_at": "2026-07-22T13:10:25.822Z",
+      "decision_reason": "not related",
+      "fields": {
+        "title": "A hierarchical model of affective and cognitive factors in trauma: examination utilizing the AURORA database of participants following trauma exposure.",
+        "entity": "Cognitive behaviour therapy",
+        "disease": "",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:42200045",
+      "candidate_type": "research",
+      "external_id": "42200045",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42200045/",
+      "reviewer": "reviewer",
+      "decision": "排除",
+      "action": "exclude",
+      "decision_at": "2026-07-22T13:10:32.276Z",
+      "decision_reason": "not related",
+      "fields": {
+        "title": "Social support and post-traumatic stress symptoms: Longitudinal bidirectional relationships in the AURORA study.",
+        "entity": "Journal of mood and anxiety disorders",
+        "disease": "",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:42128226",
+      "candidate_type": "research",
+      "external_id": "42128226",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42128226/",
+      "reviewer": "reviewer",
+      "decision": "排除",
+      "action": "exclude",
+      "decision_at": "2026-07-22T13:10:38.693Z",
+      "decision_reason": "not related",
+      "fields": {
+        "title": "Improved assessment of coronary artery disease in obese Patients with flurpiridaz-(18)F positron emission tomography myocardial perfusion imaging: A prespecified subgroup analysis of the AURORA phase 3 study.",
+        "entity": "Journal of nuclear cardiology : official publication of the American Society of Nuclear Cardiology",
+        "disease": "",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:42138941",
+      "candidate_type": "research",
+      "external_id": "42138941",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42138941/",
+      "reviewer": "reviewer",
+      "decision": "排除",
+      "action": "exclude",
+      "decision_at": "2026-07-22T13:10:42.019Z",
+      "decision_reason": "not related",
+      "fields": {
+        "title": "Correction to Effect of Aurora kinase B on polyploidy and decidualization in mouse uterus.",
+        "entity": "American journal of reproductive immunology (New York, N.Y. : 1989)",
+        "disease": "",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:41822828",
+      "candidate_type": "research",
+      "external_id": "41822828",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41822828/",
+      "reviewer": "reviewer",
+      "decision": "排除",
+      "action": "exclude",
+      "decision_at": "2026-07-22T13:10:45.342Z",
+      "decision_reason": "not related",
+      "fields": {
+        "title": "Art of imaging: Aurora Cerebralis Rivers of the Mind.",
+        "entity": "Radiology advances",
+        "disease": "",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:42040873",
+      "candidate_type": "research",
+      "external_id": "42040873",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42040873/",
+      "reviewer": "reviewer",
+      "decision": "排除",
+      "action": "exclude",
+      "decision_at": "2026-07-22T13:10:50.355Z",
+      "decision_reason": "not related",
+      "fields": {
+        "title": "Exploring the Motivations of Midwives Working in Rural and Remote Areas of Aurora Province: A Descriptive Qualitative Study.",
+        "entity": "Acta medica Philippina",
+        "disease": "",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:41773702",
+      "candidate_type": "research",
+      "external_id": "41773702",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41773702/",
+      "reviewer": "reviewer",
+      "decision": "排除",
+      "action": "exclude",
+      "decision_at": "2026-07-22T13:10:54.387Z",
+      "decision_reason": "not related",
+      "fields": {
+        "title": "Aurora B kinase phosphorylates keratin 8 at the cleavage furrow to drive spatially restricted intermediate filament disassembly during cytokinesis.",
+        "entity": "The FEBS journal",
+        "disease": "",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:41905170",
+      "candidate_type": "research",
+      "external_id": "41905170",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41905170/",
+      "reviewer": "reviewer",
+      "decision": "排除",
+      "action": "exclude",
+      "decision_at": "2026-07-22T13:10:59.125Z",
+      "decision_reason": "not related",
+      "fields": {
+        "title": "Structure-based drug repurposing reveals ponatinib and lapatinib as stable inhibitors of Aurora kinase B: Mechanistic insights from high-resolution molecular dynamics and free-energy analyses.",
+        "entity": "Computational biology and chemistry",
+        "disease": "",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:41880487",
+      "candidate_type": "research",
+      "external_id": "41880487",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41880487/",
+      "reviewer": "reviewer",
+      "decision": "排除",
+      "action": "exclude",
+      "decision_at": "2026-07-22T13:11:03.484Z",
+      "decision_reason": "not related",
+      "fields": {
+        "title": "Microtubules guide Aurora B substrate geometries for accurate chromosome segregation.",
+        "entity": "Science advances",
+        "disease": "",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:41876446",
+      "candidate_type": "research",
+      "external_id": "41876446",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41876446/",
+      "reviewer": "reviewer",
+      "decision": "排除",
+      "action": "exclude",
+      "decision_at": "2026-07-22T13:11:08.943Z",
+      "decision_reason": "not related",
+      "fields": {
+        "title": "The ATC12 small molecule inhibits the Aurora-A/TPX2 interaction and impairs the proliferation of breast cancer cells.",
+        "entity": "Cell death & disease",
+        "disease": "",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:41427961",
+      "candidate_type": "research",
+      "external_id": "41427961",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41427961/",
+      "reviewer": "reviewer",
+      "decision": "排除",
+      "action": "exclude",
+      "decision_at": "2026-07-22T13:11:12.614Z",
+      "decision_reason": "not related",
+      "fields": {
+        "title": "Molecular and Clinical Analyses of Gene Fusions Identify Therapeutic Targets in Paired Primary and Metastatic Breast Cancer from the AURORA Program (BIG 14-01).",
+        "entity": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+        "disease": "",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:41921419",
+      "candidate_type": "research",
+      "external_id": "41921419",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41921419/",
+      "reviewer": "reviewer",
+      "decision": "排除",
+      "action": "exclude",
+      "decision_at": "2026-07-22T13:11:16.849Z",
+      "decision_reason": "not related",
+      "fields": {
+        "title": "Multi-representation machine learning approaches for screening aurora kinases A & B inhibitors and insights from structural alerts.",
+        "entity": "Journal of molecular graphics & modelling",
+        "disease": "",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:42014297",
+      "candidate_type": "research",
+      "external_id": "42014297",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42014297/",
+      "reviewer": "reviewer",
+      "decision": "排除",
+      "action": "exclude",
+      "decision_at": "2026-07-22T13:11:21.327Z",
+      "decision_reason": "not related",
+      "fields": {
+        "title": "Mapping Real-world Rebiopsy Events to Treatment Trajectories in EGFR/ALK/ROS1-Driven Non-small-cell Lung Cancer: Insights from the AURORA Cohort.",
+        "entity": "Clinical lung cancer",
+        "disease": "",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:41847687",
+      "candidate_type": "research",
+      "external_id": "41847687",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41847687/",
+      "reviewer": "reviewer",
+      "decision": "排除",
+      "action": "exclude",
+      "decision_at": "2026-07-22T13:11:25.366Z",
+      "decision_reason": "not related",
+      "fields": {
+        "title": "High-throughput discovery and characterisation of pentafluorobenzene sulfonamide modifiers of Aurora A kinase.",
+        "entity": "RSC chemical biology",
+        "disease": "",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:41823391",
+      "candidate_type": "research",
+      "external_id": "41823391",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41823391/",
+      "reviewer": "reviewer",
+      "decision": "排除",
+      "action": "exclude",
+      "decision_at": "2026-07-22T13:11:29.360Z",
+      "decision_reason": "not related",
+      "fields": {
+        "title": "Minimally Invasive Evacuation of Intracranial Hemorrhages Using the Aurora® Surgiscope System: Preliminary Experience.",
+        "entity": "Operative neurosurgery (Hagerstown, Md.)",
+        "disease": "",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:41971741",
+      "candidate_type": "research",
+      "external_id": "41971741",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41971741/",
+      "reviewer": "reviewer",
+      "decision": "排除",
+      "action": "exclude",
+      "decision_at": "2026-07-22T13:11:33.466Z",
+      "decision_reason": "not related",
+      "fields": {
+        "title": "Proteomic phenotyping with machine learning for cardiovascular outcomes in haemodialysis: insights from the AURORA trial.",
+        "entity": "European heart journal. Digital health",
+        "disease": "",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:41634954",
+      "candidate_type": "research",
+      "external_id": "41634954",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41634954/",
+      "reviewer": "reviewer",
+      "decision": "排除",
+      "action": "exclude",
+      "decision_at": "2026-07-22T13:11:36.906Z",
+      "decision_reason": "not related",
+      "fields": {
+        "title": "Covalent Peptide-Based N-Myc/Aurora-A Inhibitors Bearing Sulfonyl Fluoride Warheads.",
+        "entity": "Journal of peptide science : an official publication of the European Peptide Society",
+        "disease": "",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:42327281",
+      "candidate_type": "research",
+      "external_id": "42327281",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42327281/",
+      "reviewer": "reviewer",
+      "decision": "排除",
+      "action": "exclude",
+      "decision_at": "2026-07-22T13:11:40.048Z",
+      "decision_reason": "not related",
+      "fields": {
+        "title": "Telomeric heterochromatin acts in trans to promote meiotic centromere assembly via Aurora B kinase recruitment.",
+        "entity": "bioRxiv : the preprint server for biology",
+        "disease": "",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:42237747",
+      "candidate_type": "research",
+      "external_id": "42237747",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42237747/",
+      "reviewer": "reviewer",
+      "decision": "排除",
+      "action": "exclude",
+      "decision_at": "2026-07-22T13:11:43.892Z",
+      "decision_reason": "not related",
+      "fields": {
+        "title": "Reproductive timing and clutch parameters of the pearl darter, Percina aurora, in the Pascagoula River drainage.",
+        "entity": "Journal of fish biology",
+        "disease": "",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:42380670",
+      "candidate_type": "research",
+      "external_id": "42380670",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42380670/",
+      "reviewer": "reviewer",
+      "decision": "排除",
+      "action": "exclude",
+      "decision_at": "2026-07-22T13:11:47.889Z",
+      "decision_reason": "not related",
+      "fields": {
+        "title": "AURORA A interacts with DICER and SETD2 to promote S-phase progression.",
+        "entity": "EMBO reports",
+        "disease": "",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:42376328",
+      "candidate_type": "research",
+      "external_id": "42376328",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42376328/",
+      "reviewer": "reviewer",
+      "decision": "排除",
+      "action": "exclude",
+      "decision_at": "2026-07-22T13:11:51.685Z",
+      "decision_reason": "not related",
+      "fields": {
+        "title": "Synthesis, molecular modelling and evaluation of (-)-isopulegol-based 2,4-diaminopyrimidines as promising aurora kinase inhibitors.",
+        "entity": "RSC medicinal chemistry",
+        "disease": "",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:41934065",
+      "candidate_type": "research",
+      "external_id": "41934065",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41934065/",
+      "reviewer": "reviewer",
+      "decision": "发布",
+      "action": "confirm",
+      "decision_at": "2026-07-22T13:15:01.563Z",
+      "decision_reason": "核对原始来源后确认",
+      "fields": {
+        "title": "Cellular therapies in systemic Sclerosis: immunopathogenesis-informed precision targeting with CAR-T and CAR-NK approaches.",
+        "entity": "Best practice & research. Clinical rheumatology",
+        "disease": "systemic sclerosis",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:42019495",
+      "candidate_type": "research",
+      "external_id": "42019495",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42019495/",
+      "reviewer": "reviewer",
+      "decision": "发布",
+      "action": "confirm",
+      "decision_at": "2026-07-22T13:15:21.320Z",
+      "decision_reason": "核对原始来源后确认",
+      "fields": {
+        "title": "Descartes-08: Unlocking the potential of mRNA CAR T-cell therapy in myasthenia gravis.",
+        "entity": "Molecular therapy : the journal of the American Society of Gene Therapy",
+        "disease": "myasthenia gravis",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:42008018",
+      "candidate_type": "research",
+      "external_id": "42008018",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42008018/",
+      "reviewer": "reviewer",
+      "decision": "发布",
+      "action": "confirm",
+      "decision_at": "2026-07-22T13:15:30.389Z",
+      "decision_reason": "核对原始来源后确认",
+      "fields": {
+        "title": "The Evolving Landscape of CAR T-Cell Therapy in Autoimmune Diseases: A State-of-the-Art Review (2025).",
+        "entity": "Clinical reviews in allergy & immunology",
+        "disease": "autoimmune disease",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:41027249",
+      "candidate_type": "research",
+      "external_id": "41027249",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41027249/",
+      "reviewer": "reviewer",
+      "decision": "发布",
+      "action": "confirm",
+      "decision_at": "2026-07-22T13:15:33.929Z",
+      "decision_reason": "核对原始来源后确认",
+      "fields": {
+        "title": "CAR T-cell therapy in autoimmune diseases: Opportunities and challenges, with implications for RA.",
+        "entity": "Tissue & cell",
+        "disease": "autoimmune disease",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:40985012",
+      "candidate_type": "research",
+      "external_id": "40985012",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/40985012/",
+      "reviewer": "reviewer",
+      "decision": "排除",
+      "action": "exclude",
+      "decision_at": "2026-07-22T13:15:53.802Z",
+      "decision_reason": "not related",
+      "fields": {
+        "title": "Aggressive treatment of early acute focal inflammatory activity to extend the window for BTK inhibition in multiple sclerosis.",
+        "entity": "Therapeutic advances in neurological disorders",
+        "disease": "multiple sclerosis",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:41176941",
+      "candidate_type": "research",
+      "external_id": "41176941",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41176941/",
+      "reviewer": "reviewer",
+      "decision": "发布",
+      "action": "confirm",
+      "decision_at": "2026-07-22T13:16:42.674Z",
+      "decision_reason": "核对原始来源后确认",
+      "fields": {
+        "title": "CAR T cells for multiple sclerosis: Engineering T cells to disrupt chronic B cell-driven neuroinflammation.",
+        "entity": "Multiple sclerosis and related disorders",
+        "disease": "multiple sclerosis",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:41169367",
+      "candidate_type": "research",
+      "external_id": "41169367",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41169367/",
+      "reviewer": "reviewer",
+      "decision": "排除",
+      "action": "exclude",
+      "decision_at": "2026-07-22T13:17:11.086Z",
+      "decision_reason": "not related",
+      "fields": {
+        "title": "The link between gut microbiota and multiple sclerosis from the perspective of barrier function.",
+        "entity": "Frontiers in immunology",
+        "disease": "multiple sclerosis",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:41246297",
+      "candidate_type": "research",
+      "external_id": "41246297",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41246297/",
+      "reviewer": "reviewer",
+      "decision": "发布",
+      "action": "confirm",
+      "decision_at": "2026-07-22T13:17:44.551Z",
+      "decision_reason": "核对原始来源后确认",
+      "fields": {
+        "title": "B cell receptor repertoire reconstitution in patients with neuromyelitis optica spectrum disorder receiving B-cell depletion therapy.",
+        "entity": "Frontiers in immunology",
+        "disease": "neuromyelitis optica",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:41070760",
+      "candidate_type": "research",
+      "external_id": "41070760",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41070760/",
+      "reviewer": "reviewer",
+      "decision": "排除",
+      "action": "exclude",
+      "decision_at": "2026-07-22T13:18:03.952Z",
+      "decision_reason": "not related",
+      "fields": {
+        "title": "Epstein-Barr Virus, Lower Vitamin D, Low Sun Exposure, and HLA-DRB1*1501 Risk Variant Share Common Epigenetic Pathways Leading to Multiple Sclerosis Onset.",
+        "entity": "Annals of neurology",
+        "disease": "multiple sclerosis",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:41059547",
+      "candidate_type": "research",
+      "external_id": "41059547",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41059547/",
+      "reviewer": "reviewer",
+      "decision": "排除",
+      "action": "exclude",
+      "decision_at": "2026-07-22T13:18:14.640Z",
+      "decision_reason": "not related",
+      "fields": {
+        "title": "A multicenter cohort of transgender and gender diverse people with multiple sclerosis.",
+        "entity": "Multiple sclerosis (Houndmills, Basingstoke, England)",
+        "disease": "multiple sclerosis",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:41052399",
+      "candidate_type": "research",
+      "external_id": "41052399",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41052399/",
+      "reviewer": "reviewer",
+      "decision": "发布",
+      "action": "confirm",
+      "decision_at": "2026-07-22T13:18:32.546Z",
+      "decision_reason": "核对原始来源后确认",
+      "fields": {
+        "title": "Anti-CD19 CAR T-Cell Therapy in Advanced Stiff-Person Syndrome and Concomitant Myasthenia Gravis.",
+        "entity": "Neurology(R) neuroimmunology & neuroinflammation",
+        "disease": "myasthenia gravis",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:41328048",
+      "candidate_type": "research",
+      "external_id": "41328048",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41328048/",
+      "reviewer": "reviewer",
+      "decision": "排除",
+      "action": "exclude",
+      "decision_at": "2026-07-22T13:18:46.772Z",
+      "decision_reason": "not related",
+      "fields": {
+        "title": "Clinical and immunological long-term outcomes after autologous hematopoietic stem cell transplantation in systemic sclerosis: a retrospective single-center experience.",
+        "entity": "Therapeutic advances in musculoskeletal disease",
+        "disease": "systemic sclerosis",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:41248446",
+      "candidate_type": "research",
+      "external_id": "41248446",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41248446/",
+      "reviewer": "reviewer",
+      "decision": "发布",
+      "action": "confirm",
+      "decision_at": "2026-07-22T13:18:56.613Z",
+      "decision_reason": "核对原始来源后确认",
+      "fields": {
+        "title": "Promising Effects of CAR T-Cell Therapy in Refractory Stiff Person Syndrome and a Hopeful Future for All Neuroautoimmunities.",
+        "entity": "Neurology(R) neuroimmunology & neuroinflammation",
+        "disease": "stiff person",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:40449041",
+      "candidate_type": "research",
+      "external_id": "40449041",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/40449041/",
+      "reviewer": "reviewer",
+      "decision": "排除",
+      "action": "exclude",
+      "decision_at": "2026-07-22T13:19:03.709Z",
+      "decision_reason": "not related",
+      "fields": {
+        "title": "Is there a path to cure myasthenia gravis?",
+        "entity": "Current opinion in immunology",
+        "disease": "myasthenia gravis",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:40044810",
+      "candidate_type": "research",
+      "external_id": "40044810",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/40044810/",
+      "reviewer": "reviewer",
+      "decision": "发布",
+      "action": "confirm",
+      "decision_at": "2026-07-22T13:19:09.566Z",
+      "decision_reason": "核对原始来源后确认",
+      "fields": {
+        "title": "Defining immune reset: achieving sustained remission in autoimmune diseases.",
+        "entity": "Nature reviews. Immunology",
+        "disease": "autoimmune disease",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:40028795",
+      "candidate_type": "research",
+      "external_id": "40028795",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/40028795/",
+      "reviewer": "reviewer",
+      "decision": "排除",
+      "action": "exclude",
+      "decision_at": "2026-07-22T13:19:19.795Z",
+      "decision_reason": "not related",
+      "fields": {
+        "title": "Management of cutaneous manifestations of systemic sclerosis: current approaches and emerging therapies.",
+        "entity": "Current opinion in rheumatology",
+        "disease": "systemic sclerosis",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:42300765",
+      "candidate_type": "research",
+      "external_id": "42300765",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42300765/",
+      "reviewer": "reviewer",
+      "decision": "排除",
+      "action": "exclude",
+      "decision_at": "2026-07-22T13:20:19.351Z",
+      "decision_reason": "not related",
+      "fields": {
+        "title": "Thiazolidin-based dual Aurora kinase inhibitors with potent anticancer activity.",
+        "entity": "Future medicinal chemistry",
+        "disease": "",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:42123602",
+      "candidate_type": "research",
+      "external_id": "42123602",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42123602/",
+      "reviewer": "reviewer",
+      "decision": "排除",
+      "action": "exclude",
+      "decision_at": "2026-07-22T13:20:38.623Z",
+      "decision_reason": "not related",
+      "fields": {
+        "title": "Redefining Difficult-to-Treat Systemic Lupus Erythematosus: Biomarkers of Molecular Refractoriness Beyond Clinical Failure.",
+        "entity": "International journal of molecular sciences",
+        "disease": "systemic lupus",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:41266084",
+      "candidate_type": "research",
+      "external_id": "41266084",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41266084/",
+      "reviewer": "reviewer",
+      "decision": "发布",
+      "action": "confirm",
+      "decision_at": "2026-07-22T13:20:43.761Z",
+      "decision_reason": "核对原始来源后确认",
+      "fields": {
+        "title": "Successful autologous CD19 CAR T cell therapy following severe lupus flare during immunosuppressive washout in refractory lupus nephritis.",
+        "entity": "Lupus science & medicine",
+        "disease": "systemic lupus",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:40166657",
+      "candidate_type": "research",
+      "external_id": "40166657",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/40166657/",
+      "reviewer": "reviewer",
+      "decision": "排除",
+      "action": "exclude",
+      "decision_at": "2026-07-22T13:20:54.433Z",
+      "decision_reason": "not related",
+      "fields": {
+        "title": "The kidney injury biomarker profile of patients with lupus nephritis remains unchanged with the second-generation calcineurin inhibitor voclosporin.",
+        "entity": "Frontiers in nephrology",
+        "disease": "systemic lupus",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:40661940",
+      "candidate_type": "research",
+      "external_id": "40661940",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/40661940/",
+      "reviewer": "reviewer",
+      "decision": "发布",
+      "action": "confirm",
+      "decision_at": "2026-07-22T13:21:02.441Z",
+      "decision_reason": "核对原始来源后确认",
+      "fields": {
+        "title": "Longitudinal immune profiling following autologous hematopoietic stem cell transplantation in multiple sclerosis: insights into immune reconstitution and disease modulation.",
+        "entity": "Frontiers in immunology",
+        "disease": "multiple sclerosis",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:40536974",
+      "candidate_type": "research",
+      "external_id": "40536974",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/40536974/",
+      "reviewer": "reviewer",
+      "decision": "发布",
+      "action": "confirm",
+      "decision_at": "2026-07-22T13:21:06.212Z",
+      "decision_reason": "核对原始来源后确认",
+      "fields": {
+        "title": "In vivo CAR T cell generation to treat cancer and autoimmune disease.",
+        "entity": "Science (New York, N.Y.)",
+        "disease": "autoimmune disease",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:40534130",
+      "candidate_type": "research",
+      "external_id": "40534130",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/40534130/",
+      "reviewer": "reviewer",
+      "decision": "排除",
+      "action": "exclude",
+      "decision_at": "2026-07-22T13:22:05.010Z",
+      "decision_reason": "not related",
+      "fields": {
+        "title": "Effective use of BCMA-targeting bispecific T cell-engaging antibody in treatment-refractory LRP4(+) myasthenia gravis.",
+        "entity": "Molecular therapy : the journal of the American Society of Gene Therapy",
+        "disease": "myasthenia gravis",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:42368601",
+      "candidate_type": "research",
+      "external_id": "42368601",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42368601/",
+      "reviewer": "reviewer",
+      "decision": "发布",
+      "action": "confirm",
+      "decision_at": "2026-07-22T13:22:41.310Z",
+      "decision_reason": "核对原始来源后确认",
+      "fields": {
+        "title": "Editorial-Immune reset in sight: CAR-T cell therapy in autoimmune disease.",
+        "entity": "EULAR rheumatology open",
+        "disease": "autoimmune disease",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:42157967",
+      "candidate_type": "research",
+      "external_id": "42157967",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42157967/",
+      "reviewer": "reviewer",
+      "decision": "发布",
+      "action": "confirm",
+      "decision_at": "2026-07-22T13:22:46.965Z",
+      "decision_reason": "核对原始来源后确认",
+      "fields": {
+        "title": "Case study of resecabtagene autoleucel in a subject with diffuse cutaneous systemic sclerosis treated in the RESET-SSc trial.",
+        "entity": "Molecular therapy. Advances",
+        "disease": "systemic sclerosis",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:41436900",
+      "candidate_type": "research",
+      "external_id": "41436900",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41436900/",
+      "reviewer": "reviewer",
+      "decision": "排除",
+      "action": "exclude",
+      "decision_at": "2026-07-22T13:22:57.004Z",
+      "decision_reason": "not related",
+      "fields": {
+        "title": "Is a Functional Cure Possible in Autoimmune Diseases? Evidence from Trigger Eradication, Transplantation, and Cellular Therapies.",
+        "entity": "Rheumatology and therapy",
+        "disease": "autoimmune disease",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:41383015",
+      "candidate_type": "research",
+      "external_id": "41383015",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41383015/",
+      "reviewer": "reviewer",
+      "decision": "发布",
+      "action": "confirm",
+      "decision_at": "2026-07-22T13:23:05.399Z",
+      "decision_reason": "核对原始来源后确认",
+      "fields": {
+        "title": "Redefining multiple sclerosis with CAR-T cell therapy.",
+        "entity": "Molecular therapy : the journal of the American Society of Gene Therapy",
+        "disease": "multiple sclerosis",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:41278328",
+      "candidate_type": "research",
+      "external_id": "41278328",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41278328/",
+      "reviewer": "reviewer",
+      "decision": "排除",
+      "action": "exclude",
+      "decision_at": "2026-07-22T13:23:14.077Z",
+      "decision_reason": "not related",
+      "fields": {
+        "title": "Persistent Renal Activity Despite Systemic Remission After Hematopoietic Stem Cell Transplantation in Lupus Nephritis.",
+        "entity": "Kidney international reports",
+        "disease": "systemic lupus",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:40906188",
+      "candidate_type": "research",
+      "external_id": "40906188",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/40906188/",
+      "reviewer": "reviewer",
+      "decision": "发布",
+      "action": "confirm",
+      "decision_at": "2026-07-22T13:23:31.407Z",
+      "decision_reason": "核对原始来源后确认",
+      "fields": {
+        "title": "[Long-term follow up of efficiency and safety of CD19-CAR T-cell treatment of systemic lupus erythematosus].",
+        "entity": "Zeitschrift fur Rheumatologie",
+        "disease": "systemic lupus",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:40993243",
+      "candidate_type": "research",
+      "external_id": "40993243",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/40993243/",
+      "reviewer": "reviewer",
+      "decision": "发布",
+      "action": "confirm",
+      "decision_at": "2026-07-22T13:23:40.214Z",
+      "decision_reason": "核对原始来源后确认",
+      "fields": {
+        "title": "Co-infusion of CD19-targeting and BCMA-targeting CAR-T cells for treatment-refractory systemic lupus erythematosus: a phase 1 trial.",
+        "entity": "Nature medicine",
+        "disease": "systemic lupus",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:41156612",
+      "candidate_type": "research",
+      "external_id": "41156612",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41156612/",
+      "reviewer": "reviewer",
+      "decision": "排除",
+      "action": "exclude",
+      "decision_at": "2026-07-22T13:25:44.237Z",
+      "decision_reason": "not related",
+      "fields": {
+        "title": "Toxoplasmosis in the Era of Targeted Immunotherapy: A Systematic Review of Emerging Cases Linked to Biologics and Small Molecules in Autoimmune Diseases, Oncology and Transplantation.",
+        "entity": "Pathogens (Basel, Switzerland)",
+        "disease": "autoimmune disease",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:41037957",
+      "candidate_type": "research",
+      "external_id": "41037957",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41037957/",
+      "reviewer": "reviewer",
+      "decision": "发布",
+      "action": "confirm",
+      "decision_at": "2026-07-22T13:25:53.674Z",
+      "decision_reason": "核对原始来源后确认",
+      "fields": {
+        "title": "Preliminary safety and efficacy of relmacabtagene autoleucel (relma-cel) in adults with moderately to severely active systemic lupus erythematosus: a phase I dose-escalation study.",
+        "entity": "Journal of autoimmunity",
+        "disease": "systemic lupus",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:42092057",
+      "candidate_type": "research",
+      "external_id": "42092057",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42092057/",
+      "reviewer": "reviewer",
+      "decision": "发布",
+      "action": "confirm",
+      "decision_at": "2026-07-22T13:27:21.086Z",
+      "decision_reason": "核对原始来源后确认",
+      "fields": {
+        "title": "CAR T cell therapy shows promise for treatment of stiff person syndrome.",
+        "entity": "Nature reviews. Neurology",
+        "disease": "stiff person",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:42476268",
+      "candidate_type": "research",
+      "external_id": "42476268",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42476268/",
+      "reviewer": "reviewer",
+      "decision": "排除",
+      "action": "exclude",
+      "decision_at": "2026-07-22T13:27:45.018Z",
+      "decision_reason": "not related",
+      "fields": {
+        "title": "Beyond immune checkpoint blockade: T cell engagers and antibody-drug conjugates in cancer and autoimmune disease.",
+        "entity": "Biochemical pharmacology",
+        "disease": "autoimmune disease",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:41519116",
+      "candidate_type": "research",
+      "external_id": "41519116",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41519116/",
+      "reviewer": "reviewer",
+      "decision": "排除",
+      "action": "exclude",
+      "decision_at": "2026-07-22T13:28:22.635Z",
+      "decision_reason": "not related",
+      "fields": {
+        "title": "Progressive multiple sclerosis: Six trials to watch.",
+        "entity": "Med (New York, N.Y.)",
+        "disease": "multiple sclerosis",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:41781158",
+      "candidate_type": "research",
+      "external_id": "41781158",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41781158/",
+      "reviewer": "reviewer",
+      "decision": "排除",
+      "action": "exclude",
+      "decision_at": "2026-07-22T13:47:43.446Z",
+      "decision_reason": "review with low if",
+      "fields": {
+        "title": "CAR-T cell therapy for treatment-refractory rheumatic autoimmune diseases: a systematic review of clinical outcomes and safety profiles.",
+        "entity": "RMD open",
+        "disease": "autoimmune disease",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:41305772",
+      "candidate_type": "research",
+      "external_id": "41305772",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41305772/",
+      "reviewer": "reviewer",
+      "decision": "排除",
+      "action": "exclude",
+      "decision_at": "2026-07-22T13:47:43.446Z",
+      "decision_reason": "review with low if",
+      "fields": {
+        "title": "Advances and prospects of CAR-T cell therapy in autoimmune disease treatment.",
+        "entity": "Medicine",
+        "disease": "autoimmune disease",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:40749440",
+      "candidate_type": "research",
+      "external_id": "40749440",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/40749440/",
+      "reviewer": "reviewer",
+      "decision": "排除",
+      "action": "exclude",
+      "decision_at": "2026-07-22T13:47:43.446Z",
+      "decision_reason": "review with low if",
+      "fields": {
+        "title": "CAR T-cell therapy in SLE: A systematic review.",
+        "entity": "Seminars in arthritis and rheumatism",
+        "disease": "systemic lupus",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:39754644",
+      "candidate_type": "research",
+      "external_id": "39754644",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/39754644/",
+      "reviewer": "reviewer",
+      "decision": "排除",
+      "action": "exclude",
+      "decision_at": "2026-07-22T13:47:43.446Z",
+      "decision_reason": "review with low if",
+      "fields": {
+        "title": "Safety and efficacy of CAR-T cell therapy in patients with autoimmune diseases: a systematic review.",
+        "entity": "Rheumatology international",
+        "disease": "autoimmune disease",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:40812299",
+      "candidate_type": "research",
+      "external_id": "40812299",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/40812299/",
+      "reviewer": "reviewer",
+      "decision": "排除",
+      "action": "exclude",
+      "decision_at": "2026-07-22T13:47:43.446Z",
+      "decision_reason": "review with low if",
+      "fields": {
+        "title": "Hypoimmune CD19 CAR T cells evade allorejection in patients with cancer and autoimmune disease.",
+        "entity": "Cell stem cell",
+        "disease": "autoimmune disease",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:41989015",
+      "candidate_type": "research",
+      "external_id": "41989015",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41989015/",
+      "reviewer": "reviewer",
+      "decision": "排除",
+      "action": "exclude",
+      "decision_at": "2026-07-22T13:47:43.446Z",
+      "decision_reason": "review with low if",
+      "fields": {
+        "title": "Chimeric antigen receptor T cells for autoimmune diseases, in particular immune thrombocytopenia.",
+        "entity": "British journal of haematology",
+        "disease": "immune thrombocytopenia / autoimmune disease",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:42158317",
+      "candidate_type": "research",
+      "external_id": "42158317",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42158317/",
+      "reviewer": "reviewer",
+      "decision": "排除",
+      "action": "exclude",
+      "decision_at": "2026-07-22T13:48:48.789Z",
+      "decision_reason": "not related",
+      "fields": {
+        "title": "Chimeric Antigen Receptor T-Cell Revolution Remodeling Immunity to Conquer Autoimmune Disease.",
+        "entity": "Research (Washington, D.C.)",
+        "disease": "autoimmune disease",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:41969813",
+      "candidate_type": "research",
+      "external_id": "41969813",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41969813/",
+      "reviewer": "reviewer",
+      "decision": "排除",
+      "action": "exclude",
+      "decision_at": "2026-07-22T13:48:48.789Z",
+      "decision_reason": "not related",
+      "fields": {
+        "title": "Nursing insights into CAR T-cell therapy for systemic lupus erythematosus: Highlights of a standardized nursing system for CAR T-cell therapy.",
+        "entity": "Rheumatology and immunology research",
+        "disease": "systemic lupus",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:42453395",
+      "candidate_type": "research",
+      "external_id": "42453395",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42453395/",
+      "reviewer": "reviewer",
+      "decision": "排除",
+      "action": "exclude",
+      "decision_at": "2026-07-22T13:48:48.789Z",
+      "decision_reason": "not related",
+      "fields": {
+        "title": "In situ generation of EBNA1 CAR-T cells eradicates antigen specific auto-immune B cells for multiple sclerosis treatment.",
+        "entity": "Acta pharmaceutica Sinica. B",
+        "disease": "multiple sclerosis",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:42225220",
+      "candidate_type": "research",
+      "external_id": "42225220",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42225220/",
+      "reviewer": "reviewer",
+      "decision": "发布",
+      "action": "confirm",
+      "decision_at": "2026-07-22T13:49:18.390Z",
+      "decision_reason": "核对原始来源后确认",
+      "fields": {
+        "title": "CAR T cells for systemic autoimmune diseases.",
+        "entity": "Autoimmunity reviews",
+        "disease": "autoimmune disease",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:42345064",
+      "candidate_type": "research",
+      "external_id": "42345064",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42345064/",
+      "reviewer": "reviewer",
+      "decision": "发布",
+      "action": "confirm",
+      "decision_at": "2026-07-22T13:49:18.390Z",
+      "decision_reason": "核对原始来源后确认",
+      "fields": {
+        "title": "Academic point-of-care anti-CD19 CAR T-cell therapy induces durable remission and transient paroxysmal nocturnal hemoglobinuria-type cell expansion in a patient with multi-refractory immune thrombocytopenia.",
+        "entity": "Haematologica",
+        "disease": "immune thrombocytopenia",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:41841658",
+      "candidate_type": "research",
+      "external_id": "41841658",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41841658/",
+      "reviewer": "reviewer",
+      "decision": "发布",
+      "action": "confirm",
+      "decision_at": "2026-07-22T13:49:18.390Z",
+      "decision_reason": "核对原始来源后确认",
+      "fields": {
+        "title": "Clinical and immunologic status of a child conceived following maternal administration of CD19 CAR T-cells for systemic lupus erythematosus.",
+        "entity": "Clinical and experimental rheumatology",
+        "disease": "systemic lupus",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:40446794",
+      "candidate_type": "research",
+      "external_id": "40446794",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/40446794/",
+      "reviewer": "reviewer",
+      "decision": "发布",
+      "action": "confirm",
+      "decision_at": "2026-07-22T13:49:40.207Z",
+      "decision_reason": "核对原始来源后确认",
+      "fields": {
+        "title": "Allogeneic CD19-targeted CAR-T therapy in refractory systemic lupus erythematosus achieved durable remission.",
+        "entity": "Med (New York, N.Y.)",
+        "disease": "systemic lupus",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:40681435",
+      "candidate_type": "research",
+      "external_id": "40681435",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/40681435/",
+      "reviewer": "reviewer",
+      "decision": "发布",
+      "action": "confirm",
+      "decision_at": "2026-07-22T13:49:52.282Z",
+      "decision_reason": "核对原始来源后确认",
+      "fields": {
+        "title": "BCMA-targeted CAR T cell therapy can effectively induce disease remission in refractory lupus nephritis.",
+        "entity": "Annals of the rheumatic diseases",
+        "disease": "systemic lupus",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:40813483",
+      "candidate_type": "research",
+      "external_id": "40813483",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/40813483/",
+      "reviewer": "reviewer",
+      "decision": "发布",
+      "action": "confirm",
+      "decision_at": "2026-07-22T13:50:01.609Z",
+      "decision_reason": "核对原始来源后确认",
+      "fields": {
+        "title": "CAR T cell therapy efficacy and safety in SLE: a systematic review and pooled analysis of 47 patients across 10 studies.",
+        "entity": "Naunyn-Schmiedeberg's archives of pharmacology",
+        "disease": "systemic lupus",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:42098533",
+      "candidate_type": "research",
+      "external_id": "42098533",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42098533/",
+      "reviewer": "reviewer",
+      "decision": "发布",
+      "action": "confirm",
+      "decision_at": "2026-07-22T13:50:45.438Z",
+      "decision_reason": "核对原始来源后确认",
+      "fields": {
+        "title": "B cell Maturation Antigen Targeted Chimeric Antigen Receptor T Cell Therapy for Refractory Systemic Lupus Erythematosus and Systemic Sclerosis.",
+        "entity": "Arthritis & rheumatology (Hoboken, N.J.)",
+        "disease": "systemic lupus / systemic sclerosis",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:41856114",
+      "candidate_type": "research",
+      "external_id": "41856114",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41856114/",
+      "reviewer": "reviewer",
+      "decision": "发布",
+      "action": "confirm",
+      "decision_at": "2026-07-22T13:50:45.438Z",
+      "decision_reason": "核对原始来源后确认",
+      "fields": {
+        "title": "Anti-CD19 CAR T cell therapy for refractory SLE-ITP.",
+        "entity": "Med (New York, N.Y.)",
+        "disease": "systemic lupus / immune thrombocytopenia",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:42137276",
+      "candidate_type": "research",
+      "external_id": "42137276",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42137276/",
+      "reviewer": "reviewer",
+      "decision": "发布",
+      "action": "confirm",
+      "decision_at": "2026-07-22T13:50:45.438Z",
+      "decision_reason": "核对原始来源后确认",
+      "fields": {
+        "title": "CD19 CAR T cell therapy in systemic sclerosis: A case study that reaffirms the promise of cell therapy to treat autoimmune disease.",
+        "entity": "Molecular therapy. Advances",
+        "disease": "systemic sclerosis / autoimmune disease",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:40470549",
+      "candidate_type": "research",
+      "external_id": "40470549",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/40470549/",
+      "reviewer": "reviewer",
+      "decision": "发布",
+      "action": "confirm",
+      "decision_at": "2026-07-22T13:50:45.438Z",
+      "decision_reason": "核对原始来源后确认",
+      "fields": {
+        "title": "Anti-CD19 chimeric antigen receptor T cell therapy achieved rapid and sustained remission in a patient with systemic lupus erythematosus-associated refractory immune thrombocytopenia.",
+        "entity": "Clinical and experimental rheumatology",
+        "disease": "systemic lupus / immune thrombocytopenia",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:42105262",
+      "candidate_type": "research",
+      "external_id": "42105262",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42105262/",
+      "reviewer": "reviewer",
+      "decision": "排除",
+      "action": "exclude",
+      "decision_at": "2026-07-22T13:51:59.229Z",
+      "decision_reason": "not related",
+      "fields": {
+        "title": "Exosome-based strategies to enhance CAR-T cell therapy for systemic lupus erythematosus: A promising new frontier.",
+        "entity": "International reviews of immunology",
+        "disease": "systemic lupus",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:42104450",
+      "candidate_type": "research",
+      "external_id": "42104450",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42104450/",
+      "reviewer": "reviewer",
+      "decision": "排除",
+      "action": "exclude",
+      "decision_at": "2026-07-22T13:51:59.229Z",
+      "decision_reason": "not related",
+      "fields": {
+        "title": "Nanotechnology-enhanced CAR-T therapy strategies in cancer, aging, and autoimmune diseases.",
+        "entity": "Journal of hematology & oncology",
+        "disease": "autoimmune disease",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:40873568",
+      "candidate_type": "research",
+      "external_id": "40873568",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/40873568/",
+      "reviewer": "reviewer",
+      "decision": "排除",
+      "action": "exclude",
+      "decision_at": "2026-07-22T13:52:09.722Z",
+      "decision_reason": "review with low if",
+      "fields": {
+        "title": "CAR T-cell therapy in autoimmune diseases: a promising frontier on the horizon.",
+        "entity": "Frontiers in immunology",
+        "disease": "autoimmune disease",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:42221047",
+      "candidate_type": "research",
+      "external_id": "42221047",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42221047/",
+      "reviewer": "reviewer",
+      "decision": "排除",
+      "action": "exclude",
+      "decision_at": "2026-07-22T13:52:09.722Z",
+      "decision_reason": "review with low if",
+      "fields": {
+        "title": "Beyond malignancies: Clinical advancements of CAR T-cell in the treatment of autoimmune diseases.",
+        "entity": "Intractable & rare diseases research",
+        "disease": "autoimmune disease",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:42235055",
+      "candidate_type": "research",
+      "external_id": "42235055",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42235055/",
+      "reviewer": "reviewer",
+      "decision": "发布",
+      "action": "confirm",
+      "decision_at": "2026-07-22T13:52:56.162Z",
+      "decision_reason": "核对原始来源后确认",
+      "fields": {
+        "title": "Systematic Review of Chimeric Antigen Receptor T-cell Therapy in Autoimmune Diseases.",
+        "entity": "Journal of clinical rheumatology : practical reports on rheumatic & musculoskeletal diseases",
+        "disease": "autoimmune disease",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:42177178",
+      "candidate_type": "research",
+      "external_id": "42177178",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42177178/",
+      "reviewer": "reviewer",
+      "decision": "发布",
+      "action": "confirm",
+      "decision_at": "2026-07-22T13:53:07.755Z",
+      "decision_reason": "核对原始来源后确认",
+      "fields": {
+        "title": "Deep phenotyping of skin tissue remodeling in patients with systemic sclerosis treated with CD19-CAR T cells.",
+        "entity": "Nature communications",
+        "disease": "systemic sclerosis",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:40953960",
+      "candidate_type": "research",
+      "external_id": "40953960",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/40953960/",
+      "reviewer": "reviewer",
+      "decision": "发布",
+      "action": "confirm",
+      "decision_at": "2026-07-22T13:55:27.392Z",
+      "decision_reason": "核对原始来源后确认",
+      "fields": {
+        "title": "Effects of CD19 CAR T Cell Therapy on Quality of Life and Direct Healthcare Costs in Systemic Lupus Erythematosus: A Preliminary Analysis.",
+        "entity": "The Journal of rheumatology",
+        "disease": "systemic lupus",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:40449514",
+      "candidate_type": "research",
+      "external_id": "40449514",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/40449514/",
+      "reviewer": "reviewer",
+      "decision": "发布",
+      "action": "confirm",
+      "decision_at": "2026-07-22T13:55:38.963Z",
+      "decision_reason": "核对原始来源后确认",
+      "fields": {
+        "title": "Persisting CD19.CAR-T cells in combination with nintedanib: clinical response in a patient with systemic sclerosis-associated pulmonary fibrosis after 2 years.",
+        "entity": "The Lancet. Respiratory medicine",
+        "disease": "systemic sclerosis",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:40606751",
+      "candidate_type": "research",
+      "external_id": "40606751",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/40606751/",
+      "reviewer": "reviewer",
+      "decision": "排除",
+      "action": "exclude",
+      "decision_at": "2026-07-22T13:55:54.798Z",
+      "decision_reason": "not related",
+      "fields": {
+        "title": "Hypoimmune CD19 CAR T cells treat allogeneic mice with features of spontaneous systemic lupus erythematosus.",
+        "entity": "iScience",
+        "disease": "systemic lupus",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:39485492",
+      "candidate_type": "research",
+      "external_id": "39485492",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/39485492/",
+      "reviewer": "reviewer",
+      "decision": "排除",
+      "action": "exclude",
+      "decision_at": "2026-07-22T13:56:38.942Z",
+      "decision_reason": "not related",
+      "fields": {
+        "title": "Neutrophil-to-lymphocyte ratio as a biomarker for clinical response after autologous haematopoietic stem cell transplantation in systemic sclerosis.",
+        "entity": "Rheumatology (Oxford, England)",
+        "disease": "systemic sclerosis",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:41807826",
+      "candidate_type": "research",
+      "external_id": "41807826",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41807826/",
+      "reviewer": "reviewer",
+      "decision": "发布",
+      "action": "confirm",
+      "decision_at": "2026-07-22T13:56:57.524Z",
+      "decision_reason": "核对原始来源后确认",
+      "fields": {
+        "title": "B cell depletion in autoimmune disease: in vivo CAR-T or T cell engagers?",
+        "entity": "Nature biotechnology",
+        "disease": "autoimmune disease",
+        "note": ""
+      },
+      "next_review_at": null
+    },
+    {
+      "candidate_id": "research:40312206",
+      "candidate_type": "research",
+      "external_id": "40312206",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/40312206/",
+      "reviewer": "reviewer",
+      "decision": "发布",
+      "action": "confirm",
+      "decision_at": "2026-07-22T13:57:15.226Z",
+      "decision_reason": "核对原始来源后确认",
+      "fields": {
+        "title": "Relapse after anti-CD19 CAR T-cell therapy in a patient with severe rheumatoid arthritis and multiple sclerosis effectively treated by autologous stem cell transplantation.",
+        "entity": "Annals of the rheumatic diseases",
+        "disease": "multiple sclerosis",
+        "note": ""
+      },
+      "next_review_at": null
+    }
+  ]
 }

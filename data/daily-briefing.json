@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-27T23:34:04.378Z",
+  "generated_at": "2026-07-29T16:01:01.276Z",
   "as_of": "2026-07-21",
   "headline": {
     "id": "pmid-42251699",
@@ -11,9 +11,9 @@
   },
   "snapshot": {
     "formal_records": 187,
-    "externally_verified": 67,
+    "externally_verified": 45,
     "active_priority_trials": 35,
-    "candidate_items": 3062,
+    "candidate_items": 835,
     "quality_score": 0
   },
   "verified_updates": [
@@ -58,6 +58,134 @@
       "topic": "MS / MG"
     }
   ],
+  "fda_regulatory": {
+    "summary": {
+      "sources": 8,
+      "available": 8,
+      "partial": 0,
+      "failed": 0,
+      "labels_found": 8,
+      "approved_cell_gene_products": 50,
+      "relevant_cber_updates": 11
+    },
+    "updates": [
+      {
+        "title": "CBER 2026 Orphan Approvals (new BLAs)",
+        "url": "https://www.fda.gov/vaccines-blood-biologics/cber-2026-orphan-approvals-new-blas",
+        "source": "FDA/CBER",
+        "category": "CBER news"
+      },
+      {
+        "title": "Cellular, Tissue, and Gene Therapies Advisory Committee Meeting Announcement",
+        "url": "https://www.fda.gov/advisory-committees/advisory-committee-calendar/cellular-tissue-and-gene-therapies-advisory-committee-july-30-2026-meeting-announcement-updated",
+        "source": "FDA/CBER",
+        "category": "CBER news"
+      },
+      {
+        "title": "Cellular, Tissue, and Gene Therapies Advisory Committee Meeting Announcement",
+        "url": "https://www.fda.gov/advisory-committees/advisory-committee-calendar/cellular-tissue-and-gene-therapies-advisory-committee-july-29-2026-meeting-announcement-updated",
+        "source": "FDA/CBER",
+        "category": "CBER news"
+      },
+      {
+        "title": "Chemistry, Manufacturing, and Controls Flexibilities for Developing Human Cellular and Gene Therapy Products for a Biologics License Application; Guidance of Industry",
+        "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/chemistry-manufacturing-and-controls-flexibilities-developing-human-cellular-and-gene-therapy",
+        "source": "FDA/CBER",
+        "category": "CBER news"
+      },
+      {
+        "title": "OTP Town Hall: Best Practices for Preparing BLA Submissions for Cell and Gene Therapy Products",
+        "url": "https://www.fda.gov/vaccines-blood-biologics/news-events-biologics/otp-town-hall-best-practices-preparing-bla-submissions-cell-and-gene-therapy-products-06042026",
+        "source": "FDA/CBER",
+        "category": "CBER news"
+      },
+      {
+        "title": "FDA Eliminates Risk Evaluation and Mitigation Strategies (REMS) for Autologous Chimeric Antigen Receptor (CAR) T cell Immunotherapies",
+        "url": "https://www.fda.gov/vaccines-blood-biologics/safety-availability-biologics/fda-eliminates-risk-evaluation-and-mitigation-strategies-rems-autologous-chimeric-antigen-receptor",
+        "source": "FDA/CBER",
+        "category": "CBER safety"
+      },
+      {
+        "title": "FDA Investigating Deaths Due to Acute Liver Failure Following Treatment with Sarepta’s AAVrh74 Gene Therapies",
+        "url": "https://www.fda.gov/vaccines-blood-biologics/safety-availability-biologics/fda-investigating-deaths-due-acute-liver-failure-following-treatment-sareptas-aavrh74-gene-therapies",
+        "source": "FDA/CBER",
+        "category": "CBER safety"
+      },
+      {
+        "title": "FDA Requires Boxed Warning for T cell Malignancies Following Treatment with BCMA-Directed or CD19-Directed Autologous Chimeric Antigen Receptor (CAR) T cell Immunotherapies",
+        "url": "https://www.fda.gov/vaccines-blood-biologics/safety-availability-biologics/fda-requires-boxed-warning-t-cell-malignancies-following-treatment-bcma-directed-or-cd19-directed",
+        "source": "FDA/CBER",
+        "category": "CBER safety"
+      }
+    ],
+    "cart_labels": [
+      {
+        "brand_name": "Abecma",
+        "generic_name": "IDECABTAGENE VICLEUCEL",
+        "effective_date": "2025-11-25",
+        "application_number": "BLA125736",
+        "status": "ok",
+        "source_url": "https://api.fda.gov/drug/label.json?search=openfda.brand_name%3A%22ABECMA%22&limit=1"
+      },
+      {
+        "brand_name": "AUCATZYL",
+        "generic_name": "OBECABTAGENE AUTOLEUCEL",
+        "effective_date": "2026-06-23",
+        "application_number": "BLA125813",
+        "status": "ok",
+        "source_url": "https://api.fda.gov/drug/label.json?search=openfda.brand_name%3A%22AUCATZYL%22&limit=1"
+      },
+      {
+        "brand_name": "BREYANZI",
+        "generic_name": "LISOCABTAGENE MARALEUCEL",
+        "effective_date": "2026-02-20",
+        "application_number": "BLA125714",
+        "status": "ok",
+        "source_url": "https://api.fda.gov/drug/label.json?search=openfda.brand_name%3A%22BREYANZI%22&limit=1"
+      },
+      {
+        "brand_name": "CARVYKTI",
+        "generic_name": "CILTACABTAGENE AUTOLEUCEL",
+        "effective_date": "2026-07-15",
+        "application_number": "BLA125746",
+        "status": "ok",
+        "source_url": "https://api.fda.gov/drug/label.json?search=openfda.brand_name%3A%22CARVYKTI%22&limit=1"
+      },
+      {
+        "brand_name": "KYMRIAH",
+        "generic_name": "TISAGENLECLEUCEL",
+        "effective_date": "2025-12-16",
+        "application_number": "BLA125646",
+        "status": "ok",
+        "source_url": "https://api.fda.gov/drug/label.json?search=openfda.brand_name%3A%22KYMRIAH%22&limit=1"
+      },
+      {
+        "brand_name": "TECARTUS",
+        "generic_name": "BREXUCABTAGENE AUTOLEUCEL",
+        "effective_date": "2026-06-16",
+        "application_number": "BLA125703",
+        "status": "ok",
+        "source_url": "https://api.fda.gov/drug/label.json?search=openfda.brand_name%3A%22TECARTUS%22&limit=1"
+      },
+      {
+        "brand_name": "YESCARTA",
+        "generic_name": "AXICABTAGENE CILOLEUCEL",
+        "effective_date": "2026-06-15",
+        "application_number": "BLA125643",
+        "status": "ok",
+        "source_url": "https://api.fda.gov/drug/label.json?search=openfda.brand_name%3A%22YESCARTA%22&limit=1"
+      },
+      {
+        "brand_name": "TREGZI",
+        "generic_name": "ALLOGENEIC REGULATORY T CELL IMMUNOTHERAPY WITH HSPC AND T CELLS-VLDQ",
+        "effective_date": "2026-06-30",
+        "application_number": "BLA125868",
+        "status": "ok",
+        "source_url": "https://api.fda.gov/drug/label.json?search=openfda.brand_name%3A%22TREGZI%22&limit=1"
+      }
+    ],
+    "interpretation": "FDA登记、IND、上市批准、标签与FAERS安全信号分别记录；FAERS不用于因果判断。"
+  },
   "trial_watch": [
     {
       "id": "icell-icg318-iim-phase1",
@@ -244,6 +372,12 @@
     {
       "code": "verification_stale",
       "record_type": "company",
+      "record_id": "adicet-prulacel",
+      "message": "已超过 14 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "company",
       "record_id": "allogene-allo329",
       "message": "已超过 14 天复核周期"
     },
@@ -310,7 +444,37 @@
     {
       "code": "verification_stale",
       "record_type": "company",
+      "record_id": "changhai-kn3601",
+      "message": "已超过 14 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "company",
       "record_id": "erlangen-cd19",
+      "message": "已超过 14 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "company",
+      "record_id": "gustaveroussy-cellattack1",
+      "message": "已超过 14 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "company",
+      "record_id": "hadassah-hbi0101",
+      "message": "已超过 14 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "company",
+      "record_id": "huashan-c-car168-cns",
+      "message": "已超过 14 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "company",
+      "record_id": "renji-c-car168",
       "message": "已超过 14 天复核周期"
     },
     {
@@ -340,6 +504,12 @@
     {
       "code": "verification_stale",
       "record_type": "company",
+      "record_id": "tongji-ct103a-neuro",
+      "message": "已超过 14 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "company",
       "record_id": "tongji-qh103",
       "message": "已超过 14 天复核周期"
     },
@@ -352,6 +522,12 @@
     {
       "code": "verification_stale",
       "record_type": "company",
+      "record_id": "tangdu-cd19bcma-mg",
+      "message": "已超过 14 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "company",
       "record_id": "tianjin-qt019c",
       "message": "已超过 14 天复核周期"
     },
@@ -359,6 +535,12 @@
       "code": "verification_stale",
       "record_type": "company",
       "record_id": "tianjin-xiniao-ucar",
+      "message": "已超过 14 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "company",
+      "record_id": "xuzhou-bcmacd19-mg",
       "message": "已超过 14 天复核周期"
     },
     {
@@ -383,6 +565,12 @@
       "code": "verification_stale",
       "record_type": "trial",
       "record_id": "kyv101-ms-phase1",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "kyv101-mg-kysa6-phase23",
       "message": "已超过 7 天复核周期"
     },
     {
@@ -472,6 +660,12 @@
     {
       "code": "verification_stale",
       "record_type": "trial",
+      "record_id": "miltenyi-mbcart20191-ms-phase12a",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "trial",
       "record_id": "ti0032-invivo-autoimmune",
       "message": "已超过 7 天复核周期"
     },
@@ -544,6 +738,12 @@
     {
       "code": "verification_stale",
       "record_type": "trial",
+      "record_id": "cabaletta-resecel-ms-phase12",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "trial",
       "record_id": "precision-cd19-autoimmune-phase1",
       "message": "已超过 7 天复核周期"
     },
@@ -610,6 +810,12 @@
     {
       "code": "verification_stale",
       "record_type": "trial",
+      "record_id": "icell-icg318-iim-phase1",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "trial",
       "record_id": "tangdu-cd19bcma-mg-iit",
       "message": "已超过 7 天复核周期"
     },
@@ -628,6 +834,12 @@
     {
       "code": "verification_stale",
       "record_type": "trial",
+      "record_id": "cabaletta-resecel-myositis",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "trial",
       "record_id": "novartis-rapcabtagene-iim-phase2",
       "message": "已超过 7 天复核周期"
     },
@@ -635,6 +847,12 @@
       "code": "verification_stale",
       "record_type": "trial",
       "record_id": "cartesian-descartes08-myositis-phase2",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "tr1x-trx319-impact-ms",
       "message": "已超过 7 天复核周期"
     },
     {
@@ -808,6 +1026,12 @@
     {
       "code": "verification_stale",
       "record_type": "event",
+      "record_id": "event-cabaletta-eular2026",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "event",
       "record_id": "event-nct06056921-update",
       "message": "已超过 7 天复核周期"
     },
@@ -890,6 +1114,48 @@
       "message": "已超过 7 天复核周期"
     },
     {
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-nct07715136-update",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-cartesian-westgene-invivo",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-cabaletta-resetms-withdrawal",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-miltenyi-mbcart20191-ms",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-tr1x-impactms-registration",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-kyverna-kysa6-phase3",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "official_source_difference",
+      "record_type": "trial",
+      "record_id": "kyv101-mg-kysa6-phase23",
+      "message": "官方来源字段已变化：registry_last_update"
+    },
+    {
       "code": "official_source_difference",
       "record_type": "trial",
       "record_id": "cc97540-breakfree2",
@@ -920,6 +1186,12 @@
       "message": "官方来源字段已变化：registry_last_update"
     },
     {
+      "code": "discovery_source_failed",
+      "record_type": "system",
+      "record_id": "-",
+      "message": "候选情报来源访问失败：CDE 药物临床试验登记与信息公示平台 / 未知错误"
+    },
+    {
       "code": "regulatory_source_failed",
       "record_type": "system",
       "record_id": "-",
@@ -931,12 +1203,12 @@
       "type": "trial",
       "external_id": "NCT05869955",
       "title": "A Phase 1, Multicenter, Open-Label Study Of CC-97540 (BMS-986353), CD19-Targeted Nex-T Chimeric Antigen Receptor (CAR) T Cells, in Participants With Severe, Refractory Autoimmune Diseases: Systemic Lupus Erythematosus, Idiopathic Inflammatory Myopathy, Systemic Sclerosis, or Rheumatoid Arthritis (Breakfree-1)",
-      "score": 20,
+      "score": 22,
       "tier": "立即核验",
       "reasons": [
         "正式注册试验",
         "命中重点实体：Cartesian / Descartes-08",
-        "命中4个重点病种",
+        "命中5个重点病种",
         "当前处于活跃状态"
       ],
       "source_url": "https://clinicaltrials.gov/study/NCT05869955"
@@ -970,6 +1242,20 @@
     },
     {
       "type": "trial",
+      "external_id": "NCT07295847",
+      "title": "A Phase 1b, Open-label, Multi-cohort Study of AZD0120, an Autologous CD19/BCMA Targeting Chimeric Antigen Receptor T-cell, in Adults With Autoimmune Diseases",
+      "score": 18,
+      "tier": "立即核验",
+      "reasons": [
+        "正式注册试验",
+        "命中重点实体：Cartesian / Descartes-08",
+        "命中3个重点病种",
+        "当前处于活跃状态"
+      ],
+      "source_url": "https://clinicaltrials.gov/study/NCT07295847"
+    },
+    {
+      "type": "trial",
       "external_id": "NCT07089121",
       "title": "Descartes-08 for Children, Adolescents and Young Adults With Childhood-onset Systemic Lupus Erythematosus, ANCA-associated Vasculitis, Juvenile Myasthenia Gravis, and Juvenile Dermatomyositis",
       "score": 18,
@@ -993,20 +1279,6 @@
         "命中7个重点病种"
       ],
       "source_url": "https://clinicaltrials.gov/study/NCT07676266"
-    },
-    {
-      "type": "trial",
-      "external_id": "NCT06152172",
-      "title": "CARTIMMUNE: A Single-Center Study of Patients With Autoimmune Diseases Receiving an Autologous Fully-Human Anti-CD19 Chimeric Antigen Receptor T-Cell (KYV 101)",
-      "score": 18,
-      "tier": "立即核验",
-      "reasons": [
-        "正式注册试验",
-        "命中重点实体：Kyverna / KYV-101",
-        "命中3个重点病种",
-        "当前处于活跃状态"
-      ],
-      "source_url": "https://clinicaltrials.gov/study/NCT06152172"
     }
   ],
   "editorial_note": "头条、动态和试验均来自正式核验数据；候选队列仅表示下一步核验优先级。"
