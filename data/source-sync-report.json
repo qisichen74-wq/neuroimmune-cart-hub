@@ -1,13 +1,21 @@
 {
-  "generated_at": "2026-07-27T23:33:43.876Z",
+  "generated_at": "2026-07-29T15:50:31.287Z",
   "source_policy": "Official APIs are compared with local structured fields; differences require editorial review and are never auto-applied.",
   "summary": {
     "records_checked": 78,
     "successful": 78,
     "failed": 0,
-    "differences": 5
+    "differences": 6
   },
   "differences": [
+    {
+      "record_type": "trial",
+      "record_id": "kyv101-mg-kysa6-phase23",
+      "field": "registry_last_update",
+      "local_value": "2026-07-08",
+      "remote_value": "2026-07-29",
+      "source_url": "https://clinicaltrials.gov/study/NCT06193889"
+    },
     {
       "record_type": "trial",
       "record_id": "cc97540-breakfree2",
@@ -79,7 +87,7 @@
         "enrollment": 66,
         "study_start": "2024-08-28",
         "estimated_completion": "2028-09",
-        "registry_last_update": "2026-07-08"
+        "registry_last_update": "2026-07-29"
       }
     },
     {

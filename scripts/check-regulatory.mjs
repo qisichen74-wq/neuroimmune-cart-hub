@@ -8,7 +8,7 @@ const endpoints = [
   { id: "nmpa-trial-approval", name: "NMPA药物临床试验审批", url: "https://zwfw.nmpa.gov.cn/web/taskview/11100000MB0341032Y100017210200001", scope: "临床试验行政许可与60工作日默示许可制度" },
   { id: "nmpa-trial-registration", name: "NMPA药物临床试验登记", url: "https://zwfw.nmpa.gov.cn/web/taskview/11100000MB0341032Y100207202900001", scope: "境内药物临床试验登记义务与平台入口" },
   { id: "cde-home", name: "国家药监局药品审评中心", url: "https://www.cde.org.cn/", scope: "受理品种、审评任务、指导原则与年度报告" },
-  { id: "china-drug-trials", name: "药物临床试验登记与信息公示平台", url: "http://www.chinadrugtrials.org.cn/", scope: "境内药物临床试验方案与结果公示" }
+  { id: "china-drug-trials", name: "药物临床试验登记与信息公示平台", url: "https://www.chinadrugtrials.org.cn/", scope: "境内药物临床试验方案与结果公示" }
 ];
 
 const checks = [];

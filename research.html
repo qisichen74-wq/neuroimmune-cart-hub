@@ -458,6 +458,7 @@ let allData = [];
 let filteredData = [];
 let searchQuery = "";
 let sortBy = "priority";
+let journalMetricLookup = new Map();
 const LANGUAGE = localStorage.getItem("intel-language") === "en" ? "en" : "zh";
 const activeFilters = {
   priority: "全部",
@@ -468,9 +469,12 @@ const activeFilters = {
 
 async function loadFeed() {
   try {
-    const res = await fetch("data/feed.json");
-    if (!res.ok) throw new Error("feed load failed");
-    allData = await res.json();
+    const [feedResponse, metricResponse] = await Promise.all([fetch("data/feed.json"), fetch("data/journal-metrics.json")]);
+    if (!feedResponse.ok) throw new Error("feed load failed");
+    allData = await feedResponse.json();
+    const metricData = metricResponse.ok ? await metricResponse.json() : { journals: [] };
+    const normalizeJournal = value => String(value || "").normalize("NFKD").toLowerCase().replace(/&/g,"and").replace(/[^a-z0-9]+/g," ").trim();
+    journalMetricLookup = new Map((metricData.journals || []).flatMap(metric => [metric.name,...(metric.aliases || [])].map(name => [normalizeJournal(name),metric])));
   } catch (error) {
     allData = [];
   }
@@ -489,25 +493,32 @@ async function loadFeed() {
 }
 
 function normalizeData() {
-  allData = allData.map((item) => ({
-    id: item.id || ("pmid-" + item.pmid),
-    source_name: "PubMed",
-    publish_date: "",
-    date_added: "",
-    entity: "",
-    region: "",
-    tags: [],
-    takeaway: item.priority_reason || "",
-    ...item,
-    ...(LANGUAGE === "en" ? {
-      title_cn: item.official_title || item.title_cn,
-      one_liner: `${item.journal || "Primary source"} · ${(item.publication_type || []).join(" / ") || "Research report"}`,
-      takeaway: "Open the primary source to review the verified finding, population, and limitations.",
-      priority_reason: "Priority reflects evidence type, novelty, and potential impact on development decisions.",
-      evidence_level: (item.publication_type || []).join(" / ") || "Research report",
-      tags: [item.disease, item.entity, ...(item.publication_type || [])].filter(Boolean)
-    } : {})
-  }));
+  const normalizeJournal = value => String(value || "").normalize("NFKD").toLowerCase().replace(/&/g,"and").replace(/[^a-z0-9]+/g," ").trim();
+  allData = allData.map((item) => {
+    const metric = journalMetricLookup.get(normalizeJournal(item.journal));
+    return {
+      id: item.id || ("pmid-" + item.pmid),
+      source_name: "PubMed",
+      publish_date: "",
+      date_added: "",
+      entity: "",
+      region: "",
+      tags: [],
+      takeaway: item.priority_reason || "",
+      ...item,
+      ...(LANGUAGE === "en" ? {
+        title_cn: item.official_title || item.title_cn,
+        one_liner: `${item.journal || "Primary source"} · ${(item.publication_type || []).join(" / ") || "Research report"}`,
+        takeaway: "Open the primary source to review the verified finding, population, and limitations.",
+        priority_reason: "Priority reflects evidence type, novelty, and potential impact on development decisions.",
+        evidence_level: (item.publication_type || []).join(" / ") || "Research report",
+        tags: [item.disease, item.entity, ...(item.publication_type || [])].filter(Boolean)
+      } : {}),
+      journal_impact_factor: metric?.impact_factor ?? null,
+      journal_impact_factor_year: metric?.metric_year ?? null,
+      journal_impact_factor_source: metric?.source_url || null
+    };
+  });
 }
 
 function bindEvents() {
@@ -658,6 +669,7 @@ function renderCards(data) {
           <span class="meta-tag">${item.evidence_level || "证据待补"}</span>
           <span class="meta-tag">${item.entity || "实体待补"}</span>
           <span class="meta-tag">${metaDate}</span>
+          <span class="meta-tag">${item.journal_impact_factor!=null?`IF ${item.journal_impact_factor}${item.journal_impact_factor_year?` · ${item.journal_impact_factor_year}`:" · 出版社当前值"}`:(LANGUAGE==="en"?"IF not verified":"IF 未录入")}</span>
         </div>
         <p class="card-summary">${item.one_liner || "暂无摘要"}</p>
         <div class="key-box">关键判断：${item.takeaway || item.priority_reason || "暂无明确结论。"}</div>

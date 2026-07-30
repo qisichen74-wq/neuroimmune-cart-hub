@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-27T23:33:43.876Z",
+  "generated_at": "2026-07-29T15:50:31.287Z",
   "changes": [
     {
       "detected_at": "2026-07-27T23:33:43.876Z",
@@ -32,6 +32,14 @@
       "field": "registry_last_update",
       "previous_value": "2026-07-17",
       "current_value": "2026-07-23"
+    },
+    {
+      "detected_at": "2026-07-29T15:50:31.287Z",
+      "record_type": "trial",
+      "record_id": "kyv101-mg-kysa6-phase23",
+      "field": "registry_last_update",
+      "previous_value": "2026-07-08",
+      "current_value": "2026-07-29"
     }
   ]
 }

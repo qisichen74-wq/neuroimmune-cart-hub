@@ -1,0 +1,77 @@
+{
+  "metric": "Journal Impact Factor",
+  "updated_at": "2026-07-22",
+  "note": "Values are journal-level metrics, not article-level quality scores. Only publisher-reported values with a recorded source are displayed as verified.",
+  "journals": [
+    {
+      "name": "Frontiers in Immunology",
+      "aliases": ["Frontiers in immunology"],
+      "impact_factor": 7.0,
+      "metric_year": 2025,
+      "source_url": "https://www.frontiersin.org/journals/immunology/about"
+    },
+    {
+      "name": "International Journal of Molecular Sciences",
+      "aliases": ["International journal of molecular sciences"],
+      "impact_factor": 5.6,
+      "metric_year": 2025,
+      "source_url": "https://www.mdpi.com/journal/ijms/imprint"
+    },
+    {
+      "name": "The Lancet Rheumatology",
+      "aliases": ["The Lancet. Rheumatology"],
+      "impact_factor": 29.5,
+      "metric_year": 2025,
+      "source_url": "https://info.thelancet.com/lanrhe/request-access"
+    },
+    {
+      "name": "Nature Medicine",
+      "aliases": ["Nature medicine"],
+      "impact_factor": 52.5,
+      "metric_year": 2025,
+      "source_url": "https://www.nature.com/nm/journal-impact"
+    },
+    {
+      "name": "Arthritis & Rheumatology",
+      "aliases": ["Arthritis & rheumatology (Hoboken, N.J.)"],
+      "impact_factor": 10.9,
+      "metric_year": 2025,
+      "source_url": "https://onlinelibrary.wiley.com/journal/23265205"
+    },
+    {
+      "name": "Autoimmunity Reviews",
+      "aliases": ["Autoimmunity reviews"],
+      "impact_factor": 8.3,
+      "metric_year": null,
+      "source_url": "https://www.sciencedirect.com/journal/autoimmunity-reviews"
+    },
+    {
+      "name": "Rheumatology",
+      "aliases": ["Rheumatology (Oxford, England)"],
+      "impact_factor": 4.7,
+      "metric_year": 2025,
+      "source_url": "https://academic.oup.com/rheumatology/pages/About"
+    },
+    {
+      "name": "Annals of the Rheumatic Diseases",
+      "aliases": ["Annals of the rheumatic diseases"],
+      "impact_factor": 20.6,
+      "metric_year": null,
+      "source_url": "https://www.sciencedirect.com/journal/annals-of-the-rheumatic-diseases"
+    },
+    {
+      "name": "Nature Reviews Rheumatology",
+      "aliases": ["Nature reviews. Rheumatology"],
+      "impact_factor": 33.7,
+      "metric_year": 2025,
+      "source_url": "https://www.nature.com/nrrheum/journal-impact"
+    },
+    {
+      "name": "Cells",
+      "aliases": ["Cells"],
+      "impact_factor": 6.0,
+      "metric_year": 2025,
+      "source_url": "https://www.mdpi.com/journal/cells/announcements/17220"
+    }
+  ]
+}

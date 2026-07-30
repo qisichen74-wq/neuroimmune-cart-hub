@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-27T23:33:43.876Z",
+  "generated_at": "2026-07-29T15:50:31.287Z",
   "records": {
     "trial:kyv101-ms-phase1": {
       "official_title": "Phase 1, Open-Label, Single Center Study of KYV-101, an Autologous Fully-Human Anti-CD19 Chimeric Antigen Receptor T Cell (CD19 CAR T) Therapy, in Participants With Treatment Refractory Progressive Multiple Sclerosis",
@@ -17,7 +17,7 @@
       "enrollment": 66,
       "study_start": "2024-08-28",
       "estimated_completion": "2028-09",
-      "registry_last_update": "2026-07-08"
+      "registry_last_update": "2026-07-29"
     },
     "trial:descartes08-mg-rct": {
       "official_title": "A Randomized, Double-Blind, Placebo-Controlled Phase 3 Trial of Descartes-08 in Patients With Generalized Myasthenia Gravis (MG)",

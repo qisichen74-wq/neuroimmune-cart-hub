@@ -1,6 +1,35 @@
 {
   "publication_start_date": "2025/01/01",
   "max_records_per_query": 10000,
+  "china_drug_trials": {
+    "enabled": true,
+    "official_url": "https://www.chinadrugtrials.org.cn/",
+    "managed_api_base": "https://api.parse.bot/scraper/0b80c465-d3c2-495c-ba35-cf0bcd0e0c7e",
+    "max_pages_per_query": 1,
+    "managed_api_request_delay_ms": 13000,
+    "cache_enabled": true,
+    "cache_ttl_days": 7,
+    "monthly_credit_limit": 80,
+    "credits_per_call": 2,
+    "cache_dir": ".cache/china-drug-trials",
+    "queries": [
+      { "id": "sle", "term": "CAR-T 系统性红斑狼疮" },
+      { "id": "mg", "term": "CAR-T 重症肌无力" },
+      { "id": "ms", "term": "CAR-T 多发性硬化" },
+      { "id": "nmosd", "term": "CAR-T 视神经脊髓炎" },
+      { "id": "ssc", "term": "CAR-T 系统性硬化症" },
+      { "id": "myositis", "term": "CAR-T 炎性肌病" },
+      { "id": "ra", "term": "CAR-T 类风湿关节炎" },
+      { "id": "ild", "term": "细胞治疗 自身免疫 间质性肺病" }
+    ]
+  },
+  "fda": {
+    "cart_label_brands": ["ABECMA", "AUCATZYL", "BREYANZI", "CARVYKTI", "KYMRIAH", "TECARTUS", "YESCARTA", "TREGZI"],
+    "faers_cart_brands": ["ABECMA", "BREYANZI", "CARVYKTI", "KYMRIAH", "TECARTUS", "YESCARTA"],
+    "cber_approved_products_url": "https://www.fda.gov/vaccines-blood-biologics/cellular-gene-therapy-products/approved-cellular-and-gene-therapy-products",
+    "cber_news_url": "https://www.fda.gov/vaccines-blood-biologics/news-events-biologics/whats-new-biologics",
+    "relevant_cber_pattern": "CAR[- ]?T|chimeric antigen|cellular therap|gene therap|T[- ]?cell|BLA|autoimmune|lupus|myasthen|multiple sclerosis|scleroderma|myositis"
+  },
   "sentinels": [
     {
       "source": "pubmed",

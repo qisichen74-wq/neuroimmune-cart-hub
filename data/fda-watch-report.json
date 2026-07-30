@@ -1,0 +1,620 @@
+{
+  "generated_at": "2026-07-29T15:51:43.996Z",
+  "policy": {
+    "trial_registration": "ClinicalTrials.gov记录只证明试验登记，不等同于FDA IND获准。",
+    "ind_authorization": "IND信息只有FDA正式公告可直接记为FDA确认；企业披露必须标明公司口径。",
+    "marketing_approval": "FDA/CBER批准产品页、批准函或Drugs@FDA正式记录才能支持上市批准表述。",
+    "label_information": "openFDA标签来自企业向FDA提交的SPL；应与FDA批准文件及当前标签交叉核验。",
+    "faers_signal": "FAERS自发报告不能建立因果关系，也不能估算发生率或进行产品间风险比较。"
+  },
+  "summary": {
+    "sources": 8,
+    "available": 8,
+    "partial": 0,
+    "failed": 0,
+    "labels_found": 8,
+    "approved_cell_gene_products": 50,
+    "relevant_cber_updates": 11
+  },
+  "sources": [
+    {
+      "id": "drugsfda-api",
+      "name": "Drugs@FDA / openFDA",
+      "source_kind": "official_api",
+      "status": "ok",
+      "url": "https://open.fda.gov/apis/drug/drugsfda/",
+      "last_updated": "2026-07-28",
+      "records_available": 29234,
+      "scope_note": "Drugs@FDA并不完整覆盖所有细胞和基因治疗产品；相关批准以FDA/CBER产品页为主。"
+    },
+    {
+      "id": "fda-cber-approved",
+      "name": "FDA/CBER Approved Cellular and Gene Therapy Products",
+      "source_kind": "official_page",
+      "status": "ok",
+      "url": "https://www.fda.gov/vaccines-blood-biologics/cellular-gene-therapy-products/approved-cellular-and-gene-therapy-products",
+      "records_found": 50
+    },
+    {
+      "id": "fda-cber-news",
+      "name": "FDA/CBER What's New for Biologics",
+      "source_kind": "official_page",
+      "status": "ok",
+      "url": "https://www.fda.gov/vaccines-blood-biologics/news-events-biologics/whats-new-biologics",
+      "relevant_links": 5
+    },
+    {
+      "id": "fda-cber-safety-2024",
+      "name": "FDA/CBER 2024 Safety and Availability Communications",
+      "source_kind": "official_page",
+      "status": "ok",
+      "url": "https://www.fda.gov/vaccines-blood-biologics/safety-availability-biologics/2024-safety-and-availability-communications",
+      "relevant_links": 4
+    },
+    {
+      "id": "fda-cber-safety-2025",
+      "name": "FDA/CBER 2025 Safety and Availability Communications",
+      "source_kind": "official_page",
+      "status": "ok",
+      "url": "https://www.fda.gov/vaccines-blood-biologics/safety-availability-biologics/2025-safety-and-availability-communications",
+      "relevant_links": 2
+    },
+    {
+      "id": "fda-cber-safety-2026",
+      "name": "FDA/CBER 2026 Safety and Availability Communications",
+      "source_kind": "official_page",
+      "status": "ok",
+      "url": "https://www.fda.gov/vaccines-blood-biologics/safety-availability-biologics/2026-safety-and-availability-communications",
+      "relevant_links": 0
+    },
+    {
+      "id": "openfda-faers",
+      "name": "openFDA / FAERS",
+      "source_kind": "official_api",
+      "status": "ok",
+      "url": "https://open.fda.gov/apis/drug/event/",
+      "last_updated": "2026-04-28"
+    },
+    {
+      "id": "openfda-label",
+      "name": "openFDA Drug Labeling",
+      "source_kind": "official_api",
+      "status": "ok",
+      "url": "https://open.fda.gov/apis/drug/label/",
+      "last_updated": "2026-07-28",
+      "records_checked": 8,
+      "records_found": 8,
+      "errors": 0
+    }
+  ],
+  "cart_labels": [
+    {
+      "brand_name": "Abecma",
+      "generic_name": "IDECABTAGENE VICLEUCEL",
+      "manufacturer": "Celgene Corporation",
+      "application_number": "BLA125736",
+      "product_type": "CELLULAR THERAPY",
+      "effective_date": "2025-11-25",
+      "version": "19",
+      "recent_major_changes": "Boxed Warning 6/2025 Dosage and Administration ( 2.2 ) 11/2025 Dosage and Administration ( 2.2 , 2.3 ) 6/2025 Warnings and Precautions ( 5.2 , 5.3 ) 6/2025 Warnings and Precautions ( 5.2 , 5.3 ) 11/2025 Warnings and Precautions, ABECMA REMS ( 5.5 ) Removed 6/2025 Warnings and Precautions, Effects on Ability to Drive and Use Machines (5.11) Removed 6/2025",
+      "boxed_warning": "WARNING: CYTOKINE RELEASE SYNDROME, NEUROLOGIC TOXICITIES, HLH/MAS, PROLONGED CYTOPENIA, AND SECONDARY HEMATOLOGICAL MALIGNANCIES • Cytokine Release Syndrome (CRS), including fatal or life-threatening reactions, occurred in patients following treatment with ABECMA. Do not administer ABECMA to patients with active infection or inflammatory disorders. Treat severe or life-threatening CRS with tocilizumab or tocilizumab and corticosteroids [see Dosage and Administration (2.2 , 2.3) , Warnings and Precautions (5.2) ] . • Neurologic toxicities, which may be severe or life-threatening, occurred following treatment with ABECMA, including concurrently with CRS, after CRS resolution, or in the absence of CRS. Monitor for neurologic events after treatment with ABECMA. Provide supportive care and/or corticosteroids as needed [see Dosage and Administration (2.2 , 2.3) and Warnings and Precautions (5.3) ] . • Hemophagocytic Lymphohistiocytosis/Macrophage Activation Syndrome (HLH/MAS) including fatal and life-threatening reactions, occurred in patients following treatment with ABECMA. HLH/MAS can occur with CRS or neurologic toxicities [see Warnings and Precautions (5.4) ] . • Prolonged Cytopenia with bleeding and infection, including fatal outcomes following stem cell transplantation for hematopoietic recovery, occurred following treatment with ABECMA [see Warnings and Precautions (5.7) ] . • T cell malignancies have occurred following treatment of hematologic malignancies with BCMA- and CD19-directed genetically modified autologous T cell immunotherapies, including ABECMA [see Warnings and Precautions (5.9) ] . WARNING: CYTOKINE RELEASE SYNDROME, NEUROLOGIC TOXICITIES, HLH/MAS, PROLONGED CYTOPENIA, AND SECONDARY HEMATOLOGICAL MALIGNANCIES See full prescribing information for complete boxed warning. • Cytokine Release Syndrome (CRS), including fatal or life-threatening reactions, occurred in patients following treatment with ABECMA. Do not administer ABECMA to patients with active infection or inflammatory disorders. Treat severe or life-threatening CRS with tocilizumab or tocilizumab and corticosteroids. ( 2.2 , 2.3 , 5.2 ) • Neurologic toxicities, which may be severe or life-threatening, occurred following treatment with ABECMA, including concurrently with CRS, after CRS resolution, or in the absence of CRS. Monitor for neurologic events after treatment with ABECMA. Provide supportive care and/or corticosteroids as needed. ( 2.2 , 2.3 , 5.3 ) • Hemophagocytic Lymphohistiocytosis/Macrophage Activation Syndrome (HLH/MAS), including fatal and life-threatening reactions, occurred in patients following treatment with ABECMA. HLH/MAS can occur with CRS or neurologic toxicities. ( 5.4 ) • Prolonged Cytopenia with bleeding and infection, including fatal outcomes following stem cell transplantation for hematopoietic recovery, occurred following treatment with ABECMA. ( 5.7 ) • T cell malignancies have occurred following treatment of hematologic malignancies with BCM",
+      "indications_and_usage": "1 INDICATIONS AND USAGE ABECMA is indicated for the treatment of adult patients with relapsed or refractory multiple myeloma after two or more prior lines of therapy including an immunomodulatory agent, a proteasome inhibitor, and an anti-CD38 monoclonal antibody. ABECMA is a B-cell maturation antigen (BCMA)-directed genetically modified autologous T cell immunotherapy indicated for the treatment of adult patients with relapsed or refractory multiple myeloma after two or more prior lines of therapy including an immunomodulatory agent, a proteasome inhibitor, and an anti-CD38 monoclonal antibody. ( 1 )",
+      "status": "ok",
+      "source_url": "https://api.fda.gov/drug/label.json?search=openfda.brand_name%3A%22ABECMA%22&limit=1"
+    },
+    {
+      "brand_name": "AUCATZYL",
+      "generic_name": "OBECABTAGENE AUTOLEUCEL",
+      "manufacturer": "Autolus Inc.",
+      "application_number": "BLA125813",
+      "product_type": "CELLULAR THERAPY",
+      "effective_date": "2026-06-23",
+      "version": "6",
+      "recent_major_changes": "Dosage and Administration ( 2.4 ) 08/2025 Warnings and Precautions ( 5.1 , 5.2 ) 08/2025",
+      "boxed_warning": "WARNING: CYTOKINE RELEASE SYNDROME, NEUROLOGIC TOXICITIES, and SECONDARY HEMATOLOGICAL MALIGNANCIES Cytokine Release Syndrome (CRS) occurred in patients receiving AUCATZYL. Do not administer AUCATZYL to patients with active infection or inflammatory disorders. Prior to administering AUCATZYL, ensure that healthcare providers have immediate access to medications and resuscitative equipment to manage CRS [see Dosage and Administration (2.2 , 2.3) , Warnings and Precautions (5.1) ]. Immune Effector Cell-Associated Neurotoxicity Syndrome (ICANS), including fatal or life-threatening reactions, occurred in patients receiving AUCATZYL, including concurrently with CRS or after CRS resolution. Monitor for neurologic signs and symptoms after treatment with AUCATZYL. Prior to administering AUCATZYL, ensure that healthcare providers have immediate access to medications and resuscitative equipment to manage neurologic toxicities. Provide supportive care and/or corticosteroids, as needed [see Dosage and Administration (2.2 , 2.3) , Warnings and Precautions (5.2) ]. T cell malignancies have occurred following treatment of hematologic malignancies with BCMA- and CD19-directed genetically modified autologous T cell immunotherapies [see Warnings and Precautions (5.8) ]. WARNING: CYTOKINE RELEASE SYNDROME, NEUROLOGIC TOXICITIES, and SECONDARY HEMATOLOGICAL MALIGNANCIES See full prescribing information for complete boxed warning. Cytokine Release Syndrome (CRS) occurred in patients receiving AUCATZYL. Do not administer AUCATZYL to patients with active infection or inflammatory disorders. Prior to administering AUCATZYL, ensure that healthcare providers have immediate access to medications and resuscitative equipment to manage CRS. ( 2.2 , 2.3 , 5.1 ). Immune Effector Cell-Associated Neurotoxicity Syndrome (ICANS), including fatal or life-threatening reactions, occurred in patients receiving AUCATZYL, including concurrently with CRS or after CRS resolution. Monitor for neurologic signs and symptoms after treatment with AUCATZYL. Prior to administering AUCATZYL, ensure that healthcare providers have immediate access to medications and resuscitative equipment to manage neurologic toxicities ( 2.2 , 2.3 , 5.2 ). T cell malignancies have occurred following treatment of hematologic malignancies with BCMA- and CD19-directed genetically modified autologous T cell immunotherapies ( 5.8 ).",
+      "indications_and_usage": "1 INDICATION AND USAGE AUCATZYL is indicated for the treatment of adults with relapsed or refractory B-cell precursor acute lymphoblastic leukemia (ALL). AUCATZYL is a CD19-directed genetically modified autologous T cell immunotherapy indicated for the treatment of adults with relapsed or refractory B-cell precursor acute lymphoblastic leukemia (ALL) ( 1 ).",
+      "status": "ok",
+      "source_url": "https://api.fda.gov/drug/label.json?search=openfda.brand_name%3A%22AUCATZYL%22&limit=1"
+    },
+    {
+      "brand_name": "BREYANZI",
+      "generic_name": "LISOCABTAGENE MARALEUCEL",
+      "manufacturer": "Juno Therapeutics, Inc.",
+      "application_number": "BLA125714",
+      "product_type": "CELLULAR THERAPY",
+      "effective_date": "2026-02-20",
+      "version": "15",
+      "recent_major_changes": "Indications and Usage, AA Statement Removed ( 1.3 ) 2/2026 Indications and Usage, MZL ( 1.5 ) 12/2025 Dosage and Administration ( 2.1 ) 12/2025 Dosage and Administration ( 2.2 , 2.3 ) 6/2025 Warnings and Precautions, REMS Removed (5.3) 6/2025 Warnings and Precautions ( 5.1 , 5.2 , 5.4 , 5.6 , 5.8 ) 12/2025",
+      "boxed_warning": "WARNING: CYTOKINE RELEASE SYNDROME, NEUROLOGIC TOXICITIES, AND SECONDARY HEMATOLOGICAL MALIGNANCIES • Cytokine Release Syndrome (CRS), including fatal or life-threatening reactions, occurred in patients receiving BREYANZI. Do not administer BREYANZI to patients with active infection or inflammatory disorders. Treat severe or life-threatening CRS with tocilizumab with or without corticosteroids [see Dosage and Administration ( 2.2 , 2.3 ) and Warnings and Precautions ( 5.1 )] . • Neurologic toxicities, including fatal or life-threatening reactions, occurred in patients receiving BREYANZI, including concurrently with CRS, after CRS resolution, or in the absence of CRS. Monitor for neurologic events after treatment with BREYANZI. Provide supportive care and/or corticosteroids as needed [see Dosage and Administration ( 2.2 , 2.3 ) and Warnings and Precautions ( 5.2 )] . • T cell malignancies have occurred following treatment of hematologic malignancies with BCMA- and CD19-directed genetically modified autologous T cell immunotherapies, including BREYANZI [see Warnings and Precautions ( 5.7 )] . WARNING: CYTOKINE RELEASE SYNDROME, NEUROLOGIC TOXICITIES, AND SECONDARY HEMATOLOGICAL MALIGNANCIES See full prescribing information for complete boxed warning. • Cytokine Release Syndrome (CRS), including fatal or life-threatening reactions, occurred in patients receiving BREYANZI. Do not administer BREYANZI to patients with active infection or inflammatory disorders. Treat severe or life-threatening CRS with tocilizumab with or without corticosteroids. ( 2.2 , 2.3 , 5.1 ) • Neurologic toxicities, including fatal or life-threatening reactions, occurred in patients receiving BREYANZI, including concurrently with CRS, after CRS resolution, or in the absence of CRS. Monitor for neurologic events after treatment with BREYANZI. Provide supportive care and/or corticosteroids as needed. ( 2.2 , 2.3 , 5.2 ) • T cell malignancies have occurred following treatment of hematologic malignancies with BCMA- and CD19-directed genetically modified autologous T cell immunotherapies, including BREYANZI. ( 5.7 )",
+      "indications_and_usage": "1 INDICATIONS AND USAGE BREYANZI is a CD19-directed genetically modified autologous T cell immunotherapy indicated for the treatment of: • adult patients with large B-cell lymphoma (LBCL), including diffuse large B-cell lymphoma (DLBCL) not otherwise specified (including DLBCL arising from indolent lymphoma), high-grade B-cell lymphoma, primary mediastinal large B-cell lymphoma, and follicular lymphoma grade 3B, who have: • refractory disease to first-line chemoimmunotherapy or relapse within 12 months of first-line chemoimmunotherapy; or • refractory disease to first-line chemoimmunotherapy or relapse after first-line chemoimmunotherapy and are not eligible for hematopoietic stem cell transplantation (HSCT) due to comorbidities or age; or • relapsed or refractory disease after 2 or more lines of systemic therapy. ( 1.1 ) Limitations of Use: BREYANZI is not indicated for the treatment of patients with primary central nervous system lymphoma. ( 1 , 14 ) • adult patients with relapsed or refractory chronic lymphocytic leukemia (CLL) or small lymphocytic lymphoma (SLL) who have received at least 2 prior lines of therapy, including a Bruton tyrosine kinase (BTK) inhibitor and a B-cell lymphoma 2 (BCL-2) inhibitor. This indication is approved under accelerated approval based on response rate and duration of response. Continued approval for this indication may be contingent upon verification and description of clinical benefit in confirmatory trial(s). ( 1.2 ) • adult patients with relapsed or refractory follicular lymphoma (FL) who have received 2 or more prior lines of systemic therapy. ( 1.3 ) • adult patients with relapsed or refractory mantle cell lymphoma (MCL) who have received at least 2 prior lines of systemic therapy, including a Bruton tyrosine kinase (BTK) inhibitor. ( 1.4 ) • adult patients with relapsed or refractory marginal zone lymphoma (MZL) who have received at least 2 prior lines of systemic therapy. ( 1.5 ) 1.1 Large B-cell Lymphoma (LBCL) BREYANZI is indicated for the treatment of adult patients with large B-cell lymphoma (LBCL), including diffuse large B-cell lymphoma (DLBCL) not otherwise specified (including DLBCL arising from indolent lymphoma), high-grade B-cell lymphoma, primary mediastinal large B-cell lymphoma, and follicular lymphoma grade 3B who have: • refractory disease to first-line chemoimmunotherapy or relapse within 12 months ",
+      "status": "ok",
+      "source_url": "https://api.fda.gov/drug/label.json?search=openfda.brand_name%3A%22BREYANZI%22&limit=1"
+    },
+    {
+      "brand_name": "CARVYKTI",
+      "generic_name": "CILTACABTAGENE AUTOLEUCEL",
+      "manufacturer": "Janssen Biotech, Inc.",
+      "application_number": "BLA125746",
+      "product_type": "CELLULAR THERAPY",
+      "effective_date": "2026-07-15",
+      "version": "18",
+      "recent_major_changes": "Boxed Warnings 10/2025 Dosage and Administration ( 2.2 ) 07/2026 Warnings and Precautions ( 5.6 , 5.9 ) 10/2025",
+      "boxed_warning": "WARNING: CYTOKINE RELEASE SYNDROME, NEUROLOGIC TOXICITIES, HLH/MAS, PROLONGED and RECURRENT CYTOPENIA, and SECONDARY HEMATOLOGICAL MALIGNANCIES Cytokine Release Syndrome (CRS), including fatal or life-threatening reactions, occurred in patients following treatment with CARVYKTI. Do not administer CARVYKTI to patients with active infection or inflammatory disorders. Treat severe or life-threatening CRS with tocilizumab or tocilizumab and corticosteroids [see Dosage and Administration (2.2 , 2.3) , Warnings and Precautions (5.2) ] . Immune Effector Cell-Associated Neurotoxicity Syndrome (ICANS), which may be fatal or life-threatening, occurred following treatment with CARVYKTI, including before CRS onset, concurrently with CRS, after CRS resolution, or in the absence of CRS. Monitor for neurologic events after treatment with CARVYKTI. Provide supportive care and/or corticosteroids as needed [see Dosage and Administration (2.2 , 2.3) , Warnings and Precautions (5.3) ] . Parkinsonism and Guillain-Barré syndrome (GBS) and their associated complications resulting in fatal or life-threatening reactions have occurred following treatment with CARVYKTI [see Warnings and Precautions (5.3) ] . Hemophagocytic Lymphohistiocytosis/Macrophage Activation Syndrome (HLH/MAS), including fatal and life-threatening reactions, occurred in patients following treatment with CARVYKTI. HLH/MAS can occur with CRS or neurologic toxicities [see Warnings and Precautions (5.4) ]. Prolonged and/or recurrent cytopenias with bleeding and infection and requirement for stem cell transplantation for hematopoietic recovery occurred following treatment with CARVYKTI [see Warnings and Precautions (5.5) ] . Immune Effector Cell-associated Enterocolitis (IEC-EC), including fatal or life-threatening reactions, occurred following treatment with CARVYKTI [see Warnings and Precautions (5.9) ]. Secondary hematological malignancies, including myelodysplastic syndrome and acute myeloid leukemia, have occurred in patients following treatment with CARVYKTI. T-cell malignancies have occurred following treatment of hematologic malignancies with BCMA- and CD19-directed genetically modified autologous T-cell immunotherapies, including CARVYKTI [see Warnings and Precautions (5.10) ] . WARNING: CYTOKINE RELEASE SYNDROME, NEUROLOGIC TOXICITIES, HLH/MAS, PROLONGED and RECURRENT CYTOPENIA, and SECONDARY HEMATOLOGICAL MALIGNANCIES See full prescribing information for complete boxed warning. Cytokine Release Syndrome (CRS), including fatal or life-threatening reactions, occurred in patients following treatment with CARVYKTI. Do not administer CARVYKTI to patients with active infection or inflammatory disorders. Treat severe or life-threatening CRS with tocilizumab or tocilizumab and corticosteroids. ( 2.2 , 2.3 , 5.2 ) Immune Effector Cell-Associated Neurotoxicity Syndrome (ICANS), which may be fatal or life-threatening, occurred following treatment with CARVYKTI, including before CRS onset, concurrently wit",
+      "indications_and_usage": "1 INDICATIONS AND USAGE CARVYKTI is indicated for the treatment of adult patients with relapsed or refractory multiple myeloma, who have received at least 1 prior line of therapy, including a proteasome inhibitor and an immunomodulatory agent, and are refractory to lenalidomide. CARVYKTI is a B-cell maturation antigen (BCMA)-directed genetically modified autologous T cell immunotherapy indicated for the treatment of adult patients with relapsed or refractory multiple myeloma who have received at least 1 prior line of therapy, including a proteasome inhibitor and an immunomodulatory agent, and are refractory to lenalidomide. ( 1 )",
+      "status": "ok",
+      "source_url": "https://api.fda.gov/drug/label.json?search=openfda.brand_name%3A%22CARVYKTI%22&limit=1"
+    },
+    {
+      "brand_name": "KYMRIAH",
+      "generic_name": "TISAGENLECLEUCEL",
+      "manufacturer": "Novartis Pharmaceuticals Corporation",
+      "application_number": "BLA125646",
+      "product_type": "CELLULAR THERAPY",
+      "effective_date": "2025-12-16",
+      "version": "18",
+      "recent_major_changes": "Boxed Warning 6/2025 Dosage and Administration ( 2.3 ) 6/2025 Warnings and Precautions ( 5.1 , 5.2 , 5.4 , 5.5 , 5.6 ) 12/2025 Warnings and Precautions, REMS (5.3) Removed 6/2025",
+      "boxed_warning": "WARNING: CYTOKINE RELEASE SYNDROME, NEUROLOGICAL TOXICITIES, and SECONDARY HEMATOLOGICAL MALIGNANCIES Cytokine Release Syndrome (CRS), including fatal or life-threatening reactions, occurred in patients receiving KYMRIAH. Do not administer KYMRIAH to patients with active infection or inflammatory disorders. Treat severe or life-threatening CRS with tocilizumab or tocilizumab and corticosteroids [see Dosage and Administration (2.2, 2.3), Warnings and Precautions (5.1)]. Neurological toxicities, including severe or life-threatening reactions, occurred following treatment with KYMRIAH, including concurrently with CRS. Monitor for neurological events after treatment with KYMRIAH. Provide supportive care and/or corticosteroids as needed [see Warnings and Precautions (5.2)]. T cell malignancies have occurred following treatment of hematologic malignancies with BCMA- and CD19- directed genetically modified autologous T cell immunotherapies, including KYMRIAH [see Warnings and Precautions (5.8)]. WARNING: CYTOKINE RELEASE SYNDROME, NEUROLOGICAL TOXICITIES, and SECONDARY HEMATOLOGICAL MALIGNANCIES See full prescribing information for complete boxed warning. Cytokine Release Syndrome (CRS), including fatal or life-threatening reactions, occurred in patients receiving KYMRIAH. Do not administer KYMRIAH to patients with active infection or inflammatory disorders. Treat severe or life-threatening CRS with tocilizumab or tocilizumab and corticosteroids. ( 2.2 , 2.3 , 5.1 ) Neurological toxicities, including severe or life-threatening reactions, occurred following treatment with KYMRIAH, including concurrently with CRS. Monitor for neurological events after treatment with KYMRIAH. Provide supportive care and/or corticosteroids as needed. ( 5.2 ) T cell malignancies have occurred following treatment of hematologic malignancies with BCMA- and CD19- directed genetically modified autologous T cell immunotherapies, including KYMRIAH. ( 5.8 )",
+      "indications_and_usage": "1 INDICATIONS AND USAGE KYMRIAH is a CD19-directed genetically modified autologous T cell immunotherapy indicated for the treatment of: Patients up to 25 years of age with B-cell precursor acute lymphoblastic leukemia (ALL) that is refractory or in second or later relapse. ( 1.1 ) Adult patients with relapsed or refractory (r/r) large B-cell lymphoma after two or more lines of systemic therapy, including diffuse large B-cell lymphoma (DLBCL) not otherwise specified, high grade B-cell lymphoma and DLBCL arising from follicular lymphoma. Limitations of Use : KYMRIAH is not indicated for treatment of patients with primary central nervous system lymphoma. ( 1.2 ) Adult patients with relapsed or refractory follicular lymphoma (FL) after two or more lines of systemic therapy. This indication is approved under accelerated approval based on response rate and duration of response. Continued approval for this indication may be contingent upon verification and description of clinical benefit in confirmatory trial(s). ( 1.3 ) 1.1 Pediatric and Young Adult Relapsed or Refractory B-cell Acute Lymphoblastic Leukemia KYMRIAH is indicated for treatment of patients up to 25 years of age with B-cell precursor acute lymphoblastic leukemia (ALL) that is refractory or in second or later relapse. 1.2 Adult Relapsed or Refractory Diffuse Large B-cell Lymphoma KYMRIAH is indicated for treatment of adult patients with relapsed or refractory (r/r) large B-cell lymphoma after two or more lines of systemic therapy, including diffuse large B-cell lymphoma (DLBCL) not otherwise specified, high grade B-cell lymphoma and DLBCL arising from follicular lymphoma. Limitation of Use: KYMRIAH is not indicated for treatment of patients with primary central nervous system lymphoma. 1.3 Adult Relapsed or Refractory Follicular Lymphoma KYMRIAH is indicated for treatment of adult patients with relapsed or refractory (r/r) follicular lymphoma (FL) after two or more lines of systemic therapy. This indication is approved under accelerated approval based on response rate and duration of response [see Clinical Studies (14.3)] . Continued approval for this indication may be contingent upon verification and description of clinical benefit in confirmatory trial(s).",
+      "status": "ok",
+      "source_url": "https://api.fda.gov/drug/label.json?search=openfda.brand_name%3A%22KYMRIAH%22&limit=1"
+    },
+    {
+      "brand_name": "TECARTUS",
+      "generic_name": "BREXUCABTAGENE AUTOLEUCEL",
+      "manufacturer": "Kite Pharma, Inc.",
+      "application_number": "BLA125703",
+      "product_type": "CELLULAR THERAPY",
+      "effective_date": "2026-06-16",
+      "version": "17",
+      "recent_major_changes": "Dosage and Administration ( 2.2 , 2.3 ) 06/2025 Warnings and Precautions ( 5.1 , 5.2 , 5.5 , 5.6 , 5.7 , 5.10 ) 04/2026 Warnings and Precautions, YESCARTA and TECARTUS REMS (5.3) Removed 06/2025",
+      "boxed_warning": "WARNING: CYTOKINE RELEASE SYNDROME, NEUROLOGIC TOXICITIES, and SECONDARY HEMATOLOGICAL MALIGNANCIES Cytokine Release Syndrome (CRS), including life-threatening reactions, occurred in patients receiving TECARTUS. Do not administer TECARTUS to patients with active infection or inflammatory disorders. Treat severe or life-threatening CRS with tocilizumab or tocilizumab and corticosteroids [see Dosage and Administration (2.2 , 2.3) , Warnings and Precautions (5.1) ] . Neurologic toxicities, including life-threatening reactions, occurred in patients receiving TECARTUS, including concurrently with CRS or after CRS resolution. Monitor for neurologic toxicities after treatment with TECARTUS. Provide supportive care and/or corticosteroids, as needed [see Dosage and Administration (2.2 , 2.3) , Warnings and Precautions (5.2) ] . T cell malignancies have occurred following treatment of hematologic malignancies with BCMA- and CD19-directed genetically modified autologous T cell immunotherapies [see Warnings and Precautions (5.8) ] . WARNING: CYTOKINE RELEASE SYNDROME, NEUROLOGIC TOXICITIES, AND SECONDARY HEMATOLOGICAL MALIGNANCIES See full prescribing information for complete boxed warning. Cytokine Release Syndrome (CRS), including life-threatening reactions, occurred in patients receiving TECARTUS. Do not administer TECARTUS to patients with active infection or inflammatory disorders. Treat severe or life-threatening CRS with tocilizumab or tocilizumab and corticosteroids ( 2.2 , 2.3 , 5.1 ). Neurologic toxicities, including life-threatening reactions, occurred in patients receiving TECARTUS, including concurrently with CRS or after CRS resolution. Monitor for neurologic toxicities after treatment with TECARTUS. Provide supportive care and/or corticosteroids, as needed ( 2.2 , 2.3 , 5.2 ). T cell malignancies have occurred following treatment of hematologic malignancies with BCMA- and CD19-directed genetically modified autologous T cell immunotherapies ( 5.8 ).",
+      "indications_and_usage": "1 INDICATIONS AND USAGE TECARTUS is a CD19-directed genetically modified autologous T cell immunotherapy indicated for the treatment of: Adult patients with relapsed or refractory mantle cell lymphoma (MCL). Adult patients with relapsed or refractory B-cell precursor acute lymphoblastic leukemia (ALL). 1.1 Mantle Cell Lymphoma TECARTUS is indicated for the treatment of adult patients with relapsed or refractory mantle cell lymphoma (MCL). 1.2 Acute Lymphoblastic Leukemia TECARTUS is indicated for the treatment of adult patients with relapsed or refractory B-cell precursor acute lymphoblastic leukemia (ALL).",
+      "status": "ok",
+      "source_url": "https://api.fda.gov/drug/label.json?search=openfda.brand_name%3A%22TECARTUS%22&limit=1"
+    },
+    {
+      "brand_name": "YESCARTA",
+      "generic_name": "AXICABTAGENE CILOLEUCEL",
+      "manufacturer": "Kite Pharma, Inc.",
+      "application_number": "BLA125643",
+      "product_type": "CELLULAR THERAPY",
+      "effective_date": "2026-06-15",
+      "version": "22",
+      "recent_major_changes": "Indications and Usage ( 1.1 ) 02/2026 Dosage and Administration ( 2.2 , 2.3 ) 06/2025 Warnings and Precautions ( 5.1 ) 06/2025 Warnings and Precautions ( 5.2 ) 02/2026 Warnings and Precautions, REMS (5.3) Removed 06/2025",
+      "boxed_warning": "WARNING: CYTOKINE RELEASE SYNDROME, NEUROLOGIC TOXICITIES and SECONDARY HEMATOLOGICAL MALIGNANCIES Cytokine Release Syndrome (CRS), including fatal or life-threatening reactions, occurred in patients receiving YESCARTA. Do not administer YESCARTA to patients with active infection or inflammatory disorders. Treat severe or life-threatening CRS with tocilizumab or tocilizumab and corticosteroids [see Dosage and Administration (2.2 , 2.3) , Warnings and Precautions (5.1) ] . Neurologic toxicities, including fatal or life-threatening reactions, occurred in patients receiving YESCARTA, including concurrently with CRS or after CRS resolution. Monitor for neurologic toxicities after treatment with YESCARTA. Provide supportive care and/or corticosteroids as needed [see Dosage and Administration (2.2 , 2.3) , Warnings and Precautions (5.2) ] . T cell malignancies have occurred following treatment of hematologic malignancies with BCMA- and CD19-directed genetically modified autologous T cell immunotherapies, including YESCARTA [see Warnings and Precautions (5.7) ] . WARNING: CYTOKINE RELEASE SYNDROME, NEUROLOGIC TOXICITIES and SECONDARY HEMATOLOGICAL MALIGNANCIES See full prescribing information for complete boxed warning . Cytokine Release Syndrome (CRS), including fatal or life-threatening reactions, occurred in patients receiving YESCARTA. Do not administer YESCARTA to patients with active infection or inflammatory disorders. Treat severe or life-threatening CRS with tocilizumab or tocilizumab and corticosteroids ( 2.2 , 2.3 , 5.1 ). Neurologic toxicities, including fatal or life-threatening reactions, occurred in patients receiving YESCARTA, including concurrently with CRS or after CRS resolution. Monitor for neurologic toxicities after treatment with YESCARTA. Provide supportive care and/or corticosteroids, as needed ( 2.2 , 2.3 , 5.2 ). T cell malignancies have occurred following treatment of hematologic malignancies with BCMA- and CD19-directed genetically modified autologous T cell immunotherapies, including YESCARTA ( 5.7 ).",
+      "indications_and_usage": "1 INDICATIONS AND USAGE YESCARTA is a CD19-directed genetically modified autologous T cell immunotherapy indicated for the treatment of: Adult patients with large B-cell lymphoma that is refractory to first-line chemoimmunotherapy or that relapses within 12 months of first-line chemoimmunotherapy. ( 1.1 ) Adult patients with relapsed or refractory large B-cell lymphoma after two or more lines of systemic therapy, including diffuse large B-cell lymphoma (DLBCL) not otherwise specified, primary mediastinal large B-cell lymphoma, high grade B-cell lymphoma, and DLBCL arising from follicular lymphoma. ( 1.1 ) Adult patients with relapsed or refractory follicular lymphoma (FL) after two or more lines of systemic therapy. This indication is approved under accelerated approval based on response rate. Continued approval for this indication may be contingent upon verification and description of clinical benefit in confirmatory trial(s). ( 1.2 ) 1.1 Large B-cell Lymphoma YESCARTA is indicated for the treatment of: Adult patients with large B-cell lymphoma that is refractory to first-line chemoimmunotherapy or that relapses within 12 months of first-line chemoimmunotherapy. Adult patients with relapsed or refractory large B-cell lymphoma after two or more lines of systemic therapy, including diffuse large B-cell lymphoma (DLBCL) not otherwise specified, primary mediastinal large B-cell lymphoma, high grade B-cell lymphoma, and DLBCL arising from follicular lymphoma. 1.2 Follicular Lymphoma YESCARTA is indicated for the treatment of adult patients with relapsed or refractory follicular lymphoma (FL) after two or more lines of systemic therapy. This indication is approved under accelerated approval based on response rate [see Clinical Studies (14.2) ] . Continued approval for this indication may be contingent upon verification and description of clinical benefit in confirmatory trial(s).",
+      "status": "ok",
+      "source_url": "https://api.fda.gov/drug/label.json?search=openfda.brand_name%3A%22YESCARTA%22&limit=1"
+    },
+    {
+      "brand_name": "TREGZI",
+      "generic_name": "ALLOGENEIC REGULATORY T CELL IMMUNOTHERAPY WITH HSPC AND T CELLS-VLDQ",
+      "manufacturer": "Orca Biosystems Inc.",
+      "application_number": "BLA125868",
+      "product_type": "CELLULAR THERAPY",
+      "effective_date": "2026-06-30",
+      "version": "4",
+      "recent_major_changes": "",
+      "boxed_warning": "",
+      "indications_and_usage": "1 INDICATIONS AND USAGE TREGZI is indicated for use in matched donor hematopoietic stem cell transplantation with myeloablative preparative regimen, for hematopoietic and immunologic reconstitution and to improve chronic graft-versus-host disease-free survival, in the treatment of adults with hematological malignancies. TREGZI™ is an allogeneic regulatory T cell-based immunotherapy with hematopoietic stem and progenitor cells and T cells indicated for use in matched donor hematopoietic stem cell transplantation with myeloablative preparative regimen, for hematopoietic and immunologic reconstitution and to improve chronic graft-versus-host disease (cGVHD)-free survival, in the treatment of adults with hematological malignancies. ( 1 )",
+      "status": "ok",
+      "source_url": "https://api.fda.gov/drug/label.json?search=openfda.brand_name%3A%22TREGZI%22&limit=1"
+    }
+  ],
+  "approved_cell_gene_products": [
+    {
+      "product_name": "ABECMA (idecabtagene vicleucel)",
+      "manufacturer": "Celgene Corporation, a Bristol-Myers Squibb Company",
+      "source_url": "https://www.fda.gov/vaccines-blood-biologics/abecma"
+    },
+    {
+      "product_name": "ADSTILADRIN (nadofaragene firadenovec-vcng)",
+      "manufacturer": "Ferring Pharmaceuticals A/S",
+      "source_url": "https://www.fda.gov/vaccines-blood-biologics/cellular-gene-therapy-products/adstiladrin"
+    },
+    {
+      "product_name": "ALLOCORD (HPC, Cord Blood)",
+      "manufacturer": "SSM Cardinal Glennon Children's Medical Center",
+      "source_url": "https://www.fda.gov/vaccines-blood-biologics/cellular-gene-therapy-products/allocord-hpc-cord-blood"
+    },
+    {
+      "product_name": "AMTAGVI (lifileucel)",
+      "manufacturer": "Iovance Biotherapeutics, Inc.",
+      "source_url": "https://www.fda.gov/vaccines-blood-biologics/approved-blood-products/amtagvi"
+    },
+    {
+      "product_name": "TREGZI (Allogeneic regulatory T cell immunotherapy with HSPC and T cells-vldq)",
+      "manufacturer": "Orca Biosystems Inc",
+      "source_url": "https://www.fda.gov/vaccines-blood-biologics/tregzi"
+    },
+    {
+      "product_name": "AUCATZYL (obecabtagene autoleucel)",
+      "manufacturer": "Autolus Limited",
+      "source_url": "https://www.fda.gov/vaccines-blood-biologics/aucatzyl"
+    },
+    {
+      "product_name": "BEQVEZ (fidanacogene elaparvovec-dzkt)",
+      "manufacturer": "Pfizer, Inc.",
+      "source_url": "https://www.fda.gov/vaccines-blood-biologics/cellular-gene-therapy-products/beqvez"
+    },
+    {
+      "product_name": "BREYANZI (lisocabtagene maraleucel)",
+      "manufacturer": "Juno Therapeutics, Inc., a Bristol-Myers Squibb Company",
+      "source_url": "https://www.fda.gov/vaccines-blood-biologics/cellular-gene-therapy-products/breyanzi"
+    },
+    {
+      "product_name": "CARVYKTI (ciltacabtagene autoleucel)",
+      "manufacturer": "Janssen Biotech, Inc.",
+      "source_url": "https://www.fda.gov/vaccines-blood-biologics/cellular-gene-therapy-products/carvykti"
+    },
+    {
+      "product_name": "CASGEVY (exagamglogene autotemcel [exa-cel])",
+      "manufacturer": "Vertex Pharmaceuticals Incorporated",
+      "source_url": "https://www.fda.gov/vaccines-blood-biologics/casgevy"
+    },
+    {
+      "product_name": "CLEVECORD (HPC Cord Blood)",
+      "manufacturer": "Cleveland Cord Blood Center",
+      "source_url": "https://www.fda.gov/vaccines-blood-biologics/cellular-gene-therapy-products/clevecord-hpc-cord-blood"
+    },
+    {
+      "product_name": "Ducord, HPC Cord Blood",
+      "manufacturer": "Duke University School of Medicine",
+      "source_url": "https://www.fda.gov/vaccines-blood-biologics/cellular-gene-therapy-products/ducord"
+    },
+    {
+      "product_name": "ELEVIDYS (delandistrogene moxeparvovec-rokl)",
+      "manufacturer": "Sarapeta Therapeutics, Inc.",
+      "source_url": "https://www.fda.gov/vaccines-blood-biologics/tissue-tissue-products/elevidys"
+    },
+    {
+      "product_name": "ENCELTO (revakinagene taroretcel-lwey)",
+      "manufacturer": "Neurotech Pharmaceuticals, Inc.",
+      "source_url": "https://www.fda.gov/vaccines-blood-biologics/center-biologics-evaluation-and-research-cber-product-approval-information/encelto"
+    },
+    {
+      "product_name": "GINTUIT (Allogeneic Cultured Keratinocytes and Fibroblasts in Bovine Collagen)",
+      "manufacturer": "Organogenesis Incorporated",
+      "source_url": "https://www.fda.gov/vaccines-blood-biologics/cellular-gene-therapy-products/gintuit-allogeneic-cultured-keratinocytes-and-fibroblasts-bovine-collagen"
+    },
+    {
+      "product_name": "HEMACORD (HPC, cord blood)",
+      "manufacturer": "New York Blood Center",
+      "source_url": "https://www.fda.gov/vaccines-blood-biologics/cellular-gene-therapy-products/hemacord-hpc-cord-blood"
+    },
+    {
+      "product_name": "HEMGENIX (etranacogene dezaparvovec-drlb)",
+      "manufacturer": "CSL Behring LLC",
+      "source_url": "https://www.fda.gov/vaccines-blood-biologics/vaccines/hemgenix"
+    },
+    {
+      "product_name": "HPC, Cord Blood",
+      "manufacturer": "Clinimmune Labs, University of Colorado Cord Blood Bank",
+      "source_url": "https://www.fda.gov/vaccines-blood-biologics/cellular-gene-therapy-products/hpc-cord-blood"
+    },
+    {
+      "product_name": "HPC, Cord Blood - MD Anderson Cord Blood Bank",
+      "manufacturer": "MD Anderson Cord Blood Bank",
+      "source_url": "https://www.fda.gov/vaccines-blood-biologics/cellular-gene-therapy-products/hpc-cord-blood-md-anderson-cord-blood-bank"
+    },
+    {
+      "product_name": "HPC, Cord Blood - LifeSouth",
+      "manufacturer": "LifeSouth Community Blood Centers, Inc.",
+      "source_url": "https://www.fda.gov/vaccines-blood-biologics/cellular-gene-therapy-products/hpc-cord-blood-lifesouth"
+    },
+    {
+      "product_name": "HPC, Cord Blood - Bloodworks",
+      "manufacturer": "Bloodworks",
+      "source_url": "https://www.fda.gov/vaccines-blood-biologics/cellular-gene-therapy-products/hpc-cord-blood-bloodworks"
+    },
+    {
+      "product_name": "IMLYGIC (talimogene laherparepvec)",
+      "manufacturer": "BioVex, Inc., a subsidiary of Amgen Inc.",
+      "source_url": "https://www.fda.gov/vaccines-blood-biologics/cellular-gene-therapy-products/imlygic"
+    },
+    {
+      "product_name": "ITVISMA (onasemnogene abeparvovec-brve)",
+      "manufacturer": "Novartis Gene Therapies, Inc.",
+      "source_url": "https://www.fda.gov/vaccines-blood-biologics/cellular-gene-therapy-products/itvisma"
+    },
+    {
+      "product_name": "KEBILIDI (eladocagene exuparvovec-tneq)",
+      "manufacturer": "PTC Therapeutics",
+      "source_url": "https://www.fda.gov/vaccines-blood-biologics/kebilidi"
+    },
+    {
+      "product_name": "KYMRIAH (tisagenlecleucel)",
+      "manufacturer": "Novartis Pharmaceuticals Corporation",
+      "source_url": "https://www.fda.gov/vaccines-blood-biologics/cellular-gene-therapy-products/kymriah"
+    },
+    {
+      "product_name": "LANTIDRA (donislecel)",
+      "manufacturer": "CellTrans Inc.",
+      "source_url": "https://www.fda.gov/vaccines-blood-biologics/lantidra"
+    },
+    {
+      "product_name": "LAVIV (Azficel-T)",
+      "manufacturer": "Fibrocell Technologies",
+      "source_url": "https://www.fda.gov/vaccines-blood-biologics/cellular-gene-therapy-products/laviv"
+    },
+    {
+      "product_name": "LENMELDY (atidarsagene autotemcel)",
+      "manufacturer": "Orchard Therapeutics (Europe) Limited",
+      "source_url": "https://www.fda.gov/vaccines-blood-biologics/cellular-gene-therapy-products/lenmeldy"
+    },
+    {
+      "product_name": "LUXTURNA (voretigene neparvovec-rzyl)",
+      "manufacturer": "Spark Therapeutics, Inc.",
+      "source_url": "https://www.fda.gov/vaccines-blood-biologics/cellular-gene-therapy-products/luxturna"
+    },
+    {
+      "product_name": "LYFGENIA (lovotibeglogene autotemcel [lovo-cel])",
+      "manufacturer": "bluebird bio, Inc.",
+      "source_url": "https://www.fda.gov/vaccines-blood-biologics/lyfgenia"
+    },
+    {
+      "product_name": "MACI (Autologous Cultured Chondrocytes on a Porcine Collagen Membrane)",
+      "manufacturer": "Vericel Corp.",
+      "source_url": "https://www.fda.gov/vaccines-blood-biologics/cellular-gene-therapy-products/maci-autologous-cultured-chondrocytes-porcine-collagen-membrane"
+    },
+    {
+      "product_name": "OMISIRGE (omidubicel-onlv)",
+      "manufacturer": "Gamida Cell Ltd.",
+      "source_url": "https://www.fda.gov/vaccines-blood-biologics/omisirge"
+    },
+    {
+      "product_name": "OTARMENI™ (lunsotogene parvec cwha)",
+      "manufacturer": "Regeneron Pharmaceuticals, Inc.",
+      "source_url": "https://www.fda.gov/vaccines-blood-biologics/otarmeni"
+    },
+    {
+      "product_name": "PAPZIMEOS (zopapogene imadenovec-drba)",
+      "manufacturer": "Precigen, Inc.",
+      "source_url": "https://www.fda.gov/vaccines-blood-biologics/papzimeos"
+    },
+    {
+      "product_name": "PROVENGE (sipuleucel-T)",
+      "manufacturer": "Dendreon Corp.",
+      "source_url": "https://www.fda.gov/vaccines-blood-biologics/cellular-gene-therapy-products/provenge-sipuleucel-t"
+    },
+    {
+      "product_name": "REGENECYTE (HPC, Cord Blood)",
+      "manufacturer": "StemCyte, Inc.",
+      "source_url": "https://www.fda.gov/vaccines-blood-biologics/cellular-gene-therapy-products/regenecyte"
+    },
+    {
+      "product_name": "RETHYMIC (allogeneic processed thymus tissue – agdc)",
+      "manufacturer": "Enzyvant Therapeutics GmbH",
+      "source_url": "https://www.fda.gov/vaccines-blood-biologics/rethymic"
+    },
+    {
+      "product_name": "ROCTAVIAN (valoctocogene roxaparvovec-rvox)",
+      "manufacturer": "BioMarin Pharmaceutical Inc",
+      "source_url": "https://www.fda.gov/vaccines-blood-biologics/roctavian"
+    },
+    {
+      "product_name": "RYONCIL (remestemcel-L-rknd)",
+      "manufacturer": "Mesoblast, Inc.",
+      "source_url": "https://www.fda.gov/vaccines-blood-biologics/cellular-gene-therapy-products/ryoncil"
+    },
+    {
+      "product_name": "SYMVESS (acellular tissue engineered vessel-tyod)",
+      "manufacturer": "Humacyte Global, Inc.",
+      "source_url": "https://www.fda.gov/vaccines-blood-biologics/symvess"
+    },
+    {
+      "product_name": "SKYSONA (elivaldogene autotemcel)",
+      "manufacturer": "bluebird bio, Inc.",
+      "source_url": "https://www.fda.gov/vaccines-blood-biologics/skysona"
+    },
+    {
+      "product_name": "STRATAGRAFT (allogeneic cultured keratinocytes and dermal fibroblasts in murine collagen-dsat)",
+      "manufacturer": "Stratatech Corporation",
+      "source_url": "https://www.fda.gov/vaccines-blood-biologics/stratagraft"
+    },
+    {
+      "product_name": "TECARTUS (brexucabtagene autoleucel)",
+      "manufacturer": "Kite Pharma, Inc.",
+      "source_url": "https://www.fda.gov/vaccines-blood-biologics/cellular-gene-therapy-products/tecartus"
+    },
+    {
+      "product_name": "TECELRA (afamitresgene autoleucel)",
+      "manufacturer": "Adaptimmune LLC",
+      "source_url": "https://www.fda.gov/vaccines-blood-biologics/cellular-gene-therapy-products/tecelra"
+    },
+    {
+      "product_name": "VYJUVEK (beremagene geperpavec-svdt)",
+      "manufacturer": "Krystal Biotech, Inc.",
+      "source_url": "https://www.fda.gov/vaccines-blood-biologics/vyjuvek"
+    },
+    {
+      "product_name": "WASKYRA (etuvetidigene autotemcel)",
+      "manufacturer": "Fondazione Telethon ETS",
+      "source_url": "https://www.fda.gov/vaccines-blood-biologics/waskyra"
+    },
+    {
+      "product_name": "YESCARTA (axicabtagene ciloleucel)",
+      "manufacturer": "Kite Pharma, Incorporated",
+      "source_url": "https://www.fda.gov/vaccines-blood-biologics/cellular-gene-therapy-products/yescarta"
+    },
+    {
+      "product_name": "ZEVASKYN (prademagene zamikeracel)",
+      "manufacturer": "Abeona Therapeutics, Inc.",
+      "source_url": "https://www.fda.gov/vaccines-blood-biologics/zevaskyn"
+    },
+    {
+      "product_name": "ZYNTEGLO (betibeglogene autotemcel)",
+      "manufacturer": "bluebird bio, Inc.",
+      "source_url": "https://www.fda.gov/vaccines-blood-biologics/zynteglo"
+    },
+    {
+      "product_name": "ZOLGENSMA (onasemnogene abeparvovec-xioi)",
+      "manufacturer": "Novartis Gene Therapies, Inc.",
+      "source_url": "https://www.fda.gov/vaccines-blood-biologics/zolgensma"
+    }
+  ],
+  "cber_updates": [
+    {
+      "title": "CBER 2026 Orphan Approvals (new BLAs)",
+      "url": "https://www.fda.gov/vaccines-blood-biologics/cber-2026-orphan-approvals-new-blas",
+      "source": "FDA/CBER",
+      "category": "CBER news"
+    },
+    {
+      "title": "Cellular, Tissue, and Gene Therapies Advisory Committee Meeting Announcement",
+      "url": "https://www.fda.gov/advisory-committees/advisory-committee-calendar/cellular-tissue-and-gene-therapies-advisory-committee-july-30-2026-meeting-announcement-updated",
+      "source": "FDA/CBER",
+      "category": "CBER news"
+    },
+    {
+      "title": "Cellular, Tissue, and Gene Therapies Advisory Committee Meeting Announcement",
+      "url": "https://www.fda.gov/advisory-committees/advisory-committee-calendar/cellular-tissue-and-gene-therapies-advisory-committee-july-29-2026-meeting-announcement-updated",
+      "source": "FDA/CBER",
+      "category": "CBER news"
+    },
+    {
+      "title": "Chemistry, Manufacturing, and Controls Flexibilities for Developing Human Cellular and Gene Therapy Products for a Biologics License Application; Guidance of Industry",
+      "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/chemistry-manufacturing-and-controls-flexibilities-developing-human-cellular-and-gene-therapy",
+      "source": "FDA/CBER",
+      "category": "CBER news"
+    },
+    {
+      "title": "OTP Town Hall: Best Practices for Preparing BLA Submissions for Cell and Gene Therapy Products",
+      "url": "https://www.fda.gov/vaccines-blood-biologics/news-events-biologics/otp-town-hall-best-practices-preparing-bla-submissions-cell-and-gene-therapy-products-06042026",
+      "source": "FDA/CBER",
+      "category": "CBER news"
+    },
+    {
+      "title": "FDA Eliminates Risk Evaluation and Mitigation Strategies (REMS) for Autologous Chimeric Antigen Receptor (CAR) T cell Immunotherapies",
+      "url": "https://www.fda.gov/vaccines-blood-biologics/safety-availability-biologics/fda-eliminates-risk-evaluation-and-mitigation-strategies-rems-autologous-chimeric-antigen-receptor",
+      "source": "FDA/CBER",
+      "category": "CBER safety"
+    },
+    {
+      "title": "FDA Investigating Deaths Due to Acute Liver Failure Following Treatment with Sarepta’s AAVrh74 Gene Therapies",
+      "url": "https://www.fda.gov/vaccines-blood-biologics/safety-availability-biologics/fda-investigating-deaths-due-acute-liver-failure-following-treatment-sareptas-aavrh74-gene-therapies",
+      "source": "FDA/CBER",
+      "category": "CBER safety"
+    },
+    {
+      "title": "FDA Requires Boxed Warning for T cell Malignancies Following Treatment with BCMA-Directed or CD19-Directed Autologous Chimeric Antigen Receptor (CAR) T cell Immunotherapies",
+      "url": "https://www.fda.gov/vaccines-blood-biologics/safety-availability-biologics/fda-requires-boxed-warning-t-cell-malignancies-following-treatment-bcma-directed-or-cd19-directed",
+      "source": "FDA/CBER",
+      "category": "CBER safety"
+    },
+    {
+      "title": "January 19, 2024 Safety Labeling Change Notification Letter - YESCARTA (axicabtagene ciloleucel)",
+      "url": "https://www.fda.gov/media/175627/download?attachment",
+      "source": "FDA/CBER",
+      "category": "CBER safety"
+    },
+    {
+      "title": "January 23, 2024 Safety Labeling Change Notification Letter - TECARTUS (brexucabtagene autoleucel)",
+      "url": "https://www.fda.gov/media/175652/download?attachment",
+      "source": "FDA/CBER",
+      "category": "CBER safety"
+    },
+    {
+      "title": "Risk Evaluation and Mitigation Strategies (REMS) for Autologous Chimeric Antigen Receptor (CAR) T cell Immunotherapies Modified to Minimize Burden on Healthcare Delivery System",
+      "url": "https://www.fda.gov/vaccines-blood-biologics/safety-availability-biologics/risk-evaluation-and-mitigation-strategies-rems-autologous-chimeric-antigen-receptor-car-t-cell",
+      "source": "FDA/CBER",
+      "category": "CBER safety"
+    }
+  ],
+  "faers_summary": {
+    "status": "ok",
+    "source_url": "https://api.fda.gov/drug/event.json?search=patient.drug.openfda.brand_name%3A%22ABECMA%22+patient.drug.openfda.brand_name%3A%22BREYANZI%22+patient.drug.openfda.brand_name%3A%22CARVYKTI%22+patient.drug.openfda.brand_name%3A%22KYMRIAH%22+patient.drug.openfda.brand_name%3A%22TECARTUS%22+patient.drug.openfda.brand_name%3A%22YESCARTA%22&count=patient.reaction.reactionmeddrapt.exact&limit=20",
+    "last_updated": "2026-04-28",
+    "products": [
+      "ABECMA",
+      "BREYANZI",
+      "CARVYKTI",
+      "KYMRIAH",
+      "TECARTUS",
+      "YESCARTA"
+    ],
+    "reactions": [
+      {
+        "term": "CYTOKINE RELEASE SYNDROME",
+        "report_count": 8597
+      },
+      {
+        "term": "IMMUNE EFFECTOR CELL-ASSOCIATED NEUROTOXICITY SYNDROME",
+        "report_count": 3590
+      },
+      {
+        "term": "PYREXIA",
+        "report_count": 2488
+      },
+      {
+        "term": "NEUROTOXICITY",
+        "report_count": 2320
+      },
+      {
+        "term": "DEATH",
+        "report_count": 1599
+      },
+      {
+        "term": "DISEASE PROGRESSION",
+        "report_count": 1121
+      },
+      {
+        "term": "HYPOTENSION",
+        "report_count": 1067
+      },
+      {
+        "term": "NEUTROPENIA",
+        "report_count": 894
+      },
+      {
+        "term": "FATIGUE",
+        "report_count": 827
+      },
+      {
+        "term": "PLATELET COUNT DECREASED",
+        "report_count": 728
+      },
+      {
+        "term": "DRUG INEFFECTIVE",
+        "report_count": 689
+      },
+      {
+        "term": "DIFFUSE LARGE B-CELL LYMPHOMA",
+        "report_count": 687
+      },
+      {
+        "term": "MALIGNANT NEOPLASM PROGRESSION",
+        "report_count": 673
+      },
+      {
+        "term": "HYPOGAMMAGLOBULINAEMIA",
+        "report_count": 656
+      },
+      {
+        "term": "WHITE BLOOD CELL COUNT DECREASED",
+        "report_count": 638
+      },
+      {
+        "term": "FEBRILE NEUTROPENIA",
+        "report_count": 605
+      },
+      {
+        "term": "THROMBOCYTOPENIA",
+        "report_count": 601
+      },
+      {
+        "term": "NEUTROPHIL COUNT DECREASED",
+        "report_count": 598
+      },
+      {
+        "term": "CYTOPENIA",
+        "report_count": 565
+      },
+      {
+        "term": "CONFUSIONAL STATE",
+        "report_count": 556
+      }
+    ],
+    "interpretation": "FAERS为自发报告信号，不能证明因果关系、发生率或产品间风险差异。"
+  }
+}

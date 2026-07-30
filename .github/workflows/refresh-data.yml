@@ -2,7 +2,7 @@ name: Refresh public intelligence data
 
 on:
   schedule:
-    - cron: "30 22 * * 1,4"
+    - cron: "30 22 * * 0"
   workflow_dispatch:
 
 permissions:
@@ -27,7 +27,7 @@ jobs:
           node-version: 22
 
       - name: Refresh and verify public data
-        run: npm run update:daily
+        run: npm run update:weekly
 
       - name: Verify the production build
         run: npm run build:site

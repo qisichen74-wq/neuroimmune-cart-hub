@@ -23,6 +23,18 @@
     "scope": "试验状态、阶段、申办方、入排标准、终点和更新时间"
   },
   {
+    "id": "china-drug-trials",
+    "name": "CDE药物临床试验登记与信息公示平台",
+    "source_type": "中国权威试验注册库",
+    "authority": "高",
+    "url": "https://www.chinadrugtrials.org.cn/",
+    "verification_endpoint": "https://www.chinadrugtrials.org.cn/clinicaltrials.searchlist.dhtml",
+    "last_checked_at": "2026-07-25",
+    "check_interval_days": 7,
+    "status": "部分可用（官网JavaScript防护；结构化只读代理待配置）",
+    "scope": "中国药物临床试验CTR登记号、状态、药物名称、适应症、题目、申办方和试验阶段"
+  },
+  {
     "id": "company-primary",
     "name": "企业官网与正式披露",
     "source_type": "一手公司来源",
@@ -41,8 +53,63 @@
     "url": "",
     "last_checked_at": null,
     "check_interval_days": 7,
-    "status": "待接入",
-    "scope": "安全通告、风险沟通、审批和临床暂停信息"
+    "status": "已接入",
+    "scope": "NMPA/CDE、FDA/openFDA、Drugs@FDA及FDA/CBER的安全通告、风险沟通、审批、标签和临床暂停信息"
+  },
+  {
+    "id": "drugsfda-official",
+    "name": "Drugs@FDA / openFDA",
+    "source_type": "FDA权威监管数据库",
+    "authority": "高",
+    "url": "https://open.fda.gov/apis/drug/drugsfda/",
+    "last_checked_at": "2026-07-29",
+    "check_interval_days": 7,
+    "status": "已接入",
+    "scope": "FDA批准药品的申请号、申办方、产品、提交状态、批准函和审评文件；细胞与基因治疗批准以CBER产品页为主"
+  },
+  {
+    "id": "openfda-label",
+    "name": "openFDA Drug Labeling",
+    "source_type": "FDA权威标签数据",
+    "authority": "高",
+    "url": "https://open.fda.gov/apis/drug/label/",
+    "last_checked_at": "2026-07-29",
+    "check_interval_days": 7,
+    "status": "已接入",
+    "scope": "CAR-T及相关细胞治疗的当前标签、适应症、黑框警告、重大标签变更和SPL版本"
+  },
+  {
+    "id": "openfda-faers",
+    "name": "openFDA / FAERS",
+    "source_type": "FDA上市后安全信号数据库",
+    "authority": "高（信号发现）",
+    "url": "https://open.fda.gov/apis/drug/event/",
+    "last_checked_at": "2026-07-29",
+    "check_interval_days": 90,
+    "status": "已接入",
+    "scope": "CAR-T上市后自发不良事件报告聚合；不能用于因果推断、发生率估计或产品间风险比较"
+  },
+  {
+    "id": "fda-cber-cell-gene-products",
+    "name": "FDA/CBER Approved Cellular and Gene Therapy Products",
+    "source_type": "FDA权威监管来源",
+    "authority": "高",
+    "url": "https://www.fda.gov/vaccines-blood-biologics/cellular-gene-therapy-products/approved-cellular-and-gene-therapy-products",
+    "last_checked_at": "2026-07-29",
+    "check_interval_days": 7,
+    "status": "已接入",
+    "scope": "FDA/CBER正式许可的细胞和基因治疗产品及制造商"
+  },
+  {
+    "id": "fda-cber-biologics-news",
+    "name": "FDA/CBER Biologics News and Safety Communications",
+    "source_type": "FDA权威监管来源",
+    "authority": "高",
+    "url": "https://www.fda.gov/vaccines-blood-biologics/news-events-biologics/whats-new-biologics",
+    "last_checked_at": "2026-07-29",
+    "check_interval_days": 7,
+    "status": "已接入",
+    "scope": "CBER细胞与基因治疗批准、指导原则、标签变更、安全通信、临床暂停和上市后要求"
   },
   {
     "id": "internal-curation",

@@ -4,9 +4,9 @@ import { fileURLToPath } from "node:url";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const load = async (file) => JSON.parse(await readFile(path.join(root, file), "utf8"));
-const [research, trials, events, candidates, quality] = await Promise.all([
+const [research, trials, events, candidates, quality, fda] = await Promise.all([
   load("data/feed.json"), load("data/trials.json"), load("data/events.json"),
-  load("data/candidate-report.json"), load("data/quality-report.json")
+  load("data/candidate-report.json"), load("data/quality-report.json"), load("data/fda-watch-report.json")
 ]);
 const priority = { 高: 3, 中: 2, 低: 1 };
 const isActive = (status) => !/^Not yet recruiting/i.test(status || "") && /Recruiting|Active/i.test(status || "");
@@ -29,6 +29,12 @@ const report = {
     quality_score: quality.score
   },
   verified_updates: latestEvents.map((item) => ({ id: item.id, title: item.title, summary: item.summary, date: item.date, source_url: item.source_url, topic: item.topic })),
+  fda_regulatory: {
+    summary: fda.summary,
+    updates: (fda.cber_updates || []).slice(0, 8),
+    cart_labels: (fda.cart_labels || []).map((item) => ({ brand_name: item.brand_name, generic_name: item.generic_name, effective_date: item.effective_date, application_number: item.application_number, status: item.status, source_url: item.source_url })),
+    interpretation: "FDA登记、IND、上市批准、标签与FAERS安全信号分别记录；FAERS不用于因果判断。"
+  },
   trial_watch: activeTrials.map((item) => ({ id: item.id, name: item.trial_name, product: item.product, indication: item.indication, status: item.status, enrollment: item.enrollment, last_update: item.registry_last_update, registry_url: item.registry_url })),
   risks: quality.issues.map((item) => ({ code: item.code, record_type: item.record_type, record_id: item.record_id, message: item.message })),
   candidate_queue: candidateQueue.map((item) => ({ type: item.candidate_type, external_id: item.external_id, title: item.title, score: item.relevance_score, tier: item.triage_tier, reasons: item.triage_reasons, source_url: item.source_url })),

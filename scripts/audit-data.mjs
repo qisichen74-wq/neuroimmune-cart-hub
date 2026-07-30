@@ -29,6 +29,9 @@ catch { /* The first online discovery run creates this report. */ }
 let regulatoryReport = null;
 try { regulatoryReport = await loadJson("data/regulatory-watch-report.json"); }
 catch { /* The first regulatory check creates this report. */ }
+let fdaReport = null;
+try { fdaReport = await loadJson("data/fda-watch-report.json"); }
+catch { /* The first FDA source check creates this report. */ }
 const issues = [];
 const addIssue = (severity, code, message, recordType = "system", recordId = "-") => issues.push({ severity, code, record_type: recordType, record_id: recordId, message });
 const isBlank = (value) => value == null || value === "" || (Array.isArray(value) && value.length === 0);
@@ -208,6 +211,18 @@ if (!regulatoryReport) {
   for (const check of regulatoryReport.checks || []) if (check.status === "error") addIssue("warning", "regulatory_source_failed", `监管来源访问失败：${check.name}`);
 }
 
+if (!fdaReport) {
+  addIssue("warning", "fda_report_missing", "尚未生成FDA官方来源监测报告，请运行 npm run check:fda");
+} else {
+  const generatedAt = new Date(fdaReport.generated_at);
+  const ageDays = Number.isNaN(generatedAt.getTime()) ? Infinity : (Date.now() - generatedAt.getTime()) / 86400000;
+  if (ageDays > 2) addIssue("warning", "fda_report_stale", "FDA官方来源监测报告已超过2天未刷新");
+  for (const source of fdaReport.sources || []) {
+    if (source.status === "error") addIssue("warning", "fda_source_failed", `FDA来源访问失败：${source.name}`);
+    if (source.status === "partial") addIssue("warning", "fda_source_partial", `FDA来源仅部分可用：${source.name}`);
+  }
+}
+
 const htmlFiles = (await readdir(root)).filter((file) => file.endsWith(".html"));
 const htmlFileSet = new Set(htmlFiles);
 const standaloneInternalPages = new Set(["login.html", "review.html"]);
@@ -238,9 +253,9 @@ const report = {
   policy_version: verification.policy_version,
   status: errors ? "阻断" : warnings ? "需关注" : "通过",
   score,
-  summary: { total_records: totalRecords, datasets: Object.keys(datasets).length, errors, warnings, verified, internally_reviewed: internallyReviewed, pending_external_verification: pending, stale: staleCount + registryStaleCount, source_checks: sourceSyncReport?.summary || null, discovery: candidateReport?.summary || null, regulatory: regulatoryReport?.summary || null },
+  summary: { total_records: totalRecords, datasets: Object.keys(datasets).length, errors, warnings, verified, internally_reviewed: internallyReviewed, pending_external_verification: pending, stale: staleCount + registryStaleCount, source_checks: sourceSyncReport?.summary || null, discovery: candidateReport?.summary || null, regulatory: regulatoryReport?.summary || null, fda: fdaReport?.summary || null },
   datasets: Object.entries(datasets).map(([type, records]) => ({ type, label: definitions[type].label, records: records.length, verified: verificationRows.filter((row) => row.record_type === type && row.status === "已核验" && !row.stale).length, pending: verificationRows.filter((row) => row.record_type === type && row.status === "待外部核验").length, stale: verificationRows.filter((row) => row.record_type === type && row.stale).length + issues.filter((issue) => issue.record_type === type && issue.code === "registry_record_stale").length })),
-  checks: ["必填字段", "重复ID", "日期格式与未来日期", "来源链接与PMID一致性", "试验注册号与注册页一致性", "注册记录更新时间", "专题适应症与试验匹配", "专题关联去重", "官方API逐字段差异", "官方来源检查时效", "候选情报发现时效", "候选来源可用性", "NMPA/CDE监管入口可用性", "监管状态分级", "文献与事件日期一致性", "跨表引用完整性", "来源登记完整性", "核验覆盖与过期策略", "页面内部链接", "共享导航与本地资源"],
+  checks: ["必填字段", "重复ID", "日期格式与未来日期", "来源链接与PMID一致性", "试验注册号与注册页一致性", "注册记录更新时间", "专题适应症与试验匹配", "专题关联去重", "官方API逐字段差异", "官方来源检查时效", "候选情报发现时效", "候选来源可用性", "NMPA/CDE监管入口可用性", "FDA/openFDA/Drugs@FDA/CBER来源可用性", "监管状态分级", "文献与事件日期一致性", "跨表引用完整性", "来源登记完整性", "核验覆盖与过期策略", "页面内部链接", "共享导航与本地资源"],
   issues,
   verification: verificationRows
 };
