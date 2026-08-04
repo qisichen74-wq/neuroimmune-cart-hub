@@ -8,7 +8,7 @@ const output = path.join(root, "dist");
 await rm(output, { recursive: true, force: true });
 await mkdir(output, { recursive: true });
 
-const internalPages = new Set(["login.html", "review.html", "candidates.html", "quality.html", "radar.html", "history.html"]);
+const internalPages = new Set(["login.html", "desk.html", "review.html", "candidates.html", "quality.html", "radar.html", "history.html"]);
 const rootFiles = (await readdir(root)).filter((file) => file.endsWith(".html") && !internalPages.has(file));
 await Promise.all(rootFiles.map((file) => cp(path.join(root, file), path.join(output, file))));
 await cp(path.join(root, "assets"), path.join(output, "assets"), { recursive: true });

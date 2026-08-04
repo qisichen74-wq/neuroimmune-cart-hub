@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-29T15:51:43.996Z",
+  "generated_at": "2026-08-04T12:16:15.181Z",
   "policy": {
     "trial_registration": "ClinicalTrials.gov记录只证明试验登记，不等同于FDA IND获准。",
     "ind_authorization": "IND信息只有FDA正式公告可直接记为FDA确认；企业披露必须标明公司口径。",
@@ -14,7 +14,7 @@
     "failed": 0,
     "labels_found": 8,
     "approved_cell_gene_products": 50,
-    "relevant_cber_updates": 11
+    "relevant_cber_updates": 12
   },
   "sources": [
     {
@@ -23,8 +23,8 @@
       "source_kind": "official_api",
       "status": "ok",
       "url": "https://open.fda.gov/apis/drug/drugsfda/",
-      "last_updated": "2026-07-28",
-      "records_available": 29234,
+      "last_updated": "2026-07-31",
+      "records_available": 29247,
       "scope_note": "Drugs@FDA并不完整覆盖所有细胞和基因治疗产品；相关批准以FDA/CBER产品页为主。"
     },
     {
@@ -41,7 +41,7 @@
       "source_kind": "official_page",
       "status": "ok",
       "url": "https://www.fda.gov/vaccines-blood-biologics/news-events-biologics/whats-new-biologics",
-      "relevant_links": 5
+      "relevant_links": 6
     },
     {
       "id": "fda-cber-safety-2024",
@@ -73,7 +73,7 @@
       "source_kind": "official_api",
       "status": "ok",
       "url": "https://open.fda.gov/apis/drug/event/",
-      "last_updated": "2026-04-28"
+      "last_updated": "2026-07-30"
     },
     {
       "id": "openfda-label",
@@ -81,7 +81,7 @@
       "source_kind": "official_api",
       "status": "ok",
       "url": "https://open.fda.gov/apis/drug/label/",
-      "last_updated": "2026-07-28",
+      "last_updated": "2026-08-03",
       "records_checked": 8,
       "records_found": 8,
       "errors": 0
@@ -95,7 +95,7 @@
       "application_number": "BLA125736",
       "product_type": "CELLULAR THERAPY",
       "effective_date": "2025-11-25",
-      "version": "19",
+      "version": "20",
       "recent_major_changes": "Boxed Warning 6/2025 Dosage and Administration ( 2.2 ) 11/2025 Dosage and Administration ( 2.2 , 2.3 ) 6/2025 Warnings and Precautions ( 5.2 , 5.3 ) 6/2025 Warnings and Precautions ( 5.2 , 5.3 ) 11/2025 Warnings and Precautions, ABECMA REMS ( 5.5 ) Removed 6/2025 Warnings and Precautions, Effects on Ability to Drive and Use Machines (5.11) Removed 6/2025",
       "boxed_warning": "WARNING: CYTOKINE RELEASE SYNDROME, NEUROLOGIC TOXICITIES, HLH/MAS, PROLONGED CYTOPENIA, AND SECONDARY HEMATOLOGICAL MALIGNANCIES • Cytokine Release Syndrome (CRS), including fatal or life-threatening reactions, occurred in patients following treatment with ABECMA. Do not administer ABECMA to patients with active infection or inflammatory disorders. Treat severe or life-threatening CRS with tocilizumab or tocilizumab and corticosteroids [see Dosage and Administration (2.2 , 2.3) , Warnings and Precautions (5.2) ] . • Neurologic toxicities, which may be severe or life-threatening, occurred following treatment with ABECMA, including concurrently with CRS, after CRS resolution, or in the absence of CRS. Monitor for neurologic events after treatment with ABECMA. Provide supportive care and/or corticosteroids as needed [see Dosage and Administration (2.2 , 2.3) and Warnings and Precautions (5.3) ] . • Hemophagocytic Lymphohistiocytosis/Macrophage Activation Syndrome (HLH/MAS) including fatal and life-threatening reactions, occurred in patients following treatment with ABECMA. HLH/MAS can occur with CRS or neurologic toxicities [see Warnings and Precautions (5.4) ] . • Prolonged Cytopenia with bleeding and infection, including fatal outcomes following stem cell transplantation for hematopoietic recovery, occurred following treatment with ABECMA [see Warnings and Precautions (5.7) ] . • T cell malignancies have occurred following treatment of hematologic malignancies with BCMA- and CD19-directed genetically modified autologous T cell immunotherapies, including ABECMA [see Warnings and Precautions (5.9) ] . WARNING: CYTOKINE RELEASE SYNDROME, NEUROLOGIC TOXICITIES, HLH/MAS, PROLONGED CYTOPENIA, AND SECONDARY HEMATOLOGICAL MALIGNANCIES See full prescribing information for complete boxed warning. • Cytokine Release Syndrome (CRS), including fatal or life-threatening reactions, occurred in patients following treatment with ABECMA. Do not administer ABECMA to patients with active infection or inflammatory disorders. Treat severe or life-threatening CRS with tocilizumab or tocilizumab and corticosteroids. ( 2.2 , 2.3 , 5.2 ) • Neurologic toxicities, which may be severe or life-threatening, occurred following treatment with ABECMA, including concurrently with CRS, after CRS resolution, or in the absence of CRS. Monitor for neurologic events after treatment with ABECMA. Provide supportive care and/or corticosteroids as needed. ( 2.2 , 2.3 , 5.3 ) • Hemophagocytic Lymphohistiocytosis/Macrophage Activation Syndrome (HLH/MAS), including fatal and life-threatening reactions, occurred in patients following treatment with ABECMA. HLH/MAS can occur with CRS or neurologic toxicities. ( 5.4 ) • Prolonged Cytopenia with bleeding and infection, including fatal outcomes following stem cell transplantation for hematopoietic recovery, occurred following treatment with ABECMA. ( 5.7 ) • T cell malignancies have occurred following treatment of hematologic malignancies with BCM",
       "indications_and_usage": "1 INDICATIONS AND USAGE ABECMA is indicated for the treatment of adult patients with relapsed or refractory multiple myeloma after two or more prior lines of therapy including an immunomodulatory agent, a proteasome inhibitor, and an anti-CD38 monoclonal antibody. ABECMA is a B-cell maturation antigen (BCMA)-directed genetically modified autologous T cell immunotherapy indicated for the treatment of adult patients with relapsed or refractory multiple myeloma after two or more prior lines of therapy including an immunomodulatory agent, a proteasome inhibitor, and an anti-CD38 monoclonal antibody. ( 1 )",
@@ -467,20 +467,26 @@
       "category": "CBER news"
     },
     {
-      "title": "Cellular, Tissue, and Gene Therapies Advisory Committee Meeting Announcement",
-      "url": "https://www.fda.gov/advisory-committees/advisory-committee-calendar/cellular-tissue-and-gene-therapies-advisory-committee-july-29-2026-meeting-announcement-updated",
-      "source": "FDA/CBER",
-      "category": "CBER news"
-    },
-    {
       "title": "Chemistry, Manufacturing, and Controls Flexibilities for Developing Human Cellular and Gene Therapy Products for a Biologics License Application; Guidance of Industry",
       "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/chemistry-manufacturing-and-controls-flexibilities-developing-human-cellular-and-gene-therapy",
       "source": "FDA/CBER",
       "category": "CBER news"
     },
     {
+      "title": "Leveraging Prior Knowledge in the Development of Human Gene Therapy Products Incorporating Genome Editing; Draft Guidance of Industry",
+      "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/leveraging-prior-knowledge-development-human-gene-therapy-products-incorporating-genome-editing",
+      "source": "FDA/CBER",
+      "category": "CBER news"
+    },
+    {
       "title": "OTP Town Hall: Best Practices for Preparing BLA Submissions for Cell and Gene Therapy Products",
       "url": "https://www.fda.gov/vaccines-blood-biologics/news-events-biologics/otp-town-hall-best-practices-preparing-bla-submissions-cell-and-gene-therapy-products-06042026",
+      "source": "FDA/CBER",
+      "category": "CBER news"
+    },
+    {
+      "title": "SOPP 8401: Administrative Processing of Original Biologics License Applications (BLA) and New Drug Applications (NDA)",
+      "url": "https://www.fda.gov/media/85659/download?attachment",
       "source": "FDA/CBER",
       "category": "CBER news"
     },
@@ -524,7 +530,7 @@
   "faers_summary": {
     "status": "ok",
     "source_url": "https://api.fda.gov/drug/event.json?search=patient.drug.openfda.brand_name%3A%22ABECMA%22+patient.drug.openfda.brand_name%3A%22BREYANZI%22+patient.drug.openfda.brand_name%3A%22CARVYKTI%22+patient.drug.openfda.brand_name%3A%22KYMRIAH%22+patient.drug.openfda.brand_name%3A%22TECARTUS%22+patient.drug.openfda.brand_name%3A%22YESCARTA%22&count=patient.reaction.reactionmeddrapt.exact&limit=20",
-    "last_updated": "2026-04-28",
+    "last_updated": "2026-07-30",
     "products": [
       "ABECMA",
       "BREYANZI",
@@ -536,83 +542,83 @@
     "reactions": [
       {
         "term": "CYTOKINE RELEASE SYNDROME",
-        "report_count": 8597
+        "report_count": 8926
       },
       {
         "term": "IMMUNE EFFECTOR CELL-ASSOCIATED NEUROTOXICITY SYNDROME",
-        "report_count": 3590
+        "report_count": 3781
       },
       {
         "term": "PYREXIA",
-        "report_count": 2488
+        "report_count": 2559
       },
       {
         "term": "NEUROTOXICITY",
-        "report_count": 2320
+        "report_count": 2361
       },
       {
         "term": "DEATH",
-        "report_count": 1599
+        "report_count": 1716
       },
       {
         "term": "DISEASE PROGRESSION",
-        "report_count": 1121
+        "report_count": 1157
       },
       {
         "term": "HYPOTENSION",
-        "report_count": 1067
+        "report_count": 1104
       },
       {
         "term": "NEUTROPENIA",
-        "report_count": 894
+        "report_count": 950
       },
       {
         "term": "FATIGUE",
-        "report_count": 827
+        "report_count": 852
       },
       {
         "term": "PLATELET COUNT DECREASED",
-        "report_count": 728
-      },
-      {
-        "term": "DRUG INEFFECTIVE",
-        "report_count": 689
+        "report_count": 745
       },
       {
         "term": "DIFFUSE LARGE B-CELL LYMPHOMA",
-        "report_count": 687
+        "report_count": 717
+      },
+      {
+        "term": "DRUG INEFFECTIVE",
+        "report_count": 717
       },
       {
         "term": "MALIGNANT NEOPLASM PROGRESSION",
-        "report_count": 673
+        "report_count": 696
       },
       {
         "term": "HYPOGAMMAGLOBULINAEMIA",
-        "report_count": 656
-      },
-      {
-        "term": "WHITE BLOOD CELL COUNT DECREASED",
-        "report_count": 638
-      },
-      {
-        "term": "FEBRILE NEUTROPENIA",
-        "report_count": 605
+        "report_count": 682
       },
       {
         "term": "THROMBOCYTOPENIA",
-        "report_count": 601
+        "report_count": 663
+      },
+      {
+        "term": "WHITE BLOOD CELL COUNT DECREASED",
+        "report_count": 641
+      },
+      {
+        "term": "FEBRILE NEUTROPENIA",
+        "report_count": 637
       },
       {
         "term": "NEUTROPHIL COUNT DECREASED",
-        "report_count": 598
+        "report_count": 609
       },
       {
         "term": "CYTOPENIA",
-        "report_count": 565
+        "report_count": 593
       },
       {
         "term": "CONFUSIONAL STATE",
-        "report_count": 556
+        "report_count": 570
       }
     ],
     "interpretation": "FAERS为自发报告信号，不能证明因果关系、发生率或产品间风险差异。"

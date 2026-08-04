@@ -58,8 +58,8 @@
   {
     "id": "kyverna-kyv101",
     "record_kind": "company_program",
-    "source_url": "https://ir.kyvernatx.com/news-releases/news-release-details/kyverna-therapeutics-announces-initiation-rolling-sps-bla",
-    "source_last_update": "2026-05-12",
+    "source_url": "https://ir.kyvernatx.com/news-releases/news-release-details/kyverna-therapeutics-announces-master-services-agreement",
+    "source_last_update": "2026-07-27",
     "company": "Kyverna",
     "product": "KYV-101",
     "technology": "CD19 CAR-T",
@@ -74,7 +74,7 @@
     "priority": "高",
     "status": "SPS滚动BLA；gMG Phase 3 Recruiting",
     "evidence_anchor": "miv-cel已在SPS进入滚动BLA，并在gMG推进随机、标准治疗对照的注册性Phase 3，是海外神经免疫CAR-T后期开发核心锚点。",
-    "recent_update": "2026-05-12公司确认KYSA-6注册性Phase 3持续入组；ClinicalTrials.gov于2026-07-08更新为Phase 2/3、Recruiting、计划66例。",
+    "recent_update": "2026-07-27公司宣布与ElevateBio达成美国商业化与临床供应主服务协议；ClinicalTrials.gov于2026-07-29继续显示KYSA-6为Phase 2/3、Recruiting、计划66例。",
     "watch_points": [
       "KYSA-6 Phase 3全球入组与24周共同主要终点",
       "MS临床推进速度",
@@ -128,7 +128,7 @@
     "stage": "Phase 1/2",
     "region": "Global",
     "priority": "高",
-    "status": "Recruiting",
+    "status": "Active, not recruiting",
     "source_url": "https://clinicaltrials.gov/study/NCT06704269",
     "source_last_update": "2026-06-26",
     "evidence_anchor": "Novartis快速制造CD19 CAR-T进入治疗抵抗性全身型MG。",
@@ -190,9 +190,9 @@
     "priority": "高",
     "status": "Recruiting",
     "source_url": "https://clinicaltrials.gov/study/NCT07085104",
-    "source_last_update": "2026-06-18",
+    "source_last_update": "2026-07-31",
     "evidence_anchor": "CD19/CD70异体双靶点自免项目。",
-    "recent_update": "计划66例。",
+    "recent_update": "ClinicalTrials.gov于2026-07-31刷新并维持Recruiting，计划66例。",
     "watch_points": [
       "持久性",
       "异体安全"
@@ -243,9 +243,9 @@
     "priority": "高",
     "status": "Recruiting",
     "source_url": "https://clinicaltrials.gov/study/NCT06220201",
-    "source_last_update": "2026-07-01",
+    "source_last_update": "2026-08-03",
     "evidence_anchor": "计划120例的多地区神经免疫CAR-T研究，规模在早期项目中突出。",
-    "recent_update": "Breakfree-2于2026-07-01更新并维持Recruiting。",
+    "recent_update": "Breakfree-2于2026-08-03更新为Active, not recruiting，计划120例继续随访。",
     "watch_points": [
       "120例入组执行",
       "MS与MG队列差异",
@@ -272,9 +272,9 @@
     "priority": "高",
     "status": "Recruiting",
     "source_url": "https://clinicaltrials.gov/study/NCT06925542",
-    "source_last_update": "2026-06-15",
+    "source_last_update": "2026-07-22",
     "evidence_anchor": "80例基因编辑异体CAR-T自免研究。",
-    "recent_update": "维持Recruiting。",
+    "recent_update": "ClinicalTrials.gov于2026-07-22刷新并维持Recruiting。",
     "watch_points": [
       "异体风险",
       "制造扩展性"

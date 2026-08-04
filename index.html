@@ -372,7 +372,7 @@
       <div class="hero-stats">
         <div class="stat"><span class="stat-num" id="stat-total">—</span><span class="stat-label">正式记录</span><span class="stat-help">进入生产数据集的结构化对象</span></div>
         <div class="stat"><span class="stat-num" id="stat-high">—</span><span class="stat-label">活跃重点试验</span><span class="stat-help">处于招募或活跃随访的高优先级试验</span></div>
-        <div class="stat"><span class="stat-num" id="stat-reviewed">—</span><span class="stat-label">外部已核验</span><span class="stat-help">完成一手来源逐字段核查</span></div>
+        <div class="stat"><span class="stat-num" id="stat-reviewed">—</span><span class="stat-label">来源已确认</span><span class="stat-help">完成一手来源逐字段确认</span></div>
         <div class="stat"><span class="stat-num" id="stat-disease">—</span><span class="stat-label">专题覆盖</span><span class="stat-help">已建立持续更新的疾病专题</span></div>
       </div>
     </div>
@@ -380,7 +380,7 @@
     <aside class="hero-panel">
       <div class="panel-label">今日重点</div>
       <div class="panel-title" id="headline-title">正在加载重点情报...</div>
-      <p class="panel-summary" id="headline-summary">系统会优先抽取高优先级、已审核、对研发判断影响较大的条目，作为首页主结论。</p>
+      <p class="panel-summary" id="headline-summary">系统会优先抽取高优先级、信息密度高、对研发判断影响较大的条目，作为首页主结论。</p>
       <div class="panel-foot">
         <span id="headline-meta">等待数据</span>
         <a class="panel-link" id="headline-link" href="research.html">进入研究情报</a>
@@ -413,8 +413,8 @@
           <button class="filter-btn active" onclick="filterCards('全部')">全部</button>
           <button class="filter-btn" onclick="filterCards('高')">高优先级</button>
           <button class="filter-btn" onclick="filterCards('中')">中优先级</button>
-          <button class="filter-btn" onclick="filterCards('已审核')">已审核</button>
-          <button class="filter-btn" onclick="filterCards('待审核')">待审核</button>
+          <button class="filter-btn" onclick="filterCards('已收录')">已收录</button>
+          <button class="filter-btn" onclick="filterCards('待跟进')">待跟进</button>
           <button class="filter-btn" onclick="filterCards('MS')">MS</button>
           <button class="filter-btn" onclick="filterCards('MG')">MG</button>
           <button class="filter-btn" onclick="filterCards('NMOSD')">NMOSD</button>
@@ -454,7 +454,7 @@ const SAMPLE_DATA = [
     evidence_level: "病例报道·IIT",
     disease: "MS",
     one_liner: "CD19 CAR-T治疗一例合并CNS受累CLL与MS患者，CLL完全缓解且MS疾病负担显著改善。",
-    status: "已审核",
+    status: "已收录",
     source_name: "PubMed",
     source_url: "https://pubmed.ncbi.nlm.nih.gov/42251699/",
     publish_date: "2026-07-06",
@@ -469,7 +469,7 @@ const SAMPLE_DATA = [
     evidence_level: "病例系列·IIT",
     disease: "其他自免",
     one_liner: "对CD19 CAR-T治疗进展性SSc患者进行临床、免疫学及蛋白组学多维整合分析。",
-    status: "待审核",
+    status: "待跟进",
     source_name: "PubMed",
     source_url: "https://pubmed.ncbi.nlm.nih.gov/42223209/",
     publish_date: "2026-07-05",
@@ -484,7 +484,7 @@ const SAMPLE_DATA = [
     evidence_level: "综述",
     disease: "其他自免",
     one_liner: "系统评估CAR-T及CAR-NK在多种自身免疫病中的疗效、安全性与持久缓解情况。",
-    status: "待审核",
+    status: "待跟进",
     source_name: "PubMed",
     source_url: "https://pubmed.ncbi.nlm.nih.gov/42167622/",
     publish_date: "2026-07-02",
@@ -499,7 +499,7 @@ const SAMPLE_DATA = [
     evidence_level: "综述",
     disease: "MS",
     one_liner: "综述CAR-T靶向清除致病性B细胞治疗难治性MS的机制、深度缓解潜力及挑战。",
-    status: "已审核",
+    status: "已收录",
     source_name: "PubMed",
     source_url: "https://pubmed.ncbi.nlm.nih.gov/42286319/",
     publish_date: "2026-06-30",
@@ -514,7 +514,7 @@ const SAMPLE_DATA = [
     evidence_level: "队列研究",
     disease: "SPS",
     one_liner: "报道僵人谱系障碍长期预后数据，治疗持续应答存在差异，为该病自然史提供参考。",
-    status: "已审核",
+    status: "已收录",
     source_name: "PubMed",
     source_url: "https://pubmed.ncbi.nlm.nih.gov/42171443/",
     publish_date: "2026-06-28",
@@ -529,7 +529,7 @@ const SAMPLE_DATA = [
     evidence_level: "综述",
     disease: "MS",
     one_liner: "综述MS新兴疗法，涵盖BTK抑制剂、CAR-T、EBV疫苗、髓鞘再生及纳米递药等。",
-    status: "待审核",
+    status: "待跟进",
     source_name: "PubMed",
     source_url: "https://pubmed.ncbi.nlm.nih.gov/42295377/",
     publish_date: "2026-06-24",
@@ -576,13 +576,14 @@ function normalizeData() {
     tags: [],
     takeaway: item.priority_reason || "",
     ...item,
+    status: statusDisplay(item.status, false),
     ...(LANGUAGE === "en" ? {
       title_cn: item.official_title || item.title_cn,
       one_liner: `${item.journal || "Primary source"} · ${(item.publication_type || []).join(" / ") || "Research report"}`,
       takeaway: `Editorial priority: ${item.priority === "高" ? "high" : item.priority === "中" ? "medium" : "background"}. Open the primary source for the verified finding and study limitations.`,
       priority_reason: "Priority reflects evidence type, novelty, and potential impact on development decisions.",
       evidence_level: (item.publication_type || []).join(" / ") || "Research report",
-      status: item.status === "已审核" ? "Reviewed" : item.status === "已忽略" ? "Excluded" : "Pending review",
+      status: statusDisplay(item.status, true),
       tags: [item.disease, item.entity, ...(item.publication_type || [])].filter(Boolean)
     } : {})
   }));
@@ -592,7 +593,7 @@ function renderHeadlineStats() {
   const uniqueDiseases = [...new Set(allData.map((d) => d.disease))];
   document.getElementById("stat-total").textContent = allData.length;
   document.getElementById("stat-high").textContent = allData.filter((d) => d.priority === "高").length;
-  document.getElementById("stat-reviewed").textContent = allData.filter((d) => d.status === "已审核" || d.status === "Reviewed").length;
+  document.getElementById("stat-reviewed").textContent = allData.filter((d) => d.status === "已收录" || d.status === "Included").length;
   document.getElementById("stat-disease").textContent = uniqueDiseases.length;
 }
 
@@ -638,7 +639,7 @@ function renderStaticModules() {
   document.getElementById("monitor-list").innerHTML = [
     ["覆盖适应症", [...new Set(allData.map((item) => item.disease))].join(" / ")],
     ["高优先级占比", percentage(allData.filter((d) => d.priority === "高").length, allData.length)],
-    ["已审核占比", percentage(allData.filter((d) => d.status === "已审核").length, allData.length)],
+    ["已收录占比", percentage(allData.filter((d) => d.status === "已收录").length, allData.length)],
     ["原始研究占比", percentage(allData.filter((d) => !(d.evidence_level || "").includes("综述")).length, allData.length)]
   ].map(([label, value]) => `
     <div class="sidebar-row">
@@ -660,8 +661,8 @@ function filterCards(filter) {
     const label = button.textContent.trim();
     button.classList.toggle("active",
       filter === "全部" ? label === "全部" :
-      filter === "已审核" ? label.includes("已审核") :
-      filter === "待审核" ? label.includes("待审核") :
+      filter === "已收录" ? label.includes("已收录") :
+      filter === "待跟进" ? label.includes("待跟进") :
       label.includes(filter)
     );
   });
@@ -672,8 +673,8 @@ function applyFilter(filter) {
   let filtered = allData;
   if (filter === "高") filtered = allData.filter((d) => d.priority === "高");
   else if (filter === "中") filtered = allData.filter((d) => d.priority === "中");
-  else if (filter === "已审核") filtered = allData.filter((d) => d.status === "已审核" || d.status === "Reviewed");
-  else if (filter === "待审核") filtered = allData.filter((d) => d.status === "待审核" || d.status === "Pending review");
+  else if (filter === "已收录") filtered = allData.filter((d) => d.status === "已收录" || d.status === "Included");
+  else if (filter === "待跟进") filtered = allData.filter((d) => d.status === "待跟进" || d.status === "Follow-up");
   else if (filter !== "全部") filtered = allData.filter((d) => d.disease === filter);
 
   document.getElementById("feed-count").textContent = filtered.length + " 条情报";
@@ -684,11 +685,11 @@ function applyFilter(filter) {
   }
 
   container.innerHTML = filtered.map((item) => {
-    const reviewBadge = item.status === "已审核" || item.status === "Reviewed"
-      ? '<span class="review-badge review-done">已审核</span>'
+    const reviewBadge = item.status === "已收录" || item.status === "Included"
+      ? '<span class="review-badge review-done">已收录</span>'
       : item.status === "已忽略" || item.status === "Excluded"
       ? '<span class="review-badge review-ignored">已忽略</span>'
-      : '<span class="review-badge review-pending">待审核</span>';
+      : '<span class="review-badge review-pending">待跟进</span>';
 
     const sourceLink = item.source_url || ("https://pubmed.ncbi.nlm.nih.gov/" + item.pmid + "/");
 
@@ -723,6 +724,12 @@ function priorityWeight(priority) {
   if (priority === "高") return 3;
   if (priority === "中") return 2;
   return 1;
+}
+
+function statusDisplay(status, english = false) {
+  if (status === "已忽略" || status === "Excluded") return english ? "Excluded" : "已忽略";
+  if (status === "已审核" || status === "Reviewed" || status === "已收录" || status === "Included") return english ? "Included" : "已收录";
+  return english ? "Follow-up" : "待跟进";
 }
 
 function priorityLabel(priority) {

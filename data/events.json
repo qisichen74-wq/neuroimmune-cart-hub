@@ -338,14 +338,14 @@
   },
   {
     "id": "event-cc97540-update",
-    "date": "2026-07-01",
+    "date": "2026-08-03",
     "event_type": "试验更新",
-    "title": "Breakfree-2扩大MS与MG的NEX-T CAR-T证据布局",
-    "summary": "NCT06220201维持Recruiting，计划入组120例RMS、PMS或难治MG患者。",
-    "impact": "该研究成为当前规模较大的产业化神经免疫CAR-T早期试验之一。",
+    "title": "Breakfree-2完成当前招募并转为Active, not recruiting",
+    "summary": "NCT06220201于2026-08-03更新为停止招募，计划120例RMS、PMS或难治MG受试者继续随访。",
+    "impact": "说明该多病种Phase 1已结束当前招募阶段，但现阶段仍不能据此推断疗效读出或项目优先级变化。",
     "priority": "高",
     "topic": "MS / MG",
-    "status": "Recruiting",
+    "status": "Active, not recruiting",
     "source_label": "ClinicalTrials.gov",
     "source_url": "https://clinicaltrials.gov/study/NCT06220201",
     "entities": [
@@ -1091,6 +1091,29 @@
     "status": "Recruiting",
     "source_label": "ClinicalTrials.gov / Kyverna",
     "source_url": "https://clinicaltrials.gov/study/NCT06193889",
+    "entities": [
+      {
+        "type": "company",
+        "id": "kyverna-kyv101"
+      },
+      {
+        "type": "trial",
+        "id": "kyv101-mg-kysa6-phase23"
+      }
+    ]
+  },
+  {
+    "id": "event-kyverna-elevatebio-supply",
+    "date": "2026-07-27",
+    "event_type": "公司披露",
+    "title": "Kyverna披露miv-cel美国商业化与临床供应协议",
+    "summary": "公司宣布与ElevateBio达成多年主服务协议，用于支持miv-cel在美国的临床及潜在商业生产和供应。",
+    "impact": "这是接近后期开发阶段的正式制造与供应里程碑，但不等同于监管批准、上市或新增适应症进展。",
+    "priority": "中",
+    "topic": "MG / SPS",
+    "status": "公司更新",
+    "source_label": "Kyverna Therapeutics",
+    "source_url": "https://ir.kyvernatx.com/news-releases/news-release-details/kyverna-therapeutics-announces-master-services-agreement",
     "entities": [
       {
         "type": "company",

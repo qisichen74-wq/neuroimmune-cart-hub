@@ -1,45 +1,13 @@
 {
-  "generated_at": "2026-07-29T15:50:31.287Z",
+  "generated_at": "2026-08-04T12:17:32.487Z",
   "source_policy": "Official APIs are compared with local structured fields; differences require editorial review and are never auto-applied.",
   "summary": {
     "records_checked": 78,
     "successful": 78,
     "failed": 0,
-    "differences": 6
+    "differences": 1
   },
   "differences": [
-    {
-      "record_type": "trial",
-      "record_id": "kyv101-mg-kysa6-phase23",
-      "field": "registry_last_update",
-      "local_value": "2026-07-08",
-      "remote_value": "2026-07-29",
-      "source_url": "https://clinicaltrials.gov/study/NCT06193889"
-    },
-    {
-      "record_type": "trial",
-      "record_id": "cc97540-breakfree2",
-      "field": "registry_last_update",
-      "local_value": "2026-07-01",
-      "remote_value": "2026-07-23",
-      "source_url": "https://clinicaltrials.gov/study/NCT06220201"
-    },
-    {
-      "record_type": "trial",
-      "record_id": "ctx112-autoimmune-phase1",
-      "field": "registry_last_update",
-      "local_value": "2026-06-15",
-      "remote_value": "2026-07-22",
-      "source_url": "https://clinicaltrials.gov/study/NCT06925542"
-    },
-    {
-      "record_type": "trial",
-      "record_id": "allo329-autoimmune-phase1",
-      "field": "registry_last_update",
-      "local_value": "2026-06-18",
-      "remote_value": "2026-07-24",
-      "source_url": "https://clinicaltrials.gov/study/NCT07085104"
-    },
     {
       "record_type": "trial",
       "record_id": "tangdu-cd19bcma-mg-iit",
@@ -47,14 +15,6 @@
       "local_value": "Ting Chang / Tangdu Hospital",
       "remote_value": "Ting Chang, MD",
       "source_url": "https://clinicaltrials.gov/study/NCT06371040"
-    },
-    {
-      "record_type": "trial",
-      "record_id": "cabaletta-resecel-myositis",
-      "field": "registry_last_update",
-      "local_value": "2026-07-17",
-      "remote_value": "2026-07-23",
-      "source_url": "https://clinicaltrials.gov/study/NCT06154252"
     }
   ],
   "checks": [
@@ -195,11 +155,11 @@
       "remote": {
         "official_title": "A Phase 1, Multicenter, Single-arm, Dose-escalation Study of CC-97540 (BMS-986353), CD19-Targeted NEX-T Chimeric Antigen Receptor (CAR) T Cells, Evaluating Safety and Tolerability in Participants With Autoimmune Neurological Diseases: Relapsing Forms of Multiple Sclerosis (RMS), Progressive Forms of Multiple Sclerosis (PMS), or Refractory Myasthenia Gravis (MG).",
         "sponsor": "Juno Therapeutics, Inc., a Bristol-Myers Squibb Company",
-        "status": "RECRUITING",
+        "status": "ACTIVE_NOT_RECRUITING",
         "enrollment": 120,
         "study_start": "2024-03-28",
         "estimated_completion": "2027-07-15",
-        "registry_last_update": "2026-07-23"
+        "registry_last_update": "2026-08-03"
       }
     },
     {
@@ -279,7 +239,7 @@
         "enrollment": 66,
         "study_start": "2025-11-13",
         "estimated_completion": "2032-10",
-        "registry_last_update": "2026-07-24"
+        "registry_last_update": "2026-07-31"
       }
     },
     {

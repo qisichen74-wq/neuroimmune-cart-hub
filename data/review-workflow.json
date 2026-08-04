@@ -1,7 +1,7 @@
 {
   "generated_at": "2026-07-21T13:30:00Z",
   "policy_version": "1.1.0",
-  "closure_definition": "每条候选必须形成可追溯的发布、观察或排除决定，并记录来源、审核人、决定时间、理由及下次复核日期。",
+  "closure_definition": "每条候选必须形成可追溯的发布、观察或排除决定，并记录来源、处理人、决定时间、理由及下次复核日期。",
   "stages": [
     {
       "id": "discover",
@@ -12,21 +12,21 @@
     },
     {
       "id": "triage",
-      "name": "人工认领与分级",
+      "name": "候选认领与分级",
       "owner": "值班编辑",
       "sla_hours": 24,
       "exit_criteria": "明确负责人、优先级、病种和预计完成时间"
     },
     {
       "id": "verify",
-      "name": "一手来源逐字段核验",
+      "name": "一手来源逐字段确认",
       "owner": "医学编辑",
       "sla_hours": 48,
       "exit_criteria": "核对标题、日期、阶段、样本量、终点和原始措辞，并记录字段级来源"
     },
     {
       "id": "decide",
-      "name": "编辑决策",
+      "name": "候选处置决定",
       "owner": "专题负责人",
       "sla_hours": 24,
       "exit_criteria": "做出发布、持续观察或排除决定；排除必须填写理由"
@@ -65,7 +65,7 @@
   ],
   "required_audit_fields": [
     "candidate_id",
-    "reviewer",
+    "operator",
     "claimed_at",
     "decision",
     "decision_at",

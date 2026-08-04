@@ -6,7 +6,7 @@
     "authority": "高",
     "url": "https://pubmed.ncbi.nlm.nih.gov/",
     "verification_endpoint": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi",
-    "last_checked_at": "2026-07-17",
+    "last_checked_at": "2026-08-04",
     "check_interval_days": 30,
     "status": "可用",
     "scope": "PMID、英文标题、DOI、期刊、发布日期和文献类型"
@@ -17,7 +17,7 @@
     "source_type": "权威试验注册库",
     "authority": "高",
     "url": "https://clinicaltrials.gov/",
-    "last_checked_at": "2026-07-21",
+    "last_checked_at": "2026-08-04",
     "check_interval_days": 7,
     "status": "可用",
     "scope": "试验状态、阶段、申办方、入排标准、终点和更新时间"
@@ -29,9 +29,9 @@
     "authority": "高",
     "url": "https://www.chinadrugtrials.org.cn/",
     "verification_endpoint": "https://www.chinadrugtrials.org.cn/clinicaltrials.searchlist.dhtml",
-    "last_checked_at": "2026-07-25",
+    "last_checked_at": "2026-08-04",
     "check_interval_days": 7,
-    "status": "部分可用（官网JavaScript防护；结构化只读代理待配置）",
+    "status": "部分可用（官网可访问；自动化结构化检索仍不稳定）",
     "scope": "中国药物临床试验CTR登记号、状态、药物名称、适应症、题目、申办方和试验阶段"
   },
   {
@@ -40,7 +40,7 @@
     "source_type": "一手公司来源",
     "authority": "中高",
     "url": "",
-    "last_checked_at": null,
+    "last_checked_at": "2026-08-04",
     "check_interval_days": 14,
     "status": "待逐条登记",
     "scope": "产品管线、里程碑、公司表述和正式更新"
@@ -62,7 +62,7 @@
     "source_type": "FDA权威监管数据库",
     "authority": "高",
     "url": "https://open.fda.gov/apis/drug/drugsfda/",
-    "last_checked_at": "2026-07-29",
+    "last_checked_at": "2026-08-04",
     "check_interval_days": 7,
     "status": "已接入",
     "scope": "FDA批准药品的申请号、申办方、产品、提交状态、批准函和审评文件；细胞与基因治疗批准以CBER产品页为主"
@@ -73,7 +73,7 @@
     "source_type": "FDA权威标签数据",
     "authority": "高",
     "url": "https://open.fda.gov/apis/drug/label/",
-    "last_checked_at": "2026-07-29",
+    "last_checked_at": "2026-08-04",
     "check_interval_days": 7,
     "status": "已接入",
     "scope": "CAR-T及相关细胞治疗的当前标签、适应症、黑框警告、重大标签变更和SPL版本"
@@ -84,7 +84,7 @@
     "source_type": "FDA上市后安全信号数据库",
     "authority": "高（信号发现）",
     "url": "https://open.fda.gov/apis/drug/event/",
-    "last_checked_at": "2026-07-29",
+    "last_checked_at": "2026-08-04",
     "check_interval_days": 90,
     "status": "已接入",
     "scope": "CAR-T上市后自发不良事件报告聚合；不能用于因果推断、发生率估计或产品间风险比较"
@@ -95,7 +95,7 @@
     "source_type": "FDA权威监管来源",
     "authority": "高",
     "url": "https://www.fda.gov/vaccines-blood-biologics/cellular-gene-therapy-products/approved-cellular-and-gene-therapy-products",
-    "last_checked_at": "2026-07-29",
+    "last_checked_at": "2026-08-04",
     "check_interval_days": 7,
     "status": "已接入",
     "scope": "FDA/CBER正式许可的细胞和基因治疗产品及制造商"
@@ -106,7 +106,7 @@
     "source_type": "FDA权威监管来源",
     "authority": "高",
     "url": "https://www.fda.gov/vaccines-blood-biologics/news-events-biologics/whats-new-biologics",
-    "last_checked_at": "2026-07-29",
+    "last_checked_at": "2026-08-04",
     "check_interval_days": 7,
     "status": "已接入",
     "scope": "CBER细胞与基因治疗批准、指导原则、标签变更、安全通信、临床暂停和上市后要求"
@@ -128,7 +128,7 @@
     "source_type": "企业正式披露",
     "authority": "中高",
     "url": "https://ir.kyvernatx.com/",
-    "last_checked_at": "2026-07-21",
+    "last_checked_at": "2026-08-04",
     "check_interval_days": 14,
     "status": "可用",
     "scope": "KYV-101 / miv-cel pipeline、press release和公司正式披露"
@@ -139,7 +139,7 @@
     "source_type": "企业正式披露",
     "authority": "中高",
     "url": "https://ir.cartesiantherapeutics.com/",
-    "last_checked_at": "2026-07-21",
+    "last_checked_at": "2026-08-04",
     "check_interval_days": 14,
     "status": "可用",
     "scope": "Descartes-08 pipeline、AURORA进展和公司正式披露"
@@ -216,7 +216,7 @@
     "source_type": "权威监管来源",
     "authority": "高",
     "url": "https://zwfw.nmpa.gov.cn/web/taskview/11100000MB0341032Y100017210200001",
-    "last_checked_at": "2026-07-14",
+    "last_checked_at": "2026-08-04",
     "check_interval_days": 30,
     "status": "可用",
     "scope": "中国药物临床试验审批制度及CAR-T IND非临床资料要求"

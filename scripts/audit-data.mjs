@@ -225,7 +225,7 @@ if (!fdaReport) {
 
 const htmlFiles = (await readdir(root)).filter((file) => file.endsWith(".html"));
 const htmlFileSet = new Set(htmlFiles);
-const standaloneInternalPages = new Set(["login.html", "review.html"]);
+const standaloneInternalPages = new Set(["login.html", "review.html", "desk.html"]);
 for (const file of htmlFiles) {
   const html = await readFile(path.join(root, file), "utf8");
   if (!standaloneInternalPages.has(file) && !html.includes('src="assets/app-shell.js"')) addIssue("error", "shared_shell_missing", "页面未接入共享导航与质量状态", "page", file);

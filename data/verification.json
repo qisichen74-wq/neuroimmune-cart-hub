@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-07-21",
+  "as_of": "2026-08-04",
   "policy_version": "1.0.0",
   "status_definitions": {
     "已核验": "已与指定一手或权威来源逐字段比对",
@@ -358,8 +358,8 @@
       "record_id": "kyverna-kyv101",
       "status": "已核验",
       "confidence": "高",
-      "last_verified_at": "2026-07-21",
-      "next_review_at": "2026-08-04",
+      "last_verified_at": "2026-08-04",
+      "next_review_at": "2026-08-18",
       "source_ids": [
         "kyverna-ir",
         "clinicaltrials-gov"
@@ -373,7 +373,7 @@
         "source_url",
         "source_last_update"
       ],
-      "note": "ClinicalTrials.gov API确认KYSA-6为Phase 2/3、Recruiting；Kyverna 2026-05-12公告确认注册性Phase 3正在全球入组。"
+      "note": "2026-08-04复核时，ClinicalTrials.gov继续显示KYSA-6为Phase 2/3、Recruiting、计划66例；Kyverna 2026-07-27公告新增美国商业化与临床供应协议。"
     },
     {
       "record_type": "company",
@@ -879,8 +879,8 @@
       "record_id": "cc97540-breakfree2",
       "status": "已核验",
       "confidence": "高",
-      "last_verified_at": "2026-07-11",
-      "next_review_at": "2026-07-18",
+      "last_verified_at": "2026-08-04",
+      "next_review_at": "2026-08-11",
       "source_ids": [
         "clinicaltrials-gov"
       ],
@@ -899,7 +899,7 @@
         "estimated_completion",
         "registry_last_update"
       ],
-      "note": "依据ClinicalTrials.gov API核验NCT06220201。"
+      "note": "2026-08-04复核NCT06220201，ClinicalTrials.gov已更新为Active, not recruiting，最近更新日期为2026-08-03。"
     },
     {
       "record_type": "trial",
@@ -955,8 +955,8 @@
       "record_id": "bms-cc97540",
       "status": "已核验",
       "confidence": "高",
-      "last_verified_at": "2026-07-11",
-      "next_review_at": "2026-07-25",
+      "last_verified_at": "2026-08-04",
+      "next_review_at": "2026-08-18",
       "source_ids": [
         "clinicaltrials-gov"
       ],
@@ -970,7 +970,7 @@
         "source_url",
         "source_last_update"
       ],
-      "note": "依据NCT06220201核验。"
+      "note": "2026-08-04复核NCT06220201，ClinicalTrials.gov已更新为Active, not recruiting，最近更新日期为2026-08-03。"
     },
     {
       "record_type": "company",
@@ -1017,8 +1017,8 @@
       "record_id": "event-cc97540-update",
       "status": "已核验",
       "confidence": "高",
-      "last_verified_at": "2026-07-11",
-      "next_review_at": "2026-07-18",
+      "last_verified_at": "2026-08-04",
+      "next_review_at": "2026-08-11",
       "source_ids": [
         "clinicaltrials-gov"
       ],
@@ -1028,7 +1028,7 @@
         "source_url",
         "entities"
       ],
-      "note": "日期采用官方最近更新发布日期。"
+      "note": "2026-08-04复核时，事件日期采用ClinicalTrials.gov最近更新发布日期2026-08-03。"
     },
     {
       "record_type": "event",
@@ -1053,8 +1053,8 @@
       "record_id": "ctx112-autoimmune-phase1",
       "status": "已核验",
       "confidence": "高",
-      "last_verified_at": "2026-07-11",
-      "next_review_at": "2026-07-18",
+      "last_verified_at": "2026-08-04",
+      "next_review_at": "2026-08-11",
       "source_ids": [
         "clinicaltrials-gov"
       ],
@@ -1068,7 +1068,7 @@
         "estimated_completion",
         "registry_last_update"
       ],
-      "note": "依据NCT06925542。"
+      "note": "2026-08-04复核NCT06925542，ClinicalTrials.gov最近更新日期为2026-07-22，状态仍为Recruiting。"
     },
     {
       "record_type": "trial",
@@ -1119,8 +1119,8 @@
       "record_id": "crispr-ctx112",
       "status": "已核验",
       "confidence": "高",
-      "last_verified_at": "2026-07-11",
-      "next_review_at": "2026-07-25",
+      "last_verified_at": "2026-08-04",
+      "next_review_at": "2026-08-18",
       "source_ids": [
         "clinicaltrials-gov"
       ],
@@ -1134,7 +1134,7 @@
         "source_url",
         "source_last_update"
       ],
-      "note": "依据NCT06925542。"
+      "note": "2026-08-04复核NCT06925542，ClinicalTrials.gov最近更新日期为2026-07-22，状态仍为Recruiting。"
     },
     {
       "record_type": "company",
@@ -1185,8 +1185,8 @@
       "record_id": "allo329-autoimmune-phase1",
       "status": "已核验",
       "confidence": "高",
-      "last_verified_at": "2026-07-11",
-      "next_review_at": "2026-07-18",
+      "last_verified_at": "2026-08-04",
+      "next_review_at": "2026-08-11",
       "source_ids": [
         "clinicaltrials-gov"
       ],
@@ -1200,7 +1200,7 @@
         "estimated_completion",
         "registry_last_update"
       ],
-      "note": "依据NCT07085104。"
+      "note": "2026-08-04复核NCT07085104，ClinicalTrials.gov最近更新日期为2026-07-31，状态仍为Recruiting。"
     },
     {
       "record_type": "trial",
@@ -1251,8 +1251,8 @@
       "record_id": "allogene-allo329",
       "status": "已核验",
       "confidence": "高",
-      "last_verified_at": "2026-07-11",
-      "next_review_at": "2026-07-25",
+      "last_verified_at": "2026-08-04",
+      "next_review_at": "2026-08-18",
       "source_ids": [
         "clinicaltrials-gov"
       ],
@@ -1266,7 +1266,7 @@
         "source_url",
         "source_last_update"
       ],
-      "note": "依据NCT07085104。"
+      "note": "2026-08-04复核NCT07085104，ClinicalTrials.gov最近更新日期为2026-07-31，状态仍为Recruiting。"
     },
     {
       "record_type": "company",
@@ -3053,10 +3053,10 @@
     {
       "record_type": "trial",
       "record_id": "tangdu-cd19bcma-mg-iit",
-      "status": "已核验",
+      "status": "存在冲突",
       "confidence": "高",
-      "last_verified_at": "2026-07-15",
-      "next_review_at": "2026-07-22",
+      "last_verified_at": "2026-08-04",
+      "next_review_at": "2026-08-11",
       "source_ids": [
         "clinicaltrials-gov"
       ],
@@ -3069,7 +3069,7 @@
         "sponsor",
         "registry_last_update"
       ],
-      "note": "已通过ClinicalTrials.gov API v2逐字段核对。"
+      "note": "2026-08-04复核NCT06371040时，ClinicalTrials.gov lead sponsor为“Ting Chang, MD”；本地仍保留“Ting Chang / Tangdu Hospital”以反映机构归属，其他字段与官方记录一致。"
     },
     {
       "record_type": "trial",
@@ -3397,8 +3397,8 @@
       "record_id": "cabaletta-resecel-myositis",
       "status": "已核验",
       "confidence": "高",
-      "last_verified_at": "2026-07-21",
-      "next_review_at": "2026-07-28",
+      "last_verified_at": "2026-08-04",
+      "next_review_at": "2026-08-11",
       "source_ids": [
         "clinicaltrials-gov"
       ],
@@ -3413,7 +3413,7 @@
         "estimated_completion",
         "registry_last_update"
       ],
-      "note": "已通过ClinicalTrials.gov API于2026-07-21逐字段核验NCT06154252；官方注册库最后更新时间为2026-07-17。"
+      "note": "2026-08-04复核NCT06154252，ClinicalTrials.gov最近更新日期为2026-07-23，状态仍为Recruiting。"
     },
     {
       "record_type": "trial",
@@ -3637,8 +3637,8 @@
       "record_id": "kyv101-mg-kysa6-phase23",
       "status": "已核验",
       "confidence": "高",
-      "last_verified_at": "2026-07-21",
-      "next_review_at": "2026-07-28",
+      "last_verified_at": "2026-08-04",
+      "next_review_at": "2026-08-11",
       "source_ids": [
         "clinicaltrials-gov",
         "kyverna-ir"
@@ -3656,15 +3656,15 @@
         "estimated_completion",
         "registry_last_update"
       ],
-      "note": "已通过ClinicalTrials.gov API于2026-07-21逐字段核验NCT06193889，并由公司公告交叉核验其FDA对齐的注册性Phase 3定位。"
+      "note": "2026-08-04复核NCT06193889，ClinicalTrials.gov最近更新日期为2026-07-29；Kyverna 2026-07-27公告补充了美国商业化与临床供应协议。"
     },
     {
       "record_type": "event",
       "record_id": "event-kyverna-kysa6-phase3",
       "status": "已核验",
       "confidence": "高",
-      "last_verified_at": "2026-07-21",
-      "next_review_at": "2026-07-28",
+      "last_verified_at": "2026-08-04",
+      "next_review_at": "2026-08-11",
       "source_ids": [
         "clinicaltrials-gov",
         "kyverna-ir"
@@ -3675,7 +3675,25 @@
         "source_url",
         "entities"
       ],
-      "note": "事件日期采用ClinicalTrials.gov最近更新发布日期2026-07-08；注册性定位由Kyverna正式公告交叉核验。"
+      "note": "2026-08-04复核时，事件仍对应ClinicalTrials.gov于2026-07-08公开的注册性Phase 3更新；2026-07-29后未见试验设计层面的新增变化。"
+    },
+    {
+      "record_type": "event",
+      "record_id": "event-kyverna-elevatebio-supply",
+      "status": "已核验",
+      "confidence": "高",
+      "last_verified_at": "2026-08-04",
+      "next_review_at": "2026-08-11",
+      "source_ids": [
+        "kyverna-ir"
+      ],
+      "verified_fields": [
+        "date",
+        "status",
+        "source_url",
+        "entities"
+      ],
+      "note": "事件依据Kyverna 2026-07-27官方新闻稿核验，仅记录供应与制造协议事实，不外推监管或上市进度。"
     }
   ]
 }

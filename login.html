@@ -12,31 +12,32 @@
 <body>
 <section class="identity">
   <a class="brand" href="index.html">自身免疫 CAR-T 情报工作台</a>
-  <div class="identity-copy"><div class="eyebrow">Private review desk</div><h1>把判断<br>落成记录。</h1><p>登录后直接核对候选信息。确认、修改或排除一次提交即可完成审核，并自动记录审核人与时间。</p></div>
-  <div class="identity-foot">PRIMARY SOURCE → HUMAN DECISION → AUDIT RECORD</div>
+  <div class="identity-copy"><div class="eyebrow">Private workspace</div><h1>把判断<br>落成记录。</h1><p>登录后直接处理候选信息。确认、修改或排除一次提交即可完成记录，并自动保留操作人与时间。</p></div>
+  <div class="identity-foot">PRIMARY SOURCE → CANDIDATE DESK → AUDIT RECORD</div>
 </section>
 <main class="login-side">
   <form class="login-card" id="login-form">
-    <div class="stamp">HUMAN<br>VERIFIED</div>
+    <div class="stamp">SOURCE<br>FIRST</div>
     <h2>内部账号登录</h2>
-    <p class="intro">候选池、数据质量和审核记录仅对登录用户开放。</p>
+    <p class="intro">候选池、数据质量和处理记录仅对登录用户开放。</p>
     <label for="username">账号</label><input id="username" name="username" autocomplete="username" required>
     <label for="password">密码</label><input id="password" name="password" type="password" autocomplete="current-password" required>
-    <button id="submit" type="submit">登录并开始审核</button>
+    <button id="submit" type="submit">登录并进入工作台</button>
     <div class="error" id="error" role="alert"></div>
-    <p class="setup">本机首次运行默认账号为 <code>reviewer</code>，默认密码为 <code>review2026</code>。正式使用请通过 <code>INTEL_REVIEW_USER</code> 和 <code>INTEL_REVIEW_PASSWORD</code> 修改。</p>
+    <p class="setup">本机首次运行可使用默认工作台账号；正式使用请通过 <code>INTEL_WORKSPACE_USER</code> 和 <code>INTEL_WORKSPACE_PASSWORD</code> 配置，旧版 <code>INTEL_REVIEW_USER</code> / <code>INTEL_REVIEW_PASSWORD</code> 仍兼容。</p>
   </form>
 </main>
 <script>
 const LOGIN_EN=localStorage.getItem("intel-language")==="en";
 if(LOGIN_EN){document.documentElement.lang="en";document.title="Staff login - Autoimmune CAR-T Intelligence Hub";const pairs=new Map([
-  ["自身免疫 CAR-T 情报工作台","Autoimmune CAR-T Intelligence Hub"],["把判断","Turn decisions"],["落成记录。","into records."],["登录后直接核对候选信息。确认、修改或排除一次提交即可完成审核，并自动记录审核人与时间。","Sign in to review candidates. Confirm, modify, or exclude in one step; the reviewer and time are recorded automatically."],["内部账号登录","Staff login"],["候选池、数据质量和审核记录仅对登录用户开放。","Candidates, data quality, and review records are available only to signed-in staff."],["账号","Username"],["密码","Password"],["登录并开始审核","Sign in and start reviewing"],["本机首次运行默认账号为","The default local username is"],["，默认密码为","and the default password is"],["。正式使用请通过",". For regular use, change them with"],["和","and"],["修改。","."]]);const walk=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);const nodes=[];while(walk.nextNode())nodes.push(walk.currentNode);nodes.forEach(node=>{const raw=node.nodeValue||"",trimmed=raw.trim();if(pairs.has(trimmed))node.nodeValue=raw.replace(trimmed,pairs.get(trimmed))});document.querySelector('label[for="username"]').textContent="Username";document.querySelector('label[for="password"]').textContent="Password"}
+  ["自身免疫 CAR-T 情报工作台","Autoimmune CAR-T Intelligence Hub"],["把判断","Turn decisions"],["落成记录。","into records."],["登录后直接处理候选信息。确认、修改或排除一次提交即可完成记录，并自动保留操作人与时间。","Sign in to handle candidates. Confirm, modify, or exclude in one step; the operator and time are recorded automatically."],["内部账号登录","Staff login"],["候选池、数据质量和处理记录仅对登录用户开放。","Candidates, data quality, and handling records are available only to signed-in staff."],["账号","Username"],["密码","Password"],["登录并进入工作台","Sign in and open workspace"],["本机首次运行可使用默认工作台账号；正式使用请通过","The local workspace account is available for first-run access. For regular use, configure"],["配置，旧版","; the legacy"],["仍兼容。","variables remain supported."]
+]);const walk=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);const nodes=[];while(walk.nextNode())nodes.push(walk.currentNode);nodes.forEach(node=>{const raw=node.nodeValue||"",trimmed=raw.trim();if(pairs.has(trimmed))node.nodeValue=raw.replace(trimmed,pairs.get(trimmed))});document.querySelector('label[for="username"]').textContent="Username";document.querySelector('label[for="password"]').textContent="Password"}
 const form=document.getElementById("login-form"),error=document.getElementById("error"),submit=document.getElementById("submit");
 const next=new URLSearchParams(location.search).get("next");
-const destination=/^(review|candidates|quality)\.html$/.test(next||"")?next:"review.html";
-const readApiJson=async response=>{const contentType=response.headers.get("content-type")||"";if(!contentType.includes("application/json"))throw new Error(LOGIN_EN?"The review service is not running on this address. Stop the old server and run npm start again.":"当前地址运行的不是审核服务。请停止旧服务器后重新运行 npm start。");return response.json()};
+const destination=/^(desk|review|candidates|quality)\.html$/.test(next||"")?next:"desk.html";
+const readApiJson=async response=>{const contentType=response.headers.get("content-type")||"";if(!contentType.includes("application/json"))throw new Error(LOGIN_EN?"The local workspace service is not running on this address. Stop the old server and run npm start again.":"当前地址运行的不是本地工作台服务。请停止旧服务器后重新运行 npm start。");return response.json()};
 fetch("/api/session").then(response=>{if(response.ok)location.replace(destination)}).catch(()=>{});
-form.addEventListener("submit",async event=>{event.preventDefault();error.textContent="";submit.disabled=true;submit.textContent=LOGIN_EN?"Signing in…":"正在登录…";try{const response=await fetch("/api/login",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({username:form.username.value.trim(),password:form.password.value})});const payload=await readApiJson(response);if(!response.ok)throw new Error(LOGIN_EN?"Incorrect username or password":payload.error||"登录失败");location.replace(destination)}catch(reason){error.textContent=reason.message||(LOGIN_EN?"Cannot reach the review service. Open this page from the local site address.":"无法连接审核服务，请通过本地网站地址访问。");submit.disabled=false;submit.textContent=LOGIN_EN?"Sign in and start reviewing":"登录并开始审核"}});
+form.addEventListener("submit",async event=>{event.preventDefault();error.textContent="";submit.disabled=true;submit.textContent=LOGIN_EN?"Signing in…":"正在登录…";try{const response=await fetch("/api/login",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({username:form.username.value.trim(),password:form.password.value})});const payload=await readApiJson(response);if(!response.ok)throw new Error(LOGIN_EN?"Incorrect username or password":payload.error||"登录失败");location.replace(destination)}catch(reason){error.textContent=reason.message||(LOGIN_EN?"Cannot reach the workspace service. Open this page from the local site address.":"无法连接本地工作台服务，请通过本地网站地址访问。");submit.disabled=false;submit.textContent=LOGIN_EN?"Sign in and open workspace":"登录并进入工作台"}});
 </script>
 </body>
 </html>

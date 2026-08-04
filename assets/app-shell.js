@@ -5,7 +5,7 @@
 
   const englishUi = {
     "神经免疫 CAR-T 情报工作台": "Autoimmune CAR-T Intelligence Hub", "自身免疫 CAR-T 情报工作台": "Autoimmune CAR-T Intelligence Hub", "自身免疫CAR-T情报工作台": "Autoimmune CAR-T Intelligence Hub",
-    "首页": "Home", "专题档案": "Dossiers", "疾病专题": "Disease dossiers", "自身免疫疾病专题": "Autoimmune disease dossiers", "专题报道与档案": "Special reports and dossiers", "专题报道": "Special report", "人工审核": "Human review", "人工审核中心": "Human Review Center", "研究情报": "Research", "竞争格局": "Landscape",
+    "首页": "Home", "专题档案": "Dossiers", "疾病专题": "Disease dossiers", "自身免疫疾病专题": "Autoimmune disease dossiers", "专题报道与档案": "Special reports and dossiers", "专题报道": "Special report", "候选工作台": "Candidate desk", "候选处理台": "Candidate desk", "研究情报": "Research", "竞争格局": "Landscape",
     "项目对比": "Category Search", "分类检索": "Category Search", "变化历史": "Changes", "候选池": "Watchlist", "检索": "Search", "内部登录": "Staff login",
     "全局检索": "Global search", "数据质量": "Data quality", "质量未知": "Quality unavailable",
     "适应症档案": "Indication dossiers", "研究证据": "Research evidence", "竞争对象": "Programs",
@@ -16,15 +16,15 @@
     "当前尚无关联项目。": "No linked program yet.", "专题暂时无法打开": "Dossier unavailable",
     "返回专题库": "Back to dossiers", "当前没有适应症档案。": "No indication dossiers available.",
     "高优先级": "High priority", "中优先级": "Medium priority", "低优先级": "Low priority",
-    "高优先级条目": "High-priority items", "已审核": "Reviewed", "待审核": "Pending review", "已忽略": "Excluded",
+    "高优先级条目": "High-priority items", "已收录": "Included", "待跟进": "Follow-up", "已忽略": "Excluded",
     "全部": "All", "查看原文": "Source", "发布时间": "Published", "判断依据": "Rationale",
     "本轮最值得盯的三条情报": "Three intelligence items to watch", "情报覆盖概览": "Intelligence coverage",
     "最新研究情报流": "Latest research intelligence", "关键玩家与产品线快照": "Key programs and pipelines",
     "权威来源与核验方法": "Authoritative sources and verification", "监测面板": "Monitoring",
     "热门标签": "Trending tags", "覆盖适应症": "Indications covered", "高优先级占比": "High-priority share",
-    "已审核占比": "Reviewed share", "原始研究占比": "Primary-evidence share", "抓取公开来源": "Collect public sources",
+    "已收录占比": "Included share", "原始研究占比": "Primary-evidence share", "抓取公开来源": "Collect public sources",
     "做结构化摘要": "Create structured summaries", "沉淀专题判断": "Build indication assessments",
-    "今日决策摘要": "Daily decision brief", "已核验动态": "Verified updates", "重点试验": "Priority trials",
+    "今日决策摘要": "Daily decision brief", "已收录动态": "Included updates", "重点试验": "Priority trials",
     "暂无新增动态": "No new verified update", "暂无重点试验": "No priority trial",
     "研究证据库": "Research evidence library", "格局概览": "Landscape overview",
     "公司与项目矩阵": "Company and program matrix", "重点项目": "Priority programs", "格局判断": "Landscape assessment",
@@ -34,7 +34,7 @@
     "当前核查事项": "Current audit items", "复核周期": "Review cadence", "自动检查范围": "Automated checks",
     "来源登记表": "Source registry", "跨研究、项目、试验与动态统一检索": "Search across research, programs, trials, and events",
     "全部情报对象": "All intelligence objects", "结构化档案": "Structured profile", "持续观察点": "Watch points",
-    "核验状态": "Verification status", "相关动态": "Related events", "关联情报": "Related intelligence",
+    "来源状态": "Source status", "相关动态": "Related events", "关联情报": "Related intelligence",
     "详情暂时无法打开": "Detail unavailable", "打开导航": "Open navigation", "关闭导航": "Close navigation", "切换到中文": "Switch to Chinese",
     "网站导航": "Site navigation", "质量报告载入中": "Loading quality report", "个错误": " errors", "个警告": " warnings",
     "错误": "errors", "警告": "warnings", "条情报": " items", "个适应症": " indications", "项": "items",
@@ -48,7 +48,7 @@
     "变化历史尚未生成。": "Change history is not available yet.", "来源": "Source", "专题": "Dossier",
     "数据更新": "Data updated", "复核周期": "Review cadence", "30天": "30 days", "共 10 个疾病专题": "10 disease dossiers",
     "从神经免疫扩展到全谱系自身免疫疾病，按疾病持续聚合研究、项目、试验、关键判断与证据缺口。": "Expanding from neuroimmunology to the full autoimmune spectrum, with continuously curated evidence, programs, trials, assessments, and gaps by disease.",
-    "当前已建立 SLE、AI-ILD、RA 等专题；其余自身免疫病将按证据密度和人工审核进度持续建档。覆盖范围代表情报监测范围，不代表CAR-T已获得相应适应症批准。": "SLE, AI-ILD, RA, and other dossiers are now available. Additional autoimmune diseases will be added according to evidence density and review progress. Coverage indicates monitoring scope, not regulatory approval.",
+    "当前已建立 SLE、AI-ILD、RA 等专题；其余自身免疫病将按证据密度和情报建设进度持续建档。覆盖范围代表情报监测范围，不代表CAR-T已获得相应适应症批准。": "SLE, AI-ILD, RA, and other dossiers are now available. Additional autoimmune diseases will be added according to evidence density and intelligence build-out progress. Coverage indicates monitoring scope, not regulatory approval.",
     "疾病专题用于组织情报判断，不替代原始证据审阅或临床决策。": "Disease dossiers organize intelligence assessments and do not replace primary-evidence review or clinical decisions.",
     "专题内容由结构化数据聚合生成，关联关系代表情报上下文，不自动等同于临床因果。": "Special reports are generated from structured data. Links represent intelligence context and do not imply clinical causality.",
     "当前没有疾病专题。": "No disease dossier is currently available.", "正在构建疾病专题...": "Building disease dossiers...",
@@ -58,9 +58,9 @@
     "覆盖适应症：MS / MG / NMOSD / CIDP / AE / IIM / SSc / 其他自免": "Coverage: SLE / RA / AI-ILD / SSc / IIM / MS / MG / NMOSD and other autoimmune diseases",
     "核心来源：PubMed、ClinicalTrials.gov、NMPA / CDE、公司正式披露": "Primary sources: PubMed, ClinicalTrials.gov, NMPA / CDE, and official company disclosures",
     "今日重点": "Today's focus", "正在加载重点情报...": "Loading priority intelligence...", "等待数据": "Waiting for data", "进入研究情报": "Open research intelligence",
-    "正式记录": "Formal records", "活跃重点试验": "Active priority trials", "外部已核验": "Externally verified", "候选情报": "Candidate intelligence",
-    "进入生产数据集的结构化对象": "Structured objects in the production dataset", "处于招募或活跃随访的高优先级试验": "High-priority trials recruiting or in active follow-up", "完成一手来源逐字段核查": "Field-level checks completed against primary sources", "等待编辑核验的主动发现结果": "Proactively discovered items awaiting editorial verification",
-    "最新研究情报流": "Latest research intelligence", "关键玩家与产品线快照": "Key programs and pipelines", "人工审核中心展示流程、队列与闭环条件；医学和监管判断仍以一手来源及具名审核记录为准。": "The review center shows workflow, queues, and closure criteria. Medical and regulatory judgments remain grounded in primary sources and named review records.",
+    "正式记录": "Formal records", "活跃重点试验": "Active priority trials", "来源已确认": "Source-confirmed", "候选情报": "Candidate intelligence",
+    "进入生产数据集的结构化对象": "Structured objects in the production dataset", "处于招募或活跃随访的高优先级试验": "High-priority trials recruiting or in active follow-up", "完成一手来源逐字段确认": "Field-level confirmation completed against primary sources", "等待编辑处理的主动发现结果": "Proactively discovered items awaiting handling",
+    "最新研究情报流": "Latest research intelligence", "关键玩家与产品线快照": "Key programs and pipelines", "候选工作台展示候选处置流程与闭环条件；医学和监管判断仍以一手来源及具名处理记录为准。": "The candidate desk shows triage workflow and closure criteria. Medical and regulatory judgments remain grounded in primary sources and named handling records.",
     "汇总经核验的研究、临床试验、竞争项目与安全信号，覆盖神经、风湿、肌肉、肺与多器官自身免疫疾病。": "Curating verified research, clinical trials, development programs, and safety signals across neurological, rheumatic, muscular, pulmonary, and multi-organ autoimmune diseases.",
     "覆盖专题：SLE / RA / AI-ILD / SSc / IIM / MS / MG / NMOSD / 其他自免": "Dossiers: SLE / RA / AI-ILD / SSc / IIM / MS / MG / NMOSD / other autoimmune diseases",
     "状态：最新同步时间": "Latest synchronization", "条重点": " priority items",
@@ -68,27 +68,27 @@
     "尚无补充说明。": "No additional note.", "暂无明确结论。": "No conclusion yet.", "暂无摘要": "No summary",
     "聚焦：": "Focus: ", "阶段：": "Stage: ", "标签待补": "Tags pending",
     "仅供科研与产业情报参考，不构成临床诊疗建议。请以原始来源和正式披露信息为准。": "For research and industry intelligence only; not clinical advice. Refer to primary sources and official disclosures."
-    ,"审核中心展示流程、队列与闭环条件；医学和监管判断仍以一手来源及具名审核记录为准。": "The review center shows workflow, queues, and closure criteria. Medical and regulatory judgments remain grounded in primary sources and named review records."
-    ,"按证据等级、适应症、优先级与核验状态整理临床研究、病例系列、队列和系统综述。": "Clinical studies, case series, cohorts, and systematic reviews organized by evidence level, indication, priority, and verification status."
-    ,"数据状态": "Data status", "数据覆盖": "Data coverage", "搜索": "Search", "优先级": "Priority", "适应症": "Indication", "证据类型": "Evidence type", "审核状态": "Review status"
+    ,"候选工作台展示候选处置流程与闭环条件；医学和监管判断仍以一手来源及具名处理记录为准。": "The candidate desk shows triage workflow and closure criteria. Medical and regulatory judgments remain grounded in primary sources and named handling records."
+    ,"按证据等级、适应症、优先级与状态整理临床研究、病例系列、队列和系统综述。": "Clinical studies, case series, cohorts, and systematic reviews organized by evidence level, indication, priority, and status."
+    ,"数据状态": "Data status", "数据覆盖": "Data coverage", "搜索": "Search", "优先级": "Priority", "适应症": "Indication", "证据类型": "Evidence type", "状态": "Status"
     ,"原始研究 / 临床": "Primary / clinical research", "综述": "Review", "研究情报总数": "Research records"
     ,"当前接入 feed.json 的全部条目": "All records currently loaded from feed.json", "适合先读完并进入专题追踪": "Read first and consider for dossier tracking", "已经形成初步判断的条目": "Records with an initial editorial assessment", "比综述更适合直接支撑判断": "More suitable than reviews for direct assessment"
-    ,"按优先级排序": "Sort by priority", "按发布时间排序": "Sort by publication date", "按PMID排序": "Sort by PMID", "按审核状态排序": "Sort by review status", "情报详情": "Intelligence profile"
+    ,"按优先级排序": "Sort by priority", "按发布时间排序": "Sort by publication date", "按PMID排序": "Sort by PMID", "按状态排序": "Sort by status", "情报详情": "Intelligence profile"
     ,"最近同步": "Last synchronized", "仅供科研与产业情报参考，不构成临床诊疗建议。请以原始来源与正式披露信息为准。": "For research and industry intelligence only; not clinical advice. Refer to primary sources and official disclosures."
     ,"追踪中的重点玩家": "Programs tracked", "当前已纳入竞争格局页的公司与学术中心": "Companies and academic centers currently included in the landscape", "高优先级对象": "High-priority programs", "适合进入周报和专题跟踪的核心玩家": "Core programs for weekly and dossier tracking", "区域分布": "Regions", "帮助快速判断竞争热点主要落在哪些市场": "Shows where competitive activity is concentrated", "竞争格局已经触达的专题范围": "Disease areas represented in the landscape"
     ,"开发阶段": "Development stage", "区域": "Region", "观察面板": "Monitoring", "IIT项目": "IIT programs", "中国相关对象": "China-linked programs"
     ,"按开发成熟度排序": "Sort by development maturity", "按区域排序": "Sort by region", "按公司名排序": "Sort by company", "公司 / 产品": "Company / product", "路线": "Platform", "重点适应症": "Priority indications", "判断": "Assessment", "技术待补": "Technology pending", "阶段待补": "Stage pending", "发起类型待补": "Sponsor type pending", "区域待补": "Region pending"
     ,"汇总PubMed、ClinicalTrials.gov、CDE中国药物临床试验登记平台和重点企业官网的自动发现结果，并按证据类型、病种与项目状态分级。": "Automatically discovered records from PubMed, ClinicalTrials.gov, the CDE China Drug Trials registry, and priority company websites, triaged by evidence type, disease, and program status.", "搜索标题、PMID、NCT、CTR、申办方或病种": "Search title, PMID, NCT, CTR, sponsor, or disease", "CDE 药物临床试验登记与信息公示平台": "CDE China Drug Trials Registry"
-    ,"候选总数": "Candidates", "立即核验": "Immediate review", "持续观察": "Watch", "背景材料": "Background", "低相关": "Low relevance", "核心候选": "Core candidates", "研究文献": "Research", "官网更新": "Official update", "相关度": "Relevance", "待分级": "Untriaged", "发现于": "Discovered", "全部类型": "All types", "全部相关度": "All relevance", "全部分级": "All tiers", "高相关度（8+）": "High relevance (8+)", "核心候选（10+）": "Core candidates (10+)", "当前筛选条件下没有候选记录。": "No candidate matches the current filters.", "候选报告尚未生成。": "Candidate report is not available.", "候选记录不代表疗效、安全性、注册状态或监管结论已经获得本网站确认。": "Candidate records do not mean efficacy, safety, registration status, or regulatory conclusions have been verified by this site.", "免人工审核": "No human review required", "IF 未录入": "IF not verified", "出版社当前值": "publisher current value"
-    ,"每次网站启动前自动检查数据结构、来源、日期、跨表引用和核验时效；阻断错误会阻止启动，待核验事项会保留为明确警告。": "Each site start checks data structure, sources, dates, cross-dataset references, and verification freshness. Blocking errors stop startup; pending items remain explicit warnings."
-    ,"质量策略": "Quality policy", "截止": "as of", "报告生成": "Report generated", "结构化对象": "Structured objects", "内部已审核": "Internally reviewed", "待外部核验": "Pending external verification", "阻断错误": "Blocking errors", "已过期": "Overdue"
-    ,"绿色进度只表示完成外部逐字段核验；内部编辑判断单独计数，不与外部事实混合。": "Green progress means field-level external verification only. Internal editorial assessments are counted separately from external facts."
-    ,"已核验": "Verified", "待核验": "Pending", "过期": "Overdue", "没有发现问题。": "No issue found.", "只有登记过的来源才能进入核验记录；内部判断不能冒充权威外部来源。": "Only registered sources can enter verification records; internal assessments cannot be presented as authoritative external sources.", "权威度": "Authority", "天复核": "-day review", "质量面板展示结构完整性、来源核验和数据时效性；“无错误”不等同于所有业务判断均已被外部证实。": "The quality panel shows structural integrity, source verification, and freshness. No errors does not mean every business assessment is externally confirmed."
+    ,"候选总数": "Candidates", "优先跟进": "Priority follow-up", "持续观察": "Watch", "背景材料": "Background", "低相关": "Low relevance", "核心候选": "Core candidates", "研究文献": "Research", "官网更新": "Official update", "相关度": "Relevance", "待分级": "Untriaged", "发现于": "Discovered", "全部类型": "All types", "全部相关度": "All relevance", "全部分级": "All tiers", "高相关度（8+）": "High relevance (8+)", "核心候选（10+）": "Core candidates (10+)", "当前筛选条件下没有候选记录。": "No candidate matches the current filters.", "候选报告尚未生成。": "Candidate report is not available.", "候选记录不代表疗效、安全性、注册状态或监管结论已经获得本网站确认。": "Candidate records do not mean efficacy, safety, registration status, or regulatory conclusions have been verified by this site.", "临床试验登记": "Clinical trial registry", "IF 未录入": "IF not verified", "出版社当前值": "publisher current value"
+    ,"每次网站启动前自动检查数据结构、来源、日期、跨表引用和来源确认时效；阻断错误会阻止启动，待确认事项会保留为明确警告。": "Each site start checks data structure, sources, dates, cross-dataset references, and source-confirmation freshness. Blocking errors stop startup; pending items remain explicit warnings."
+    ,"质量策略": "Quality policy", "截止": "as of", "报告生成": "Report generated", "结构化对象": "Structured objects", "内部已处理": "Internally handled", "待来源确认": "Pending source confirmation", "阻断错误": "Blocking errors", "已过期": "Overdue"
+    ,"绿色进度只表示完成外部逐字段确认；内部编辑判断单独计数，不与外部事实混合。": "Green progress means field-level external confirmation only. Internal editorial assessments are counted separately from external facts."
+    ,"已确认": "Confirmed", "待确认": "Pending", "过期": "Overdue", "没有发现问题。": "No issue found.", "只有登记过的来源才能进入确认记录；内部判断不能冒充权威外部来源。": "Only registered sources can enter confirmation records; internal assessments cannot be presented as authoritative external sources.", "权威度": "Authority", "天复核": "-day review", "质量面板展示结构完整性、来源确认和数据时效性；“无错误”不等同于所有业务判断均已被外部证实。": "The quality panel shows structural integrity, source confirmation, and freshness. No errors does not mean every business assessment is externally confirmed."
     ,"横向比较正式核验项目的技术路线、靶点、阶段、病种、状态、规模和更新时间。矩阵用于研发与竞争判断，不替代原始试验方案。": "Compare verified programs across platform, target, stage, disease, status, enrollment, and update date. The matrix supports R&D and competitive assessment and does not replace the primary protocol."
     ,"全部技术路线": "All platforms", "全部状态": "All statuses", "全部地区": "All regions", "体内CAR-T": "In vivo CAR-T", "异体/现货CAR-T": "Allogeneic / off-the-shelf CAR-T", "自体CAR-T": "Autologous CAR-T", "待分类": "Unclassified", "未注明": "Not stated", "靶点": "Target", "状态": "Status", "规模": "Enrollment", "地区": "Region", "最近更新": "Last updated", "关键问题": "Key question", "仅纳入正式数据集；候选池项目需完成核验后才会出现在矩阵中。": "Only formal records are included. Candidate programs appear after verification."
     ,"记录ClinicalTrials.gov和NCBI官方字段变化，包括状态、入组数、关键日期、标题和DOI。": "Tracks official ClinicalTrials.gov and NCBI field changes, including status, enrollment, key dates, titles, and DOI.", "变化日志最多保留最近1000项；每条变化仍需结合原始记录解释。": "The log retains up to 1,000 recent changes; each change must still be interpreted against the primary record."
     ,"搜索疾病、产品、机构、机制或结论。结果直接来自当前结构化数据，不需要逐页查找。": "Search diseases, products, organizations, mechanisms, or assessments across the current structured dataset.", "对象类型": "Object type", "动态事件": "Events", "长期随访": "Long-term follow-up"
-    ,"关键产品官网更新雷达": "Priority product official-update radar", "同时监测 pipeline、press release 与 news 入口。系统只负责发现页面、链接和资产变化；产品阶段、适应症和监管含义仍由人工逐字段确认。": "Monitors pipeline, press-release, and news sources. The system detects page, link, and asset changes; product stage, indication, and regulatory meaning still require field-level human review.", "本轮监测脉冲": "Current monitoring pulse", "重点官网": "Priority websites", "可靠变化线索": "Reliable change signals", "访问异常": "Access issues", "哨兵未命中": "Missing sentinels"
+    ,"关键产品官网更新雷达": "Priority product official-update radar", "同时监测 pipeline、press release 与 news 入口。系统只负责发现页面、链接和资产变化；产品阶段、适应症和监管含义仍需逐字段确认。": "Monitors pipeline, press-release, and news sources. The system detects page, link, and asset changes; product stage, indication, and regulatory meaning still require field-level confirmation.", "本轮监测脉冲": "Current monitoring pulse", "重点官网": "Priority websites", "可靠变化线索": "Reliable change signals", "访问异常": "Access issues", "哨兵未命中": "Missing sentinels"
   };
   const dataTranslations = [];
   const addPair = (source, target) => {
@@ -143,8 +143,8 @@
       .replace(/(\d+)\s*天/g, "$1 days")
       .replace(/错误/g, "errors")
       .replace(/警告/g, "warnings")
-      .replace(/已核验\s*(\d+)/g, "Verified $1")
-      .replace(/待核验\s*(\d+)/g, "Pending $1")
+      .replace(/已确认\s*(\d+)/g, "Confirmed $1")
+      .replace(/待确认\s*(\d+)/g, "Pending $1")
       .replace(/过期\s*(\d+)/g, "Overdue $1")
       .replace(/权威度\s*/g, "Authority ")
       .replace(/截止\s*/g, "as of ")
@@ -192,7 +192,6 @@
     ["分类检索", "comparison.html", "primary"]
   ];
   const internalNavigation = [
-    ["人工审核", "review.html", "internal"],
     ["候选池", "candidates.html", "internal"],
     ["数据质量", "quality.html", "internal"]
   ];
@@ -292,7 +291,7 @@
   document.head.appendChild(style);
 
   const currentFile = location.pathname.split("/").pop() || "index.html";
-  const internalPage = ["review.html", "candidates.html", "quality.html"].includes(currentFile);
+  const internalPage = ["desk.html", "review.html", "candidates.html", "quality.html"].includes(currentFile);
   const visibleNavigation = internalPage ? internalNavigation : navigation;
   const activeFile = (() => {
     if (currentFile === "detail.html") {

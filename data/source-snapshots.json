@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-29T15:50:31.287Z",
+  "generated_at": "2026-08-04T12:17:32.487Z",
   "records": {
     "trial:kyv101-ms-phase1": {
       "official_title": "Phase 1, Open-Label, Single Center Study of KYV-101, an Autologous Fully-Human Anti-CD19 Chimeric Antigen Receptor T Cell (CD19 CAR T) Therapy, in Participants With Treatment Refractory Progressive Multiple Sclerosis",
@@ -76,11 +76,11 @@
     "trial:cc97540-breakfree2": {
       "official_title": "A Phase 1, Multicenter, Single-arm, Dose-escalation Study of CC-97540 (BMS-986353), CD19-Targeted NEX-T Chimeric Antigen Receptor (CAR) T Cells, Evaluating Safety and Tolerability in Participants With Autoimmune Neurological Diseases: Relapsing Forms of Multiple Sclerosis (RMS), Progressive Forms of Multiple Sclerosis (PMS), or Refractory Myasthenia Gravis (MG).",
       "sponsor": "Juno Therapeutics, Inc., a Bristol-Myers Squibb Company",
-      "status": "RECRUITING",
+      "status": "ACTIVE_NOT_RECRUITING",
       "enrollment": 120,
       "study_start": "2024-03-28",
       "estimated_completion": "2027-07-15",
-      "registry_last_update": "2026-07-23"
+      "registry_last_update": "2026-08-03"
     },
     "trial:ytb323-mg-phase12": {
       "official_title": "An Open-label, Multi-center, Phase I/II Study to Assess Safety, Efficacy, and Cellular Kinetics of YTB323 in Participants With Treatment-resistant Generalized Myasthenia Gravis",
@@ -125,7 +125,7 @@
       "enrollment": 66,
       "study_start": "2025-11-13",
       "estimated_completion": "2032-10",
-      "registry_last_update": "2026-07-24"
+      "registry_last_update": "2026-07-31"
     },
     "trial:zamtocel-autoimmune-phase1": {
       "official_title": "A Phase I Multicohort Trial of Zamtocabtagene Autoleucel (Zamto-Cel) in Subjects With Severe Refractory Autoimmune Diseases",

@@ -30,8 +30,10 @@ export const candidatePoolDecision = (candidate) => {
 
 export const isCandidatePoolEligible = (candidate) => candidatePoolDecision(candidate).eligible;
 
-export const requiresHumanReview = (candidate) =>
+export const requiresCandidateDesk = (candidate) =>
   candidate.candidate_type !== "trial" && isCandidatePoolEligible(candidate);
+
+export const requiresHermesReview = requiresCandidateDesk;
 
 export const candidateSummary = (candidates, excludedResearch = []) => ({
   candidates: candidates.length,
@@ -42,8 +44,8 @@ export const candidateSummary = (candidates, excludedResearch = []) => ({
   watchlist: candidates.filter((item) => item.triage_tier === "持续观察").length,
   background: candidates.filter((item) => item.triage_tier === "背景材料").length,
   low_relevance: candidates.filter((item) => item.triage_tier === "低相关").length,
-  trials_exempt_from_review: candidates.filter((item) => item.candidate_type === "trial").length,
-  human_review_required: candidates.filter(requiresHumanReview).length,
+  trials_registry_only: candidates.filter((item) => item.candidate_type === "trial").length,
+  candidate_desk_required: candidates.filter(requiresCandidateDesk).length,
   policy_excluded_research: excludedResearch.length,
   undifferentiated_review_exceptions: candidates.filter(isUndifferentiatedHighValueReview).length
 });

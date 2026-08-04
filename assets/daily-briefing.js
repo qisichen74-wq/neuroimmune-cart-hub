@@ -49,7 +49,7 @@
     section.id = "daily-briefing";
     const decisions = [];
     (briefing.verified_updates || []).slice(0, 5).forEach((item) => decisions.push({
-      badge: "已核验", tone: "verified", title: item.title, copy: item.summary, meta: `${item.date} · ${item.topic}`, href: item.source_url, action: "查看一手来源", external: true, weight: 80
+      badge: "已收录", tone: "verified", title: item.title, copy: item.summary, meta: `${item.date} · ${item.topic}`, href: item.source_url, action: "查看一手来源", external: true, weight: 80
     }));
     const trial = (briefing.trial_watch || [])[0];
     if (trial) decisions.push({
@@ -57,7 +57,7 @@
     });
     const topDecisions = decisions.sort((left, right) => right.weight - left.weight).slice(0, 5);
     const cards = topDecisions.map((item, index) => `<article class="decision-card"><div class="decision-type"><span class="decision-badge ${item.tone}">${esc(item.badge)}</span><span class="decision-number">0${index + 1}</span></div><h3>${esc(item.title)}</h3><p>${esc(item.copy)}</p><div class="decision-action"><span>${esc(item.meta)}</span><a href="${esc(item.href)}"${item.external ? ' target="_blank" rel="noopener"' : ""}>${esc(item.action)} →</a></div></article>`).join("");
-    section.innerHTML = `<div class="decision-head"><div><div class="decision-kicker">DECISION DESK · ${topDecisions.length}/5</div><h2>今天最需要知道的五件事</h2></div><div><p>仅展示已进入正式数据集的核验动态和重点试验，便于快速进入对应档案。</p><a class="decision-link" href="research.html">浏览研究情报 →</a></div></div><div class="decision-grid">${cards || '<div class="decision-empty">当前没有需要升级到决策层的事项。</div>'}</div><div class="decision-foot"><span>生成 ${new Date(briefing.generated_at).toLocaleString("zh-CN")}</span><span>正式记录 ${briefing.snapshot.formal_records}</span><span>外部核验 ${briefing.snapshot.externally_verified}</span><span>疾病专题 ${dossierCount}</span></div>`;
+    section.innerHTML = `<div class="decision-head"><div><div class="decision-kicker">DECISION DESK · ${topDecisions.length}/5</div><h2>今天最需要知道的五件事</h2></div><div><p>仅展示已进入正式数据集的收录动态和重点试验，便于快速进入对应档案。</p><a class="decision-link" href="research.html">浏览研究情报 →</a></div></div><div class="decision-grid">${cards || '<div class="decision-empty">当前没有需要升级到决策层的事项。</div>'}</div><div class="decision-foot"><span>生成 ${new Date(briefing.generated_at).toLocaleString("zh-CN")}</span><span>正式记录 ${briefing.snapshot.formal_records}</span><span>来源确认 ${briefing.snapshot.externally_verified}</span><span>疾病专题 ${dossierCount}</span></div>`;
     hero.insertAdjacentElement("afterend", section);
   }).catch(() => {});
 })();

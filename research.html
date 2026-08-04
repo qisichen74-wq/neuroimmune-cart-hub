@@ -367,7 +367,7 @@
       <div class="breadcrumb"><a href="index.html">首页</a> / 研究情报</div>
       <div class="hero-kicker">Research Feed</div>
       <h1 class="hero-title">研究证据库</h1>
-      <p class="hero-sub">按证据等级、适应症、优先级与核验状态整理临床研究、病例系列、队列和系统综述。</p>
+      <p class="hero-sub">按证据等级、适应症、优先级与状态整理临床研究、病例系列、队列和系统综述。</p>
       <div class="hero-notes">
         <span class="hero-note" id="update-note">数据状态：同步中</span>
       </div>
@@ -412,11 +412,11 @@
       </div>
 
       <div class="panel">
-        <div class="panel-title">审核状态</div>
+        <div class="panel-title">状态</div>
         <div class="filter-list">
           <button class="filter-option" data-group="status" data-value="全部"><span>全部</span></button>
-          <button class="filter-option" data-group="status" data-value="已审核"><span>已审核</span></button>
-          <button class="filter-option" data-group="status" data-value="待审核"><span>待审核</span></button>
+          <button class="filter-option" data-group="status" data-value="已收录"><span>已收录</span></button>
+          <button class="filter-option" data-group="status" data-value="待跟进"><span>待跟进</span></button>
         </div>
       </div>
 
@@ -436,7 +436,7 @@
             <option value="priority">按优先级排序</option>
             <option value="date">按发布时间排序</option>
             <option value="pmid">按PMID排序</option>
-            <option value="review">按审核状态排序</option>
+            <option value="review">按状态排序</option>
           </select>
         </div>
       </div>
@@ -506,12 +506,14 @@ function normalizeData() {
       tags: [],
       takeaway: item.priority_reason || "",
       ...item,
+      status: statusDisplay(item.status, false),
       ...(LANGUAGE === "en" ? {
         title_cn: item.official_title || item.title_cn,
         one_liner: `${item.journal || "Primary source"} · ${(item.publication_type || []).join(" / ") || "Research report"}`,
         takeaway: "Open the primary source to review the verified finding, population, and limitations.",
         priority_reason: "Priority reflects evidence type, novelty, and potential impact on development decisions.",
         evidence_level: (item.publication_type || []).join(" / ") || "Research report",
+        status: statusDisplay(item.status, true),
         tags: [item.disease, item.entity, ...(item.publication_type || [])].filter(Boolean)
       } : {}),
       journal_impact_factor: metric?.impact_factor ?? null,
@@ -561,7 +563,7 @@ function renderSidebar() {
   document.getElementById("monitor-list").innerHTML = [
     ["覆盖适应症", diseases.join(" / ") || "-"],
     ["高优先级占比", percentage(allData.filter((item) => item.priority === "高").length, allData.length)],
-    ["已审核占比", percentage(allData.filter((item) => item.status === "已审核").length, allData.length)],
+    ["已收录占比", percentage(allData.filter((item) => item.status === "已收录").length, allData.length)],
     ["原始研究占比", percentage(allData.filter((item) => !isReview(item)).length, allData.length)]
   ].map(([label, value]) => `
     <div class="monitor-row">
@@ -584,8 +586,8 @@ function renderStats() {
       note: "适合先读完并进入专题追踪"
     },
     {
-      value: allData.filter((item) => item.status === "已审核").length,
-      label: "已审核",
+      value: allData.filter((item) => item.status === "已收录").length,
+      label: "已收录",
       note: "已经形成初步判断的条目"
     },
     {
@@ -646,11 +648,11 @@ function renderCards(data) {
   }
 
   container.innerHTML = sorted.map((item) => {
-    const reviewBadge = item.status === "已审核"
-      ? '<span class="review-badge review-done">已审核</span>'
+    const reviewBadge = item.status === "已收录"
+      ? '<span class="review-badge review-done">已收录</span>'
       : item.status === "已忽略"
       ? '<span class="review-badge review-ignored">已忽略</span>'
-      : '<span class="review-badge review-pending">待审核</span>';
+      : '<span class="review-badge review-pending">待跟进</span>';
 
     const sourceUrl = item.source_url || ("https://pubmed.ncbi.nlm.nih.gov/" + item.pmid + "/");
     const metaDate = item.publish_date ? `发布 ${item.publish_date}` : `PMID ${item.pmid}`;
@@ -703,9 +705,15 @@ function priorityWeight(priority) {
 }
 
 function reviewWeight(status) {
-  if (status === "已审核") return 3;
-  if (status === "待审核") return 2;
+  if (status === "已收录" || status === "Included") return 3;
+  if (status === "待跟进" || status === "Follow-up") return 2;
   return 1;
+}
+
+function statusDisplay(status, english = false) {
+  if (status === "已忽略" || status === "Excluded") return english ? "Excluded" : "已忽略";
+  if (status === "已审核" || status === "Reviewed" || status === "已收录" || status === "Included") return english ? "Included" : "已收录";
+  return english ? "Follow-up" : "待跟进";
 }
 
 function priorityLabel(priority) {

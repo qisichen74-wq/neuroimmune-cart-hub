@@ -222,7 +222,7 @@ try {
         matched_diseases: matchedDiseases,
         matched_entities: [...matchedEntityIds],
         query_matches: [...match.queryIds],
-        review_status: "待人工核验"
+        review_status: "待处理"
       });
     }
   }
@@ -323,7 +323,7 @@ try {
       matched_diseases: matchedDiseases,
       matched_entities: [...matchedEntityIds],
       query_matches: [...match.queryIds],
-      review_status: "待人工核验"
+      review_status: "待处理"
     });
   }
   sourceRuns.push({
@@ -385,7 +385,7 @@ try {
       matched_entities: [...matchedEntityIds],
       query_matches: (item.query_ids || []).map((queryId) => `china-drug-trials:${queryId}`),
       access_method: chinaResult.access_method,
-      review_status: "免人工审核"
+      review_status: "试验登记"
     });
   }
   sourceRuns.push({
@@ -505,7 +505,7 @@ const scanOfficialSource = async (officialSource) => {
       matched_diseases: item.matchedDiseases,
       matched_entities: item.matchedEntities,
       query_matches: [`official:${officialSource.id}`],
-      review_status: "待人工核验"
+      review_status: "待处理"
     });
   }
   const fingerprintInput = JSON.stringify({
@@ -535,7 +535,7 @@ const scanOfficialSource = async (officialSource) => {
       matched_diseases: [],
       matched_entities: officialSource.entity_ids || [],
       query_matches: [`official:${officialSource.id}:change`],
-      review_status: "待人工核验"
+      review_status: "待处理"
     });
   }
   sourceRuns.push({
@@ -624,7 +624,7 @@ const effectiveExcludedResearch = preservePreviousCandidates
 const report = {
   generated_at: preservePreviousCandidates ? previousReport.generated_at : generatedAt,
   last_attempt_at: generatedAt,
-  policy: "Research candidates must involve CAR-T or cell therapy and identify at least one disease or indication. High-scoring reviews and meta-analyses may be retained without a named disease. Registered clinical trials remain in the candidate pool but are exempt from human review.",
+  policy: "Research candidates must involve CAR-T or cell therapy and identify at least one disease or indication. High-scoring reviews and meta-analyses may be retained without a named disease. Registered clinical trials remain in the candidate pool as registry signals; eligible non-trial candidates enter the candidate desk for handling.",
   query_window: `Publications since ${config.publication_start_date}; complete paginated ClinicalTrials.gov results; CDE China Drug Trials registry queries; tracked official websites`,
   summary: {
     ...candidateSummary(effectiveCandidates),
