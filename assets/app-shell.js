@@ -6,7 +6,7 @@
   const englishUi = {
     "神经免疫 CAR-T 情报工作台": "Autoimmune CAR-T Intelligence Hub", "自身免疫 CAR-T 情报工作台": "Autoimmune CAR-T Intelligence Hub", "自身免疫CAR-T情报工作台": "Autoimmune CAR-T Intelligence Hub",
     "首页": "Home", "专题档案": "Dossiers", "疾病专题": "Disease dossiers", "自身免疫疾病专题": "Autoimmune disease dossiers", "专题报道与档案": "Special reports and dossiers", "专题报道": "Special report", "候选工作台": "Candidate desk", "候选处理台": "Candidate desk", "研究情报": "Research", "竞争格局": "Landscape",
-    "项目对比": "Category Search", "分类检索": "Category Search", "变化历史": "Changes", "候选池": "Watchlist", "检索": "Search", "内部登录": "Staff login",
+    "项目对比": "Category Search", "分类检索": "Category Search", "变化历史": "Changes", "候选池": "Watchlist", "检索": "Search",
     "全局检索": "Global search", "数据质量": "Data quality", "质量未知": "Quality unavailable",
     "适应症档案": "Indication dossiers", "研究证据": "Research evidence", "竞争对象": "Programs",
     "临床试验": "Clinical trials", "竞争项目": "Development programs", "核心判断": "Core assessment",
@@ -213,12 +213,6 @@
     nav .nav-links a.app-shell-review-link:not(.active) { border-color: #b9d4c6 !important; background: var(--accent-light, #e6f3ed) !important; color: var(--accent, #176049) !important; }
     .app-shell-actions { display: flex; align-items: center; gap: 7px; flex: 0 0 auto; }
     .app-shell-actions > a { text-decoration: none !important; }
-    .app-shell-login {
-      display: inline-flex; align-items: center; min-height: 30px; padding: 5px 9px;
-      border: 1px solid var(--border, #d8ddd7); border-radius: 7px;
-      background: var(--surface, #fff); color: var(--text3, #737d75);
-      font: 700 10px var(--font-mono, var(--mono, monospace)); white-space: nowrap;
-    }
     .app-shell-health {
       display: inline-flex; align-items: center; gap: 6px; padding: 5px 9px;
       border: 1px solid var(--border, #d8ddd7); border-radius: 999px;
@@ -334,14 +328,6 @@
     actions.appendChild(searchLink);
   }
 
-  if (!internalPage) {
-    const loginLink = document.createElement("a");
-    loginLink.className = "app-shell-login";
-    loginLink.href = location.protocol === "file:" ? "http://127.0.0.1:8765/login.html" : "login.html";
-    loginLink.textContent = "内部登录";
-    actions.appendChild(loginLink);
-  }
-
   const languageButton = document.createElement("button");
   languageButton.className = "app-shell-language";
   languageButton.type = "button";
@@ -376,7 +362,7 @@
     <div class="app-shell-mobile-divider"></div>
     <nav>
       <a class="app-shell-mobile-link${currentFile === "search.html" ? " is-active" : ""}" href="search.html">全局检索</a>
-      ${internalPage ? '<a class="app-shell-mobile-link" href="index.html">返回公开站</a>' : `<a class="app-shell-mobile-link" href="${location.protocol === "file:" ? "http://127.0.0.1:8765/login.html" : "login.html"}">内部登录</a>`}
+      ${internalPage ? '<a class="app-shell-mobile-link" href="index.html">返回公开站</a>' : ""}
     </nav>
   `;
   document.body.append(backdrop, drawer);
