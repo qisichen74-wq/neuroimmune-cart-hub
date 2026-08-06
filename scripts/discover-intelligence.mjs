@@ -77,7 +77,7 @@ const fetchResponse = async (url, options = {}) => {
         ...options,
         headers: { ...browserHeaders, ...(options.headers || {}) },
         redirect: "follow",
-        signal: AbortSignal.timeout(15000)
+        signal: AbortSignal.timeout(30000)
       });
       if (response.ok) return response;
       const error = new Error(`${response.status} ${response.statusText}`);

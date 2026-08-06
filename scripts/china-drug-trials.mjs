@@ -88,6 +88,71 @@ const normalizeManagedPayload = (payload) => {
 
 const pause = (milliseconds) => new Promise((resolve) => setTimeout(resolve, milliseconds));
 
+const fetchChinaDrugTrialsDirect = async ({
+  queries = [],
+  headers = {},
+  maxRecords = 5000,
+  fetchImpl = fetch
+} = {}) => {
+  if (!queries.length) {
+    return { status: "partial", access_method: "direct_official_html", records: [], query_runs: [], errors: ["未配置 CDE 检索词"] };
+  }
+
+  const records = new Map();
+  const queryRuns = [];
+  const errors = [];
+  let blockedByJsChallenge = false;
+  let truncated = false;
+
+  for (const query of queries) {
+    if (records.size >= maxRecords) break;
+    try {
+      const url = `${officialBaseUrl}/clinicaltrials.searchlist.dhtml?keywords=${encodeURIComponent(query.term)}`;
+      const response = await fetchImpl(url, { headers, redirect: "follow", signal: AbortSignal.timeout(30000) });
+      const html = await response.text();
+      if (isChinaDrugTrialsChallenge(response.status, html)) {
+        blockedByJsChallenge = true;
+        queryRuns.push({ query_id: query.id, term: query.term, results_scanned: 0, status: "blocked_by_js_challenge" });
+        errors.push(`${query.id}: CDE 官网返回 JavaScript 防护页`);
+        continue;
+      }
+      const parsed = parseChinaDrugTrialsSearch(html, url);
+      truncated ||= parsed.total_pages > 1;
+      if (parsed.total_pages > 1) {
+        errors.push(`${query.id}: CDE 直连模式只读取第一页；建议配置结构化只读代理以完成分页`);
+      }
+      for (const item of parsed.items) {
+        if (records.size >= maxRecords) break;
+        const registrationNumber = String(item.registration_number || "").toUpperCase();
+        if (!/^CTR\d{8}$/.test(registrationNumber)) continue;
+        const existing = records.get(registrationNumber) || { ...item, registration_number: registrationNumber, query_ids: [] };
+        existing.query_ids = [...new Set([...(existing.query_ids || []), query.id])];
+        records.set(registrationNumber, existing);
+      }
+      queryRuns.push({
+        query_id: query.id,
+        term: query.term,
+        total_results: parsed.total,
+        results_scanned: parsed.items.length,
+        truncated: parsed.total_pages > 1
+      });
+    } catch (error) {
+      queryRuns.push({ query_id: query.id, term: query.term, results_scanned: 0, status: "error", error: error.message });
+      errors.push(`${query.id}: ${error.message}`);
+    }
+  }
+
+  return {
+    status: errors.length ? (records.size ? "partial" : "partial") : "ok",
+    access_method: "direct_official_html",
+    records: [...records.values()],
+    query_runs: queryRuns,
+    errors,
+    truncated,
+    blocked_by_js_challenge: blockedByJsChallenge
+  };
+};
+
 export const fetchChinaDrugTrials = async ({
   sourceConfig = {},
   headers = {},
@@ -199,38 +264,19 @@ export const fetchChinaDrugTrials = async ({
       monthly_credit_limit: monthlyCreditLimit,
       credits_per_call: creditsPerCall
     };
+    if (result.status === "error" && !result.records.length) {
+      const fallback = await fetchChinaDrugTrialsDirect({ queries, headers, maxRecords, fetchImpl });
+      return {
+        ...fallback,
+        fallback_from: "managed_readonly_wrapper",
+        fallback_reason: "managed wrapper unavailable"
+      };
+    }
     if (useCache) await writeJson(resultCacheFile, { date, saved_at: new Date().toISOString(), result });
     return result;
   }
 
-  const firstQuery = queries[0];
-  if (!firstQuery) return { status: "partial", access_method: "direct_official_html", records: [], query_runs: [], errors: ["未配置 CDE 检索词"] };
-  try {
-    const url = `${officialBaseUrl}/clinicaltrials.searchlist.dhtml?keywords=${encodeURIComponent(firstQuery.term)}`;
-    const response = await fetchImpl(url, { headers, redirect: "follow", signal: AbortSignal.timeout(30000) });
-    const html = await response.text();
-    if (isChinaDrugTrialsChallenge(response.status, html)) {
-      return {
-        status: "partial",
-        access_method: "direct_official_html",
-        records: [],
-        query_runs: [{ query_id: firstQuery.id, term: firstQuery.term, results_scanned: 0, status: "blocked_by_js_challenge" }],
-        errors: ["CDE 官网返回 JavaScript 防护页；配置 CHINA_DRUG_TRIALS_API_KEY 后可自动切换结构化只读代理"],
-        blocked_by_js_challenge: true
-      };
-    }
-    const parsed = parseChinaDrugTrialsSearch(html, url);
-    return {
-      status: parsed.total_pages > 1 ? "partial" : "ok",
-      access_method: "direct_official_html",
-      records: parsed.items.map((item) => ({ ...item, query_ids: [firstQuery.id] })),
-      query_runs: [{ query_id: firstQuery.id, term: firstQuery.term, total_results: parsed.total, results_scanned: parsed.items.length, truncated: parsed.total_pages > 1 }],
-      errors: parsed.total_pages > 1 ? ["CDE 直连模式只读取第一页；建议配置结构化只读代理以完成分页"] : [],
-      truncated: parsed.total_pages > 1
-    };
-  } catch (error) {
-    return { status: "partial", access_method: "direct_official_html", records: [], query_runs: [], errors: [error.message] };
-  }
+  return fetchChinaDrugTrialsDirect({ queries, headers, maxRecords, fetchImpl });
 };
 
 export const chinaDrugTrialsOfficialUrl = officialBaseUrl;

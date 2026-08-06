@@ -23,6 +23,12 @@ const clean = (value) => String(value ?? "").trim().replace(/\s+/g, " ");
 const comparable = (value) => clean(value).replace(/[.。]$/, "");
 const normalizeStatus = (value) => clean(value).split("（")[0].toUpperCase().replaceAll(" ", "_").replaceAll(",", "");
 const normalizeMonth = (value) => clean(value).slice(0, 7);
+const normalizeSponsor = (value) => clean(value)
+  .replace(/\b(m\.?d\.?|ph\.?d\.?|dr\.?|prof\.?)\b/gi, " ")
+  .replace(/[\/,;()]+/g, " ")
+  .replace(/\s+/g, " ")
+  .trim()
+  .toLowerCase();
 const differences = [];
 const checks = [];
 
@@ -50,7 +56,9 @@ for (const trial of trials.filter((record) => record.record_kind === "registered
       registry_last_update: status.lastUpdatePostDateStruct?.date || ""
     };
     recordDifference("trial", trial.id, "official_title", trial.official_title, remote.official_title, sourceUrl);
-    if (!clean(trial.sponsor).toLowerCase().includes(clean(remote.sponsor).toLowerCase()) && !clean(remote.sponsor).toLowerCase().includes(clean(trial.sponsor).toLowerCase())) {
+    const localSponsor = normalizeSponsor(trial.sponsor);
+    const remoteSponsor = normalizeSponsor(remote.sponsor);
+    if ((localSponsor || remoteSponsor) && !localSponsor.includes(remoteSponsor) && !remoteSponsor.includes(localSponsor)) {
       recordDifference("trial", trial.id, "sponsor", trial.sponsor, remote.sponsor, sourceUrl);
     }
     if (normalizeStatus(trial.status) !== normalizeStatus(remote.status)) recordDifference("trial", trial.id, "status", trial.status, remote.status, sourceUrl);

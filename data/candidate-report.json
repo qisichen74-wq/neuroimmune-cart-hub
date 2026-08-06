@@ -1,6 +1,6 @@
 {
   "generated_at": "2026-08-04T12:11:18.382Z",
-  "last_attempt_at": "2026-08-04T12:11:18.382Z",
+  "last_attempt_at": "2026-08-04T14:44:08.745Z",
   "policy": "Research candidates must involve CAR-T or cell therapy and identify at least one disease or indication. High-scoring reviews and meta-analyses may be retained without a named disease. Registered clinical trials remain in the candidate pool as registry signals; eligible non-trial candidates enter the candidate desk for handling.",
   "query_window": "Publications since 2025/01/01; complete paginated ClinicalTrials.gov results; CDE China Drug Trials registry queries; tracked official websites",
   "summary": {
@@ -12,225 +12,30 @@
     "watchlist": 207,
     "background": 63,
     "low_relevance": 146,
+    "trials_registry_only": 557,
+    "candidate_desk_required": 252,
     "policy_excluded_research": 2308,
     "undifferentiated_review_exceptions": 3,
-    "source_failures": 1,
+    "source_failures": 2,
     "partial_sources": 0,
     "truncated_sources": 0,
-    "missing_sentinels": 0,
-    "trials_registry_only": 557,
-    "candidate_desk_required": 252
+    "missing_sentinels": 0
   },
-  "degraded_run": null,
+  "degraded_run": {
+    "preserved_previous_candidates": true,
+    "reason": "Critical discovery sources failed and the new candidate set was abnormally small.",
+    "failed_sources": [
+      "ClinicalTrials.gov"
+    ],
+    "attempted_candidates": 252,
+    "preserved_candidates": 809
+  },
   "source_runs": [
     {
       "source": "ClinicalTrials.gov",
       "source_kind": "official_api",
-      "status": "ok",
-      "results_scanned": 9040,
-      "known_records_seen": [
-        "NCT07178431",
-        "NCT06626919",
-        "NCT07246096",
-        "NCT07715136",
-        "NCT06371040",
-        "NCT07304154",
-        "NCT07006805",
-        "NCT07155369",
-        "NCT06978738",
-        "NCT06451159",
-        "NCT06193889",
-        "NCT06794008",
-        "NCT07328581",
-        "NCT07413341",
-        "NCT06665256",
-        "NCT07085104",
-        "NCT07392528",
-        "NCT07337785",
-        "NCT06154252",
-        "NCT07085676",
-        "NCT06939166",
-        "NCT06704269",
-        "NCT06941129",
-        "NCT06799247",
-        "NCT07526493",
-        "NCT07341828",
-        "NCT07339540",
-        "NCT06220201",
-        "NCT07403188",
-        "NCT07477639",
-        "NCT06414135",
-        "NCT04561557",
-        "NCT06359041",
-        "NCT06249438",
-        "NCT07305116",
-        "NCT06375993",
-        "NCT06688435",
-        "NCT06787989",
-        "NCT06925542",
-        "NCT07523282",
-        "NCT06056921",
-        "NCT06308978",
-        "NCT06980597",
-        "NCT07544225",
-        "NCT06828042",
-        "NCT07391605",
-        "NCT06708845"
-      ],
-      "sentinel_check": {
-        "expected": [
-          "NCT04561557",
-          "NCT06787989",
-          "NCT07328581",
-          "NCT07006805",
-          "NCT07178431",
-          "NCT07477639"
-        ],
-        "found": [
-          "NCT04561557",
-          "NCT06787989",
-          "NCT07328581",
-          "NCT07006805",
-          "NCT07178431",
-          "NCT07477639"
-        ],
-        "missing": []
-      },
-      "query_runs": [
-        {
-          "query_id": "theme",
-          "total_results": 500,
-          "results_scanned": 500,
-          "truncated": false
-        },
-        {
-          "query_id": "disease:multiple sclerosis",
-          "total_results": 74,
-          "results_scanned": 74,
-          "truncated": false
-        },
-        {
-          "query_id": "disease:myasthenia gravis",
-          "total_results": 41,
-          "results_scanned": 41,
-          "truncated": false
-        },
-        {
-          "query_id": "disease:neuromyelitis optica",
-          "total_results": 26,
-          "results_scanned": 26,
-          "truncated": false
-        },
-        {
-          "query_id": "disease:MOGAD",
-          "total_results": 5,
-          "results_scanned": 5,
-          "truncated": false
-        },
-        {
-          "query_id": "disease:stiff person",
-          "total_results": 4,
-          "results_scanned": 4,
-          "truncated": false
-        },
-        {
-          "query_id": "disease:autoimmune encephalitis",
-          "total_results": 6,
-          "results_scanned": 6,
-          "truncated": false
-        },
-        {
-          "query_id": "disease:CIDP",
-          "total_results": 11,
-          "results_scanned": 11,
-          "truncated": false
-        },
-        {
-          "query_id": "disease:systemic lupus",
-          "total_results": 189,
-          "results_scanned": 189,
-          "truncated": false
-        },
-        {
-          "query_id": "disease:systemic sclerosis",
-          "total_results": 110,
-          "results_scanned": 110,
-          "truncated": false
-        },
-        {
-          "query_id": "disease:myositis",
-          "total_results": 95,
-          "results_scanned": 95,
-          "truncated": false
-        },
-        {
-          "query_id": "disease:immune thrombocytopenia",
-          "total_results": 23,
-          "results_scanned": 23,
-          "truncated": false
-        },
-        {
-          "query_id": "disease:rheumatoid arthritis",
-          "total_results": 54,
-          "results_scanned": 54,
-          "truncated": false
-        },
-        {
-          "query_id": "disease:autoimmune ILD",
-          "total_results": 2,
-          "results_scanned": 2,
-          "truncated": false
-        },
-        {
-          "query_id": "disease:autoimmune disease",
-          "total_results": 453,
-          "results_scanned": 453,
-          "truncated": false
-        },
-        {
-          "query_id": "entity:iaso-ct103a",
-          "total_results": 18,
-          "results_scanned": 18,
-          "truncated": false
-        },
-        {
-          "query_id": "entity:icell-icg318",
-          "total_results": 21,
-          "results_scanned": 21,
-          "truncated": false
-        },
-        {
-          "query_id": "entity:cabaletta-resecel",
-          "total_results": 338,
-          "results_scanned": 338,
-          "truncated": false
-        },
-        {
-          "query_id": "entity:miltenyi-autoimmune",
-          "total_results": 45,
-          "results_scanned": 45,
-          "truncated": false
-        },
-        {
-          "query_id": "entity:tr1x-trx319",
-          "total_results": 11,
-          "results_scanned": 11,
-          "truncated": false
-        },
-        {
-          "query_id": "entity:cartesian-descartes08",
-          "total_results": 8159,
-          "results_scanned": 8159,
-          "truncated": false
-        },
-        {
-          "query_id": "entity:kyverna-kyv101",
-          "total_results": 13,
-          "results_scanned": 13,
-          "truncated": false
-        }
-      ],
-      "truncated": false
+      "status": "error",
+      "error": "The operation was aborted due to timeout"
     },
     {
       "source": "NCBI PubMed",
@@ -433,7 +238,7 @@
       "fingerprint": "56abcc803f69980a929ddeb181d46e049bb0301d2b9f811df5f90b4d84f9836f",
       "fingerprint_version": 3,
       "changed": false,
-      "duration_ms": 1365,
+      "duration_ms": 2159,
       "sentinel_check": {
         "expected": [
           "https://www.cabalettabio.com/pipeline/caba-201",
@@ -460,10 +265,10 @@
         "https://www.cartesiantherapeutics.com/pipeline"
       ],
       "assets_monitored": 29,
-      "fingerprint": "acb5c1013164ab6533b22bfb4d5c234642002d952e9b5bbcc5af441c46149c39",
+      "fingerprint": "44c9da72cd939f64d6e4d5bf943fb4df2dc8dced8d50cb6f1ca7d0012f117a19",
       "fingerprint_version": 3,
-      "changed": false,
-      "duration_ms": 8712,
+      "changed": true,
+      "duration_ms": 8034,
       "sentinel_check": {
         "expected": [
           "https://www.cartesiantherapeutics.com/pipeline/",
@@ -533,7 +338,7 @@
       "fingerprint": "8cf111225d5228211f758ff0a9c1ee5edc5afeacf0370c4f1dedae15e74a2461",
       "fingerprint_version": 3,
       "changed": false,
-      "duration_ms": 1263,
+      "duration_ms": 1424,
       "sentinel_check": {
         "expected": [
           "https://www.iasobio.com/info.php?id=251",
@@ -560,7 +365,7 @@
       "fingerprint": "f2c47d8362e5354c97164ea6b19fa1e2a0fbd226fca7da7a8ee23bb7bd8e3dfe",
       "fingerprint_version": 3,
       "changed": false,
-      "duration_ms": 2083,
+      "duration_ms": 6526,
       "sentinel_check": {
         "expected": [],
         "found": [],
@@ -589,10 +394,10 @@
         "https://kyvernatx.com/patients/systemic-sclerosis"
       ],
       "assets_monitored": 16,
-      "fingerprint": "4be1fb8bbf6ab4d47af9411bc882276e60277958dcd8dac1d2b46c84081891bb",
+      "fingerprint": "2fcd1b03310686b47be72346dbfc6eefc29064dae5cf0d8772f9d18feafbaa48",
       "fingerprint_version": 3,
       "changed": true,
-      "duration_ms": 9682,
+      "duration_ms": 8985,
       "sentinel_check": {
         "expected": [
           "https://kyvernatx.com/platform-pipeline/pipeline/",
@@ -619,7 +424,7 @@
       "fingerprint": "2a5f17199ef5054d8c001b321fc106410df6d3836156512fbbc07c105c487682",
       "fingerprint_version": 3,
       "changed": false,
-      "duration_ms": 2316,
+      "duration_ms": 3499,
       "sentinel_check": {
         "expected": [],
         "found": [],
@@ -643,7 +448,7 @@
       "fingerprint": "0ee8114fae9c8582c707a871b1bee97594eda2093c7494b289334b8c45d1047c",
       "fingerprint_version": 3,
       "changed": false,
-      "duration_ms": 2992,
+      "duration_ms": 3286,
       "sentinel_check": {
         "expected": [],
         "found": [],
