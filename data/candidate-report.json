@@ -1,47 +1,242 @@
 {
-  "generated_at": "2026-08-04T12:11:18.382Z",
-  "last_attempt_at": "2026-08-04T14:44:08.745Z",
+  "generated_at": "2026-08-09T23:00:12.388Z",
+  "last_attempt_at": "2026-08-09T23:00:12.388Z",
   "policy": "Research candidates must involve CAR-T or cell therapy and identify at least one disease or indication. High-scoring reviews and meta-analyses may be retained without a named disease. Registered clinical trials remain in the candidate pool as registry signals; eligible non-trial candidates enter the candidate desk for handling.",
   "query_window": "Publications since 2025/01/01; complete paginated ClinicalTrials.gov results; CDE China Drug Trials registry queries; tracked official websites",
   "summary": {
-    "candidates": 809,
-    "research": 250,
-    "trials": 557,
-    "official_updates": 2,
-    "immediate_review": 393,
-    "watchlist": 207,
-    "background": 63,
-    "low_relevance": 146,
-    "trials_registry_only": 557,
-    "candidate_desk_required": 252,
-    "policy_excluded_research": 2308,
+    "candidates": 816,
+    "research": 252,
+    "trials": 560,
+    "official_updates": 4,
+    "immediate_review": 397,
+    "watchlist": 208,
+    "background": 64,
+    "low_relevance": 147,
+    "trials_registry_only": 560,
+    "candidate_desk_required": 256,
+    "policy_excluded_research": 2328,
     "undifferentiated_review_exceptions": 3,
-    "source_failures": 2,
-    "partial_sources": 0,
+    "source_failures": 0,
+    "partial_sources": 1,
     "truncated_sources": 0,
     "missing_sentinels": 0
   },
-  "degraded_run": {
-    "preserved_previous_candidates": true,
-    "reason": "Critical discovery sources failed and the new candidate set was abnormally small.",
-    "failed_sources": [
-      "ClinicalTrials.gov"
-    ],
-    "attempted_candidates": 252,
-    "preserved_candidates": 809
-  },
+  "degraded_run": null,
   "source_runs": [
     {
       "source": "ClinicalTrials.gov",
       "source_kind": "official_api",
-      "status": "error",
-      "error": "The operation was aborted due to timeout"
+      "status": "ok",
+      "results_scanned": 9053,
+      "known_records_seen": [
+        "NCT07178431",
+        "NCT06359041",
+        "NCT06704269",
+        "NCT06308978",
+        "NCT06978738",
+        "NCT07715136",
+        "NCT07155369",
+        "NCT06939166",
+        "NCT07337785",
+        "NCT06414135",
+        "NCT06665256",
+        "NCT07544225",
+        "NCT06799247",
+        "NCT07477639",
+        "NCT07413341",
+        "NCT07304154",
+        "NCT07006805",
+        "NCT07392528",
+        "NCT07341828",
+        "NCT06056921",
+        "NCT06154252",
+        "NCT06828042",
+        "NCT06941129",
+        "NCT06688435",
+        "NCT07526493",
+        "NCT06787989",
+        "NCT07339540",
+        "NCT07085104",
+        "NCT06708845",
+        "NCT07523282",
+        "NCT06220201",
+        "NCT06193889",
+        "NCT07403188",
+        "NCT07328581",
+        "NCT06794008",
+        "NCT06371040",
+        "NCT06626919",
+        "NCT07246096",
+        "NCT07391605",
+        "NCT07085676",
+        "NCT06980597",
+        "NCT07305116",
+        "NCT06925542",
+        "NCT06451159",
+        "NCT06375993",
+        "NCT06249438",
+        "NCT04561557"
+      ],
+      "sentinel_check": {
+        "expected": [
+          "NCT04561557",
+          "NCT06787989",
+          "NCT07328581",
+          "NCT07006805",
+          "NCT07178431",
+          "NCT07477639"
+        ],
+        "found": [
+          "NCT04561557",
+          "NCT06787989",
+          "NCT07328581",
+          "NCT07006805",
+          "NCT07178431",
+          "NCT07477639"
+        ],
+        "missing": []
+      },
+      "query_runs": [
+        {
+          "query_id": "theme",
+          "total_results": 506,
+          "results_scanned": 506,
+          "truncated": false
+        },
+        {
+          "query_id": "disease:multiple sclerosis",
+          "total_results": 75,
+          "results_scanned": 75,
+          "truncated": false
+        },
+        {
+          "query_id": "disease:myasthenia gravis",
+          "total_results": 41,
+          "results_scanned": 41,
+          "truncated": false
+        },
+        {
+          "query_id": "disease:neuromyelitis optica",
+          "total_results": 26,
+          "results_scanned": 26,
+          "truncated": false
+        },
+        {
+          "query_id": "disease:MOGAD",
+          "total_results": 5,
+          "results_scanned": 5,
+          "truncated": false
+        },
+        {
+          "query_id": "disease:stiff person",
+          "total_results": 4,
+          "results_scanned": 4,
+          "truncated": false
+        },
+        {
+          "query_id": "disease:autoimmune encephalitis",
+          "total_results": 6,
+          "results_scanned": 6,
+          "truncated": false
+        },
+        {
+          "query_id": "disease:CIDP",
+          "total_results": 11,
+          "results_scanned": 11,
+          "truncated": false
+        },
+        {
+          "query_id": "disease:systemic lupus",
+          "total_results": 190,
+          "results_scanned": 190,
+          "truncated": false
+        },
+        {
+          "query_id": "disease:systemic sclerosis",
+          "total_results": 110,
+          "results_scanned": 110,
+          "truncated": false
+        },
+        {
+          "query_id": "disease:myositis",
+          "total_results": 96,
+          "results_scanned": 96,
+          "truncated": false
+        },
+        {
+          "query_id": "disease:immune thrombocytopenia",
+          "total_results": 23,
+          "results_scanned": 23,
+          "truncated": false
+        },
+        {
+          "query_id": "disease:rheumatoid arthritis",
+          "total_results": 54,
+          "results_scanned": 54,
+          "truncated": false
+        },
+        {
+          "query_id": "disease:autoimmune ILD",
+          "total_results": 2,
+          "results_scanned": 2,
+          "truncated": false
+        },
+        {
+          "query_id": "disease:autoimmune disease",
+          "total_results": 458,
+          "results_scanned": 458,
+          "truncated": false
+        },
+        {
+          "query_id": "entity:iaso-ct103a",
+          "total_results": 19,
+          "results_scanned": 19,
+          "truncated": false
+        },
+        {
+          "query_id": "entity:icell-icg318",
+          "total_results": 21,
+          "results_scanned": 21,
+          "truncated": false
+        },
+        {
+          "query_id": "entity:cabaletta-resecel",
+          "total_results": 338,
+          "results_scanned": 338,
+          "truncated": false
+        },
+        {
+          "query_id": "entity:miltenyi-autoimmune",
+          "total_results": 45,
+          "results_scanned": 45,
+          "truncated": false
+        },
+        {
+          "query_id": "entity:tr1x-trx319",
+          "total_results": 11,
+          "results_scanned": 11,
+          "truncated": false
+        },
+        {
+          "query_id": "entity:cartesian-descartes08",
+          "total_results": 8167,
+          "results_scanned": 8167,
+          "truncated": false
+        },
+        {
+          "query_id": "entity:kyverna-kyv101",
+          "total_results": 13,
+          "results_scanned": 13,
+          "truncated": false
+        }
+      ],
+      "truncated": false
     },
     {
       "source": "NCBI PubMed",
       "source_kind": "official_api",
       "status": "ok",
-      "results_scanned": 2579,
+      "results_scanned": 2601,
       "known_records_seen": [
         "41240964",
         "42414128",
@@ -77,8 +272,8 @@
       "query_runs": [
         {
           "query_id": "theme",
-          "total_results": 585,
-          "results_scanned": 585,
+          "total_results": 593,
+          "results_scanned": 593,
           "truncated": false
         },
         {
@@ -95,8 +290,8 @@
         },
         {
           "query_id": "entity:cabaletta-resecel",
-          "total_results": 827,
-          "results_scanned": 827,
+          "total_results": 836,
+          "results_scanned": 836,
           "truncated": false
         },
         {
@@ -113,8 +308,8 @@
         },
         {
           "query_id": "entity:cartesian-descartes08",
-          "total_results": 1211,
-          "results_scanned": 1211,
+          "total_results": 1217,
+          "results_scanned": 1217,
           "truncated": false
         },
         {
@@ -131,8 +326,8 @@
       "source_id": "china-drug-trials",
       "source_kind": "official_registry",
       "official_url": "https://www.chinadrugtrials.org.cn",
-      "status": "error",
-      "access_method": "managed_readonly_wrapper",
+      "status": "partial",
+      "access_method": "direct_official_html",
       "results_scanned": 0,
       "relevant_records": 0,
       "relevant_registry_ids": [],
@@ -141,80 +336,65 @@
         {
           "query_id": "sle",
           "term": "CAR-T 系统性红斑狼疮",
-          "total_results": 0,
           "results_scanned": 0,
-          "status": "error",
-          "error": "fetch failed"
+          "status": "blocked_by_js_challenge"
         },
         {
           "query_id": "mg",
           "term": "CAR-T 重症肌无力",
-          "total_results": 0,
           "results_scanned": 0,
-          "status": "error",
-          "error": "fetch failed"
+          "status": "blocked_by_js_challenge"
         },
         {
           "query_id": "ms",
           "term": "CAR-T 多发性硬化",
-          "total_results": 0,
           "results_scanned": 0,
-          "status": "error",
-          "error": "fetch failed"
+          "status": "blocked_by_js_challenge"
         },
         {
           "query_id": "nmosd",
           "term": "CAR-T 视神经脊髓炎",
-          "total_results": 0,
           "results_scanned": 0,
-          "status": "error",
-          "error": "fetch failed"
+          "status": "blocked_by_js_challenge"
         },
         {
           "query_id": "ssc",
           "term": "CAR-T 系统性硬化症",
-          "total_results": 0,
           "results_scanned": 0,
-          "status": "error",
-          "error": "fetch failed"
+          "status": "blocked_by_js_challenge"
         },
         {
           "query_id": "myositis",
           "term": "CAR-T 炎性肌病",
-          "total_results": 0,
           "results_scanned": 0,
-          "status": "error",
-          "error": "fetch failed"
+          "status": "blocked_by_js_challenge"
         },
         {
           "query_id": "ra",
           "term": "CAR-T 类风湿关节炎",
-          "total_results": 0,
           "results_scanned": 0,
-          "status": "error",
-          "error": "The operation was aborted due to timeout"
+          "status": "blocked_by_js_challenge"
         },
         {
           "query_id": "ild",
           "term": "细胞治疗 自身免疫 间质性肺病",
-          "total_results": 0,
           "results_scanned": 0,
-          "status": "error",
-          "error": "fetch failed"
+          "status": "blocked_by_js_challenge"
         }
       ],
       "truncated": false,
-      "blocked_by_js_challenge": false,
+      "blocked_by_js_challenge": true,
       "errors": [
-        "sle: fetch failed",
-        "mg: fetch failed",
-        "ms: fetch failed",
-        "nmosd: fetch failed",
-        "ssc: fetch failed",
-        "myositis: fetch failed",
-        "ra: The operation was aborted due to timeout",
-        "ild: fetch failed"
-      ]
+        "sle: CDE 官网返回 JavaScript 防护页",
+        "mg: CDE 官网返回 JavaScript 防护页",
+        "ms: CDE 官网返回 JavaScript 防护页",
+        "nmosd: CDE 官网返回 JavaScript 防护页",
+        "ssc: CDE 官网返回 JavaScript 防护页",
+        "myositis: CDE 官网返回 JavaScript 防护页",
+        "ra: CDE 官网返回 JavaScript 防护页",
+        "ild: CDE 官网返回 JavaScript 防护页"
+      ],
+      "setup_hint": "Set CHINA_DRUG_TRIALS_API_KEY to enable the managed read-only registry wrapper."
     },
     {
       "source": "Cabaletta Bio Pipeline & Press Releases",
@@ -235,10 +415,10 @@
         "https://www.cabalettabio.com/pipeline/caba-201"
       ],
       "assets_monitored": 3,
-      "fingerprint": "56abcc803f69980a929ddeb181d46e049bb0301d2b9f811df5f90b4d84f9836f",
+      "fingerprint": "8902332e4a2b5af47e8ecd59b0b0efa1a298a766324d8417b5c8282286d7da1e",
       "fingerprint_version": 3,
-      "changed": false,
-      "duration_ms": 2159,
+      "changed": true,
+      "duration_ms": 1150,
       "sentinel_check": {
         "expected": [
           "https://www.cabalettabio.com/pipeline/caba-201",
@@ -265,10 +445,10 @@
         "https://www.cartesiantherapeutics.com/pipeline"
       ],
       "assets_monitored": 29,
-      "fingerprint": "44c9da72cd939f64d6e4d5bf943fb4df2dc8dced8d50cb6f1ca7d0012f117a19",
+      "fingerprint": "05e4e3d211c512a5ac40c9cfa14dad9c6037e01bd2a84bff739caebc6b5a0614",
       "fingerprint_version": 3,
       "changed": true,
-      "duration_ms": 8034,
+      "duration_ms": 3648,
       "sentinel_check": {
         "expected": [
           "https://www.cartesiantherapeutics.com/pipeline/",
@@ -338,7 +518,7 @@
       "fingerprint": "8cf111225d5228211f758ff0a9c1ee5edc5afeacf0370c4f1dedae15e74a2461",
       "fingerprint_version": 3,
       "changed": false,
-      "duration_ms": 1424,
+      "duration_ms": 3916,
       "sentinel_check": {
         "expected": [
           "https://www.iasobio.com/info.php?id=251",
@@ -362,10 +542,10 @@
       "relevant_links": 0,
       "relevant_urls": [],
       "assets_monitored": 11,
-      "fingerprint": "f2c47d8362e5354c97164ea6b19fa1e2a0fbd226fca7da7a8ee23bb7bd8e3dfe",
+      "fingerprint": "de70380335c4814ac40d43c6d57a86173c4589244d3283f8ff1bc5a098e634c2",
       "fingerprint_version": 3,
-      "changed": false,
-      "duration_ms": 6526,
+      "changed": true,
+      "duration_ms": 557,
       "sentinel_check": {
         "expected": [],
         "found": [],
@@ -394,10 +574,10 @@
         "https://kyvernatx.com/patients/systemic-sclerosis"
       ],
       "assets_monitored": 16,
-      "fingerprint": "2fcd1b03310686b47be72346dbfc6eefc29064dae5cf0d8772f9d18feafbaa48",
+      "fingerprint": "99652a773ac8d3393723a06f73c3f4056605f8740aff3f89f96fa404628ce12a",
       "fingerprint_version": 3,
       "changed": true,
-      "duration_ms": 8985,
+      "duration_ms": 2334,
       "sentinel_check": {
         "expected": [
           "https://kyvernatx.com/platform-pipeline/pipeline/",
@@ -424,7 +604,7 @@
       "fingerprint": "2a5f17199ef5054d8c001b321fc106410df6d3836156512fbbc07c105c487682",
       "fingerprint_version": 3,
       "changed": false,
-      "duration_ms": 3499,
+      "duration_ms": 1225,
       "sentinel_check": {
         "expected": [],
         "found": [],
@@ -448,7 +628,7 @@
       "fingerprint": "0ee8114fae9c8582c707a871b1bee97594eda2093c7494b289334b8c45d1047c",
       "fingerprint_version": 3,
       "changed": false,
-      "duration_ms": 3286,
+      "duration_ms": 2729,
       "sentinel_check": {
         "expected": [],
         "found": [],
@@ -496,7 +676,7 @@
         "disease:autoimmune disease",
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 22,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -544,7 +724,7 @@
         "disease:systemic sclerosis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 20,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -590,7 +770,7 @@
         "disease:autoimmune disease",
         "entity:miltenyi-autoimmune"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 20,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -634,7 +814,7 @@
         "disease:autoimmune disease",
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 18,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -675,7 +855,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 18,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -726,7 +906,7 @@
         "disease:myositis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 18,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -769,7 +949,7 @@
         "disease:autoimmune disease",
         "entity:kyverna-kyv101"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 18,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -818,7 +998,7 @@
         "disease:rheumatoid arthritis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 18,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -862,7 +1042,7 @@
         "disease:rheumatoid arthritis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 16,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -907,7 +1087,7 @@
         "disease:myositis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 16,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -950,13 +1130,54 @@
         "disease:autoimmune disease",
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 16,
       "triage_tier": "立即核验",
       "triage_reasons": [
         "正式注册试验",
         "命中重点实体：Cartesian / Descartes-08",
         "命中2个重点病种",
+        "当前处于活跃状态"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT07587125",
+      "title": "Safety and Efficacy of S103 Cells in Patients With Progressive or Refractory Multiple Sclerosis：An Open-Label, Single-Arm, Exploratory Clinical Study",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT07587125",
+      "status": "RECRUITING",
+      "last_update_posted": "2026-08-05",
+      "phase": [
+        "PHASE1"
+      ],
+      "enrollment": 9,
+      "sponsor": "Xijing Hospital",
+      "conditions": [
+        "Multiple Sclerosis (MS) Primary Progressive",
+        "Multiple Sclerosis",
+        "Multiple Sclerosis (MS) Secondary Progressive",
+        "Refractory Multiple Sclerosis"
+      ],
+      "matched_diseases": [
+        "multiple sclerosis"
+      ],
+      "matched_entities": [
+        "cabaletta-resecel"
+      ],
+      "query_matches": [
+        "theme",
+        "disease:multiple sclerosis",
+        "disease:autoimmune disease",
+        "entity:cabaletta-resecel"
+      ],
+      "review_status": "待处理",
+      "relevance_score": 14,
+      "triage_tier": "立即核验",
+      "triage_reasons": [
+        "正式注册试验",
+        "命中重点实体：Cabaletta Bio / rese-cel / CABA-201",
+        "命中1个重点病种",
         "当前处于活跃状态"
       ]
     },
@@ -989,7 +1210,7 @@
         "disease:autoimmune disease",
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 14,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -1034,7 +1255,7 @@
         "disease:rheumatoid arthritis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 14,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -1070,7 +1291,7 @@
         "disease:autoimmune disease",
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 14,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -1110,7 +1331,7 @@
         "disease:autoimmune disease",
         "entity:cabaletta-resecel"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 14,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -1155,7 +1376,7 @@
         "disease:MOGAD",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 14,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -1191,7 +1412,7 @@
         "disease:autoimmune disease",
         "entity:iaso-ct103a"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 14,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -1226,7 +1447,7 @@
       "query_matches": [
         "entity:miltenyi-autoimmune"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 14,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -1263,7 +1484,7 @@
         "disease:autoimmune disease",
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 14,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -1303,7 +1524,7 @@
         "disease:autoimmune disease",
         "entity:cabaletta-resecel"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 14,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -1343,7 +1564,7 @@
         "disease:autoimmune disease",
         "entity:cabaletta-resecel"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 14,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -1381,7 +1602,7 @@
         "disease:autoimmune disease",
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 14,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -1420,7 +1641,7 @@
         "disease:autoimmune disease",
         "entity:kyverna-kyv101"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 14,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -1465,7 +1686,7 @@
         "disease:myositis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 14,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -1504,7 +1725,7 @@
         "disease:autoimmune disease",
         "entity:kyverna-kyv101"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 14,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -1555,7 +1776,7 @@
         "disease:myositis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 14,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -1599,7 +1820,7 @@
         "disease:myositis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 14,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -1637,7 +1858,7 @@
         "disease:autoimmune disease",
         "entity:miltenyi-autoimmune"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 14,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -1678,7 +1899,7 @@
         "disease:autoimmune disease",
         "entity:kyverna-kyv101"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 14,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -1719,7 +1940,7 @@
         "disease:autoimmune disease",
         "entity:kyverna-kyv101"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 14,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -1760,7 +1981,7 @@
         "disease:autoimmune disease",
         "entity:kyverna-kyv101"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 14,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -1802,7 +2023,7 @@
         "disease:immune thrombocytopenia",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 14,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -1839,7 +2060,7 @@
         "disease:autoimmune disease",
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 14,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -1877,7 +2098,7 @@
         "disease:autoimmune disease",
         "entity:kyverna-kyv101"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 14,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -1926,7 +2147,7 @@
         "disease:autoimmune disease",
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 14,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -1964,7 +2185,7 @@
         "disease:autoimmune disease",
         "entity:iaso-ct103a"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 14,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -2012,7 +2233,7 @@
         "disease:rheumatoid arthritis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 14,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -2051,7 +2272,7 @@
         "disease:autoimmune disease",
         "entity:kyverna-kyv101"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 14,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -2100,7 +2321,7 @@
         "disease:rheumatoid arthritis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 14,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -2134,7 +2355,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 14,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -2353,28 +2574,109 @@
       "journal_impact_factor_source": "https://www.sciencedirect.com/journal/annals-of-the-rheumatic-diseases"
     },
     {
-      "candidate_type": "official_update",
-      "external_id": "https://ir.kyvernatx.com/news-releases/news-release-details/kyverna-therapeutics-announces-initiation-rolling-sps-bla",
-      "title": "Skip to main navigation",
-      "source": "Kyverna Pipeline & Press Releases",
-      "source_url": "https://ir.kyvernatx.com/news-releases/news-release-details/kyverna-therapeutics-announces-initiation-rolling-sps-bla",
-      "publication_date": "",
+      "candidate_type": "trial",
+      "external_id": "NCT07752264",
+      "title": "An Open-label, Single-arm Phase I/II Clinical Study to Evaluate the Safety and Efficacy of Equecabtagene Autoleucel Injection (Eque-cel) in Subjects With Immune-mediated Necrotizing Myopathy",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT07752264",
+      "status": "NOT_YET_RECRUITING",
+      "last_update_posted": "2026-08-07",
+      "phase": [
+        "PHASE1",
+        "PHASE2"
+      ],
+      "enrollment": 27,
+      "sponsor": "Nanjing IASO Biotechnology Co., Ltd.",
+      "conditions": [
+        "Refractory Immune-mediated Necrotizing Myopathy"
+      ],
       "matched_diseases": [
-        "stiff person"
+        "myositis"
       ],
       "matched_entities": [
-        "kyverna-kyv101"
+        "iaso-ct103a"
       ],
       "query_matches": [
-        "official:kyverna-official"
+        "theme",
+        "disease:myositis",
+        "entity:iaso-ct103a"
       ],
       "review_status": "待处理",
       "relevance_score": 12,
       "triage_tier": "立即核验",
       "triage_reasons": [
-        "企业官网一手披露",
-        "命中重点实体：Kyverna / KYV-101",
+        "正式注册试验",
+        "命中重点实体：IASO Bio / Eque-cel / CT103A",
         "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT02102165",
+      "title": "AURORA: Aiming to Understand the Molecular Aberrations in Metastatic Breast Cancer.",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT02102165",
+      "status": "RECRUITING",
+      "last_update_posted": "2026-08-06",
+      "phase": [
+        "NA"
+      ],
+      "enrollment": 1000,
+      "sponsor": "Jules Bordet Institute",
+      "conditions": [
+        "Metastatic Breast Cancer"
+      ],
+      "matched_diseases": [],
+      "matched_entities": [
+        "cartesian-descartes08"
+      ],
+      "query_matches": [
+        "entity:cartesian-descartes08"
+      ],
+      "review_status": "待处理",
+      "relevance_score": 12,
+      "triage_tier": "立即核验",
+      "triage_reasons": [
+        "正式注册试验",
+        "命中重点实体：Cartesian / Descartes-08",
+        "当前处于活跃状态"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT06116110",
+      "title": "A Prospective, Observational, Long-term Follow-up Study for Subjects Who Previously Received Zamtocabtagene Autoleucel in a North American Miltenyi Biomedicine-Sponsored Clinical Study",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT06116110",
+      "status": "RECRUITING",
+      "last_update_posted": "2026-08-05",
+      "phase": [],
+      "enrollment": 150,
+      "sponsor": "Miltenyi Biomedicine GmbH",
+      "conditions": [
+        "Non Hodgkin Lymphoma",
+        "Refractory Diffuse Large B Cell Lymphoma (DLBCL)",
+        "Relapsed Diffuse Large B Cell Lymphoma",
+        "High Grade B-cell Lymphoma",
+        "Central Nervous System Lymphoma",
+        "Primary Mediastinal B-cell Lymphoma (PMBCL)"
+      ],
+      "matched_diseases": [],
+      "matched_entities": [
+        "miltenyi-autoimmune"
+      ],
+      "query_matches": [
+        "theme",
+        "disease:autoimmune disease",
+        "entity:miltenyi-autoimmune"
+      ],
+      "review_status": "待处理",
+      "relevance_score": 12,
+      "triage_tier": "立即核验",
+      "triage_reasons": [
+        "正式注册试验",
+        "命中重点实体：Miltenyi Biomedicine / zamto-cel / MB-CART2019.1",
+        "当前处于活跃状态"
       ]
     },
     {
@@ -2411,7 +2713,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 12,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -2447,7 +2749,7 @@
         "disease:systemic sclerosis",
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 12,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -2493,7 +2795,7 @@
         "disease:rheumatoid arthritis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 12,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -2534,7 +2836,7 @@
         "disease:systemic sclerosis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 12,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -2570,7 +2872,7 @@
       "query_matches": [
         "entity:miltenyi-autoimmune"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 12,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -2610,7 +2912,7 @@
         "entity:cartesian-descartes08",
         "entity:kyverna-kyv101"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 12,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -2640,7 +2942,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 12,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -2680,7 +2982,7 @@
       "query_matches": [
         "entity:miltenyi-autoimmune"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 12,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -2724,7 +3026,7 @@
         "disease:myositis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 12,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -2764,7 +3066,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 12,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -2796,7 +3098,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 12,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -2829,7 +3131,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 12,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -2871,7 +3173,7 @@
         "disease:myositis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 12,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -2902,7 +3204,7 @@
       "query_matches": [
         "entity:miltenyi-autoimmune"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 12,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -2945,7 +3247,7 @@
         "disease:myositis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 12,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -2977,7 +3279,7 @@
       "query_matches": [
         "entity:miltenyi-autoimmune"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 12,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -3011,7 +3313,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 12,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -3053,7 +3355,7 @@
         "disease:rheumatoid arthritis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 12,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -3087,7 +3389,7 @@
         "disease:autoimmune disease",
         "entity:cabaletta-resecel"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 12,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -3129,53 +3431,13 @@
         "disease:systemic sclerosis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 12,
       "triage_tier": "立即核验",
       "triage_reasons": [
         "正式注册试验",
         "命中3个重点病种",
         "当前处于活跃状态"
-      ]
-    },
-    {
-      "candidate_type": "trial",
-      "external_id": "NCT07587125",
-      "title": "Safety and Efficacy of S103 Cells in Patients With Progressive or Refractory Multiple Sclerosis：An Open-Label, Single-Arm, Exploratory Clinical Study",
-      "source": "ClinicalTrials.gov",
-      "source_url": "https://clinicaltrials.gov/study/NCT07587125",
-      "status": "NOT_YET_RECRUITING",
-      "last_update_posted": "2026-05-14",
-      "phase": [
-        "PHASE1"
-      ],
-      "enrollment": 9,
-      "sponsor": "Xijing Hospital",
-      "conditions": [
-        "Multiple Sclerosis (MS) Primary Progressive",
-        "Multiple Sclerosis",
-        "Multiple Sclerosis (MS) Secondary Progressive",
-        "Refractory Multiple Sclerosis"
-      ],
-      "matched_diseases": [
-        "multiple sclerosis"
-      ],
-      "matched_entities": [
-        "cabaletta-resecel"
-      ],
-      "query_matches": [
-        "theme",
-        "disease:multiple sclerosis",
-        "disease:autoimmune disease",
-        "entity:cabaletta-resecel"
-      ],
-      "review_status": "试验登记",
-      "relevance_score": 12,
-      "triage_tier": "立即核验",
-      "triage_reasons": [
-        "正式注册试验",
-        "命中重点实体：Cabaletta Bio / rese-cel / CABA-201",
-        "命中1个重点病种"
       ]
     },
     {
@@ -3201,7 +3463,7 @@
       "query_matches": [
         "entity:miltenyi-autoimmune"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 12,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -3238,7 +3500,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 12,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -3271,7 +3533,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 12,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -3303,7 +3565,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 12,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -3335,7 +3597,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 12,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -3367,7 +3629,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 12,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -3400,7 +3662,7 @@
       "query_matches": [
         "entity:miltenyi-autoimmune"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 12,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -3433,7 +3695,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 12,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -3475,7 +3737,7 @@
         "disease:systemic sclerosis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 12,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -3507,7 +3769,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 12,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -3543,7 +3805,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 12,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -3575,7 +3837,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 12,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -3608,7 +3870,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 12,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -3651,7 +3913,7 @@
         "disease:myositis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 12,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -3692,7 +3954,7 @@
         "disease:myositis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 12,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -3721,7 +3983,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 12,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -3755,7 +4017,7 @@
       "query_matches": [
         "entity:miltenyi-autoimmune"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 12,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -3791,7 +4053,7 @@
         "disease:autoimmune disease",
         "entity:cabaletta-resecel"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 12,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -3823,7 +4085,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 12,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -3855,7 +4117,7 @@
       "query_matches": [
         "entity:miltenyi-autoimmune"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 12,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -3892,7 +4154,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 12,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -3925,7 +4187,7 @@
       "query_matches": [
         "entity:miltenyi-autoimmune"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 12,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -3971,7 +4233,7 @@
         "disease:immune thrombocytopenia",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 12,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -4003,7 +4265,7 @@
       "query_matches": [
         "entity:tr1x-trx319"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 12,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -4041,7 +4303,7 @@
       "query_matches": [
         "entity:miltenyi-autoimmune"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 12,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -4078,7 +4340,7 @@
         "disease:autoimmune disease",
         "entity:cabaletta-resecel"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 12,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -4111,7 +4373,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 12,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -4143,7 +4405,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 12,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -4177,7 +4439,7 @@
       "query_matches": [
         "entity:icell-icg318"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 12,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -4207,7 +4469,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 12,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -4239,7 +4501,7 @@
       "query_matches": [
         "entity:miltenyi-autoimmune"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 12,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -4271,44 +4533,12 @@
       "query_matches": [
         "entity:iaso-ct103a"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 12,
       "triage_tier": "立即核验",
       "triage_reasons": [
         "正式注册试验",
         "命中重点实体：IASO Bio / Eque-cel / CT103A",
-        "当前处于活跃状态"
-      ]
-    },
-    {
-      "candidate_type": "trial",
-      "external_id": "NCT02102165",
-      "title": "AURORA: Aiming to Understand the Molecular Aberrations in Metastatic Breast Cancer.",
-      "source": "ClinicalTrials.gov",
-      "source_url": "https://clinicaltrials.gov/study/NCT02102165",
-      "status": "RECRUITING",
-      "last_update_posted": "2025-07-16",
-      "phase": [
-        "NA"
-      ],
-      "enrollment": 1000,
-      "sponsor": "Breast International Group",
-      "conditions": [
-        "Metastatic Breast Cancer"
-      ],
-      "matched_diseases": [],
-      "matched_entities": [
-        "cartesian-descartes08"
-      ],
-      "query_matches": [
-        "entity:cartesian-descartes08"
-      ],
-      "review_status": "试验登记",
-      "relevance_score": 12,
-      "triage_tier": "立即核验",
-      "triage_reasons": [
-        "正式注册试验",
-        "命中重点实体：Cartesian / Descartes-08",
         "当前处于活跃状态"
       ]
     },
@@ -4335,7 +4565,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 12,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -4365,7 +4595,7 @@
       "query_matches": [
         "entity:iaso-ct103a"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 12,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -4399,7 +4629,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 12,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -4432,7 +4662,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 12,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -4474,7 +4704,7 @@
       "query_matches": [
         "entity:tr1x-trx319"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 12,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -4509,7 +4739,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 12,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -4541,7 +4771,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 12,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -4571,7 +4801,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 12,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -4604,7 +4834,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 12,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -4647,7 +4877,7 @@
         "disease:CIDP",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 12,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -4678,7 +4908,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 12,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -4722,42 +4952,12 @@
         "disease:myositis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 12,
       "triage_tier": "立即核验",
       "triage_reasons": [
         "正式注册试验",
         "命中4个重点病种"
-      ]
-    },
-    {
-      "candidate_type": "trial",
-      "external_id": "NCT06116110",
-      "title": "A Prospective, Observational, Long-term Follow-up Study for Subjects Who Previously Received Zamtocabtagene Autoleucel in a United States Miltenyi Biomedicine-Sponsored Clinical Study",
-      "source": "ClinicalTrials.gov",
-      "source_url": "https://clinicaltrials.gov/study/NCT06116110",
-      "status": "RECRUITING",
-      "last_update_posted": "2024-11-20",
-      "phase": [],
-      "enrollment": 150,
-      "sponsor": "Miltenyi Biomedicine GmbH",
-      "conditions": [
-        "Non Hodgkin Lymphoma"
-      ],
-      "matched_diseases": [],
-      "matched_entities": [
-        "miltenyi-autoimmune"
-      ],
-      "query_matches": [
-        "entity:miltenyi-autoimmune"
-      ],
-      "review_status": "试验登记",
-      "relevance_score": 12,
-      "triage_tier": "立即核验",
-      "triage_reasons": [
-        "正式注册试验",
-        "命中重点实体：Miltenyi Biomedicine / zamto-cel / MB-CART2019.1",
-        "当前处于活跃状态"
       ]
     },
     {
@@ -4798,7 +4998,7 @@
         "disease:myositis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 12,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -4828,7 +5028,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 12,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -4861,7 +5061,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 12,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -4905,7 +5105,7 @@
         "disease:myositis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 12,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -4948,7 +5148,7 @@
         "disease:myositis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 12,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -4980,7 +5180,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 12,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -5012,7 +5212,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 12,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -5049,7 +5249,7 @@
         "disease:autoimmune disease",
         "entity:icell-icg318"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 12,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -5083,7 +5283,7 @@
       "query_matches": [
         "entity:miltenyi-autoimmune"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 12,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -5188,11 +5388,77 @@
     },
     {
       "candidate_type": "official_update",
-      "external_id": "official-change:kyverna-official:4be1fb8bbf6a",
+      "external_id": "official-change:cabaletta-official:8902332e4a2b",
+      "title": "Cabaletta Bio Pipeline & Press Releases 页面或管线资产发生变化",
+      "source": "Cabaletta Bio Pipeline & Press Releases",
+      "source_url": "https://www.cabalettabio.com/pipeline/caba-201",
+      "publication_date": "2026-08-09",
+      "matched_diseases": [],
+      "matched_entities": [
+        "cabaletta-resecel"
+      ],
+      "query_matches": [
+        "official:cabaletta-official:change"
+      ],
+      "review_status": "待处理",
+      "relevance_score": 10,
+      "triage_tier": "立即核验",
+      "triage_reasons": [
+        "企业官网一手披露",
+        "命中重点实体：Cabaletta Bio / rese-cel / CABA-201"
+      ]
+    },
+    {
+      "candidate_type": "official_update",
+      "external_id": "official-change:cartesian-official:05e4e3d211c5",
+      "title": "Cartesian Therapeutics Pipeline & Press Releases 页面或管线资产发生变化",
+      "source": "Cartesian Therapeutics Pipeline & Press Releases",
+      "source_url": "https://www.cartesiantherapeutics.com/pipeline/",
+      "publication_date": "2026-08-09",
+      "matched_diseases": [],
+      "matched_entities": [
+        "cartesian-descartes08"
+      ],
+      "query_matches": [
+        "official:cartesian-official:change"
+      ],
+      "review_status": "待处理",
+      "relevance_score": 10,
+      "triage_tier": "立即核验",
+      "triage_reasons": [
+        "企业官网一手披露",
+        "命中重点实体：Cartesian / Descartes-08"
+      ]
+    },
+    {
+      "candidate_type": "official_update",
+      "external_id": "official-change:icell-official:de70380335c4",
+      "title": "iCell Gene Therapeutics Official Website 页面或管线资产发生变化",
+      "source": "iCell Gene Therapeutics Official Website",
+      "source_url": "https://www.icellgene.com/",
+      "publication_date": "2026-08-09",
+      "matched_diseases": [],
+      "matched_entities": [
+        "icell-icg318"
+      ],
+      "query_matches": [
+        "official:icell-official:change"
+      ],
+      "review_status": "待处理",
+      "relevance_score": 10,
+      "triage_tier": "立即核验",
+      "triage_reasons": [
+        "企业官网一手披露",
+        "命中重点实体：iCell Gene Therapeutics / ICG318"
+      ]
+    },
+    {
+      "candidate_type": "official_update",
+      "external_id": "official-change:kyverna-official:99652a773ac8",
       "title": "Kyverna Pipeline & Press Releases 页面或管线资产发生变化",
       "source": "Kyverna Pipeline & Press Releases",
       "source_url": "https://kyvernatx.com/platform-pipeline/pipeline/",
-      "publication_date": "2026-08-04",
+      "publication_date": "2026-08-09",
       "matched_diseases": [],
       "matched_entities": [
         "kyverna-kyv101"
@@ -5206,6 +5472,47 @@
       "triage_reasons": [
         "企业官网一手披露",
         "命中重点实体：Kyverna / KYV-101"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT06733935",
+      "title": "A Phase 1/2 Study of NKX019, a CD19 Chimeric Antigen Receptor Natural Killer (CAR NK) Cell Therapy, in Subjects With Immune-Mediated Diseases",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT06733935",
+      "status": "RECRUITING",
+      "last_update_posted": "2026-08-07",
+      "phase": [
+        "PHASE1",
+        "PHASE2"
+      ],
+      "enrollment": 240,
+      "sponsor": "Nkarta, Inc.",
+      "conditions": [
+        "Systemic Sclerosis",
+        "Idiopathic Inflammatory Myopathies",
+        "Antineutrophil Cytoplasmic Antibody-Associated Vasculitis",
+        "Rheumatoid Arthritis"
+      ],
+      "matched_diseases": [
+        "systemic sclerosis",
+        "rheumatoid arthritis"
+      ],
+      "matched_entities": [],
+      "query_matches": [
+        "theme",
+        "disease:systemic sclerosis",
+        "disease:myositis",
+        "disease:rheumatoid arthritis",
+        "disease:autoimmune disease"
+      ],
+      "review_status": "待处理",
+      "relevance_score": 10,
+      "triage_tier": "立即核验",
+      "triage_reasons": [
+        "正式注册试验",
+        "命中2个重点病种",
+        "当前处于活跃状态"
       ]
     },
     {
@@ -5232,7 +5539,7 @@
       "query_matches": [
         "entity:miltenyi-autoimmune"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -5263,7 +5570,7 @@
       "query_matches": [
         "entity:miltenyi-autoimmune"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -5294,7 +5601,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -5335,7 +5642,7 @@
         "disease:myositis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -5367,7 +5674,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -5404,7 +5711,7 @@
         "disease:systemic sclerosis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -5444,7 +5751,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -5483,7 +5790,7 @@
         "disease:rheumatoid arthritis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -5519,7 +5826,7 @@
         "disease:systemic lupus",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -5556,48 +5863,7 @@
         "disease:systemic lupus",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
-      "relevance_score": 10,
-      "triage_tier": "立即核验",
-      "triage_reasons": [
-        "正式注册试验",
-        "命中2个重点病种",
-        "当前处于活跃状态"
-      ]
-    },
-    {
-      "candidate_type": "trial",
-      "external_id": "NCT06733935",
-      "title": "A Phase 1/2 Study of NKX019, a CD19 Chimeric Antigen Receptor Natural Killer (CAR NK) Cell Therapy, in Subjects With Immune-Mediated Diseases",
-      "source": "ClinicalTrials.gov",
-      "source_url": "https://clinicaltrials.gov/study/NCT06733935",
-      "status": "RECRUITING",
-      "last_update_posted": "2026-06-04",
-      "phase": [
-        "PHASE1",
-        "PHASE2"
-      ],
-      "enrollment": 240,
-      "sponsor": "Nkarta, Inc.",
-      "conditions": [
-        "Systemic Sclerosis",
-        "Idiopathic Inflammatory Myopathies",
-        "Antineutrophil Cytoplasmic Antibody-Associated Vasculitis",
-        "Rheumatoid Arthritis"
-      ],
-      "matched_diseases": [
-        "systemic sclerosis",
-        "rheumatoid arthritis"
-      ],
-      "matched_entities": [],
-      "query_matches": [
-        "theme",
-        "disease:systemic sclerosis",
-        "disease:myositis",
-        "disease:rheumatoid arthritis",
-        "disease:autoimmune disease"
-      ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -5631,7 +5897,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -5660,7 +5926,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -5697,7 +5963,7 @@
         "disease:myositis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -5729,7 +5995,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -5760,7 +6026,7 @@
       "query_matches": [
         "entity:miltenyi-autoimmune"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -5793,7 +6059,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -5825,7 +6091,7 @@
       "query_matches": [
         "entity:icell-icg318"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -5856,7 +6122,7 @@
       "query_matches": [
         "entity:miltenyi-autoimmune"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -5892,7 +6158,7 @@
         "disease:myositis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -5924,7 +6190,7 @@
       "query_matches": [
         "entity:iaso-ct103a"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -5956,7 +6222,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -5992,7 +6258,7 @@
         "disease:systemic sclerosis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -6031,7 +6297,7 @@
         "disease:systemic sclerosis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -6074,7 +6340,7 @@
         "disease:myositis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -6105,7 +6371,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -6147,7 +6413,7 @@
         "disease:myositis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -6179,7 +6445,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -6210,7 +6476,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -6249,7 +6515,7 @@
         "disease:rheumatoid arthritis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -6280,7 +6546,7 @@
       "query_matches": [
         "entity:miltenyi-autoimmune"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -6317,7 +6583,7 @@
         "disease:systemic lupus",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -6349,7 +6615,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -6380,7 +6646,7 @@
       "query_matches": [
         "entity:miltenyi-autoimmune"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -6412,7 +6678,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -6444,7 +6710,7 @@
       "query_matches": [
         "entity:miltenyi-autoimmune"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -6482,7 +6748,7 @@
         "disease:myositis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -6518,7 +6784,7 @@
         "disease:systemic sclerosis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -6548,7 +6814,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -6583,7 +6849,7 @@
         "disease:immune thrombocytopenia",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -6621,7 +6887,7 @@
         "disease:myositis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -6652,7 +6918,7 @@
       "query_matches": [
         "entity:iaso-ct103a"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -6685,7 +6951,7 @@
       "query_matches": [
         "entity:miltenyi-autoimmune"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -6716,7 +6982,7 @@
       "query_matches": [
         "entity:miltenyi-autoimmune"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -6747,7 +7013,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -6783,7 +7049,7 @@
         "disease:rheumatoid arthritis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -6824,7 +7090,7 @@
         "disease:myositis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -6857,7 +7123,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -6899,7 +7165,7 @@
         "disease:myositis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -7069,7 +7335,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -7104,7 +7370,7 @@
       "query_matches": [
         "entity:miltenyi-autoimmune"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -7139,7 +7405,7 @@
       "query_matches": [
         "entity:miltenyi-autoimmune"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -7170,7 +7436,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -7208,7 +7474,7 @@
         "disease:systemic lupus",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -7238,7 +7504,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -7272,7 +7538,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -7303,7 +7569,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -7332,7 +7598,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -7367,7 +7633,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -7398,7 +7664,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -7430,7 +7696,7 @@
       "query_matches": [
         "entity:kyverna-kyv101"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -7461,7 +7727,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -7490,7 +7756,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -7526,7 +7792,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -7557,7 +7823,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -7588,7 +7854,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -7617,7 +7883,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -7648,7 +7914,7 @@
       "query_matches": [
         "entity:miltenyi-autoimmune"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -7679,7 +7945,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -7708,7 +7974,7 @@
       "query_matches": [
         "entity:iaso-ct103a"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -7749,7 +8015,7 @@
         "disease:myositis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -7780,7 +8046,7 @@
       "query_matches": [
         "entity:miltenyi-autoimmune"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -7809,7 +8075,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -7838,7 +8104,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -7871,7 +8137,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -7902,7 +8168,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -7934,7 +8200,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -7966,7 +8232,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -7995,7 +8261,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -8026,7 +8292,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -8057,7 +8323,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -8090,7 +8356,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -8121,7 +8387,7 @@
       "query_matches": [
         "entity:iaso-ct103a"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -8152,7 +8418,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -8184,7 +8450,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -8217,7 +8483,7 @@
       "query_matches": [
         "entity:miltenyi-autoimmune"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -8250,7 +8516,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -8281,7 +8547,7 @@
       "query_matches": [
         "entity:miltenyi-autoimmune"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -8312,7 +8578,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -8344,7 +8610,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -8373,7 +8639,7 @@
       "query_matches": [
         "entity:miltenyi-autoimmune"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -8404,7 +8670,7 @@
       "query_matches": [
         "entity:iaso-ct103a"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -8433,7 +8699,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -8464,7 +8730,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -8496,7 +8762,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -8527,7 +8793,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -8560,7 +8826,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -8591,7 +8857,7 @@
       "query_matches": [
         "entity:iaso-ct103a"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -8622,7 +8888,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -8654,7 +8920,7 @@
       "query_matches": [
         "entity:iaso-ct103a"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -8687,7 +8953,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -8718,7 +8984,7 @@
       "query_matches": [
         "entity:miltenyi-autoimmune"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -8750,7 +9016,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -8783,7 +9049,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -8814,7 +9080,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -8843,7 +9109,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -8874,7 +9140,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -8905,7 +9171,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -8936,7 +9202,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -8977,7 +9243,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -9008,7 +9274,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -9039,7 +9305,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -9071,7 +9337,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -9106,7 +9372,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -9137,7 +9403,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -9170,7 +9436,7 @@
       "query_matches": [
         "entity:miltenyi-autoimmune"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -9201,7 +9467,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -9233,7 +9499,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -9265,7 +9531,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -9296,7 +9562,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -9333,7 +9599,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -9376,7 +9642,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -9411,7 +9677,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -9443,7 +9709,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -9472,7 +9738,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -9503,7 +9769,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -9535,7 +9801,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -9566,7 +9832,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -9597,7 +9863,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -9628,7 +9894,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -9660,7 +9926,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -9692,7 +9958,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -9722,7 +9988,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -9754,7 +10020,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -9788,7 +10054,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -9821,7 +10087,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -9853,7 +10119,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -9884,7 +10150,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -9949,7 +10215,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -9984,7 +10250,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -10019,7 +10285,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -10052,7 +10318,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -10083,7 +10349,7 @@
       "query_matches": [
         "entity:miltenyi-autoimmune"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -10116,7 +10382,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -10147,7 +10413,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -10181,7 +10447,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -10212,7 +10478,7 @@
       "query_matches": [
         "entity:miltenyi-autoimmune"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -10243,7 +10509,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -10274,7 +10540,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -10305,7 +10571,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -10337,7 +10603,7 @@
       "query_matches": [
         "entity:miltenyi-autoimmune"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -10368,7 +10634,7 @@
       "query_matches": [
         "entity:miltenyi-autoimmune"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -10405,7 +10671,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -10440,7 +10706,7 @@
       "query_matches": [
         "entity:miltenyi-autoimmune"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -10473,7 +10739,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -10505,7 +10771,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -10542,7 +10808,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -10573,7 +10839,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -10605,7 +10871,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -10636,7 +10902,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -10667,7 +10933,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -10698,7 +10964,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -10729,7 +10995,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -10761,7 +11027,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -10795,7 +11061,7 @@
       "query_matches": [
         "entity:miltenyi-autoimmune"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -10826,7 +11092,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -10857,7 +11123,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -10892,7 +11158,7 @@
       "query_matches": [
         "entity:miltenyi-autoimmune"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -10923,7 +11189,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -10954,7 +11220,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -10985,7 +11251,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -11020,7 +11286,7 @@
       "query_matches": [
         "entity:miltenyi-autoimmune"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -11050,7 +11316,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -11081,7 +11347,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -11112,7 +11378,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -11143,7 +11409,7 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -11175,7 +11441,7 @@
       "query_matches": [
         "entity:miltenyi-autoimmune"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
@@ -11209,12 +11475,47 @@
       "query_matches": [
         "entity:cartesian-descartes08"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
         "正式注册试验",
         "命中重点实体：Cartesian / Descartes-08"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT06617793",
+      "title": "An Open-label, Multi-center, Phase 1/2 Study to Assess Safety, Efficacy, and Cellular Kinetics of YTB323 in Participants With Relapsing Multiple Sclerosis With Breakthrough Disease Activity During Previous Treatment With a Highly Efficacious Therapy",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT06617793",
+      "status": "RECRUITING",
+      "last_update_posted": "2026-08-04",
+      "phase": [
+        "PHASE1",
+        "PHASE2"
+      ],
+      "enrollment": 28,
+      "sponsor": "Novartis Pharmaceuticals",
+      "conditions": [
+        "Relapsing Multiple Sclerosis"
+      ],
+      "matched_diseases": [
+        "multiple sclerosis"
+      ],
+      "matched_entities": [],
+      "query_matches": [
+        "theme",
+        "disease:multiple sclerosis",
+        "disease:autoimmune disease"
+      ],
+      "review_status": "待处理",
+      "relevance_score": 8,
+      "triage_tier": "持续观察",
+      "triage_reasons": [
+        "正式注册试验",
+        "命中1个重点病种",
+        "当前处于活跃状态"
       ]
     },
     {
@@ -11242,7 +11543,7 @@
         "disease:systemic lupus",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -11275,7 +11576,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -11311,7 +11612,7 @@
         "disease:systemic lupus",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -11347,7 +11648,7 @@
         "disease:rheumatoid arthritis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -11381,7 +11682,7 @@
         "disease:systemic lupus",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -11416,7 +11717,7 @@
         "disease:systemic lupus",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -11453,7 +11754,7 @@
         "disease:systemic lupus",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -11488,7 +11789,7 @@
         "disease:multiple sclerosis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -11522,7 +11823,7 @@
         "disease:systemic lupus",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -11556,7 +11857,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -11590,7 +11891,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -11623,7 +11924,7 @@
         "theme",
         "disease:systemic sclerosis"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -11664,7 +11965,7 @@
         "disease:systemic lupus",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -11699,7 +12000,7 @@
         "disease:immune thrombocytopenia",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -11734,7 +12035,7 @@
         "disease:systemic lupus",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -11767,42 +12068,7 @@
         "theme",
         "disease:systemic lupus"
       ],
-      "review_status": "试验登记",
-      "relevance_score": 8,
-      "triage_tier": "持续观察",
-      "triage_reasons": [
-        "正式注册试验",
-        "命中1个重点病种",
-        "当前处于活跃状态"
-      ]
-    },
-    {
-      "candidate_type": "trial",
-      "external_id": "NCT06617793",
-      "title": "An Open-label, Multi-center, Phase 1/2 Study to Assess Safety, Efficacy, and Cellular Kinetics of YTB323 in Participants With Relapsing Multiple Sclerosis With Breakthrough Disease Activity During Previous Treatment With a Highly Efficacious Therapy",
-      "source": "ClinicalTrials.gov",
-      "source_url": "https://clinicaltrials.gov/study/NCT06617793",
-      "status": "RECRUITING",
-      "last_update_posted": "2026-05-29",
-      "phase": [
-        "PHASE1",
-        "PHASE2"
-      ],
-      "enrollment": 28,
-      "sponsor": "Novartis Pharmaceuticals",
-      "conditions": [
-        "Relapsing Multiple Sclerosis"
-      ],
-      "matched_diseases": [
-        "multiple sclerosis"
-      ],
-      "matched_entities": [],
-      "query_matches": [
-        "theme",
-        "disease:multiple sclerosis",
-        "disease:autoimmune disease"
-      ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -11836,7 +12102,7 @@
         "disease:myasthenia gravis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -11870,7 +12136,7 @@
         "disease:multiple sclerosis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -11905,7 +12171,7 @@
         "theme",
         "disease:autoimmune ILD"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -11938,7 +12204,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -11972,7 +12238,7 @@
         "disease:systemic lupus",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -12006,7 +12272,7 @@
         "disease:systemic lupus",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -12042,7 +12308,7 @@
         "disease:systemic lupus",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -12076,7 +12342,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -12113,7 +12379,7 @@
         "disease:CIDP",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -12147,7 +12413,7 @@
         "disease:systemic lupus",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -12181,7 +12447,7 @@
         "disease:systemic lupus",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -12215,7 +12481,7 @@
         "disease:systemic lupus",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -12250,7 +12516,7 @@
         "disease:systemic lupus",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -12286,7 +12552,7 @@
         "disease:systemic sclerosis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -12320,7 +12586,7 @@
         "disease:systemic lupus",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -12358,7 +12624,7 @@
         "disease:myositis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -12394,7 +12660,7 @@
         "disease:immune thrombocytopenia",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -12433,7 +12699,7 @@
         "disease:systemic lupus",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -12465,7 +12731,7 @@
         "theme",
         "disease:systemic sclerosis"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -12498,7 +12764,7 @@
         "theme",
         "disease:myositis"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -12532,7 +12798,7 @@
         "disease:systemic lupus",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -12566,7 +12832,7 @@
         "disease:systemic lupus",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -13377,6 +13643,40 @@
     },
     {
       "candidate_type": "research",
+      "external_id": "42570396",
+      "title": "Leveraging chimeric antigen receptor-T cell therapy for the treatment of multiple sclerosis: Bridging oncology and neurology.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42570396/",
+      "publication_date": "2026 Jul 25",
+      "journal": "Current research in translational medicine",
+      "doi": "10.1016/j.retram.2026.103603",
+      "publication_type": [
+        "Journal Article",
+        "Review"
+      ],
+      "matched_diseases": [
+        "multiple sclerosis"
+      ],
+      "matched_entities": [
+        "cabaletta-resecel"
+      ],
+      "query_matches": [
+        "theme",
+        "entity:cabaletta-resecel"
+      ],
+      "review_status": "待处理",
+      "relevance_score": 8,
+      "triage_tier": "立即核验",
+      "triage_reasons": [
+        "命中重点实体：Cabaletta Bio / rese-cel / CABA-201",
+        "命中1个重点病种"
+      ],
+      "journal_impact_factor": null,
+      "journal_impact_factor_year": null,
+      "journal_impact_factor_source": null
+    },
+    {
+      "candidate_type": "research",
       "external_id": "42486100",
       "title": "Safety and efficacy of low-dose, cord blood-derived CD19 CAR-NK cells with 4-1BB co-stimulation in refractory systemic lupus erythematosus.",
       "source": "NCBI PubMed",
@@ -13451,39 +13751,6 @@
       "publication_date": "2026 Jul 15",
       "journal": "Arthritis & rheumatology (Hoboken, N.J.)",
       "doi": "10.1002/art.70276",
-      "publication_type": [
-        "Letter"
-      ],
-      "matched_diseases": [
-        "systemic lupus"
-      ],
-      "matched_entities": [
-        "cabaletta-resecel"
-      ],
-      "query_matches": [
-        "theme",
-        "entity:cabaletta-resecel"
-      ],
-      "review_status": "待处理",
-      "relevance_score": 8,
-      "triage_tier": "立即核验",
-      "triage_reasons": [
-        "命中重点实体：Cabaletta Bio / rese-cel / CABA-201",
-        "命中1个重点病种"
-      ],
-      "journal_impact_factor": 10.9,
-      "journal_impact_factor_year": 2025,
-      "journal_impact_factor_source": "https://onlinelibrary.wiley.com/journal/23265205"
-    },
-    {
-      "candidate_type": "research",
-      "external_id": "42454387",
-      "title": "Reply:BCMA-CD19 CAR T Cells in Systemic Lupus Erythematosus: Humoral Reset or Antigen-Specific Tolerance?",
-      "source": "NCBI PubMed",
-      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42454387/",
-      "publication_date": "2026 Jul 15",
-      "journal": "Arthritis & rheumatology (Hoboken, N.J.)",
-      "doi": "10.1002/art.70278",
       "publication_type": [
         "Letter"
       ],
@@ -13640,6 +13907,40 @@
       "journal_impact_factor": 6,
       "journal_impact_factor_year": 2025,
       "journal_impact_factor_source": "https://www.mdpi.com/journal/cells/announcements/17220"
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42554215",
+      "title": "Advances in the treatment of systemic lupus erythematosus: Biologicals, small-molecular agents, and cell-depleting therapies coming to the clinic.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42554215/",
+      "publication_date": "2026 Aug 5",
+      "journal": "Journal of internal medicine",
+      "doi": "10.1111/joim.70146",
+      "publication_type": [
+        "Journal Article",
+        "Review"
+      ],
+      "matched_diseases": [
+        "systemic lupus"
+      ],
+      "matched_entities": [
+        "cabaletta-resecel"
+      ],
+      "query_matches": [
+        "theme",
+        "entity:cabaletta-resecel"
+      ],
+      "review_status": "待处理",
+      "relevance_score": 8,
+      "triage_tier": "立即核验",
+      "triage_reasons": [
+        "命中重点实体：Cabaletta Bio / rese-cel / CABA-201",
+        "命中1个重点病种"
+      ],
+      "journal_impact_factor": null,
+      "journal_impact_factor_year": null,
+      "journal_impact_factor_source": null
     },
     {
       "candidate_type": "research",
@@ -13837,7 +14138,7 @@
         "disease:myositis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -13870,7 +14171,7 @@
         "theme",
         "disease:systemic sclerosis"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -13905,7 +14206,7 @@
         "disease:systemic lupus",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -13939,7 +14240,7 @@
         "disease:systemic lupus",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -13976,7 +14277,7 @@
         "disease:systemic lupus",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -14010,7 +14311,7 @@
         "disease:systemic lupus",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -14044,7 +14345,7 @@
         "disease:rheumatoid arthritis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -14078,7 +14379,7 @@
         "disease:immune thrombocytopenia",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -14112,7 +14413,7 @@
         "disease:systemic lupus",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -14146,7 +14447,7 @@
         "disease:systemic lupus",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -14181,7 +14482,7 @@
         "disease:myositis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -14219,7 +14520,7 @@
         "disease:systemic lupus",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -14253,7 +14554,7 @@
         "disease:myasthenia gravis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -14286,7 +14587,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -14320,7 +14621,7 @@
         "disease:systemic lupus",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -14356,7 +14657,7 @@
         "disease:rheumatoid arthritis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -14391,7 +14692,7 @@
         "disease:systemic lupus",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -14433,7 +14734,7 @@
         "disease:myositis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -14467,7 +14768,7 @@
         "disease:systemic lupus",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -14500,7 +14801,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -14534,7 +14835,7 @@
         "disease:systemic lupus",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -14567,7 +14868,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -14600,7 +14901,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -14633,7 +14934,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -14667,7 +14968,7 @@
         "disease:systemic lupus",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -14701,7 +15002,7 @@
         "disease:immune thrombocytopenia",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -14735,7 +15036,7 @@
         "disease:systemic lupus",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -14771,7 +15072,7 @@
         "disease:systemic lupus",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -14807,7 +15108,7 @@
         "disease:rheumatoid arthritis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -14844,7 +15145,7 @@
         "disease:systemic sclerosis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -14877,7 +15178,7 @@
         "disease:systemic lupus",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -14911,7 +15212,7 @@
         "disease:systemic lupus",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -14946,7 +15247,7 @@
         "disease:systemic sclerosis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -14979,7 +15280,7 @@
         "disease:multiple sclerosis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -15015,7 +15316,7 @@
         "disease:immune thrombocytopenia",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -15049,7 +15350,7 @@
         "disease:systemic lupus",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -15084,7 +15385,7 @@
         "disease:systemic lupus",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -16206,7 +16507,7 @@
         "disease:systemic lupus",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -16240,7 +16541,7 @@
         "theme",
         "disease:myositis"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -16275,7 +16576,7 @@
         "disease:neuromyelitis optica",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -16308,7 +16609,7 @@
         "disease:systemic lupus",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -16341,7 +16642,7 @@
         "theme",
         "disease:myositis"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -16375,7 +16676,7 @@
         "disease:systemic sclerosis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -16410,7 +16711,7 @@
         "disease:immune thrombocytopenia",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -16445,7 +16746,7 @@
         "disease:systemic lupus",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -16480,7 +16781,7 @@
         "disease:systemic lupus",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -16513,7 +16814,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -16548,7 +16849,7 @@
         "disease:systemic lupus",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -16689,7 +16990,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -16728,7 +17029,7 @@
         "disease:myositis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -16764,7 +17065,7 @@
         "disease:systemic lupus",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -16799,7 +17100,7 @@
         "disease:systemic sclerosis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -16834,7 +17135,7 @@
         "disease:systemic lupus",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -16870,7 +17171,7 @@
         "disease:neuromyelitis optica",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -16907,7 +17208,7 @@
         "disease:multiple sclerosis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -16944,7 +17245,7 @@
         "disease:neuromyelitis optica",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 8,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -17297,6 +17598,36 @@
     },
     {
       "candidate_type": "trial",
+      "external_id": "NCT07748533",
+      "title": "A Multi-center, Open-label, Single-arm Phase I Study to Assess the Safety, and Tolerability of HY001N Cell Injection in Patients With Autoimmune Hemolytic Anemia After Failure of Three or More Lines of Therapy",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT07748533",
+      "status": "RECRUITING",
+      "last_update_posted": "2026-08-05",
+      "phase": [
+        "PHASE1"
+      ],
+      "enrollment": 9,
+      "sponsor": "Juventas Cell Therapy Ltd.",
+      "conditions": [
+        "Autoimmune Hemolytic Anemia (AIHA)"
+      ],
+      "matched_diseases": [],
+      "matched_entities": [],
+      "query_matches": [
+        "theme",
+        "disease:autoimmune disease"
+      ],
+      "review_status": "待处理",
+      "relevance_score": 6,
+      "triage_tier": "持续观察",
+      "triage_reasons": [
+        "正式注册试验",
+        "当前处于活跃状态"
+      ]
+    },
+    {
+      "candidate_type": "trial",
       "external_id": "NCT07729826",
       "title": "Multi-center, Phase 2 Clinical Study of an Autologous Anti-CD20/BCMA Chimeric Antigen Receptor T Cell Therapy (C-CAR168) for the Treatment of Lupus Nephritis Refractory to Standard Therapy",
       "source": "ClinicalTrials.gov",
@@ -17321,7 +17652,7 @@
         "disease:systemic lupus",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -17352,7 +17683,7 @@
         "disease:systemic lupus",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -17384,7 +17715,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -17417,7 +17748,7 @@
         "disease:neuromyelitis optica",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -17448,7 +17779,7 @@
         "theme",
         "disease:rheumatoid arthritis"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -17482,7 +17813,7 @@
         "disease:immune thrombocytopenia",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -17514,7 +17845,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -17543,7 +17874,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -17574,7 +17905,7 @@
         "disease:autoimmune disease",
         "entity:cabaletta-resecel"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -17604,7 +17935,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -17637,7 +17968,7 @@
         "disease:systemic lupus",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -17671,7 +18002,7 @@
         "disease:systemic lupus",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -17705,7 +18036,7 @@
         "disease:systemic lupus",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -17738,7 +18069,7 @@
         "disease:rheumatoid arthritis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -17770,7 +18101,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -17803,7 +18134,7 @@
         "disease:neuromyelitis optica",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -17834,7 +18165,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -17865,7 +18196,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -17895,7 +18226,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -17928,7 +18259,7 @@
         "disease:multiple sclerosis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -17961,7 +18292,7 @@
         "disease:multiple sclerosis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -17994,7 +18325,7 @@
         "disease:systemic lupus",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -18024,7 +18355,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -18055,7 +18386,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -18089,7 +18420,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -18122,7 +18453,7 @@
         "disease:immune thrombocytopenia",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -18155,7 +18486,7 @@
         "disease:immune thrombocytopenia",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -18186,7 +18517,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -18220,7 +18551,7 @@
         "disease:systemic lupus",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -18256,7 +18587,7 @@
         "disease:immune thrombocytopenia",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -18288,7 +18619,7 @@
         "theme",
         "disease:systemic lupus"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -18321,7 +18652,7 @@
         "disease:multiple sclerosis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -18351,7 +18682,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -18384,7 +18715,7 @@
         "disease:systemic lupus",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -18414,7 +18745,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -18447,7 +18778,7 @@
         "disease:systemic lupus",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -18483,7 +18814,7 @@
         "disease:CIDP",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -18513,7 +18844,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -18545,7 +18876,7 @@
         "theme",
         "disease:myositis"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -18575,7 +18906,7 @@
         "theme",
         "disease:rheumatoid arthritis"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -18611,7 +18942,7 @@
         "disease:systemic lupus",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -18647,7 +18978,7 @@
         "disease:rheumatoid arthritis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -18678,7 +19009,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -18708,7 +19039,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -18738,7 +19069,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -18771,7 +19102,7 @@
         "disease:neuromyelitis optica",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -18808,7 +19139,7 @@
         "theme",
         "disease:immune thrombocytopenia"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -18840,7 +19171,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -18871,7 +19202,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -18904,7 +19235,7 @@
         "disease:systemic lupus",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -18936,7 +19267,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -18969,7 +19300,7 @@
         "disease:systemic lupus",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -19002,7 +19333,7 @@
         "disease:myasthenia gravis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -19036,7 +19367,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -19070,7 +19401,7 @@
         "disease:myositis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -19102,7 +19433,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -19134,7 +19465,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -19167,7 +19498,7 @@
         "disease:multiple sclerosis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -19199,7 +19530,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -19233,7 +19564,7 @@
         "disease:systemic lupus",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -19266,7 +19597,7 @@
         "disease:myasthenia gravis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -19298,7 +19629,7 @@
         "theme",
         "disease:systemic lupus"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -19330,7 +19661,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -19363,7 +19694,7 @@
         "disease:systemic lupus",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -19397,7 +19728,7 @@
         "disease:rheumatoid arthritis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -19432,7 +19763,7 @@
         "disease:systemic lupus",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -19466,7 +19797,7 @@
         "disease:rheumatoid arthritis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -19498,7 +19829,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -19531,7 +19862,7 @@
         "disease:myasthenia gravis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -19563,7 +19894,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -19595,7 +19926,7 @@
         "theme",
         "disease:systemic lupus"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -19628,7 +19959,7 @@
         "disease:systemic lupus",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -19660,7 +19991,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -19690,7 +20021,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -19726,7 +20057,7 @@
         "disease:systemic lupus",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -19760,7 +20091,7 @@
         "theme",
         "disease:systemic sclerosis"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -19793,7 +20124,7 @@
         "disease:systemic lupus",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -19828,7 +20159,7 @@
         "theme",
         "disease:systemic sclerosis"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -19861,7 +20192,7 @@
         "theme",
         "disease:systemic sclerosis"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -19893,7 +20224,7 @@
         "disease:systemic sclerosis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -19925,7 +20256,7 @@
         "theme",
         "disease:systemic lupus"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -19958,7 +20289,7 @@
         "disease:myasthenia gravis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -19990,7 +20321,7 @@
         "theme",
         "disease:myositis"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -20023,7 +20354,7 @@
         "disease:systemic lupus",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -20053,7 +20384,7 @@
         "theme",
         "disease:multiple sclerosis"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -20085,7 +20416,7 @@
         "theme",
         "disease:immune thrombocytopenia"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -20119,7 +20450,7 @@
         "disease:rheumatoid arthritis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -20153,7 +20484,7 @@
         "disease:rheumatoid arthritis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -20186,7 +20517,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -20219,7 +20550,7 @@
         "disease:multiple sclerosis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -20253,7 +20584,7 @@
         "theme",
         "disease:systemic lupus"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -20292,7 +20623,7 @@
         "theme",
         "disease:systemic sclerosis"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -20325,7 +20656,7 @@
         "disease:multiple sclerosis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -20358,7 +20689,7 @@
         "disease:rheumatoid arthritis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -20392,7 +20723,7 @@
         "disease:systemic lupus",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -20425,7 +20756,7 @@
         "disease:multiple sclerosis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -20459,7 +20790,7 @@
         "disease:multiple sclerosis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -20492,7 +20823,7 @@
         "disease:rheumatoid arthritis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -20526,7 +20857,7 @@
         "disease:systemic lupus",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -20574,7 +20905,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -20608,7 +20939,7 @@
         "disease:rheumatoid arthritis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -20641,7 +20972,7 @@
         "disease:rheumatoid arthritis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -20674,7 +21005,7 @@
         "disease:myasthenia gravis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -20704,7 +21035,7 @@
         "theme",
         "disease:systemic sclerosis"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -20739,7 +21070,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -20772,7 +21103,7 @@
         "disease:multiple sclerosis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -20806,7 +21137,7 @@
         "disease:systemic lupus",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -20838,7 +21169,7 @@
         "disease:rheumatoid arthritis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -20872,7 +21203,7 @@
         "disease:systemic lupus",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -20905,7 +21236,7 @@
         "disease:systemic sclerosis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -20939,7 +21270,7 @@
         "disease:multiple sclerosis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
@@ -20972,12 +21303,41 @@
         "disease:multiple sclerosis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 6,
       "triage_tier": "持续观察",
       "triage_reasons": [
         "正式注册试验",
         "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT07746453",
+      "title": "An Exploratory Study to Evaluate the Safety and Efficacy of Universal STAR-T Cell Injection in Subjects With Autoimmune Kidney Diseases",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT07746453",
+      "status": "NOT_YET_RECRUITING",
+      "last_update_posted": "2026-08-05",
+      "phase": [
+        "NA"
+      ],
+      "enrollment": 24,
+      "sponsor": "Guangdong Provincial People's Hospital",
+      "conditions": [
+        "IgA Nephropathy (IgAN)、Primary Membranous Nephropathy (PMN)"
+      ],
+      "matched_diseases": [],
+      "matched_entities": [],
+      "query_matches": [
+        "theme",
+        "disease:autoimmune disease"
+      ],
+      "review_status": "待处理",
+      "relevance_score": 4,
+      "triage_tier": "背景材料",
+      "triage_reasons": [
+        "正式注册试验"
       ]
     },
     {
@@ -21002,7 +21362,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 4,
       "triage_tier": "背景材料",
       "triage_reasons": [
@@ -21031,7 +21391,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 4,
       "triage_tier": "背景材料",
       "triage_reasons": [
@@ -21059,7 +21419,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 4,
       "triage_tier": "背景材料",
       "triage_reasons": [
@@ -21091,7 +21451,7 @@
         "disease:myositis",
         "disease:rheumatoid arthritis"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 4,
       "triage_tier": "背景材料",
       "triage_reasons": [
@@ -21121,7 +21481,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 4,
       "triage_tier": "背景材料",
       "triage_reasons": [
@@ -21149,7 +21509,7 @@
         "disease:multiple sclerosis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 4,
       "triage_tier": "背景材料",
       "triage_reasons": [
@@ -21188,7 +21548,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 4,
       "triage_tier": "背景材料",
       "triage_reasons": [
@@ -21218,7 +21578,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 4,
       "triage_tier": "背景材料",
       "triage_reasons": [
@@ -21250,7 +21610,7 @@
         "theme",
         "disease:immune thrombocytopenia"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 4,
       "triage_tier": "背景材料",
       "triage_reasons": [
@@ -21279,7 +21639,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 4,
       "triage_tier": "背景材料",
       "triage_reasons": [
@@ -21310,7 +21670,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 4,
       "triage_tier": "背景材料",
       "triage_reasons": [
@@ -21341,7 +21701,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 4,
       "triage_tier": "背景材料",
       "triage_reasons": [
@@ -21370,7 +21730,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 4,
       "triage_tier": "背景材料",
       "triage_reasons": [
@@ -21399,7 +21759,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 4,
       "triage_tier": "背景材料",
       "triage_reasons": [
@@ -21428,7 +21788,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 4,
       "triage_tier": "背景材料",
       "triage_reasons": [
@@ -21457,7 +21817,7 @@
         "theme",
         "disease:rheumatoid arthritis"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 4,
       "triage_tier": "背景材料",
       "triage_reasons": [
@@ -21487,7 +21847,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 4,
       "triage_tier": "背景材料",
       "triage_reasons": [
@@ -21640,7 +22000,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 4,
       "triage_tier": "背景材料",
       "triage_reasons": [
@@ -21669,7 +22029,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 4,
       "triage_tier": "背景材料",
       "triage_reasons": [
@@ -21700,7 +22060,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 4,
       "triage_tier": "背景材料",
       "triage_reasons": [
@@ -21729,7 +22089,7 @@
         "theme",
         "disease:rheumatoid arthritis"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 4,
       "triage_tier": "背景材料",
       "triage_reasons": [
@@ -21758,7 +22118,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 4,
       "triage_tier": "背景材料",
       "triage_reasons": [
@@ -21794,7 +22154,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 4,
       "triage_tier": "背景材料",
       "triage_reasons": [
@@ -21823,7 +22183,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 4,
       "triage_tier": "背景材料",
       "triage_reasons": [
@@ -21853,7 +22213,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 4,
       "triage_tier": "背景材料",
       "triage_reasons": [
@@ -21882,7 +22242,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 4,
       "triage_tier": "背景材料",
       "triage_reasons": [
@@ -21915,7 +22275,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 4,
       "triage_tier": "背景材料",
       "triage_reasons": [
@@ -21944,7 +22304,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 4,
       "triage_tier": "背景材料",
       "triage_reasons": [
@@ -21973,7 +22333,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 4,
       "triage_tier": "背景材料",
       "triage_reasons": [
@@ -22003,7 +22363,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 4,
       "triage_tier": "背景材料",
       "triage_reasons": [
@@ -22033,7 +22393,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 4,
       "triage_tier": "背景材料",
       "triage_reasons": [
@@ -22070,7 +22430,7 @@
         "theme",
         "disease:rheumatoid arthritis"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 4,
       "triage_tier": "背景材料",
       "triage_reasons": [
@@ -22101,7 +22461,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 4,
       "triage_tier": "背景材料",
       "triage_reasons": [
@@ -22221,7 +22581,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 4,
       "triage_tier": "背景材料",
       "triage_reasons": [
@@ -22254,7 +22614,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 4,
       "triage_tier": "背景材料",
       "triage_reasons": [
@@ -22284,7 +22644,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 4,
       "triage_tier": "背景材料",
       "triage_reasons": [
@@ -22314,7 +22674,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 4,
       "triage_tier": "背景材料",
       "triage_reasons": [
@@ -22343,7 +22703,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 4,
       "triage_tier": "背景材料",
       "triage_reasons": [
@@ -22372,7 +22732,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 4,
       "triage_tier": "背景材料",
       "triage_reasons": [
@@ -22402,7 +22762,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 4,
       "triage_tier": "背景材料",
       "triage_reasons": [
@@ -22432,7 +22792,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 4,
       "triage_tier": "背景材料",
       "triage_reasons": [
@@ -22464,7 +22824,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 4,
       "triage_tier": "背景材料",
       "triage_reasons": [
@@ -22494,7 +22854,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 4,
       "triage_tier": "背景材料",
       "triage_reasons": [
@@ -22523,7 +22883,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 4,
       "triage_tier": "背景材料",
       "triage_reasons": [
@@ -22550,7 +22910,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 4,
       "triage_tier": "背景材料",
       "triage_reasons": [
@@ -22577,7 +22937,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 4,
       "triage_tier": "背景材料",
       "triage_reasons": [
@@ -22606,7 +22966,7 @@
         "theme",
         "disease:myositis"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 4,
       "triage_tier": "背景材料",
       "triage_reasons": [
@@ -22639,7 +22999,7 @@
         "disease:myositis",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 4,
       "triage_tier": "背景材料",
       "triage_reasons": [
@@ -22671,7 +23031,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 4,
       "triage_tier": "背景材料",
       "triage_reasons": [
@@ -22701,7 +23061,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 4,
       "triage_tier": "背景材料",
       "triage_reasons": [
@@ -22730,7 +23090,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 4,
       "triage_tier": "背景材料",
       "triage_reasons": [
@@ -22760,7 +23120,7 @@
         "theme",
         "disease:rheumatoid arthritis"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 4,
       "triage_tier": "背景材料",
       "triage_reasons": [
@@ -22789,7 +23149,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 4,
       "triage_tier": "背景材料",
       "triage_reasons": [
@@ -22818,7 +23178,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 4,
       "triage_tier": "背景材料",
       "triage_reasons": [
@@ -22849,7 +23209,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 4,
       "triage_tier": "背景材料",
       "triage_reasons": [
@@ -22878,7 +23238,7 @@
         "theme",
         "disease:autoimmune disease"
       ],
-      "review_status": "试验登记",
+      "review_status": "待处理",
       "relevance_score": 4,
       "triage_tier": "背景材料",
       "triage_reasons": [
@@ -23957,6 +24317,36 @@
       "doi": "10.1038/d41586-026-00412-3",
       "publication_type": [
         "News"
+      ],
+      "matched_diseases": [
+        "autoimmune disease"
+      ],
+      "matched_entities": [],
+      "query_matches": [
+        "theme"
+      ],
+      "review_status": "待处理",
+      "relevance_score": 2,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "命中1个重点病种"
+      ],
+      "journal_impact_factor": null,
+      "journal_impact_factor_year": null,
+      "journal_impact_factor_source": null
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42561661",
+      "title": "CAR-T cell therapy for autoimmune diseases: from immune suppression to immune resetting.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42561661/",
+      "publication_date": "2026 Aug 6",
+      "journal": "International immunopharmacology",
+      "doi": "10.1016/j.intimp.2026.117231",
+      "publication_type": [
+        "Journal Article",
+        "Review"
       ],
       "matched_diseases": [
         "autoimmune disease"

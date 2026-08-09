@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T14:43:52.057Z",
+  "generated_at": "2026-08-09T23:01:37.774Z",
   "policy": {
     "trial_registration": "ClinicalTrials.gov记录只证明试验登记，不等同于FDA IND获准。",
     "ind_authorization": "IND信息只有FDA正式公告可直接记为FDA确认；企业披露必须标明公司口径。",
@@ -14,7 +14,7 @@
     "failed": 0,
     "labels_found": 8,
     "approved_cell_gene_products": 50,
-    "relevant_cber_updates": 12
+    "relevant_cber_updates": 13
   },
   "sources": [
     {
@@ -23,8 +23,8 @@
       "source_kind": "official_api",
       "status": "ok",
       "url": "https://open.fda.gov/apis/drug/drugsfda/",
-      "last_updated": "2026-07-31",
-      "records_available": 29247,
+      "last_updated": "2026-08-07",
+      "records_available": 29260,
       "scope_note": "Drugs@FDA并不完整覆盖所有细胞和基因治疗产品；相关批准以FDA/CBER产品页为主。"
     },
     {
@@ -41,7 +41,7 @@
       "source_kind": "official_page",
       "status": "ok",
       "url": "https://www.fda.gov/vaccines-blood-biologics/news-events-biologics/whats-new-biologics",
-      "relevant_links": 6
+      "relevant_links": 7
     },
     {
       "id": "fda-cber-safety-2024",
@@ -81,7 +81,7 @@
       "source_kind": "official_api",
       "status": "ok",
       "url": "https://open.fda.gov/apis/drug/label/",
-      "last_updated": "2026-08-03",
+      "last_updated": "2026-08-07",
       "records_checked": 8,
       "records_found": 8,
       "errors": 0
@@ -454,6 +454,12 @@
     }
   ],
   "cber_updates": [
+    {
+      "title": "August 6, 2026 Approval Letter - YESCARTA",
+      "url": "https://www.fda.gov/media/194133/download?attachment",
+      "source": "FDA/CBER",
+      "category": "CBER news"
+    },
     {
       "title": "CBER 2026 Orphan Approvals (new BLAs)",
       "url": "https://www.fda.gov/vaccines-blood-biologics/cber-2026-orphan-approvals-new-blas",

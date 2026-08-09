@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-08-06T14:36:36.424Z",
+  "generated_at": "2026-08-09T23:01:37.937Z",
   "as_of": "2026-08-04",
   "policy_version": "1.0.0",
   "status": "需关注",
-  "score": 77,
+  "score": 78,
   "summary": {
     "total_records": 188,
     "datasets": 6,
     "errors": 0,
-    "warnings": 23,
+    "warnings": 22,
     "verified": 173,
     "internally_reviewed": 14,
     "pending_external_verification": 0,
@@ -17,23 +17,23 @@
       "records_checked": 78,
       "successful": 78,
       "failed": 0,
-      "differences": 0
+      "differences": 1
     },
     "discovery": {
-      "candidates": 809,
-      "research": 250,
-      "trials": 557,
-      "official_updates": 2,
-      "immediate_review": 393,
-      "watchlist": 207,
-      "background": 63,
-      "low_relevance": 146,
-      "trials_registry_only": 557,
-      "candidate_desk_required": 252,
-      "policy_excluded_research": 2308,
+      "candidates": 816,
+      "research": 252,
+      "trials": 560,
+      "official_updates": 4,
+      "immediate_review": 397,
+      "watchlist": 208,
+      "background": 64,
+      "low_relevance": 147,
+      "trials_registry_only": 560,
+      "candidate_desk_required": 256,
+      "policy_excluded_research": 2328,
       "undifferentiated_review_exceptions": 3,
-      "source_failures": 2,
-      "partial_sources": 0,
+      "source_failures": 0,
+      "partial_sources": 1,
       "truncated_sources": 0,
       "missing_sentinels": 0
     },
@@ -49,7 +49,7 @@
       "failed": 0,
       "labels_found": 8,
       "approved_cell_gene_products": 50,
-      "relevant_cber_updates": 12
+      "relevant_cber_updates": 13
     }
   },
   "datasets": [
@@ -261,24 +261,17 @@
     },
     {
       "severity": "warning",
-      "code": "candidate_report_stale",
-      "record_type": "system",
-      "record_id": "-",
-      "message": "候选情报报告已超过2天未刷新"
+      "code": "official_source_difference",
+      "record_type": "trial",
+      "record_id": "ctx112-autoimmune-phase1",
+      "message": "官方来源字段已变化：registry_last_update"
     },
     {
       "severity": "warning",
-      "code": "discovery_source_failed",
+      "code": "discovery_source_partial",
       "record_type": "system",
       "record_id": "-",
-      "message": "候选情报来源访问失败：ClinicalTrials.gov / The operation was aborted due to timeout"
-    },
-    {
-      "severity": "warning",
-      "code": "discovery_source_failed",
-      "record_type": "system",
-      "record_id": "-",
-      "message": "候选情报来源访问失败：CDE 药物临床试验登记与信息公示平台 / 未知错误"
+      "message": "候选情报来源仅部分访问成功：CDE 药物临床试验登记与信息公示平台"
     },
     {
       "severity": "warning",

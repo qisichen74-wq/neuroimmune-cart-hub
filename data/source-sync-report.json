@@ -1,13 +1,22 @@
 {
-  "generated_at": "2026-08-04T15:05:43.181Z",
+  "generated_at": "2026-08-09T23:01:22.179Z",
   "source_policy": "Official APIs are compared with local structured fields; differences require editorial review and are never auto-applied.",
   "summary": {
     "records_checked": 78,
     "successful": 78,
     "failed": 0,
-    "differences": 0
+    "differences": 1
   },
-  "differences": [],
+  "differences": [
+    {
+      "record_type": "trial",
+      "record_id": "ctx112-autoimmune-phase1",
+      "field": "registry_last_update",
+      "local_value": "2026-07-22",
+      "remote_value": "2026-08-07",
+      "source_url": "https://clinicaltrials.gov/study/NCT06925542"
+    }
+  ],
   "checks": [
     {
       "record_type": "trial",
@@ -182,7 +191,7 @@
         "enrollment": 80,
         "study_start": "2025-03-10",
         "estimated_completion": "2031-12-31",
-        "registry_last_update": "2026-07-22"
+        "registry_last_update": "2026-08-07"
       }
     },
     {

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-06T14:36:25.844Z",
+  "generated_at": "2026-08-09T23:01:38.104Z",
   "as_of": "2026-08-04",
   "headline": {
     "id": "pmid-42251699",
@@ -13,8 +13,8 @@
     "formal_records": 188,
     "externally_verified": 173,
     "active_priority_trials": 35,
-    "candidate_items": 809,
-    "quality_score": 77
+    "candidate_items": 816,
+    "quality_score": 78
   },
   "verified_updates": [
     {
@@ -66,9 +66,15 @@
       "failed": 0,
       "labels_found": 8,
       "approved_cell_gene_products": 50,
-      "relevant_cber_updates": 12
+      "relevant_cber_updates": 13
     },
     "updates": [
+      {
+        "title": "August 6, 2026 Approval Letter - YESCARTA",
+        "url": "https://www.fda.gov/media/194133/download?attachment",
+        "source": "FDA/CBER",
+        "category": "CBER news"
+      },
       {
         "title": "CBER 2026 Orphan Approvals (new BLAs)",
         "url": "https://www.fda.gov/vaccines-blood-biologics/cber-2026-orphan-approvals-new-blas",
@@ -108,12 +114,6 @@
       {
         "title": "FDA Eliminates Risk Evaluation and Mitigation Strategies (REMS) for Autologous Chimeric Antigen Receptor (CAR) T cell Immunotherapies",
         "url": "https://www.fda.gov/vaccines-blood-biologics/safety-availability-biologics/fda-eliminates-risk-evaluation-and-mitigation-strategies-rems-autologous-chimeric-antigen-receptor",
-        "source": "FDA/CBER",
-        "category": "CBER safety"
-      },
-      {
-        "title": "FDA Investigating Deaths Due to Acute Liver Failure Following Treatment with Sarepta’s AAVrh74 Gene Therapies",
-        "url": "https://www.fda.gov/vaccines-blood-biologics/safety-availability-biologics/fda-investigating-deaths-due-acute-liver-failure-following-treatment-sareptas-aavrh74-gene-therapies",
         "source": "FDA/CBER",
         "category": "CBER safety"
       }
@@ -364,22 +364,16 @@
       "message": "注册库记录超过180天未更新，当前状态需谨慎解释"
     },
     {
-      "code": "candidate_report_stale",
-      "record_type": "system",
-      "record_id": "-",
-      "message": "候选情报报告已超过2天未刷新"
+      "code": "official_source_difference",
+      "record_type": "trial",
+      "record_id": "ctx112-autoimmune-phase1",
+      "message": "官方来源字段已变化：registry_last_update"
     },
     {
-      "code": "discovery_source_failed",
+      "code": "discovery_source_partial",
       "record_type": "system",
       "record_id": "-",
-      "message": "候选情报来源访问失败：ClinicalTrials.gov / The operation was aborted due to timeout"
-    },
-    {
-      "code": "discovery_source_failed",
-      "record_type": "system",
-      "record_id": "-",
-      "message": "候选情报来源访问失败：CDE 药物临床试验登记与信息公示平台 / 未知错误"
+      "message": "候选情报来源仅部分访问成功：CDE 药物临床试验登记与信息公示平台"
     },
     {
       "code": "regulatory_source_failed",

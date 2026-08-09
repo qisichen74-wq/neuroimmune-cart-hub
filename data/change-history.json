@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T15:05:43.181Z",
+  "generated_at": "2026-08-09T23:01:22.179Z",
   "changes": [
     {
       "detected_at": "2026-07-27T23:33:43.876Z",
@@ -40,6 +40,14 @@
       "field": "registry_last_update",
       "previous_value": "2026-07-08",
       "current_value": "2026-07-29"
+    },
+    {
+      "detected_at": "2026-08-09T23:01:22.179Z",
+      "record_type": "trial",
+      "record_id": "ctx112-autoimmune-phase1",
+      "field": "registry_last_update",
+      "previous_value": "2026-07-22",
+      "current_value": "2026-08-07"
     }
   ]
 }
