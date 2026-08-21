@@ -1,0 +1,87 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-08-21T14:40:28.294Z",
+  "git_revision": "2ffaa0bdc271cfc37460c6ea3fde31348e10816d",
+  "files": [
+    {
+      "path": "data/daily-briefing.json",
+      "sha256": "b0cb1c418b91e4860d9e405ceeb37b9be6daf1459a9b3664c211148dc43d2f58",
+      "bytes": 35650
+    },
+    {
+      "path": "data/deal-events.json",
+      "sha256": "17599e4b8e8802216d83be3977466475379656eec7dfbdd782600dfffb47fbd8",
+      "bytes": 2948
+    },
+    {
+      "path": "data/deals.json",
+      "sha256": "f1e33eae0ff4d98efae92f50a97551dff22dc2098282743cff06dca97eec8e47",
+      "bytes": 10773
+    },
+    {
+      "path": "data/events.json",
+      "sha256": "a84221116ddcf20da2eebf91de875be60683855ee6e3f613622009c949991d08",
+      "bytes": 42080
+    },
+    {
+      "path": "data/feed.json",
+      "sha256": "23488e2adf50d36d10915445a71c4cf90b4c753639ea27512e3b37d5dfff953b",
+      "bytes": 45969
+    },
+    {
+      "path": "data/investor-summary.json",
+      "sha256": "16c643d881f11c160bf7f0542db6cb85e5115a5a3e007ae7039146f9790c56b4",
+      "bytes": 980
+    },
+    {
+      "path": "data/landscape.json",
+      "sha256": "496314223081e58cd7880291ec6a61dc2c23e7001c71771baf1c8bfc18ff917d",
+      "bytes": 38954
+    },
+    {
+      "path": "data/organizations.json",
+      "sha256": "ebbe2aabde51696455f9f90b708a2fc7be36299b099f2d209a71452d79a4dff1",
+      "bytes": 2810
+    },
+    {
+      "path": "data/programs.json",
+      "sha256": "1244caa28cf78ab9479324369f791c474e03ff130c99d1dcb83e72237b45d038",
+      "bytes": 2140
+    },
+    {
+      "path": "data/relations.json",
+      "sha256": "2a5a5e0957fe4e7a9b90daeed6c0464ef22b370dfecd95bff8c1f38ee12360a8",
+      "bytes": 24143
+    },
+    {
+      "path": "data/safety.json",
+      "sha256": "b57f51d38adbd7acbf091ec25215f6cc7b221c6b1fe08db52c8d477dade05000",
+      "bytes": 8560
+    },
+    {
+      "path": "data/search-index.json",
+      "sha256": "93d9a550543bf93e02dd1e2d692b55b25d26dae44c005411be47155c312a2dab",
+      "bytes": 9550
+    },
+    {
+      "path": "data/sources.json",
+      "sha256": "27a9ecf2953e3da5f8c1d780e636e7fa1e65d01a418978f316fcb3e7d0ae7a1f",
+      "bytes": 9956
+    },
+    {
+      "path": "data/topics.json",
+      "sha256": "ff3333443ae8808adb0065d20e354aadddcbcbe69a015aafed9dbdd6b637905d",
+      "bytes": 43490
+    },
+    {
+      "path": "data/trials.json",
+      "sha256": "dc0d208be22557199d85024c0d374d71b404226158853964fad55bfe069478c4",
+      "bytes": 79059
+    },
+    {
+      "path": "data/verification.json",
+      "sha256": "0f33c4893875dc48d2826a712625fb03482654dfc8f217cb0757353f557704ec",
+      "bytes": 122438
+    }
+  ]
+}

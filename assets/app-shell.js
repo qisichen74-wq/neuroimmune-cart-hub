@@ -5,7 +5,7 @@
 
   const englishUi = {
     "神经免疫 CAR-T 情报工作台": "Autoimmune CAR-T Intelligence Hub", "自身免疫 CAR-T 情报工作台": "Autoimmune CAR-T Intelligence Hub", "自身免疫CAR-T情报工作台": "Autoimmune CAR-T Intelligence Hub",
-    "首页": "Home", "专题档案": "Dossiers", "疾病专题": "Disease dossiers", "自身免疫疾病专题": "Autoimmune disease dossiers", "专题报道与档案": "Special reports and dossiers", "专题报道": "Special report", "候选工作台": "Candidate desk", "候选处理台": "Candidate desk", "研究情报": "Research", "竞争格局": "Landscape",
+    "首页": "Home", "专题档案": "Dossiers", "疾病专题": "Disease dossiers", "自身免疫疾病专题": "Autoimmune disease dossiers", "专题报道与档案": "Special reports and dossiers", "专题报道": "Special report", "候选工作台": "Candidate desk", "候选处理台": "Candidate desk", "研究情报": "Research", "竞争格局": "Landscape", "资本与交易": "Capital & deals",
     "项目对比": "Category Search", "分类检索": "Category Search", "变化历史": "Changes", "候选池": "Watchlist", "检索": "Search",
     "全局检索": "Global search", "数据质量": "Data quality", "质量未知": "Quality unavailable",
     "适应症档案": "Indication dossiers", "研究证据": "Research evidence", "竞争对象": "Programs",
@@ -189,6 +189,7 @@
     ["疾病专题", "topics.html", "primary"],
     ["研究情报", "research.html", "primary"],
     ["竞争格局", "landscape.html", "primary"],
+    ["资本与交易", "deals.html", "primary"],
     ["分类检索", "comparison.html", "primary"]
   ];
   const internalNavigation = [
@@ -293,6 +294,7 @@
       return { research: "research.html", company: "landscape.html", trial: "comparison.html" }[type] || "";
     }
     if (currentFile === "topic.html") return "topics.html";
+    if (["deal.html", "company.html"].includes(currentFile)) return "deals.html";
     return currentFile;
   })();
 

@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0.0",
+  "as_of": "2026-08-21",
+  "verified_at": "2026-08-21",
+  "records": [
+    {"id":"program-azd0120","name":"AZD0120","aliases":["GC012F"],"owner_org_id":"org-astrazeneca","technology":"自体FasTCAR-T","targets":["CD19","BCMA"],"indications":["SLE"],"status":"clinical","related_trial_ids":["azd0120-sle-phase12"],"related_company_ids":[],"source_ids":["astrazeneca-primary"]},
+    {"id":"program-descartes08","name":"Descartes-08","aliases":[],"owner_org_id":"org-cartesian","technology":"自体mRNA CAR-T","targets":["BCMA"],"indications":["MG","IIM"],"status":"clinical","related_trial_ids":["descartes08-mg-rct","cartesian-descartes08-myositis-phase2"],"related_company_ids":["cartesian-descartes08"],"source_ids":["cartesian-ir"]},
+    {"id":"program-resecel","name":"rese-cel","aliases":["CABA-201"],"owner_org_id":"org-cabaletta","technology":"自体CAR-T","targets":["CD19"],"indications":["MG","IIM","MS"],"status":"clinical","related_trial_ids":["cabaletta-resecel-mg-phase12","cabaletta-resecel-ms-phase12","cabaletta-resecel-myositis"],"related_company_ids":["cabaletta-resecel"],"source_ids":["cabaletta-primary"]},
+    {"id":"program-mivcel","name":"miv-cel","aliases":["KYV-101"],"owner_org_id":"org-kyverna","technology":"自体CAR-T","targets":["CD19"],"indications":["MG","MS"],"status":"clinical","related_trial_ids":["kyv101-ms-phase1","kyv101-mg-kysa6-phase23","kyv101-autoimmune-ltfu"],"related_company_ids":["kyverna-kyv101"],"source_ids":["kyverna-ir"]},
+    {"id":"program-kite363","name":"KITE-363","aliases":[],"owner_org_id":"org-kite","technology":"自体CAR-T","targets":["CD19","BCMA"],"indications":["SLE","MS","SSc"],"status":"clinical","related_trial_ids":["kite363-neuro-phase1"],"related_company_ids":["gilead-kite363"],"source_ids":["gilead-primary"]},
+    {"id":"program-bms986353","name":"BMS-986353","aliases":["CC-97540"],"owner_org_id":"org-bms","technology":"自体CAR-T","targets":["CD19"],"indications":["SLE","SSc","IIM","MS"],"status":"clinical","related_trial_ids":["cc97540-breakfree2"],"related_company_ids":["bms-cc97540"],"source_ids":["bms-primary"]}
+  ]
+}

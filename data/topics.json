@@ -52,6 +52,7 @@
         "miltenyi-mbcart20191-ms-phase12a",
         "tr1x-trx319-impact-ms",
         "tongji-rd0605-neuro-iit",
+        "sys6020-ms-phase12",
         "ct103a-neuro-autoimmune-phase1",
         "hadassah-hbi0101-autoimmune",
         "renji-c-car168-autoimmune",
@@ -234,6 +235,7 @@
         "adicet-prulacel-autoimmune-phase1",
         "changhai-kn3601-autoimmune",
         "gustaveroussy-cellattack1-autoimmune"
+        ,"nkx019-immune-mediated-phase12"
       ]
     },
     "i18n": {
@@ -737,7 +739,7 @@
     "related": {
       "research": ["pmid-42414128", "pmid-41935952", "pmid-41644365", "pmid-41612420", "pmid-41240964", "pmid-42167622"],
       "company": ["cabaletta-resecel", "icell-icg318-autoimmune", "crispr-ctx112", "fate-ft819", "allogene-allo329", "adicet-prulacel", "iaso-equecel-autoimmune", "miltenyi-zamtocel", "magicrna-hn2302", "changhai-kn3601"],
-      "trial": ["icell-icg318-sle-phase12", "ctx112-autoimmune-phase1", "ft819-autoimmune-phase1", "allo329-autoimmune-phase1", "zamtocel-autoimmune-phase1", "magicrna-hn2302-autoimmune", "adicet-prulacel-autoimmune-phase1", "changhai-kn3601-autoimmune", "gustaveroussy-cellattack1-autoimmune", "academic-cd19-autoimmune-series"]
+      "trial": ["icell-icg318-sle-phase12", "ctx112-autoimmune-phase1", "ft819-autoimmune-phase1", "allo329-autoimmune-phase1", "zamtocel-autoimmune-phase1", "magicrna-hn2302-autoimmune", "adicet-prulacel-autoimmune-phase1", "changhai-kn3601-autoimmune", "gustaveroussy-cellattack1-autoimmune", "academic-cd19-autoimmune-series", "azd0120-sle-phase12"]
     },
     "i18n": {
       "en": {

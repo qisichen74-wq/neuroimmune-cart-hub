@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-09T23:01:38.104Z",
-  "as_of": "2026-08-04",
+  "generated_at": "2026-08-17T13:47:56.415Z",
+  "as_of": "2026-08-10",
   "headline": {
     "id": "pmid-42251699",
     "title": "CAR-T细胞疗法使合并CNS受累CLL与多发性硬化患者获得完全缓解",
@@ -11,10 +11,10 @@
   },
   "snapshot": {
     "formal_records": 188,
-    "externally_verified": 173,
+    "externally_verified": 133,
     "active_priority_trials": 35,
-    "candidate_items": 816,
-    "quality_score": 78
+    "candidate_items": 809,
+    "quality_score": 0
   },
   "verified_updates": [
     {
@@ -188,6 +188,16 @@
   },
   "trial_watch": [
     {
+      "id": "ctx112-autoimmune-phase1",
+      "name": "CTX112 in Refractory Autoimmune Disease",
+      "product": "CTX112",
+      "indication": "SLE / LN / SSc / IIM",
+      "status": "Recruiting",
+      "enrollment": 80,
+      "last_update": "2026-08-07",
+      "registry_url": "https://clinicaltrials.gov/study/NCT06925542"
+    },
+    {
       "id": "cc97540-breakfree2",
       "name": "Breakfree-2: CC-97540 in MS and Refractory MG",
       "product": "CC-97540 / BMS-986353",
@@ -228,16 +238,6 @@
       "registry_url": "https://clinicaltrials.gov/study/NCT06154252"
     },
     {
-      "id": "ctx112-autoimmune-phase1",
-      "name": "CTX112 in Refractory Autoimmune Disease",
-      "product": "CTX112",
-      "indication": "SLE / LN / SSc / IIM",
-      "status": "Recruiting",
-      "enrollment": 80,
-      "last_update": "2026-07-22",
-      "registry_url": "https://clinicaltrials.gov/study/NCT06925542"
-    },
-    {
       "id": "icell-icg318-iim-phase1",
       "name": "ICG318 in Refractory Inflammatory Myopathy",
       "product": "ICG318",
@@ -271,6 +271,18 @@
       "code": "registry_record_stale",
       "record_type": "trial",
       "record_id": "sys6020-mg-phase1",
+      "message": "注册库记录超过180天未更新，当前状态需谨慎解释"
+    },
+    {
+      "code": "registry_record_stale",
+      "record_type": "trial",
+      "record_id": "qt019c-neuro-phase1",
+      "message": "注册库记录超过180天未更新，当前状态需谨慎解释"
+    },
+    {
+      "code": "registry_record_stale",
+      "record_type": "trial",
+      "record_id": "ti0032-invivo-autoimmune",
       "message": "注册库记录超过180天未更新，当前状态需谨慎解释"
     },
     {
@@ -342,6 +354,12 @@
     {
       "code": "registry_record_stale",
       "record_type": "trial",
+      "record_id": "kyv101-autoimmune-ltfu",
+      "message": "注册库记录超过180天未更新，当前状态需谨慎解释"
+    },
+    {
+      "code": "registry_record_stale",
+      "record_type": "trial",
       "record_id": "ct103a-neuro-autoimmune-phase1",
       "message": "注册库记录超过180天未更新，当前状态需谨慎解释"
     },
@@ -364,10 +382,466 @@
       "message": "注册库记录超过180天未更新，当前状态需谨慎解释"
     },
     {
+      "code": "safety_evidence_stale",
+      "record_type": "safety",
+      "record_id": "signal-crs-early",
+      "message": "安全证据已超过复核周期"
+    },
+    {
+      "code": "safety_evidence_stale",
+      "record_type": "safety",
+      "record_id": "signal-neurotoxicity",
+      "message": "安全证据已超过复核周期"
+    },
+    {
+      "code": "safety_evidence_stale",
+      "record_type": "safety",
+      "record_id": "signal-infection",
+      "message": "安全证据已超过复核周期"
+    },
+    {
+      "code": "safety_evidence_stale",
+      "record_type": "safety",
+      "record_id": "signal-hypogammaglobulinemia",
+      "message": "安全证据已超过复核周期"
+    },
+    {
+      "code": "safety_evidence_stale",
+      "record_type": "safety",
+      "record_id": "signal-cytopenia",
+      "message": "安全证据已超过复核周期"
+    },
+    {
+      "code": "safety_evidence_stale",
+      "record_type": "safety",
+      "record_id": "signal-autoimmune-flare",
+      "message": "安全证据已超过复核周期"
+    },
+    {
+      "code": "safety_evidence_stale",
+      "record_type": "safety",
+      "record_id": "signal-secondary-malignancy",
+      "message": "安全证据已超过复核周期"
+    },
+    {
+      "code": "safety_evidence_stale",
+      "record_type": "safety",
+      "record_id": "signal-fertility",
+      "message": "安全证据已超过复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "research",
+      "record_id": "pmid-42414128",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "research",
+      "record_id": "pmid-42295377",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "research",
+      "record_id": "pmid-42286319",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "research",
+      "record_id": "pmid-42251699",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "research",
+      "record_id": "pmid-42223209",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "research",
+      "record_id": "pmid-42167622",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "research",
+      "record_id": "pmid-42171443",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "research",
+      "record_id": "pmid-41935952",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "research",
+      "record_id": "pmid-41747738",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "research",
+      "record_id": "pmid-41644365",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "research",
+      "record_id": "pmid-41612420",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "research",
+      "record_id": "pmid-41514038",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "research",
+      "record_id": "pmid-41514039",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "research",
+      "record_id": "pmid-41240964",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "research",
+      "record_id": "pmid-41245531",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "research",
+      "record_id": "pmid-41101309",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "research",
+      "record_id": "pmid-40856088",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "research",
+      "record_id": "pmid-38554710",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "research",
+      "record_id": "pmid-38409527",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "research",
+      "record_id": "pmid-37353278",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "research",
+      "record_id": "pmid-36596762",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "research",
+      "record_id": "pmid-38728414",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "research",
+      "record_id": "pmid-40425008",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "research",
+      "record_id": "pmid-40706586",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "research",
+      "record_id": "pmid-42028700",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "research",
+      "record_id": "pmid-37918394",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "research",
+      "record_id": "pmid-38381673",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "research",
+      "record_id": "pmid-36930673",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "research",
+      "record_id": "pmid-39245937",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "research",
+      "record_id": "pmid-40245922",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "research",
+      "record_id": "pmid-40268741",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "tangdu-cd19bcma-mg-iit",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "safety",
+      "record_id": "signal-crs-early",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "safety",
+      "record_id": "signal-neurotoxicity",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "safety",
+      "record_id": "signal-infection",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "safety",
+      "record_id": "signal-hypogammaglobulinemia",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "safety",
+      "record_id": "signal-cytopenia",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "safety",
+      "record_id": "signal-autoimmune-flare",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "safety",
+      "record_id": "signal-secondary-malignancy",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "safety",
+      "record_id": "signal-fertility",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-monitor-kyv101",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-monitor-descartes",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-safety-infection",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-safety-longterm",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-kyverna-elevatebio-supply",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "topic",
+      "record_id": "multiple-sclerosis",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "topic",
+      "record_id": "myasthenia-gravis",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "topic",
+      "record_id": "systemic-sclerosis",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "topic",
+      "record_id": "neuromyelitis-optica-spectrum-disorder",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "topic",
+      "record_id": "autoimmune-encephalitis",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "topic",
+      "record_id": "chronic-inflammatory-demyelinating-polyneuropathy",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "topic",
+      "record_id": "idiopathic-inflammatory-myopathy",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "topic",
+      "record_id": "systemic-lupus-erythematosus",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "topic",
+      "record_id": "autoimmune-associated-interstitial-lung-disease",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "code": "verification_stale",
+      "record_type": "topic",
+      "record_id": "rheumatoid-arthritis",
+      "message": "已超过 30 天复核周期"
+    },
+    {
       "code": "official_source_difference",
       "record_type": "trial",
-      "record_id": "ctx112-autoimmune-phase1",
+      "record_id": "kyv101-ms-phase1",
       "message": "官方来源字段已变化：registry_last_update"
+    },
+    {
+      "code": "official_source_difference",
+      "record_type": "trial",
+      "record_id": "sys6020-mg-phase1",
+      "message": "官方来源字段已变化：enrollment"
+    },
+    {
+      "code": "official_source_difference",
+      "record_type": "trial",
+      "record_id": "sys6020-mg-phase1",
+      "message": "官方来源字段已变化：study_start"
+    },
+    {
+      "code": "official_source_difference",
+      "record_type": "trial",
+      "record_id": "sys6020-mg-phase1",
+      "message": "官方来源字段已变化：registry_last_update"
+    },
+    {
+      "code": "official_source_difference",
+      "record_type": "trial",
+      "record_id": "kite363-neuro-phase1",
+      "message": "官方来源字段已变化：registry_last_update"
+    },
+    {
+      "code": "official_source_difference",
+      "record_type": "trial",
+      "record_id": "magicrna-hn2302-autoimmune",
+      "message": "官方来源字段已变化：study_start"
+    },
+    {
+      "code": "official_source_difference",
+      "record_type": "trial",
+      "record_id": "magicrna-hn2302-autoimmune",
+      "message": "官方来源字段已变化：registry_last_update"
+    },
+    {
+      "code": "official_source_difference",
+      "record_type": "trial",
+      "record_id": "cabaletta-resecel-mg-phase12",
+      "message": "官方来源字段已变化：status"
+    },
+    {
+      "code": "official_source_difference",
+      "record_type": "trial",
+      "record_id": "cabaletta-resecel-mg-phase12",
+      "message": "官方来源字段已变化：enrollment"
+    },
+    {
+      "code": "official_source_difference",
+      "record_type": "trial",
+      "record_id": "cabaletta-resecel-mg-phase12",
+      "message": "官方来源字段已变化：registry_last_update"
+    },
+    {
+      "code": "official_source_difference",
+      "record_type": "trial",
+      "record_id": "cartesian-descartes08-myositis-phase2",
+      "message": "官方来源字段已变化：registry_last_update"
+    },
+    {
+      "code": "candidate_report_stale",
+      "record_type": "system",
+      "record_id": "-",
+      "message": "候选情报报告已超过2天未刷新"
+    },
+    {
+      "code": "discovery_source_failed",
+      "record_type": "system",
+      "record_id": "-",
+      "message": "候选情报来源访问失败：ClinicalTrials.gov / TypeError / ENOTFOUND / getaddrinfo ENOTFOUND clinicaltrials.gov / fetch failed"
+    },
+    {
+      "code": "discovery_source_failed",
+      "record_type": "system",
+      "record_id": "-",
+      "message": "候选情报来源访问失败：NCBI PubMed / TypeError / ENOTFOUND / getaddrinfo ENOTFOUND eutils.ncbi.nlm.nih.gov / fetch failed"
     },
     {
       "code": "discovery_source_partial",
@@ -376,10 +850,82 @@
       "message": "候选情报来源仅部分访问成功：CDE 药物临床试验登记与信息公示平台"
     },
     {
+      "code": "discovery_source_failed",
+      "record_type": "system",
+      "record_id": "-",
+      "message": "候选情报来源访问失败：Cabaletta Bio Pipeline & Press Releases / 未知错误"
+    },
+    {
+      "code": "discovery_sentinel_missing",
+      "record_type": "system",
+      "record_id": "-",
+      "message": "漏检哨兵未命中：Cabaletta Bio Pipeline & Press Releases / https://www.cabalettabio.com/investors/news-events/press-releases/detail/148/cabaletta-bio-reports-first-quarter-2026-financial-results"
+    },
+    {
+      "code": "discovery_source_failed",
+      "record_type": "system",
+      "record_id": "-",
+      "message": "候选情报来源访问失败：Cartesian Therapeutics Pipeline & Press Releases / 未知错误"
+    },
+    {
+      "code": "discovery_sentinel_missing",
+      "record_type": "system",
+      "record_id": "-",
+      "message": "漏检哨兵未命中：Cartesian Therapeutics Pipeline & Press Releases / https://ir.cartesiantherapeutics.com/news-releases/news-release-details/cartesian-therapeutics-secures-150-million-non-dilutive"
+    },
+    {
+      "code": "discovery_source_failed",
+      "record_type": "system",
+      "record_id": "-",
+      "message": "候选情报来源访问失败：IASO Bio Official News & Pipeline / 未知错误"
+    },
+    {
+      "code": "discovery_sentinel_missing",
+      "record_type": "system",
+      "record_id": "-",
+      "message": "漏检哨兵未命中：IASO Bio Official News & Pipeline / https://www.iasobio.com/info.php?id=251"
+    },
+    {
+      "code": "discovery_source_failed",
+      "record_type": "system",
+      "record_id": "-",
+      "message": "候选情报来源访问失败：iCell Gene Therapeutics Official Website / 未知错误"
+    },
+    {
+      "code": "discovery_source_failed",
+      "record_type": "system",
+      "record_id": "-",
+      "message": "候选情报来源访问失败：Kyverna Pipeline & Press Releases / 未知错误"
+    },
+    {
+      "code": "discovery_sentinel_missing",
+      "record_type": "system",
+      "record_id": "-",
+      "message": "漏检哨兵未命中：Kyverna Pipeline & Press Releases / https://ir.kyvernatx.com/news-releases/news-release-details/kyverna-presents-registrational-trial-primary-analysis-miv-cel"
+    },
+    {
+      "code": "discovery_source_failed",
+      "record_type": "system",
+      "record_id": "-",
+      "message": "候选情报来源访问失败：Miltenyi Biomedicine Official Website / 未知错误"
+    },
+    {
+      "code": "discovery_source_failed",
+      "record_type": "system",
+      "record_id": "-",
+      "message": "候选情报来源访问失败：Tr1X Official Website / 未知错误"
+    },
+    {
       "code": "regulatory_source_failed",
       "record_type": "system",
       "record_id": "-",
       "message": "监管来源访问失败：国家药品监督管理局"
+    },
+    {
+      "code": "fda_report_stale",
+      "record_type": "system",
+      "record_id": "-",
+      "message": "FDA官方来源监测报告已超过2天未刷新"
     }
   ],
   "candidate_queue": [

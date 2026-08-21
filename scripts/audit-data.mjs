@@ -12,11 +12,16 @@ const definitions = {
   trial: { file: "data/trials.json", label: "临床试验", required: ["id", "trial_name", "sponsor", "product", "indication", "priority", "status"] },
   safety: { file: "data/safety.json", label: "安全信号", required: ["id", "signal", "category", "severity", "status", "evidence_level", "related_trials", "source_refs", "verification_scope", "last_evidence_review"] },
   event: { file: "data/events.json", label: "动态事件", required: ["id", "date", "event_type", "title", "priority", "source_label", "entities"] },
-  topic: { file: "data/topics.json", label: "专题档案", required: ["id", "name", "kind", "priority", "thesis", "related"] }
+  topic: { file: "data/topics.json", label: "专题档案", required: ["id", "name", "kind", "priority", "thesis", "related"] },
+  organization: { file: "data/organizations.json", label: "机构主体", required: ["id", "name", "kind", "status", "source_ids"] },
+  program: { file: "data/programs.json", label: "研发项目", required: ["id", "name", "owner_org_id", "technology", "targets", "indications", "status", "source_ids"] },
+  deal: { file: "data/deals.json", label: "资本交易", required: ["id", "title", "deal_type", "status", "announced_date", "parties", "terms", "investor_relevance", "source_ids", "evidence"] },
+  deal_event: { file: "data/deal-events.json", label: "交易节点", required: ["id", "deal_id", "date", "event_type", "title", "source_ids"] }
 };
 
 const loadJson = async (file) => JSON.parse(await readFile(path.join(root, file), "utf8"));
-const datasets = Object.fromEntries(await Promise.all(Object.entries(definitions).map(async ([type, definition]) => [type, await loadJson(definition.file)])));
+const datasetPayloads = Object.fromEntries(await Promise.all(Object.entries(definitions).map(async ([type, definition]) => [type, await loadJson(definition.file)])));
+const datasets = Object.fromEntries(Object.entries(datasetPayloads).map(([type, payload]) => [type, Array.isArray(payload) ? payload : payload.records]));
 const relations = await loadJson("data/relations.json");
 const sources = await loadJson("data/sources.json");
 const verification = await loadJson("data/verification.json");
@@ -96,6 +101,45 @@ for (const company of datasets.company) {
   if (company.source_url && !validUrl(company.source_url)) addIssue("error", "invalid_company_source", "公司一手来源链接无效", "company", company.id);
 }
 
+for (const organization of datasets.organization) {
+  for (const field of ["parent_org_id", "successor_org_id"]) {
+    if (organization[field] && !idSets.organization.has(organization[field])) addIssue("error", "broken_organization_reference", `${field} 指向不存在的机构：${organization[field]}`, "organization", organization.id);
+  }
+}
+
+for (const program of datasets.program) {
+  if (!idSets.organization.has(program.owner_org_id)) addIssue("error", "broken_program_owner", `项目所有者不存在：${program.owner_org_id}`, "program", program.id);
+  for (const trialId of program.related_trial_ids || []) if (!idSets.trial.has(trialId)) addIssue("error", "broken_program_trial", `项目关联试验不存在：${trialId}`, "program", program.id);
+  for (const companyId of program.related_company_ids || []) if (!idSets.company.has(companyId)) addIssue("error", "broken_program_company", `项目关联竞争对象不存在：${companyId}`, "program", program.id);
+}
+
+for (const deal of datasets.deal) {
+  const announced = parseDate(deal.announced_date);
+  const closed = deal.closed_date ? parseDate(deal.closed_date) : null;
+  if (!announced) addIssue("error", "invalid_deal_date", "交易公告日期格式错误", "deal", deal.id);
+  else if (announced > today) addIssue("error", "future_deal_date", "交易公告日期晚于当前日期", "deal", deal.id);
+  if (deal.closed_date && !closed) addIssue("error", "invalid_deal_close_date", "交易完成日期格式错误", "deal", deal.id);
+  if (announced && closed && closed < announced) addIssue("error", "deal_date_order", "交易完成日期早于公告日期", "deal", deal.id);
+  if (deal.status === "completed" && !closed) addIssue("error", "completed_deal_without_close", "已完成交易缺少完成日期", "deal", deal.id);
+  for (const party of deal.parties || []) if (!idSets.organization.has(party.org_id)) addIssue("error", "broken_deal_party", `交易参与方不存在：${party.org_id}`, "deal", deal.id);
+  for (const programId of deal.program_ids || []) if (!idSets.program.has(programId)) addIssue("error", "broken_deal_program", `交易关联项目不存在：${programId}`, "deal", deal.id);
+  const paid = deal.terms?.paid_or_funded_millions;
+  const potential = deal.terms?.potential_total_millions;
+  if (paid != null && potential != null && potential < paid) addIssue("error", "deal_amount_order", "潜在总额低于已支付或已到账金额", "deal", deal.id);
+  if (deal.terms?.disclosure === "undisclosed" && [paid, potential, deal.terms?.contingent_millions].some((value) => value != null)) addIssue("error", "undisclosed_deal_has_amount", "未披露交易不应录入金额", "deal", deal.id);
+  for (const evidence of deal.evidence || []) {
+    if (!validUrl(evidence.url)) addIssue("error", "invalid_deal_evidence_url", "交易证据链接无效", "deal", deal.id);
+    if (!parseDate(evidence.publication_date)) addIssue("error", "invalid_deal_evidence_date", "交易证据发布日期格式错误", "deal", deal.id);
+  }
+}
+
+for (const event of datasets.deal_event) {
+  if (!idSets.deal.has(event.deal_id)) addIssue("error", "broken_deal_event", `交易节点指向不存在的交易：${event.deal_id}`, "deal_event", event.id);
+  const eventDate = parseDate(event.date);
+  if (!eventDate) addIssue("error", "invalid_deal_event_date", "交易节点日期格式错误", "deal_event", event.id);
+  else if (eventDate > today) addIssue("error", "future_deal_event_date", "交易节点日期晚于当前日期", "deal_event", event.id);
+}
+
 for (const signal of datasets.safety) {
   const reviewDate = parseDate(signal.last_evidence_review);
   if (!reviewDate) addIssue("error", "invalid_safety_review_date", "安全证据复核日期格式错误", "safety", signal.id);
@@ -145,13 +189,21 @@ for (const source of sources) {
   if (source.url && !validUrl(source.url) && !source.url.endsWith(".html")) addIssue("warning", "invalid_registry_url", "来源登记链接无效", "source", source.id);
 }
 
+for (const type of ["organization", "program", "deal", "deal_event"]) {
+  for (const record of datasets[type]) {
+    for (const sourceId of record.source_ids || []) if (!sourceIds.has(sourceId)) addIssue("error", "unknown_entity_source", `来源未登记：${sourceId}`, type, record.id);
+  }
+}
+
 const overrides = new Map(verification.records.map((record) => [`${record.record_type}:${record.record_id}`, record]));
 const verificationRows = [];
 let staleCount = 0;
 for (const [type, records] of Object.entries(datasets)) {
   for (const record of records) {
     const override = overrides.get(`${type}:${record.id}`);
-    const resolved = { record_type: type, record_id: record.id, ...(verification.defaults[type] || {}), ...(override || {}) };
+    const collectionVerifiedAt = !Array.isArray(datasetPayloads[type]) ? datasetPayloads[type].verified_at : null;
+    const embeddedVerification = collectionVerifiedAt && record.source_ids?.length ? { status: "已核验", confidence: "高", source_ids: record.source_ids, last_verified_at: collectionVerifiedAt } : {};
+    const resolved = { record_type: type, record_id: record.id, ...(verification.defaults[type] || {}), ...embeddedVerification, ...(override || {}) };
     const maxAge = verification.freshness_policy_days[type];
     let stale = false;
     if (resolved.last_verified_at) {

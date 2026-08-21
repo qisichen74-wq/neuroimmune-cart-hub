@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-09T23:01:22.179Z",
+  "generated_at": "2026-08-17T13:58:28.963Z",
   "records": {
     "trial:kyv101-ms-phase1": {
       "official_title": "Phase 1, Open-Label, Single Center Study of KYV-101, an Autologous Fully-Human Anti-CD19 Chimeric Antigen Receptor T Cell (CD19 CAR T) Therapy, in Participants With Treatment Refractory Progressive Multiple Sclerosis",
@@ -8,7 +8,7 @@
       "enrollment": 10,
       "study_start": "2024-06-20",
       "estimated_completion": "2027-02",
-      "registry_last_update": "2026-01-23"
+      "registry_last_update": "2026-08-10"
     },
     "trial:kyv101-mg-kysa6-phase23": {
       "official_title": "KYSA-6: A Phase 2/3, Open-Label, Randomized, Controlled, Multicenter Study of KYV-101, an Autologous Fully Human Anti-CD19 Chimeric Antigen Receptor T-cell (CD19 CAR T) Therapy, Versus Ongoing Standard-Of-Care Immunosuppressive Therapy in Patients With Generalized Myasthenia Gravis",
@@ -59,10 +59,10 @@
       "official_title": "A Phase I Study to Evaluate BCMA-targeted Chimeric Antigen Receptor T Cell (SYS6020 Injection) in Patients With Refractory Generalized Myasthenia Gravis",
       "sponsor": "CSPC ZhongQi Pharmaceutical Technology Co., Ltd.",
       "status": "RECRUITING",
-      "enrollment": 50,
-      "study_start": "2025-01-08",
+      "enrollment": 60,
+      "study_start": "2025-03-04",
       "estimated_completion": "2033-05-01",
-      "registry_last_update": "2025-08-06"
+      "registry_last_update": "2026-08-12"
     },
     "trial:kite363-neuro-phase1": {
       "official_title": "A Phase 1 Open-label, Multiregional, Multicenter, Basket Study Evaluating the Safety and Efficacy of KITE-363, an Autologous Anti-CD19/CD20 CAR T-cell Therapy in Participants With Relapsed/Refractory Autoimmune Neurologic Diseases",
@@ -71,7 +71,7 @@
       "enrollment": 52,
       "study_start": "2026-04-10",
       "estimated_completion": "2029-06",
-      "registry_last_update": "2026-07-01"
+      "registry_last_update": "2026-08-14"
     },
     "trial:cc97540-breakfree2": {
       "official_title": "A Phase 1, Multicenter, Single-arm, Dose-escalation Study of CC-97540 (BMS-986353), CD19-Targeted NEX-T Chimeric Antigen Receptor (CAR) T Cells, Evaluating Safety and Tolerability in Participants With Autoimmune Neurological Diseases: Relapsing Forms of Multiple Sclerosis (RMS), Progressive Forms of Multiple Sclerosis (PMS), or Refractory Myasthenia Gravis (MG).",
@@ -168,9 +168,9 @@
       "sponsor": "Shenzhen MagicRNA Biotechnology Co., Ltd",
       "status": "NOT_YET_RECRUITING",
       "enrollment": 12,
-      "study_start": "2026-04-28",
+      "study_start": "2026-12-31",
       "estimated_completion": "2028-06-30",
-      "registry_last_update": "2026-04-14"
+      "registry_last_update": "2026-08-12"
     },
     "trial:arcellx-anitocel-mg-phase1": {
       "official_title": "A Phase 1 Study of Anitocabtagene Autoleucel for the Treatment of Subjects With Non-oncology Plasma Cell-related Diseases",
@@ -247,11 +247,11 @@
     "trial:cabaletta-resecel-mg-phase12": {
       "official_title": "RESET-MG: A Phase 1/2, Open-Label Study to Evaluate the Safety and Efficacy of Autologous CD19-specific Chimeric Antigen Receptor T Cells (CABA-201) in Participants With Generalized Myasthenia Gravis",
       "sponsor": "Cabaletta Bio",
-      "status": "ACTIVE_NOT_RECRUITING",
-      "enrollment": 12,
+      "status": "RECRUITING",
+      "enrollment": 24,
       "study_start": "2024-12-17",
       "estimated_completion": "2029-09",
-      "registry_last_update": "2026-05-18"
+      "registry_last_update": "2026-08-13"
     },
     "trial:cabaletta-resecel-ms-phase12": {
       "official_title": "RESET-MS: A Phase 1/2, Open-Label Study to Evaluate the Safety and Efficacy of Autologous CD19-specific Chimeric Antigen Receptor T Cells (CABA-201) in Participants With Multiple Sclerosis",
@@ -413,7 +413,7 @@
       "enrollment": 60,
       "study_start": "2026-04-28",
       "estimated_completion": "2028-05",
-      "registry_last_update": "2026-04-23"
+      "registry_last_update": "2026-08-17"
     },
     "trial:tr1x-trx319-impact-ms": {
       "official_title": "A Phase 1/2a, Open-Label, Dose-Escalation Study to Evaluate the Safety and Preliminary Efficacy of TRX319 in Subjects With Primary or Secondary Progressive Multiple Sclerosis",

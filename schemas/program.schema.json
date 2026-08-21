@@ -1,0 +1,7 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://qisichen.cn/schemas/program.schema.json",
+  "title":"Program","type":"object","additionalProperties":true,
+  "required":["id","name","owner_org_id","technology","targets","indications","status","source_ids"],
+  "properties":{"id":{"type":"string","pattern":"^program-[a-z0-9-]+$"},"name":{"type":"string","minLength":1},"owner_org_id":{"type":"string","pattern":"^org-"},"targets":{"type":"array","minItems":1,"uniqueItems":true,"items":{"type":"string"}},"indications":{"type":"array","minItems":1,"uniqueItems":true,"items":{"type":"string"}},"status":{"enum":["preclinical","clinical","approved","discontinued"]},"source_ids":{"type":"array","minItems":1,"uniqueItems":true,"items":{"type":"string"}}}
+}
