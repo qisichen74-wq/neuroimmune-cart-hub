@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
-  "generated_at": "2026-08-21T14:40:28.294Z",
-  "git_revision": "2ffaa0bdc271cfc37460c6ea3fde31348e10816d",
+  "generated_at": "2026-08-21T14:44:58.950Z",
+  "git_revision": "a03a356b5feb35f48ffca6518870a219bc2fa7f6",
   "files": [
     {
       "path": "data/daily-briefing.json",
