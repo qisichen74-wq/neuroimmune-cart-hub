@@ -17,6 +17,7 @@
     {"id":"deal-event-cabaletta-cellares-announced","deal_id":"deal-cabaletta-cellares-2026","date":"2026-04-28","event_type":"announced","title":"商业供应协议公告","source_ids":["cabaletta-primary"]},
     {"id":"deal-event-cartesian-k2-funded","deal_id":"deal-cartesian-k2-2026","date":"2026-05-26","event_type":"funded","title":"信贷协议生效并提取首批5000万美元","source_ids":["cartesian-ir"]},
     {"id":"deal-event-kyverna-elevatebio-signed","deal_id":"deal-kyverna-elevatebio-2026","date":"2026-07-23","event_type":"signed","title":"签署制造供应协议","source_ids":["sec-edgar"]},
-    {"id":"deal-event-kyverna-elevatebio-announced","deal_id":"deal-kyverna-elevatebio-2026","date":"2026-07-27","event_type":"announced","title":"合作正式公告","source_ids":["kyverna-ir"]}
+    {"id":"deal-event-kyverna-elevatebio-announced","deal_id":"deal-kyverna-elevatebio-2026","date":"2026-07-27","event_type":"announced","title":"合作正式公告","source_ids":["kyverna-ir"]},
+    {"id":"deal-event-create-series-b-funded","deal_id":"deal-create-series-b-2026","date":"2026-05-14","event_type":"funded","title":"1.22亿美元B轮融资完成","source_ids":["create-primary"]}
   ]
 }

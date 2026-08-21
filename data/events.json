@@ -1173,5 +1173,22 @@
         "id": "kyv101-mg-kysa6-phase23"
       }
     ]
+  },
+  {
+    "id": "event-create-crt402-registration",
+    "date": "2026-08-21",
+    "event_type": "试验登记",
+    "title": "CREATE登记CRT-402体内CD19 CAR-T自身免疫病Phase 1/2研究",
+    "summary": "NCT07778446首次公开，计划在澳大利亚入组34例难治性SLE、SSc或IIM患者；登记状态为Not yet recruiting，预计2026-08-24启动。",
+    "impact": "体内mRNA-LNP CD19 CAR-T新增正式人体开发路径；HREC许可和试验登记不代表FDA批准、产品上市或临床疗效已得到验证。",
+    "priority": "高",
+    "topic": "跨病种",
+    "status": "Not yet recruiting",
+    "source_label": "ClinicalTrials.gov / CREATE Medicines",
+    "source_url": "https://clinicaltrials.gov/study/NCT07778446",
+    "entities": [
+      { "type": "company", "id": "create-crt402" },
+      { "type": "trial", "id": "create-crt402-autoimmune-phase12" }
+    ]
   }
 ]

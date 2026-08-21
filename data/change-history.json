@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-17T13:58:28.963Z",
+  "generated_at": "2026-08-21T15:16:44.500Z",
   "changes": [
     {
       "detected_at": "2026-07-27T23:33:43.876Z",
@@ -136,6 +136,14 @@
       "field": "registry_last_update",
       "previous_value": "2026-04-23",
       "current_value": "2026-08-17"
+    },
+    {
+      "detected_at": "2026-08-21T15:02:11.161Z",
+      "record_type": "trial",
+      "record_id": "cabaletta-resecel-myositis",
+      "field": "registry_last_update",
+      "previous_value": "2026-07-23",
+      "current_value": "2026-08-21"
     }
   ]
 }

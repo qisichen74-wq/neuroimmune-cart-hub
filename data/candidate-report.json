@@ -1,49 +1,251 @@
 {
-  "generated_at": "2026-08-17T13:58:28.350Z",
-  "last_attempt_at": "2026-08-17T14:08:31.915Z",
+  "generated_at": "2026-08-21T15:10:03.247Z",
+  "last_attempt_at": "2026-08-21T15:10:03.247Z",
   "policy": "Research candidates must involve CAR-T or cell therapy and identify at least one disease or indication. High-scoring reviews and meta-analyses may be retained without a named disease. Registered clinical trials remain in the candidate pool as registry signals; eligible non-trial candidates enter the candidate desk for handling.",
   "query_window": "Publications since 2025/01/01; complete paginated ClinicalTrials.gov results; CDE China Drug Trials registry queries; tracked official websites",
   "summary": {
-    "candidates": 881,
-    "research": 255,
-    "trials": 562,
-    "official_updates": 64,
-    "immediate_review": 459,
-    "watchlist": 210,
+    "candidates": 815,
+    "research": 258,
+    "trials": 557,
+    "official_updates": 0,
+    "immediate_review": 395,
+    "watchlist": 207,
     "background": 64,
-    "low_relevance": 148,
-    "trials_registry_only": 562,
-    "candidate_desk_required": 319,
-    "policy_excluded_research": 2366,
+    "low_relevance": 149,
+    "trials_registry_only": 557,
+    "candidate_desk_required": 258,
+    "policy_excluded_research": 2387,
     "undifferentiated_review_exceptions": 3,
-    "source_failures": 1,
+    "source_failures": 0,
     "partial_sources": 1,
     "truncated_sources": 0,
     "missing_sentinels": 0
   },
-  "degraded_run": {
-    "preserved_previous_candidates": true,
-    "reason": "Critical discovery sources failed and the new candidate set was abnormally small.",
-    "failed_sources": [
-      "ClinicalTrials.gov"
-    ],
-    "attempted_candidates": 255,
-    "preserved_candidates": 881
-  },
+  "degraded_run": null,
   "source_runs": [
     {
       "source": "ClinicalTrials.gov",
       "source_kind": "official_api",
-      "status": "error",
-      "error": "The operation was aborted due to timeout"
+      "status": "ok",
+      "results_scanned": 9078,
+      "known_records_seen": [
+        "NCT07477639",
+        "NCT06688435",
+        "NCT06220201",
+        "NCT07778446",
+        "NCT06978738",
+        "NCT06799247",
+        "NCT07305116",
+        "NCT07403188",
+        "NCT06941129",
+        "NCT06308978",
+        "NCT07085104",
+        "NCT07155369",
+        "NCT07526493",
+        "NCT06154252",
+        "NCT07544225",
+        "NCT06375993",
+        "NCT07178431",
+        "NCT06708845",
+        "NCT06056921",
+        "NCT06193889",
+        "NCT07328581",
+        "NCT07085676",
+        "NCT06794008",
+        "NCT07304154",
+        "NCT07339540",
+        "NCT06925542",
+        "NCT06939166",
+        "NCT07756268",
+        "NCT06980597",
+        "NCT06704269",
+        "NCT07715136",
+        "NCT06414135",
+        "NCT07523282",
+        "NCT07765966",
+        "NCT06359041",
+        "NCT06451159",
+        "NCT06787989",
+        "NCT07391605",
+        "NCT07006805",
+        "NCT06249438",
+        "NCT06665256",
+        "NCT06626919",
+        "NCT06897930",
+        "NCT07337785",
+        "NCT04561557",
+        "NCT07341828",
+        "NCT07246096",
+        "NCT06828042",
+        "NCT06733935",
+        "NCT06371040",
+        "NCT07413341",
+        "NCT07752264",
+        "NCT07392528"
+      ],
+      "sentinel_check": {
+        "expected": [
+          "NCT04561557",
+          "NCT06787989",
+          "NCT07328581",
+          "NCT07006805",
+          "NCT07178431",
+          "NCT07477639"
+        ],
+        "found": [
+          "NCT04561557",
+          "NCT06787989",
+          "NCT07328581",
+          "NCT07006805",
+          "NCT07178431",
+          "NCT07477639"
+        ],
+        "missing": []
+      },
+      "query_runs": [
+        {
+          "query_id": "theme",
+          "total_results": 509,
+          "results_scanned": 509,
+          "truncated": false
+        },
+        {
+          "query_id": "disease:multiple sclerosis",
+          "total_results": 76,
+          "results_scanned": 76,
+          "truncated": false
+        },
+        {
+          "query_id": "disease:myasthenia gravis",
+          "total_results": 41,
+          "results_scanned": 41,
+          "truncated": false
+        },
+        {
+          "query_id": "disease:neuromyelitis optica",
+          "total_results": 26,
+          "results_scanned": 26,
+          "truncated": false
+        },
+        {
+          "query_id": "disease:MOGAD",
+          "total_results": 5,
+          "results_scanned": 5,
+          "truncated": false
+        },
+        {
+          "query_id": "disease:stiff person",
+          "total_results": 4,
+          "results_scanned": 4,
+          "truncated": false
+        },
+        {
+          "query_id": "disease:autoimmune encephalitis",
+          "total_results": 6,
+          "results_scanned": 6,
+          "truncated": false
+        },
+        {
+          "query_id": "disease:CIDP",
+          "total_results": 11,
+          "results_scanned": 11,
+          "truncated": false
+        },
+        {
+          "query_id": "disease:systemic lupus",
+          "total_results": 191,
+          "results_scanned": 191,
+          "truncated": false
+        },
+        {
+          "query_id": "disease:systemic sclerosis",
+          "total_results": 111,
+          "results_scanned": 111,
+          "truncated": false
+        },
+        {
+          "query_id": "disease:myositis",
+          "total_results": 97,
+          "results_scanned": 97,
+          "truncated": false
+        },
+        {
+          "query_id": "disease:immune thrombocytopenia",
+          "total_results": 24,
+          "results_scanned": 24,
+          "truncated": false
+        },
+        {
+          "query_id": "disease:rheumatoid arthritis",
+          "total_results": 54,
+          "results_scanned": 54,
+          "truncated": false
+        },
+        {
+          "query_id": "disease:autoimmune ILD",
+          "total_results": 2,
+          "results_scanned": 2,
+          "truncated": false
+        },
+        {
+          "query_id": "disease:autoimmune disease",
+          "total_results": 461,
+          "results_scanned": 461,
+          "truncated": false
+        },
+        {
+          "query_id": "entity:iaso-ct103a",
+          "total_results": 19,
+          "results_scanned": 19,
+          "truncated": false
+        },
+        {
+          "query_id": "entity:icell-icg318",
+          "total_results": 21,
+          "results_scanned": 21,
+          "truncated": false
+        },
+        {
+          "query_id": "entity:cabaletta-resecel",
+          "total_results": 341,
+          "results_scanned": 341,
+          "truncated": false
+        },
+        {
+          "query_id": "entity:miltenyi-autoimmune",
+          "total_results": 45,
+          "results_scanned": 45,
+          "truncated": false
+        },
+        {
+          "query_id": "entity:tr1x-trx319",
+          "total_results": 11,
+          "results_scanned": 11,
+          "truncated": false
+        },
+        {
+          "query_id": "entity:cartesian-descartes08",
+          "total_results": 8187,
+          "results_scanned": 8187,
+          "truncated": false
+        },
+        {
+          "query_id": "entity:kyverna-kyv101",
+          "total_results": 13,
+          "results_scanned": 13,
+          "truncated": false
+        }
+      ],
+      "truncated": false
     },
     {
       "source": "NCBI PubMed",
       "source_kind": "official_api",
       "status": "ok",
-      "results_scanned": 2642,
+      "results_scanned": 2666,
       "known_records_seen": [
         "41240964",
+        "42028700",
         "42414128",
         "42286319",
         "42167622",
@@ -52,7 +254,6 @@
         "42251699",
         "42223209",
         "41644365",
-        "42028700",
         "41747738",
         "41514039",
         "41514038",
@@ -77,8 +278,8 @@
       "query_runs": [
         {
           "query_id": "theme",
-          "total_results": 604,
-          "results_scanned": 604,
+          "total_results": 609,
+          "results_scanned": 609,
           "truncated": false
         },
         {
@@ -95,8 +296,8 @@
         },
         {
           "query_id": "entity:cabaletta-resecel",
-          "total_results": 856,
-          "results_scanned": 856,
+          "total_results": 867,
+          "results_scanned": 867,
           "truncated": false
         },
         {
@@ -113,8 +314,8 @@
         },
         {
           "query_id": "entity:cartesian-descartes08",
-          "total_results": 1227,
-          "results_scanned": 1227,
+          "total_results": 1235,
+          "results_scanned": 1235,
           "truncated": false
         },
         {
@@ -223,7 +424,7 @@
       "fingerprint": "b3dc79c0784d81598209b52cd9ccd5b96aa32386aae499a2f049cccfdff53781",
       "fingerprint_version": 3,
       "changed": false,
-      "duration_ms": 1194,
+      "duration_ms": 1387,
       "sentinel_check": {
         "expected": [
           "https://www.cabalettabio.com/pipeline/caba-201",
@@ -250,10 +451,10 @@
         "https://www.cartesiantherapeutics.com/pipeline"
       ],
       "assets_monitored": 29,
-      "fingerprint": "a6a11e87193fad30136e3d299cfc08959ef49620d8c6b3a67bff59e03b25d01f",
+      "fingerprint": "95b3d43b88978fc8a7b28741643a2e2d2ad5563ac29d7e1f5570c4f87f1b1318",
       "fingerprint_version": 3,
       "changed": false,
-      "duration_ms": 40093,
+      "duration_ms": 7789,
       "sentinel_check": {
         "expected": [
           "https://www.cartesiantherapeutics.com/pipeline/",
@@ -274,7 +475,7 @@
       "status": "ok",
       "pages_scanned": 10,
       "successful_pages": 10,
-      "relevant_links": 42,
+      "relevant_links": 43,
       "relevant_urls": [
         "https://www.iasobio.com/info.php?id=122",
         "https://www.iasobio.com/info.php?id=183",
@@ -317,13 +518,14 @@
         "https://www.iasobio.com/info.php?id=298",
         "https://www.iasobio.com/info.php?id=300",
         "https://www.iasobio.com/info.php?id=303",
-        "https://www.iasobio.com/info.php?id=309"
+        "https://www.iasobio.com/info.php?id=309",
+        "https://www.iasobio.com/info.php?id=314"
       ],
       "assets_monitored": 21,
-      "fingerprint": "8884e8108ece2e091d6267aadbc500d3fa15633757774fbae347b063f1653d99",
+      "fingerprint": "4abcd00376ee5702780b6fe633696c51417b8a9b115a43b2a45f0a1d8e9807a2",
       "fingerprint_version": 3,
       "changed": false,
-      "duration_ms": 1482,
+      "duration_ms": 1384,
       "sentinel_check": {
         "expected": [
           "https://www.iasobio.com/info.php?id=251",
@@ -350,7 +552,7 @@
       "fingerprint": "de70380335c4814ac40d43c6d57a86173c4589244d3283f8ff1bc5a098e634c2",
       "fingerprint_version": 3,
       "changed": false,
-      "duration_ms": 2976,
+      "duration_ms": 3649,
       "sentinel_check": {
         "expected": [],
         "found": [],
@@ -379,10 +581,10 @@
         "https://kyvernatx.com/patients/systemic-sclerosis"
       ],
       "assets_monitored": 16,
-      "fingerprint": "7719ae9509ea4015a8aaa987c391cfccb046ae3ea3eaceb7bab295f6c9a2cfd1",
+      "fingerprint": "a5e3e0ee19339b3dc5a22d25196ff678853af8b66369f9e894e8ef9721ae59f2",
       "fingerprint_version": 3,
       "changed": false,
-      "duration_ms": 37193,
+      "duration_ms": 8210,
       "sentinel_check": {
         "expected": [
           "https://kyvernatx.com/platform-pipeline/pipeline/",
@@ -409,7 +611,7 @@
       "fingerprint": "2a5f17199ef5054d8c001b321fc106410df6d3836156512fbbc07c105c487682",
       "fingerprint_version": 3,
       "changed": false,
-      "duration_ms": 2445,
+      "duration_ms": 6700,
       "sentinel_check": {
         "expected": [],
         "found": [],
@@ -433,7 +635,7 @@
       "fingerprint": "0ee8114fae9c8582c707a871b1bee97594eda2093c7494b289334b8c45d1047c",
       "fingerprint_version": 3,
       "changed": false,
-      "duration_ms": 3049,
+      "duration_ms": 2838,
       "sentinel_check": {
         "expected": [],
         "found": [],
@@ -946,29 +1148,43 @@
       ]
     },
     {
-      "candidate_type": "official_update",
-      "external_id": "https://www.iasobio.com/info.php?id=285",
-      "title": "16 2025-10 Cell Publishes Breakthrough Research Results of IASO Bio's Anti-BCMA CAR-T Equecabtagene Autoleucel in Autoimmune Disease Multiple Sclerosis",
-      "source": "IASO Bio Official News & Pipeline",
-      "source_url": "https://www.iasobio.com/info.php?id=285",
-      "publication_date": "",
+      "candidate_type": "trial",
+      "external_id": "NCT06121297",
+      "title": "A Phase 1/2, Open-label Study to Evaluate the Safety and Efficacy of Autologous CD19-specific Chimeric Antigen Receptor T Cells (CABA-201) in Subjects With Active Systemic Lupus Erythematosus",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT06121297",
+      "status": "RECRUITING",
+      "last_update_posted": "2026-08-18",
+      "phase": [
+        "PHASE1",
+        "PHASE2"
+      ],
+      "enrollment": 28,
+      "sponsor": "Cabaletta Bio",
+      "conditions": [
+        "Systemic Lupus Erythematosus",
+        "Lupus Nephritis"
+      ],
       "matched_diseases": [
-        "multiple sclerosis",
-        "autoimmune disease"
+        "systemic lupus"
       ],
       "matched_entities": [
-        "iaso-ct103a"
+        "cabaletta-resecel"
       ],
       "query_matches": [
-        "official:iaso-official"
+        "theme",
+        "disease:systemic lupus",
+        "disease:autoimmune disease",
+        "entity:cabaletta-resecel"
       ],
       "review_status": "待处理",
       "relevance_score": 14,
       "triage_tier": "立即核验",
       "triage_reasons": [
-        "企业官网一手披露",
-        "命中重点实体：IASO Bio / Eque-cel / CT103A",
-        "命中2个重点病种"
+        "正式注册试验",
+        "命中重点实体：Cabaletta Bio / rese-cel / CABA-201",
+        "命中1个重点病种",
+        "当前处于活跃状态"
       ]
     },
     {
@@ -1380,46 +1596,6 @@
       "sponsor": "Beijing Biotech",
       "conditions": [
         "REFRACTORY SYSTEMIC LUPUS ERYTHEMATOSUS",
-        "Lupus Nephritis"
-      ],
-      "matched_diseases": [
-        "systemic lupus"
-      ],
-      "matched_entities": [
-        "cabaletta-resecel"
-      ],
-      "query_matches": [
-        "theme",
-        "disease:systemic lupus",
-        "disease:autoimmune disease",
-        "entity:cabaletta-resecel"
-      ],
-      "review_status": "待处理",
-      "relevance_score": 14,
-      "triage_tier": "立即核验",
-      "triage_reasons": [
-        "正式注册试验",
-        "命中重点实体：Cabaletta Bio / rese-cel / CABA-201",
-        "命中1个重点病种",
-        "当前处于活跃状态"
-      ]
-    },
-    {
-      "candidate_type": "trial",
-      "external_id": "NCT06121297",
-      "title": "A Phase 1/2, Open-label Study to Evaluate the Safety and Efficacy of Autologous CD19-specific Chimeric Antigen Receptor T Cells (CABA-201) in Subjects With Active Systemic Lupus Erythematosus",
-      "source": "ClinicalTrials.gov",
-      "source_url": "https://clinicaltrials.gov/study/NCT06121297",
-      "status": "RECRUITING",
-      "last_update_posted": "2026-04-09",
-      "phase": [
-        "PHASE1",
-        "PHASE2"
-      ],
-      "enrollment": 28,
-      "sponsor": "Cabaletta Bio",
-      "conditions": [
-        "Systemic Lupus Erythematosus",
         "Lupus Nephritis"
       ],
       "matched_diseases": [
@@ -2441,616 +2617,108 @@
       "journal_impact_factor_source": "https://www.sciencedirect.com/journal/annals-of-the-rheumatic-diseases"
     },
     {
-      "candidate_type": "official_update",
-      "external_id": "https://ir.kyvernatx.com/news-releases/news-release-details/kyverna-therapeutics-announces-initiation-rolling-sps-bla",
-      "title": "Read More",
-      "source": "Kyverna Pipeline & Press Releases",
-      "source_url": "https://ir.kyvernatx.com/news-releases/news-release-details/kyverna-therapeutics-announces-initiation-rolling-sps-bla",
-      "publication_date": "",
-      "matched_diseases": [
-        "stiff person"
+      "candidate_type": "trial",
+      "external_id": "NCT04106219",
+      "title": "A Phase 1 Study of Aurora Kinase A Inhibitor LY3295668 Erbumine as a Single Agent and in Combination in Patients With Relapsed/Refractory Neuroblastoma",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT04106219",
+      "status": "ACTIVE_NOT_RECRUITING",
+      "last_update_posted": "2026-08-21",
+      "phase": [
+        "PHASE1"
       ],
-      "matched_entities": [
-        "kyverna-kyv101"
+      "enrollment": 71,
+      "sponsor": "Eli Lilly and Company",
+      "conditions": [
+        "Neuroblastoma"
       ],
-      "query_matches": [
-        "official:kyverna-official"
-      ],
-      "review_status": "待处理",
-      "relevance_score": 12,
-      "triage_tier": "立即核验",
-      "triage_reasons": [
-        "企业官网一手披露",
-        "命中重点实体：Kyverna / KYV-101",
-        "命中1个重点病种"
-      ]
-    },
-    {
-      "candidate_type": "official_update",
-      "external_id": "https://kyvernatx.com/patients/lupus-nephritis",
-      "title": "Lupus Nephritis",
-      "source": "Kyverna Pipeline & Press Releases",
-      "source_url": "https://kyvernatx.com/patients/lupus-nephritis",
-      "publication_date": "",
-      "matched_diseases": [
-        "systemic lupus"
-      ],
-      "matched_entities": [
-        "kyverna-kyv101"
-      ],
-      "query_matches": [
-        "official:kyverna-official"
-      ],
-      "review_status": "待处理",
-      "relevance_score": 12,
-      "triage_tier": "立即核验",
-      "triage_reasons": [
-        "企业官网一手披露",
-        "命中重点实体：Kyverna / KYV-101",
-        "命中1个重点病种"
-      ]
-    },
-    {
-      "candidate_type": "official_update",
-      "external_id": "https://kyvernatx.com/patients/multiple-sclerosis",
-      "title": "Multiple Sclerosis",
-      "source": "Kyverna Pipeline & Press Releases",
-      "source_url": "https://kyvernatx.com/patients/multiple-sclerosis",
-      "publication_date": "",
-      "matched_diseases": [
-        "multiple sclerosis"
-      ],
-      "matched_entities": [
-        "kyverna-kyv101"
-      ],
-      "query_matches": [
-        "official:kyverna-official"
-      ],
-      "review_status": "待处理",
-      "relevance_score": 12,
-      "triage_tier": "立即核验",
-      "triage_reasons": [
-        "企业官网一手披露",
-        "命中重点实体：Kyverna / KYV-101",
-        "命中1个重点病种"
-      ]
-    },
-    {
-      "candidate_type": "official_update",
-      "external_id": "https://kyvernatx.com/patients/myasthenia-gravis",
-      "title": "Myasthenia Gravis",
-      "source": "Kyverna Pipeline & Press Releases",
-      "source_url": "https://kyvernatx.com/patients/myasthenia-gravis",
-      "publication_date": "",
-      "matched_diseases": [
-        "myasthenia gravis"
-      ],
-      "matched_entities": [
-        "kyverna-kyv101"
-      ],
-      "query_matches": [
-        "official:kyverna-official"
-      ],
-      "review_status": "待处理",
-      "relevance_score": 12,
-      "triage_tier": "立即核验",
-      "triage_reasons": [
-        "企业官网一手披露",
-        "命中重点实体：Kyverna / KYV-101",
-        "命中1个重点病种"
-      ]
-    },
-    {
-      "candidate_type": "official_update",
-      "external_id": "https://kyvernatx.com/patients/stiff-person-syndrome",
-      "title": "Stiff Person Syndrome",
-      "source": "Kyverna Pipeline & Press Releases",
-      "source_url": "https://kyvernatx.com/patients/stiff-person-syndrome",
-      "publication_date": "",
-      "matched_diseases": [
-        "stiff person"
-      ],
-      "matched_entities": [
-        "kyverna-kyv101"
-      ],
-      "query_matches": [
-        "official:kyverna-official"
-      ],
-      "review_status": "待处理",
-      "relevance_score": 12,
-      "triage_tier": "立即核验",
-      "triage_reasons": [
-        "企业官网一手披露",
-        "命中重点实体：Kyverna / KYV-101",
-        "命中1个重点病种"
-      ]
-    },
-    {
-      "candidate_type": "official_update",
-      "external_id": "https://kyvernatx.com/patients/systemic-sclerosis",
-      "title": "Systemic Sclerosis",
-      "source": "Kyverna Pipeline & Press Releases",
-      "source_url": "https://kyvernatx.com/patients/systemic-sclerosis",
-      "publication_date": "",
-      "matched_diseases": [
-        "systemic sclerosis"
-      ],
-      "matched_entities": [
-        "kyverna-kyv101"
-      ],
-      "query_matches": [
-        "official:kyverna-official"
-      ],
-      "review_status": "待处理",
-      "relevance_score": 12,
-      "triage_tier": "立即核验",
-      "triage_reasons": [
-        "企业官网一手披露",
-        "命中重点实体：Kyverna / KYV-101",
-        "命中1个重点病种"
-      ]
-    },
-    {
-      "candidate_type": "official_update",
-      "external_id": "https://www.cabalettabio.com/patients/phase-12-trial-in-lupus",
-      "title": "RESET-SLE™ Trial",
-      "source": "Cabaletta Bio Pipeline & Press Releases",
-      "source_url": "https://www.cabalettabio.com/patients/phase-12-trial-in-lupus",
-      "publication_date": "",
-      "matched_diseases": [
-        "systemic lupus"
-      ],
-      "matched_entities": [
-        "cabaletta-resecel"
-      ],
-      "query_matches": [
-        "official:cabaletta-official"
-      ],
-      "review_status": "待处理",
-      "relevance_score": 12,
-      "triage_tier": "立即核验",
-      "triage_reasons": [
-        "企业官网一手披露",
-        "命中重点实体：Cabaletta Bio / rese-cel / CABA-201",
-        "命中1个重点病种"
-      ]
-    },
-    {
-      "candidate_type": "official_update",
-      "external_id": "https://www.cabalettabio.com/patients/phase-12-trial-in-myasthenia-gravis",
-      "title": "RESET-MG™ Trial",
-      "source": "Cabaletta Bio Pipeline & Press Releases",
-      "source_url": "https://www.cabalettabio.com/patients/phase-12-trial-in-myasthenia-gravis",
-      "publication_date": "",
-      "matched_diseases": [
-        "myasthenia gravis"
-      ],
-      "matched_entities": [
-        "cabaletta-resecel"
-      ],
-      "query_matches": [
-        "official:cabaletta-official"
-      ],
-      "review_status": "待处理",
-      "relevance_score": 12,
-      "triage_tier": "立即核验",
-      "triage_reasons": [
-        "企业官网一手披露",
-        "命中重点实体：Cabaletta Bio / rese-cel / CABA-201",
-        "命中1个重点病种"
-      ]
-    },
-    {
-      "candidate_type": "official_update",
-      "external_id": "https://www.cartesiantherapeutics.com/pipeline",
-      "title": "Learn More About Systemic Lupus Erythematosus",
-      "source": "Cartesian Therapeutics Pipeline & Press Releases",
-      "source_url": "https://www.cartesiantherapeutics.com/pipeline",
-      "publication_date": "",
-      "matched_diseases": [
-        "systemic lupus"
-      ],
+      "matched_diseases": [],
       "matched_entities": [
         "cartesian-descartes08"
       ],
       "query_matches": [
-        "official:cartesian-official"
-      ],
-      "review_status": "待处理",
-      "relevance_score": 12,
-      "triage_tier": "立即核验",
-      "triage_reasons": [
-        "企业官网一手披露",
-        "命中重点实体：Cartesian / Descartes-08",
-        "命中1个重点病种"
-      ]
-    },
-    {
-      "candidate_type": "official_update",
-      "external_id": "https://www.iasobio.com/info.php?id=188",
-      "title": "20 2022-05 IASO Biotherapeutics’ Equecabtagene Autoleucel, the World’s First CAR-T for Treatment of NMOSD, Receives IND Application Acceptance by NMPA",
-      "source": "IASO Bio Official News & Pipeline",
-      "source_url": "https://www.iasobio.com/info.php?id=188",
-      "publication_date": "",
-      "matched_diseases": [
-        "neuromyelitis optica"
-      ],
-      "matched_entities": [
-        "iaso-ct103a"
-      ],
-      "query_matches": [
-        "official:iaso-official"
-      ],
-      "review_status": "待处理",
-      "relevance_score": 12,
-      "triage_tier": "立即核验",
-      "triage_reasons": [
-        "企业官网一手披露",
-        "命中重点实体：IASO Bio / Eque-cel / CT103A",
-        "命中1个重点病种"
-      ]
-    },
-    {
-      "candidate_type": "official_update",
-      "external_id": "https://www.iasobio.com/info.php?id=198",
-      "title": "19 2022-08 World's First CAR-T for NMOSD Treatment, IASO Biotherapeutics' Equecabtagene Autoleucel, Receives IND Approval by NMPA",
-      "source": "IASO Bio Official News & Pipeline",
-      "source_url": "https://www.iasobio.com/info.php?id=198",
-      "publication_date": "",
-      "matched_diseases": [
-        "neuromyelitis optica"
-      ],
-      "matched_entities": [
-        "iaso-ct103a"
-      ],
-      "query_matches": [
-        "official:iaso-official"
-      ],
-      "review_status": "待处理",
-      "relevance_score": 12,
-      "triage_tier": "立即核验",
-      "triage_reasons": [
-        "企业官网一手披露",
-        "命中重点实体：IASO Bio / Eque-cel / CT103A",
-        "命中1个重点病种"
-      ]
-    },
-    {
-      "candidate_type": "official_update",
-      "external_id": "https://www.iasobio.com/info.php?id=218",
-      "title": "06 2023-04 IASO Bio’s partner Cabaletta Receives FDA Clearance of IND Application for CABA-201 for Treatment of SLE",
-      "source": "IASO Bio Official News & Pipeline",
-      "source_url": "https://www.iasobio.com/info.php?id=218",
-      "publication_date": "",
-      "matched_diseases": [
-        "systemic lupus"
-      ],
-      "matched_entities": [
-        "cabaletta-resecel",
-        "iaso-ct103a"
-      ],
-      "query_matches": [
-        "official:iaso-official"
-      ],
-      "review_status": "待处理",
-      "relevance_score": 12,
-      "triage_tier": "立即核验",
-      "triage_reasons": [
-        "企业官网一手披露",
-        "命中重点实体：Cabaletta Bio / rese-cel / CABA-201、IASO Bio / Eque-cel / CT103A",
-        "命中1个重点病种"
-      ]
-    },
-    {
-      "candidate_type": "official_update",
-      "external_id": "https://www.iasobio.com/info.php?id=222",
-      "title": "10 2023-07 IASO Bio Receives FDA Approval of IND Application for IASO-782 for Treatment of Autoimmune Disease",
-      "source": "IASO Bio Official News & Pipeline",
-      "source_url": "https://www.iasobio.com/info.php?id=222",
-      "publication_date": "",
-      "matched_diseases": [
-        "autoimmune disease"
-      ],
-      "matched_entities": [
-        "iaso-ct103a"
-      ],
-      "query_matches": [
-        "official:iaso-official"
-      ],
-      "review_status": "待处理",
-      "relevance_score": 12,
-      "triage_tier": "立即核验",
-      "triage_reasons": [
-        "企业官网一手披露",
-        "命中重点实体：IASO Bio / Eque-cel / CT103A",
-        "命中1个重点病种"
-      ]
-    },
-    {
-      "candidate_type": "official_update",
-      "external_id": "https://www.iasobio.com/info.php?id=229",
-      "title": "29 2024-02 IASO Bio’s Equecabtagene Autoleucel for Refractory Myasthenia Gravis (MG) Case Report Published in EMBO Molecular Medicine",
-      "source": "IASO Bio Official News & Pipeline",
-      "source_url": "https://www.iasobio.com/info.php?id=229",
-      "publication_date": "",
-      "matched_diseases": [
-        "myasthenia gravis"
-      ],
-      "matched_entities": [
-        "iaso-ct103a"
-      ],
-      "query_matches": [
-        "official:iaso-official"
-      ],
-      "review_status": "待处理",
-      "relevance_score": 12,
-      "triage_tier": "立即核验",
-      "triage_reasons": [
-        "企业官网一手披露",
-        "命中重点实体：IASO Bio / Eque-cel / CT103A",
-        "命中1个重点病种"
-      ]
-    },
-    {
-      "candidate_type": "official_update",
-      "external_id": "https://www.iasobio.com/info.php?id=232",
-      "title": "04 2024-04 IASO Bio Announces U.S. FDA Approval of Investigational New Drug Application for BCMA CAR-T Equecabtagene Autoleucel for Generalized Myasthenia Gravis",
-      "source": "IASO Bio Official News & Pipeline",
-      "source_url": "https://www.iasobio.com/info.php?id=232",
-      "publication_date": "",
-      "matched_diseases": [
-        "myasthenia gravis"
-      ],
-      "matched_entities": [
-        "iaso-ct103a"
-      ],
-      "query_matches": [
-        "official:iaso-official"
-      ],
-      "review_status": "待处理",
-      "relevance_score": 12,
-      "triage_tier": "立即核验",
-      "triage_reasons": [
-        "企业官网一手披露",
-        "命中重点实体：IASO Bio / Eque-cel / CT103A",
-        "命中1个重点病种"
-      ]
-    },
-    {
-      "candidate_type": "official_update",
-      "external_id": "https://www.iasobio.com/info.php?id=234",
-      "title": "05 2024-04 IASO Bio Announces U.S. FDA Approval of Investigational New Drug Application for BCMA CAR-T Equecabtagene Autoleucel for Generalized Myasthenia Gravis",
-      "source": "IASO Bio Official News & Pipeline",
-      "source_url": "https://www.iasobio.com/info.php?id=234",
-      "publication_date": "",
-      "matched_diseases": [
-        "myasthenia gravis"
-      ],
-      "matched_entities": [
-        "iaso-ct103a"
-      ],
-      "query_matches": [
-        "official:iaso-official"
-      ],
-      "review_status": "待处理",
-      "relevance_score": 12,
-      "triage_tier": "立即核验",
-      "triage_reasons": [
-        "企业官网一手披露",
-        "命中重点实体：IASO Bio / Eque-cel / CT103A",
-        "命中1个重点病种"
-      ]
-    },
-    {
-      "candidate_type": "official_update",
-      "external_id": "https://www.iasobio.com/info.php?id=235",
-      "title": "11 2024-05 Single-Cell Multi-Omics Analysis of IASO Bio's Equecabtagene Autoleucel in the Treatment of Autoimmune Diseases of the Central Nervous System Published in Science Immunology",
-      "source": "IASO Bio Official News & Pipeline",
-      "source_url": "https://www.iasobio.com/info.php?id=235",
-      "publication_date": "",
-      "matched_diseases": [
-        "autoimmune disease"
-      ],
-      "matched_entities": [
-        "iaso-ct103a"
-      ],
-      "query_matches": [
-        "official:iaso-official"
-      ],
-      "review_status": "待处理",
-      "relevance_score": 12,
-      "triage_tier": "立即核验",
-      "triage_reasons": [
-        "企业官网一手披露",
-        "命中重点实体：IASO Bio / Eque-cel / CT103A",
-        "命中1个重点病种"
-      ]
-    },
-    {
-      "candidate_type": "official_update",
-      "external_id": "https://www.iasobio.com/info.php?id=247",
-      "title": "24 2024-07 IASO Bio Receives U.S. FDA Approval of Investigational New Drug Application for Equecabtagene Autoleucel for Multiple Sclerosis",
-      "source": "IASO Bio Official News & Pipeline",
-      "source_url": "https://www.iasobio.com/info.php?id=247",
-      "publication_date": "",
-      "matched_diseases": [
-        "multiple sclerosis"
-      ],
-      "matched_entities": [
-        "iaso-ct103a"
-      ],
-      "query_matches": [
-        "official:iaso-official"
-      ],
-      "review_status": "待处理",
-      "relevance_score": 12,
-      "triage_tier": "立即核验",
-      "triage_reasons": [
-        "企业官网一手披露",
-        "命中重点实体：IASO Bio / Eque-cel / CT103A",
-        "命中1个重点病种"
-      ]
-    },
-    {
-      "candidate_type": "official_update",
-      "external_id": "https://www.iasobio.com/info.php?id=249",
-      "title": "25 2024-07 IASO Bio Announces NMPA Approval of IND Application for IASO-782 for Treatment of New Indication — Systemic Lupus Erythematosus (SLE)",
-      "source": "IASO Bio Official News & Pipeline",
-      "source_url": "https://www.iasobio.com/info.php?id=249",
-      "publication_date": "",
-      "matched_diseases": [
-        "systemic lupus"
-      ],
-      "matched_entities": [
-        "iaso-ct103a"
-      ],
-      "query_matches": [
-        "official:iaso-official"
-      ],
-      "review_status": "待处理",
-      "relevance_score": 12,
-      "triage_tier": "立即核验",
-      "triage_reasons": [
-        "企业官网一手披露",
-        "命中重点实体：IASO Bio / Eque-cel / CT103A",
-        "命中1个重点病种"
-      ]
-    },
-    {
-      "candidate_type": "official_update",
-      "external_id": "https://www.iasobio.com/info.php?id=259",
-      "title": "12 2024-08 IASO Bio Receives U.S. FDA Approval Of Investigational New Drug Application For Equecabtagene Autoleucel For Two New Autoimmune Disease Indications",
-      "source": "IASO Bio Official News & Pipeline",
-      "source_url": "https://www.iasobio.com/info.php?id=259",
-      "publication_date": "",
-      "matched_diseases": [
-        "autoimmune disease"
-      ],
-      "matched_entities": [
-        "iaso-ct103a"
-      ],
-      "query_matches": [
-        "official:iaso-official"
-      ],
-      "review_status": "待处理",
-      "relevance_score": 12,
-      "triage_tier": "立即核验",
-      "triage_reasons": [
-        "企业官网一手披露",
-        "命中重点实体：IASO Bio / Eque-cel / CT103A",
-        "命中1个重点病种"
-      ]
-    },
-    {
-      "candidate_type": "official_update",
-      "external_id": "https://www.iasobio.com/info.php?id=273",
-      "title": "23 2025-06 IASO Bio presents promising efficacy of Equecabtagene Autoleucel in patients with Multiple Sclerosis in IIT study at the 11th Congress of the European Academy of Neurology (EAN)",
-      "source": "IASO Bio Official News & Pipeline",
-      "source_url": "https://www.iasobio.com/info.php?id=273",
-      "publication_date": "",
-      "matched_diseases": [
-        "multiple sclerosis"
-      ],
-      "matched_entities": [
-        "iaso-ct103a"
-      ],
-      "query_matches": [
-        "official:iaso-official"
-      ],
-      "review_status": "待处理",
-      "relevance_score": 12,
-      "triage_tier": "立即核验",
-      "triage_reasons": [
-        "企业官网一手披露",
-        "命中重点实体：IASO Bio / Eque-cel / CT103A",
-        "命中1个重点病种"
-      ]
-    },
-    {
-      "candidate_type": "official_update",
-      "external_id": "https://www.iasobio.com/info.php?id=276",
-      "title": "12 2025-09 IASO Bio to Present Promising Findings on Equecabtagene Autoleucel for Multiple Sclerosis at both ANA and ECTRIMS 2025",
-      "source": "IASO Bio Official News & Pipeline",
-      "source_url": "https://www.iasobio.com/info.php?id=276",
-      "publication_date": "",
-      "matched_diseases": [
-        "multiple sclerosis"
-      ],
-      "matched_entities": [
-        "iaso-ct103a"
-      ],
-      "query_matches": [
-        "official:iaso-official"
-      ],
-      "review_status": "待处理",
-      "relevance_score": 12,
-      "triage_tier": "立即核验",
-      "triage_reasons": [
-        "企业官网一手披露",
-        "命中重点实体：IASO Bio / Eque-cel / CT103A",
-        "命中1个重点病种"
-      ]
-    },
-    {
-      "candidate_type": "official_update",
-      "external_id": "https://www.tr1x.bio/impact",
-      "title": "Trial in Progress Clinical Trial for Multiple Sclerosis A first-in-class therapy in development for MS, engineered to slow disease progression by strengthening immune regulation and protecting neural pathways.",
-      "source": "Tr1X Official Website",
-      "source_url": "https://www.tr1x.bio/impact",
-      "publication_date": "",
-      "matched_diseases": [
-        "multiple sclerosis"
-      ],
-      "matched_entities": [
-        "tr1x-trx319"
-      ],
-      "query_matches": [
-        "official:tr1x-official"
-      ],
-      "review_status": "待处理",
-      "relevance_score": 12,
-      "triage_tier": "立即核验",
-      "triage_reasons": [
-        "企业官网一手披露",
-        "命中重点实体：Tr1X / TRX319 / IMPACT-MS",
-        "命中1个重点病种"
-      ]
-    },
-    {
-      "candidate_type": "trial",
-      "external_id": "NCT07752264",
-      "title": "An Open-label, Single-arm Phase I/II Clinical Study to Evaluate the Safety and Efficacy of Equecabtagene Autoleucel Injection (Eque-cel) in Subjects With Immune-mediated Necrotizing Myopathy",
-      "source": "ClinicalTrials.gov",
-      "source_url": "https://clinicaltrials.gov/study/NCT07752264",
-      "status": "NOT_YET_RECRUITING",
-      "last_update_posted": "2026-08-07",
-      "phase": [
-        "PHASE1",
-        "PHASE2"
-      ],
-      "enrollment": 27,
-      "sponsor": "Nanjing IASO Biotechnology Co., Ltd.",
-      "conditions": [
-        "Refractory Immune-mediated Necrotizing Myopathy"
-      ],
-      "matched_diseases": [
-        "myositis"
-      ],
-      "matched_entities": [
-        "iaso-ct103a"
-      ],
-      "query_matches": [
-        "theme",
-        "disease:myositis",
-        "entity:iaso-ct103a"
+        "entity:cartesian-descartes08"
       ],
       "review_status": "待处理",
       "relevance_score": 12,
       "triage_tier": "立即核验",
       "triage_reasons": [
         "正式注册试验",
-        "命中重点实体：IASO Bio / Eque-cel / CT103A",
-        "命中1个重点病种"
+        "命中重点实体：Cartesian / Descartes-08",
+        "当前处于活跃状态"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT07251179",
+      "title": "Characterization of Autoreactive b Lymphocytes in Autoimmune Diseases and Immune Deficiencies",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT07251179",
+      "status": "RECRUITING",
+      "last_update_posted": "2026-08-20",
+      "phase": [],
+      "enrollment": 200,
+      "sponsor": "University Hospital, Strasbourg, France",
+      "conditions": [
+        "Systemic Lupus Erythematosus",
+        "Systemic Scleroderma",
+        "ANCA-associated Vasculitis",
+        "Antiphospholipid Syndrome",
+        "Primary Immunodeficiencies"
+      ],
+      "matched_diseases": [
+        "systemic lupus",
+        "systemic sclerosis",
+        "autoimmune disease"
+      ],
+      "matched_entities": [],
+      "query_matches": [
+        "theme",
+        "disease:systemic lupus",
+        "disease:systemic sclerosis",
+        "disease:rheumatoid arthritis",
+        "disease:autoimmune disease"
+      ],
+      "review_status": "待处理",
+      "relevance_score": 12,
+      "triage_tier": "立即核验",
+      "triage_reasons": [
+        "正式注册试验",
+        "命中3个重点病种",
+        "当前处于活跃状态"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT06758622",
+      "title": "Multicenter Analysis of Morbidity, Mortality and Medical Care in Neonates at the Isidro Ayora Gynecological-Obstetric Hospital, the Calderón General Teaching Hospital and the Nueva Aurora Luz Elena Arismendi Pediatric Gynecological-Obstetric Hospital, January 2008-June 2024",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT06758622",
+      "status": "ACTIVE_NOT_RECRUITING",
+      "last_update_posted": "2026-08-19",
+      "phase": [],
+      "enrollment": 40000,
+      "sponsor": "HOSPITAL GINECO OBSTETRICO ISIDRO AYORA",
+      "conditions": [
+        "Neonatal Morbidity and Mortality",
+        "Intrauterine Growth Disorders (IUGR and Macrosomia)",
+        "Prematurity Complications",
+        "Neonatal Infections"
+      ],
+      "matched_diseases": [],
+      "matched_entities": [
+        "cartesian-descartes08"
+      ],
+      "query_matches": [
+        "entity:cartesian-descartes08"
+      ],
+      "review_status": "待处理",
+      "relevance_score": 12,
+      "triage_tier": "立即核验",
+      "triage_reasons": [
+        "正式注册试验",
+        "命中重点实体：Cartesian / Descartes-08",
+        "当前处于活跃状态"
       ]
     },
     {
@@ -4000,38 +3668,6 @@
       "sponsor": "Beth Israel Deaconess Medical Center",
       "conditions": [
         "Intracerebral Hemorrhage"
-      ],
-      "matched_diseases": [],
-      "matched_entities": [
-        "cartesian-descartes08"
-      ],
-      "query_matches": [
-        "entity:cartesian-descartes08"
-      ],
-      "review_status": "待处理",
-      "relevance_score": 12,
-      "triage_tier": "立即核验",
-      "triage_reasons": [
-        "正式注册试验",
-        "命中重点实体：Cartesian / Descartes-08",
-        "当前处于活跃状态"
-      ]
-    },
-    {
-      "candidate_type": "trial",
-      "external_id": "NCT04106219",
-      "title": "A Phase 1 Study of Aurora Kinase A Inhibitor LY3295668 Erbumine as a Single Agent and in Combination in Patients With Relapsed/Refractory Neuroblastoma",
-      "source": "ClinicalTrials.gov",
-      "source_url": "https://clinicaltrials.gov/study/NCT04106219",
-      "status": "ACTIVE_NOT_RECRUITING",
-      "last_update_posted": "2026-04-21",
-      "phase": [
-        "PHASE1"
-      ],
-      "enrollment": 71,
-      "sponsor": "Eli Lilly and Company",
-      "conditions": [
-        "Neuroblastoma"
       ],
       "matched_diseases": [],
       "matched_entities": [
@@ -5255,39 +4891,6 @@
     },
     {
       "candidate_type": "trial",
-      "external_id": "NCT06758622",
-      "title": "Multicenter Analysis of Morbidity, Mortality and Medical Care in Neonates at the Isidro Ayora Gynecological-Obstetric Hospital, the Calderón General Teaching Hospital and the Nueva Aurora Luz Elena Arismendi Pediatric Gynecological-Obstetric Hospital, January 2008-June 2024",
-      "source": "ClinicalTrials.gov",
-      "source_url": "https://clinicaltrials.gov/study/NCT06758622",
-      "status": "ACTIVE_NOT_RECRUITING",
-      "last_update_posted": "2025-01-06",
-      "phase": [],
-      "enrollment": 40000,
-      "sponsor": "HOSPITAL GINECO OBSTETRICO ISIDRO AYORA",
-      "conditions": [
-        "Neonatal Morbidity and Mortality",
-        "Intrauterine Growth Disorders (IUGR and Macrosomia)",
-        "Prematurity Complications",
-        "Neonatal Infections"
-      ],
-      "matched_diseases": [],
-      "matched_entities": [
-        "cartesian-descartes08"
-      ],
-      "query_matches": [
-        "entity:cartesian-descartes08"
-      ],
-      "review_status": "待处理",
-      "relevance_score": 12,
-      "triage_tier": "立即核验",
-      "triage_reasons": [
-        "正式注册试验",
-        "命中重点实体：Cartesian / Descartes-08",
-        "当前处于活跃状态"
-      ]
-    },
-    {
-      "candidate_type": "trial",
       "external_id": "NCT06485232",
       "title": "An Exploratory Study on the Safety and Efficacy of Universal CAR-T Cells Targeting BCMA and CD19 in the Treatment of Refractory Autoimmune Diseases of the Nervous System",
       "source": "ClinicalTrials.gov",
@@ -5797,795 +5400,43 @@
       "journal_impact_factor_source": null
     },
     {
-      "candidate_type": "official_update",
-      "external_id": "https://ir.cartesiantherapeutics.com/news-releases/news-release-details/cartesian-therapeutics-descartes-08-observed-provide-deep-and",
-      "title": "Skip to main navigation",
-      "source": "Cartesian Therapeutics Pipeline & Press Releases",
-      "source_url": "https://ir.cartesiantherapeutics.com/news-releases/news-release-details/cartesian-therapeutics-descartes-08-observed-provide-deep-and",
-      "publication_date": "",
-      "matched_diseases": [],
-      "matched_entities": [
-        "cartesian-descartes08"
+      "candidate_type": "trial",
+      "external_id": "NCT07473154",
+      "title": "Phase I/II Study of QEL-005 in Patients With Diffuse Cutaneous Systemic Sclerosis (dcSSc) and in Patients With Difficult to Treat Rheumatoid Arthritis (D2TRA).",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT07473154",
+      "status": "RECRUITING",
+      "last_update_posted": "2026-08-21",
+      "phase": [
+        "PHASE1",
+        "PHASE2"
       ],
+      "enrollment": 16,
+      "sponsor": "Quell Therapeutics Limited",
+      "conditions": [
+        "Diffuse Cutaneous Systemic Sclerosis",
+        "Rheumatoid Arthritis (RA)",
+        "Systemic Sclerosis (SSc)",
+        "Autoimmune Rheumatologic Disease"
+      ],
+      "matched_diseases": [
+        "systemic sclerosis",
+        "rheumatoid arthritis"
+      ],
+      "matched_entities": [],
       "query_matches": [
-        "official:cartesian-official"
+        "theme",
+        "disease:systemic sclerosis",
+        "disease:rheumatoid arthritis",
+        "disease:autoimmune disease"
       ],
       "review_status": "待处理",
       "relevance_score": 10,
       "triage_tier": "立即核验",
       "triage_reasons": [
-        "企业官网一手披露",
-        "命中重点实体：Cartesian / Descartes-08"
-      ]
-    },
-    {
-      "candidate_type": "official_update",
-      "external_id": "https://ir.kyvernatx.com/news-releases/news-release-details/kyverna-presents-longer-term-phase-2-data-miv-cel-generalized",
-      "title": "Read More",
-      "source": "Kyverna Pipeline & Press Releases",
-      "source_url": "https://ir.kyvernatx.com/news-releases/news-release-details/kyverna-presents-longer-term-phase-2-data-miv-cel-generalized",
-      "publication_date": "",
-      "matched_diseases": [],
-      "matched_entities": [
-        "kyverna-kyv101"
-      ],
-      "query_matches": [
-        "official:kyverna-official"
-      ],
-      "review_status": "待处理",
-      "relevance_score": 10,
-      "triage_tier": "立即核验",
-      "triage_reasons": [
-        "企业官网一手披露",
-        "命中重点实体：Kyverna / KYV-101"
-      ]
-    },
-    {
-      "candidate_type": "official_update",
-      "external_id": "https://ir.kyvernatx.com/news-releases/news-release-details/kyverna-presents-registrational-trial-primary-analysis-miv-cel",
-      "title": "Read More",
-      "source": "Kyverna Pipeline & Press Releases",
-      "source_url": "https://ir.kyvernatx.com/news-releases/news-release-details/kyverna-presents-registrational-trial-primary-analysis-miv-cel",
-      "publication_date": "",
-      "matched_diseases": [],
-      "matched_entities": [
-        "kyverna-kyv101"
-      ],
-      "query_matches": [
-        "official:kyverna-official"
-      ],
-      "review_status": "待处理",
-      "relevance_score": 10,
-      "triage_tier": "立即核验",
-      "triage_reasons": [
-        "企业官网一手披露",
-        "命中重点实体：Kyverna / KYV-101"
-      ]
-    },
-    {
-      "candidate_type": "official_update",
-      "external_id": "https://ir.kyvernatx.com/news-releases/news-release-details/kyverna-therapeutics-and-elevatebio-enter-commercial",
-      "title": "Kyverna Therapeutics and ElevateBio Enter into Commercial Manufacturing and Supply Agreement for Miv-cel",
-      "source": "Kyverna Pipeline & Press Releases",
-      "source_url": "https://ir.kyvernatx.com/news-releases/news-release-details/kyverna-therapeutics-and-elevatebio-enter-commercial",
-      "publication_date": "",
-      "matched_diseases": [],
-      "matched_entities": [
-        "kyverna-kyv101"
-      ],
-      "query_matches": [
-        "official:kyverna-official"
-      ],
-      "review_status": "待处理",
-      "relevance_score": 10,
-      "triage_tier": "立即核验",
-      "triage_reasons": [
-        "企业官网一手披露",
-        "命中重点实体：Kyverna / KYV-101"
-      ]
-    },
-    {
-      "candidate_type": "official_update",
-      "external_id": "https://ir.kyvernatx.com/news-releases/news-release-details/kyverna-therapeutics-highlights-updated-miv-cel-data-eular",
-      "title": "Skip to main navigation",
-      "source": "Kyverna Pipeline & Press Releases",
-      "source_url": "https://ir.kyvernatx.com/news-releases/news-release-details/kyverna-therapeutics-highlights-updated-miv-cel-data-eular",
-      "publication_date": "",
-      "matched_diseases": [],
-      "matched_entities": [
-        "kyverna-kyv101"
-      ],
-      "query_matches": [
-        "official:kyverna-official"
-      ],
-      "review_status": "待处理",
-      "relevance_score": 10,
-      "triage_tier": "立即核验",
-      "triage_reasons": [
-        "企业官网一手披露",
-        "命中重点实体：Kyverna / KYV-101"
-      ]
-    },
-    {
-      "candidate_type": "official_update",
-      "external_id": "https://www.cabalettabio.com/investors/news-events/press-releases/detail/144/cabaletta-bio-announces-multiple-upcoming-presentations",
-      "title": "Cabaletta Bio Announces Multiple Upcoming Presentations, Including Data on Rese-cel without Preconditioning and Rese-cel with Automated Manufacturing, at the ASGCT 2026 Annual Meeting",
-      "source": "Cabaletta Bio Pipeline & Press Releases",
-      "source_url": "https://www.cabalettabio.com/investors/news-events/press-releases/detail/144/cabaletta-bio-announces-multiple-upcoming-presentations",
-      "publication_date": "",
-      "matched_diseases": [],
-      "matched_entities": [
-        "cabaletta-resecel"
-      ],
-      "query_matches": [
-        "official:cabaletta-official"
-      ],
-      "review_status": "待处理",
-      "relevance_score": 10,
-      "triage_tier": "立即核验",
-      "triage_reasons": [
-        "企业官网一手披露",
-        "命中重点实体：Cabaletta Bio / rese-cel / CABA-201"
-      ]
-    },
-    {
-      "candidate_type": "official_update",
-      "external_id": "https://www.cabalettabio.com/investors/news-events/press-releases/detail/145/cabaletta-bio-and-cellares-announce-10-year-commercial",
-      "title": "Cabaletta Bio and Cellares Announce 10-Year Commercial Supply Agreement for Rese-cel",
-      "source": "Cabaletta Bio Pipeline & Press Releases",
-      "source_url": "https://www.cabalettabio.com/investors/news-events/press-releases/detail/145/cabaletta-bio-and-cellares-announce-10-year-commercial",
-      "publication_date": "",
-      "matched_diseases": [],
-      "matched_entities": [
-        "cabaletta-resecel"
-      ],
-      "query_matches": [
-        "official:cabaletta-official"
-      ],
-      "review_status": "待处理",
-      "relevance_score": 10,
-      "triage_tier": "立即核验",
-      "triage_reasons": [
-        "企业官网一手披露",
-        "命中重点实体：Cabaletta Bio / rese-cel / CABA-201"
-      ]
-    },
-    {
-      "candidate_type": "official_update",
-      "external_id": "https://www.cabalettabio.com/investors/news-events/press-releases/detail/147/cabaletta-bio-presents-preconditioning-free-clinical-data",
-      "title": "Cabaletta Bio Presents Preconditioning-free Clinical Data and Automated Manufacturing Translational Data for Rese-cel at ASGCT 2026 Annual Meeting",
-      "source": "Cabaletta Bio Pipeline & Press Releases",
-      "source_url": "https://www.cabalettabio.com/investors/news-events/press-releases/detail/147/cabaletta-bio-presents-preconditioning-free-clinical-data",
-      "publication_date": "",
-      "matched_diseases": [],
-      "matched_entities": [
-        "cabaletta-resecel"
-      ],
-      "query_matches": [
-        "official:cabaletta-official"
-      ],
-      "review_status": "待处理",
-      "relevance_score": 10,
-      "triage_tier": "立即核验",
-      "triage_reasons": [
-        "企业官网一手披露",
-        "命中重点实体：Cabaletta Bio / rese-cel / CABA-201"
-      ]
-    },
-    {
-      "candidate_type": "official_update",
-      "external_id": "https://www.cabalettabio.com/pipeline/caba-201",
-      "title": "Rese-cel",
-      "source": "Cabaletta Bio Pipeline & Press Releases",
-      "source_url": "https://www.cabalettabio.com/pipeline/caba-201",
-      "publication_date": "",
-      "matched_diseases": [],
-      "matched_entities": [
-        "cabaletta-resecel"
-      ],
-      "query_matches": [
-        "official:cabaletta-official"
-      ],
-      "review_status": "待处理",
-      "relevance_score": 10,
-      "triage_tier": "立即核验",
-      "triage_reasons": [
-        "企业官网一手披露",
-        "命中重点实体：Cabaletta Bio / rese-cel / CABA-201"
-      ]
-    },
-    {
-      "candidate_type": "official_update",
-      "external_id": "https://www.iasobio.com/info.php?id=183",
-      "title": "14 2022-02 U.S. FDA Grants Orphan Drug Designation to BCMA CAR-T Cell Therapy Co-Developed by IASO Bio and Innovent NANJING&SHANGHAI , CHINA, SAN JOSE U.S., February 14, 2022 - IASO Biotherapeutics (“IASO Bio”), a clinical-stage biopharmaceutical company engaged in discovering, developing, and manufacturing innovative cell therapies and antibody products, and Innovent Biologics, Inc. (“Innovent”, HKEX: 01801), today jointly announced that the Office of Orphan Products Development (OOPD) of the U.S. Food and Drug Administration (FDA) has granted Orphan Drug Designation (ODD) to their fully human anti-B-cell maturation antigen (BCMA) chimeric antigen receptor (CAR) T-cell therapy (IASO Bio: CT103A, Innovent: IBI326) for the treatment of relapsed and/or refractory multiple myeloma (R/R MM).",
-      "source": "IASO Bio Official News & Pipeline",
-      "source_url": "https://www.iasobio.com/info.php?id=183",
-      "publication_date": "",
-      "matched_diseases": [],
-      "matched_entities": [
-        "iaso-ct103a"
-      ],
-      "query_matches": [
-        "official:iaso-official"
-      ],
-      "review_status": "待处理",
-      "relevance_score": 10,
-      "triage_tier": "立即核验",
-      "triage_reasons": [
-        "企业官网一手披露",
-        "命中重点实体：IASO Bio / Eque-cel / CT103A"
-      ]
-    },
-    {
-      "candidate_type": "official_update",
-      "external_id": "https://www.iasobio.com/info.php?id=190",
-      "title": "02 2022-06 IASO Bio and Innovent Jointly Announce the NMPA Acceptance of the New Drug Application for Equecabtagene Autoleucel for the Treatment of Relapsed and/or Refractory Multiple Myeloma",
-      "source": "IASO Bio Official News & Pipeline",
-      "source_url": "https://www.iasobio.com/info.php?id=190",
-      "publication_date": "",
-      "matched_diseases": [],
-      "matched_entities": [
-        "iaso-ct103a"
-      ],
-      "query_matches": [
-        "official:iaso-official"
-      ],
-      "review_status": "待处理",
-      "relevance_score": 10,
-      "triage_tier": "立即核验",
-      "triage_reasons": [
-        "企业官网一手披露",
-        "命中重点实体：IASO Bio / Eque-cel / CT103A"
-      ]
-    },
-    {
-      "candidate_type": "official_update",
-      "external_id": "https://www.iasobio.com/info.php?id=192",
-      "title": "13 2022-06 IASO Bio and Innovent Present Updated Data of BCMA CAR-T Cell Therapy（Equecabtagene Autoleucel）at EHA 2022",
-      "source": "IASO Bio Official News & Pipeline",
-      "source_url": "https://www.iasobio.com/info.php?id=192",
-      "publication_date": "",
-      "matched_diseases": [],
-      "matched_entities": [
-        "iaso-ct103a"
-      ],
-      "query_matches": [
-        "official:iaso-official"
-      ],
-      "review_status": "待处理",
-      "relevance_score": 10,
-      "triage_tier": "立即核验",
-      "triage_reasons": [
-        "企业官网一手披露",
-        "命中重点实体：IASO Bio / Eque-cel / CT103A"
-      ]
-    },
-    {
-      "candidate_type": "official_update",
-      "external_id": "https://www.iasobio.com/info.php?id=209",
-      "title": "22 2022-12 IASO Bio Announces U.S. FDA Approval of Clinical Trial Application for BCMA CAR-T CT103A for Relapsed/Refractory Multiple Myeloma",
-      "source": "IASO Bio Official News & Pipeline",
-      "source_url": "https://www.iasobio.com/info.php?id=209",
-      "publication_date": "",
-      "matched_diseases": [],
-      "matched_entities": [
-        "iaso-ct103a"
-      ],
-      "query_matches": [
-        "official:iaso-official"
-      ],
-      "review_status": "待处理",
-      "relevance_score": 10,
-      "triage_tier": "立即核验",
-      "triage_reasons": [
-        "企业官网一手披露",
-        "命中重点实体：IASO Bio / Eque-cel / CT103A"
-      ]
-    },
-    {
-      "candidate_type": "official_update",
-      "external_id": "https://www.iasobio.com/info.php?id=215",
-      "title": "13 2023-02 IASO Bio Announces CT103A Granted Regenerative Medicine Advanced Therapy (RMAT) and Fast Track (FT) Designations by the FDA",
-      "source": "IASO Bio Official News & Pipeline",
-      "source_url": "https://www.iasobio.com/info.php?id=215",
-      "publication_date": "",
-      "matched_diseases": [],
-      "matched_entities": [
-        "iaso-ct103a"
-      ],
-      "query_matches": [
-        "official:iaso-official"
-      ],
-      "review_status": "待处理",
-      "relevance_score": 10,
-      "triage_tier": "立即核验",
-      "triage_reasons": [
-        "企业官网一手披露",
-        "命中重点实体：IASO Bio / Eque-cel / CT103A"
-      ]
-    },
-    {
-      "candidate_type": "official_update",
-      "external_id": "https://www.iasobio.com/info.php?id=223",
-      "title": "01 2023-07 IASO Bio and Innovent Updated Efficacy and Safety Clinical Data of Equecabtagene Autoleucel（BCMA CAR-T Cell Therapy）for Multiple Myeloma at the 2023 ASCO Annual Meeting",
-      "source": "IASO Bio Official News & Pipeline",
-      "source_url": "https://www.iasobio.com/info.php?id=223",
-      "publication_date": "",
-      "matched_diseases": [],
-      "matched_entities": [
-        "iaso-ct103a"
-      ],
-      "query_matches": [
-        "official:iaso-official"
-      ],
-      "review_status": "待处理",
-      "relevance_score": 10,
-      "triage_tier": "立即核验",
-      "triage_reasons": [
-        "企业官网一手披露",
-        "命中重点实体：IASO Bio / Eque-cel / CT103A"
-      ]
-    },
-    {
-      "candidate_type": "official_update",
-      "external_id": "https://www.iasobio.com/info.php?id=224",
-      "title": "10 2023-07 IASO Bio and Innovent Announce the NMPA Approval of the NDA for Equecabtagene Autoleucel, the World's First Fully-human BCMA CAR-T Therapy, for the Treatment of RRMM",
-      "source": "IASO Bio Official News & Pipeline",
-      "source_url": "https://www.iasobio.com/info.php?id=224",
-      "publication_date": "",
-      "matched_diseases": [],
-      "matched_entities": [
-        "iaso-ct103a"
-      ],
-      "query_matches": [
-        "official:iaso-official"
-      ],
-      "review_status": "待处理",
-      "relevance_score": 10,
-      "triage_tier": "立即核验",
-      "triage_reasons": [
-        "企业官网一手披露",
-        "命中重点实体：IASO Bio / Eque-cel / CT103A"
-      ]
-    },
-    {
-      "candidate_type": "official_update",
-      "external_id": "https://www.iasobio.com/info.php?id=225",
-      "title": "28 2023-09 IASO Bio Presents Updated Long-Term Follow-Up Data for BCMA CAR-T FUCASO® (Equecabtagene Autoleucel) at IMS 2023",
-      "source": "IASO Bio Official News & Pipeline",
-      "source_url": "https://www.iasobio.com/info.php?id=225",
-      "publication_date": "",
-      "matched_diseases": [],
-      "matched_entities": [
-        "iaso-ct103a"
-      ],
-      "query_matches": [
-        "official:iaso-official"
-      ],
-      "review_status": "待处理",
-      "relevance_score": 10,
-      "triage_tier": "立即核验",
-      "triage_reasons": [
-        "企业官网一手披露",
-        "命中重点实体：IASO Bio / Eque-cel / CT103A"
-      ]
-    },
-    {
-      "candidate_type": "official_update",
-      "external_id": "https://www.iasobio.com/info.php?id=226",
-      "title": "12 2023-12 IASO Bio and Innovent Present New Data of FUCASO® (Equecabtagene Autoleucel) for Multiple Myeloma Patients in Oral Presentation at ASH 2023",
-      "source": "IASO Bio Official News & Pipeline",
-      "source_url": "https://www.iasobio.com/info.php?id=226",
-      "publication_date": "",
-      "matched_diseases": [],
-      "matched_entities": [
-        "iaso-ct103a"
-      ],
-      "query_matches": [
-        "official:iaso-official"
-      ],
-      "review_status": "待处理",
-      "relevance_score": 10,
-      "triage_tier": "立即核验",
-      "triage_reasons": [
-        "企业官网一手披露",
-        "命中重点实体：IASO Bio / Eque-cel / CT103A"
-      ]
-    },
-    {
-      "candidate_type": "official_update",
-      "external_id": "https://www.iasobio.com/info.php?id=230",
-      "title": "29 2024-03 IASO Bio Announces NMPA's IND Approval for Equecabtagene Autoleucel in Second- and Third-Line Treatment of Multiple Myeloma",
-      "source": "IASO Bio Official News & Pipeline",
-      "source_url": "https://www.iasobio.com/info.php?id=230",
-      "publication_date": "",
-      "matched_diseases": [],
-      "matched_entities": [
-        "iaso-ct103a"
-      ],
-      "query_matches": [
-        "official:iaso-official"
-      ],
-      "review_status": "待处理",
-      "relevance_score": 10,
-      "triage_tier": "立即核验",
-      "triage_reasons": [
-        "企业官网一手披露",
-        "命中重点实体：IASO Bio / Eque-cel / CT103A"
-      ]
-    },
-    {
-      "candidate_type": "official_update",
-      "external_id": "https://www.iasobio.com/info.php?id=241",
-      "title": "16 2024-06 IASO Bio Presented New Data of FUCASO® (Equecabtagene Autoleucel) for the Treatment of High-risk Newly Diagnosed Multiple Myeloma in Oral Presentation at EHA 2024",
-      "source": "IASO Bio Official News & Pipeline",
-      "source_url": "https://www.iasobio.com/info.php?id=241",
-      "publication_date": "",
-      "matched_diseases": [],
-      "matched_entities": [
-        "iaso-ct103a"
-      ],
-      "query_matches": [
-        "official:iaso-official"
-      ],
-      "review_status": "待处理",
-      "relevance_score": 10,
-      "triage_tier": "立即核验",
-      "triage_reasons": [
-        "企业官网一手披露",
-        "命中重点实体：IASO Bio / Eque-cel / CT103A"
-      ]
-    },
-    {
-      "candidate_type": "official_update",
-      "external_id": "https://www.iasobio.com/info.php?id=244",
-      "title": "01 2024-07 IASO Bio Presented Clinical Data and Single-cell Analysis of Equecabtagene Autoleucel for the Treatment of Central Nervous System Autoimmunity in Oral Presentation at EAN 2024",
-      "source": "IASO Bio Official News & Pipeline",
-      "source_url": "https://www.iasobio.com/info.php?id=244",
-      "publication_date": "",
-      "matched_diseases": [],
-      "matched_entities": [
-        "iaso-ct103a"
-      ],
-      "query_matches": [
-        "official:iaso-official"
-      ],
-      "review_status": "待处理",
-      "relevance_score": 10,
-      "triage_tier": "立即核验",
-      "triage_reasons": [
-        "企业官网一手披露",
-        "命中重点实体：IASO Bio / Eque-cel / CT103A"
-      ]
-    },
-    {
-      "candidate_type": "official_update",
-      "external_id": "https://www.iasobio.com/info.php?id=253",
-      "title": "27 2024-09 IASO Bio Presented the Outcomes of Relapsed/Refractory Multiple Myeloma (R/RMM) Patients with Renal Impairment Treated with Equecabtagene Autoleucel（FucasoTM）at 2024 IMS Annual Meeting",
-      "source": "IASO Bio Official News & Pipeline",
-      "source_url": "https://www.iasobio.com/info.php?id=253",
-      "publication_date": "",
-      "matched_diseases": [],
-      "matched_entities": [
-        "iaso-ct103a"
-      ],
-      "query_matches": [
-        "official:iaso-official"
-      ],
-      "review_status": "待处理",
-      "relevance_score": 10,
-      "triage_tier": "立即核验",
-      "triage_reasons": [
-        "企业官网一手披露",
-        "命中重点实体：IASO Bio / Eque-cel / CT103A"
-      ]
-    },
-    {
-      "candidate_type": "official_update",
-      "external_id": "https://www.iasobio.com/info.php?id=254",
-      "title": "29 2024-09 IASO Bio Presented Comparative Clinical Outcomes on the Optimal Lymphodepletion Prior to Infution of Equecabtagene Autoleucel（FucasoTM）in Patients with Relapsed Refractory Multiple Myeloma at 2024 IMS Annual Meeting",
-      "source": "IASO Bio Official News & Pipeline",
-      "source_url": "https://www.iasobio.com/info.php?id=254",
-      "publication_date": "",
-      "matched_diseases": [],
-      "matched_entities": [
-        "iaso-ct103a"
-      ],
-      "query_matches": [
-        "official:iaso-official"
-      ],
-      "review_status": "待处理",
-      "relevance_score": 10,
-      "triage_tier": "立即核验",
-      "triage_reasons": [
-        "企业官网一手披露",
-        "命中重点实体：IASO Bio / Eque-cel / CT103A"
-      ]
-    },
-    {
-      "candidate_type": "official_update",
-      "external_id": "https://www.iasobio.com/info.php?id=256",
-      "title": "08 2024-11 JAMA Oncology Publishes Phase 1b/2 Study Data on IASO Bio's Equecabtagene Autoleucel (Fucaso™) in the Treatment of Relapsed/Refractory Multiple Myeloma",
-      "source": "IASO Bio Official News & Pipeline",
-      "source_url": "https://www.iasobio.com/info.php?id=256",
-      "publication_date": "",
-      "matched_diseases": [],
-      "matched_entities": [
-        "iaso-ct103a"
-      ],
-      "query_matches": [
-        "official:iaso-official"
-      ],
-      "review_status": "待处理",
-      "relevance_score": 10,
-      "triage_tier": "立即核验",
-      "triage_reasons": [
-        "企业官网一手披露",
-        "命中重点实体：IASO Bio / Eque-cel / CT103A"
-      ]
-    },
-    {
-      "candidate_type": "official_update",
-      "external_id": "https://www.iasobio.com/info.php?id=257",
-      "title": "10 2024-12 IASO Bio Presented Study Findings on the Impact of CAR T-Cell Persistence on Clinical Outcomes in Relapsed/Refractory Multiple Myeloma with Equecabtagene Autoleucel(FUCASO) Myeloma at 2024 ASH",
-      "source": "IASO Bio Official News & Pipeline",
-      "source_url": "https://www.iasobio.com/info.php?id=257",
-      "publication_date": "",
-      "matched_diseases": [],
-      "matched_entities": [
-        "iaso-ct103a"
-      ],
-      "query_matches": [
-        "official:iaso-official"
-      ],
-      "review_status": "待处理",
-      "relevance_score": 10,
-      "triage_tier": "立即核验",
-      "triage_reasons": [
-        "企业官网一手披露",
-        "命中重点实体：IASO Bio / Eque-cel / CT103A"
-      ]
-    },
-    {
-      "candidate_type": "official_update",
-      "external_id": "https://www.iasobio.com/info.php?id=260",
-      "title": "29 2025-01 IASO Bio Announces Acceptance of New Drug Application for Equecabtagene Autoleucel (FUCASO) by the Singapore Health Sciences Authority (HSA)",
-      "source": "IASO Bio Official News & Pipeline",
-      "source_url": "https://www.iasobio.com/info.php?id=260",
-      "publication_date": "",
-      "matched_diseases": [],
-      "matched_entities": [
-        "iaso-ct103a"
-      ],
-      "query_matches": [
-        "official:iaso-official"
-      ],
-      "review_status": "待处理",
-      "relevance_score": 10,
-      "triage_tier": "立即核验",
-      "triage_reasons": [
-        "企业官网一手披露",
-        "命中重点实体：IASO Bio / Eque-cel / CT103A"
-      ]
-    },
-    {
-      "candidate_type": "official_update",
-      "external_id": "https://www.iasobio.com/info.php?id=261",
-      "title": "14 2025-02 IASO Bio Announces Acceptance of New Drug Application for Equecabtagene Autoleucel (FUCASO) by the Hong Kong Department of Health",
-      "source": "IASO Bio Official News & Pipeline",
-      "source_url": "https://www.iasobio.com/info.php?id=261",
-      "publication_date": "",
-      "matched_diseases": [],
-      "matched_entities": [
-        "iaso-ct103a"
-      ],
-      "query_matches": [
-        "official:iaso-official"
-      ],
-      "review_status": "待处理",
-      "relevance_score": 10,
-      "triage_tier": "立即核验",
-      "triage_reasons": [
-        "企业官网一手披露",
-        "命中重点实体：IASO Bio / Eque-cel / CT103A"
-      ]
-    },
-    {
-      "candidate_type": "official_update",
-      "external_id": "https://www.iasobio.com/info.php?id=262",
-      "title": "28 2025-03 IASO Bio Announces Approval of New Drug Application for Equecabtagene Autoleucel by the Macau Pharmaceutical Administration Bureau",
-      "source": "IASO Bio Official News & Pipeline",
-      "source_url": "https://www.iasobio.com/info.php?id=262",
-      "publication_date": "",
-      "matched_diseases": [],
-      "matched_entities": [
-        "iaso-ct103a"
-      ],
-      "query_matches": [
-        "official:iaso-official"
-      ],
-      "review_status": "待处理",
-      "relevance_score": 10,
-      "triage_tier": "立即核验",
-      "triage_reasons": [
-        "企业官网一手披露",
-        "命中重点实体：IASO Bio / Eque-cel / CT103A"
-      ]
-    },
-    {
-      "candidate_type": "official_update",
-      "external_id": "https://www.iasobio.com/info.php?id=266",
-      "title": "09 2025-05 IASO Bio Receives Orphan Drug Designation from the Saudi Food and Drug Authority for Equecabtagene Autoleucel",
-      "source": "IASO Bio Official News & Pipeline",
-      "source_url": "https://www.iasobio.com/info.php?id=266",
-      "publication_date": "",
-      "matched_diseases": [],
-      "matched_entities": [
-        "iaso-ct103a"
-      ],
-      "query_matches": [
-        "official:iaso-official"
-      ],
-      "review_status": "待处理",
-      "relevance_score": 10,
-      "triage_tier": "立即核验",
-      "triage_reasons": [
-        "企业官网一手披露",
-        "命中重点实体：IASO Bio / Eque-cel / CT103A"
-      ]
-    },
-    {
-      "candidate_type": "official_update",
-      "external_id": "https://www.iasobio.com/info.php?id=274",
-      "title": "01/07 2025 IASO Bio's Equecabtagene Autoleucel Gains First Approval Outside Mainland China",
-      "source": "IASO Bio Official News & Pipeline",
-      "source_url": "https://www.iasobio.com/info.php?id=274",
-      "publication_date": "",
-      "matched_diseases": [],
-      "matched_entities": [
-        "iaso-ct103a"
-      ],
-      "query_matches": [
-        "official:iaso-official"
-      ],
-      "review_status": "待处理",
-      "relevance_score": 10,
-      "triage_tier": "立即核验",
-      "triage_reasons": [
-        "企业官网一手披露",
-        "命中重点实体：IASO Bio / Eque-cel / CT103A"
-      ]
-    },
-    {
-      "candidate_type": "official_update",
-      "external_id": "https://www.iasobio.com/info.php?id=275",
-      "title": "09 2025-07 IASO Bio Receives Orphan Drug Designation from the Ministry of Food and Drug Safety of South Korea for Equecabtagene Autoleucel",
-      "source": "IASO Bio Official News & Pipeline",
-      "source_url": "https://www.iasobio.com/info.php?id=275",
-      "publication_date": "",
-      "matched_diseases": [],
-      "matched_entities": [
-        "iaso-ct103a"
-      ],
-      "query_matches": [
-        "official:iaso-official"
-      ],
-      "review_status": "待处理",
-      "relevance_score": 10,
-      "triage_tier": "立即核验",
-      "triage_reasons": [
-        "企业官网一手披露",
-        "命中重点实体：IASO Bio / Eque-cel / CT103A"
-      ]
-    },
-    {
-      "candidate_type": "official_update",
-      "external_id": "https://www.iasobio.com/info.php?id=298",
-      "title": "27 2025-11 IASO Bio Announces BLA Approval of Fucaso (Equecabtagene Autoleucel) by the Hong Kong Department of Health for the Treatment of Relapsed or Refractory Multiple Myeloma",
-      "source": "IASO Bio Official News & Pipeline",
-      "source_url": "https://www.iasobio.com/info.php?id=298",
-      "publication_date": "",
-      "matched_diseases": [],
-      "matched_entities": [
-        "iaso-ct103a"
-      ],
-      "query_matches": [
-        "official:iaso-official"
-      ],
-      "review_status": "待处理",
-      "relevance_score": 10,
-      "triage_tier": "立即核验",
-      "triage_reasons": [
-        "企业官网一手披露",
-        "命中重点实体：IASO Bio / Eque-cel / CT103A"
-      ]
-    },
-    {
-      "candidate_type": "official_update",
-      "external_id": "https://www.iasobio.com/info.php?id=300",
-      "title": "08 2025-12 IASO Bio Presents Updated Results for Equecabtagene Autoleucel in High-Risk Newly Diagnosed Multiple Myeloma Patients at 2025 ASH",
-      "source": "IASO Bio Official News & Pipeline",
-      "source_url": "https://www.iasobio.com/info.php?id=300",
-      "publication_date": "",
-      "matched_diseases": [],
-      "matched_entities": [
-        "iaso-ct103a"
-      ],
-      "query_matches": [
-        "official:iaso-official"
-      ],
-      "review_status": "待处理",
-      "relevance_score": 10,
-      "triage_tier": "立即核验",
-      "triage_reasons": [
-        "企业官网一手披露",
-        "命中重点实体：IASO Bio / Eque-cel / CT103A"
-      ]
-    },
-    {
-      "candidate_type": "official_update",
-      "external_id": "https://www.iasobio.com/info.php?id=303",
-      "title": "24 2026-03 IASO Bio Has Received Clearance from Japan’s PMDA to Initiate Clinical Trial for CAR-T Therapy Equecabtagene Autoleucel in Second- or Third-Line Multiple Myeloma",
-      "source": "IASO Bio Official News & Pipeline",
-      "source_url": "https://www.iasobio.com/info.php?id=303",
-      "publication_date": "",
-      "matched_diseases": [],
-      "matched_entities": [
-        "iaso-ct103a"
-      ],
-      "query_matches": [
-        "official:iaso-official"
-      ],
-      "review_status": "待处理",
-      "relevance_score": 10,
-      "triage_tier": "立即核验",
-      "triage_reasons": [
-        "企业官网一手披露",
-        "命中重点实体：IASO Bio / Eque-cel / CT103A"
-      ]
-    },
-    {
-      "candidate_type": "official_update",
-      "external_id": "https://www.iasobio.com/info.php?id=309",
-      "title": "18/06 2026 IASO Bio Announces NDA Approval of Equecabtagene Autoleucel by the Singapore Health Sciences Authority (HSA) for the Treatment of Relapsed or Refractory Multiple Myeloma, Marking a Key Milestone in International Commercialization",
-      "source": "IASO Bio Official News & Pipeline",
-      "source_url": "https://www.iasobio.com/info.php?id=309",
-      "publication_date": "",
-      "matched_diseases": [],
-      "matched_entities": [
-        "iaso-ct103a"
-      ],
-      "query_matches": [
-        "official:iaso-official"
-      ],
-      "review_status": "待处理",
-      "relevance_score": 10,
-      "triage_tier": "立即核验",
-      "triage_reasons": [
-        "企业官网一手披露",
-        "命中重点实体：IASO Bio / Eque-cel / CT103A"
-      ]
-    },
-    {
-      "candidate_type": "official_update",
-      "external_id": "https://www.tr1x.bio",
-      "title": "Skip to content",
-      "source": "Tr1X Official Website",
-      "source_url": "https://www.tr1x.bio",
-      "publication_date": "",
-      "matched_diseases": [],
-      "matched_entities": [
-        "tr1x-trx319"
-      ],
-      "query_matches": [
-        "official:tr1x-official"
-      ],
-      "review_status": "待处理",
-      "relevance_score": 10,
-      "triage_tier": "立即核验",
-      "triage_reasons": [
-        "企业官网一手披露",
-        "命中重点实体：Tr1X / TRX319 / IMPACT-MS"
+        "正式注册试验",
+        "命中2个重点病种",
+        "当前处于活跃状态"
       ]
     },
     {
@@ -6618,47 +5469,6 @@
       "triage_reasons": [
         "正式注册试验",
         "命中重点实体：Cartesian / Descartes-08"
-      ]
-    },
-    {
-      "candidate_type": "trial",
-      "external_id": "NCT06733935",
-      "title": "A Phase 1/2 Study of NKX019, a CD19 Chimeric Antigen Receptor Natural Killer (CAR NK) Cell Therapy, in Subjects With Immune-Mediated Diseases",
-      "source": "ClinicalTrials.gov",
-      "source_url": "https://clinicaltrials.gov/study/NCT06733935",
-      "status": "RECRUITING",
-      "last_update_posted": "2026-08-07",
-      "phase": [
-        "PHASE1",
-        "PHASE2"
-      ],
-      "enrollment": 240,
-      "sponsor": "Nkarta, Inc.",
-      "conditions": [
-        "Systemic Sclerosis",
-        "Idiopathic Inflammatory Myopathies",
-        "Antineutrophil Cytoplasmic Antibody-Associated Vasculitis",
-        "Rheumatoid Arthritis"
-      ],
-      "matched_diseases": [
-        "systemic sclerosis",
-        "rheumatoid arthritis"
-      ],
-      "matched_entities": [],
-      "query_matches": [
-        "theme",
-        "disease:systemic sclerosis",
-        "disease:myositis",
-        "disease:rheumatoid arthritis",
-        "disease:autoimmune disease"
-      ],
-      "review_status": "待处理",
-      "relevance_score": 10,
-      "triage_tier": "立即核验",
-      "triage_reasons": [
-        "正式注册试验",
-        "命中2个重点病种",
-        "当前处于活跃状态"
       ]
     },
     {
@@ -6903,46 +5713,6 @@
       "triage_reasons": [
         "正式注册试验",
         "命中重点实体：Cartesian / Descartes-08"
-      ]
-    },
-    {
-      "candidate_type": "trial",
-      "external_id": "NCT07473154",
-      "title": "Phase I/II Study of QEL-005 in Patients With Diffuse Cutaneous Systemic Sclerosis (dcSSc) and in Patients With Difficult to Treat Rheumatoid Arthritis (D2TRA).",
-      "source": "ClinicalTrials.gov",
-      "source_url": "https://clinicaltrials.gov/study/NCT07473154",
-      "status": "RECRUITING",
-      "last_update_posted": "2026-06-30",
-      "phase": [
-        "PHASE1",
-        "PHASE2"
-      ],
-      "enrollment": 16,
-      "sponsor": "Quell Therapeutics Limited",
-      "conditions": [
-        "Diffuse Cutaneous Systemic Sclerosis",
-        "Rheumatoid Arthritis (RA)",
-        "Systemic Sclerosis (SSc)",
-        "Autoimmune Rheumatologic Disease"
-      ],
-      "matched_diseases": [
-        "systemic sclerosis",
-        "rheumatoid arthritis"
-      ],
-      "matched_entities": [],
-      "query_matches": [
-        "theme",
-        "disease:systemic sclerosis",
-        "disease:rheumatoid arthritis",
-        "disease:autoimmune disease"
-      ],
-      "review_status": "待处理",
-      "relevance_score": 10,
-      "triage_tier": "立即核验",
-      "triage_reasons": [
-        "正式注册试验",
-        "命中2个重点病种",
-        "当前处于活跃状态"
       ]
     },
     {
@@ -7628,45 +6398,6 @@
       "triage_reasons": [
         "正式注册试验",
         "命中重点实体：Cartesian / Descartes-08"
-      ]
-    },
-    {
-      "candidate_type": "trial",
-      "external_id": "NCT07251179",
-      "title": "Characterization of Autoreactive b Lymphocytes in Autoimmune Diseases and Immune Deficiencies",
-      "source": "ClinicalTrials.gov",
-      "source_url": "https://clinicaltrials.gov/study/NCT07251179",
-      "status": "NOT_YET_RECRUITING",
-      "last_update_posted": "2025-12-04",
-      "phase": [],
-      "enrollment": 200,
-      "sponsor": "University Hospital, Strasbourg, France",
-      "conditions": [
-        "Systemic Lupus Erythematosus",
-        "Systemic Scleroderma",
-        "ANCA-associated Vasculitis",
-        "Antiphospholipid Syndrome",
-        "Primary Immunodeficiencies"
-      ],
-      "matched_diseases": [
-        "systemic lupus",
-        "systemic sclerosis",
-        "autoimmune disease"
-      ],
-      "matched_entities": [],
-      "query_matches": [
-        "theme",
-        "disease:systemic lupus",
-        "disease:systemic sclerosis",
-        "disease:rheumatoid arthritis",
-        "disease:autoimmune disease"
-      ],
-      "review_status": "待处理",
-      "relevance_score": 10,
-      "triage_tier": "立即核验",
-      "triage_reasons": [
-        "正式注册试验",
-        "命中3个重点病种"
       ]
     },
     {
@@ -12664,41 +11395,6 @@
     },
     {
       "candidate_type": "trial",
-      "external_id": "NCT06897930",
-      "title": "A Phase 1b/2 Study of AZD0120, a Chimeric Antigen Receptor T-cell (CAR T) Therapy Targeting CD19 and B-cell Maturation Antigen (BCMA) in Subjects With Refractory Systemic Lupus Erythematosus (SLE)",
-      "source": "ClinicalTrials.gov",
-      "source_url": "https://clinicaltrials.gov/study/NCT06897930",
-      "status": "RECRUITING",
-      "last_update_posted": "2026-08-12",
-      "phase": [
-        "PHASE1",
-        "PHASE2"
-      ],
-      "enrollment": 150,
-      "sponsor": "AstraZeneca",
-      "conditions": [
-        "Lupus Erythematosus, Systemic"
-      ],
-      "matched_diseases": [
-        "systemic lupus"
-      ],
-      "matched_entities": [],
-      "query_matches": [
-        "theme",
-        "disease:systemic lupus",
-        "disease:autoimmune disease"
-      ],
-      "review_status": "待处理",
-      "relevance_score": 8,
-      "triage_tier": "持续观察",
-      "triage_reasons": [
-        "正式注册试验",
-        "命中1个重点病种",
-        "当前处于活跃状态"
-      ]
-    },
-    {
-      "candidate_type": "trial",
       "external_id": "NCT06617793",
       "title": "An Open-label, Multi-center, Phase 1/2 Study to Assess Safety, Efficacy, and Cellular Kinetics of YTB323 in Participants With Relapsing Multiple Sclerosis With Breakthrough Disease Activity During Previous Treatment With a Highly Efficacious Therapy",
       "source": "ClinicalTrials.gov",
@@ -15090,6 +13786,71 @@
     },
     {
       "candidate_type": "research",
+      "external_id": "42625350",
+      "title": "Extreme Bond Ionicity in Mg─Te Chalcogenides for Ultrathin Low Voltage Selector-Only Memory beyond the Leakage Scaling Limit.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42625350/",
+      "publication_date": "2026 Aug 20",
+      "journal": "Advanced materials (Deerfield Beach, Fla.)",
+      "doi": "10.1002/adma.74743",
+      "publication_type": [
+        "Journal Article"
+      ],
+      "matched_diseases": [
+        "myasthenia gravis"
+      ],
+      "matched_entities": [
+        "cabaletta-resecel"
+      ],
+      "query_matches": [
+        "entity:cabaletta-resecel"
+      ],
+      "review_status": "待处理",
+      "relevance_score": 8,
+      "triage_tier": "立即核验",
+      "triage_reasons": [
+        "命中重点实体：Cabaletta Bio / rese-cel / CABA-201",
+        "命中1个重点病种"
+      ],
+      "journal_impact_factor": null,
+      "journal_impact_factor_year": null,
+      "journal_impact_factor_source": null
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42611333",
+      "title": "Immune reconstitution and tolerance-inducing therapies as promising therapeutic approaches in multiple sclerosis.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42611333/",
+      "publication_date": "2026 Aug 18",
+      "journal": "Neurological sciences : official journal of the Italian Neurological Society and of the Italian Society of Clinical Neurophysiology",
+      "doi": "10.1007/s10072-026-09328-2",
+      "publication_type": [
+        "Journal Article",
+        "Review"
+      ],
+      "matched_diseases": [
+        "multiple sclerosis"
+      ],
+      "matched_entities": [
+        "cabaletta-resecel"
+      ],
+      "query_matches": [
+        "entity:cabaletta-resecel"
+      ],
+      "review_status": "待处理",
+      "relevance_score": 8,
+      "triage_tier": "立即核验",
+      "triage_reasons": [
+        "命中重点实体：Cabaletta Bio / rese-cel / CABA-201",
+        "命中1个重点病种"
+      ],
+      "journal_impact_factor": null,
+      "journal_impact_factor_year": null,
+      "journal_impact_factor_source": null
+    },
+    {
+      "candidate_type": "research",
       "external_id": "42584071",
       "title": "Hormone levels of female patients with SLE after anti-CD19 CAR T-cell treatment do not indicate a signal of impaired ovarian reserve.",
       "source": "NCBI PubMed",
@@ -17113,7 +15874,9 @@
       "journal": "Science (New York, N.Y.)",
       "doi": "10.1126/science.ads8473",
       "publication_type": [
-        "Journal Article"
+        "Journal Article",
+        "Research Support, N.I.H., Intramural",
+        "Research Support, Non-U.S. Gov't"
       ],
       "matched_diseases": [
         "autoimmune disease"
@@ -18776,128 +17539,6 @@
       "journal_impact_factor_source": null
     },
     {
-      "candidate_type": "official_update",
-      "external_id": "https://www.cabalettabio.com/patients/phase-12-trial-in-myositis",
-      "title": "myositis",
-      "source": "Cabaletta Bio Pipeline & Press Releases",
-      "source_url": "https://www.cabalettabio.com/patients/phase-12-trial-in-myositis",
-      "publication_date": "",
-      "matched_diseases": [
-        "myositis"
-      ],
-      "matched_entities": [],
-      "query_matches": [
-        "official:cabaletta-official"
-      ],
-      "review_status": "待处理",
-      "relevance_score": 6,
-      "triage_tier": "立即核验",
-      "triage_reasons": [
-        "企业官网一手披露",
-        "命中1个重点病种"
-      ]
-    },
-    {
-      "candidate_type": "official_update",
-      "external_id": "https://www.cabalettabio.com/patients/phase-12-trial-in-systemic-sclerosis",
-      "title": "systemic sclerosis",
-      "source": "Cabaletta Bio Pipeline & Press Releases",
-      "source_url": "https://www.cabalettabio.com/patients/phase-12-trial-in-systemic-sclerosis",
-      "publication_date": "",
-      "matched_diseases": [
-        "systemic sclerosis"
-      ],
-      "matched_entities": [],
-      "query_matches": [
-        "official:cabaletta-official"
-      ],
-      "review_status": "待处理",
-      "relevance_score": 6,
-      "triage_tier": "立即核验",
-      "triage_reasons": [
-        "企业官网一手披露",
-        "命中1个重点病种"
-      ]
-    },
-    {
-      "candidate_type": "official_update",
-      "external_id": "https://www.iasobio.com/info.php?id=122",
-      "title": "23 2021-09 Fierce Biotech | China's IASO nets $108M to advance cell therapies, antibodies for cancer, autoimmune disease",
-      "source": "IASO Bio Official News & Pipeline",
-      "source_url": "https://www.iasobio.com/info.php?id=122",
-      "publication_date": "",
-      "matched_diseases": [
-        "autoimmune disease"
-      ],
-      "matched_entities": [],
-      "query_matches": [
-        "official:iaso-official"
-      ],
-      "review_status": "待处理",
-      "relevance_score": 6,
-      "triage_tier": "立即核验",
-      "triage_reasons": [
-        "企业官网一手披露",
-        "命中1个重点病种"
-      ]
-    },
-    {
-      "candidate_type": "official_update",
-      "external_id": "https://www.iasobio.com/info.php?id=228",
-      "title": "01 2024-02 Promising Clinical Results on the World’s First Use of BCMA CAR-T to Treat Immune Mediated Necrotizing Myopathy (IMNM) Published on the Proceedings of the National Academy of Sciences (PNAS)",
-      "source": "IASO Bio Official News & Pipeline",
-      "source_url": "https://www.iasobio.com/info.php?id=228",
-      "publication_date": "",
-      "matched_diseases": [
-        "myositis"
-      ],
-      "matched_entities": [],
-      "query_matches": [
-        "official:iaso-official"
-      ],
-      "review_status": "待处理",
-      "relevance_score": 6,
-      "triage_tier": "立即核验",
-      "triage_reasons": [
-        "企业官网一手披露",
-        "命中1个重点病种"
-      ]
-    },
-    {
-      "candidate_type": "trial",
-      "external_id": "NCT07765966",
-      "title": "A Phase 1, Open Label, Dose Escalation Study Evaluating the Safety, Pharmacokinetics, Pharmacodynamics, and Early Efficacy of RXIM002, in Patients With Relapsed or Refractory Autoimmune Cytopenias",
-      "source": "ClinicalTrials.gov",
-      "source_url": "https://clinicaltrials.gov/study/NCT07765966",
-      "status": "NOT_YET_RECRUITING",
-      "last_update_posted": "2026-08-14",
-      "phase": [
-        "PHASE1"
-      ],
-      "enrollment": 27,
-      "sponsor": "RiboX Therapeutics Ltd.",
-      "conditions": [
-        "Relapsed or Refractory Autoimmune Cytopenias",
-        "Immune Thrombocytopenia (ITP)"
-      ],
-      "matched_diseases": [
-        "immune thrombocytopenia"
-      ],
-      "matched_entities": [],
-      "query_matches": [
-        "theme",
-        "disease:immune thrombocytopenia",
-        "disease:autoimmune disease"
-      ],
-      "review_status": "待处理",
-      "relevance_score": 6,
-      "triage_tier": "持续观察",
-      "triage_reasons": [
-        "正式注册试验",
-        "命中1个重点病种"
-      ]
-    },
-    {
       "candidate_type": "trial",
       "external_id": "NCT06340737",
       "title": "Phase Ib Clinical Trial of Autologous CD22 Chimeric Antigen Receptor (CAR) T Cells in Adults With Recurrent or Refractory B Cell Lymphomas",
@@ -18963,40 +17604,6 @@
       "triage_reasons": [
         "正式注册试验",
         "当前处于活跃状态"
-      ]
-    },
-    {
-      "candidate_type": "trial",
-      "external_id": "NCT07756268",
-      "title": "A Phase Ib/II Clinical Study to Evaluate the Safety and Efficacy of SYS6020 Injection in Patients With Relapsing/Refractory Multiple Sclerosis",
-      "source": "ClinicalTrials.gov",
-      "source_url": "https://clinicaltrials.gov/study/NCT07756268",
-      "status": "NOT_YET_RECRUITING",
-      "last_update_posted": "2026-08-10",
-      "phase": [
-        "PHASE1",
-        "PHASE2"
-      ],
-      "enrollment": 25,
-      "sponsor": "Tongji Hospital",
-      "conditions": [
-        "Multiple Sclerosis"
-      ],
-      "matched_diseases": [
-        "multiple sclerosis"
-      ],
-      "matched_entities": [],
-      "query_matches": [
-        "theme",
-        "disease:multiple sclerosis",
-        "disease:autoimmune disease"
-      ],
-      "review_status": "待处理",
-      "relevance_score": 6,
-      "triage_tier": "持续观察",
-      "triage_reasons": [
-        "正式注册试验",
-        "命中1个重点病种"
       ]
     },
     {
@@ -25740,6 +24347,35 @@
       "publication_date": "2026 Aug 10",
       "journal": "International immunopharmacology",
       "doi": "10.1016/j.intimp.2026.117256",
+      "publication_type": [
+        "Journal Article"
+      ],
+      "matched_diseases": [
+        "systemic lupus"
+      ],
+      "matched_entities": [],
+      "query_matches": [
+        "theme"
+      ],
+      "review_status": "待处理",
+      "relevance_score": 2,
+      "triage_tier": "低相关",
+      "triage_reasons": [
+        "命中1个重点病种"
+      ],
+      "journal_impact_factor": null,
+      "journal_impact_factor_year": null,
+      "journal_impact_factor_source": null
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42621160",
+      "title": "Management of systemic lupus erythematosus and antiphospholipid syndrome during CAR-T therapy: insights from two clinical cases.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42621160/",
+      "publication_date": "2026 Aug 10",
+      "journal": "Immuno-oncology technology",
+      "doi": "10.1016/j.iotech.2026.101609",
       "publication_type": [
         "Journal Article"
       ],

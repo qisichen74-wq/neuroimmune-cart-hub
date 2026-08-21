@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-08-10",
+  "as_of": "2026-08-21",
   "policy_version": "1.0.0",
   "status_definitions": {
     "已核验": "已与指定一手或权威来源逐字段比对",
@@ -3421,8 +3421,8 @@
       "record_id": "cabaletta-resecel-myositis",
       "status": "已核验",
       "confidence": "高",
-      "last_verified_at": "2026-08-10",
-      "next_review_at": "2026-08-17",
+      "last_verified_at": "2026-08-21",
+      "next_review_at": "2026-08-28",
       "source_ids": [
         "clinicaltrials-gov"
       ],
@@ -3437,7 +3437,7 @@
         "estimated_completion",
         "registry_last_update"
       ],
-      "note": "2026-08-04复核NCT06154252，ClinicalTrials.gov最近更新日期为2026-07-23，状态仍为Recruiting。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核。"
+      "note": "2026-08-21通过ClinicalTrials.gov官方接口复核；登记最近更新日期由2026-07-23变为2026-08-21，状态仍为Recruiting。"
     },
     {
       "record_type": "trial",
@@ -3854,6 +3854,39 @@
       "source_ids": ["clinicaltrials-gov"],
       "verified_fields": ["date", "status", "source_url", "entities"],
       "note": "事件日期采用ClinicalTrials.gov首次公开日期2026-08-14，并于2026-08-17复核。"
+    },
+    {
+      "record_type": "trial",
+      "record_id": "create-crt402-autoimmune-phase12",
+      "status": "已核验",
+      "confidence": "高",
+      "last_verified_at": "2026-08-21",
+      "next_review_at": "2026-08-28",
+      "source_ids": ["clinicaltrials-gov", "create-primary"],
+      "verified_fields": ["registry_id", "official_title", "sponsor", "collaborators", "product", "indication", "phase", "design", "region", "status", "enrollment", "study_start", "estimated_completion", "registry_last_update"],
+      "note": "依据ClinicalTrials.gov官方API逐字段核验NCT07778446，并以CREATE Medicines正式公告交叉核对澳大利亚HREC许可；当前Not yet recruiting。"
+    },
+    {
+      "record_type": "company",
+      "record_id": "create-crt402",
+      "status": "已核验",
+      "confidence": "高",
+      "last_verified_at": "2026-08-21",
+      "next_review_at": "2026-09-04",
+      "source_ids": ["clinicaltrials-gov", "create-primary"],
+      "verified_fields": ["company", "product", "technology", "focus", "stage", "region", "status", "source_url", "source_last_update"],
+      "note": "ClinicalTrials.gov登记确认CRT-402已进入Phase 1/2注册阶段；公司正式公告确认mRNA-LNP体内CD19 CAR-T路线及HREC许可。"
+    },
+    {
+      "record_type": "event",
+      "record_id": "event-create-crt402-registration",
+      "status": "已核验",
+      "confidence": "高",
+      "last_verified_at": "2026-08-21",
+      "next_review_at": "2026-08-28",
+      "source_ids": ["clinicaltrials-gov", "create-primary"],
+      "verified_fields": ["date", "event_type", "status", "source_url", "entities"],
+      "note": "事件日期采用ClinicalTrials.gov首次公开日期2026-08-21；预计启动日期与实际招募状态分开记录。"
     }
   ]
 }

@@ -1156,5 +1156,25 @@
     "study_sponsorship": "IIT",
     "development_band": "IIT",
     "development_rank": 1
+  },
+  {
+    "id": "create-crt402",
+    "record_kind": "company_program",
+    "company": "CREATE Medicines（注册申办方：Myeloid Therapeutics）",
+    "product": "CRT-402",
+    "technology": "In vivo CD19 CAR-T（mRNA-LNP）",
+    "focus": ["SLE", "SSc", "IIM"],
+    "stage": "Phase 1/2",
+    "region": "Australia / US",
+    "priority": "高",
+    "status": "Not yet recruiting",
+    "source_url": "https://clinicaltrials.gov/study/NCT07778446",
+    "source_last_update": "2026-08-21",
+    "evidence_anchor": "ClinicalTrials.gov已登记首个人体Phase 1/2研究，计划在澳大利亚入组34例难治性SLE、SSc或IIM患者。",
+    "recent_update": "NCT07778446于2026-08-21首次公开；公司此前披露已获澳大利亚HREC许可，登记状态仍为Not yet recruiting。",
+    "watch_points": ["首例入组与实际启动", "重复给药可行性", "B细胞清除与恢复", "CRS、ICANS与感染"],
+    "study_sponsorship": "Sponsor-initiated",
+    "development_band": "Ph1",
+    "development_rank": 2
   }
 ]

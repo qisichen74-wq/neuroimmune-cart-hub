@@ -1,103 +1,30 @@
 {
-  "generated_at": "2026-08-17T13:58:28.963Z",
+  "generated_at": "2026-08-21T15:16:44.500Z",
   "source_policy": "Official APIs are compared with local structured fields; differences require editorial review and are never auto-applied.",
   "summary": {
-    "records_checked": 78,
-    "successful": 78,
+    "records_checked": 84,
+    "successful": 84,
     "failed": 0,
-    "differences": 11
+    "differences": 0
   },
-  "differences": [
-    {
-      "record_type": "trial",
-      "record_id": "kyv101-ms-phase1",
-      "field": "registry_last_update",
-      "local_value": "2026-01-23",
-      "remote_value": "2026-08-10",
-      "source_url": "https://clinicaltrials.gov/study/NCT06451159"
-    },
-    {
-      "record_type": "trial",
-      "record_id": "sys6020-mg-phase1",
-      "field": "enrollment",
-      "local_value": 50,
-      "remote_value": 60,
-      "source_url": "https://clinicaltrials.gov/study/NCT06688435"
-    },
-    {
-      "record_type": "trial",
-      "record_id": "sys6020-mg-phase1",
-      "field": "study_start",
-      "local_value": "2025-01-08",
-      "remote_value": "2025-03-04",
-      "source_url": "https://clinicaltrials.gov/study/NCT06688435"
-    },
-    {
-      "record_type": "trial",
-      "record_id": "sys6020-mg-phase1",
-      "field": "registry_last_update",
-      "local_value": "2025-08-06",
-      "remote_value": "2026-08-12",
-      "source_url": "https://clinicaltrials.gov/study/NCT06688435"
-    },
-    {
-      "record_type": "trial",
-      "record_id": "kite363-neuro-phase1",
-      "field": "registry_last_update",
-      "local_value": "2026-07-01",
-      "remote_value": "2026-08-14",
-      "source_url": "https://clinicaltrials.gov/study/NCT07304154"
-    },
-    {
-      "record_type": "trial",
-      "record_id": "magicrna-hn2302-autoimmune",
-      "field": "study_start",
-      "local_value": "2026-04-28",
-      "remote_value": "2026-12-31",
-      "source_url": "https://clinicaltrials.gov/study/NCT07523282"
-    },
-    {
-      "record_type": "trial",
-      "record_id": "magicrna-hn2302-autoimmune",
-      "field": "registry_last_update",
-      "local_value": "2026-04-14",
-      "remote_value": "2026-08-12",
-      "source_url": "https://clinicaltrials.gov/study/NCT07523282"
-    },
-    {
-      "record_type": "trial",
-      "record_id": "cabaletta-resecel-mg-phase12",
-      "field": "status",
-      "local_value": "Active, not recruiting",
-      "remote_value": "RECRUITING",
-      "source_url": "https://clinicaltrials.gov/study/NCT06359041"
-    },
-    {
-      "record_type": "trial",
-      "record_id": "cabaletta-resecel-mg-phase12",
-      "field": "enrollment",
-      "local_value": 12,
-      "remote_value": 24,
-      "source_url": "https://clinicaltrials.gov/study/NCT06359041"
-    },
-    {
-      "record_type": "trial",
-      "record_id": "cabaletta-resecel-mg-phase12",
-      "field": "registry_last_update",
-      "local_value": "2026-05-18",
-      "remote_value": "2026-08-13",
-      "source_url": "https://clinicaltrials.gov/study/NCT06359041"
-    },
-    {
-      "record_type": "trial",
-      "record_id": "cartesian-descartes08-myositis-phase2",
-      "field": "registry_last_update",
-      "local_value": "2026-04-23",
-      "remote_value": "2026-08-17",
-      "source_url": "https://clinicaltrials.gov/study/NCT07391605"
-    }
-  ],
+  "differences": [],
   "checks": [
+    {
+      "record_type": "trial",
+      "record_id": "create-crt402-autoimmune-phase12",
+      "external_id": "NCT07778446",
+      "status": "ok",
+      "source_url": "https://clinicaltrials.gov/study/NCT07778446",
+      "remote": {
+        "official_title": "A Phase 1/2 Dose Escalation and Expansion Study of CRT-402, an In Vivo CD19 Targeted CAR-T Therapy, in Refractory Autoimmune Disease",
+        "sponsor": "Myeloid Therapeutics",
+        "status": "NOT_YET_RECRUITING",
+        "enrollment": 34,
+        "study_start": "2026-08-24",
+        "estimated_completion": "2029-08-01",
+        "registry_last_update": "2026-08-21"
+      }
+    },
     {
       "record_type": "trial",
       "record_id": "kyv101-ms-phase1",
@@ -799,7 +726,7 @@
         "enrollment": 74,
         "study_start": "2023-12-20",
         "estimated_completion": "2028-07",
-        "registry_last_update": "2026-07-23"
+        "registry_last_update": "2026-08-21"
       }
     },
     {
@@ -832,6 +759,86 @@
         "study_start": "2026-04-28",
         "estimated_completion": "2028-05",
         "registry_last_update": "2026-08-17"
+      }
+    },
+    {
+      "record_type": "trial",
+      "record_id": "sys6020-ms-phase12",
+      "external_id": "NCT07756268",
+      "status": "ok",
+      "source_url": "https://clinicaltrials.gov/study/NCT07756268",
+      "remote": {
+        "official_title": "A Phase Ib/II Clinical Study to Evaluate the Safety and Efficacy of SYS6020 Injection in Patients With Relapsing/Refractory Multiple Sclerosis",
+        "sponsor": "Tongji Hospital",
+        "status": "NOT_YET_RECRUITING",
+        "enrollment": 25,
+        "study_start": "2026-09-16",
+        "estimated_completion": "2029-02-07",
+        "registry_last_update": "2026-08-10"
+      }
+    },
+    {
+      "record_type": "trial",
+      "record_id": "iaso-equecel-imnm-phase12",
+      "external_id": "NCT07752264",
+      "status": "ok",
+      "source_url": "https://clinicaltrials.gov/study/NCT07752264",
+      "remote": {
+        "official_title": "An Open-label, Single-arm Phase I/II Clinical Study to Evaluate the Safety and Efficacy of Equecabtagene Autoleucel Injection (Eque-cel) in Subjects With Immune-mediated Necrotizing Myopathy",
+        "sponsor": "Nanjing IASO Biotechnology Co., Ltd.",
+        "status": "NOT_YET_RECRUITING",
+        "enrollment": 27,
+        "study_start": "2026-08-15",
+        "estimated_completion": "2043-08-15",
+        "registry_last_update": "2026-08-07"
+      }
+    },
+    {
+      "record_type": "trial",
+      "record_id": "azd0120-sle-phase12",
+      "external_id": "NCT06897930",
+      "status": "ok",
+      "source_url": "https://clinicaltrials.gov/study/NCT06897930",
+      "remote": {
+        "official_title": "A Phase 1b/2 Study of AZD0120, a Chimeric Antigen Receptor T-cell (CAR T) Therapy Targeting CD19 and B-cell Maturation Antigen (BCMA) in Subjects With Refractory Systemic Lupus Erythematosus (SLE)",
+        "sponsor": "AstraZeneca",
+        "status": "RECRUITING",
+        "enrollment": 150,
+        "study_start": "2025-04-21",
+        "estimated_completion": "2029-05-01",
+        "registry_last_update": "2026-08-12"
+      }
+    },
+    {
+      "record_type": "trial",
+      "record_id": "nkx019-immune-mediated-phase12",
+      "external_id": "NCT06733935",
+      "status": "ok",
+      "source_url": "https://clinicaltrials.gov/study/NCT06733935",
+      "remote": {
+        "official_title": "A Phase 1/2 Study of NKX019, a CD19 Chimeric Antigen Receptor Natural Killer (CAR NK) Cell Therapy, in Subjects With Immune-Mediated Diseases",
+        "sponsor": "Nkarta, Inc.",
+        "status": "RECRUITING",
+        "enrollment": 240,
+        "study_start": "2024-11-04",
+        "estimated_completion": "2028-10",
+        "registry_last_update": "2026-08-07"
+      }
+    },
+    {
+      "record_type": "trial",
+      "record_id": "rxim002-itp-phase1",
+      "external_id": "NCT07765966",
+      "status": "ok",
+      "source_url": "https://clinicaltrials.gov/study/NCT07765966",
+      "remote": {
+        "official_title": "A Phase 1, Open Label, Dose Escalation Study Evaluating the Safety, Pharmacokinetics, Pharmacodynamics, and Early Efficacy of RXIM002, in Patients With Relapsed or Refractory Autoimmune Cytopenias",
+        "sponsor": "RiboX Therapeutics Ltd.",
+        "status": "NOT_YET_RECRUITING",
+        "enrollment": 27,
+        "study_start": "2027-02-01",
+        "estimated_completion": "2029-12-31",
+        "registry_last_update": "2026-08-14"
       }
     },
     {

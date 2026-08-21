@@ -15,6 +15,7 @@
     {"id":"org-gilead","name":"Gilead Sciences","kind":"public_biopharma","status":"active","ticker":"NASDAQ: GILD","country":"United States","website":"https://www.gilead.com/","source_ids":["gilead-primary"]},
     {"id":"org-kite","name":"Kite Pharma","kind":"subsidiary","status":"acquired","parent_org_id":"org-gilead","country":"United States","website":"https://www.kitepharma.com/","source_ids":["gilead-primary"]},
     {"id":"org-bms","name":"Bristol Myers Squibb","kind":"public_biopharma","status":"active","ticker":"NYSE: BMY","country":"United States","website":"https://www.bms.com/","source_ids":["bms-primary"]},
-    {"id":"org-celgene","name":"Celgene","kind":"subsidiary","status":"acquired","parent_org_id":"org-bms","country":"United States","source_ids":["bms-primary"]}
+    {"id":"org-celgene","name":"Celgene","kind":"subsidiary","status":"acquired","parent_org_id":"org-bms","country":"United States","source_ids":["bms-primary"]},
+    {"id":"org-create-medicines","name":"CREATE Medicines","aliases":["Myeloid Therapeutics"],"kind":"private_biotech","status":"active","country":"United States","website":"https://createmedicines.com/","source_ids":["create-primary"]}
   ]
 }

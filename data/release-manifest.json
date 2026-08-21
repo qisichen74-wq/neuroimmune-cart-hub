@@ -1,27 +1,27 @@
 {
   "schema_version": "1.0.0",
-  "generated_at": "2026-08-21T14:44:58.950Z",
-  "git_revision": "a03a356b5feb35f48ffca6518870a219bc2fa7f6",
+  "generated_at": "2026-08-21T15:18:37.427Z",
+  "git_revision": "16772ddc2705cb477437c0d52a6b822a4d5cef90",
   "files": [
     {
       "path": "data/daily-briefing.json",
-      "sha256": "b0cb1c418b91e4860d9e405ceeb37b9be6daf1459a9b3664c211148dc43d2f58",
-      "bytes": 35650
+      "sha256": "5977f2a9393d69e63ecd54a3b3366052a6fe1802799db0907979474b1e59c3c0",
+      "bytes": 43959
     },
     {
       "path": "data/deal-events.json",
-      "sha256": "17599e4b8e8802216d83be3977466475379656eec7dfbdd782600dfffb47fbd8",
-      "bytes": 2948
+      "sha256": "d86a5e4d411e32fb1fef412088e8470015ab6c32598523f563382b28cdd0f816",
+      "bytes": 3148
     },
     {
       "path": "data/deals.json",
-      "sha256": "f1e33eae0ff4d98efae92f50a97551dff22dc2098282743cff06dca97eec8e47",
-      "bytes": 10773
+      "sha256": "d70c5901381767034cd78151ec6ea5b56d4f285b92471b542eab4ef58d3c5c42",
+      "bytes": 11792
     },
     {
       "path": "data/events.json",
-      "sha256": "a84221116ddcf20da2eebf91de875be60683855ee6e3f613622009c949991d08",
-      "bytes": 42080
+      "sha256": "e0b766ddf9b49f121cb04cba8325ac2556e2511fa6cdaf6a2ce37550dc5adceb",
+      "bytes": 42971
     },
     {
       "path": "data/feed.json",
@@ -30,28 +30,28 @@
     },
     {
       "path": "data/investor-summary.json",
-      "sha256": "16c643d881f11c160bf7f0542db6cb85e5115a5a3e007ae7039146f9790c56b4",
-      "bytes": 980
+      "sha256": "576e0335e7f886efcc297a524a0eb8dbc44ac851f8f8d9bf935a91153ef1c7c2",
+      "bytes": 985
     },
     {
       "path": "data/landscape.json",
-      "sha256": "496314223081e58cd7880291ec6a61dc2c23e7001c71771baf1c8bfc18ff917d",
-      "bytes": 38954
+      "sha256": "f1cc399451a5c222283cf9f56458a353e9431315633c57c860bb174bda268ba3",
+      "bytes": 39978
     },
     {
       "path": "data/organizations.json",
-      "sha256": "ebbe2aabde51696455f9f90b708a2fc7be36299b099f2d209a71452d79a4dff1",
-      "bytes": 2810
+      "sha256": "d51aba39cd529d5bb2d6da4eca7e3a3a28a0fc9d6446fba7dc03887660fea572",
+      "bytes": 3048
     },
     {
       "path": "data/programs.json",
-      "sha256": "1244caa28cf78ab9479324369f791c474e03ff130c99d1dcb83e72237b45d038",
-      "bytes": 2140
+      "sha256": "099cec417c7c6f285af12207f52181419ed42561c3c3940a6163c55419b677f9",
+      "bytes": 2496
     },
     {
       "path": "data/relations.json",
-      "sha256": "2a5a5e0957fe4e7a9b90daeed6c0464ef22b370dfecd95bff8c1f38ee12360a8",
-      "bytes": 24143
+      "sha256": "130211947f035d16f0100af2ff263952e2a05ee464e56406110884d611cb40f1",
+      "bytes": 24531
     },
     {
       "path": "data/safety.json",
@@ -60,28 +60,28 @@
     },
     {
       "path": "data/search-index.json",
-      "sha256": "93d9a550543bf93e02dd1e2d692b55b25d26dae44c005411be47155c312a2dab",
-      "bytes": 9550
+      "sha256": "4cadcf595734e5bffabad03f88e0971712bedae6cb416f6bc5e3252ad5ab0ad7",
+      "bytes": 10598
     },
     {
       "path": "data/sources.json",
-      "sha256": "27a9ecf2953e3da5f8c1d780e636e7fa1e65d01a418978f316fcb3e7d0ae7a1f",
-      "bytes": 9956
+      "sha256": "2d2e1b523d29da4ad5dae7d3391ceacd6df324ad096bd277692b5ac808907b4e",
+      "bytes": 10346
     },
     {
       "path": "data/topics.json",
-      "sha256": "ff3333443ae8808adb0065d20e354aadddcbcbe69a015aafed9dbdd6b637905d",
-      "bytes": 43490
+      "sha256": "9ceda9edad1262f958f0cfa9115a04476a550437a1d6a68c2b264d82701a7cb1",
+      "bytes": 43745
     },
     {
       "path": "data/trials.json",
-      "sha256": "dc0d208be22557199d85024c0d374d71b404226158853964fad55bfe069478c4",
-      "bytes": 79059
+      "sha256": "d0719827d7f15b9d0b95b7bb923ff02515589d185fdf66e2ff723a3b34d2f341",
+      "bytes": 80482
     },
     {
       "path": "data/verification.json",
-      "sha256": "0f33c4893875dc48d2826a712625fb03482654dfc8f217cb0757353f557704ec",
-      "bytes": 122438
+      "sha256": "b2efa357c3f4128c23b2f7fa0422548d190f9dcdbe1e2ae5c7563f4dc82e1dfa",
+      "bytes": 124137
     }
   ]
 }

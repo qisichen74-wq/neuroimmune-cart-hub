@@ -159,6 +159,18 @@
       "url": "company.html?id=org-celgene"
     },
     {
+      "type": "organization",
+      "id": "org-create-medicines",
+      "title": "CREATE Medicines",
+      "copy": "private_biotech · United States",
+      "tags": [
+        "active",
+        "private_biotech",
+        "United States"
+      ],
+      "url": "company.html?id=org-create-medicines"
+    },
+    {
       "type": "program",
       "id": "program-azd0120",
       "title": "AZD0120",
@@ -236,6 +248,19 @@
         "clinical"
       ],
       "url": "company.html?id=org-bms"
+    },
+    {
+      "type": "program",
+      "id": "program-crt402",
+      "title": "CRT-402",
+      "copy": "体内mRNA-LNP CAR-T · CD19",
+      "tags": [
+        "SLE",
+        "SSc",
+        "IIM",
+        "clinical"
+      ],
+      "url": "company.html?id=org-create-medicines"
     },
     {
       "type": "deal",
@@ -353,6 +378,19 @@
         "partially_disclosed"
       ],
       "url": "deal.html?id=deal-bms-celgene-2019"
+    },
+    {
+      "type": "deal",
+      "id": "deal-create-series-b-2026",
+      "title": "CREATE Medicines完成1.22亿美元B轮融资",
+      "copy": "融资由Newpath、ARCH和Hatteras共同领投，资金用于推进CRT-402自身免疫管线、CD19xBCMA项目及肿瘤管线。",
+      "tags": [
+        "private_financing",
+        "completed",
+        "2026-05-14",
+        "disclosed"
+      ],
+      "url": "deal.html?id=deal-create-series-b-2026"
     }
   ]
 }

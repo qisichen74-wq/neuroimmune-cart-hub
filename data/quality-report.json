@@ -1,38 +1,38 @@
 {
-  "generated_at": "2026-08-21T14:44:58.668Z",
-  "as_of": "2026-08-10",
+  "generated_at": "2026-08-21T15:18:43.852Z",
+  "as_of": "2026-08-21",
   "policy_version": "1.0.0",
   "status": "需关注",
   "score": 0,
   "summary": {
-    "total_records": 239,
+    "total_records": 246,
     "datasets": 10,
     "errors": 0,
-    "warnings": 183,
-    "verified": 102,
+    "warnings": 166,
+    "verified": 110,
     "internally_reviewed": 0,
     "pending_external_verification": 0,
-    "stale": 157,
+    "stale": 156,
     "source_checks": {
-      "records_checked": 78,
-      "successful": 78,
+      "records_checked": 84,
+      "successful": 84,
       "failed": 0,
-      "differences": 11
+      "differences": 0
     },
     "discovery": {
-      "candidates": 881,
-      "research": 255,
-      "trials": 562,
-      "official_updates": 64,
-      "immediate_review": 459,
-      "watchlist": 210,
+      "candidates": 815,
+      "research": 258,
+      "trials": 557,
+      "official_updates": 0,
+      "immediate_review": 395,
+      "watchlist": 207,
       "background": 64,
-      "low_relevance": 148,
-      "trials_registry_only": 562,
-      "candidate_desk_required": 319,
-      "policy_excluded_research": 2366,
+      "low_relevance": 149,
+      "trials_registry_only": 557,
+      "candidate_desk_required": 258,
+      "policy_excluded_research": 2387,
       "undifferentiated_review_exceptions": 3,
-      "source_failures": 1,
+      "source_failures": 0,
       "partial_sources": 1,
       "truncated_sources": 0,
       "missing_sentinels": 0
@@ -47,9 +47,9 @@
       "available": 8,
       "partial": 0,
       "failed": 0,
-      "labels_found": 7,
-      "approved_cell_gene_products": 50,
-      "relevant_cber_updates": 10
+      "labels_found": 8,
+      "approved_cell_gene_products": 53,
+      "relevant_cber_updates": 11
     }
   },
   "datasets": [
@@ -64,18 +64,18 @@
     {
       "type": "company",
       "label": "竞争对象",
-      "records": 40,
-      "verified": 39,
+      "records": 41,
+      "verified": 40,
       "pending": 0,
       "stale": 1
     },
     {
       "type": "trial",
       "label": "临床试验",
-      "records": 54,
-      "verified": 15,
+      "records": 55,
+      "verified": 17,
       "pending": 0,
-      "stale": 59
+      "stale": 58
     },
     {
       "type": "safety",
@@ -88,8 +88,8 @@
     {
       "type": "event",
       "label": "动态事件",
-      "records": 53,
-      "verified": 5,
+      "records": 54,
+      "verified": 6,
       "pending": 0,
       "stale": 48
     },
@@ -104,32 +104,32 @@
     {
       "type": "organization",
       "label": "机构主体",
-      "records": 13,
-      "verified": 13,
+      "records": 14,
+      "verified": 14,
       "pending": 0,
       "stale": 0
     },
     {
       "type": "program",
       "label": "研发项目",
-      "records": 6,
-      "verified": 6,
+      "records": 7,
+      "verified": 7,
       "pending": 0,
       "stale": 0
     },
     {
       "type": "deal",
       "label": "资本交易",
-      "records": 9,
-      "verified": 9,
+      "records": 10,
+      "verified": 10,
       "pending": 0,
       "stale": 0
     },
     {
       "type": "deal_event",
       "label": "交易节点",
-      "records": 15,
-      "verified": 15,
+      "records": 16,
+      "verified": 16,
       "pending": 0,
       "stale": 0
     }
@@ -834,13 +834,6 @@
       "severity": "warning",
       "code": "verification_stale",
       "record_type": "trial",
-      "record_id": "cabaletta-resecel-myositis",
-      "message": "已超过 7 天复核周期"
-    },
-    {
-      "severity": "warning",
-      "code": "verification_stale",
-      "record_type": "trial",
       "record_id": "novartis-rapcabtagene-iim-phase2",
       "message": "已超过 7 天复核周期"
     },
@@ -1315,104 +1308,6 @@
     },
     {
       "severity": "warning",
-      "code": "source_sync_stale",
-      "record_type": "system",
-      "record_id": "-",
-      "message": "官方API来源差异报告已超过2天未刷新"
-    },
-    {
-      "severity": "warning",
-      "code": "official_source_difference",
-      "record_type": "trial",
-      "record_id": "kyv101-ms-phase1",
-      "message": "官方来源字段已变化：registry_last_update"
-    },
-    {
-      "severity": "warning",
-      "code": "official_source_difference",
-      "record_type": "trial",
-      "record_id": "sys6020-mg-phase1",
-      "message": "官方来源字段已变化：enrollment"
-    },
-    {
-      "severity": "warning",
-      "code": "official_source_difference",
-      "record_type": "trial",
-      "record_id": "sys6020-mg-phase1",
-      "message": "官方来源字段已变化：study_start"
-    },
-    {
-      "severity": "warning",
-      "code": "official_source_difference",
-      "record_type": "trial",
-      "record_id": "sys6020-mg-phase1",
-      "message": "官方来源字段已变化：registry_last_update"
-    },
-    {
-      "severity": "warning",
-      "code": "official_source_difference",
-      "record_type": "trial",
-      "record_id": "kite363-neuro-phase1",
-      "message": "官方来源字段已变化：registry_last_update"
-    },
-    {
-      "severity": "warning",
-      "code": "official_source_difference",
-      "record_type": "trial",
-      "record_id": "magicrna-hn2302-autoimmune",
-      "message": "官方来源字段已变化：study_start"
-    },
-    {
-      "severity": "warning",
-      "code": "official_source_difference",
-      "record_type": "trial",
-      "record_id": "magicrna-hn2302-autoimmune",
-      "message": "官方来源字段已变化：registry_last_update"
-    },
-    {
-      "severity": "warning",
-      "code": "official_source_difference",
-      "record_type": "trial",
-      "record_id": "cabaletta-resecel-mg-phase12",
-      "message": "官方来源字段已变化：status"
-    },
-    {
-      "severity": "warning",
-      "code": "official_source_difference",
-      "record_type": "trial",
-      "record_id": "cabaletta-resecel-mg-phase12",
-      "message": "官方来源字段已变化：enrollment"
-    },
-    {
-      "severity": "warning",
-      "code": "official_source_difference",
-      "record_type": "trial",
-      "record_id": "cabaletta-resecel-mg-phase12",
-      "message": "官方来源字段已变化：registry_last_update"
-    },
-    {
-      "severity": "warning",
-      "code": "official_source_difference",
-      "record_type": "trial",
-      "record_id": "cartesian-descartes08-myositis-phase2",
-      "message": "官方来源字段已变化：registry_last_update"
-    },
-    {
-      "severity": "warning",
-      "code": "candidate_report_stale",
-      "record_type": "system",
-      "record_id": "-",
-      "message": "候选情报报告已超过2天未刷新"
-    },
-    {
-      "severity": "warning",
-      "code": "discovery_source_failed",
-      "record_type": "system",
-      "record_id": "-",
-      "message": "候选情报来源访问失败：ClinicalTrials.gov / The operation was aborted due to timeout"
-    },
-    {
-      "severity": "warning",
       "code": "discovery_source_partial",
       "record_type": "system",
       "record_id": "-",
@@ -1420,24 +1315,10 @@
     },
     {
       "severity": "warning",
-      "code": "regulatory_report_stale",
-      "record_type": "system",
-      "record_id": "-",
-      "message": "监管来源监测报告已超过2天未刷新"
-    },
-    {
-      "severity": "warning",
       "code": "regulatory_source_failed",
       "record_type": "system",
       "record_id": "-",
       "message": "监管来源访问失败：国家药品监督管理局"
-    },
-    {
-      "severity": "warning",
-      "code": "fda_report_stale",
-      "record_type": "system",
-      "record_id": "-",
-      "message": "FDA官方来源监测报告已超过2天未刷新"
     }
   ],
   "verification": [
@@ -3012,6 +2893,61 @@
       "stale": false
     },
     {
+      "record_type": "company",
+      "record_id": "create-crt402",
+      "status": "已核验",
+      "confidence": "高",
+      "source_ids": [
+        "clinicaltrials-gov",
+        "create-primary"
+      ],
+      "last_verified_at": "2026-08-21",
+      "next_review_at": "2026-09-04",
+      "verified_fields": [
+        "company",
+        "product",
+        "technology",
+        "focus",
+        "stage",
+        "region",
+        "status",
+        "source_url",
+        "source_last_update"
+      ],
+      "note": "ClinicalTrials.gov登记确认CRT-402已进入Phase 1/2注册阶段；公司正式公告确认mRNA-LNP体内CD19 CAR-T路线及HREC许可。",
+      "stale": false
+    },
+    {
+      "record_type": "trial",
+      "record_id": "create-crt402-autoimmune-phase12",
+      "status": "已核验",
+      "confidence": "高",
+      "source_ids": [
+        "clinicaltrials-gov",
+        "create-primary"
+      ],
+      "last_verified_at": "2026-08-21",
+      "next_review_at": "2026-08-28",
+      "verified_fields": [
+        "registry_id",
+        "official_title",
+        "sponsor",
+        "collaborators",
+        "product",
+        "indication",
+        "phase",
+        "design",
+        "region",
+        "status",
+        "enrollment",
+        "study_start",
+        "estimated_completion",
+        "registry_last_update"
+      ],
+      "note": "依据ClinicalTrials.gov官方API逐字段核验NCT07778446，并以CREATE Medicines正式公告交叉核对澳大利亚HREC许可；当前Not yet recruiting。",
+      "stale": false
+    },
+    {
       "record_type": "trial",
       "record_id": "kyv101-ms-phase1",
       "status": "已核验",
@@ -4146,8 +4082,8 @@
       "source_ids": [
         "clinicaltrials-gov"
       ],
-      "last_verified_at": "2026-08-10",
-      "next_review_at": "2026-08-17",
+      "last_verified_at": "2026-08-21",
+      "next_review_at": "2026-08-28",
       "verified_fields": [
         "registry_id",
         "official_title",
@@ -4159,8 +4095,8 @@
         "estimated_completion",
         "registry_last_update"
       ],
-      "note": "2026-08-04复核NCT06154252，ClinicalTrials.gov最近更新日期为2026-07-23，状态仍为Recruiting。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核。",
-      "stale": true
+      "note": "2026-08-21通过ClinicalTrials.gov官方接口复核；登记最近更新日期由2026-07-23变为2026-08-21，状态仍为Recruiting。",
+      "stale": false
     },
     {
       "record_type": "trial",
@@ -5500,6 +5436,27 @@
       "stale": true
     },
     {
+      "record_type": "event",
+      "record_id": "event-create-crt402-registration",
+      "status": "已核验",
+      "confidence": "高",
+      "source_ids": [
+        "clinicaltrials-gov",
+        "create-primary"
+      ],
+      "last_verified_at": "2026-08-21",
+      "next_review_at": "2026-08-28",
+      "verified_fields": [
+        "date",
+        "event_type",
+        "status",
+        "source_url",
+        "entities"
+      ],
+      "note": "事件日期采用ClinicalTrials.gov首次公开日期2026-08-21；预计启动日期与实际招募状态分开记录。",
+      "stale": false
+    },
+    {
       "record_type": "topic",
       "record_id": "multiple-sclerosis",
       "status": "内部审核",
@@ -5753,6 +5710,17 @@
       "stale": false
     },
     {
+      "record_type": "organization",
+      "record_id": "org-create-medicines",
+      "status": "已核验",
+      "confidence": "高",
+      "source_ids": [
+        "create-primary"
+      ],
+      "last_verified_at": "2026-08-21",
+      "stale": false
+    },
+    {
       "record_type": "program",
       "record_id": "program-azd0120",
       "status": "已核验",
@@ -5814,6 +5782,18 @@
       "confidence": "高",
       "source_ids": [
         "bms-primary"
+      ],
+      "last_verified_at": "2026-08-21",
+      "stale": false
+    },
+    {
+      "record_type": "program",
+      "record_id": "program-crt402",
+      "status": "已核验",
+      "confidence": "高",
+      "source_ids": [
+        "create-primary",
+        "clinicaltrials-gov"
       ],
       "last_verified_at": "2026-08-21",
       "stale": false
@@ -5915,6 +5895,17 @@
       "confidence": "高",
       "source_ids": [
         "bms-primary"
+      ],
+      "last_verified_at": "2026-08-21",
+      "stale": false
+    },
+    {
+      "record_type": "deal",
+      "record_id": "deal-create-series-b-2026",
+      "status": "已核验",
+      "confidence": "高",
+      "source_ids": [
+        "create-primary"
       ],
       "last_verified_at": "2026-08-21",
       "stale": false
@@ -6081,6 +6072,17 @@
       "confidence": "高",
       "source_ids": [
         "kyverna-ir"
+      ],
+      "last_verified_at": "2026-08-21",
+      "stale": false
+    },
+    {
+      "record_type": "deal_event",
+      "record_id": "deal-event-create-series-b-funded",
+      "status": "已核验",
+      "confidence": "高",
+      "source_ids": [
+        "create-primary"
       ],
       "last_verified_at": "2026-08-21",
       "stale": false
