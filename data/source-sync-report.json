@@ -1,13 +1,53 @@
 {
-  "generated_at": "2026-08-09T23:01:22.179Z",
+  "generated_at": "2026-08-23T22:49:33.060Z",
   "source_policy": "Official APIs are compared with local structured fields; differences require editorial review and are never auto-applied.",
   "summary": {
     "records_checked": 78,
     "successful": 78,
     "failed": 0,
-    "differences": 1
+    "differences": 13
   },
   "differences": [
+    {
+      "record_type": "trial",
+      "record_id": "kyv101-ms-phase1",
+      "field": "registry_last_update",
+      "local_value": "2026-01-23",
+      "remote_value": "2026-08-10",
+      "source_url": "https://clinicaltrials.gov/study/NCT06451159"
+    },
+    {
+      "record_type": "trial",
+      "record_id": "sys6020-mg-phase1",
+      "field": "enrollment",
+      "local_value": 50,
+      "remote_value": 60,
+      "source_url": "https://clinicaltrials.gov/study/NCT06688435"
+    },
+    {
+      "record_type": "trial",
+      "record_id": "sys6020-mg-phase1",
+      "field": "study_start",
+      "local_value": "2025-01-08",
+      "remote_value": "2025-03-04",
+      "source_url": "https://clinicaltrials.gov/study/NCT06688435"
+    },
+    {
+      "record_type": "trial",
+      "record_id": "sys6020-mg-phase1",
+      "field": "registry_last_update",
+      "local_value": "2025-08-06",
+      "remote_value": "2026-08-12",
+      "source_url": "https://clinicaltrials.gov/study/NCT06688435"
+    },
+    {
+      "record_type": "trial",
+      "record_id": "kite363-neuro-phase1",
+      "field": "registry_last_update",
+      "local_value": "2026-07-01",
+      "remote_value": "2026-08-14",
+      "source_url": "https://clinicaltrials.gov/study/NCT07304154"
+    },
     {
       "record_type": "trial",
       "record_id": "ctx112-autoimmune-phase1",
@@ -15,6 +55,62 @@
       "local_value": "2026-07-22",
       "remote_value": "2026-08-07",
       "source_url": "https://clinicaltrials.gov/study/NCT06925542"
+    },
+    {
+      "record_type": "trial",
+      "record_id": "magicrna-hn2302-autoimmune",
+      "field": "study_start",
+      "local_value": "2026-04-28",
+      "remote_value": "2026-12-31",
+      "source_url": "https://clinicaltrials.gov/study/NCT07523282"
+    },
+    {
+      "record_type": "trial",
+      "record_id": "magicrna-hn2302-autoimmune",
+      "field": "registry_last_update",
+      "local_value": "2026-04-14",
+      "remote_value": "2026-08-12",
+      "source_url": "https://clinicaltrials.gov/study/NCT07523282"
+    },
+    {
+      "record_type": "trial",
+      "record_id": "cabaletta-resecel-mg-phase12",
+      "field": "status",
+      "local_value": "Active, not recruiting",
+      "remote_value": "RECRUITING",
+      "source_url": "https://clinicaltrials.gov/study/NCT06359041"
+    },
+    {
+      "record_type": "trial",
+      "record_id": "cabaletta-resecel-mg-phase12",
+      "field": "enrollment",
+      "local_value": 12,
+      "remote_value": 24,
+      "source_url": "https://clinicaltrials.gov/study/NCT06359041"
+    },
+    {
+      "record_type": "trial",
+      "record_id": "cabaletta-resecel-mg-phase12",
+      "field": "registry_last_update",
+      "local_value": "2026-05-18",
+      "remote_value": "2026-08-13",
+      "source_url": "https://clinicaltrials.gov/study/NCT06359041"
+    },
+    {
+      "record_type": "trial",
+      "record_id": "cabaletta-resecel-myositis",
+      "field": "registry_last_update",
+      "local_value": "2026-07-23",
+      "remote_value": "2026-08-21",
+      "source_url": "https://clinicaltrials.gov/study/NCT06154252"
+    },
+    {
+      "record_type": "trial",
+      "record_id": "cartesian-descartes08-myositis-phase2",
+      "field": "registry_last_update",
+      "local_value": "2026-04-23",
+      "remote_value": "2026-08-17",
+      "source_url": "https://clinicaltrials.gov/study/NCT07391605"
     }
   ],
   "checks": [
@@ -31,7 +127,7 @@
         "enrollment": 10,
         "study_start": "2024-06-20",
         "estimated_completion": "2027-02",
-        "registry_last_update": "2026-01-23"
+        "registry_last_update": "2026-08-10"
       }
     },
     {
@@ -124,10 +220,10 @@
         "official_title": "A Phase I Study to Evaluate BCMA-targeted Chimeric Antigen Receptor T Cell (SYS6020 Injection) in Patients With Refractory Generalized Myasthenia Gravis",
         "sponsor": "CSPC ZhongQi Pharmaceutical Technology Co., Ltd.",
         "status": "RECRUITING",
-        "enrollment": 50,
-        "study_start": "2025-01-08",
+        "enrollment": 60,
+        "study_start": "2025-03-04",
         "estimated_completion": "2033-05-01",
-        "registry_last_update": "2025-08-06"
+        "registry_last_update": "2026-08-12"
       }
     },
     {
@@ -143,7 +239,7 @@
         "enrollment": 52,
         "study_start": "2026-04-10",
         "estimated_completion": "2029-06",
-        "registry_last_update": "2026-07-01"
+        "registry_last_update": "2026-08-14"
       }
     },
     {
@@ -317,9 +413,9 @@
         "sponsor": "Shenzhen MagicRNA Biotechnology Co., Ltd",
         "status": "NOT_YET_RECRUITING",
         "enrollment": 12,
-        "study_start": "2026-04-28",
+        "study_start": "2026-12-31",
         "estimated_completion": "2028-06-30",
-        "registry_last_update": "2026-04-14"
+        "registry_last_update": "2026-08-12"
       }
     },
     {
@@ -459,11 +555,11 @@
       "remote": {
         "official_title": "RESET-MG: A Phase 1/2, Open-Label Study to Evaluate the Safety and Efficacy of Autologous CD19-specific Chimeric Antigen Receptor T Cells (CABA-201) in Participants With Generalized Myasthenia Gravis",
         "sponsor": "Cabaletta Bio",
-        "status": "ACTIVE_NOT_RECRUITING",
-        "enrollment": 12,
+        "status": "RECRUITING",
+        "enrollment": 24,
         "study_start": "2024-12-17",
         "estimated_completion": "2029-09",
-        "registry_last_update": "2026-05-18"
+        "registry_last_update": "2026-08-13"
       }
     },
     {
@@ -719,7 +815,7 @@
         "enrollment": 74,
         "study_start": "2023-12-20",
         "estimated_completion": "2028-07",
-        "registry_last_update": "2026-07-23"
+        "registry_last_update": "2026-08-21"
       }
     },
     {
@@ -751,7 +847,7 @@
         "enrollment": 60,
         "study_start": "2026-04-28",
         "estimated_completion": "2028-05",
-        "registry_last_update": "2026-04-23"
+        "registry_last_update": "2026-08-17"
       }
     },
     {
