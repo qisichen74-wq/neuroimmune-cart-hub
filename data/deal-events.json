@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0.0",
+  "as_of": "2026-08-21",
+  "verified_at": "2026-08-21",
+  "records": [
+    {"id":"deal-event-gilead-kite-announced","deal_id":"deal-gilead-kite-2017","date":"2017-08-28","event_type":"announced","title":"签署收购协议","source_ids":["gilead-primary"]},
+    {"id":"deal-event-gilead-kite-closed","deal_id":"deal-gilead-kite-2017","date":"2017-10-03","event_type":"closed","title":"收购完成","source_ids":["gilead-primary"]},
+    {"id":"deal-event-bms-celgene-announced","deal_id":"deal-bms-celgene-2019","date":"2019-01-03","event_type":"announced","title":"签署收购协议","source_ids":["bms-primary"]},
+    {"id":"deal-event-bms-celgene-closed","deal_id":"deal-bms-celgene-2019","date":"2019-11-20","event_type":"closed","title":"收购完成","source_ids":["bms-primary"]},
+    {"id":"deal-event-cartesian-merger-closed","deal_id":"deal-cartesian-selecta-2023","date":"2023-11-13","event_type":"closed","title":"合并及配套融资公告","source_ids":["cartesian-ir"]},
+    {"id":"deal-event-az-gracell-announced","deal_id":"deal-astrazeneca-gracell-2023","date":"2023-12-26","event_type":"announced","title":"签署收购协议","source_ids":["astrazeneca-primary"]},
+    {"id":"deal-event-kyverna-ipo-priced","deal_id":"deal-kyverna-ipo-2024","date":"2024-02-07","event_type":"priced","title":"IPO定价","source_ids":["kyverna-ir"]},
+    {"id":"deal-event-kyverna-ipo-closed","deal_id":"deal-kyverna-ipo-2024","date":"2024-02-12","event_type":"closed","title":"IPO交割","source_ids":["kyverna-ir","sec-edgar"]},
+    {"id":"deal-event-az-gracell-closed","deal_id":"deal-astrazeneca-gracell-2023","date":"2024-02-22","event_type":"closed","title":"收购完成","source_ids":["astrazeneca-primary"]},
+    {"id":"deal-event-cartesian-pipe-announced","deal_id":"deal-cartesian-pipe-2024","date":"2024-07-02","event_type":"announced","title":"签署PIPE认购协议","source_ids":["cartesian-ir"]},
+    {"id":"deal-event-cartesian-pipe-closed","deal_id":"deal-cartesian-pipe-2024","date":"2024-07-03","event_type":"funded","title":"PIPE融资完成","source_ids":["cartesian-ir"]},
+    {"id":"deal-event-cabaletta-cellares-announced","deal_id":"deal-cabaletta-cellares-2026","date":"2026-04-28","event_type":"announced","title":"商业供应协议公告","source_ids":["cabaletta-primary"]},
+    {"id":"deal-event-cartesian-k2-funded","deal_id":"deal-cartesian-k2-2026","date":"2026-05-26","event_type":"funded","title":"信贷协议生效并提取首批5000万美元","source_ids":["cartesian-ir"]},
+    {"id":"deal-event-kyverna-elevatebio-signed","deal_id":"deal-kyverna-elevatebio-2026","date":"2026-07-23","event_type":"signed","title":"签署制造供应协议","source_ids":["sec-edgar"]},
+    {"id":"deal-event-kyverna-elevatebio-announced","deal_id":"deal-kyverna-elevatebio-2026","date":"2026-07-27","event_type":"announced","title":"合作正式公告","source_ids":["kyverna-ir"]},
+    {"id":"deal-event-create-series-b-funded","deal_id":"deal-create-series-b-2026","date":"2026-05-14","event_type":"funded","title":"1.22亿美元B轮融资完成","source_ids":["create-primary"]}
+  ]
+}

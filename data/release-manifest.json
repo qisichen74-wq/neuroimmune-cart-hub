@@ -1,0 +1,92 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-09-23T12:56:13.356Z",
+  "git_revision": "0a14070530b2a5b8c955d6e9038837d332f6e586",
+  "files": [
+    {
+      "path": "data/assistant-index.json",
+      "sha256": "cebbdb23106178e4fbf6be0cf46fbec99e3dc9ff77fc06ccd1d29c5896140deb",
+      "bytes": 632051
+    },
+    {
+      "path": "data/daily-briefing.json",
+      "sha256": "05194bae88934fae99bfa679480bfcb5558266c04280d21200660af0b556024e",
+      "bytes": 67313
+    },
+    {
+      "path": "data/deal-events.json",
+      "sha256": "d86a5e4d411e32fb1fef412088e8470015ab6c32598523f563382b28cdd0f816",
+      "bytes": 3148
+    },
+    {
+      "path": "data/deals.json",
+      "sha256": "d70c5901381767034cd78151ec6ea5b56d4f285b92471b542eab4ef58d3c5c42",
+      "bytes": 11792
+    },
+    {
+      "path": "data/events.json",
+      "sha256": "e0b766ddf9b49f121cb04cba8325ac2556e2511fa6cdaf6a2ce37550dc5adceb",
+      "bytes": 42971
+    },
+    {
+      "path": "data/feed.json",
+      "sha256": "23488e2adf50d36d10915445a71c4cf90b4c753639ea27512e3b37d5dfff953b",
+      "bytes": 45969
+    },
+    {
+      "path": "data/investor-summary.json",
+      "sha256": "576e0335e7f886efcc297a524a0eb8dbc44ac851f8f8d9bf935a91153ef1c7c2",
+      "bytes": 985
+    },
+    {
+      "path": "data/landscape.json",
+      "sha256": "5cd8ad0ca07ac356dcf91308b89ecebba0d4258d07f25aed8d5db240763d40a6",
+      "bytes": 40398
+    },
+    {
+      "path": "data/organizations.json",
+      "sha256": "d51aba39cd529d5bb2d6da4eca7e3a3a28a0fc9d6446fba7dc03887660fea572",
+      "bytes": 3048
+    },
+    {
+      "path": "data/programs.json",
+      "sha256": "099cec417c7c6f285af12207f52181419ed42561c3c3940a6163c55419b677f9",
+      "bytes": 2496
+    },
+    {
+      "path": "data/relations.json",
+      "sha256": "130211947f035d16f0100af2ff263952e2a05ee464e56406110884d611cb40f1",
+      "bytes": 24531
+    },
+    {
+      "path": "data/safety.json",
+      "sha256": "b57f51d38adbd7acbf091ec25215f6cc7b221c6b1fe08db52c8d477dade05000",
+      "bytes": 8560
+    },
+    {
+      "path": "data/search-index.json",
+      "sha256": "4cadcf595734e5bffabad03f88e0971712bedae6cb416f6bc5e3252ad5ab0ad7",
+      "bytes": 10598
+    },
+    {
+      "path": "data/sources.json",
+      "sha256": "2d2e1b523d29da4ad5dae7d3391ceacd6df324ad096bd277692b5ac808907b4e",
+      "bytes": 10346
+    },
+    {
+      "path": "data/topics.json",
+      "sha256": "9ceda9edad1262f958f0cfa9115a04476a550437a1d6a68c2b264d82701a7cb1",
+      "bytes": 43745
+    },
+    {
+      "path": "data/trials.json",
+      "sha256": "8fe9d427740b75e436204e4ba698bad3ad840264c00b56cea82a9a36e94af2d9",
+      "bytes": 80659
+    },
+    {
+      "path": "data/verification.json",
+      "sha256": "b2efa357c3f4128c23b2f7fa0422548d190f9dcdbe1e2ae5c7563f4dc82e1dfa",
+      "bytes": 124137
+    }
+  ]
+}

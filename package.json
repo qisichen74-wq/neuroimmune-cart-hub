@@ -13,10 +13,15 @@
     "audit:data": "node scripts/audit-data.mjs",
     "policy:candidates": "node scripts/apply-candidate-policy.mjs",
     "briefing:daily": "node scripts/generate-briefing.mjs",
-    "build:site": "node scripts/build-site.mjs",
+    "build:investor": "node scripts/build-investor-data.mjs",
+    "build:assistant": "node scripts/build-registry-field-evidence.mjs && node scripts/build-assistant-index.mjs",
+    "test:assistant": "node --experimental-default-type=module test-assistant.mjs && node test-evidence-policy.mjs && node test-registry-evidence.mjs && node test-retrieval-scope.mjs && node --experimental-default-type=module test-worker.mjs",
+    "eval:assistant": "node scripts/evaluate-assistant.mjs",
+    "build:site": "npm run build:assistant && npm run build:investor && node scripts/build-site.mjs",
+    "package:tencent": "npm run build:site && node scripts/package-tencent-release.mjs",
     "update:weekly": "npm run discover:sources && npm run check:sources && npm run check:regulatory && npm run check:fda && npm run audit:data && npm run briefing:daily",
     "update:daily": "npm run update:weekly",
-    "prestart": "npm run audit:data",
-    "start": "node scripts/serve.mjs"
+    "prestart": "npm run audit:data && npm run build:assistant",
+    "start": "node --env-file-if-exists=.env.local scripts/serve.mjs"
   }
 }

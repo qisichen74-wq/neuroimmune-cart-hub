@@ -52,6 +52,7 @@
         "miltenyi-mbcart20191-ms-phase12a",
         "tr1x-trx319-impact-ms",
         "tongji-rd0605-neuro-iit",
+        "sys6020-ms-phase12",
         "ct103a-neuro-autoimmune-phase1",
         "hadassah-hbi0101-autoimmune",
         "renji-c-car168-autoimmune",
@@ -184,6 +185,7 @@
     "kind": "疾病专题",
     "priority": "高",
     "maturity": "机制信号增强",
+    "updated_at": "2026-08-21",
     "summary": "临床改善与蛋白组学整合让SSc成为机制解释较强的自免CAR-T方向。",
     "thesis": "SSc的关键在于把器官结局、功能改善和免疫重塑证据绑定，判断疗效是否超越自然波动与既往治疗影响。",
     "unmet_need": "进展性患者面临不可逆器官损伤，现有治疗对疾病重塑能力有限。",
@@ -220,7 +222,8 @@
         "renji-c-car168",
         "adicet-prulacel",
         "changhai-kn3601",
-        "gustaveroussy-cellattack1"
+        "gustaveroussy-cellattack1",
+        "create-crt402"
       ],
       "trial": [
         "relma-autoimmune-ssc",
@@ -234,6 +237,8 @@
         "adicet-prulacel-autoimmune-phase1",
         "changhai-kn3601-autoimmune",
         "gustaveroussy-cellattack1-autoimmune"
+        ,"nkx019-immune-mediated-phase12",
+        "create-crt402-autoimmune-phase12"
       ]
     },
     "i18n": {
@@ -624,6 +629,7 @@
     "kind": "疾病专题",
     "priority": "高",
     "maturity": "注册导向Phase 2/3与人体证据",
+    "updated_at": "2026-08-21",
     "summary": "IIM已形成抗合成酶综合征、免疫介导坏死性肌病和皮肌炎等人体证据，并出现Cabaletta注册导向Phase 2/3、iCell中国Phase 1，以及Novartis、Cartesian随机Phase 2竞争格局。",
     "thesis": "IIM必须按DM、ASyS、IMNM及青少年IIM分层；应同时评价肌力、TIS、CK、皮肤、间质性肺病和激素停用，不能以单一酶学改善替代多器官获益。",
     "unmet_need": "难治患者可持续出现肌无力、吞咽障碍、皮肤病变和进展性间质性肺病，且部分患者在B细胞重建后复发。",
@@ -665,7 +671,8 @@
         "adicet-prulacel",
         "precision-cd19",
         "erlangen-cd19",
-        "tongji-ct103a-neuro"
+        "tongji-ct103a-neuro",
+        "create-crt402"
       ],
       "trial": [
         "cabaletta-resecel-myositis",
@@ -679,7 +686,8 @@
         "adicet-prulacel-autoimmune-phase1",
         "academic-cd19-autoimmune-series",
         "pkuph-bcmacd19-autoimmune-phase2",
-        "ct103a-neuro-autoimmune-phase1"
+        "ct103a-neuro-autoimmune-phase1",
+        "create-crt402-autoimmune-phase12"
       ]
     },
     "i18n": {
@@ -718,7 +726,7 @@
     "kind": "疾病专题",
     "priority": "高",
     "maturity": "多队列人体证据与注册试验扩展",
-    "updated_at": "2026-07-21",
+    "updated_at": "2026-08-21",
     "summary": "SLE是当前自身免疫CAR-T证据最密集的病种之一，已覆盖自体、异体、双靶点、CAR-NK和体内CAR-T等多条路线。",
     "thesis": "SLE专题应把无药缓解、SLEDAI/BILAG、补体与自身抗体、肾脏病理、B细胞重建和感染风险放在同一条证据链上，避免仅凭短期血清学改善判断疾病重置。",
     "unmet_need": "重症或难治性SLE及狼疮肾炎仍可出现反复器官损伤、长期激素暴露和多线免疫抑制失败。",
@@ -736,8 +744,8 @@
     ],
     "related": {
       "research": ["pmid-42414128", "pmid-41935952", "pmid-41644365", "pmid-41612420", "pmid-41240964", "pmid-42167622"],
-      "company": ["cabaletta-resecel", "icell-icg318-autoimmune", "crispr-ctx112", "fate-ft819", "allogene-allo329", "adicet-prulacel", "iaso-equecel-autoimmune", "miltenyi-zamtocel", "magicrna-hn2302", "changhai-kn3601"],
-      "trial": ["icell-icg318-sle-phase12", "ctx112-autoimmune-phase1", "ft819-autoimmune-phase1", "allo329-autoimmune-phase1", "zamtocel-autoimmune-phase1", "magicrna-hn2302-autoimmune", "adicet-prulacel-autoimmune-phase1", "changhai-kn3601-autoimmune", "gustaveroussy-cellattack1-autoimmune", "academic-cd19-autoimmune-series"]
+      "company": ["cabaletta-resecel", "icell-icg318-autoimmune", "crispr-ctx112", "fate-ft819", "allogene-allo329", "adicet-prulacel", "iaso-equecel-autoimmune", "miltenyi-zamtocel", "magicrna-hn2302", "changhai-kn3601", "create-crt402"],
+      "trial": ["icell-icg318-sle-phase12", "ctx112-autoimmune-phase1", "ft819-autoimmune-phase1", "allo329-autoimmune-phase1", "zamtocel-autoimmune-phase1", "magicrna-hn2302-autoimmune", "adicet-prulacel-autoimmune-phase1", "changhai-kn3601-autoimmune", "gustaveroussy-cellattack1-autoimmune", "academic-cd19-autoimmune-series", "azd0120-sle-phase12", "create-crt402-autoimmune-phase12"]
     },
     "i18n": {
       "en": {

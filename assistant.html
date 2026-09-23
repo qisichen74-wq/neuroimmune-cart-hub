@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="基于站内正式记录和来源状态回答自身免疫 CAR-T 情报问题。">
+  <title>AI 情报助手 - 自身免疫CAR-T情报工作台</title>
+  <link rel="stylesheet" href="assets/assistant.css">
+</head>
+<body>
+  <nav>
+    <a class="nav-logo" href="index.html"><span class="dot"></span>自身免疫 CAR-T 情报工作台</a>
+    <ul class="nav-links"></ul>
+    <a class="nav-action" href="search.html">检索</a>
+  </nav>
+
+  <main class="assistant-shell">
+    <header class="assistant-header">
+      <div>
+        <div class="assistant-kicker"><span></span>Evidence-grounded assistant</div>
+        <h1>把问题交给模型，<br><em>把判断留给证据。</em></h1>
+        <p>助手只检索本站正式收录的数据。关键事实必须附带来源编号；证据不足、过期或存在冲突时，会直接说明。</p>
+      </div>
+      <div class="index-state" aria-label="问答索引状态">
+        <div class="state-head"><span>证据索引</span><span class="state-dot" id="state-dot"></span></div>
+        <strong id="state-count">正在连接</strong>
+        <p id="state-copy">读取正式记录和模型配置状态…</p>
+        <div class="state-meta"><span id="state-date">截至 —</span><span id="state-model">模型状态 —</span></div>
+      </div>
+    </header>
+
+    <section class="assistant-workbench">
+      <div class="conversation-column">
+        <div class="context-bar" id="context-bar" hidden>
+          <span class="context-label">当前上下文</span>
+          <strong id="context-copy"></strong>
+          <button id="clear-context" type="button" aria-label="清除当前上下文">×</button>
+        </div>
+
+        <div class="conversation" id="conversation" aria-live="polite">
+          <section class="welcome" id="welcome">
+            <div class="welcome-mark" aria-hidden="true">AI</div>
+            <h2>从一个可核查的问题开始</h2>
+            <p>问题越具体，证据越集中。可以限定疾病、产品、公司、试验阶段或时间范围。</p>
+            <div class="prompt-grid">
+              <button type="button" data-question="目前多发性硬化领域有哪些 CAR-T 项目？分别处于什么阶段？"><span>项目扫描</span>MS 领域有哪些 CAR-T 项目？</button>
+              <button type="button" data-question="比较 KYV-101 和 CABA-201 的技术路线、适应症与临床进展。"><span>横向比较</span>KYV-101 与 CABA-201 有何差异？</button>
+              <button type="button" data-question="目前站内有哪些高优先级安全信号？证据边界是什么？"><span>安全证据</span>有哪些高优先级安全信号？</button>
+              <button type="button" data-question="站内记录了哪些自身免疫 CAR-T 相关资本交易？"><span>资本情报</span>近期有哪些重要交易？</button>
+            </div>
+          </section>
+        </div>
+
+        <form class="composer" id="composer">
+          <label for="question">向正式情报库提问</label>
+          <div class="composer-box">
+            <textarea id="question" name="question" rows="2" maxlength="800" placeholder="例如：比较两个项目的靶点、阶段、适应症和关键证据" required></textarea>
+            <button id="ask-button" type="submit"><span>检索并回答</span><span aria-hidden="true">↗</span></button>
+          </div>
+          <div class="composer-meta"><span>Enter 发送 · Shift + Enter 换行</span><span>模型模式会发送问题和命中证据至已配置的模型服务</span></div>
+        </form>
+      </div>
+
+      <aside class="evidence-column" aria-labelledby="evidence-title">
+        <div class="evidence-heading">
+          <div><span>Evidence ledger</span><h2 id="evidence-title">本轮证据</h2></div>
+          <span class="evidence-count" id="evidence-count">0</span>
+        </div>
+        <div class="evidence-empty" id="evidence-empty">
+          <div class="empty-rule"></div>
+          <p>回答后，这里会按引用编号列出命中的正式记录、来源状态和最近核验日期。</p>
+        </div>
+        <div class="evidence-list" id="evidence-list"></div>
+        <div class="evidence-policy">
+          <strong>证据边界</strong>
+          <p>试验登记不等于实际入组或疗效确证；企业披露不等于监管确认；安全信号不能直接用于因果判断。</p>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <footer>回答来自站内正式记录，不包含候选池。请回到原始来源完成最终判断。</footer>
+  <script src="assets/app-shell.js"></script>
+  <script type="module" src="assets/assistant.js"></script>
+</body>
+</html>

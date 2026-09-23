@@ -1,0 +1,35 @@
+import assert from "node:assert/strict";
+import { readFile } from "node:fs/promises";
+import { fieldEvidenceState, fieldEvidenceSummary, enrollmentLabel } from "./lib/registry-field-evidence.mjs";
+import { retrieveEvidence } from "./lib/assistant-retrieval.mjs";
+import { answerQuestion } from "./lib/assistant-answer.mjs";
+
+const now = new Date("2026-09-15T12:00:00+08:00");
+const index = JSON.parse(await readFile(new URL("./data/assistant-index.json", import.meta.url)));
+const evidence = JSON.parse(await readFile(new URL("./data/registry-field-evidence.json", import.meta.url)));
+assert.equal(evidence.records.length, 5);
+const reset = evidence.records.find((item) => item.registry_id === "NCT07006805");
+assert.equal(reset.fields.enrollment_type, "ACTUAL");
+assert.ok(fieldEvidenceSummary(reset).includes("实际入组 0 例"));
+assert.ok(fieldEvidenceSummary(reset).includes("不代表论文或其他披露情况"));
+assert.equal(enrollmentLabel(undefined), "登记入组数（类型未注明）");
+assert.equal(fieldEvidenceState(reset, now).current_verified, true);
+assert.equal(fieldEvidenceState(reset, new Date("2026-09-14T12:00:00+08:00")).current_verified, false, "Do not leak future review into fixed-date evaluation");
+assert.equal(fieldEvidenceState(reset, new Date("2026-09-23T12:00:00+08:00")).current_verified, false, "Field review also expires");
+const results = retrieveEvidence(index, "NCT07006805的实际入组人数和状态", { now });
+const trial = results.find((item) => item.id === reset.record_id);
+assert.ok(trial);
+assert.equal(trial.stale, true, "Whole-record freshness is not upgraded by field review");
+assert.equal(trial.field_freshness.current_verified, true);
+assert.ok(!trial.content.includes("计划入组 0"));
+let requestBody;
+const answer = await answerQuestion({ index, question: "NCT07006805的实际入组人数和状态", apiKey: "fake", now, fetchImpl: async (_, options) => {
+  requestBody = JSON.parse(options.body);
+  return new Response(JSON.stringify({ choices: [{ finish_reason: "stop", message: { content: "登记为已撤回，实际入组0例。[S1]" } }] }));
+} });
+assert.ok(JSON.stringify(requestBody).includes("registry_field_verification"));
+assert.ok(JSON.stringify(requestBody).includes("ACTUAL"));
+assert.ok(answer.limitations.some((item) => item.includes("仅这些字段")));
+assert.ok(answer.sources.some((item) => item.field_verification?.scope === "registry-fields-only"));
+assert.ok(!answer.answer.startsWith("当前命中资料没有"), "Fresh fields must not be incorrectly described as wholly unverified");
+console.log("Registry evidence tests: reviewed scope, actual enrollment, dated expiry and model payload passed");

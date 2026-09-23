@@ -1,0 +1,396 @@
+{
+  "schema_version": "1.0.0",
+  "as_of": "2026-08-21",
+  "records": [
+    {
+      "type": "organization",
+      "id": "org-astrazeneca",
+      "title": "AstraZeneca",
+      "copy": "public_biopharma · United Kingdom · NASDAQ: AZN",
+      "tags": [
+        "active",
+        "public_biopharma",
+        "United Kingdom"
+      ],
+      "url": "company.html?id=org-astrazeneca"
+    },
+    {
+      "type": "organization",
+      "id": "org-gracell",
+      "title": "Gracell Biotechnologies",
+      "copy": "subsidiary · China / United States",
+      "tags": [
+        "acquired",
+        "subsidiary",
+        "China / United States"
+      ],
+      "url": "company.html?id=org-gracell"
+    },
+    {
+      "type": "organization",
+      "id": "org-cartesian",
+      "title": "Cartesian Therapeutics",
+      "copy": "public_biotech · United States · NASDAQ: RNAC",
+      "tags": [
+        "active",
+        "public_biotech",
+        "United States"
+      ],
+      "url": "company.html?id=org-cartesian"
+    },
+    {
+      "type": "organization",
+      "id": "org-selecta",
+      "title": "Selecta Biosciences",
+      "copy": "predecessor_company · United States",
+      "tags": [
+        "merged",
+        "predecessor_company",
+        "United States"
+      ],
+      "url": "company.html?id=org-selecta"
+    },
+    {
+      "type": "organization",
+      "id": "org-k2-healthventures",
+      "title": "K2 HealthVentures",
+      "copy": "healthcare_investor · United States",
+      "tags": [
+        "active",
+        "healthcare_investor",
+        "United States"
+      ],
+      "url": "company.html?id=org-k2-healthventures"
+    },
+    {
+      "type": "organization",
+      "id": "org-cabaletta",
+      "title": "Cabaletta Bio",
+      "copy": "public_biotech · United States · NASDAQ: CABA",
+      "tags": [
+        "active",
+        "public_biotech",
+        "United States"
+      ],
+      "url": "company.html?id=org-cabaletta"
+    },
+    {
+      "type": "organization",
+      "id": "org-cellares",
+      "title": "Cellares",
+      "copy": "cell_therapy_manufacturer · United States",
+      "tags": [
+        "active",
+        "cell_therapy_manufacturer",
+        "United States"
+      ],
+      "url": "company.html?id=org-cellares"
+    },
+    {
+      "type": "organization",
+      "id": "org-kyverna",
+      "title": "Kyverna Therapeutics",
+      "copy": "public_biotech · United States · NASDAQ: KYTX",
+      "tags": [
+        "active",
+        "public_biotech",
+        "United States"
+      ],
+      "url": "company.html?id=org-kyverna"
+    },
+    {
+      "type": "organization",
+      "id": "org-elevatebio",
+      "title": "ElevateBio",
+      "copy": "cell_therapy_manufacturer · United States",
+      "tags": [
+        "active",
+        "cell_therapy_manufacturer",
+        "United States"
+      ],
+      "url": "company.html?id=org-elevatebio"
+    },
+    {
+      "type": "organization",
+      "id": "org-gilead",
+      "title": "Gilead Sciences",
+      "copy": "public_biopharma · United States · NASDAQ: GILD",
+      "tags": [
+        "active",
+        "public_biopharma",
+        "United States"
+      ],
+      "url": "company.html?id=org-gilead"
+    },
+    {
+      "type": "organization",
+      "id": "org-kite",
+      "title": "Kite Pharma",
+      "copy": "subsidiary · United States",
+      "tags": [
+        "acquired",
+        "subsidiary",
+        "United States"
+      ],
+      "url": "company.html?id=org-kite"
+    },
+    {
+      "type": "organization",
+      "id": "org-bms",
+      "title": "Bristol Myers Squibb",
+      "copy": "public_biopharma · United States · NYSE: BMY",
+      "tags": [
+        "active",
+        "public_biopharma",
+        "United States"
+      ],
+      "url": "company.html?id=org-bms"
+    },
+    {
+      "type": "organization",
+      "id": "org-celgene",
+      "title": "Celgene",
+      "copy": "subsidiary · United States",
+      "tags": [
+        "acquired",
+        "subsidiary",
+        "United States"
+      ],
+      "url": "company.html?id=org-celgene"
+    },
+    {
+      "type": "organization",
+      "id": "org-create-medicines",
+      "title": "CREATE Medicines",
+      "copy": "private_biotech · United States",
+      "tags": [
+        "active",
+        "private_biotech",
+        "United States"
+      ],
+      "url": "company.html?id=org-create-medicines"
+    },
+    {
+      "type": "program",
+      "id": "program-azd0120",
+      "title": "AZD0120",
+      "copy": "自体FasTCAR-T · CD19/BCMA",
+      "tags": [
+        "GC012F",
+        "SLE",
+        "clinical"
+      ],
+      "url": "company.html?id=org-astrazeneca"
+    },
+    {
+      "type": "program",
+      "id": "program-descartes08",
+      "title": "Descartes-08",
+      "copy": "自体mRNA CAR-T · BCMA",
+      "tags": [
+        "MG",
+        "IIM",
+        "clinical"
+      ],
+      "url": "company.html?id=org-cartesian"
+    },
+    {
+      "type": "program",
+      "id": "program-resecel",
+      "title": "rese-cel",
+      "copy": "自体CAR-T · CD19",
+      "tags": [
+        "CABA-201",
+        "MG",
+        "IIM",
+        "MS",
+        "clinical"
+      ],
+      "url": "company.html?id=org-cabaletta"
+    },
+    {
+      "type": "program",
+      "id": "program-mivcel",
+      "title": "miv-cel",
+      "copy": "自体CAR-T · CD19",
+      "tags": [
+        "KYV-101",
+        "MG",
+        "MS",
+        "clinical"
+      ],
+      "url": "company.html?id=org-kyverna"
+    },
+    {
+      "type": "program",
+      "id": "program-kite363",
+      "title": "KITE-363",
+      "copy": "自体CAR-T · CD19/BCMA",
+      "tags": [
+        "SLE",
+        "MS",
+        "SSc",
+        "clinical"
+      ],
+      "url": "company.html?id=org-kite"
+    },
+    {
+      "type": "program",
+      "id": "program-bms986353",
+      "title": "BMS-986353",
+      "copy": "自体CAR-T · CD19",
+      "tags": [
+        "CC-97540",
+        "SLE",
+        "SSc",
+        "IIM",
+        "MS",
+        "clinical"
+      ],
+      "url": "company.html?id=org-bms"
+    },
+    {
+      "type": "program",
+      "id": "program-crt402",
+      "title": "CRT-402",
+      "copy": "体内mRNA-LNP CAR-T · CD19",
+      "tags": [
+        "SLE",
+        "SSc",
+        "IIM",
+        "clinical"
+      ],
+      "url": "company.html?id=org-create-medicines"
+    },
+    {
+      "type": "deal",
+      "id": "deal-astrazeneca-gracell-2023",
+      "title": "AstraZeneca 收购 Gracell",
+      "copy": "交易将GC012F纳入AstraZeneca细胞治疗组合，形成大型药企直接拥有的自身免疫双靶点CAR-T资产。",
+      "tags": [
+        "acquisition",
+        "completed",
+        "2023-12-26",
+        "disclosed"
+      ],
+      "url": "deal.html?id=deal-astrazeneca-gracell-2023"
+    },
+    {
+      "type": "deal",
+      "id": "deal-cartesian-selecta-2023",
+      "title": "Cartesian 与 Selecta 合并并完成配套融资",
+      "copy": "交易为Descartes-08提供公开市场平台与临床推进资金；旧Selecta资产通过CVR与新公司价值拆分。",
+      "tags": [
+        "reverse_merger",
+        "completed",
+        "2023-11-13",
+        "partially_disclosed"
+      ],
+      "url": "deal.html?id=deal-cartesian-selecta-2023"
+    },
+    {
+      "type": "deal",
+      "id": "deal-cartesian-pipe-2024",
+      "title": "Cartesian 1.30亿美元PIPE融资",
+      "copy": "资金重点支持Descartes-08 MG III期制造准备、潜在商业化准备及自身免疫管线扩展。",
+      "tags": [
+        "private_financing",
+        "completed",
+        "2024-07-02",
+        "disclosed"
+      ],
+      "url": "deal.html?id=deal-cartesian-pipe-2024"
+    },
+    {
+      "type": "deal",
+      "id": "deal-kyverna-ipo-2024",
+      "title": "Kyverna 首次公开募股",
+      "copy": "IPO为miv-cel多适应症临床开发提供独立资本市场融资能力。",
+      "tags": [
+        "ipo",
+        "completed",
+        "2024-02-07",
+        "disclosed"
+      ],
+      "url": "deal.html?id=deal-kyverna-ipo-2024"
+    },
+    {
+      "type": "deal",
+      "id": "deal-cartesian-k2-2026",
+      "title": "Cartesian 获K2最高1.50亿美元信贷额度",
+      "copy": "非稀释性资金延长现金跑道，但授信上限不等于已到账金额，后续提款受条件约束。",
+      "tags": [
+        "debt_financing",
+        "active",
+        "2026-05-26",
+        "disclosed"
+      ],
+      "url": "deal.html?id=deal-cartesian-k2-2026"
+    },
+    {
+      "type": "deal",
+      "id": "deal-cabaletta-cellares-2026",
+      "title": "Cabaletta 与 Cellares 签署10年商业供应协议",
+      "copy": "长期制造协议降低rese-cel商业化放量的产能不确定性，但当前不代表已获批或已形成商业收入。",
+      "tags": [
+        "manufacturing_supply",
+        "active",
+        "2026-04-28",
+        "undisclosed"
+      ],
+      "url": "deal.html?id=deal-cabaletta-cellares-2026"
+    },
+    {
+      "type": "deal",
+      "id": "deal-kyverna-elevatebio-2026",
+      "title": "Kyverna 与 ElevateBio 达成 miv-cel 商业与临床供应协议",
+      "copy": "协议覆盖美国商业供应与全球临床供应，强化miv-cel后期开发的制造基础设施。",
+      "tags": [
+        "manufacturing_supply",
+        "active",
+        "2026-07-27",
+        "undisclosed"
+      ],
+      "url": "deal.html?id=deal-kyverna-elevatebio-2026"
+    },
+    {
+      "type": "deal",
+      "id": "deal-gilead-kite-2017",
+      "title": "Gilead 收购 Kite Pharma",
+      "copy": "该历史收购解释了Kite细胞治疗平台及KITE-363现由Gilead体系控制的所有权链。",
+      "tags": [
+        "acquisition",
+        "completed",
+        "2017-08-28",
+        "disclosed"
+      ],
+      "url": "deal.html?id=deal-gilead-kite-2017"
+    },
+    {
+      "type": "deal",
+      "id": "deal-bms-celgene-2019",
+      "title": "Bristol Myers Squibb 收购 Celgene",
+      "copy": "该历史交易解释了Celgene/Juno细胞治疗资产进入BMS体系的所有权背景；金额为公告股权价值口径。",
+      "tags": [
+        "acquisition",
+        "completed",
+        "2019-01-03",
+        "partially_disclosed"
+      ],
+      "url": "deal.html?id=deal-bms-celgene-2019"
+    },
+    {
+      "type": "deal",
+      "id": "deal-create-series-b-2026",
+      "title": "CREATE Medicines完成1.22亿美元B轮融资",
+      "copy": "融资由Newpath、ARCH和Hatteras共同领投，资金用于推进CRT-402自身免疫管线、CD19xBCMA项目及肿瘤管线。",
+      "tags": [
+        "private_financing",
+        "completed",
+        "2026-05-14",
+        "disclosed"
+      ],
+      "url": "deal.html?id=deal-create-series-b-2026"
+    }
+  ]
+}

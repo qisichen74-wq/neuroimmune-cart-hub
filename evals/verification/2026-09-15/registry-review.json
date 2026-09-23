@@ -1,0 +1,536 @@
+{
+  "scope": "字段比对结果；不自动刷新整条记录的核验日期",
+  "records": [
+    {
+      "registry_id": "NCT06451159",
+      "record_id": "kyv101-ms-phase1",
+      "checked_at": "2026-09-15T08:33:26.163Z",
+      "source_url": "https://clinicaltrials.gov/study/NCT06451159",
+      "api_url": "https://clinicaltrials.gov/api/v2/studies/NCT06451159",
+      "sha256": "1fb97bdff8a7d8568fd9480b63ca592023aabe22315331dad51bc5e96c9268ce",
+      "status": "fetched",
+      "remote": {
+        "official_title": "Phase 1, Open-Label, Single Center Study of KYV-101, an Autologous Fully-Human Anti-CD19 Chimeric Antigen Receptor T Cell (CD19 CAR T) Therapy, in Participants With Treatment Refractory Progressive Multiple Sclerosis",
+        "sponsor": "Bruce Cree",
+        "status": "ACTIVE_NOT_RECRUITING",
+        "phases": [
+          "PHASE1"
+        ],
+        "study_type": "INTERVENTIONAL",
+        "enrollment": 10,
+        "enrollment_type": "ESTIMATED",
+        "study_start": "2024-06-20",
+        "start_date_type": "ACTUAL",
+        "estimated_completion": "2027-02",
+        "completion_date_type": "ESTIMATED",
+        "registry_last_update": "2026-08-10",
+        "has_results": false,
+        "conditions": [
+          "Progressive Multiple Sclerosis"
+        ],
+        "design": {
+          "allocation": "NON_RANDOMIZED",
+          "interventionModel": "SEQUENTIAL",
+          "primaryPurpose": "TREATMENT",
+          "maskingInfo": {
+            "masking": "NONE"
+          }
+        },
+        "primary_outcomes": [
+          {
+            "measure": "The presence of CAR-T cells in CSF following their peak expansion in peripheral blood.",
+            "description": "To surmise CNS penetration of CAR-T cells.",
+            "timeFrame": "Screening to Week 48"
+          },
+          {
+            "measure": "The incidence and severity of adverse events and dose-limiting toxicities.",
+            "description": "* Disease reactivation as defined by the presence of new T2 hyperintense or GAD enhancing lesions on MRI brain at 8 weeks post-infusion of KYV-101.\n* Incidence of detectable anti-KYV-101 antibodies in peripheral blood.\n* Incidence of detectable T cells specific to KYV-101 drug product in peripheral blood.\n* Detectable replication competent lentivirus as measured by surrogate assay (VSV-G qPCR).\n* Persistence of IgG antibody titers to common vaccine related antigens (varicella, measles, mumps, rubella, tetanus).\n* Change from baseline in depression/anxiety including C-SSRS.",
+            "timeFrame": "Screening to Week 48"
+          }
+        ],
+        "brief_summary": "The goal of this study is to test a drug called KYV-101 in people who have progressive multiple sclerosis (MS) and who have not responded to standard therapies to slow disease progression. The main questions it aims to answer are:\n\n* What is the highest therapy dose that can be given without causing harm?\n* Can this therapy enter the central nervous system?\n\nParticipants will be asked to:\n\n* Attend 14 visits plus an 8-day inpatient hospital stay over the course of 58 weeks.\n* Complete apheresis and chemotherapy treatments in preparation for KVY-101 therapy.\n* Undergo medical and research testing such as physical and neurological exams, MRI, lumbar puncture, blood draws, questionnaires, and vision assessments."
+      },
+      "comparisons": [
+        {
+          "field": "official_title",
+          "local": "Phase 1, Open-Label, Single Center Study of KYV-101, an Autologous Fully-Human Anti-CD19 Chimeric Antigen Receptor T Cell (CD19 CAR T) Therapy, in Participants With Treatment Refractory Progressive Multiple Sclerosis",
+          "remote": "Phase 1, Open-Label, Single Center Study of KYV-101, an Autologous Fully-Human Anti-CD19 Chimeric Antigen Receptor T Cell (CD19 CAR T) Therapy, in Participants With Treatment Refractory Progressive Multiple Sclerosis",
+          "matches": true
+        },
+        {
+          "field": "sponsor",
+          "local": "Bruce Cree / UCSF",
+          "remote": "Bruce Cree",
+          "matches": false
+        },
+        {
+          "field": "status",
+          "local": "Active, not recruiting",
+          "remote": "ACTIVE_NOT_RECRUITING",
+          "matches": true
+        },
+        {
+          "field": "enrollment",
+          "local": 10,
+          "remote": 10,
+          "matches": true
+        },
+        {
+          "field": "study_start",
+          "local": "2024-06-20",
+          "remote": "2024-06-20",
+          "matches": true
+        },
+        {
+          "field": "estimated_completion",
+          "local": "2027-02",
+          "remote": "2027-02",
+          "matches": true
+        },
+        {
+          "field": "registry_last_update",
+          "local": "2026-08-10",
+          "remote": "2026-08-10",
+          "matches": true
+        }
+      ]
+    },
+    {
+      "registry_id": "NCT06193889",
+      "record_id": "kyv101-mg-kysa6-phase23",
+      "checked_at": "2026-09-15T08:33:26.608Z",
+      "source_url": "https://clinicaltrials.gov/study/NCT06193889",
+      "api_url": "https://clinicaltrials.gov/api/v2/studies/NCT06193889",
+      "sha256": "232ca41278c3b0f19cdc0b3aea00287db079c3cb2c7d5e36c3e830bb4164a730",
+      "status": "fetched",
+      "remote": {
+        "official_title": "KYSA-6: A Phase 2/3, Open-Label, Randomized, Controlled, Multicenter Study of KYV-101, an Autologous Fully Human Anti-CD19 Chimeric Antigen Receptor T-cell (CD19 CAR T) Therapy, Versus Ongoing Standard-Of-Care Immunosuppressive Therapy in Patients With Generalized Myasthenia Gravis",
+        "sponsor": "Kyverna Therapeutics",
+        "status": "RECRUITING",
+        "phases": [
+          "PHASE2",
+          "PHASE3"
+        ],
+        "study_type": "INTERVENTIONAL",
+        "enrollment": 66,
+        "enrollment_type": "ESTIMATED",
+        "study_start": "2024-08-28",
+        "start_date_type": "ACTUAL",
+        "estimated_completion": "2028-09",
+        "completion_date_type": "ESTIMATED",
+        "registry_last_update": "2026-07-29",
+        "has_results": false,
+        "conditions": [
+          "Myasthenia Gravis",
+          "Generalized Myasthenia Gravis"
+        ],
+        "design": {
+          "allocation": "RANDOMIZED",
+          "interventionModel": "SINGLE_GROUP",
+          "primaryPurpose": "TREATMENT",
+          "maskingInfo": {
+            "masking": "NONE"
+          }
+        },
+        "primary_outcomes": [
+          {
+            "measure": "Incidence and severity of adverse events (AEs) and laboratory abnormalities (Phase 2)",
+            "timeFrame": "18 months"
+          },
+          {
+            "measure": "Efficacy of KYV-101 via Myasthenia Gravis Activities of Daily Living (MG-ADL) change from baseline (Phase 2)",
+            "timeFrame": "24 weeks"
+          },
+          {
+            "measure": "Efficacy of KYV-101 via Myasthenia Gravis Activities of Daily Living (MG-ADL) change from baseline for KYV-101 Treatment arm to Standard of Care arm (Phase 3)",
+            "timeFrame": "24 weeks"
+          },
+          {
+            "measure": "Efficacy of KYV-101 via Quantitative Myasthenia Gravis (QMG) change from baseline for KYV-101 Treatment arm to Standard of Care arm (Phase 3)",
+            "timeFrame": "24 weeks"
+          }
+        ],
+        "brief_summary": "A Study of the Anti-CD 19 Chimeric Antigen Receptor T Cell Therapy for Patients with Myasthenia Gravis"
+      },
+      "comparisons": [
+        {
+          "field": "official_title",
+          "local": "KYSA-6: A Phase 2/3, Open-Label, Randomized, Controlled, Multicenter Study of KYV-101, an Autologous Fully Human Anti-CD19 Chimeric Antigen Receptor T-cell (CD19 CAR T) Therapy, Versus Ongoing Standard-Of-Care Immunosuppressive Therapy in Patients With Generalized Myasthenia Gravis",
+          "remote": "KYSA-6: A Phase 2/3, Open-Label, Randomized, Controlled, Multicenter Study of KYV-101, an Autologous Fully Human Anti-CD19 Chimeric Antigen Receptor T-cell (CD19 CAR T) Therapy, Versus Ongoing Standard-Of-Care Immunosuppressive Therapy in Patients With Generalized Myasthenia Gravis",
+          "matches": true
+        },
+        {
+          "field": "sponsor",
+          "local": "Kyverna Therapeutics",
+          "remote": "Kyverna Therapeutics",
+          "matches": true
+        },
+        {
+          "field": "status",
+          "local": "Recruiting",
+          "remote": "RECRUITING",
+          "matches": true
+        },
+        {
+          "field": "enrollment",
+          "local": 66,
+          "remote": 66,
+          "matches": true
+        },
+        {
+          "field": "study_start",
+          "local": "2024-08-28",
+          "remote": "2024-08-28",
+          "matches": true
+        },
+        {
+          "field": "estimated_completion",
+          "local": "2028-09",
+          "remote": "2028-09",
+          "matches": true
+        },
+        {
+          "field": "registry_last_update",
+          "local": "2026-07-29",
+          "remote": "2026-07-29",
+          "matches": true
+        }
+      ]
+    },
+    {
+      "registry_id": "NCT07403188",
+      "record_id": "kyv101-autoimmune-ltfu",
+      "checked_at": "2026-09-15T08:33:26.963Z",
+      "source_url": "https://clinicaltrials.gov/study/NCT07403188",
+      "api_url": "https://clinicaltrials.gov/api/v2/studies/NCT07403188",
+      "sha256": "839a788f24c3650cbb42847beec3965674ae50a8409ce40f6616a9b99968435c",
+      "status": "fetched",
+      "remote": {
+        "official_title": "A Long-Term Follow-Up Study for Participants Previously Treated With KYV-101",
+        "sponsor": "Kyverna Therapeutics",
+        "status": "RECRUITING",
+        "phases": [],
+        "study_type": "OBSERVATIONAL",
+        "enrollment": 70,
+        "enrollment_type": "ESTIMATED",
+        "study_start": "2025-11-24",
+        "start_date_type": "ACTUAL",
+        "estimated_completion": "2041-01",
+        "completion_date_type": "ESTIMATED",
+        "registry_last_update": "2026-02-11",
+        "has_results": false,
+        "conditions": [
+          "Refractory Lupus Nephritis",
+          "Myasthaenia Gravis",
+          "Stiff Person Syndrome",
+          "Rheumatoid Arthritis (RA)",
+          "Multiple Sclerosis",
+          "Dermatomyositis",
+          "Systemic Sclerosis (SSc)"
+        ],
+        "design": {
+          "observationalModel": "OTHER",
+          "timePerspective": "PROSPECTIVE"
+        },
+        "primary_outcomes": [
+          {
+            "measure": "Number of participants with treatment-related adverse events (AEs) as assessed by CTCAE v6.0 through Year 15 of long-term follow-up (LTFU).",
+            "timeFrame": "Up to 15 years from study entry"
+          },
+          {
+            "measure": "Number of participants with new or recurrent malignancies as assessed by CTCAE v6.0 through Year 15 of long-term follow-up (LTFU).",
+            "timeFrame": "Up to 15 years from study entry"
+          },
+          {
+            "measure": "Number of participants with new or exacerbation of a pre-existing neurologic disorder as assessed by CTCAE v6.0 through Year 15 of long-term follow-up (LTFU).",
+            "timeFrame": "Up to 15 years from study entry"
+          },
+          {
+            "measure": "Number of participants with new or exacerbation of a prior rheumatologic or other autoimmune disorder as assessed by CTCAE v6.0 through Year 15 of long-term follow-up (LTFU).",
+            "timeFrame": "Up to 15 years from study entry"
+          },
+          {
+            "measure": "Number of participants with new hematologic disorders as assessed by CTCAE v6.0 through Year 15 of long-term follow-up (LTFU).",
+            "timeFrame": "Up to 15 years from study entry"
+          },
+          {
+            "measure": "Number of participants with new infections as assessed by CTCAE v6.0 through Year 15 of long-term follow-up (LTFU).",
+            "timeFrame": "Up to 15 years from study entry"
+          },
+          {
+            "measure": "Number of participants with positive Replication-Competent Lentivirus (RCL) laboratory test results through Year 5 of long-term follow-up (LTFU).",
+            "timeFrame": "Up to 5 years from study entry"
+          },
+          {
+            "measure": "Number of participants with positive Chimeric Antigen Receptor (CAR) laboratory test results through Year 5 of long-term follow-up (LTFU).",
+            "timeFrame": "Up to 5 years from study entry"
+          },
+          {
+            "measure": "Number of participants with positive Anti-Drug-Antibody (ADA) laboratory test results through Year 5 of long-term follow-up (LTFU).",
+            "timeFrame": "Up to 5 years from study entry"
+          }
+        ],
+        "brief_summary": "The purpose of this long-term follow-up (LTFU) study is to collect delayed adverse events (AEs) and understand the persistence of KYV-101 (autologous CAR T cell product; gene-modified product), in participants who have been administered KYV-101 (gene-modified product; autologous CAR T cell product).\n\nThis LTFU protocol will be open to any participant who received at least one infusion of KYV-101 in a previous Kyverna sponsored clinical trial or Investigator Initiated Trial (IIT)."
+      },
+      "comparisons": [
+        {
+          "field": "official_title",
+          "local": "A Long-Term Follow-Up Study for Participants Previously Treated With KYV-101",
+          "remote": "A Long-Term Follow-Up Study for Participants Previously Treated With KYV-101",
+          "matches": true
+        },
+        {
+          "field": "sponsor",
+          "local": "Kyverna Therapeutics",
+          "remote": "Kyverna Therapeutics",
+          "matches": true
+        },
+        {
+          "field": "status",
+          "local": "Recruiting",
+          "remote": "RECRUITING",
+          "matches": true
+        },
+        {
+          "field": "enrollment",
+          "local": 70,
+          "remote": 70,
+          "matches": true
+        },
+        {
+          "field": "study_start",
+          "local": "2025-11-24",
+          "remote": "2025-11-24",
+          "matches": true
+        },
+        {
+          "field": "estimated_completion",
+          "local": "2041-01",
+          "remote": "2041-01",
+          "matches": true
+        },
+        {
+          "field": "registry_last_update",
+          "local": "2026-02-11",
+          "remote": "2026-02-11",
+          "matches": true
+        }
+      ]
+    },
+    {
+      "registry_id": "NCT07006805",
+      "record_id": "cabaletta-resecel-ms-phase12",
+      "checked_at": "2026-09-15T08:33:27.240Z",
+      "source_url": "https://clinicaltrials.gov/study/NCT07006805",
+      "api_url": "https://clinicaltrials.gov/api/v2/studies/NCT07006805",
+      "sha256": "42aa356e3462254a904ee3e21165f6913d8545fc5a8e7b4d9e122eb9702c5fab",
+      "status": "fetched",
+      "remote": {
+        "official_title": "RESET-MS: A Phase 1/2, Open-Label Study to Evaluate the Safety and Efficacy of Autologous CD19-specific Chimeric Antigen Receptor T Cells (CABA-201) in Participants With Multiple Sclerosis",
+        "sponsor": "Cabaletta Bio",
+        "status": "WITHDRAWN",
+        "phases": [
+          "PHASE1",
+          "PHASE2"
+        ],
+        "study_type": "INTERVENTIONAL",
+        "enrollment": 0,
+        "enrollment_type": "ACTUAL",
+        "study_start": "2026-06",
+        "start_date_type": "ESTIMATED",
+        "estimated_completion": "2029-10",
+        "completion_date_type": "ESTIMATED",
+        "registry_last_update": "2026-06-25",
+        "has_results": false,
+        "conditions": [
+          "Relapsing Multiple Sclerosis (RMS)",
+          "Progressive Multiple Sclerosis (PMS)",
+          "Multiple Sclerosis - Relapsing Remitting",
+          "Multiple Sclerosis",
+          "Multiple Sclerosis (Relapsing Remitting)",
+          "Multiple Sclerosis (MS) - Relapsing-remitting",
+          "Progressive Multiple Sclerosis"
+        ],
+        "design": {
+          "allocation": "NON_RANDOMIZED",
+          "interventionModel": "SEQUENTIAL",
+          "primaryPurpose": "TREATMENT",
+          "maskingInfo": {
+            "masking": "NONE"
+          }
+        },
+        "primary_outcomes": [
+          {
+            "measure": "Primary (Part A: Dose Escalation) incidence and severity of adverse events",
+            "description": "An AE is any untoward medical occurrence in a patient or clinical study participant, temporally associated with the use of study treatment, whether or not considered related to the study treatment. An AE can therefore be any unfavorable and unintended sign (including an abnormal result of an investigation), symptom, or disease (new or exacerbated) temporally associated with the use of study treatment. The term AE is used to include both serious and non-serious AEs.",
+            "timeFrame": "Up to 28 days after CABA-201 infusion"
+          },
+          {
+            "measure": "Primary (Part B: Dose Expansion) incidence of and severity of adverse events in order to confirm the dose(s) of CABA-201",
+            "description": "An AE is any untoward medical occurrence in a patient or clinical study participant, temporally associated with the use of study treatment, whether or not considered related to the study treatment. An AE can therefore be any unfavorable and unintended sign (including an abnormal result of an investigation), symptom, or disease (new or exacerbated) temporally associated with the use of study treatment. The term AE is used to include both serious and non-serious AEs.",
+            "timeFrame": "Up to 28 days after CABA-201 infusion"
+          }
+        ],
+        "brief_summary": "RESET-MS: A Phase 1/2 Open-Label Study to Evaluate the Safety and Efficacy of Autologous CD19-specific Chimeric Antigen Receptor T cells (CABA-201) in Participants with Multiple Sclerosis"
+      },
+      "comparisons": [
+        {
+          "field": "official_title",
+          "local": "RESET-MS: A Phase 1/2, Open-Label Study to Evaluate the Safety and Efficacy of Autologous CD19-specific Chimeric Antigen Receptor T Cells (CABA-201) in Participants With Multiple Sclerosis",
+          "remote": "RESET-MS: A Phase 1/2, Open-Label Study to Evaluate the Safety and Efficacy of Autologous CD19-specific Chimeric Antigen Receptor T Cells (CABA-201) in Participants With Multiple Sclerosis",
+          "matches": true
+        },
+        {
+          "field": "sponsor",
+          "local": "Cabaletta Bio",
+          "remote": "Cabaletta Bio",
+          "matches": true
+        },
+        {
+          "field": "status",
+          "local": "Withdrawn",
+          "remote": "WITHDRAWN",
+          "matches": true
+        },
+        {
+          "field": "enrollment",
+          "local": 0,
+          "remote": 0,
+          "matches": true
+        },
+        {
+          "field": "study_start",
+          "local": "2026-06",
+          "remote": "2026-06",
+          "matches": true
+        },
+        {
+          "field": "estimated_completion",
+          "local": "2029-10",
+          "remote": "2029-10",
+          "matches": true
+        },
+        {
+          "field": "registry_last_update",
+          "local": "2026-06-25",
+          "remote": "2026-06-25",
+          "matches": true
+        }
+      ]
+    },
+    {
+      "registry_id": "NCT06220201",
+      "record_id": "cc97540-breakfree2",
+      "checked_at": "2026-09-15T08:33:27.516Z",
+      "source_url": "https://clinicaltrials.gov/study/NCT06220201",
+      "api_url": "https://clinicaltrials.gov/api/v2/studies/NCT06220201",
+      "sha256": "a11275fd007f9429b0c1ac7e94137cc79157cafbe7d6240f818e43ca427ba492",
+      "status": "fetched",
+      "remote": {
+        "official_title": "A Phase 1, Multicenter, Single-arm, Dose-escalation Study of CC-97540 (BMS-986353), CD19-Targeted NEX-T Chimeric Antigen Receptor (CAR) T Cells, Evaluating Safety and Tolerability in Participants With Autoimmune Neurological Diseases: Relapsing Forms of Multiple Sclerosis (RMS), Progressive Forms of Multiple Sclerosis (PMS), or Refractory Myasthenia Gravis (MG).",
+        "sponsor": "Juno Therapeutics, Inc., a Bristol-Myers Squibb Company",
+        "status": "ACTIVE_NOT_RECRUITING",
+        "phases": [
+          "PHASE1"
+        ],
+        "study_type": "INTERVENTIONAL",
+        "enrollment": 120,
+        "enrollment_type": "ESTIMATED",
+        "study_start": "2024-03-28",
+        "start_date_type": "ACTUAL",
+        "estimated_completion": "2027-07-15",
+        "completion_date_type": "ESTIMATED",
+        "registry_last_update": "2026-08-03",
+        "has_results": false,
+        "conditions": [
+          "Multiple Sclerosis",
+          "Myasthenia Gravis"
+        ],
+        "design": {
+          "allocation": "NON_RANDOMIZED",
+          "interventionModel": "SINGLE_GROUP",
+          "primaryPurpose": "TREATMENT",
+          "maskingInfo": {
+            "masking": "NONE"
+          }
+        },
+        "primary_outcomes": [
+          {
+            "measure": "Number of participants with adverse events (AEs)",
+            "timeFrame": "Up to week 104"
+          },
+          {
+            "measure": "Number of participants with serious adverse events (SAEs)",
+            "timeFrame": "Up to week 104"
+          },
+          {
+            "measure": "Number of participants with adverse events of special interest (AESIs)",
+            "timeFrame": "Up to week 104"
+          },
+          {
+            "measure": "Number of participants with laboratory test result abnormalities",
+            "timeFrame": "Up to week 104"
+          },
+          {
+            "measure": "Number of participants with imaging abnormalities",
+            "description": "For Cohorts 1 and 2",
+            "timeFrame": "Up to week 104"
+          },
+          {
+            "measure": "Number of participants with dose-limiting toxicities (DLTs)",
+            "timeFrame": "Up to week 104"
+          },
+          {
+            "measure": "Recommended Phase 2 dose (RP2D) based on the incidence of DLTs that occur during the DLT evaluation period",
+            "timeFrame": "Up to week 104"
+          }
+        ],
+        "brief_summary": "The purpose of this study is to evaluate the safety, tolerability, efficacy, and drug levels of CC-97540 in participants with Relapsing Forms of Multiple Sclerosis (RMS), Progressive Forms of Multiple Sclerosis (PMS) or Refractory Myasthenia Gravis (MG)."
+      },
+      "comparisons": [
+        {
+          "field": "official_title",
+          "local": "A Phase 1, Multicenter, Single-arm, Dose-escalation Study of CC-97540 (BMS-986353), CD19-Targeted NEX-T Chimeric Antigen Receptor (CAR) T Cells, Evaluating Safety and Tolerability in Participants With Autoimmune Neurological Diseases: Relapsing Forms of Multiple Sclerosis (RMS), Progressive Forms of Multiple Sclerosis (PMS), or Refractory Myasthenia Gravis (MG).",
+          "remote": "A Phase 1, Multicenter, Single-arm, Dose-escalation Study of CC-97540 (BMS-986353), CD19-Targeted NEX-T Chimeric Antigen Receptor (CAR) T Cells, Evaluating Safety and Tolerability in Participants With Autoimmune Neurological Diseases: Relapsing Forms of Multiple Sclerosis (RMS), Progressive Forms of Multiple Sclerosis (PMS), or Refractory Myasthenia Gravis (MG).",
+          "matches": true
+        },
+        {
+          "field": "sponsor",
+          "local": "Juno Therapeutics, Inc., a Bristol-Myers Squibb Company",
+          "remote": "Juno Therapeutics, Inc., a Bristol-Myers Squibb Company",
+          "matches": true
+        },
+        {
+          "field": "status",
+          "local": "Active, not recruiting",
+          "remote": "ACTIVE_NOT_RECRUITING",
+          "matches": true
+        },
+        {
+          "field": "enrollment",
+          "local": 120,
+          "remote": 120,
+          "matches": true
+        },
+        {
+          "field": "study_start",
+          "local": "2024-03-28",
+          "remote": "2024-03-28",
+          "matches": true
+        },
+        {
+          "field": "estimated_completion",
+          "local": "2027-07-15",
+          "remote": "2027-07-15",
+          "matches": true
+        },
+        {
+          "field": "registry_last_update",
+          "local": "2026-08-03",
+          "remote": "2026-08-03",
+          "matches": true
+        }
+      ]
+    }
+  ]
+}

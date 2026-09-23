@@ -1103,6 +1103,55 @@
     ]
   },
   {
+    "id": "event-sys6020-ms-registration",
+    "date": "2026-08-10",
+    "event_type": "试验登记",
+    "title": "同济医院登记SYS6020治疗复发/难治性MS的Phase 1b/2研究",
+    "summary": "NCT07756268首次公开，计划入组25例复发/难治性MS患者；登记描述为LNP-mRNA瞬时转染的自体BCMA CAR-T，每周一次、连续6次给药。",
+    "impact": "为MS增加一条无体外持久转导、重复给药的BCMA CAR-T正式注册路径；目前尚未招募，不能据此推断临床获益。",
+    "priority": "高",
+    "topic": "MS",
+    "status": "Not yet recruiting",
+    "source_label": "ClinicalTrials.gov",
+    "source_url": "https://clinicaltrials.gov/study/NCT07756268",
+    "entities": [
+      { "type": "trial", "id": "sys6020-ms-phase12" }
+    ]
+  },
+  {
+    "id": "event-iaso-equecel-imnm-registration",
+    "date": "2026-08-07",
+    "event_type": "试验登记",
+    "title": "IASO登记Eque-cel治疗IMNM的Phase 1/2研究",
+    "summary": "NCT07752264首次公开，计划入组27例难治性免疫介导坏死性肌病患者，采用清淋后单次输注BCMA自体CAR-T。",
+    "impact": "IMNM新增一项企业申办的正式CAR-T注册研究；目前尚未招募，疗效与长期安全性仍待前瞻性数据。",
+    "priority": "高",
+    "topic": "IIM",
+    "status": "Not yet recruiting",
+    "source_label": "ClinicalTrials.gov",
+    "source_url": "https://clinicaltrials.gov/study/NCT07752264",
+    "entities": [
+      { "type": "company", "id": "iaso-equecel-autoimmune" },
+      { "type": "trial", "id": "iaso-equecel-imnm-phase12" }
+    ]
+  },
+  {
+    "id": "event-rxim002-itp-registration",
+    "date": "2026-08-14",
+    "event_type": "试验登记",
+    "title": "RiboX登记circRNA-LNP体内CAR表达治疗自身免疫性血细胞减少症的Phase 1研究",
+    "summary": "NCT07765966首次公开，RXIM002为靶向LNP递送、编码抗CD19 CAR的环状RNA；计划入组27例复发/难治性自身免疫性血细胞减少症患者。",
+    "impact": "该研究代表体内生成CAR表达的早期临床尝试，但预计2027年启动，当前不能将其视为已验证的体内CAR-T临床疗效。",
+    "priority": "中",
+    "topic": "跨病种",
+    "status": "Not yet recruiting",
+    "source_label": "ClinicalTrials.gov",
+    "source_url": "https://clinicaltrials.gov/study/NCT07765966",
+    "entities": [
+      { "type": "trial", "id": "rxim002-itp-phase1" }
+    ]
+  },
+  {
     "id": "event-kyverna-elevatebio-supply",
     "date": "2026-07-27",
     "event_type": "公司披露",
@@ -1123,6 +1172,23 @@
         "type": "trial",
         "id": "kyv101-mg-kysa6-phase23"
       }
+    ]
+  },
+  {
+    "id": "event-create-crt402-registration",
+    "date": "2026-08-21",
+    "event_type": "试验登记",
+    "title": "CREATE登记CRT-402体内CD19 CAR-T自身免疫病Phase 1/2研究",
+    "summary": "NCT07778446首次公开，计划在澳大利亚入组34例难治性SLE、SSc或IIM患者；登记状态为Not yet recruiting，预计2026-08-24启动。",
+    "impact": "体内mRNA-LNP CD19 CAR-T新增正式人体开发路径；HREC许可和试验登记不代表FDA批准、产品上市或临床疗效已得到验证。",
+    "priority": "高",
+    "topic": "跨病种",
+    "status": "Not yet recruiting",
+    "source_label": "ClinicalTrials.gov / CREATE Medicines",
+    "source_url": "https://clinicaltrials.gov/study/NCT07778446",
+    "entities": [
+      { "type": "company", "id": "create-crt402" },
+      { "type": "trial", "id": "create-crt402-autoimmune-phase12" }
     ]
   }
 ]

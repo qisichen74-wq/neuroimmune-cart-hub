@@ -728,5 +728,15 @@
     "relation": "推进",
     "rationale": "Kyverna Therapeutics是NCT06193889主办方，KYSA-6已进入FDA对齐的gMG注册性Phase 3并持续招募。",
     "confidence": "高"
+  },
+  {
+    "id": "rel-create-crt402-trial",
+    "source_type": "company",
+    "source_id": "create-crt402",
+    "target_type": "trial",
+    "target_id": "create-crt402-autoimmune-phase12",
+    "relation": "推进",
+    "rationale": "Myeloid Therapeutics为NCT07778446注册申办方，CREATE Medicines为合作方并将CRT-402列为自身免疫核心管线。",
+    "confidence": "高"
   }
 ]

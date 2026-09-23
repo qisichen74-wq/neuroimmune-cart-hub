@@ -1,0 +1,2 @@
+# Preserve byte-exact public registry snapshots: hashes include source EOF bytes.
+evals/verification/*/NCT*.json -text whitespace=-blank-at-eof

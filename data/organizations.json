@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0.0",
+  "as_of": "2026-08-21",
+  "verified_at": "2026-08-21",
+  "records": [
+    {"id":"org-astrazeneca","name":"AstraZeneca","kind":"public_biopharma","status":"active","ticker":"NASDAQ: AZN","country":"United Kingdom","website":"https://www.astrazeneca.com/","source_ids":["astrazeneca-primary"]},
+    {"id":"org-gracell","name":"Gracell Biotechnologies","kind":"subsidiary","status":"acquired","parent_org_id":"org-astrazeneca","country":"China / United States","website":"https://www.astrazeneca.com/","source_ids":["astrazeneca-primary"]},
+    {"id":"org-cartesian","name":"Cartesian Therapeutics","kind":"public_biotech","status":"active","ticker":"NASDAQ: RNAC","country":"United States","website":"https://www.cartesiantherapeutics.com/","source_ids":["cartesian-ir"]},
+    {"id":"org-selecta","name":"Selecta Biosciences","kind":"predecessor_company","status":"merged","successor_org_id":"org-cartesian","country":"United States","source_ids":["cartesian-ir"]},
+    {"id":"org-k2-healthventures","name":"K2 HealthVentures","kind":"healthcare_investor","status":"active","country":"United States","website":"https://www.k2hv.com/","source_ids":["cartesian-ir"]},
+    {"id":"org-cabaletta","name":"Cabaletta Bio","kind":"public_biotech","status":"active","ticker":"NASDAQ: CABA","country":"United States","website":"https://www.cabalettabio.com/","source_ids":["cabaletta-primary"]},
+    {"id":"org-cellares","name":"Cellares","kind":"cell_therapy_manufacturer","status":"active","country":"United States","website":"https://www.cellares.com/","source_ids":["cabaletta-primary"]},
+    {"id":"org-kyverna","name":"Kyverna Therapeutics","kind":"public_biotech","status":"active","ticker":"NASDAQ: KYTX","country":"United States","website":"https://kyvernatx.com/","source_ids":["kyverna-ir"]},
+    {"id":"org-elevatebio","name":"ElevateBio","kind":"cell_therapy_manufacturer","status":"active","country":"United States","website":"https://elevate.bio/","source_ids":["kyverna-ir"]},
+    {"id":"org-gilead","name":"Gilead Sciences","kind":"public_biopharma","status":"active","ticker":"NASDAQ: GILD","country":"United States","website":"https://www.gilead.com/","source_ids":["gilead-primary"]},
+    {"id":"org-kite","name":"Kite Pharma","kind":"subsidiary","status":"acquired","parent_org_id":"org-gilead","country":"United States","website":"https://www.kitepharma.com/","source_ids":["gilead-primary"]},
+    {"id":"org-bms","name":"Bristol Myers Squibb","kind":"public_biopharma","status":"active","ticker":"NYSE: BMY","country":"United States","website":"https://www.bms.com/","source_ids":["bms-primary"]},
+    {"id":"org-celgene","name":"Celgene","kind":"subsidiary","status":"acquired","parent_org_id":"org-bms","country":"United States","source_ids":["bms-primary"]},
+    {"id":"org-create-medicines","name":"CREATE Medicines","aliases":["Myeloid Therapeutics"],"kind":"private_biotech","status":"active","country":"United States","website":"https://createmedicines.com/","source_ids":["create-primary"]}
+  ]
+}

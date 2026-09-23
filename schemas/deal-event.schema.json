@@ -1,0 +1,7 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://qisichen.cn/schemas/deal-event.schema.json",
+  "title":"Deal event","type":"object","additionalProperties":true,
+  "required":["id","deal_id","date","event_type","title","source_ids"],
+  "properties":{"id":{"type":"string","pattern":"^deal-event-[a-z0-9-]+$"},"deal_id":{"type":"string","pattern":"^deal-"},"date":{"type":"string","format":"date"},"event_type":{"enum":["announced","signed","priced","funded","closed","terminated"]},"source_ids":{"type":"array","minItems":1,"uniqueItems":true,"items":{"type":"string"}}}
+}

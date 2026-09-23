@@ -1,0 +1,45 @@
+{
+  "schema_version": "1.0.0",
+  "as_of": "2026-08-21",
+  "metrics": {
+    "transactions": 10,
+    "active_transactions": 3,
+    "organizations": 14,
+    "linked_programs": 7,
+    "undisclosed_transactions": 2
+  },
+  "by_type": [
+    {
+      "deal_type": "acquisition",
+      "count": 3
+    },
+    {
+      "deal_type": "reverse_merger",
+      "count": 1
+    },
+    {
+      "deal_type": "private_financing",
+      "count": 2
+    },
+    {
+      "deal_type": "ipo",
+      "count": 1
+    },
+    {
+      "deal_type": "debt_financing",
+      "count": 1
+    },
+    {
+      "deal_type": "manufacturing_supply",
+      "count": 2
+    }
+  ],
+  "latest_deal_ids": [
+    "deal-kyverna-elevatebio-2026",
+    "deal-cartesian-k2-2026",
+    "deal-create-series-b-2026",
+    "deal-cabaletta-cellares-2026",
+    "deal-cartesian-pipe-2024"
+  ],
+  "methodology": "金额均按公司或监管一手披露口径录入；已到账、潜在总额与未披露严格分列，不汇总为单一总交易额。"
+}
