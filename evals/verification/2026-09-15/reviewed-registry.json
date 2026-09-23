@@ -1,0 +1,12 @@
+{
+  "reviewed_at": "2026-09-15",
+  "scope": "registry-fields-only",
+  "review_note": "已核对登记身份、七项本地字段差异及登记阶段、入组类型和结果发布标记。Bruce Cree / UCSF 的差异来自个人申办方与所属机构合写；登记字段保留官方 leadSponsor，不将 UCSF 当作共同申办方。不得据 hasResults=false 推断未发表论文或不存在疗效结果。",
+  "records": [
+    { "registry_id": "NCT06451159", "record_id": "kyv101-ms-phase1", "sha256": "1fb97bdff8a7d8568fd9480b63ca592023aabe22315331dad51bc5e96c9268ce" },
+    { "registry_id": "NCT06193889", "record_id": "kyv101-mg-kysa6-phase23", "sha256": "232ca41278c3b0f19cdc0b3aea00287db079c3cb2c7d5e36c3e830bb4164a730" },
+    { "registry_id": "NCT07403188", "record_id": "kyv101-autoimmune-ltfu", "sha256": "839a788f24c3650cbb42847beec3965674ae50a8409ce40f6616a9b99968435c" },
+    { "registry_id": "NCT07006805", "record_id": "cabaletta-resecel-ms-phase12", "sha256": "42aa356e3462254a904ee3e21165f6913d8545fc5a8e7b4d9e122eb9702c5fab" },
+    { "registry_id": "NCT06220201", "record_id": "cc97540-breakfree2", "sha256": "a11275fd007f9429b0c1ac7e94137cc79157cafbe7d6240f818e43ca427ba492" }
+  ]
+}

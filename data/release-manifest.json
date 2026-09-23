@@ -1,12 +1,17 @@
 {
   "schema_version": "1.0.0",
-  "generated_at": "2026-08-21T15:18:37.427Z",
-  "git_revision": "16772ddc2705cb477437c0d52a6b822a4d5cef90",
+  "generated_at": "2026-09-23T12:56:13.356Z",
+  "git_revision": "0a14070530b2a5b8c955d6e9038837d332f6e586",
   "files": [
     {
+      "path": "data/assistant-index.json",
+      "sha256": "cebbdb23106178e4fbf6be0cf46fbec99e3dc9ff77fc06ccd1d29c5896140deb",
+      "bytes": 632051
+    },
+    {
       "path": "data/daily-briefing.json",
-      "sha256": "5977f2a9393d69e63ecd54a3b3366052a6fe1802799db0907979474b1e59c3c0",
-      "bytes": 43959
+      "sha256": "05194bae88934fae99bfa679480bfcb5558266c04280d21200660af0b556024e",
+      "bytes": 67313
     },
     {
       "path": "data/deal-events.json",
@@ -35,8 +40,8 @@
     },
     {
       "path": "data/landscape.json",
-      "sha256": "f1cc399451a5c222283cf9f56458a353e9431315633c57c860bb174bda268ba3",
-      "bytes": 39978
+      "sha256": "5cd8ad0ca07ac356dcf91308b89ecebba0d4258d07f25aed8d5db240763d40a6",
+      "bytes": 40398
     },
     {
       "path": "data/organizations.json",
@@ -75,8 +80,8 @@
     },
     {
       "path": "data/trials.json",
-      "sha256": "d0719827d7f15b9d0b95b7bb923ff02515589d185fdf66e2ff723a3b34d2f341",
-      "bytes": 80482
+      "sha256": "8fe9d427740b75e436204e4ba698bad3ad840264c00b56cea82a9a36e94af2d9",
+      "bytes": 80659
     },
     {
       "path": "data/verification.json",

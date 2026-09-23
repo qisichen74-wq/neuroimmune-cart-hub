@@ -1,0 +1,25 @@
+{
+  "version": "1.0",
+  "as_of": "2026-09-14",
+  "scope": "站内检索召回和无证据边界，不代表医学事实正确率或模型回答准确率",
+  "cases": [
+    { "id": "ms-cn", "question": "多发性硬化有哪些 CAR-T 临床试验？", "required": ["topic:multiple-sclerosis", "trial:kyv101-ms-phase1"] },
+    { "id": "ms-en", "question": "multiple sclerosis CAR-T trials", "required": ["trial:kyv101-ms-phase1"] },
+    { "id": "ms-alias", "question": "MS有哪些临床试验？", "required": ["topic:multiple-sclerosis", "trial:kyv101-ms-phase1"] },
+    { "id": "mg", "question": "重症肌无力有哪些临床试验？", "required": ["topic:myasthenia-gravis", "trial:kyv101-mg-kysa6-phase23"] },
+    { "id": "nct", "question": "NCT06451159是什么研究？", "required": ["trial:kyv101-ms-phase1"] },
+    { "id": "pmid", "question": "PMID 40706586 的研究结论", "required": ["research:pmid-40706586"] },
+    { "id": "product-trials", "question": "KYV-101有哪些临床试验？", "required": ["trial:kyv101-ms-phase1", "trial:kyv101-autoimmune-ltfu", "trial:kyv101-mg-kysa6-phase23"] },
+    { "id": "comparison", "question": "比较 KYV-101 和 CABA-201 的技术路线", "required_terms": ["kyv-101", "caba-201"] },
+    { "id": "safety-crs", "question": "CAR-T的CRS安全风险有哪些？", "required": ["safety:signal-crs-early"] },
+    { "id": "safety-icans", "question": "ICANS神经毒性有哪些证据？", "required": ["safety:signal-neurotoxicity"] },
+    { "id": "safety-infection", "question": "CAR-T感染风险", "required": ["safety:signal-infection"] },
+    { "id": "deal", "question": "AstraZeneca收购Gracell的交易金额", "required": ["deal:deal-astrazeneca-gracell-2023"] },
+    { "id": "financing", "question": "Cartesian K2 信贷融资", "required": ["deal:deal-cartesian-k2-2026"] },
+    { "id": "followup", "question": "它的临床试验有哪些？", "history": [{ "role": "user", "content": "介绍KYV-101" }], "required": ["trial:kyv101-ms-phase1", "trial:kyv101-autoimmune-ltfu"] },
+    { "id": "context", "question": "这个试验的入组计划", "context": { "type": "trial", "id": "kyv101-ms-phase1" }, "required": ["trial:kyv101-ms-phase1"] },
+    { "id": "unknown", "question": "量子香蕉飞船", "expect_empty": true },
+    { "id": "unknown-product", "question": "ZZZ-99999有哪些试验？", "expect_empty": true },
+    { "id": "unknown-in-context", "question": "量子香蕉飞船", "context": { "type": "trial", "id": "kyv101-ms-phase1" }, "expect_empty": true }
+  ]
+}

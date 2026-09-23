@@ -1,39 +1,31 @@
-# Cloudflare Pages deployment
+# Cloudflare deployment
 
-Cloudflare Pages owns the production build and deployment through its native GitHub integration. GitHub Actions is used only to refresh, validate, and persist public data.
+The connected GitHub check is **Workers Builds: neuroimmune-cart-hub**, not Pages. Keep the existing Git integration; do not create a second project or deployment workflow. GitHub Pages is also enabled on main, but only serves a static mirror and cannot execute the assistant API.
 
-## Pages project settings
+## Workers configuration
 
-Create a Git-integrated Cloudflare Pages project with these values:
+- Build: `npm run build:site`; Node.js 22.
+- Wrangler entry: `worker.mjs`; static directory: `dist/`; binding: `ASSETS`.
+- `/api/*` runs the Worker first. `/api/assistant` supports GET status and POST questions. Other API paths return 404.
+- Non-API requests serve static assets. The index is read through the assets binding, avoiding public-network self-fetch.
+- Deploy using the existing Workers Builds configuration. Verify its production branch and the successful check for the exact release commit; a merge alone is not deployment evidence.
 
-| Setting | Value |
-| --- | --- |
-| Git repository | `qisichen74-wq/neuroimmune-cart-hub` |
-| Production branch | `main` |
-| Framework preset | None |
-| Root directory | `/` |
-| Build command | `npm run build:site` |
-| Build output directory | `dist` |
-| Node.js | `22` (set by `.node-version`) |
-| Environment variables | None |
+## Model configuration
 
-No Cloudflare API token or account ID is stored in GitHub. Do not create a second Direct Upload project or a second GitHub deployment workflow for this repository.
+Set `DEEPSEEK_API_KEY` as a runtime secret in the existing Cloudflare Worker, never a public build variable. Optional variables: `DEEPSEEK_MODEL`, `DEEPSEEK_API_BASE`, `DEEPSEEK_THINKING`. Local `.env.local` is excluded from Git and is not uploaded.
 
-## Deployment behavior
+Without a key the assistant serves retrieval-only answers. `ASSISTANT_DISABLE_MODEL=1` forces this mode even if a key exists. In-memory rate limiting is best-effort per isolate, not a global cost cap; configure account-side limits before opening paid model access broadly.
 
-- Every push to `main` is built and deployed by Cloudflare Pages.
-- Pull requests and non-production branches can use Cloudflare preview deployments.
-- At 06:30 China Standard Time every Monday, `.github/workflows/refresh-data.yml` discovers new records, checks primary sources and regulatory endpoints, audits the public data, generates the briefing, and verifies the complete static build.
-- The scheduled workflow commits verified changes under `data/` back to `main`. That commit becomes the auditable source for the next Cloudflare deployment and preserves source snapshots and change history across days.
-- A discovery or primary-source verification failure stops the update before commit, leaving the previous production version online. A temporarily unavailable regulatory endpoint is recorded in the report but does not discard the rest of a verified update.
+## Release verification
 
-The production build copies only HTML files, `assets/`, and `data/` into `dist/`. Repository scripts, prompts, workflow files, and credentials are not included in the public site.
+1. Run audit, build, assistant tests and retrieval evaluation in the release checkout.
+2. Verify the deployment check belongs to the intended commit and reports success.
+3. Confirm the deployed assistant page and index contents.
+4. Read `/api/assistant` to distinguish API availability from model configuration.
+5. Test POST without private content. A retrieval response is not proof of a live model call.
 
-## First deployment checklist
+The scheduled GitHub workflow refreshes public data and validates the build; it does not configure model secrets. The static build copies allowlisted pages/data plus assets, not local credentials or server scripts.
 
-1. In Cloudflare, create a Pages application by importing the GitHub repository above.
-2. Enter the build settings exactly as listed above and deploy `main`.
-3. Confirm the generated `*.pages.dev` address.
-4. Run `Refresh public intelligence data` manually once in GitHub Actions.
-5. After Cloudflare successfully deploys the resulting data commit, add a custom domain if needed.
-6. Disable GitHub Pages after the Cloudflare production address has been verified.
+The Pages-compatible function remains available for a future explicit Pages deployment, but is not a substitute for the Workers entry point used today.
+
+Configuration follows [Cloudflare asset bindings](https://developers.cloudflare.com/workers/static-assets/binding/) and [Worker routing](https://developers.cloudflare.com/workers/static-assets/routing/worker-script/).

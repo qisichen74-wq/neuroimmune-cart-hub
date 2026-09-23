@@ -5,7 +5,7 @@
 
   const englishUi = {
     "神经免疫 CAR-T 情报工作台": "Autoimmune CAR-T Intelligence Hub", "自身免疫 CAR-T 情报工作台": "Autoimmune CAR-T Intelligence Hub", "自身免疫CAR-T情报工作台": "Autoimmune CAR-T Intelligence Hub",
-    "首页": "Home", "专题档案": "Dossiers", "疾病专题": "Disease dossiers", "自身免疫疾病专题": "Autoimmune disease dossiers", "专题报道与档案": "Special reports and dossiers", "专题报道": "Special report", "候选工作台": "Candidate desk", "候选处理台": "Candidate desk", "研究情报": "Research", "竞争格局": "Landscape", "资本与交易": "Capital & deals",
+    "首页": "Home", "专题档案": "Dossiers", "疾病专题": "Disease dossiers", "自身免疫疾病专题": "Autoimmune disease dossiers", "专题报道与档案": "Special reports and dossiers", "专题报道": "Special report", "候选工作台": "Candidate desk", "候选处理台": "Candidate desk", "研究情报": "Research", "竞争格局": "Landscape", "资本与交易": "Capital & deals", "AI助手": "AI assistant", "问 AI": "Ask AI",
     "项目对比": "Category Search", "分类检索": "Category Search", "变化历史": "Changes", "候选池": "Watchlist", "检索": "Search",
     "全局检索": "Global search", "数据质量": "Data quality", "质量未知": "Quality unavailable",
     "适应症档案": "Indication dossiers", "研究证据": "Research evidence", "竞争对象": "Programs",
@@ -172,7 +172,7 @@
   };
   const sanitizeUntranslatedEnglish = (root) => {
     if (!isEnglish || !root) return;
-    if ((location.pathname.split("/").pop() || "") === "candidates.html") return;
+    if (["candidates.html", "assistant.html"].includes(location.pathname.split("/").pop() || "")) return;
     const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
     const nodes = [];
     while (walker.nextNode()) nodes.push(walker.currentNode);
@@ -190,7 +190,8 @@
     ["研究情报", "research.html", "primary"],
     ["竞争格局", "landscape.html", "primary"],
     ["资本与交易", "deals.html", "primary"],
-    ["分类检索", "comparison.html", "primary"]
+    ["分类检索", "comparison.html", "primary"],
+    ["AI助手", "assistant.html", "primary"]
   ];
   const internalNavigation = [
     ["候选池", "candidates.html", "internal"],
@@ -324,6 +325,21 @@
   const searchLink = pageNav.querySelector(':scope > a[href="search.html"]');
   const actions = document.createElement("div");
   actions.className = "app-shell-actions";
+  const contextualAssistant = (() => {
+    const query = new URLSearchParams(location.search);
+    if (currentFile === "detail.html" && query.get("type") && query.get("id")) return { type: query.get("type"), id: query.get("id") };
+    if (currentFile === "topic.html" && query.get("id")) return { type: "topic", id: query.get("id") };
+    if (currentFile === "company.html" && query.get("id")) return { type: "organization", id: query.get("id") };
+    if (currentFile === "deal.html" && query.get("id")) return { type: "deal", id: query.get("id") };
+    return null;
+  })();
+  if (contextualAssistant) {
+    const assistantLink = document.createElement("a");
+    assistantLink.className = "app-shell-health app-shell-assistant";
+    assistantLink.href = `assistant.html?context_type=${encodeURIComponent(contextualAssistant.type)}&context_id=${encodeURIComponent(contextualAssistant.id)}`;
+    assistantLink.textContent = "问 AI";
+    actions.appendChild(assistantLink);
+  }
   if (searchLink) {
     searchLink.classList.add("global-search-link");
     searchLink.textContent = "检索";

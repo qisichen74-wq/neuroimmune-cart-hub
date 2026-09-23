@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-21T15:18:18.711Z",
+  "generated_at": "2026-08-23T22:49:54.129Z",
   "policy": {
     "trial_registration": "ClinicalTrials.gov记录只证明试验登记，不等同于FDA IND获准。",
     "ind_authorization": "IND信息只有FDA正式公告可直接记为FDA确认；企业披露必须标明公司口径。",
@@ -23,8 +23,8 @@
       "source_kind": "official_api",
       "status": "ok",
       "url": "https://open.fda.gov/apis/drug/drugsfda/",
-      "last_updated": "2026-08-20",
-      "records_available": 29273,
+      "last_updated": "2026-08-21",
+      "records_available": 29277,
       "scope_note": "Drugs@FDA并不完整覆盖所有细胞和基因治疗产品；相关批准以FDA/CBER产品页为主。"
     },
     {
@@ -81,7 +81,7 @@
       "source_kind": "official_api",
       "status": "ok",
       "url": "https://open.fda.gov/apis/drug/label/",
-      "last_updated": "2026-08-21",
+      "last_updated": "2026-08-22",
       "records_checked": 8,
       "records_found": 8,
       "errors": 0

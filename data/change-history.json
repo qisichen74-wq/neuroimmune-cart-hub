@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-21T15:16:44.500Z",
+  "generated_at": "2026-08-23T22:49:33.060Z",
   "changes": [
     {
       "detected_at": "2026-07-27T23:33:43.876Z",
@@ -144,6 +144,110 @@
       "field": "registry_last_update",
       "previous_value": "2026-07-23",
       "current_value": "2026-08-21"
+    },
+    {
+      "detected_at": "2026-08-09T23:01:22.179Z",
+      "record_type": "trial",
+      "record_id": "ctx112-autoimmune-phase1",
+      "field": "registry_last_update",
+      "previous_value": "2026-07-22",
+      "current_value": "2026-08-07"
+    },
+    {
+      "detected_at": "2026-08-23T22:49:33.060Z",
+      "record_type": "trial",
+      "record_id": "kyv101-ms-phase1",
+      "field": "registry_last_update",
+      "previous_value": "2026-01-23",
+      "current_value": "2026-08-10"
+    },
+    {
+      "detected_at": "2026-08-23T22:49:33.060Z",
+      "record_type": "trial",
+      "record_id": "sys6020-mg-phase1",
+      "field": "enrollment",
+      "previous_value": 50,
+      "current_value": 60
+    },
+    {
+      "detected_at": "2026-08-23T22:49:33.060Z",
+      "record_type": "trial",
+      "record_id": "sys6020-mg-phase1",
+      "field": "study_start",
+      "previous_value": "2025-01-08",
+      "current_value": "2025-03-04"
+    },
+    {
+      "detected_at": "2026-08-23T22:49:33.060Z",
+      "record_type": "trial",
+      "record_id": "sys6020-mg-phase1",
+      "field": "registry_last_update",
+      "previous_value": "2025-08-06",
+      "current_value": "2026-08-12"
+    },
+    {
+      "detected_at": "2026-08-23T22:49:33.060Z",
+      "record_type": "trial",
+      "record_id": "kite363-neuro-phase1",
+      "field": "registry_last_update",
+      "previous_value": "2026-07-01",
+      "current_value": "2026-08-14"
+    },
+    {
+      "detected_at": "2026-08-23T22:49:33.060Z",
+      "record_type": "trial",
+      "record_id": "magicrna-hn2302-autoimmune",
+      "field": "study_start",
+      "previous_value": "2026-04-28",
+      "current_value": "2026-12-31"
+    },
+    {
+      "detected_at": "2026-08-23T22:49:33.060Z",
+      "record_type": "trial",
+      "record_id": "magicrna-hn2302-autoimmune",
+      "field": "registry_last_update",
+      "previous_value": "2026-04-14",
+      "current_value": "2026-08-12"
+    },
+    {
+      "detected_at": "2026-08-23T22:49:33.060Z",
+      "record_type": "trial",
+      "record_id": "cabaletta-resecel-mg-phase12",
+      "field": "status",
+      "previous_value": "ACTIVE_NOT_RECRUITING",
+      "current_value": "RECRUITING"
+    },
+    {
+      "detected_at": "2026-08-23T22:49:33.060Z",
+      "record_type": "trial",
+      "record_id": "cabaletta-resecel-mg-phase12",
+      "field": "enrollment",
+      "previous_value": 12,
+      "current_value": 24
+    },
+    {
+      "detected_at": "2026-08-23T22:49:33.060Z",
+      "record_type": "trial",
+      "record_id": "cabaletta-resecel-mg-phase12",
+      "field": "registry_last_update",
+      "previous_value": "2026-05-18",
+      "current_value": "2026-08-13"
+    },
+    {
+      "detected_at": "2026-08-23T22:49:33.060Z",
+      "record_type": "trial",
+      "record_id": "cabaletta-resecel-myositis",
+      "field": "registry_last_update",
+      "previous_value": "2026-07-23",
+      "current_value": "2026-08-21"
+    },
+    {
+      "detected_at": "2026-08-23T22:49:33.060Z",
+      "record_type": "trial",
+      "record_id": "cartesian-descartes08-myositis-phase2",
+      "field": "registry_last_update",
+      "previous_value": "2026-04-23",
+      "current_value": "2026-08-17"
     }
   ]
 }

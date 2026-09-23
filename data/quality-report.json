@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-21T15:18:43.852Z",
+  "generated_at": "2026-09-23T12:55:46.519Z",
   "as_of": "2026-08-21",
   "policy_version": "1.0.0",
   "status": "需关注",
@@ -8,29 +8,30 @@
     "total_records": 246,
     "datasets": 10,
     "errors": 0,
-    "warnings": 166,
-    "verified": 110,
+    "warnings": 298,
+    "verified": 0,
     "internally_reviewed": 0,
     "pending_external_verification": 0,
-    "stale": 156,
+    "stale": 246,
+    "registry_stale": 25,
     "source_checks": {
-      "records_checked": 84,
-      "successful": 84,
+      "records_checked": 78,
+      "successful": 78,
       "failed": 0,
-      "differences": 0
+      "differences": 13
     },
     "discovery": {
-      "candidates": 815,
-      "research": 258,
-      "trials": 557,
-      "official_updates": 0,
-      "immediate_review": 395,
-      "watchlist": 207,
+      "candidates": 827,
+      "research": 259,
+      "trials": 563,
+      "official_updates": 5,
+      "immediate_review": 404,
+      "watchlist": 210,
       "background": 64,
       "low_relevance": 149,
-      "trials_registry_only": 557,
-      "candidate_desk_required": 258,
-      "policy_excluded_research": 2387,
+      "trials_registry_only": 563,
+      "candidate_desk_required": 264,
+      "policy_excluded_research": 2394,
       "undifferentiated_review_exceptions": 3,
       "source_failures": 0,
       "partial_sources": 1,
@@ -59,23 +60,26 @@
       "records": 31,
       "verified": 0,
       "pending": 0,
-      "stale": 31
+      "stale": 31,
+      "registry_stale": 0
     },
     {
       "type": "company",
       "label": "竞争对象",
       "records": 41,
-      "verified": 40,
+      "verified": 0,
       "pending": 0,
-      "stale": 1
+      "stale": 41,
+      "registry_stale": 0
     },
     {
       "type": "trial",
       "label": "临床试验",
       "records": 55,
-      "verified": 17,
+      "verified": 0,
       "pending": 0,
-      "stale": 58
+      "stale": 55,
+      "registry_stale": 25
     },
     {
       "type": "safety",
@@ -83,15 +87,17 @@
       "records": 8,
       "verified": 0,
       "pending": 0,
-      "stale": 8
+      "stale": 8,
+      "registry_stale": 0
     },
     {
       "type": "event",
       "label": "动态事件",
       "records": 54,
-      "verified": 6,
+      "verified": 0,
       "pending": 0,
-      "stale": 48
+      "stale": 54,
+      "registry_stale": 0
     },
     {
       "type": "topic",
@@ -99,39 +105,44 @@
       "records": 10,
       "verified": 0,
       "pending": 0,
-      "stale": 10
+      "stale": 10,
+      "registry_stale": 0
     },
     {
       "type": "organization",
       "label": "机构主体",
       "records": 14,
-      "verified": 14,
+      "verified": 0,
       "pending": 0,
-      "stale": 0
+      "stale": 14,
+      "registry_stale": 0
     },
     {
       "type": "program",
       "label": "研发项目",
       "records": 7,
-      "verified": 7,
+      "verified": 0,
       "pending": 0,
-      "stale": 0
+      "stale": 7,
+      "registry_stale": 0
     },
     {
       "type": "deal",
       "label": "资本交易",
       "records": 10,
-      "verified": 10,
+      "verified": 0,
       "pending": 0,
-      "stale": 0
+      "stale": 10,
+      "registry_stale": 0
     },
     {
       "type": "deal_event",
       "label": "交易节点",
       "records": 16,
-      "verified": 16,
+      "verified": 0,
       "pending": 0,
-      "stale": 0
+      "stale": 16,
+      "registry_stale": 0
     }
   ],
   "checks": [
@@ -162,6 +173,13 @@
       "severity": "warning",
       "code": "registry_record_stale",
       "record_type": "trial",
+      "record_id": "descartes08-mg-rct",
+      "message": "注册库记录超过180天未更新，当前状态需谨慎解释"
+    },
+    {
+      "severity": "warning",
+      "code": "registry_record_stale",
+      "record_type": "trial",
       "record_id": "relma-autoimmune-ssc",
       "message": "注册库记录超过180天未更新，当前状态需谨慎解释"
     },
@@ -191,6 +209,13 @@
       "code": "registry_record_stale",
       "record_type": "trial",
       "record_id": "zju-ucar19bcma-autoimmune",
+      "message": "注册库记录超过180天未更新，当前状态需谨慎解释"
+    },
+    {
+      "severity": "warning",
+      "code": "registry_record_stale",
+      "record_type": "trial",
+      "record_id": "arcellx-anitocel-mg-phase1",
       "message": "注册库记录超过180天未更新，当前状态需谨慎解释"
     },
     {
@@ -260,6 +285,20 @@
       "severity": "warning",
       "code": "registry_record_stale",
       "record_type": "trial",
+      "record_id": "adicet-prulacel-autoimmune-phase1",
+      "message": "注册库记录超过180天未更新，当前状态需谨慎解释"
+    },
+    {
+      "severity": "warning",
+      "code": "registry_record_stale",
+      "record_type": "trial",
+      "record_id": "changhai-kn3601-autoimmune",
+      "message": "注册库记录超过180天未更新，当前状态需谨慎解释"
+    },
+    {
+      "severity": "warning",
+      "code": "registry_record_stale",
+      "record_type": "trial",
       "record_id": "huashan-c-car168-cns-autoimmune",
       "message": "注册库记录超过180天未更新，当前状态需谨慎解释"
     },
@@ -296,6 +335,13 @@
       "code": "registry_record_stale",
       "record_type": "trial",
       "record_id": "tangdu-cd19bcma-mg-iit",
+      "message": "注册库记录超过180天未更新，当前状态需谨慎解释"
+    },
+    {
+      "severity": "warning",
+      "code": "registry_record_stale",
+      "record_type": "trial",
+      "record_id": "tr1x-trx319-impact-ms",
       "message": "注册库记录超过180天未更新，当前状态需谨慎解释"
     },
     {
@@ -575,14 +621,315 @@
       "severity": "warning",
       "code": "verification_stale",
       "record_type": "company",
+      "record_id": "cabaletta-resecel",
+      "message": "已超过 14 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "company",
+      "record_id": "cartesian-descartes08",
+      "message": "已超过 14 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "company",
       "record_id": "kyverna-kyv101",
       "message": "已超过 14 天复核周期"
     },
     {
       "severity": "warning",
       "code": "verification_stale",
+      "record_type": "company",
+      "record_id": "icell-icg318-autoimmune",
+      "message": "已超过 14 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "company",
+      "record_id": "novartis-ytb323",
+      "message": "已超过 14 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "company",
+      "record_id": "adicet-prulacel",
+      "message": "已超过 14 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "company",
+      "record_id": "allogene-allo329",
+      "message": "已超过 14 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "company",
+      "record_id": "arcellx-anitocel",
+      "message": "已超过 14 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "company",
+      "record_id": "bms-cc97540",
+      "message": "已超过 14 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "company",
+      "record_id": "crispr-ctx112",
+      "message": "已超过 14 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "company",
+      "record_id": "fate-ft819",
+      "message": "已超过 14 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "company",
+      "record_id": "iaso-equecel-autoimmune",
+      "message": "已超过 14 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "company",
+      "record_id": "gilead-kite363",
+      "message": "已超过 14 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "company",
+      "record_id": "miltenyi-zamtocel",
+      "message": "已超过 14 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "company",
+      "record_id": "miltenyi-mbcart20191",
+      "message": "已超过 14 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "company",
+      "record_id": "tr1x-trx319",
+      "message": "已超过 14 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "company",
+      "record_id": "magicrna-hn2302",
+      "message": "已超过 14 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "company",
+      "record_id": "therorna-ti0032",
+      "message": "已超过 14 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "company",
+      "record_id": "cspc-sys6020",
+      "message": "已超过 14 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "company",
+      "record_id": "precision-cd19",
+      "message": "已超过 14 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "company",
+      "record_id": "changhai-kn3601",
+      "message": "已超过 14 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "company",
+      "record_id": "erlangen-cd19",
+      "message": "已超过 14 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "company",
+      "record_id": "gustaveroussy-cellattack1",
+      "message": "已超过 14 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "company",
+      "record_id": "hadassah-hbi0101",
+      "message": "已超过 14 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "company",
+      "record_id": "huashan-c-car168-cns",
+      "message": "已超过 14 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "company",
+      "record_id": "renji-c-car168",
+      "message": "已超过 14 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "company",
+      "record_id": "ihematology-xiniao-ucar",
+      "message": "已超过 14 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "company",
+      "record_id": "pkuph-bcmacd19",
+      "message": "已超过 14 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "company",
+      "record_id": "pku3-qh103",
+      "message": "已超过 14 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "company",
+      "record_id": "gobroad-ol108",
+      "message": "已超过 14 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "company",
+      "record_id": "tongji-ct103a-neuro",
+      "message": "已超过 14 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "company",
+      "record_id": "tongji-qh103",
+      "message": "已超过 14 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "company",
+      "record_id": "tongji-v001bcma",
+      "message": "已超过 14 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "company",
+      "record_id": "tangdu-cd19bcma-mg",
+      "message": "已超过 14 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "company",
+      "record_id": "tianjin-qt019c",
+      "message": "已超过 14 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "company",
+      "record_id": "tianjin-xiniao-ucar",
+      "message": "已超过 14 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "company",
+      "record_id": "xuzhou-bcmacd19-mg",
+      "message": "已超过 14 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "company",
+      "record_id": "zjuch-ucar19bcma",
+      "message": "已超过 14 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "company",
+      "record_id": "changzhou-ucar19bcma",
+      "message": "已超过 14 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "company",
+      "record_id": "xuzhou-xiniao-ucar",
+      "message": "已超过 14 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "company",
+      "record_id": "create-crt402",
+      "message": "已超过 14 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "create-crt402-autoimmune-phase12",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "kyv101-ms-phase1",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
       "record_type": "trial",
       "record_id": "kyv101-mg-kysa6-phase23",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "descartes08-mg-rct",
       "message": "已超过 7 天复核周期"
     },
     {
@@ -611,6 +958,27 @@
       "code": "verification_stale",
       "record_type": "trial",
       "record_id": "tianjin-ucar19bcma-neuro",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "sys6020-mg-phase1",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "kite363-neuro-phase1",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "cc97540-breakfree2",
       "message": "已超过 7 天复核周期"
     },
     {
@@ -680,6 +1048,20 @@
       "severity": "warning",
       "code": "verification_stale",
       "record_type": "trial",
+      "record_id": "magicrna-hn2302-autoimmune",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "arcellx-anitocel-mg-phase1",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "trial",
       "record_id": "tongji-v001bcma-autoimmune",
       "message": "已超过 7 天复核周期"
     },
@@ -729,7 +1111,21 @@
       "severity": "warning",
       "code": "verification_stale",
       "record_type": "trial",
+      "record_id": "cabaletta-resecel-mg-phase12",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "trial",
       "record_id": "cabaletta-resecel-ms-phase12",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "precision-cd19-autoimmune-phase1",
       "message": "已超过 7 天复核周期"
     },
     {
@@ -834,7 +1230,56 @@
       "severity": "warning",
       "code": "verification_stale",
       "record_type": "trial",
+      "record_id": "cabaletta-resecel-myositis",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "trial",
       "record_id": "novartis-rapcabtagene-iim-phase2",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "cartesian-descartes08-myositis-phase2",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "sys6020-ms-phase12",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "iaso-equecel-imnm-phase12",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "azd0120-sle-phase12",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "nkx019-immune-mediated-phase12",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "trial",
+      "record_id": "rxim002-itp-phase1",
       "message": "已超过 7 天复核周期"
     },
     {
@@ -904,6 +1349,13 @@
       "severity": "warning",
       "code": "verification_stale",
       "record_type": "event",
+      "record_id": "event-feed-42251699",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "event",
       "record_id": "event-feed-42223209",
       "message": "已超过 7 天复核周期"
     },
@@ -968,6 +1420,13 @@
       "code": "verification_stale",
       "record_type": "event",
       "record_id": "event-safety-longterm",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-feed-41514039",
       "message": "已超过 7 天复核周期"
     },
     {
@@ -1233,7 +1692,35 @@
       "severity": "warning",
       "code": "verification_stale",
       "record_type": "event",
+      "record_id": "event-sys6020-ms-registration",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-iaso-equecel-imnm-registration",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-rxim002-itp-registration",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "event",
       "record_id": "event-kyverna-elevatebio-supply",
+      "message": "已超过 7 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "event",
+      "record_id": "event-create-crt402-registration",
       "message": "已超过 7 天复核周期"
     },
     {
@@ -1308,6 +1795,440 @@
     },
     {
       "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "organization",
+      "record_id": "org-astrazeneca",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "organization",
+      "record_id": "org-gracell",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "organization",
+      "record_id": "org-cartesian",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "organization",
+      "record_id": "org-selecta",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "organization",
+      "record_id": "org-k2-healthventures",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "organization",
+      "record_id": "org-cabaletta",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "organization",
+      "record_id": "org-cellares",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "organization",
+      "record_id": "org-kyverna",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "organization",
+      "record_id": "org-elevatebio",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "organization",
+      "record_id": "org-gilead",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "organization",
+      "record_id": "org-kite",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "organization",
+      "record_id": "org-bms",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "organization",
+      "record_id": "org-celgene",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "organization",
+      "record_id": "org-create-medicines",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "program",
+      "record_id": "program-azd0120",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "program",
+      "record_id": "program-descartes08",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "program",
+      "record_id": "program-resecel",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "program",
+      "record_id": "program-mivcel",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "program",
+      "record_id": "program-kite363",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "program",
+      "record_id": "program-bms986353",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "program",
+      "record_id": "program-crt402",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "deal",
+      "record_id": "deal-astrazeneca-gracell-2023",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "deal",
+      "record_id": "deal-cartesian-selecta-2023",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "deal",
+      "record_id": "deal-cartesian-pipe-2024",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "deal",
+      "record_id": "deal-kyverna-ipo-2024",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "deal",
+      "record_id": "deal-cartesian-k2-2026",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "deal",
+      "record_id": "deal-cabaletta-cellares-2026",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "deal",
+      "record_id": "deal-kyverna-elevatebio-2026",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "deal",
+      "record_id": "deal-gilead-kite-2017",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "deal",
+      "record_id": "deal-bms-celgene-2019",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "deal",
+      "record_id": "deal-create-series-b-2026",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "deal_event",
+      "record_id": "deal-event-gilead-kite-announced",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "deal_event",
+      "record_id": "deal-event-gilead-kite-closed",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "deal_event",
+      "record_id": "deal-event-bms-celgene-announced",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "deal_event",
+      "record_id": "deal-event-bms-celgene-closed",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "deal_event",
+      "record_id": "deal-event-cartesian-merger-closed",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "deal_event",
+      "record_id": "deal-event-az-gracell-announced",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "deal_event",
+      "record_id": "deal-event-kyverna-ipo-priced",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "deal_event",
+      "record_id": "deal-event-kyverna-ipo-closed",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "deal_event",
+      "record_id": "deal-event-az-gracell-closed",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "deal_event",
+      "record_id": "deal-event-cartesian-pipe-announced",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "deal_event",
+      "record_id": "deal-event-cartesian-pipe-closed",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "deal_event",
+      "record_id": "deal-event-cabaletta-cellares-announced",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "deal_event",
+      "record_id": "deal-event-cartesian-k2-funded",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "deal_event",
+      "record_id": "deal-event-kyverna-elevatebio-signed",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "deal_event",
+      "record_id": "deal-event-kyverna-elevatebio-announced",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "verification_stale",
+      "record_type": "deal_event",
+      "record_id": "deal-event-create-series-b-funded",
+      "message": "已超过 30 天复核周期"
+    },
+    {
+      "severity": "warning",
+      "code": "source_sync_stale",
+      "record_type": "system",
+      "record_id": "-",
+      "message": "官方API来源差异报告已超过2天未刷新"
+    },
+    {
+      "severity": "warning",
+      "code": "official_source_difference",
+      "record_type": "trial",
+      "record_id": "kyv101-ms-phase1",
+      "message": "官方来源字段已变化：registry_last_update"
+    },
+    {
+      "severity": "warning",
+      "code": "official_source_difference",
+      "record_type": "trial",
+      "record_id": "sys6020-mg-phase1",
+      "message": "官方来源字段已变化：enrollment"
+    },
+    {
+      "severity": "warning",
+      "code": "official_source_difference",
+      "record_type": "trial",
+      "record_id": "sys6020-mg-phase1",
+      "message": "官方来源字段已变化：study_start"
+    },
+    {
+      "severity": "warning",
+      "code": "official_source_difference",
+      "record_type": "trial",
+      "record_id": "sys6020-mg-phase1",
+      "message": "官方来源字段已变化：registry_last_update"
+    },
+    {
+      "severity": "warning",
+      "code": "official_source_difference",
+      "record_type": "trial",
+      "record_id": "kite363-neuro-phase1",
+      "message": "官方来源字段已变化：registry_last_update"
+    },
+    {
+      "severity": "warning",
+      "code": "official_source_difference",
+      "record_type": "trial",
+      "record_id": "ctx112-autoimmune-phase1",
+      "message": "官方来源字段已变化：registry_last_update"
+    },
+    {
+      "severity": "warning",
+      "code": "official_source_difference",
+      "record_type": "trial",
+      "record_id": "magicrna-hn2302-autoimmune",
+      "message": "官方来源字段已变化：study_start"
+    },
+    {
+      "severity": "warning",
+      "code": "official_source_difference",
+      "record_type": "trial",
+      "record_id": "magicrna-hn2302-autoimmune",
+      "message": "官方来源字段已变化：registry_last_update"
+    },
+    {
+      "severity": "warning",
+      "code": "official_source_difference",
+      "record_type": "trial",
+      "record_id": "cabaletta-resecel-mg-phase12",
+      "message": "官方来源字段已变化：status"
+    },
+    {
+      "severity": "warning",
+      "code": "official_source_difference",
+      "record_type": "trial",
+      "record_id": "cabaletta-resecel-mg-phase12",
+      "message": "官方来源字段已变化：enrollment"
+    },
+    {
+      "severity": "warning",
+      "code": "official_source_difference",
+      "record_type": "trial",
+      "record_id": "cabaletta-resecel-mg-phase12",
+      "message": "官方来源字段已变化：registry_last_update"
+    },
+    {
+      "severity": "warning",
+      "code": "official_source_difference",
+      "record_type": "trial",
+      "record_id": "cabaletta-resecel-myositis",
+      "message": "官方来源字段已变化：registry_last_update"
+    },
+    {
+      "severity": "warning",
+      "code": "official_source_difference",
+      "record_type": "trial",
+      "record_id": "cartesian-descartes08-myositis-phase2",
+      "message": "官方来源字段已变化：registry_last_update"
+    },
+    {
+      "severity": "warning",
+      "code": "candidate_report_stale",
+      "record_type": "system",
+      "record_id": "-",
+      "message": "候选情报报告已超过2天未刷新"
+    },
+    {
+      "severity": "warning",
       "code": "discovery_source_partial",
       "record_type": "system",
       "record_id": "-",
@@ -1315,10 +2236,24 @@
     },
     {
       "severity": "warning",
+      "code": "regulatory_report_stale",
+      "record_type": "system",
+      "record_id": "-",
+      "message": "监管来源监测报告已超过2天未刷新"
+    },
+    {
+      "severity": "warning",
       "code": "regulatory_source_failed",
       "record_type": "system",
       "record_id": "-",
       "message": "监管来源访问失败：国家药品监督管理局"
+    },
+    {
+      "severity": "warning",
+      "code": "fda_report_stale",
+      "record_type": "system",
+      "record_id": "-",
+      "message": "FDA官方来源监测报告已超过2天未刷新"
     }
   ],
   "verification": [
@@ -1341,7 +2276,14 @@
         "publication_type"
       ],
       "note": "依据NCBI ESummary与PubMed XML核验；作者单位为上海儿童医学中心，文献类型为ahead-of-print来信。",
-      "stale": true
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "research",
@@ -1362,7 +2304,14 @@
         "publication_type"
       ],
       "note": "已通过NCBI ESummary逐字段核对。",
-      "stale": true
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "research",
@@ -1383,7 +2332,14 @@
         "publication_type"
       ],
       "note": "已通过NCBI ESummary逐字段核对。",
-      "stale": true
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "research",
@@ -1404,7 +2360,14 @@
         "publication_type"
       ],
       "note": "已通过NCBI ESummary逐字段核对。",
-      "stale": true
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "research",
@@ -1425,7 +2388,14 @@
         "publication_type"
       ],
       "note": "已通过NCBI ESummary逐字段核对。",
-      "stale": true
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "research",
@@ -1446,7 +2416,14 @@
         "publication_type"
       ],
       "note": "发布日期采用电子出版日期2026-05-20。",
-      "stale": true
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "research",
@@ -1467,7 +2444,14 @@
         "publication_type"
       ],
       "note": "发布日期采用期刊月份标准化为2026-05-01。",
-      "stale": true
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "research",
@@ -1488,7 +2472,14 @@
         "publication_type"
       ],
       "note": "采用电子出版日期2026-04-03。",
-      "stale": true
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "research",
@@ -1509,7 +2500,14 @@
         "publication_type"
       ],
       "note": "采用电子出版日期2026-02-25。",
-      "stale": true
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "research",
@@ -1530,7 +2528,14 @@
         "publication_type"
       ],
       "note": "采用电子出版日期2026-02-05。",
-      "stale": true
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "research",
@@ -1551,7 +2556,14 @@
         "source_url"
       ],
       "note": "PubMed元数据显示论文报道ICG318在12例难治性SLE中的扩展随访，作者单位包含iCell Gene Therapeutics、iCAR Bio和中山市人民医院。",
-      "stale": true
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "research",
@@ -1572,7 +2584,14 @@
         "publication_type"
       ],
       "note": "已通过NCBI ESummary与PubMed记录逐字段核对。",
-      "stale": true
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "research",
@@ -1593,7 +2612,14 @@
         "publication_type"
       ],
       "note": "依据NCBI ESummary逐字段核验；发布日期采用电子出版日期2026-01-09。",
-      "stale": true
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "research",
@@ -1614,7 +2640,14 @@
         "publication_type"
       ],
       "note": "采用电子出版日期2025-11-12；未使用未来卷期日期。",
-      "stale": true
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "research",
@@ -1635,7 +2668,14 @@
         "publication_type"
       ],
       "note": "已通过NCBI ESummary与PubMed记录逐字段核对。",
-      "stale": true
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "research",
@@ -1656,7 +2696,14 @@
         "publication_type"
       ],
       "note": "已通过NCBI ESummary与PubMed记录逐字段核对。",
-      "stale": true
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "research",
@@ -1677,7 +2724,14 @@
         "publication_type"
       ],
       "note": "已通过NCBI ESummary与PubMed记录逐字段核对。",
-      "stale": true
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "research",
@@ -1698,7 +2752,14 @@
         "publication_type"
       ],
       "note": "已通过NCBI ESummary与PubMed记录逐字段核对。",
-      "stale": true
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "research",
@@ -1719,7 +2780,14 @@
         "publication_type"
       ],
       "note": "已通过NCBI ESummary与PubMed记录逐字段核对。",
-      "stale": true
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "research",
@@ -1740,7 +2808,14 @@
         "publication_type"
       ],
       "note": "已通过NCBI ESummary与PubMed记录逐字段核对。",
-      "stale": true
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "research",
@@ -1761,7 +2836,14 @@
         "publication_type"
       ],
       "note": "已通过NCBI ESummary、PubMed记录与期刊摘要逐字段核对。",
-      "stale": true
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "research",
@@ -1782,7 +2864,14 @@
         "publication_type"
       ],
       "note": "已通过NCBI ESummary、PubMed记录与期刊摘要逐字段核对。",
-      "stale": true
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "research",
@@ -1803,7 +2892,14 @@
         "publication_type"
       ],
       "note": "已通过NCBI ESummary、PubMed记录与期刊摘要逐字段核对。",
-      "stale": true
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "research",
@@ -1824,7 +2920,14 @@
         "publication_type"
       ],
       "note": "已通过NCBI ESummary、EFetch摘要及期刊原文逐字段核对；重叠患者已在证据解释中标注。",
-      "stale": true
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "research",
@@ -1845,7 +2948,14 @@
         "publication_type"
       ],
       "note": "已通过NCBI ESummary、EFetch摘要及期刊原文逐字段核对；重叠患者已在证据解释中标注。",
-      "stale": true
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "research",
@@ -1866,7 +2976,14 @@
         "publication_type"
       ],
       "note": "已通过NCBI ESummary、EFetch摘要及期刊原文逐字段核对；重叠患者已在证据解释中标注。",
-      "stale": true
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "research",
@@ -1887,7 +3004,14 @@
         "publication_type"
       ],
       "note": "已通过NCBI ESummary、EFetch摘要及期刊原文逐字段核对；重叠患者已在证据解释中标注。",
-      "stale": true
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "research",
@@ -1908,7 +3032,14 @@
         "publication_type"
       ],
       "note": "已通过NCBI ESummary、EFetch摘要及期刊原文逐字段核对；重叠患者已在证据解释中标注。",
-      "stale": true
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "research",
@@ -1929,7 +3060,14 @@
         "publication_type"
       ],
       "note": "已通过NCBI ESummary、EFetch摘要及期刊原文逐字段核对；重叠患者已在证据解释中标注。",
-      "stale": true
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "research",
@@ -1950,7 +3088,14 @@
         "publication_type"
       ],
       "note": "已通过NCBI ESummary、EFetch摘要及期刊原文逐字段核对；重叠患者已在证据解释中标注。",
-      "stale": true
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "research",
@@ -1971,7 +3116,14 @@
         "publication_type"
       ],
       "note": "已通过NCBI ESummary、EFetch摘要及期刊原文逐字段核对；重叠患者已在证据解释中标注。",
-      "stale": true
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "company",
@@ -1995,7 +3147,14 @@
         "source_last_update"
       ],
       "note": "2026-07-21复核Cabaletta 2026-06-03正式披露与ClinicalTrials.gov，确认myositis注册队列推进、SSc注册性研究计划和PC-free lupus仍属于公司披露边界。 2026-08-04 通过一手来源页面复核。 2026-08-10 通过一手来源页面复核。",
-      "stale": false
+      "freshness_policy_days": 14,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "company",
@@ -2018,7 +3177,14 @@
         "source_last_update"
       ],
       "note": "AURORA招募状态与公司2026-05-26正式披露交叉核验。 2026-08-04 通过一手来源页面复核。 2026-08-10 通过一手来源页面复核。",
-      "stale": false
+      "freshness_policy_days": 14,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "company",
@@ -2041,7 +3207,14 @@
         "source_last_update"
       ],
       "note": "2026-08-04复核时，ClinicalTrials.gov继续显示KYSA-6为Phase 2/3、Recruiting、计划66例；Kyverna 2026-07-27公告新增美国商业化与临床供应协议。",
-      "stale": true
+      "freshness_policy_days": 14,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "company",
@@ -2066,7 +3239,14 @@
         "source_last_update"
       ],
       "note": "2026-07-21复核iCell官网、PMID 41612420及ClinicalTrials.gov NCT06787989、NCT07328581、NCT07715136；官网未见对应IIM独立新闻稿，新增事实以ClinicalTrials.gov首次公开为准。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核。",
-      "stale": false
+      "freshness_policy_days": 14,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "company",
@@ -2089,7 +3269,14 @@
         "source_last_update"
       ],
       "note": "依据NCT06704269核验。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核。",
-      "stale": false
+      "freshness_policy_days": 14,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "company",
@@ -2112,7 +3299,14 @@
         "source_last_update"
       ],
       "note": "依据NCT06375993核验。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核。",
-      "stale": false
+      "freshness_policy_days": 14,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "company",
@@ -2135,7 +3329,14 @@
         "source_last_update"
       ],
       "note": "2026-08-04复核NCT07085104，ClinicalTrials.gov最近更新日期为2026-07-31，状态仍为Recruiting。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核。",
-      "stale": false
+      "freshness_policy_days": 14,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "company",
@@ -2158,7 +3359,14 @@
         "source_last_update"
       ],
       "note": "依据NCT06626919核验。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核。",
-      "stale": false
+      "freshness_policy_days": 14,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "company",
@@ -2181,7 +3389,14 @@
         "source_last_update"
       ],
       "note": "2026-08-04复核NCT06220201，ClinicalTrials.gov已更新为Active, not recruiting，最近更新日期为2026-08-03。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核。",
-      "stale": false
+      "freshness_policy_days": 14,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "company",
@@ -2204,7 +3419,14 @@
         "source_last_update"
       ],
       "note": "2026-08-04复核NCT06925542，ClinicalTrials.gov最近更新日期为2026-07-22，状态仍为Recruiting。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核。",
-      "stale": false
+      "freshness_policy_days": 14,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "company",
@@ -2227,7 +3449,14 @@
         "source_last_update"
       ],
       "note": "依据NCT06308978。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核。",
-      "stale": false
+      "freshness_policy_days": 14,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "company",
@@ -2251,7 +3480,14 @@
         "source_last_update"
       ],
       "note": "2026-07-17复核IASO官网2024-08-12原文、官网pipeline及ClinicalTrials.gov NCT04561557；官网原文链接纠正为info.php?id=251。美国自身免疫IND按适应症计为MG、MS、SLE、LN四项；pipeline将SLE/LN合并一行。中国MG IND及MS、SLE、IIM等IIT与美国IND分开记录。 2026-08-04 通过一手来源页面复核。 2026-08-10 通过一手来源页面复核。",
-      "stale": false
+      "freshness_policy_days": 14,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "company",
@@ -2274,7 +3510,14 @@
         "source_last_update"
       ],
       "note": "依据NCT07304154核验。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核。",
-      "stale": false
+      "freshness_policy_days": 14,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "company",
@@ -2297,7 +3540,14 @@
         "source_last_update"
       ],
       "note": "依据NCT06708845。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核。",
-      "stale": false
+      "freshness_policy_days": 14,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "company",
@@ -2320,7 +3570,14 @@
         "source_last_update"
       ],
       "note": "已通过ClinicalTrials.gov API于2026-07-21逐字段核验NCT07178431对应的Miltenyi MS项目。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核。",
-      "stale": false
+      "freshness_policy_days": 14,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "company",
@@ -2343,7 +3600,14 @@
         "source_last_update"
       ],
       "note": "已通过ClinicalTrials.gov API于2026-07-21逐字段核验NCT07477639对应的Tr1X progressive MS项目。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核。",
-      "stale": false
+      "freshness_policy_days": 14,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "company",
@@ -2366,7 +3630,14 @@
         "source_last_update"
       ],
       "note": "依据NCT07523282核验；in vivo CAR-T属性仅在干预别名中明确。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核。",
-      "stale": false
+      "freshness_policy_days": 14,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "company",
@@ -2389,7 +3660,14 @@
         "source_last_update"
       ],
       "note": "依据NCT07413341。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核。",
-      "stale": false
+      "freshness_policy_days": 14,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "company",
@@ -2413,7 +3691,14 @@
         "source_last_update"
       ],
       "note": "主体、技术和试验状态依据NCT06688435；未确认NMPA具体品种批准里程碑。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核。",
-      "stale": false
+      "freshness_policy_days": 14,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "company",
@@ -2436,7 +3721,14 @@
         "source_last_update"
       ],
       "note": "依据NCT06056921核验；注册库自2023-09后未刷新。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核。",
-      "stale": false
+      "freshness_policy_days": 14,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "company",
@@ -2459,7 +3751,14 @@
         "source_last_update"
       ],
       "note": "依据NCT07246096核验。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核。",
-      "stale": false
+      "freshness_policy_days": 14,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "company",
@@ -2481,7 +3780,14 @@
         "source_url"
       ],
       "note": "PMID 38381673确认15例SLE、IIM和SSc病例系列，Erlangen官方信息确认CASTLE研究。 2026-08-04 通过 PubMed 官方接口复核。 2026-08-10 通过 PubMed 官方接口复核。",
-      "stale": false
+      "freshness_policy_days": 14,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "company",
@@ -2504,7 +3810,14 @@
         "source_last_update"
       ],
       "note": "依据NCT07544225核验。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核。",
-      "stale": false
+      "freshness_policy_days": 14,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "company",
@@ -2527,7 +3840,14 @@
         "source_last_update"
       ],
       "note": "依据NCT07085676核验。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核。",
-      "stale": false
+      "freshness_policy_days": 14,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "company",
@@ -2550,7 +3870,14 @@
         "source_last_update"
       ],
       "note": "依据NCT07341828核验。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核。",
-      "stale": false
+      "freshness_policy_days": 14,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "company",
@@ -2573,7 +3900,14 @@
         "source_last_update"
       ],
       "note": "依据NCT06249438核验；注册库最后更新时间较旧。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核。",
-      "stale": false
+      "freshness_policy_days": 14,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "company",
@@ -2596,7 +3930,14 @@
         "source_last_update"
       ],
       "note": "依据NCT06941129核验；注册库最后更新时间较旧。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核。",
-      "stale": false
+      "freshness_policy_days": 14,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "company",
@@ -2619,7 +3960,14 @@
         "source_last_update"
       ],
       "note": "依据NCT06794008核验；注册库最后更新时间较旧。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核。",
-      "stale": false
+      "freshness_policy_days": 14,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "company",
@@ -2642,7 +3990,14 @@
         "source_last_update"
       ],
       "note": "依据NCT06828042核验；注册库最后更新时间较旧。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核。",
-      "stale": false
+      "freshness_policy_days": 14,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "company",
@@ -2665,7 +4020,14 @@
         "source_last_update"
       ],
       "note": "依据NCT06980597核验；注册库最后更新时间较旧。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核。",
-      "stale": false
+      "freshness_policy_days": 14,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "company",
@@ -2687,7 +4049,14 @@
         "source_url"
       ],
       "note": "NCT07337785及PMID 38409527、41101309已核验。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核。",
-      "stale": false
+      "freshness_policy_days": 14,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "company",
@@ -2710,7 +4079,14 @@
         "source_last_update"
       ],
       "note": "依据NCT07526493，责任主体为同济医院，当前Recruiting。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核。",
-      "stale": false
+      "freshness_policy_days": 14,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "company",
@@ -2733,7 +4109,14 @@
         "source_last_update"
       ],
       "note": "依据NCT07339540核验。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核。",
-      "stale": false
+      "freshness_policy_days": 14,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "company",
@@ -2754,7 +4137,14 @@
         "source_url"
       ],
       "note": "NCT06371040与关联论文已核验。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核。",
-      "stale": false
+      "freshness_policy_days": 14,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "company",
@@ -2777,7 +4167,14 @@
         "source_last_update"
       ],
       "note": "依据NCT07392528。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核。",
-      "stale": false
+      "freshness_policy_days": 14,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "company",
@@ -2800,7 +4197,14 @@
         "source_last_update"
       ],
       "note": "主办方与合作方依据NCT06939166核验。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核。",
-      "stale": false
+      "freshness_policy_days": 14,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "company",
@@ -2821,7 +4225,14 @@
         "source_url"
       ],
       "note": "PMID 41245531已核验。 2026-08-04 通过 PubMed 官方接口复核。 2026-08-10 通过 PubMed 官方接口复核。",
-      "stale": false
+      "freshness_policy_days": 14,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "company",
@@ -2844,7 +4255,14 @@
         "source_last_update"
       ],
       "note": "依据NCT07305116核验。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核。",
-      "stale": false
+      "freshness_policy_days": 14,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "company",
@@ -2867,7 +4285,14 @@
         "source_last_update"
       ],
       "note": "依据NCT06978738核验；当前尚未招募且注册库最后更新时间较旧。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核。",
-      "stale": false
+      "freshness_policy_days": 14,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "company",
@@ -2890,7 +4315,14 @@
         "source_last_update"
       ],
       "note": "依据NCT07155369核验；注册库最后更新时间较旧。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核。",
-      "stale": false
+      "freshness_policy_days": 14,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "company",
@@ -2915,7 +4347,14 @@
         "source_last_update"
       ],
       "note": "ClinicalTrials.gov登记确认CRT-402已进入Phase 1/2注册阶段；公司正式公告确认mRNA-LNP体内CD19 CAR-T路线及HREC许可。",
-      "stale": false
+      "freshness_policy_days": 14,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "trial",
@@ -2945,7 +4384,14 @@
         "registry_last_update"
       ],
       "note": "依据ClinicalTrials.gov官方API逐字段核验NCT07778446，并以CREATE Medicines正式公告交叉核对澳大利亚HREC许可；当前Not yet recruiting。",
-      "stale": false
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "trial",
@@ -2971,7 +4417,14 @@
         "registry_last_update"
       ],
       "note": "依据NCT06451159；当前Active, not recruiting。2026-08-17 通过 ClinicalTrials.gov 官方接口逐字段复核，注册库最近更新日期为2026-08-10。",
-      "stale": false
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "trial",
@@ -2998,7 +4451,14 @@
         "registry_last_update"
       ],
       "note": "2026-08-04复核NCT06193889，ClinicalTrials.gov最近更新日期为2026-07-29；Kyverna 2026-07-27公告补充了美国商业化与临床供应协议。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "trial",
@@ -3025,7 +4485,14 @@
         "registry_last_update"
       ],
       "note": "更新为正在招募的Phase 3 AURORA（NCT06799247）。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核。",
-      "stale": false
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "trial",
@@ -3048,7 +4515,14 @@
         "source_url"
       ],
       "note": "PMID 38381673确认15例病例系列；明确标记为非单一注册试验。 2026-08-04 通过 PubMed 官方接口复核。 2026-08-10 通过 PubMed 官方接口复核。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "trial",
@@ -3075,7 +4549,14 @@
         "registry_last_update"
       ],
       "note": "依据NCT07526493；2026-05-12更新为Recruiting。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "trial",
@@ -3101,7 +4582,14 @@
         "registry_last_update"
       ],
       "note": "依据NCT06414135；注册状态为Recruiting，但最后更新停留在2024-08，需继续核查实际状态。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "trial",
@@ -3128,7 +4616,14 @@
         "registry_last_update"
       ],
       "note": "依据ClinicalTrials.gov API核验NCT06939166；未将注册状态解释为NMPA产品批准。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "trial",
@@ -3156,7 +4651,14 @@
         "registry_last_update"
       ],
       "note": "ClinicalTrials.gov API逐字段核验NCT06688435：计划入组60例、实际研究启动日期为2025-03-04，LNP-mRNA瞬时转染自体BCMA CAR-T计划每周给药一次、连续6次。NMPA官网未检得可公开匹配的具体品种批准结论。2026-08-17复核，注册库最近更新日期为2026-08-12。",
-      "stale": false
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "trial",
@@ -3184,7 +4686,14 @@
         "registry_last_update"
       ],
       "note": "依据ClinicalTrials.gov API逐字段核验NCT07304154；2026-08-17复核，注册库最近更新日期为2026-08-14。",
-      "stale": false
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "trial",
@@ -3212,7 +4721,14 @@
         "registry_last_update"
       ],
       "note": "2026-08-04复核NCT06220201，ClinicalTrials.gov已更新为Active, not recruiting，最近更新日期为2026-08-03。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核。",
-      "stale": false
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "trial",
@@ -3240,7 +4756,14 @@
         "registry_last_update"
       ],
       "note": "依据ClinicalTrials.gov API核验NCT06704269。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "trial",
@@ -3263,7 +4786,14 @@
         "registry_last_update"
       ],
       "note": "2026-08-04复核NCT06925542，ClinicalTrials.gov最近更新日期为2026-07-22，状态仍为Recruiting。2026-08-10复核：最近更新日期变更为2026-08-07，状态仍为Recruiting；其余已核对字段未见差异。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "trial",
@@ -3286,7 +4816,14 @@
         "registry_last_update"
       ],
       "note": "依据NCT06308978。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "trial",
@@ -3309,7 +4846,14 @@
         "registry_last_update"
       ],
       "note": "依据NCT07392528；当前尚未招募。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "trial",
@@ -3332,7 +4876,14 @@
         "registry_last_update"
       ],
       "note": "2026-08-04复核NCT07085104，ClinicalTrials.gov最近更新日期为2026-07-31，状态仍为Recruiting。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "trial",
@@ -3355,7 +4906,14 @@
         "registry_last_update"
       ],
       "note": "依据NCT06708845。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "trial",
@@ -3381,7 +4939,14 @@
         "registry_last_update"
       ],
       "note": "已通过ClinicalTrials.gov API于2026-07-21逐字段核验NCT07178431。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "trial",
@@ -3404,7 +4969,14 @@
         "registry_last_update"
       ],
       "note": "依据NCT07413341。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "trial",
@@ -3429,7 +5001,14 @@
         "registry_last_update"
       ],
       "note": "依据ClinicalTrials.gov API核验NCT07305116。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "trial",
@@ -3454,7 +5033,14 @@
         "registry_last_update"
       ],
       "note": "依据ClinicalTrials.gov API逐字段核验NCT07523282；官方仅在干预别名中明确其为in vivo CAR-T。2026-08-17复核，预计研究启动日期改为2026-12-31，注册库最近更新日期为2026-08-12。",
-      "stale": false
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "trial",
@@ -3479,7 +5065,14 @@
         "registry_last_update"
       ],
       "note": "依据ClinicalTrials.gov API核验NCT06626919。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核。",
-      "stale": false
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "trial",
@@ -3504,7 +5097,14 @@
         "registry_last_update"
       ],
       "note": "依据ClinicalTrials.gov API核验NCT07339540；官方描述明确体内转导后形成CAR-T。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "trial",
@@ -3530,7 +5130,14 @@
         "registry_last_update"
       ],
       "note": "依据ClinicalTrials.gov API核验NCT06941129；注册库最后更新时间较旧。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "trial",
@@ -3555,7 +5162,14 @@
         "registry_last_update"
       ],
       "note": "依据ClinicalTrials.gov API核验NCT07155369；状态为Active, not recruiting，注册库最后更新时间较旧。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "trial",
@@ -3580,7 +5194,14 @@
         "registry_last_update"
       ],
       "note": "依据ClinicalTrials.gov API核验NCT06828042；注册库最后更新时间较旧。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "trial",
@@ -3605,7 +5226,14 @@
         "registry_last_update"
       ],
       "note": "依据ClinicalTrials.gov API核验NCT06980597；注册库最后更新时间较旧。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "trial",
@@ -3630,7 +5258,14 @@
         "registry_last_update"
       ],
       "note": "依据ClinicalTrials.gov API核验NCT06978738；当前尚未招募且注册库最后更新时间较旧。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "trial",
@@ -3655,7 +5290,14 @@
         "registry_last_update"
       ],
       "note": "依据ClinicalTrials.gov API核验NCT06794008；官方登记为Phase 2，但注册库最后更新时间较旧。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "trial",
@@ -3682,7 +5324,14 @@
         "registry_last_update"
       ],
       "note": "依据NCT06359041逐字段核对，并用Cabaletta 2026-05-14正式披露确认RESET-MG项目归属。2026-08-17复核：状态为Recruiting、计划入组24例，注册库最近更新日期为2026-08-13。",
-      "stale": false
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "trial",
@@ -3708,7 +5357,14 @@
         "registry_last_update"
       ],
       "note": "已通过ClinicalTrials.gov API于2026-07-21逐字段核验NCT07006805；官方状态为Withdrawn，且撤回发生在中心启动前与零入组状态下。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "trial",
@@ -3733,7 +5389,14 @@
         "registry_last_update"
       ],
       "note": "依据ClinicalTrials.gov API核验NCT06056921；注册库自2023-09后未刷新，当前状态需谨慎解释。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核。",
-      "stale": false
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "trial",
@@ -3758,7 +5421,14 @@
         "registry_last_update"
       ],
       "note": "依据ClinicalTrials.gov API核验NCT07085676。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "trial",
@@ -3783,7 +5453,14 @@
         "registry_last_update"
       ],
       "note": "依据ClinicalTrials.gov API核验NCT06249438；注册库最后更新时间较旧。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "trial",
@@ -3808,7 +5485,14 @@
         "registry_last_update"
       ],
       "note": "依据ClinicalTrials.gov API核验NCT06375993。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "trial",
@@ -3833,7 +5517,14 @@
         "registry_last_update"
       ],
       "note": "依据ClinicalTrials.gov API核验NCT07246096。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "trial",
@@ -3858,7 +5549,14 @@
         "registry_last_update"
       ],
       "note": "依据ClinicalTrials.gov API核验NCT07341828。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "trial",
@@ -3883,7 +5581,14 @@
         "registry_last_update"
       ],
       "note": "依据ClinicalTrials.gov API核验NCT07403188；该研究为观察性长期随访，重点跟踪延迟不良事件、RCL、CAR持续性和ADA。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "trial",
@@ -3908,7 +5613,14 @@
         "registry_last_update"
       ],
       "note": "依据ClinicalTrials.gov API核验NCT07544225。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "trial",
@@ -3933,7 +5645,14 @@
         "registry_last_update"
       ],
       "note": "依据ClinicalTrials.gov API核验NCT04561557；官方覆盖NMOSD、MG、CIDP、IIM、MS、AE、MOGAD和POEMS。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "trial",
@@ -3958,7 +5677,14 @@
         "registry_last_update"
       ],
       "note": "依据ClinicalTrials.gov API核验NCT06787989；注册库最后更新时间较旧。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "trial",
@@ -3983,7 +5709,14 @@
         "registry_last_update"
       ],
       "note": "依据ClinicalTrials.gov API核验NCT07328581；官方试验名称直接使用ICG318。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "trial",
@@ -4008,7 +5741,14 @@
         "registry_last_update"
       ],
       "note": "依据ClinicalTrials.gov API逐字段核验NCT07715136；Study First Post与Last Update Post均为2026-07-20。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "trial",
@@ -4030,7 +5770,14 @@
         "registry_last_update"
       ],
       "note": "2026-08-04复核NCT06371040时，ClinicalTrials.gov lead sponsor为“Ting Chang, MD”；本地仍保留“Ting Chang / Tangdu Hospital”以反映机构归属，其他字段与官方记录一致。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "trial",
@@ -4052,7 +5799,14 @@
         "registry_last_update"
       ],
       "note": "已通过ClinicalTrials.gov API v2逐字段核对。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "trial",
@@ -4072,7 +5826,14 @@
         "status"
       ],
       "note": "PMID 41245531与ChiCTR2200061267论文标识已核验。 2026-08-04 通过 PubMed 官方接口复核。 2026-08-10 通过 PubMed 官方接口复核。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "trial",
@@ -4096,7 +5857,14 @@
         "registry_last_update"
       ],
       "note": "2026-08-21通过ClinicalTrials.gov官方接口复核；登记最近更新日期由2026-07-23变为2026-08-21，状态仍为Recruiting。",
-      "stale": false
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "trial",
@@ -4119,7 +5887,14 @@
         "estimated_completion"
       ],
       "note": "已通过ClinicalTrials.gov API于2026-07-17逐字段核验NCT06665256。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "trial",
@@ -4142,7 +5917,14 @@
         "estimated_completion"
       ],
       "note": "已通过ClinicalTrials.gov API于2026-08-17逐字段核验NCT07391605；注册库最近更新日期为2026-08-17。",
-      "stale": false
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "trial",
@@ -4169,7 +5951,14 @@
         "registry_last_update"
       ],
       "note": "依据ClinicalTrials.gov官方API逐字段核验NCT07756268；首次公开日期为2026-08-10，当前Not yet recruiting。",
-      "stale": false
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "trial",
@@ -4198,7 +5987,14 @@
         "registry_last_update"
       ],
       "note": "依据ClinicalTrials.gov官方API逐字段核验NCT07752264；首次公开日期为2026-08-07，当前Not yet recruiting。",
-      "stale": false
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "trial",
@@ -4226,7 +6022,14 @@
         "registry_last_update"
       ],
       "note": "依据ClinicalTrials.gov官方API逐字段核验NCT06897930；AZD0120在登记中标注曾用名GC012F，当前Recruiting。",
-      "stale": false
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "trial",
@@ -4254,7 +6057,14 @@
         "registry_last_update"
       ],
       "note": "依据ClinicalTrials.gov官方API逐字段核验NCT06733935；NKX019为异体CD19 CAR-NK，当前Recruiting。",
-      "stale": false
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "trial",
@@ -4282,7 +6092,14 @@
         "registry_last_update"
       ],
       "note": "依据ClinicalTrials.gov官方API逐字段核验NCT07765966；RXIM002为靶向LNP递送编码抗CD19 CAR的circRNA，当前Not yet recruiting。",
-      "stale": false
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "trial",
@@ -4308,7 +6125,14 @@
         "registry_last_update"
       ],
       "note": "已通过ClinicalTrials.gov API于2026-07-21逐字段核验NCT07477639。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "safety",
@@ -4327,7 +6151,14 @@
         "verification_scope"
       ],
       "note": "PMID 42167622确认自免CAR-T中的CRS信号，病种特异发生率仍不确定。",
-      "stale": true
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "safety",
@@ -4347,7 +6178,14 @@
         "verification_scope"
       ],
       "note": "系统综述提示ICANS较少，但NCT06451159仍要求神经安全监测。",
-      "stale": true
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "safety",
@@ -4366,7 +6204,14 @@
         "verification_scope"
       ],
       "note": "PMID 42167622报告治疗后三个月内感染事件。",
-      "stale": true
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "safety",
@@ -4386,7 +6231,14 @@
         "verification_scope"
       ],
       "note": "系统综述确认低丙种球蛋白血症；长期后果尚需随访。",
-      "stale": true
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "safety",
@@ -4405,7 +6257,14 @@
         "verification_scope"
       ],
       "note": "PMID 42167622确认中性粒细胞减少和贫血等事件。",
-      "stale": true
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "safety",
@@ -4423,7 +6282,14 @@
         "verification_scope"
       ],
       "note": "仅核验为NCT06451159明确监测的疾病再激活终点，不代表因果已证实。",
-      "stale": true
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "safety",
@@ -4442,7 +6308,14 @@
         "verification_scope"
       ],
       "note": "FDA类别安全警示要求对继发恶性肿瘤进行终身监测。",
-      "stale": true
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "safety",
@@ -4461,7 +6334,14 @@
         "verification_scope"
       ],
       "note": "仅核验试验中的妊娠排除和避孕要求；长期生育风险仍属证据不足。",
-      "stale": true
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "event",
@@ -4478,7 +6358,14 @@
         "source_url"
       ],
       "note": "日期与对应PubMed记录同步。 2026-08-04 通过 PubMed 官方接口复核事件日期与来源链接。 2026-08-10 通过 PubMed 官方接口复核事件日期与来源链接。",
-      "stale": false
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "event",
@@ -4495,7 +6382,14 @@
         "source_url"
       ],
       "note": "日期与对应PubMed记录同步。 2026-08-04 通过 PubMed 官方接口复核事件日期与来源链接。 2026-08-10 通过 PubMed 官方接口复核事件日期与来源链接。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "event",
@@ -4512,7 +6406,14 @@
         "source_url"
       ],
       "note": "日期与对应PubMed记录同步。 2026-08-04 通过 PubMed 官方接口复核事件日期与来源链接。 2026-08-10 通过 PubMed 官方接口复核事件日期与来源链接。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "event",
@@ -4529,7 +6430,14 @@
         "source_url"
       ],
       "note": "日期与对应PubMed记录同步。 2026-08-04 通过 PubMed 官方接口复核事件日期与来源链接。 2026-08-10 通过 PubMed 官方接口复核事件日期与来源链接。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "event",
@@ -4546,7 +6454,14 @@
         "source_url"
       ],
       "note": "日期与对应PubMed记录同步。 2026-08-04 通过 PubMed 官方接口复核事件日期与来源链接。 2026-08-10 通过 PubMed 官方接口复核事件日期与来源链接。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "event",
@@ -4563,7 +6478,14 @@
         "source_url"
       ],
       "note": "日期与对应PubMed记录同步。 2026-08-04 通过 PubMed 官方接口复核事件日期与来源链接。 2026-08-10 通过 PubMed 官方接口复核事件日期与来源链接。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "event",
@@ -4576,7 +6498,14 @@
       "last_verified_at": "2026-08-04",
       "next_review_at": "2026-08-11",
       "note": "2026-08-04 依据关联对象完成内部复核。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "event",
@@ -4589,7 +6518,14 @@
       "last_verified_at": "2026-08-04",
       "next_review_at": "2026-08-11",
       "note": "2026-08-04 依据关联对象完成内部复核。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "event",
@@ -4610,7 +6546,14 @@
         "entities"
       ],
       "note": "事件日期采用ClinicalTrials.gov最近更新发布日期。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核事件日期与来源链接。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核事件日期与来源链接。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "event",
@@ -4623,7 +6566,14 @@
       "last_verified_at": "2026-08-04",
       "next_review_at": "2026-08-11",
       "note": "2026-08-04 依据关联对象完成内部复核。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "event",
@@ -4636,7 +6586,14 @@
       "last_verified_at": "2026-08-04",
       "next_review_at": "2026-08-11",
       "note": "2026-08-04 依据关联对象完成内部复核。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "event",
@@ -4654,7 +6611,14 @@
         "entities"
       ],
       "note": "日期与对应PubMed电子出版日期同步。 2026-08-04 通过 PubMed 官方接口复核事件日期与来源链接。 2026-08-10 通过 PubMed 官方接口复核事件日期与来源链接。",
-      "stale": false
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "event",
@@ -4673,7 +6637,14 @@
         "entities"
       ],
       "note": "事件日期采用ClinicalTrials.gov最近更新发布日期。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核事件日期与来源链接。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核事件日期与来源链接。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "event",
@@ -4692,7 +6663,14 @@
         "entities"
       ],
       "note": "事件日期采用ClinicalTrials.gov最近更新发布日期；因记录较旧保留谨慎标注。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核事件日期与来源链接。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核事件日期与来源链接。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "event",
@@ -4711,7 +6689,14 @@
         "entities"
       ],
       "note": "日期采用官方最近更新发布日期。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核事件日期与来源链接。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核事件日期与来源链接。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "event",
@@ -4730,7 +6715,14 @@
         "entities"
       ],
       "note": "2026-08-04复核时，事件日期采用ClinicalTrials.gov最近更新发布日期2026-08-03。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核事件日期与来源链接。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核事件日期与来源链接。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "event",
@@ -4749,7 +6741,14 @@
         "entities"
       ],
       "note": "日期采用官方最近更新发布日期。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核事件日期与来源链接。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核事件日期与来源链接。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "event",
@@ -4768,7 +6767,14 @@
         "entities"
       ],
       "note": "事件日期采用ClinicalTrials.gov最近更新发布日期。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核事件日期与来源链接。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核事件日期与来源链接。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "event",
@@ -4787,7 +6793,14 @@
         "entities"
       ],
       "note": "事件日期采用ClinicalTrials.gov最近更新发布日期；in vivo CAR-T属性仅在干预别名中确认。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核事件日期与来源链接。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核事件日期与来源链接。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "event",
@@ -4806,7 +6819,14 @@
         "entities"
       ],
       "note": "事件日期采用ClinicalTrials.gov最近更新发布日期。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核事件日期与来源链接。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核事件日期与来源链接。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "event",
@@ -4825,7 +6845,14 @@
         "entities"
       ],
       "note": "事件日期采用ClinicalTrials.gov最近更新发布日期。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核事件日期与来源链接。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核事件日期与来源链接。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "event",
@@ -4844,7 +6871,14 @@
         "entities"
       ],
       "note": "事件日期采用ClinicalTrials.gov最近更新发布日期；注册库最后更新时间较旧。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核事件日期与来源链接。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核事件日期与来源链接。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "event",
@@ -4863,7 +6897,14 @@
         "entities"
       ],
       "note": "事件日期采用ClinicalTrials.gov最近更新发布日期；状态为Active, not recruiting且注册库最后更新时间较旧。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核事件日期与来源链接。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核事件日期与来源链接。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "event",
@@ -4882,7 +6923,14 @@
         "entities"
       ],
       "note": "事件日期采用ClinicalTrials.gov最近更新发布日期；注册库最后更新时间较旧。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核事件日期与来源链接。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核事件日期与来源链接。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "event",
@@ -4901,7 +6949,14 @@
         "entities"
       ],
       "note": "事件日期采用ClinicalTrials.gov最近更新发布日期；注册库最后更新时间较旧。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核事件日期与来源链接。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核事件日期与来源链接。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "event",
@@ -4920,7 +6975,14 @@
         "entities"
       ],
       "note": "事件日期采用ClinicalTrials.gov最近更新发布日期；当前尚未招募且注册库最后更新时间较旧。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核事件日期与来源链接。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核事件日期与来源链接。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "event",
@@ -4939,7 +7001,14 @@
         "entities"
       ],
       "note": "事件日期采用ClinicalTrials.gov最近更新发布日期；Phase 2项目注册库最后更新时间较旧。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核事件日期与来源链接。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核事件日期与来源链接。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "event",
@@ -4958,7 +7027,14 @@
         "entities"
       ],
       "note": "事件采用Cabaletta 2026-05-14正式披露日期；疗效信息保留为公司口径。 2026-08-04 通过一手来源页面复核事件日期与来源链接。 2026-08-10 通过一手来源页面复核事件日期与来源链接。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "event",
@@ -4977,7 +7053,14 @@
         "entities"
       ],
       "note": "事件采用Cabaletta 2026-06-03正式披露日期；SSc注册性研究启动时间和PC-free lupus均保留为公司前瞻性表述。 2026-08-04 通过一手来源页面复核事件日期与来源链接。 2026-08-10 通过一手来源页面复核事件日期与来源链接。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "event",
@@ -4996,7 +7079,14 @@
         "entities"
       ],
       "note": "事件日期采用ClinicalTrials.gov最近更新发布日期；注册库自2023-09后未刷新。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核事件日期与来源链接。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核事件日期与来源链接。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "event",
@@ -5015,7 +7105,14 @@
         "entities"
       ],
       "note": "事件日期采用ClinicalTrials.gov最近更新发布日期。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核事件日期与来源链接。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核事件日期与来源链接。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "event",
@@ -5034,7 +7131,14 @@
         "entities"
       ],
       "note": "事件日期采用ClinicalTrials.gov最近更新发布日期；注册库最后更新时间较旧。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核事件日期与来源链接。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核事件日期与来源链接。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "event",
@@ -5053,7 +7157,14 @@
         "entities"
       ],
       "note": "事件日期采用ClinicalTrials.gov最近更新发布日期。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核事件日期与来源链接。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核事件日期与来源链接。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "event",
@@ -5072,7 +7183,14 @@
         "entities"
       ],
       "note": "事件日期采用ClinicalTrials.gov最近更新发布日期。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核事件日期与来源链接。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核事件日期与来源链接。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "event",
@@ -5091,7 +7209,14 @@
         "entities"
       ],
       "note": "事件日期采用ClinicalTrials.gov最近更新发布日期。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核事件日期与来源链接。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核事件日期与来源链接。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "event",
@@ -5110,7 +7235,14 @@
         "entities"
       ],
       "note": "事件日期采用ClinicalTrials.gov最近更新发布日期。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核事件日期与来源链接。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核事件日期与来源链接。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "event",
@@ -5129,7 +7261,14 @@
         "entities"
       ],
       "note": "事件日期采用ClinicalTrials.gov最近更新发布日期。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核事件日期与来源链接。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核事件日期与来源链接。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "event",
@@ -5148,7 +7287,14 @@
         "entities"
       ],
       "note": "2026-07-17复核后确认事件日期仍采用IASO官网原文发布日期2024-08-12；官网原文链接纠正为info.php?id=251。官方原文明确为美国FDA批准SLE和LN的IND，并回顾MG、MS既有自身免疫IND。 2026-08-04 通过一手来源页面复核事件日期与来源链接。 2026-08-10 通过一手来源页面复核事件日期与来源链接。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "event",
@@ -5167,7 +7313,14 @@
         "entities"
       ],
       "note": "事件日期采用ClinicalTrials.gov最近更新发布日期；注册库最后更新时间较旧。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核事件日期与来源链接。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核事件日期与来源链接。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "event",
@@ -5185,7 +7338,14 @@
         "entities"
       ],
       "note": "事件日期采用PubMed发布日期。 2026-08-04 通过 PubMed 官方接口复核事件日期与来源链接。 2026-08-10 通过 PubMed 官方接口复核事件日期与来源链接。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "event",
@@ -5203,7 +7363,14 @@
         "entities"
       ],
       "note": "事件日期采用PubMed发布日期。 2026-08-04 通过 PubMed 官方接口复核事件日期与来源链接。 2026-08-10 通过 PubMed 官方接口复核事件日期与来源链接。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "event",
@@ -5222,7 +7389,14 @@
         "entities"
       ],
       "note": "事件日期采用ClinicalTrials.gov最近更新发布日期；注册库最后更新时间较旧。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核事件日期与来源链接。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核事件日期与来源链接。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "event",
@@ -5241,7 +7415,14 @@
         "entities"
       ],
       "note": "事件日期采用ClinicalTrials.gov最近更新发布日期。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核事件日期与来源链接。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核事件日期与来源链接。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "event",
@@ -5260,7 +7441,14 @@
         "entities"
       ],
       "note": "事件日期采用ClinicalTrials.gov首次公开/最近更新发布日期2026-07-20。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核事件日期与来源链接。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核事件日期与来源链接。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "event",
@@ -5279,7 +7467,14 @@
         "entities"
       ],
       "note": "事件采用Cartesian 2026-06-09正式披露日期；2H26启动和1H27读数均保留为公司前瞻性表述。 2026-08-04 通过一手来源页面复核事件日期与来源链接。 2026-08-10 通过一手来源页面复核事件日期与来源链接。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "event",
@@ -5298,7 +7493,14 @@
         "entities"
       ],
       "note": "事件日期采用ClinicalTrials.gov最近更新发布日期2026-06-25，并保留官方撤回原因。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核事件日期与来源链接。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核事件日期与来源链接。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "event",
@@ -5317,7 +7519,14 @@
         "entities"
       ],
       "note": "事件日期采用ClinicalTrials.gov最近更新发布日期2026-05-11。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核事件日期与来源链接。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核事件日期与来源链接。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "event",
@@ -5336,7 +7545,14 @@
         "entities"
       ],
       "note": "事件日期采用ClinicalTrials.gov首次公开后的最近更新发布日期2026-03-19。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核事件日期与来源链接。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核事件日期与来源链接。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "event",
@@ -5356,7 +7572,14 @@
         "entities"
       ],
       "note": "2026-08-04复核时，事件仍对应ClinicalTrials.gov于2026-07-08公开的注册性Phase 3更新；2026-07-29后未见试验设计层面的新增变化。 2026-08-04 通过 ClinicalTrials.gov 官方接口复核事件日期与来源链接。 2026-08-10 通过 ClinicalTrials.gov 官方接口复核事件日期与来源链接。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "event",
@@ -5375,7 +7598,14 @@
         "entities"
       ],
       "note": "事件日期采用ClinicalTrials.gov首次公开日期2026-08-10，并于2026-08-17复核。",
-      "stale": false
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "event",
@@ -5395,7 +7625,14 @@
         "entities"
       ],
       "note": "事件日期采用ClinicalTrials.gov首次公开日期2026-08-07，并于2026-08-17复核。",
-      "stale": false
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "event",
@@ -5414,7 +7651,14 @@
         "entities"
       ],
       "note": "事件日期采用ClinicalTrials.gov首次公开日期2026-08-14，并于2026-08-17复核。",
-      "stale": false
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "event",
@@ -5433,7 +7677,14 @@
         "entities"
       ],
       "note": "事件依据Kyverna 2026-07-27官方新闻稿核验，仅记录供应与制造协议事实，不外推监管或上市进度。",
-      "stale": true
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "event",
@@ -5454,7 +7705,14 @@
         "entities"
       ],
       "note": "事件日期采用ClinicalTrials.gov首次公开日期2026-08-21；预计启动日期与实际招募状态分开记录。",
-      "stale": false
+      "freshness_policy_days": 7,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded",
+        "review_deadline_passed"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "topic",
@@ -5465,7 +7723,13 @@
         "internal-curation"
       ],
       "last_verified_at": "2026-07-10",
-      "stale": true
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "topic",
@@ -5476,7 +7740,13 @@
         "internal-curation"
       ],
       "last_verified_at": "2026-07-10",
-      "stale": true
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "topic",
@@ -5487,7 +7757,13 @@
         "internal-curation"
       ],
       "last_verified_at": "2026-07-10",
-      "stale": true
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "topic",
@@ -5498,7 +7774,13 @@
         "internal-curation"
       ],
       "last_verified_at": "2026-07-10",
-      "stale": true
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "topic",
@@ -5509,7 +7791,13 @@
         "internal-curation"
       ],
       "last_verified_at": "2026-07-10",
-      "stale": true
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "topic",
@@ -5520,7 +7808,13 @@
         "internal-curation"
       ],
       "last_verified_at": "2026-07-10",
-      "stale": true
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "topic",
@@ -5531,7 +7825,13 @@
         "internal-curation"
       ],
       "last_verified_at": "2026-07-10",
-      "stale": true
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "topic",
@@ -5542,7 +7842,13 @@
         "internal-curation"
       ],
       "last_verified_at": "2026-07-10",
-      "stale": true
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "topic",
@@ -5553,7 +7859,13 @@
         "internal-curation"
       ],
       "last_verified_at": "2026-07-10",
-      "stale": true
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "topic",
@@ -5564,7 +7876,13 @@
         "internal-curation"
       ],
       "last_verified_at": "2026-07-10",
-      "stale": true
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "organization",
@@ -5575,7 +7893,13 @@
         "astrazeneca-primary"
       ],
       "last_verified_at": "2026-08-21",
-      "stale": false
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "organization",
@@ -5586,7 +7910,13 @@
         "astrazeneca-primary"
       ],
       "last_verified_at": "2026-08-21",
-      "stale": false
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "organization",
@@ -5597,7 +7927,13 @@
         "cartesian-ir"
       ],
       "last_verified_at": "2026-08-21",
-      "stale": false
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "organization",
@@ -5608,7 +7944,13 @@
         "cartesian-ir"
       ],
       "last_verified_at": "2026-08-21",
-      "stale": false
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "organization",
@@ -5619,7 +7961,13 @@
         "cartesian-ir"
       ],
       "last_verified_at": "2026-08-21",
-      "stale": false
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "organization",
@@ -5630,7 +7978,13 @@
         "cabaletta-primary"
       ],
       "last_verified_at": "2026-08-21",
-      "stale": false
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "organization",
@@ -5641,7 +7995,13 @@
         "cabaletta-primary"
       ],
       "last_verified_at": "2026-08-21",
-      "stale": false
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "organization",
@@ -5652,7 +8012,13 @@
         "kyverna-ir"
       ],
       "last_verified_at": "2026-08-21",
-      "stale": false
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "organization",
@@ -5663,7 +8029,13 @@
         "kyverna-ir"
       ],
       "last_verified_at": "2026-08-21",
-      "stale": false
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "organization",
@@ -5674,7 +8046,13 @@
         "gilead-primary"
       ],
       "last_verified_at": "2026-08-21",
-      "stale": false
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "organization",
@@ -5685,7 +8063,13 @@
         "gilead-primary"
       ],
       "last_verified_at": "2026-08-21",
-      "stale": false
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "organization",
@@ -5696,7 +8080,13 @@
         "bms-primary"
       ],
       "last_verified_at": "2026-08-21",
-      "stale": false
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "organization",
@@ -5707,7 +8097,13 @@
         "bms-primary"
       ],
       "last_verified_at": "2026-08-21",
-      "stale": false
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "organization",
@@ -5718,7 +8114,13 @@
         "create-primary"
       ],
       "last_verified_at": "2026-08-21",
-      "stale": false
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "program",
@@ -5729,7 +8131,13 @@
         "astrazeneca-primary"
       ],
       "last_verified_at": "2026-08-21",
-      "stale": false
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "program",
@@ -5740,7 +8148,13 @@
         "cartesian-ir"
       ],
       "last_verified_at": "2026-08-21",
-      "stale": false
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "program",
@@ -5751,7 +8165,13 @@
         "cabaletta-primary"
       ],
       "last_verified_at": "2026-08-21",
-      "stale": false
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "program",
@@ -5762,7 +8182,13 @@
         "kyverna-ir"
       ],
       "last_verified_at": "2026-08-21",
-      "stale": false
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "program",
@@ -5773,7 +8199,13 @@
         "gilead-primary"
       ],
       "last_verified_at": "2026-08-21",
-      "stale": false
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "program",
@@ -5784,7 +8216,13 @@
         "bms-primary"
       ],
       "last_verified_at": "2026-08-21",
-      "stale": false
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "program",
@@ -5796,7 +8234,13 @@
         "clinicaltrials-gov"
       ],
       "last_verified_at": "2026-08-21",
-      "stale": false
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "deal",
@@ -5807,7 +8251,13 @@
         "astrazeneca-primary"
       ],
       "last_verified_at": "2026-08-21",
-      "stale": false
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "deal",
@@ -5818,7 +8268,13 @@
         "cartesian-ir"
       ],
       "last_verified_at": "2026-08-21",
-      "stale": false
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "deal",
@@ -5829,7 +8285,13 @@
         "cartesian-ir"
       ],
       "last_verified_at": "2026-08-21",
-      "stale": false
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "deal",
@@ -5841,7 +8303,13 @@
         "sec-edgar"
       ],
       "last_verified_at": "2026-08-21",
-      "stale": false
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "deal",
@@ -5852,7 +8320,13 @@
         "cartesian-ir"
       ],
       "last_verified_at": "2026-08-21",
-      "stale": false
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "deal",
@@ -5863,7 +8337,13 @@
         "cabaletta-primary"
       ],
       "last_verified_at": "2026-08-21",
-      "stale": false
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "deal",
@@ -5875,7 +8355,13 @@
         "sec-edgar"
       ],
       "last_verified_at": "2026-08-21",
-      "stale": false
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "deal",
@@ -5886,7 +8372,13 @@
         "gilead-primary"
       ],
       "last_verified_at": "2026-08-21",
-      "stale": false
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "deal",
@@ -5897,7 +8389,13 @@
         "bms-primary"
       ],
       "last_verified_at": "2026-08-21",
-      "stale": false
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "deal",
@@ -5908,7 +8406,13 @@
         "create-primary"
       ],
       "last_verified_at": "2026-08-21",
-      "stale": false
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "deal_event",
@@ -5919,7 +8423,13 @@
         "gilead-primary"
       ],
       "last_verified_at": "2026-08-21",
-      "stale": false
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "deal_event",
@@ -5930,7 +8440,13 @@
         "gilead-primary"
       ],
       "last_verified_at": "2026-08-21",
-      "stale": false
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "deal_event",
@@ -5941,7 +8457,13 @@
         "bms-primary"
       ],
       "last_verified_at": "2026-08-21",
-      "stale": false
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "deal_event",
@@ -5952,7 +8474,13 @@
         "bms-primary"
       ],
       "last_verified_at": "2026-08-21",
-      "stale": false
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "deal_event",
@@ -5963,7 +8491,13 @@
         "cartesian-ir"
       ],
       "last_verified_at": "2026-08-21",
-      "stale": false
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "deal_event",
@@ -5974,7 +8508,13 @@
         "astrazeneca-primary"
       ],
       "last_verified_at": "2026-08-21",
-      "stale": false
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "deal_event",
@@ -5985,7 +8525,13 @@
         "kyverna-ir"
       ],
       "last_verified_at": "2026-08-21",
-      "stale": false
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "deal_event",
@@ -5997,7 +8543,13 @@
         "sec-edgar"
       ],
       "last_verified_at": "2026-08-21",
-      "stale": false
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "deal_event",
@@ -6008,7 +8560,13 @@
         "astrazeneca-primary"
       ],
       "last_verified_at": "2026-08-21",
-      "stale": false
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "deal_event",
@@ -6019,7 +8577,13 @@
         "cartesian-ir"
       ],
       "last_verified_at": "2026-08-21",
-      "stale": false
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "deal_event",
@@ -6030,7 +8594,13 @@
         "cartesian-ir"
       ],
       "last_verified_at": "2026-08-21",
-      "stale": false
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "deal_event",
@@ -6041,7 +8611,13 @@
         "cabaletta-primary"
       ],
       "last_verified_at": "2026-08-21",
-      "stale": false
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "deal_event",
@@ -6052,7 +8628,13 @@
         "cartesian-ir"
       ],
       "last_verified_at": "2026-08-21",
-      "stale": false
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "deal_event",
@@ -6063,7 +8645,13 @@
         "sec-edgar"
       ],
       "last_verified_at": "2026-08-21",
-      "stale": false
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "deal_event",
@@ -6074,7 +8662,13 @@
         "kyverna-ir"
       ],
       "last_verified_at": "2026-08-21",
-      "stale": false
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded"
+      ],
+      "current_verified": false
     },
     {
       "record_type": "deal_event",
@@ -6085,7 +8679,13 @@
         "create-primary"
       ],
       "last_verified_at": "2026-08-21",
-      "stale": false
+      "freshness_policy_days": 30,
+      "stale": true,
+      "freshness_state": "stale",
+      "freshness_reasons": [
+        "review_age_exceeded"
+      ],
+      "current_verified": false
     }
   ]
 }

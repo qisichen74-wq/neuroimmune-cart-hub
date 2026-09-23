@@ -40,7 +40,7 @@ const searchIndex = [
 await writeFile(path.join(dataDir, "investor-summary.json"), `${JSON.stringify(summary, null, 2)}\n`);
 await writeFile(path.join(dataDir, "search-index.json"), `${JSON.stringify({ schema_version: "1.0.0", as_of: summary.as_of, records: searchIndex }, null, 2)}\n`);
 
-const manifestFiles = ["daily-briefing.json", "deal-events.json", "deals.json", "events.json", "feed.json", "investor-summary.json", "landscape.json", "organizations.json", "programs.json", "relations.json", "safety.json", "search-index.json", "sources.json", "topics.json", "trials.json", "verification.json"];
+const manifestFiles = ["assistant-index.json", "daily-briefing.json", "deal-events.json", "deals.json", "events.json", "feed.json", "investor-summary.json", "landscape.json", "organizations.json", "programs.json", "relations.json", "safety.json", "search-index.json", "sources.json", "topics.json", "trials.json", "verification.json"];
 const files = [];
 for (const name of manifestFiles) {
   const content = await readFile(path.join(dataDir, name));

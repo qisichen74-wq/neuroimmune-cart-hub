@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-08-21T15:10:03.247Z",
-  "last_attempt_at": "2026-08-21T15:10:03.247Z",
+  "generated_at": "2026-08-23T22:48:31.139Z",
+  "last_attempt_at": "2026-08-23T22:48:31.139Z",
   "policy": "Research candidates must involve CAR-T or cell therapy and identify at least one disease or indication. High-scoring reviews and meta-analyses may be retained without a named disease. Registered clinical trials remain in the candidate pool as registry signals; eligible non-trial candidates enter the candidate desk for handling.",
   "query_window": "Publications since 2025/01/01; complete paginated ClinicalTrials.gov results; CDE China Drug Trials registry queries; tracked official websites",
   "summary": {
-    "candidates": 815,
-    "research": 258,
-    "trials": 557,
-    "official_updates": 0,
-    "immediate_review": 395,
-    "watchlist": 207,
+    "candidates": 827,
+    "research": 259,
+    "trials": 563,
+    "official_updates": 5,
+    "immediate_review": 404,
+    "watchlist": 210,
     "background": 64,
     "low_relevance": 149,
-    "trials_registry_only": 557,
-    "candidate_desk_required": 258,
-    "policy_excluded_research": 2387,
+    "trials_registry_only": 563,
+    "candidate_desk_required": 264,
+    "policy_excluded_research": 2394,
     "undifferentiated_review_exceptions": 3,
     "source_failures": 0,
     "partial_sources": 1,
@@ -32,7 +32,6 @@
         "NCT07477639",
         "NCT06688435",
         "NCT06220201",
-        "NCT07778446",
         "NCT06978738",
         "NCT06799247",
         "NCT07305116",
@@ -56,13 +55,11 @@
         "NCT07339540",
         "NCT06925542",
         "NCT06939166",
-        "NCT07756268",
         "NCT06980597",
         "NCT06704269",
         "NCT07715136",
         "NCT06414135",
         "NCT07523282",
-        "NCT07765966",
         "NCT06359041",
         "NCT06451159",
         "NCT06787989",
@@ -71,16 +68,13 @@
         "NCT06249438",
         "NCT06665256",
         "NCT06626919",
-        "NCT06897930",
         "NCT07337785",
         "NCT04561557",
         "NCT07341828",
         "NCT07246096",
         "NCT06828042",
-        "NCT06733935",
         "NCT06371040",
         "NCT07413341",
-        "NCT07752264",
         "NCT07392528"
       ],
       "sentinel_check": {
@@ -242,7 +236,7 @@
       "source": "NCBI PubMed",
       "source_kind": "official_api",
       "status": "ok",
-      "results_scanned": 2666,
+      "results_scanned": 2674,
       "known_records_seen": [
         "41240964",
         "42028700",
@@ -278,8 +272,8 @@
       "query_runs": [
         {
           "query_id": "theme",
-          "total_results": 609,
-          "results_scanned": 609,
+          "total_results": 612,
+          "results_scanned": 612,
           "truncated": false
         },
         {
@@ -296,8 +290,8 @@
         },
         {
           "query_id": "entity:cabaletta-resecel",
-          "total_results": 867,
-          "results_scanned": 867,
+          "total_results": 870,
+          "results_scanned": 870,
           "truncated": false
         },
         {
@@ -314,8 +308,8 @@
         },
         {
           "query_id": "entity:cartesian-descartes08",
-          "total_results": 1235,
-          "results_scanned": 1235,
+          "total_results": 1238,
+          "results_scanned": 1238,
           "truncated": false
         },
         {
@@ -423,8 +417,8 @@
       "assets_monitored": 3,
       "fingerprint": "b3dc79c0784d81598209b52cd9ccd5b96aa32386aae499a2f049cccfdff53781",
       "fingerprint_version": 3,
-      "changed": false,
-      "duration_ms": 1387,
+      "changed": true,
+      "duration_ms": 1278,
       "sentinel_check": {
         "expected": [
           "https://www.cabalettabio.com/pipeline/caba-201",
@@ -451,10 +445,10 @@
         "https://www.cartesiantherapeutics.com/pipeline"
       ],
       "assets_monitored": 29,
-      "fingerprint": "95b3d43b88978fc8a7b28741643a2e2d2ad5563ac29d7e1f5570c4f87f1b1318",
+      "fingerprint": "f5a3615172fd708d8d544ae3e41930b7da36ece820908bfdbed14a75afae8903",
       "fingerprint_version": 3,
-      "changed": false,
-      "duration_ms": 7789,
+      "changed": true,
+      "duration_ms": 4897,
       "sentinel_check": {
         "expected": [
           "https://www.cartesiantherapeutics.com/pipeline/",
@@ -524,8 +518,8 @@
       "assets_monitored": 21,
       "fingerprint": "4abcd00376ee5702780b6fe633696c51417b8a9b115a43b2a45f0a1d8e9807a2",
       "fingerprint_version": 3,
-      "changed": false,
-      "duration_ms": 1384,
+      "changed": true,
+      "duration_ms": 4452,
       "sentinel_check": {
         "expected": [
           "https://www.iasobio.com/info.php?id=251",
@@ -552,7 +546,7 @@
       "fingerprint": "de70380335c4814ac40d43c6d57a86173c4589244d3283f8ff1bc5a098e634c2",
       "fingerprint_version": 3,
       "changed": false,
-      "duration_ms": 3649,
+      "duration_ms": 468,
       "sentinel_check": {
         "expected": [],
         "found": [],
@@ -581,10 +575,10 @@
         "https://kyvernatx.com/patients/systemic-sclerosis"
       ],
       "assets_monitored": 16,
-      "fingerprint": "a5e3e0ee19339b3dc5a22d25196ff678853af8b66369f9e894e8ef9721ae59f2",
+      "fingerprint": "e0d2aef368b11653dc76cbce70a4d74a21fc025c27b012498eed15a060afa11b",
       "fingerprint_version": 3,
-      "changed": false,
-      "duration_ms": 8210,
+      "changed": true,
+      "duration_ms": 3543,
       "sentinel_check": {
         "expected": [
           "https://kyvernatx.com/platform-pipeline/pipeline/",
@@ -611,7 +605,7 @@
       "fingerprint": "2a5f17199ef5054d8c001b321fc106410df6d3836156512fbbc07c105c487682",
       "fingerprint_version": 3,
       "changed": false,
-      "duration_ms": 6700,
+      "duration_ms": 855,
       "sentinel_check": {
         "expected": [],
         "found": [],
@@ -635,7 +629,7 @@
       "fingerprint": "0ee8114fae9c8582c707a871b1bee97594eda2093c7494b289334b8c45d1047c",
       "fingerprint_version": 3,
       "changed": false,
-      "duration_ms": 2838,
+      "duration_ms": 1577,
       "sentinel_check": {
         "expected": [],
         "found": [],
@@ -785,6 +779,52 @@
         "命中重点实体：Miltenyi Biomedicine / zamto-cel / MB-CART2019.1",
         "命中4个重点病种",
         "当前处于活跃状态"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT07778446",
+      "title": "A Phase 1/2 Dose Escalation and Expansion Study of CRT-402, an In Vivo CD19 Targeted CAR-T Therapy, in Refractory Autoimmune Disease",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT07778446",
+      "status": "NOT_YET_RECRUITING",
+      "last_update_posted": "2026-08-21",
+      "phase": [
+        "PHASE1",
+        "PHASE2"
+      ],
+      "enrollment": 34,
+      "sponsor": "Myeloid Therapeutics",
+      "conditions": [
+        "Autoimmune Diseases",
+        "Systemic Lupus Erythematosus",
+        "Systemic Scleroderma",
+        "Myositis"
+      ],
+      "matched_diseases": [
+        "systemic lupus",
+        "systemic sclerosis",
+        "myositis",
+        "autoimmune disease"
+      ],
+      "matched_entities": [
+        "cabaletta-resecel"
+      ],
+      "query_matches": [
+        "theme",
+        "disease:systemic lupus",
+        "disease:systemic sclerosis",
+        "disease:myositis",
+        "disease:autoimmune disease",
+        "entity:cabaletta-resecel"
+      ],
+      "review_status": "待处理",
+      "relevance_score": 18,
+      "triage_tier": "立即核验",
+      "triage_reasons": [
+        "正式注册试验",
+        "命中重点实体：Cabaletta Bio / rese-cel / CABA-201",
+        "命中4个重点病种"
       ]
     },
     {
@@ -2719,6 +2759,43 @@
         "正式注册试验",
         "命中重点实体：Cartesian / Descartes-08",
         "当前处于活跃状态"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT07752264",
+      "title": "An Open-label, Single-arm Phase I/II Clinical Study to Evaluate the Safety and Efficacy of Equecabtagene Autoleucel Injection (Eque-cel) in Subjects With Immune-mediated Necrotizing Myopathy",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT07752264",
+      "status": "NOT_YET_RECRUITING",
+      "last_update_posted": "2026-08-07",
+      "phase": [
+        "PHASE1",
+        "PHASE2"
+      ],
+      "enrollment": 27,
+      "sponsor": "Nanjing IASO Biotechnology Co., Ltd.",
+      "conditions": [
+        "Refractory Immune-mediated Necrotizing Myopathy"
+      ],
+      "matched_diseases": [
+        "myositis"
+      ],
+      "matched_entities": [
+        "iaso-ct103a"
+      ],
+      "query_matches": [
+        "theme",
+        "disease:myositis",
+        "entity:iaso-ct103a"
+      ],
+      "review_status": "待处理",
+      "relevance_score": 12,
+      "triage_tier": "立即核验",
+      "triage_reasons": [
+        "正式注册试验",
+        "命中重点实体：IASO Bio / Eque-cel / CT103A",
+        "命中1个重点病种"
       ]
     },
     {
@@ -5400,6 +5477,116 @@
       "journal_impact_factor_source": null
     },
     {
+      "candidate_type": "official_update",
+      "external_id": "https://www.iasobio.com/info.php?id=314",
+      "title": "21/08 2026 IASO Bio's Registration Application for FUCASO® (equecabtagene autoleucel) Accepted by Australia's TGA",
+      "source": "IASO Bio Official News & Pipeline",
+      "source_url": "https://www.iasobio.com/info.php?id=314",
+      "publication_date": "",
+      "matched_diseases": [],
+      "matched_entities": [
+        "iaso-ct103a"
+      ],
+      "query_matches": [
+        "official:iaso-official"
+      ],
+      "review_status": "待处理",
+      "relevance_score": 10,
+      "triage_tier": "立即核验",
+      "triage_reasons": [
+        "企业官网一手披露",
+        "命中重点实体：IASO Bio / Eque-cel / CT103A"
+      ]
+    },
+    {
+      "candidate_type": "official_update",
+      "external_id": "official-change:cabaletta-official:b3dc79c0784d",
+      "title": "Cabaletta Bio Pipeline & Press Releases 页面或管线资产发生变化",
+      "source": "Cabaletta Bio Pipeline & Press Releases",
+      "source_url": "https://www.cabalettabio.com/pipeline/caba-201",
+      "publication_date": "2026-08-23",
+      "matched_diseases": [],
+      "matched_entities": [
+        "cabaletta-resecel"
+      ],
+      "query_matches": [
+        "official:cabaletta-official:change"
+      ],
+      "review_status": "待处理",
+      "relevance_score": 10,
+      "triage_tier": "立即核验",
+      "triage_reasons": [
+        "企业官网一手披露",
+        "命中重点实体：Cabaletta Bio / rese-cel / CABA-201"
+      ]
+    },
+    {
+      "candidate_type": "official_update",
+      "external_id": "official-change:cartesian-official:f5a3615172fd",
+      "title": "Cartesian Therapeutics Pipeline & Press Releases 页面或管线资产发生变化",
+      "source": "Cartesian Therapeutics Pipeline & Press Releases",
+      "source_url": "https://www.cartesiantherapeutics.com/pipeline/",
+      "publication_date": "2026-08-23",
+      "matched_diseases": [],
+      "matched_entities": [
+        "cartesian-descartes08"
+      ],
+      "query_matches": [
+        "official:cartesian-official:change"
+      ],
+      "review_status": "待处理",
+      "relevance_score": 10,
+      "triage_tier": "立即核验",
+      "triage_reasons": [
+        "企业官网一手披露",
+        "命中重点实体：Cartesian / Descartes-08"
+      ]
+    },
+    {
+      "candidate_type": "official_update",
+      "external_id": "official-change:iaso-official:4abcd00376ee",
+      "title": "IASO Bio Official News & Pipeline 页面或管线资产发生变化",
+      "source": "IASO Bio Official News & Pipeline",
+      "source_url": "https://www.iasobio.com/news.php?colid=302",
+      "publication_date": "2026-08-23",
+      "matched_diseases": [],
+      "matched_entities": [
+        "iaso-ct103a"
+      ],
+      "query_matches": [
+        "official:iaso-official:change"
+      ],
+      "review_status": "待处理",
+      "relevance_score": 10,
+      "triage_tier": "立即核验",
+      "triage_reasons": [
+        "企业官网一手披露",
+        "命中重点实体：IASO Bio / Eque-cel / CT103A"
+      ]
+    },
+    {
+      "candidate_type": "official_update",
+      "external_id": "official-change:kyverna-official:e0d2aef368b1",
+      "title": "Kyverna Pipeline & Press Releases 页面或管线资产发生变化",
+      "source": "Kyverna Pipeline & Press Releases",
+      "source_url": "https://kyvernatx.com/platform-pipeline/pipeline/",
+      "publication_date": "2026-08-23",
+      "matched_diseases": [],
+      "matched_entities": [
+        "kyverna-kyv101"
+      ],
+      "query_matches": [
+        "official:kyverna-official:change"
+      ],
+      "review_status": "待处理",
+      "relevance_score": 10,
+      "triage_tier": "立即核验",
+      "triage_reasons": [
+        "企业官网一手披露",
+        "命中重点实体：Kyverna / KYV-101"
+      ]
+    },
+    {
       "candidate_type": "trial",
       "external_id": "NCT07473154",
       "title": "Phase I/II Study of QEL-005 in Patients With Diffuse Cutaneous Systemic Sclerosis (dcSSc) and in Patients With Difficult to Treat Rheumatoid Arthritis (D2TRA).",
@@ -5469,6 +5656,47 @@
       "triage_reasons": [
         "正式注册试验",
         "命中重点实体：Cartesian / Descartes-08"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT06733935",
+      "title": "A Phase 1/2 Study of NKX019, a CD19 Chimeric Antigen Receptor Natural Killer (CAR NK) Cell Therapy, in Subjects With Immune-Mediated Diseases",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT06733935",
+      "status": "RECRUITING",
+      "last_update_posted": "2026-08-07",
+      "phase": [
+        "PHASE1",
+        "PHASE2"
+      ],
+      "enrollment": 240,
+      "sponsor": "Nkarta, Inc.",
+      "conditions": [
+        "Systemic Sclerosis",
+        "Idiopathic Inflammatory Myopathies",
+        "Antineutrophil Cytoplasmic Antibody-Associated Vasculitis",
+        "Rheumatoid Arthritis"
+      ],
+      "matched_diseases": [
+        "systemic sclerosis",
+        "rheumatoid arthritis"
+      ],
+      "matched_entities": [],
+      "query_matches": [
+        "theme",
+        "disease:systemic sclerosis",
+        "disease:myositis",
+        "disease:rheumatoid arthritis",
+        "disease:autoimmune disease"
+      ],
+      "review_status": "待处理",
+      "relevance_score": 10,
+      "triage_tier": "立即核验",
+      "triage_reasons": [
+        "正式注册试验",
+        "命中2个重点病种",
+        "当前处于活跃状态"
       ]
     },
     {
@@ -11395,6 +11623,41 @@
     },
     {
       "candidate_type": "trial",
+      "external_id": "NCT06897930",
+      "title": "A Phase 1b/2 Study of AZD0120, a Chimeric Antigen Receptor T-cell (CAR T) Therapy Targeting CD19 and B-cell Maturation Antigen (BCMA) in Subjects With Refractory Systemic Lupus Erythematosus (SLE)",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT06897930",
+      "status": "RECRUITING",
+      "last_update_posted": "2026-08-12",
+      "phase": [
+        "PHASE1",
+        "PHASE2"
+      ],
+      "enrollment": 150,
+      "sponsor": "AstraZeneca",
+      "conditions": [
+        "Lupus Erythematosus, Systemic"
+      ],
+      "matched_diseases": [
+        "systemic lupus"
+      ],
+      "matched_entities": [],
+      "query_matches": [
+        "theme",
+        "disease:systemic lupus",
+        "disease:autoimmune disease"
+      ],
+      "review_status": "待处理",
+      "relevance_score": 8,
+      "triage_tier": "持续观察",
+      "triage_reasons": [
+        "正式注册试验",
+        "命中1个重点病种",
+        "当前处于活跃状态"
+      ]
+    },
+    {
+      "candidate_type": "trial",
       "external_id": "NCT06617793",
       "title": "An Open-label, Multi-center, Phase 1/2 Study to Assess Safety, Efficacy, and Cellular Kinetics of YTB323 in Participants With Relapsing Multiple Sclerosis With Breakthrough Disease Activity During Previous Treatment With a Highly Efficacious Therapy",
       "source": "ClinicalTrials.gov",
@@ -13485,7 +13748,7 @@
     {
       "candidate_type": "research",
       "external_id": "42508642",
-      "title": "CAR-based cellular therapies for autoimmune diseases: immune reset, clinical evidence, and translational boundaries.",
+      "title": "Chimeric Antigen Receptor-Based Cellular Therapies for Autoimmune Diseases: Immune Reset, Clinical Evidence, and Translational Boundaries.",
       "source": "NCBI PubMed",
       "source_url": "https://pubmed.ncbi.nlm.nih.gov/42508642/",
       "publication_date": "2026 Jul 27",
@@ -13765,6 +14028,39 @@
       ],
       "matched_diseases": [
         "systemic lupus"
+      ],
+      "matched_entities": [
+        "cabaletta-resecel"
+      ],
+      "query_matches": [
+        "theme",
+        "entity:cabaletta-resecel"
+      ],
+      "review_status": "待处理",
+      "relevance_score": 8,
+      "triage_tier": "立即核验",
+      "triage_reasons": [
+        "命中重点实体：Cabaletta Bio / rese-cel / CABA-201",
+        "命中1个重点病种"
+      ],
+      "journal_impact_factor": null,
+      "journal_impact_factor_year": null,
+      "journal_impact_factor_source": null
+    },
+    {
+      "candidate_type": "research",
+      "external_id": "42628528",
+      "title": "Long-term outcomes of anti-CD19 CAR T cell therapy in refractory myasthenia gravis: A case series.",
+      "source": "NCBI PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42628528/",
+      "publication_date": "2026 Aug 21",
+      "journal": "Cell reports. Medicine",
+      "doi": "10.1016/j.xcrm.2026.103000",
+      "publication_type": [
+        "Journal Article"
+      ],
+      "matched_diseases": [
+        "myasthenia gravis"
       ],
       "matched_entities": [
         "cabaletta-resecel"
@@ -17540,6 +17836,40 @@
     },
     {
       "candidate_type": "trial",
+      "external_id": "NCT07765966",
+      "title": "A Phase 1, Open Label, Dose Escalation Study Evaluating the Safety, Pharmacokinetics, Pharmacodynamics, and Early Efficacy of RXIM002, in Patients With Relapsed or Refractory Autoimmune Cytopenias",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT07765966",
+      "status": "NOT_YET_RECRUITING",
+      "last_update_posted": "2026-08-14",
+      "phase": [
+        "PHASE1"
+      ],
+      "enrollment": 27,
+      "sponsor": "RiboX Therapeutics Ltd.",
+      "conditions": [
+        "Relapsed or Refractory Autoimmune Cytopenias",
+        "Immune Thrombocytopenia (ITP)"
+      ],
+      "matched_diseases": [
+        "immune thrombocytopenia"
+      ],
+      "matched_entities": [],
+      "query_matches": [
+        "theme",
+        "disease:immune thrombocytopenia",
+        "disease:autoimmune disease"
+      ],
+      "review_status": "待处理",
+      "relevance_score": 6,
+      "triage_tier": "持续观察",
+      "triage_reasons": [
+        "正式注册试验",
+        "命中1个重点病种"
+      ]
+    },
+    {
+      "candidate_type": "trial",
       "external_id": "NCT06340737",
       "title": "Phase Ib Clinical Trial of Autologous CD22 Chimeric Antigen Receptor (CAR) T Cells in Adults With Recurrent or Refractory B Cell Lymphomas",
       "source": "ClinicalTrials.gov",
@@ -17604,6 +17934,40 @@
       "triage_reasons": [
         "正式注册试验",
         "当前处于活跃状态"
+      ]
+    },
+    {
+      "candidate_type": "trial",
+      "external_id": "NCT07756268",
+      "title": "A Phase Ib/II Clinical Study to Evaluate the Safety and Efficacy of SYS6020 Injection in Patients With Relapsing/Refractory Multiple Sclerosis",
+      "source": "ClinicalTrials.gov",
+      "source_url": "https://clinicaltrials.gov/study/NCT07756268",
+      "status": "NOT_YET_RECRUITING",
+      "last_update_posted": "2026-08-10",
+      "phase": [
+        "PHASE1",
+        "PHASE2"
+      ],
+      "enrollment": 25,
+      "sponsor": "Tongji Hospital",
+      "conditions": [
+        "Multiple Sclerosis"
+      ],
+      "matched_diseases": [
+        "multiple sclerosis"
+      ],
+      "matched_entities": [],
+      "query_matches": [
+        "theme",
+        "disease:multiple sclerosis",
+        "disease:autoimmune disease"
+      ],
+      "review_status": "待处理",
+      "relevance_score": 6,
+      "triage_tier": "持续观察",
+      "triage_reasons": [
+        "正式注册试验",
+        "命中1个重点病种"
       ]
     },
     {

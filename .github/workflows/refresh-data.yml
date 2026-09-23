@@ -32,6 +32,9 @@ jobs:
       - name: Verify the production build
         run: npm run build:site
 
+      - name: Verify assistant evidence policy and retrieval
+        run: npm run test:assistant && npm run eval:assistant
+
       - name: Persist verified data
         run: |
           if test -z "$(git status --porcelain -- data)"; then

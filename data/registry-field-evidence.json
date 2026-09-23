@@ -1,0 +1,171 @@
+{
+  "schema_version": "1.0",
+  "reviewed_at": "2026-09-15",
+  "records": [
+    {
+      "record_type": "trial",
+      "record_id": "kyv101-ms-phase1",
+      "registry_id": "NCT06451159",
+      "scope": "registry-fields-only",
+      "last_verified_at": "2026-09-15",
+      "freshness_policy_days": 7,
+      "source_url": "https://clinicaltrials.gov/study/NCT06451159",
+      "snapshot_sha256": "1fb97bdff8a7d8568fd9480b63ca592023aabe22315331dad51bc5e96c9268ce",
+      "checked_at": "2026-09-15T08:33:26.163Z",
+      "fields": {
+        "official_title": "Phase 1, Open-Label, Single Center Study of KYV-101, an Autologous Fully-Human Anti-CD19 Chimeric Antigen Receptor T Cell (CD19 CAR T) Therapy, in Participants With Treatment Refractory Progressive Multiple Sclerosis",
+        "sponsor": "Bruce Cree",
+        "status": "ACTIVE_NOT_RECRUITING",
+        "phases": [
+          "PHASE1"
+        ],
+        "study_type": "INTERVENTIONAL",
+        "enrollment": 10,
+        "enrollment_type": "ESTIMATED",
+        "study_start": {
+          "date": "2024-06-20",
+          "type": "ACTUAL"
+        },
+        "completion": {
+          "date": "2027-02",
+          "type": "ESTIMATED"
+        },
+        "registry_last_update": "2026-08-10",
+        "registry_has_results": false
+      },
+      "limitations": "仅核对所列登记字段；不代表整条档案或编辑判断重新核验。登记平台未发布结果不等于没有论文、会议数据或企业披露。"
+    },
+    {
+      "record_type": "trial",
+      "record_id": "kyv101-mg-kysa6-phase23",
+      "registry_id": "NCT06193889",
+      "scope": "registry-fields-only",
+      "last_verified_at": "2026-09-15",
+      "freshness_policy_days": 7,
+      "source_url": "https://clinicaltrials.gov/study/NCT06193889",
+      "snapshot_sha256": "232ca41278c3b0f19cdc0b3aea00287db079c3cb2c7d5e36c3e830bb4164a730",
+      "checked_at": "2026-09-15T08:33:26.608Z",
+      "fields": {
+        "official_title": "KYSA-6: A Phase 2/3, Open-Label, Randomized, Controlled, Multicenter Study of KYV-101, an Autologous Fully Human Anti-CD19 Chimeric Antigen Receptor T-cell (CD19 CAR T) Therapy, Versus Ongoing Standard-Of-Care Immunosuppressive Therapy in Patients With Generalized Myasthenia Gravis",
+        "sponsor": "Kyverna Therapeutics",
+        "status": "RECRUITING",
+        "phases": [
+          "PHASE2",
+          "PHASE3"
+        ],
+        "study_type": "INTERVENTIONAL",
+        "enrollment": 66,
+        "enrollment_type": "ESTIMATED",
+        "study_start": {
+          "date": "2024-08-28",
+          "type": "ACTUAL"
+        },
+        "completion": {
+          "date": "2028-09",
+          "type": "ESTIMATED"
+        },
+        "registry_last_update": "2026-07-29",
+        "registry_has_results": false
+      },
+      "limitations": "仅核对所列登记字段；不代表整条档案或编辑判断重新核验。登记平台未发布结果不等于没有论文、会议数据或企业披露。"
+    },
+    {
+      "record_type": "trial",
+      "record_id": "kyv101-autoimmune-ltfu",
+      "registry_id": "NCT07403188",
+      "scope": "registry-fields-only",
+      "last_verified_at": "2026-09-15",
+      "freshness_policy_days": 7,
+      "source_url": "https://clinicaltrials.gov/study/NCT07403188",
+      "snapshot_sha256": "839a788f24c3650cbb42847beec3965674ae50a8409ce40f6616a9b99968435c",
+      "checked_at": "2026-09-15T08:33:26.963Z",
+      "fields": {
+        "official_title": "A Long-Term Follow-Up Study for Participants Previously Treated With KYV-101",
+        "sponsor": "Kyverna Therapeutics",
+        "status": "RECRUITING",
+        "phases": [],
+        "study_type": "OBSERVATIONAL",
+        "enrollment": 70,
+        "enrollment_type": "ESTIMATED",
+        "study_start": {
+          "date": "2025-11-24",
+          "type": "ACTUAL"
+        },
+        "completion": {
+          "date": "2041-01",
+          "type": "ESTIMATED"
+        },
+        "registry_last_update": "2026-02-11",
+        "registry_has_results": false
+      },
+      "limitations": "仅核对所列登记字段；不代表整条档案或编辑判断重新核验。登记平台未发布结果不等于没有论文、会议数据或企业披露。"
+    },
+    {
+      "record_type": "trial",
+      "record_id": "cabaletta-resecel-ms-phase12",
+      "registry_id": "NCT07006805",
+      "scope": "registry-fields-only",
+      "last_verified_at": "2026-09-15",
+      "freshness_policy_days": 7,
+      "source_url": "https://clinicaltrials.gov/study/NCT07006805",
+      "snapshot_sha256": "42aa356e3462254a904ee3e21165f6913d8545fc5a8e7b4d9e122eb9702c5fab",
+      "checked_at": "2026-09-15T08:33:27.240Z",
+      "fields": {
+        "official_title": "RESET-MS: A Phase 1/2, Open-Label Study to Evaluate the Safety and Efficacy of Autologous CD19-specific Chimeric Antigen Receptor T Cells (CABA-201) in Participants With Multiple Sclerosis",
+        "sponsor": "Cabaletta Bio",
+        "status": "WITHDRAWN",
+        "phases": [
+          "PHASE1",
+          "PHASE2"
+        ],
+        "study_type": "INTERVENTIONAL",
+        "enrollment": 0,
+        "enrollment_type": "ACTUAL",
+        "study_start": {
+          "date": "2026-06",
+          "type": "ESTIMATED"
+        },
+        "completion": {
+          "date": "2029-10",
+          "type": "ESTIMATED"
+        },
+        "registry_last_update": "2026-06-25",
+        "registry_has_results": false
+      },
+      "limitations": "仅核对所列登记字段；不代表整条档案或编辑判断重新核验。登记平台未发布结果不等于没有论文、会议数据或企业披露。"
+    },
+    {
+      "record_type": "trial",
+      "record_id": "cc97540-breakfree2",
+      "registry_id": "NCT06220201",
+      "scope": "registry-fields-only",
+      "last_verified_at": "2026-09-15",
+      "freshness_policy_days": 7,
+      "source_url": "https://clinicaltrials.gov/study/NCT06220201",
+      "snapshot_sha256": "a11275fd007f9429b0c1ac7e94137cc79157cafbe7d6240f818e43ca427ba492",
+      "checked_at": "2026-09-15T08:33:27.516Z",
+      "fields": {
+        "official_title": "A Phase 1, Multicenter, Single-arm, Dose-escalation Study of CC-97540 (BMS-986353), CD19-Targeted NEX-T Chimeric Antigen Receptor (CAR) T Cells, Evaluating Safety and Tolerability in Participants With Autoimmune Neurological Diseases: Relapsing Forms of Multiple Sclerosis (RMS), Progressive Forms of Multiple Sclerosis (PMS), or Refractory Myasthenia Gravis (MG).",
+        "sponsor": "Juno Therapeutics, Inc., a Bristol-Myers Squibb Company",
+        "status": "ACTIVE_NOT_RECRUITING",
+        "phases": [
+          "PHASE1"
+        ],
+        "study_type": "INTERVENTIONAL",
+        "enrollment": 120,
+        "enrollment_type": "ESTIMATED",
+        "study_start": {
+          "date": "2024-03-28",
+          "type": "ACTUAL"
+        },
+        "completion": {
+          "date": "2027-07-15",
+          "type": "ESTIMATED"
+        },
+        "registry_last_update": "2026-08-03",
+        "registry_has_results": false
+      },
+      "limitations": "仅核对所列登记字段；不代表整条档案或编辑判断重新核验。登记平台未发布结果不等于没有论文、会议数据或企业披露。"
+    }
+  ]
+}

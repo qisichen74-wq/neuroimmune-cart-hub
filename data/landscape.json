@@ -58,11 +58,14 @@
   {
     "id": "kyverna-kyv101",
     "record_kind": "company_program",
-    "source_url": "https://ir.kyvernatx.com/news-releases/news-release-details/kyverna-therapeutics-announces-master-services-agreement",
-    "source_last_update": "2026-07-27",
+    "source_url": "https://ir.kyvernatx.com/news-releases/news-release-details/company-statement-miv-cels-favorable-safety-profile",
+    "additional_source_urls": [
+      "https://ir.kyvernatx.com/news-releases/news-release-details/kyverna-therapeutics-announces-initiation-rolling-sps-bla"
+    ],
+    "source_last_update": "2026-09-01",
     "company": "Kyverna",
     "product": "KYV-101",
-    "technology": "CD19 CAR-T",
+    "technology": "自体全人源CD19 CAR-T；CD28共刺激域（企业披露）",
     "focus": [
       "SPS",
       "MG",
@@ -73,8 +76,8 @@
     "region": "US / EU",
     "priority": "高",
     "status": "SPS滚动BLA；gMG Phase 3 Recruiting",
-    "evidence_anchor": "miv-cel已在SPS进入滚动BLA，并在gMG推进随机、标准治疗对照的注册性Phase 3，是海外神经免疫CAR-T后期开发核心锚点。",
-    "recent_update": "2026-07-27公司宣布与ElevateBio达成美国商业化与临床供应主服务协议；ClinicalTrials.gov于2026-07-29继续显示KYSA-6为Phase 2/3、Recruiting、计划66例。",
+    "evidence_anchor": "企业2026-09-01声明称，miv-cel采用全人源CD19构建及CD28共刺激域；计划2026年第四季度完成SPS滚动BLA提交，gMG Phase 3计划于2027年中完成入组。这些是企业披露与前瞻计划，不等于监管批准或实际完成。",
+    "recent_update": "2026-09-01企业声明重申SPS申报与gMG开发计划，并描述miv-cel构建特征。2026-09-15复查确认该声明内容；仅更新来源、技术路线和该段企业披露，未据此刷新整条档案核验日期，也未将企业安全性表述视为独立安全结论。",
     "watch_points": [
       "KYSA-6 Phase 3全球入组与24周共同主要终点",
       "MS临床推进速度",

@@ -1,6 +1,7 @@
 import { access, readFile, readdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { assessFreshness, resolveVerification } from "../lib/evidence-policy.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const today = new Date();
@@ -201,24 +202,19 @@ let staleCount = 0;
 for (const [type, records] of Object.entries(datasets)) {
   for (const record of records) {
     const override = overrides.get(`${type}:${record.id}`);
-    const collectionVerifiedAt = !Array.isArray(datasetPayloads[type]) ? datasetPayloads[type].verified_at : null;
-    const embeddedVerification = collectionVerifiedAt && record.source_ids?.length ? { status: "已核验", confidence: "高", source_ids: record.source_ids, last_verified_at: collectionVerifiedAt } : {};
-    const resolved = { record_type: type, record_id: record.id, ...(verification.defaults[type] || {}), ...embeddedVerification, ...(override || {}) };
+    const resolved = resolveVerification({ type, record, payload: datasetPayloads[type], policy: verification, override });
     const maxAge = verification.freshness_policy_days[type];
-    let stale = false;
-    if (resolved.last_verified_at) {
-      const checked = parseDate(resolved.last_verified_at);
-      if (!checked) addIssue("error", "invalid_verification_date", "核验日期格式错误", type, record.id);
-      else stale = (today - checked) / 86400000 > maxAge;
-    }
-    if (resolved.next_review_at && parseDate(resolved.next_review_at) < today) stale = true;
+    const freshness = assessFreshness(resolved);
+    const { stale } = freshness;
+    if (freshness.freshness_state === "invalid") addIssue("error", "invalid_verification_date", "核验日期无效或晚于当前日期", type, record.id);
+    if (freshness.freshness_state === "unknown") addIssue("warning", "verification_date_missing", "缺少有效核验日期，不能判断为当前已核验", type, record.id);
     if (stale) {
       staleCount += 1;
       addIssue("warning", "verification_stale", `已超过 ${maxAge} 天复核周期`, type, record.id);
     }
     if (resolved.status === "待外部核验") addIssue("warning", "external_verification_pending", "尚未完成一手来源逐字段核验", type, record.id);
     for (const sourceId of resolved.source_ids || []) if (!sourceIds.has(sourceId)) addIssue("error", "unknown_verification_source", `核验来源未登记：${sourceId}`, type, record.id);
-    verificationRows.push({ ...resolved, stale });
+    verificationRows.push({ ...resolved, ...freshness });
   }
 }
 
@@ -293,7 +289,7 @@ for (const file of htmlFiles) {
 
 const errors = issues.filter((issue) => issue.severity === "error").length;
 const warnings = issues.filter((issue) => issue.severity === "warning").length;
-const verified = verificationRows.filter((row) => row.status === "已核验" && !row.stale).length;
+const verified = verificationRows.filter((row) => row.current_verified).length;
 const internallyReviewed = verificationRows.filter((row) => row.status === "内部审核" && !row.stale).length;
 const pending = verificationRows.filter((row) => row.status === "待外部核验").length;
 const registryStaleCount = issues.filter((issue) => issue.code === "registry_record_stale").length;
@@ -305,8 +301,8 @@ const report = {
   policy_version: verification.policy_version,
   status: errors ? "阻断" : warnings ? "需关注" : "通过",
   score,
-  summary: { total_records: totalRecords, datasets: Object.keys(datasets).length, errors, warnings, verified, internally_reviewed: internallyReviewed, pending_external_verification: pending, stale: staleCount + registryStaleCount, source_checks: sourceSyncReport?.summary || null, discovery: candidateReport?.summary || null, regulatory: regulatoryReport?.summary || null, fda: fdaReport?.summary || null },
-  datasets: Object.entries(datasets).map(([type, records]) => ({ type, label: definitions[type].label, records: records.length, verified: verificationRows.filter((row) => row.record_type === type && row.status === "已核验" && !row.stale).length, pending: verificationRows.filter((row) => row.record_type === type && row.status === "待外部核验").length, stale: verificationRows.filter((row) => row.record_type === type && row.stale).length + issues.filter((issue) => issue.record_type === type && issue.code === "registry_record_stale").length })),
+  summary: { total_records: totalRecords, datasets: Object.keys(datasets).length, errors, warnings, verified, internally_reviewed: internallyReviewed, pending_external_verification: pending, stale: staleCount, registry_stale: registryStaleCount, source_checks: sourceSyncReport?.summary || null, discovery: candidateReport?.summary || null, regulatory: regulatoryReport?.summary || null, fda: fdaReport?.summary || null },
+  datasets: Object.entries(datasets).map(([type, records]) => ({ type, label: definitions[type].label, records: records.length, verified: verificationRows.filter((row) => row.record_type === type && row.current_verified).length, pending: verificationRows.filter((row) => row.record_type === type && row.status === "待外部核验").length, stale: verificationRows.filter((row) => row.record_type === type && row.stale).length, registry_stale: issues.filter((issue) => issue.record_type === type && issue.code === "registry_record_stale").length })),
   checks: ["必填字段", "重复ID", "日期格式与未来日期", "来源链接与PMID一致性", "试验注册号与注册页一致性", "注册记录更新时间", "专题适应症与试验匹配", "专题关联去重", "官方API逐字段差异", "官方来源检查时效", "候选情报发现时效", "候选来源可用性", "NMPA/CDE监管入口可用性", "FDA/openFDA/Drugs@FDA/CBER来源可用性", "监管状态分级", "文献与事件日期一致性", "跨表引用完整性", "来源登记完整性", "核验覆盖与过期策略", "页面内部链接", "共享导航与本地资源"],
   issues,
   verification: verificationRows

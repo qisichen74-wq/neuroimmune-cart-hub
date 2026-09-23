@@ -5,6 +5,8 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { candidatePoolDecision, requiresCandidateDesk } from "./candidate-policy.mjs";
 import { createJournalMetricLookup, withJournalMetric } from "./journal-metrics.mjs";
+import { answerQuestion } from "../lib/assistant-answer.mjs";
+import { resolveAssistantModelConfig } from "../lib/assistant-model-config.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const port = Number(process.env.PORT || 8765);
@@ -17,7 +19,9 @@ const sessions = new Map();
 const protectedPages = new Set(["/desk.html", "/review.html", "/candidates.html", "/quality.html"]);
 const protectedData = new Set(["/data/candidate-report.json", "/data/review-decisions.json", "/data/review-workflow.json", "/data/source-sync-report.json"]);
 const decisionsPath = path.join(root, "data", "review-decisions.json");
+const assistantIndexPath = path.join(root, "data", "assistant-index.json");
 const sessionCookie = "intel_workspace_session";
+const assistantRateLimits = new Map();
 const mimeTypes = {
   ".html": "text/html; charset=utf-8",
   ".json": "application/json; charset=utf-8",
@@ -117,7 +121,75 @@ const requireApiSession = (request, response) => {
   return session;
 };
 
+const allowAssistantRequest = (request) => {
+  const now = Date.now();
+  const windowMs = 10 * 60 * 1000;
+  const limit = 30;
+  if (assistantRateLimits.size > 5000) {
+    for (const [key, value] of assistantRateLimits) if (value.resetAt <= now) assistantRateLimits.delete(key);
+  }
+  const address = String(request.headers["cf-connecting-ip"] || request.headers["x-forwarded-for"] || request.socket.remoteAddress || "local").split(",")[0].trim();
+  const existing = assistantRateLimits.get(address);
+  if (!existing || existing.resetAt <= now) {
+    assistantRateLimits.set(address, { count: 1, resetAt: now + windowMs });
+    return true;
+  }
+  existing.count += 1;
+  return existing.count <= limit;
+};
+
 const handleApi = async (request, response, requestUrl) => {
+  if (requestUrl.pathname === "/api/assistant" && request.method === "GET") {
+    const index = await readJsonFile(assistantIndexPath, { documents: [], data_as_of: "" });
+    const modelConfig = resolveAssistantModelConfig(process.env);
+    json(response, 200, {
+      available: index.documents.length > 0,
+      model_configured: modelConfig.configured,
+      model_provider: modelConfig.configured ? modelConfig.provider : null,
+      data_as_of: index.data_as_of || "",
+      records: index.documents.length
+    });
+    return true;
+  }
+
+  if (requestUrl.pathname === "/api/assistant" && request.method === "POST") {
+    if (!allowAssistantRequest(request)) {
+      json(response, 429, { error: "请求过于频繁，请稍后再试。" });
+      return true;
+    }
+    const body = await readBody(request);
+    const question = String(body.question || "").trim();
+    if (question.length < 2 || question.length > 800) {
+      json(response, 400, { error: "问题长度应为 2–800 个字符。" });
+      return true;
+    }
+    const index = await readJsonFile(assistantIndexPath, { documents: [], data_as_of: "", policy: {} });
+    if (!index.documents.length) {
+      json(response, 503, { error: "问答索引尚未生成，请先运行站点构建。" });
+      return true;
+    }
+    const context = body.context && typeof body.context === "object" ? {
+      type: String(body.context.type || "").slice(0, 40),
+      id: String(body.context.id || "").slice(0, 160)
+    } : null;
+    const history = Array.isArray(body.history) ? body.history.slice(-6) : [];
+    const modelConfig = resolveAssistantModelConfig(process.env);
+    const answer = await answerQuestion({
+      index,
+      question,
+      history,
+      context,
+      apiKey: modelConfig.apiKey,
+      provider: modelConfig.provider,
+      apiProtocol: modelConfig.protocol,
+      model: modelConfig.model,
+      apiBase: modelConfig.apiBase,
+      thinking: modelConfig.thinking
+    });
+    json(response, 200, answer);
+    return true;
+  }
+
   if (requestUrl.pathname === "/api/login" && request.method === "POST") {
     const body = await readBody(request);
     if (!sameText(body.username, workspaceUser) || !sameText(body.password, workspacePassword)) {

@@ -8,13 +8,13 @@ const output = path.join(root, "dist");
 await rm(output, { recursive: true, force: true });
 await mkdir(output, { recursive: true });
 
-const publicPages = new Set(["index.html", "topics.html", "topic.html", "research.html", "landscape.html", "comparison.html", "search.html", "detail.html", "deals.html", "deal.html", "company.html"]);
+const publicPages = new Set(["index.html", "topics.html", "topic.html", "research.html", "landscape.html", "comparison.html", "search.html", "assistant.html", "detail.html", "deals.html", "deal.html", "company.html"]);
 const rootFiles = (await readdir(root)).filter((file) => publicPages.has(file));
 await Promise.all(rootFiles.map((file) => cp(path.join(root, file), path.join(output, file))));
 await cp(path.join(root, "assets"), path.join(output, "assets"), { recursive: true });
 await mkdir(path.join(output, "data"), { recursive: true });
 const publicData = new Set([
-  "daily-briefing.json", "deal-events.json", "deals.json", "events.json", "fda-watch-report.json", "feed.json",
+  "assistant-index.json", "daily-briefing.json", "deal-events.json", "deals.json", "events.json", "fda-watch-report.json", "feed.json",
   "investor-summary.json", "journal-metrics.json", "landscape.json", "organizations.json", "programs.json",
   "quality-report.json", "regulatory-watch-report.json", "relations.json", "release-manifest.json", "safety.json",
   "search-index.json", "sources.json", "topics.json", "trials.json", "verification.json"
